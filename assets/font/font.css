@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'ButterTangXin';
+  src: url('https://static.cmereye.com/static/loffee/font/ButterTangXin-Italic.woff2');
+}
+
+@font-face {
+  font-family: 'DINCondensed';
+  src: url('https://static.cmereye.com/static/loffee/font/DIN-Condensed.woff');
+}
+
+@font-face {
+  font-family: "DINCondensed-Bold";
+  src: url('https://static.cmereye.com/static/loffee/font/DIN-Condensed-Bold.woff');
+}
+
+@font-face {
+  font-family: 'AcuminVariableConcept';
+  src: url('https://static.cmereye.com/static/loffee/font/AcuminVariableConcept.otf');
+}
+
+@font-face {
+  font-family: 'Metropolis-Regular';
+  src: url('https://static.cmereye.com/static/loffee/font/Metropolis-Regular.woff2');
+}
+
+@font-face {
+  font-family: 'NotoSansHK';
+  src: url('https://static.cmereye.com/static/loffee/font/NotoSansHK.woff2');
+}
+
+@font-face {
+  font-family: 'NotoSansHK-Medium';
+  src: url('https://static.cmereye.com/static/loffee/font/NotoSansHK-Medium.woff2');
+}
+
+@font-face {
+  font-family: 'NotoSansHK-Regular';
+  src: url('https://static.cmereye.com/static/loffee/font/NotoSansHK-Regular.woff2');
+}
+
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url('https://static.cmereye.com/static/loffee/font/Metropolis-Bold.woff2');
+}
+
+@font-face {
+  font-family: "Metropolis-SemiBold";
+  src: url('https://static.cmereye.com/static/loffee/font/Metropolis-SemiBold.woff2');
+}
+
+@font-face {
+  font-family: "Metropolis";
+  src: url('https://static.cmereye.com/static/loffee/font/Metropolis.woff2');
+}
+
+
+@font-face {
+  font-family: "NotoSansCJK-Bold";
+  src: url('https://static.cmereye.com/static/loffee/font/NotoSansCJK-Bold.woff2');
+}
+
+@font-face {
+  font-family: "NotoSansCJKtc--Bold";
+  src: url('https://static.cmereye.com/static/loffee/font/NotoSansCJKtc-Bold.otf');
+}

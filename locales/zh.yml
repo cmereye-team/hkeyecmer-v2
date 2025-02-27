@@ -1,0 +1,2482 @@
+components:
+  language_switcher:
+    change_language: 切换语言
+  theme_switcher:
+    theme: 主题
+    change_theme: 切换主题
+  footerInfo:
+    Instagram: Instagram
+    YouTube: YouTube
+    Google: Google
+    Facebook: Facebook
+    sidekicker: 親友介紹
+    staff: 員工介紹
+    website: 透過其他網頁
+    leaflet: 透過宣傳單張/卡片
+    rest: 其他
+    label1: 從哪裡找到我們的網站？ （可選擇多於一項）
+    text1: 希瑪眼科重視每一位客人的問題，隨時發問。
+    text2: 請留下聯絡方法，我們的客戶服務專員會透過 Email 或電話解答你。
+    placeholder1: 姓名
+    placeholder2: 聯絡電話
+    placeholder3: "電郵地址（選填）"
+    placeholder4: 預約日期
+    placeholder5: 訊息
+    submitForm: 提交
+    infoText: 我們將於10小時內確認您的預約
+  menus:
+    cmerCenter: 希瑪眼科中心
+    medicalService: 醫療服務
+    contactUs: 聯絡我們
+    wechat: 'Wechat 公眾號: 香港希瑪眼科中心'
+    footerMenuB1: ©2025 希瑪眼科中心 版權所有
+    footerMenuB2: 希瑪眼科醫療控股有限公司
+    footerMenuB3: 香港聯交所上市編號03309.HK
+  content:
+    onlinContact:
+      chatNow: 在線查詢
+      chatNow3: 線上客服
+      callNow: 立即致電
+      chatNow2: 線上對話
+pages:
+  404:
+    title: 找不到该页面
+  dashboard:
+    nav: 仪表盘
+    title: 仪表盘
+    index:
+      nav: 主页
+      title: 主页
+  index:
+    title: '香港希瑪眼科中心'
+    index_title: '香港希瑪眼科中心｜眼科醫生｜眼科診所'
+    home: 首頁
+    contentnav:
+      title: 醫療服務
+      context: 點擊以下圖示，了解更多醫療資訊
+    contentBox:
+      s1_1: 第1間
+      s1_2: 香港上市眼科中心
+      s2_1: 25位
+      s2_2: 眼科專科醫生
+      s3_1: 10間
+      s3_2: 眼科診所
+      s4_1: 98%
+      s4_2: 顧客滿意度
+      h2_1: "「以客人需求為依歸，提供針對性及達國際水準的眼科醫療服務。」"
+      p1: "香港希瑪眼科隸屬於希瑪眼科醫療集團，2012年1月於香港開設了第一間眼科中心，採用與國際接軌的科技和治療方式，嚴格遵守香港及國際醫療技術操作規範，旨在為各界眼疾人士提供優質的眼科服務。"
+      h2_2: 香港希瑪國際眼科醫療集團
+      p2: (簡稱：希瑪眼科，股份代碼：3309.HK)，總部設於香港，旗下擁有33間醫療機構及視光中心，是香港首間大型連鎖上市眼科集團。
+      span1_1: 2018年香港上市公開招股認購
+      span1_2: 超過1500倍
+      span2: 2019年大健康產業創新獎
+      span3_1: 2020年港股
+      span3_2: "「最佳價值醫藥及醫療股公司」"
+      span3_3: 大獎
+    footer:
+      company: ©2025 希瑪眼科中心
+      copy_right: 版權所有
+      language: 語言
+      fonts: 字體
+      privacy: 私隱政策
+      disclaimer: 免責條款
+    subscribe: 立即查詢/預約
+    inquire: 在線查詢
+  about_us:
+    about_us: 關於我們
+    center_profile: 中心簡介
+    profile_centent:
+      profile_text: 香港領先的一站式眼科專科醫療服務集團——希瑪眼科醫療控股有限公司，是由林順潮醫生於2012年創立，並於2018年成功在香港聯合交易所主板上市。多年以來，我們的醫療團隊以守護市民視力為目標，為香港市民提供安全、準確、可靠的眼科檢查及專科醫療服務。希瑪眼科服務包括︰檢查及治療眼疾、SMILE微笑激光矯視、植入式隱形眼鏡（ICL）、人工晶體置換（IOL）、全面眼睛檢查、視光配鏡服務等。位於中環的希瑪林順潮眼科中心、旺角的希瑪眼科手術中心及希瑪眼科中心(元朗) 已正式獲衛生署發出「日間醫療中心」牌照。
+      profile_subjection: 「希瑪眼科中心」是上市公司「香港希瑪眼科集團」旗下的眼科中心。
+      profile_group_start: 我們的集團名稱
+      profile_group_name: 「C-MER」
+      profile_group_idea: ，正正反映著我們的理念與執著：
+      profile_group_C: 「C」 ：優質臨床服務 High-quality Clinical Services
+      profile_group_M: 「Ｍ」：現代化管理 Modern Management
+      profile_group_E: 「Ｅ」：優質教育 Quality Education
+      profile_group_R: 「Ｒ」：開創性科研 Pioneering Research
+      profile_group_hema: 「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
+    hema_eye:
+      hema_eye: 希瑪眼科中心
+      hema_eye_introduce_one: 現時全港有10間希瑪眼科中心，選址遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上25名豐富經驗的眼科專科醫生，以及專業的醫療護理人員組成團隊，為市民提供全面眼科專科醫療服務。
+      hema_eye_introduce_two: 眼科中心嚴格遵守香港及國際醫療技術操作規範，設有多間符合國際標準的無菌手術室，配備先進尖端的眼科醫療儀器，秉持「度身訂造」的原則，為病人提供安全、準確、可靠的眼科檢查及治療。
+      hema_eye_facebooke: 希瑪眼科
+    hema_smile:
+      hema_smile: 希瑪微笑矯視中心
+      hema_smile_introduce_one: 中心秉持「度身訂造」原則，提供優質服務包括：SMILE微笑激光矯視、SMILE Pro微笑激光矯視、植入式隱形眼鏡（ICL）、LASIK激光矯視及CMER CLEAR-Vision（老花矯視），為有近視、遠視、散光及老花的市民解決視力問題帶來的困擾。
+      hema_smile_introduce_two: 中心符合FDA激光矯視標準：設有符合國際標準的無菌手術室，配備先進的眼科檢查和矯視儀器；為客人作全面、準確的眼科檢查，並根據不同情況定制嚴格且有針對性的矯視方案。
+      hema_smile_facebooke: 希瑪微笑矯視中心
+    hema_vision:
+      hema_vision: 希瑪視光中心
+      hema_vision_introduce_one: 希瑪10間視光中心致力為市民提供全面眼科檢查及眼睛護理，秉持「度身訂造」的原則，根據不同年齡層的眼睛狀況及個人實際所需，制定專屬的眼睛檢查及護眼建議，並提供一站式安全、準確及可靠的改善視力方案，做到預防眼疾、及早治療。
+      hema_vision_introduce_two: 面對著香港兒童近視問題，希瑪視光希望能幫助兒童把握控制近視的黃金治療期。為兒童提供詳細眼睛檢查服務，以及對近視兒童制定針對性方案，包括：角膜矯形鏡 (OK鏡)、兒童近視控制鏡片、近視控制1 DAY隱形眼鏡等。
+      hema_vision_facebooke: 希瑪視光中心
+    media:
+      media_redbook: 香港希瑪眼科中心
+      media_youtube: CMER SMILE & EYE CENTER 香港希瑪眼科
+      media_wechat: 香港希瑪眼科中心
+    download:
+      download: 下載希瑪眼科業務小冊子
+    development_course: 發展歷程
+    course_year:
+      year_24: "2024"
+      child_24:
+        child24_month_1: 5月
+        child24_month_2: 6月 
+        child24_month_3: 7月 
+        child24_month_4: 12月 
+        child24_info_1: 銅鑼灣 視光師驗眼中心成立
+        child24_info_2: 旺角 希瑪微笑矯視中心成立
+        child24_info_3_1: 中環 ZEISS VISION EXPERT成立
+        child24_info_4: 深圳 希華愛康健醫院成立
+      year_23: "2023"
+      child_23:
+        child23_month_1: 8月
+        child23_month_2: 9月
+        child23_info_1: 佛山 希瑪眼科醫院成立 
+        child23_info_2: 將軍澳 視光師驗眼中心成立
+      year_22: "2022"
+      child_22:
+        child22_month_1: 9月
+        child22_month_2: 8月
+        child22_month_3: 3月
+        child22_info_1: 將軍澳  希瑪眼科中心成立
+        child22_info_2: 揭陽  希瑪眼科醫院成立
+        child22_info_3_1: 廣州  希瑪眼科醫院成立
+        child22_info_3_2: 福州  希瑪眼科醫院成立
+      year_21: "2021"
+      child_21:
+        child21_month_1: 11月
+        child21_month_2: 7月
+        child21_month_3: 3月
+        child21_month_4: 12月
+        child21_info_1: 尖沙咀  希瑪醫療集團成立 (眼科、牙科、醫美)
+        child21_info_2_1: 中環  希瑪眼科視光中心成立
+        child21_info_2_2: 旺角  希瑪眼科視光中心成立
+        child21_info_3: 惠州  希瑪眼科醫院成立
+        child21_info_3_2: 沙田(第二間)  希瑪眼科中心成立
+      year_20: "2020"
+      child_20:
+        child_month: 11月
+        child_info_1: 荃灣  希瑪眼科中心成立
+        child_month_2: 12月
+        child_info_2: 珠海  希瑪林順潮眼科醫院成立
+        child_info_3: 深圳新安  林順潮眼科門診部升級為醫院
+      year_19: "2019"
+      child_19:
+        child_month_1: 12月
+        child_month_2: 11月
+        child_month_3: 10月
+        child_month_4: 6月
+        child_info_1: 元朗(第二間)  希瑪眼科中心成立
+        child_info_2: 上海  希瑪瑞視眼科醫院
+        child_info_3: 希瑪微笑激光矯視中心成立
+        child_info_3_2: 中環 希瑪微笑激光矯視中心成立
+        child_info_4: 昆明  希瑪林順潮眼科醫院成立
+      year_18: "2018"
+      child_18:
+        child_month_1: 11月
+        child_month_2: 3月
+        child_month_3: 1月
+        child_info_1: 深圳新安  希瑪林順潮眼科門診部成立
+        child_info_2: 觀塘  希瑪眼科中心成立
+        child_info_3: 北京  希瑪林順潮眼科醫院成立
+      year_17: "2017"
+      child_17:
+        child_month: 2月
+        child_info: 銅鑼灣  希瑪眼科中心成立
+      year_16: "2016"
+      child_16:
+        child_month_1: 6月
+        child_month_2: 1月
+        child_info_1: 沙田  希瑪眼科中心成立
+        child_info_2: 元朗  希瑪眼科中心成立
+      year_14: "2014"
+      child_14:
+        child_month: 1月
+        child_info: 旺角  希瑪眼科中心成立
+      year_13: "2013"
+      child_13:
+        child_month: 3月
+        child_info: 深圳  希瑪林順潮眼科醫院成立
+      year_12: "2012"
+      child_12:
+        child_month: 1月
+        child_info: 中環  希瑪眼科中心成立
+    enterprise_vision: 企業願景
+    enterprise_vision_con: 
+      name1: 服務宗旨
+      text1: 以客人需求為依歸，提供針對性及達國際水準的眼科醫療服務。
+      name2: 服務理念
+      text2: 以人為本，注重細節，團隊合作，精益求精。
+      name3: 服務特色
+      name3_1: 以客人需求為本，提供一站式眼科醫療服務
+      text3_1: 中心按客人需要提供全面眼科服務，包括驗光、檢查、治療、矯視及配鏡。
+      name3_2: 眼科專科診療
+      text3_2: 除了綜合眼科服務外，我們亦提供眼科專科服務，由24位不同專長且經驗豐富的眼科醫生診治，覆蓋眼科九大專科，為患者提供針對性的治療。
+      name3_3: 國際認可的先進眼科醫療技術
+      text3_3: 中心的醫生具豐富臨床經驗，恆常與國際眼科界交流，引入最新醫療技術及設備，為客人提供可靠的眼科醫療服務。
+    enterprise_awards: 企業榮譽
+    equipment_centre: 中心設備
+    feedback: 客戶評分
+    equipment:
+      equipment_name:
+        equipment_name_1: Carl Zeiss Visumax 全飛秒激光3.0系統
+        equipment_name_2: 德國蔡司掃頻OCT生物測量儀（IOL Master  700）
+        equipment_name_3: Icare回彈式眼壓計
+        equipment_name_4: 日本尼德克綜合電腦驗光儀
+        equipment_name_5: 日本尼德克手持綜合電腦驗光儀
+        equipment_name_6: 天狼星三維角膜地形圖及眼前節分析系統
+      equipment_des:
+        equipment_des_1: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_2: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_3: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_4: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_5: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+        equipment_des_6: 蔡司IOLMaster 700具有掃頻生物測量技術，建立在近20年的光學生物測量經驗的基礎上。憑藉全角膜曲率測量（TK），獲得專利的角膜到視網膜掃描顯示了貫穿整個眼睛的縱向切面的解剖細節。在白內障手術過程中，獲取一個參考圖像，並將其用於術中圖像的匹配。
+    awards:
+      awards: 企業榮譽
+      awards_year_1: "2021"
+      awards_year_2: "2020-2021"
+      awards_year_3: "2020"
+      awards_year_4: "2020"
+      awards_year_5: "2020"
+      awards_year_6: "2021"
+      awards_year_7: "2019"
+      awards_year_8: "2022"
+      awards_year_9: "2022"
+      awards_year_10: "2022"
+      awards_year_11: "2022"
+      awards_year_12: "2022"
+      awards_year_13: "2023"
+      awards_year_14: "2024"
+      awards_des_1: 香港星級品牌企業獎
+      awards_des_2: 商界展關懷
+      awards_des_3: 亞洲最佳價值服務大獎
+      awards_des_4: 香港旅遊業十優推介
+      awards_des_5: 香港最優秀企業大獎
+      awards_des_6: 香港服務名牌
+      awards_des_7: 香港健康產業大獎
+      awards_des_8: 大灣區企業-傑出獎
+      awards_des_9: 開心工作間
+      awards_des_10: 香港最有價值品牌大獎
+      awards_des_11: 社會資本動力獎-標誌獎
+      awards_des_12: 香港卓越服務名牌
+      awards_des_13: HKCT企業大獎 - 年度傑出綜合專科醫療服務
+      awards_des_14: 香港公益金 -「公益卓越獎」
+      awards_des_15: 「ESG約章」行動
+      awards_des_16: 香港經濟日報企業大獎
+      awards_des_17: 「健康Easy卓越大獎2024」
+  medical_team:
+    medical_team: 醫療團隊
+    medical_team_title: 醫 療 團 隊
+    medical_team_header_title: 醫療團隊｜眼科專科醫生 | 香港希瑪眼科中心
+    doctorList:
+      doctor_1:
+        doctor_1_name: 林順潮醫生
+        doctor_1_intro: 香港希瑪國際眼科醫療集團創辦人
+        doctor_1_en_name: Dr. Dennis Lam
+        doctor_1_education:
+          doctor_1_education_1: 香港大學內外全科醫學士
+          doctor_1_education_2: 香港醫學專科學院院士(眼科)
+          doctor_1_education_3: 香港眼科醫學院院士
+          doctor_1_education_4: 英國愛丁堡皇家外科醫學院院士(眼科)
+          doctor_1_education_5: 英國皇家眼科學院院士
+          doctor_1_education_6: 香港中文大學醫學博士
+      doctor_2:
+        doctor_2_name: 李佑榮醫生
+        doctor_2_en_name: Dr. Vincent Lee
+        doctor_2_education:
+          doctor_2_education_1: 香港中文大學內外全科醫學士
+          doctor_2_education_2: 香港醫學專科學院院士(眼科)
+          doctor_2_education_3: 香港眼科醫學院院士
+          doctor_2_education_4: 英國愛丁堡皇家外科醫學院院士
+          doctor_2_education_5: 香港外科醫學院院士
+          doctor_2_education_6: 香港中文大學流行病學與生物統計學理學碩士
+          doctor_2_education_7: 香港中文大學流行病學與生物統計學士後文憑
+      doctor_3:
+        doctor_3_name: 范愷醫生
+        doctor_3_en_name: Dr. Alex Fan
+        doctor_3_education:
+          doctor_3_education_1: 香港大學內外全科醫學士
+          doctor_3_education_2: 香港醫學專科學院院士(眼科)
+          doctor_3_education_3: 香港眼科醫學院院士
+          doctor_3_education_4: 英國愛丁堡皇家外科醫學院院士(眼科)
+          doctor_3_education_5: 英國皇家眼科學院院士
+          doctor_3_education_6: 新加坡國立大學醫學碩士(眼科)
+      doctor_4:
+        doctor_4_name: 黃俊華醫生
+        doctor_4_en_name: Dr. Alex Wong
+        doctor_4_education:
+          doctor_4_education_1: 香港大學內外全科醫學士
+          doctor_4_education_2: 香港醫學專科學院院士(眼科)
+          doctor_4_education_3: 香港眼科醫學院院士
+          doctor_4_education_4: 英國愛丁堡皇家外科醫學院院員
+          doctor_4_education_5: 英國格拉斯哥皇家外科醫學院院士
+      doctor_5:
+        doctor_5_name: 劉凱珊醫生
+        doctor_5_en_name: Dr. Flora Lau
+        doctor_5_education:
+          doctor_5_education_1: 香港大學內外全科醫學士
+          doctor_5_education_2: 香港醫學專科學院院士(眼科)
+          doctor_5_education_3: 香港眼科醫學院院士
+          doctor_5_education_4: 英國愛丁堡皇家外科醫學院院員
+          doctor_5_education_5: 香港大學醫療科學碩士
+          doctor_5_education_6: 澳洲悉尼大學兒科文憑
+      doctor_6:
+        doctor_6_name: 李煒業醫生
+        doctor_6_en_name: Dr. Jacky Lee
+        doctor_6_education:
+          doctor_6_education_1: 香港大學內外全科醫學士
+          doctor_6_education_2: 英國皇家眼科醫學院院士
+          doctor_6_education_3: 香港醫學專科學院院士(眼科)
+          doctor_6_education_4: 香港眼科醫學院院士
+          doctor_6_education_5: 英國愛丁堡皇家外科醫學院院士(眼科)
+          doctor_6_education_6: 英國愛丁堡皇家外科醫學院院員
+          doctor_6_education_7: 英國格拉斯哥皇家醫學院外科院士
+      doctor_7:
+        doctor_7_name: 邱俊源醫生
+        doctor_7_en_name: Dr. Jackey Yau
+        doctor_7_education:
+          doctor_7_education_1: 香港中文大學內外全科醫學士
+          doctor_7_education_2: 香港眼科醫學院院士
+          doctor_7_education_3: 英國愛丁堡皇家外科醫學院院員
+          doctor_7_education_4: 香港醫學專科學院院士(眼科)
+      doctor_8:
+        doctor_8_name: 李琬微醫生
+        doctor_8_en_name: Dr. Emmy Li
+        doctor_8_education:
+          doctor_8_education_1: 香港大學內外全科醫學士
+          doctor_8_education_2: 英國愛丁堡皇家外科醫學院院士(眼科)
+          doctor_8_education_3: 香港醫學專科學院院士(眼科)
+          doctor_8_education_4: 香港眼科醫學院院士
+          doctor_8_education_5: 英國愛丁堡皇家外科醫學院院員
+          doctor_8_education_6: 香港大學公共衛生科碩士
+      doctor_9:
+        doctor_9_name: 胡偉君醫生
+        doctor_9_en_name: Dr. Wu Wai Kwan
+        doctor_9_education:
+          doctor_9_education_1: 香港中文大學內外全科醫學士
+          doctor_9_education_2: 英國愛丁堡皇家外科醫學院院士
+          doctor_9_education_3: 香港醫學專科學院院士(眼科)
+          doctor_9_education_4: 香港眼科醫學院院士(眼科)
+      doctor_10:
+        doctor_10_name: 李少雄醫生
+        doctor_10_en_name: Dr. Patrick Li
+        doctor_10_education:
+          doctor_10_education_1: 香港中文大學內外全科醫學士
+          doctor_10_education_2: 香港眼科醫學院院士
+          doctor_10_education_3: 香港醫學專科學院院士(眼科)
+          doctor_10_education_4: 英國愛丁堡皇家外科醫學院院士
+          doctor_10_education_5: 英國格拉斯哥皇家外科醫學院院士
+          doctor_10_education_6: 新加坡國立大學眼科醫學碩士
+          doctor_10_education_7: 香港中文大學內科醫學文憑
+          doctor_10_education_8: 澳洲蒙納殊大學家庭醫學文憑
+      doctor_11:
+        doctor_11_name: 黎浩樺醫生
+        doctor_11_en_name: Dr. Kenny Lai
+        doctor_11_education:
+          doctor_11_education_1: 香港中文大學內外全科醫學士
+          doctor_11_education_2: 香港眼科醫學院院士
+          doctor_11_education_3: 香港醫學專科學院院士(眼科)
+          doctor_11_education_4: 英國愛丁堡皇家外科醫學院院員
+      doctor_12:
+        doctor_12_name: 李德倫醫生
+        doctor_12_en_name: Dr. Stephen Li
+        doctor_12_education:
+          doctor_12_education_1: 香港大學內外全科醫學士
+          doctor_12_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_12_education_3: 香港眼科醫學院院士
+          doctor_12_education_4: 香港醫學專科學院院士(眼科)
+      doctor_13:
+        doctor_13_name: 黃禮文醫生
+        doctor_13_en_name: Dr. Raymond Wong
+        doctor_13_education:
+          doctor_13_education_1: 香港大學內外全科醫學士
+          doctor_13_education_2: 英國愛丁堡皇家外科醫學院院員(眼科)
+          doctor_13_education_3: 香港眼科醫學院院士
+          doctor_13_education_4: 香港醫學專科學院院士(眼科)
+      doctor_14:
+        doctor_14_name: 張瀞之醫生
+        doctor_14_en_name: Dr. Janice Cheung
+        doctor_14_education:
+          doctor_14_education_1: 香港大學內外全科醫學士
+          doctor_14_education_2: 香港眼科醫學院院士
+          doctor_14_education_3: 香港醫學專科學院院士(眼科)
+          doctor_14_education_4: 英國愛丁堡皇家外科醫學院院士(眼科)
+          doctor_14_education_5: 英國格拉斯哥皇家外科醫學院院士
+          doctor_14_education_6: 英國愛丁堡皇家外科醫學院院員
+      doctor_15:
+        doctor_15_name: 林寶生醫生
+        doctor_15_en_name: Dr. Carol Lam
+        doctor_15_education:
+          doctor_15_education_1: 香港中文大學內外全科醫學士
+          doctor_15_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_15_education_3: 香港眼科醫學院院士
+          doctor_15_education_4: 香港醫學專科學院院士(眼科)
+      doctor_16:
+        doctor_16_name: 林己明醫生
+        doctor_16_en_name: Dr. Jasmine Lam
+        doctor_16_education:
+          doctor_16_education_1: 香港大學內外全科醫學士
+          doctor_16_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_16_education_3: 香港醫學專科學院院士(眼科)
+          doctor_16_education_4: 香港眼科醫學院院士
+      doctor_17:
+        doctor_17_name: 張明權醫生
+        doctor_17_en_name: Dr. Paul Cheung
+        doctor_17_education:
+          doctor_17_education_1: 香港大學內外全科醫學士
+          doctor_17_education_2: 愛爾蘭皇家內外科醫學院
+          doctor_17_education_3: 英國格拉斯哥皇家外科醫學院眼科文憑
+          doctor_17_education_4: 香港眼科醫學院院士
+          doctor_17_education_5: 香港醫學專科學院院士(眼科)
+      doctor_18:
+        doctor_18_name: 陳偉樂醫生
+        doctor_18_en_name: Dr. Leo Chan
+        doctor_18_education:
+          doctor_18_education_1: 香港大學內外全科醫學士
+          doctor_18_education_2: 英國愛丁堡皇家外科醫學院院員(眼科)
+          doctor_18_education_3: 香港眼科醫學院院士
+          doctor_18_education_4: 香港醫學專科學院院士(眼科)
+          doctor_18_education_5: 香港中文大學醫療管理學理學碩士
+      doctor_19:
+        doctor_19_name: 梁苑珊醫生
+        doctor_19_en_name: Dr. Gloria Leung
+        doctor_19_education:
+          doctor_19_education_1: 澳洲雪梨大學內外全科醫學士
+          doctor_19_education_2: 新加坡國立大學醫學眼科碩士
+          doctor_19_education_3: 英國愛丁堡皇家外科醫學院院員
+          doctor_19_education_4: 香港眼科醫學院院士
+          doctor_19_education_5: 香港醫學專科學院院士(眼科)
+      doctor_20:
+        doctor_20_name: 鄒樞韻醫生
+        doctor_20_en_name: Dr. Sharon Chow
+        doctor_20_education:
+          doctor_20_education_1: 香港大學內外全科醫學士
+          doctor_20_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_20_education_3: 香港眼科醫學院院士
+          doctor_20_education_4: 香港醫學專科學院院士(眼科)
+      doctor_21:
+        doctor_21_name: 尹浩柟醫生
+        doctor_21_en_name: Dr. Kelvin Wan
+        doctor_21_education:
+          doctor_21_education_1: 香港中文大學內外全科醫學士
+          doctor_21_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_21_education_3: 英國皇家外科醫學院院員
+          doctor_21_education_4: 英國格拉斯哥皇家醫學院外科院員
+          doctor_21_education_5: 香港眼科醫學院院士
+          doctor_21_education_6: 香港醫學專科學院院士(眼科)
+      doctor_22:
+        doctor_22_name: 鄒樂韻醫生
+        doctor_22_en_name: Dr. Loraine Chow
+        doctor_22_education:
+          doctor_22_education_1: 香港大學內外全科醫學士
+          doctor_22_education_2: 英國愛丁堡皇家外科醫學院院員
+          doctor_22_education_3: 香港醫學專科學院院士(眼科)
+          doctor_22_education_4: 香港眼科醫學院院士
+      doctor_23:
+        doctor_23_name: 陳鼎鼐醫生
+        doctor_23_en_name: Dr. Dylan Chan
+        doctor_23_education:
+          doctor_23_education_1: 香港中文大學內外全科醫學士
+          doctor_23_education_2: 英國格拉斯哥皇家醫學院外科院士
+          doctor_23_education_3: 香港外科醫學院院士
+          doctor_23_education_4: 香港眼科醫學院院士
+          doctor_23_education_5: 香港醫學專科學院院士(眼科)
+    doctor_edu: 學歷
+    doctor_order: 預約
+  medical_service:
+    medical_service: 醫療服務
+    medical_service_title: 醫 療 服 務
+    cataract: 
+      cataract: 白內障專科
+      cataract_title: 白內障
+    multiFocal_intraocular_lens: 多焦點人工晶體
+    dazzling_operation: 耀眼行動
+    medical_service_cataract_head: "白內障｜希瑪眼科｜醫療服務"
+    service_cataract_title:
+      service_cataract_title1: 白内障
+      service_cataract_title_son1: 白內障影響日常生活？
+      service_cataract_title_son2: 為什麼會患上白內障？
+      service_cataract_title_son3: 白內障會引起哪些症狀？
+      service_cataract_title_son4: 白內障治療，手術最快20分鐘，快速恢復正常視力！
+      service_cataract_title_son5: 激光輔助白內障手術治療的優點︰
+      service_cataract_title_son6: 選擇人工晶體須知
+      service_cataract_title_son7: 白內障的術後注意事項
+      service_cataract_title_son8: 您認識白內障手術嗎？
+      service_cataract_btn1: 即按為您解決煩惱
+      service_cataract_btn2: 別再遲疑！立即查詢白內障治療方案
+      service_cataract_btn3: 白內障形成的成因
+      service_cataract_btn4: 簡單自測︰您是否患上白內障？
+      service_cataract_btn5: 已有症狀？立即預約檢查
+      service_cataract_btn6: 立即預約見醫生了解手術！
+      service_cataract_btn7: 哪一款人工晶體適合您？
+      service_cataract_text1: 白內障是香港常見眼疾之一，初期幾乎沒有症狀，病情發展到中期常被誤以為只是眼睛老化現象。當發展到嚴重階段，患者看東西時會模糊不清，嚴重者甚至會完全失去視力。故此，及早發現，相當重要。
+      service_cataract_text2: 患有白內障，視力變模糊，看事物時會有疊層、殘影的感覺。病患影響您的視野，更使您的生活變得十分不便？
+      service_cataract_text3: 香港有九成患者都是因為年紀大﹑眼內晶體退化的原因而患上白內障。但其實小朋友或年輕人都有機會患上白內障，而近年白內障更有年輕化趨勢。
+      service_cataract_text4: 視力模糊是白內障的主要症狀，隨病情惡化，可能有更多症狀困擾您。
+      service_cataract_text5: 如果你有一項或以上的症狀，請不用感到焦慮，可聯絡我們約見眼科專科醫生，以盡快獲得正確的白內障診斷和適合你的白內障手術治療方案。
+      service_cataract_text6: 到目前為止，並沒有藥物可以使混濁的晶體（白內障）恢復透明。接受白內障手術是治療白內障的唯一方法。
+      service_cataract_text7: 當下主流的白內障手術方式為超聲乳化白內障切除術聯合人工晶狀體植入術。只需要經過一個直徑不到3毫米的切口，用超聲波將混濁的晶體乳化成微細碎片，然後吸出，最後置入一個人工晶狀體，整個白內障手術過程只需10~20分鐘。術後傷口一般毋須縫線。大部分白內障手術只需要使用表面麻醉，不必打針便可完成手術。
+      service_cataract_text8: 最新一代的微創超聲波乳化白內障手術，可以提高治療的精準度。只需使用較低超聲波能量，將混濁晶體乳化分解並吸走，傷口小、恢復時間快、手術時間短，大大減低白內障手術對角膜造成的傷害、傷口感染或併發症。
+      service_cataract_text9: 經過術前詳細檢查及規劃，可制訂個人化人工晶體置換方案。根據患者實際情況、對用眼的要求以及經濟狀況等因素來考慮。 人工晶體根據其功能可分以下幾種︰
+      service_cataract_text10: "*此表格內預設單焦點人工晶體為看遠。"
+      service_cataract_text11: 現代白內障手術更精準！
+      service_cataract_text12: 5大常見症狀︰
+      service_cataract_down1: 如何選擇合適的人工晶體？
+      service_cataract_down2: 白內障
+      service_cataract_down_text: 下載小冊子
+      service_cataract_array_fator:
+        cataract_array_fator1: 紫外線
+        cataract_array_fator2: 吸煙習慣
+        cataract_array_fator3_1: 深度近視
+        cataract_array_fator3_2: （600度或以上）
+        cataract_array_fator4: 糖尿病
+        cataract_array_fator5_1: 使用某些藥物
+        cataract_array_fator5_2: 如類固醇
+        cataract_array_fator6_1: 出生時就患有
+        cataract_array_fator6_2: 先天性白內障
+        cataract_array_fator7_1: 眼睛曾經
+        cataract_array_fator7_2: 受過外傷
+      service_cataract_array_symptom:
+        cataract_array_symptom1_1: 視力模糊、
+        cataract_array_symptom1_2: 視力下降
+        cataract_array_symptom2_1: 眩光、重影、
+        cataract_array_symptom2_2: 日盲癥
+        cataract_array_symptom3_1: 事物顏色
+        cataract_array_symptom3_2: 變得暗淡、變形
+        cataract_array_symptom4: 夜間視力下降
+        cataract_array_symptom5_1: 須經常更換眼鏡
+        cataract_array_symptom5_2: 或隱形眼鏡度數
+      service_cataract_array_surgery:
+        cataract_text1: 激光精準度高
+        cataract_text2: 人工晶體位置更準確
+        cataract_text3: 可使用較低的超聲波
+        cataract_text4: 能量處理白內障
+        cataract_lineText1: 步驟一
+        cataract_lineText2: 步驟二
+        cataract_lineText3: 步驟三
+        cataract_array_surgery1_1: 採用局部點眼藥水式
+        cataract_array_surgery1_2: 麻醉法
+        cataract_array_surgery2_1: 利用微細超聲波儀器
+        cataract_array_surgery2_2: 切除混濁的晶體
+        cataract_array_surgery3_1: 置入人工晶體，並好好固定住
+        cataract_array_surgery3_2: 術後傷口一般毋須縫線
+      service_cataract_array_icl:
+        cataract_array_icl1:
+          icl1_type: 晶體類型
+          icl1_monofocal1: 單焦點
+          icl1_monofocal2: 人工晶體
+          icl1_astigmatism1: 散光型
+          icl1_astigmatism2: 人工晶體
+          icl1_multipleFocus1: 多焦點
+          icl1_multipleFocus2: 人工晶體
+        cataract_array_icl2:
+          icl2_type: 遠距離視力
+          icl2_monofocal: 很好
+          icl2_astigmatism1: 與單焦點
+          icl2_astigmatism2: 人工晶體一樣
+          icl2_multipleFocus: 良好
+        cataract_array_icl3:
+          icl3_type: 中距離視力
+          icl3_monofocal: 很好
+          icl3_astigmatism1: 與單焦點
+          icl3_astigmatism2: 人工晶體一樣
+          icl3_multipleFocus: 良好
+        cataract_array_icl4:
+          icl4_type: 近距離視力
+          icl4_monofocal: 很好
+          icl4_astigmatism1: 與單焦點
+          icl4_astigmatism2: 人工晶體一樣
+          icl4_multipleFocus: 良好
+        cataract_array_icl5:
+          icl5_type: 優點
+          icl5_monofocal1: 良好視力質素
+          icl5_monofocal2: （但無法同時對焦遠近距離視力）
+          icl5_astigmatism1: 良好視力質素
+          icl5_astigmatism2: 一併解決散光問題
+          icl5_multipleFocus1: 良好遠，中，近視力
+          icl5_multipleFocus2: 大多可不依賴眼鏡
+        cataract_array_icl6:
+          icl6_type: 適合人群
+          icl6_monofocal1: 不介意配戴眼鏡人士
+          icl6_monofocal2: 要求更好視力質素人士
+          icl6_monofocal3: 有經濟考慮人士
+          icl6_astigmatism1: 不介意配戴眼鏡人士
+          icl6_astigmatism2: 要求更好視力質素人士
+          icl6_astigmatism3: 術前患有散光人士
+          icl6_multipleFocus1_1: 不想配戴眼鏡人士
+          icl6_multipleFocus1_2: 不優先考慮夜間駕駛視力    需要人士
+          icl6_multipleFocus2: 經濟能力較好人士
+          icl6_multipleFocus3: 無其他嚴重眼病人士
+      service_cataract_array_announcements:
+        cataract_array_announcements1: 為盡快令傷口復原及避免細菌感染，白內障手術後蓋上紗布及眼罩需要保留一晚，直到第二天才拆開。如果不慎鬆開，再用消毒紗布重新蓋上。
+        cataract_array_announcements2: 一般建議病人白內障手術後於睡覺時蓋上保䕶眼罩兩星期，可以預防不必要的踫撞及捽眼睛。
+        cataract_array_announcements3: 白內障手術後當天一般都不建議洗頭，注意沐浴時切勿沾濕紗布。一般建議頭一星期平臥或仰臥洗頭，避免污水流入眼內或於洗頭時戴上如泳鏡作保護。
+        cataract_array_announcements4: 白內障手術後須保持傷口清潔，建議用化妝綿，凍開水，先洗下眼皮，再洗上眼皮，貼近眼睫毛嘅根部，由內至外一下過，一般每次滴眼水前清潔，每天四至六次。
+        cataract_array_announcements5: 白內障手術後禁止揉眼以免影響傷口癒合。應避免拿重物，90度彎身動作如綁鞋帶等。劇烈運動如跑步、跳水、有身體碰撞機會的運動等亦不適宜。
+        cataract_array_announcements6: 接受白內障手術後應跟足指示，定時滴用由醫生處方的眼藥水，並保持均衡飲食。
+        cataract_array_announcements7: 白內障手術後如果眼睛無故出血、流膿、劇痛或視力突然模糊等，應盡快求醫，以免延誤治療。
+      service_cataract_array_meet:
+        cataract_array_meet_q1: Q：白內障成熟時才能接受白內障手術治療？
+        cataract_array_meet_a1_1: 隨著白內障摘除及人工晶體植入技術不斷進步，現今的白內障手術治療可謂成效高﹑風險低。患者毋須待白內障成熟便可接受白內障手術治療，而且，白內障愈熟，治療的難度也相應提高，出現併發症的風險也愈高。
+        cataract_array_meet_a1_2: 因此，當患者感到工作及日常生活受影響時，便應積極考慮接受治療。讀者之所以有這誤解，主要是由於在人工晶體被廣泛使用於白內障手術治療前，當病人的晶體被摘除後，便馬上變成深遠視患者，要配戴厚厚的遠視鏡，直接影響影像質素；如果只摘除一隻眼內的白內障，更會出現嚴重的「鴛鴦眼」，大多數人也不能適應。因此，從前的眼科醫生多建議病人待雙眼的白內障成熟才接受白內障手術治療。
+        cataract_array_meet_q2: Q：人工晶體可以使用多久？需要更換嗎？
+        cataract_array_meet_a2: 植入了的人工晶體，通常可終身使用，無需更換。在極少數情況下，出現人工晶體位置異常，或者無法適應所植入的多焦點人工晶體時（約2%個案會發生），可能需要考慮更換。
+        cataract_array_meet_q3: Q：接受白內障手術治療後，還需要戴眼鏡嗎？
+        cataract_array_meet_a3: 因應各人用眼情況和眼睛條件，眼科醫生可為病人設計白內障手術後目標視力，因此有機會無需再戴眼鏡。因應不同人對視力質素的期望和生活需要，也可以隨心再配戴淺度數眼鏡，獲取更好的視力質素。
+        cataract_array_meet_q4: Q：治療白內障的手術過程會痛嗎？
+        cataract_array_meet_a4: 白內障手術治療會在局部麻醉下進行。雖然患者治療過程清醒，但大多數患者並不感到疼痛。
+        cataract_array_meet_q5: Q：白內障手術治療需要在醫院進行嗎？
+        cataract_array_meet_a5_1: 白內障手術此項微創治療不需全身麻醉，只用麻醉眼藥水，也不需留院觀察。本診所設有多間符合國際標準的無菌手術室、先進的檢測和矯視儀器，安全、可靠。
+        cataract_array_meet_a5_2: 然而，部分白內障手術病人或需全身麻醉，則需要在醫院接受治療，詳情可向你的眼科專科醫生查詢。
+        cataract_array_meet_q6: Q：接受治療後什麼時候可以進行日常活動 / 運動？
+        cataract_array_meet_a6_1: 白內障手術後第一天覆診，如無異常，病人可進行一般運動（如：打太極、行山、散步等），但接觸性運動（如：拳擊等）則暫時不建議進行。可參考以下例子：
+        cataract_array_meet_a6_2: 散步：白內障手術後24小時
+        cataract_array_meet_a6_3: 坐飛機：白內障手術後24小時
+        cataract_array_meet_a6_4: 游水：為預防感染，建議白內障手術後1周進行
+        cataract_array_meet_a6_5: 其他面部或牙科治療：建議最少白內障手術後1周進行，安全起見可以1月後進行。
+      service_cataract_array_Navigation:
+        cataract_array_Navigation1: 成因
+        cataract_array_Navigation2: 症狀
+        cataract_array_Navigation3: 治療
+        cataract_array_Navigation4: 人工晶體須知
+        cataract_array_Navigation5: 術後注意事項
+        cataract_array_Navigation6: 常見問題
+    glaucoma: 青光眼
+    medical_service_glaucoma_head: 青光眼｜希瑪眼科｜醫療服務
+    service_glaucoma_title:
+      service_glaucoma_title1: 什麼是青光眼？
+      service_glaucoma_title2: 青光眼成因
+      service_glaucoma_title3: 青光眼的症狀
+      service_glaucoma_title4: 青光眼的惡化過程
+      service_glaucoma_title5: 慢性青光眼
+      service_glaucoma_title6: 急性青光眼
+      service_glaucoma_title7: 先天性青光眼
+      service_glaucoma_title8: 先天性青光眼症狀
+      service_glaucoma_title9: 原發性青光眼
+      service_glaucoma_title10: 繼發性青光眼
+      service_glaucoma_title11: 青光眼高危人士
+      service_glaucoma_title12: 青光眼主要診斷方法
+      service_glaucoma_title13: 青光眼的治療
+      service_glaucoma_title14: 預防青光眼
+      service_glaucoma_title15: 青光眼誤區
+      service_glaucoma_title16: 繼發性青光眼種類
+      service_glaucoma_title17: 青光眼的類別
+      service_glaucoma_btn1_1: 如您是青光眼高危人士
+      service_glaucoma_btn1_2: 立即WhatsApp預約檢查
+      service_glaucoma_btn2_1: 不想青光眼惡化？
+      service_glaucoma_btn2_2: 立即致電預約檢查
+      service_glaucoma_btn3_1: 急性青光眼會突然來襲
+      service_glaucoma_btn3_2: 立即致電預約診治
+      service_glaucoma_text1: 青光眼是一種視神經病變。視神經就像電纜般，把眼睛看到的景物傳送到大腦視覺中樞。青光眼患者先經歷周邊視野損害，然後出現中央視力下降，嚴重更會失明。早至中期的慢性青光眼基本沒有病徵，所以不少患者難以察覺，當病情發展到後期，死去的神經細胞已藥石無靈，因此青光眼有「視力小偷」的別稱。
+      service_glaucoma_text2: 青光眼主要是由於眼球內壓力（眼壓）上升所致。位於眼晴前方的前房，充滿清澈的分泌液（房水）不停地流入，再經由前房角流出。如果房水的流動遇上阻塞，不能排出房水，就會導致眼壓增加，對視神經造成壓迫，令到血液循環不佳而使視神經受損。
+      service_glaucoma_text3: 高度近視及長期使用類固醇眼藥人士，或眼球有外傷撞擊的病史，會有較大機會患上青光眼。另外，偏頭痛、心血管疾病、雷諾氏症候群、低血壓、高膽固醇症、高血脂症、糖尿病等，這些全身性疾病均可能引致青光眼。
+      service_glaucoma_text4: 青光眼分為不同種類，因此症狀亦有所不同，以下是青光眼患者常見症狀︰
+      service_glaucoma_text5: 如果出現以上情況，建議盡快聯絡眼科專科醫生進行檢查，否則視力可能快速退化，甚至有機會在幾天內失明。
+      service_glaucoma_text6: 屬較常見的青光眼種類，患者早期沒有明顯病徵，但隨著病情惡化，視力會慢慢減退。因慢性青光眼的病徵不明顯，在視力變化的初期，患者有機會以為只是用眼過度或者老化導致視力變差，直到視野範圍慢慢收窄才察覺。當病情嚴重時，大部分患者已出現視野缺失及喪失大部分視力，所以慢性青光眼有「視力小偷」之稱，偷偷地奪去患者視力。
+      service_glaucoma_text7: 屬於眼科急症，病情突如其來，患者眼壓會在短時間內上升，突然出現視力模糊，看燈光時有環形彩虹圈，有眼紅、眼痛、頭痛、噁心、嘔吐等症狀。如出現以上情況，應該立刻求醫。眼科專科醫生會以不同治療方法（口服藥物，眼藥水，甚至小手術等）迅速把眼壓降低以保護視神經，後續如有需要再考慮其他治療（例如激光周邊虹膜切開術等）。若急性青光眼沒有及時治療，患者視力可能永久受損。
+      service_glaucoma_text8: 大多於嬰兒出生時已出現，因胚胎期前房角發育異常，阻礙了房水排出所致的遺傳性眼病。這種青光眼有1/3機會出現於胎兒期，即出生後已有典型表徵；2/3機會出現於出生後，其發生率為1:5000-10000。初生時已有青光眼的表徵，稱為嬰幼兒型青光眼；3歲以上及30歲以下人士稱為青少年型青光眼。
+      service_glaucoma_text9: 雖然青光眼是不可逆轉的眼疾，但可以抑制和控制。先天性青光眼不易被發現，而且如果發現較晚則不易治療。
+      service_glaucoma_text10: 原發性青光眼是胎兒在發育過程中，前房角發育出現異常，小樑網管系統不能發揮有效房水引流功能，而導致眼壓升高。
+      service_glaucoma_text11: 由於這是一種慢性眼疾，可導致不可逆轉的視功能障礙。多數確診的病人需長期治療，如不堅持治療，視野範圍會越來越小，最終引致失明。原發性青光眼可能受家族遺傳影響，如患者本身有深近視或家人曾經患有青光眼均會增加患上青光眼的風險。
+      service_glaucoma_text12: 有別於其他青光眼，繼發性青光眼是由於某些眼病或全身疾病影響或破壞了正常房水循環，使房水排出受阻而引起眼壓升高，病因比較明確。
+      service_glaucoma_text13: 臨床診斷時，患者會接受一系列的檢查及測試，包括︰視力檢查、視野檢查、眼底檢查、眼壓測度等，眼科專科醫生還會根據患者過去的病史及家族史診斷，常見的檢查如下︰
+      service_glaucoma_text14: 治療青光眼以有效控制眼壓、防止或減慢青光眼的惡化為目標。眼科專科醫生初期一般以藥物控制青光眼病情，達至保護及保持病人的視神經組織及其功能，減少視神經進一步的損害。
+      service_glaucoma_text15: 若用藥後仍無法控制病情，醫生會考慮採用手術治療，以平衡房水的生成和排出，使眼球壓力降至安全水平，達致目標眼壓。常見手術方案如下︰
+      service_glaucoma_meetArr:
+        meetArr_title1: Q：青光眼是老年人專屬，年輕人好少機會患上嗎？
+        meetArr_agree1: 青光眼是一種視神經病變，主要是由於眼球內壓力（眼壓）上升所致。年齡超過40歲是青光眼高危一族，但是年輕人也有患青光眼的風險。深近視、有青光眼家族遺傳病史，患糖尿病、高血壓、心血管疾病，眼曾受過眼創傷，又或者長期使用類固醇，都有機會增加眼壓，從而增加青光眼風險。
+        meetArr_title2: Q：青光眼無法醫治嗎？
+        meetArr_agree2: 青光眼的治療以控制眼壓、防止或減慢青光眼的惡化為目標。雖然青光眼是無法根治，但只要及早診斷，加以適當治療，仍可以降低眼壓、預防或減慢視力流失。
+        meetArr_title3: Q：青光眼患者雙眼真的會發光嗎？
+        meetArr_agree3: 在一般情況，青光眼患者的眼睛不會發光或變成青綠色。青光眼患者症狀以眼睛脹痛、眼睛充血，突然視力模糊為主，部分患者還有機會出現頭痛或偏頭痛，噁心甚至嘔吐，隨病情惡化視野會不斷收窄。
+        meetArr_title4: Q：視力未下降就不用求醫嗎？
+        meetArr_agree4: 慢性青光眼患者通常沒有明顯徵狀，當出現視力模糊、視野受損，很可能屬晚期階段。如出現視力下降才求醫，視力可能永久受損，所以建議青光眼高危人士定期檢查眼睛，以免青光眼偷走視力。而急性青光眼有明顯徵狀，包括︰眼痛、視力模糊、眼紅、頭痛、嘔吐等，眼壓會在短時間內上升，建議患者立即向眼科醫生求診，以保存視力。
+      service_glaucoma_symptoms:
+        symptoms_text1: 眼睛脹痛
+        symptoms_text2: 眼睛充血
+        symptoms_text3_1: 突然
+        symptoms_text3_2: 視力模糊
+        symptoms_text4_1: 頭痛/
+        symptoms_text4_2: 偏頭痛
+        symptoms_text5: 噁心/嘔吐
+        symptoms_text6: 視野收窄
+      service_glaucoma_worsen:
+        worsen_text1: 早期
+        worsen_text2: 中期
+        worsen_text3: 晚期
+      service_glaucoma_congenital:
+        congenital_title1: 流淚或畏光
+        congenital_text1: 是早期角膜水腫伴有角膜刺激症狀所致。
+        congenital_title2: 角膜混濁
+        congenital_text2: 早期為角膜上皮及上皮下水腫，引起輕度乳白色混濁。出現水腫時，混濁會更加明顯。當眼壓降低後，角膜可變透明，若不及時治療，會呈永久性混濁。
+        congenital_title3: 角膜擴大
+        congenital_text3: 角膜水腫後，眼壓繼續升高，眼球壁受壓力作用而擴張，使整個眼球不斷增大，角膜直徑可達12mm左右。
+      service_glaucoma_kind:
+        kind_text1: 虹膜睫狀體炎繼發性青光眼
+        kind_detail1: 急性虹膜睫狀體炎一般不引起眼壓升高，只有當發炎滲出物增加，房水中蛋白質含量較高時，才會引起眼壓中度升高。反覆發作的慢性虹膜睫狀體炎，會引起廣泛的瞳孔後黏連或周邊虹膜前黏連，房水排出受阻，以致眼壓升高。此病一般發病突然，典型眼壓升高的青光眼症狀，包括：霧視、虹視、頭痛，甚至噁心、嘔吐等，而症狀消失後大多無損視功能和視野。但反覆發作，長期眼壓升高，也可能對視神經造成永久損傷，從而出現不可逆轉的視力損失。
+        kind_text2: 青光眼睫狀體炎綜合症
+        kind_detail2: 患者多為中年男性。其典型症狀為突發性眼壓升高，伴有輕度睫狀體炎，即角膜後壁有大塊的脂肪沉著物，前房有少量浮游物。會反覆發作，一般無自覺症狀，僅有輕度不適，如眼壓升高會導致角膜水腫，出現視物模糊。
+        kind_text3: 皮質類固醇性青光眼
+        kind_detail3: 長期局部滴用或全身使用皮質類固醇，可引致眼壓升高。其臨床表現與原發性開角型青光眼相似，一般需詳細了解過去用藥情況以明確診斷。
+        kind_text4: 白內障所致繼發性青光眼
+        kind_detail4: 患上老年性白內障，晶體可變得腫脹，體積增加，把虹膜推前。因此，眼睛前房較淺、房角較窄的患者，如患上白內障，前房可能進一步變淺，甚至導致房角關閉，以致類似急性閉角型青光眼的急性眼壓升高。部分病人也可能因膨脹的晶體阻擋瞳孔，發生瞳孔阻滯，房水在後方無法流出，導致眼壓急劇升高，引發急性青光眼。
+        kind_text5: 外傷性眼內積血繼發性青光眼
+        kind_detail5_1: (1)眼睛受外傷後，大量前房積血或小梁損傷會引致早期急性眼壓升高。紅血球堆積在小梁網上、血塊阻塞瞳孔或小梁網炎性水腫，使房水排出受阻。
+        kind_detail5_2: (2)玻璃體積血、分解的血紅蛋白被巨噬細胞吞噬或紅血球退化，可阻塞小梁網，令房水外流受阻而引致眼壓升高，引起溶血性青光眼或血影細胞性青光眼。
+        kind_text6: 房角後退性青光眼
+        kind_detail6: 眼球鈍挫傷後，房角劈裂，以致傷後早期、數月、甚至十多年後發生眼壓升高，前房角鏡檢查可見房角異常增寬。房角劈裂者應定期檢查，測量眼壓。
+        kind_text7: 新生血管性青光眼
+        kind_detail7_1: 由於視網膜中央靜脈阻塞、糖尿病視網膜病變等血管紊亂疾病而引起新生血管性青光眼。此類青光眼的病因複雜，病理變化主要是眼後節缺氧或局部眼前節缺氧，引起虹膜上及房角小梁網處形成纖維血管膜，導致周邊虹膜前黏連，阻礙房水排出，令眼壓升高。
+        kind_detail7_2: 其一般症狀為眼痛、眼脹、眼壓升高等。眼壓可達至60mmHg以上，常伴角膜水腫、虹膜新生血管、瞳孔緣色素外翻、房角內不同程度的周邊前黏連等。
+        kind_text8: 睫狀環阻滯性青光眼
+        kind_detail8: 又名惡性青光眼，是一種繼發性閉角型青光眼。多見於內眼治療，特別是接受青光眼過濾性治療後，由於睫狀環較小，晶狀體相對較大，當睫狀體水腫充血，睫狀環便進一步變小，與晶體赤道部或玻璃體相貼，以致後房水不能進入前房，向後逆流而積存在玻璃體腔內。同時，虹膜和晶狀體被向前推擠，使前房變淺，房角關閉。若一隻眼出現睫狀環阻滯性青光眼，另一隻眼也有發生類似疾病的風險。
+      service_glaucoma_crowd:
+        crowd_text1_1: 年齡超過40歲
+        crowd_text1_2: (60歲以上患青光眼
+        crowd_text1_3: 機會增加6倍)
+        crowd_text2: 有青光眼家族遺傳病史
+        crowd_text3: 深近視或嚴重遠視
+        crowd_text4: 患糖尿病
+        crowd_text5: 高血壓患者
+        crowd_text6: 患心血管疾病
+        crowd_text7: 眼曾受過眼創傷
+        crowd_text8: 長期使用類固醇
+      service_glaucoma_diagnostic:
+        diagnostic_text1: 眼壓檢查
+        diagnostic_text2: 視野測試
+        diagnostic_text3: 裂隙燈檢查
+        diagnostic_text4: 前房角接觸鏡檢查
+        diagnostic_text5: 視神經損傷程度的測試
+        diagnostic_text6_1: 檢查眼部房水排出
+        diagnostic_text6_2: 是否通暢
+      service_glaucoma_treat:
+        treat_remedy1: 治療方案
+        treat_name1: 治療名稱
+        treat_range1: 適用範圍
+        treat_remedy2: 常用治療方案
+        treat_name2_1: 小梁切除術
+        treat_name2_2: 非穿透性小梁術
+        treat_name2_3: 導管植入術
+        treat_name2_4: 睫狀體冷凝術或光凝術
+        treat_range2_1: 應用廣泛，適用於所有需要做眼外濾過術的青光眼
+        treat_range2_2: 適用於開角型青光眼，特別是晚期視野缺損嚴重的
+        treat_range2_3: 患者；對閉角型青光眼不適用
+        treat_range2_4: 適用於前2種方案效果不佳或惡性青光眼患者
+        treat_range2_5: 適用於青光眼末期或多次青光眼手術失敗後
+        treat_remedy3_1: 急性青光眼
+        treat_remedy3_2: 治療方案
+        treat_name3_1: 前房穿刺術
+        treat_name3_2: 激光虹膜邊緣成形術
+        treat_range3_1: 適用於急性青光眼的嚴重症狀
+        treat_range3_2: 作為預防急性青光眼發作的傳統治療方式
+        treat_remedy4_1: 合併白內障
+        treat_remedy4_2: 的手術方案
+        treat_name4: 白內障手術
+        treat_range4: 適用於有白內障的青光眼患者
+      service_glaucoma_guardAgainst:
+        guardAgainst_text1: 定期安排眼科檢查
+        guardAgainst_text2: 預防深近視及遠視
+        guardAgainst_text3: 保持良好生活習慣
+        guardAgainst_detail1: 建議40歲以上或青光眼高危人士，每半年或一年接受一次眼睛檢查。
+        guardAgainst_detail2: 從小開始養成良好用眼習慣，以免深近視或遠視增加青光眼風險。
+        guardAgainst_detail3: 糖尿病、高血壓、心血管疾病都可能增加患青光眼機會。戒煙戒酒、充分睡眠、均衡飲食、多做帶氧運動，可有效預防青光眼。
+      service_glaucoma_navgation:
+        navgation_text1: 成因
+        navgation_text2: 症狀
+        navgation_text3: 類別
+        navgation_text4: 高危人士
+        navgation_text5: 診斷
+        navgation_text6: 治療
+        navgation_text7: 預防方法
+        navgation_text8: 常見問題
+      service_glaucoma_down: 青光眼
+      service_glaucoma_down_text: 下載小冊子
+    xerophthalmia: 乾眼症
+    xerophthalmia_head: '乾眼症｜希瑪眼科｜醫療服務'
+    xerophthalmia_con: 
+      xerophthalmiaInfo: 
+        name: 什麼是乾眼症 ？
+        text: 眼睛表面的淚水層（淚膜）對於維持眼睛健康、舒適及良好的視力十分重要。淚膜中的脂質、水液和黏液層，其中一層出現問題，以致淚水質量或分泌量有變，便會導致眼睛滋潤不足，並造成「乾眼症」。
+      xerophthalmiaType:
+        name: 乾眼症症狀
+        text1: 眼睛乾澀
+        text2: |
+                容易疲倦
+                眼皮緊繃
+        text3: |
+                眼癢、
+                有異物感
+        text4: |
+                眼痛、
+                有灼熱感
+        text5: |
+                眼睛分泌物、
+                黏稠
+        text6: |
+                眼睛會出現
+                紅腫、充血
+        text7: |
+                怕風、畏光、
+                對外在刺激很敏感
+        text8: |
+                嚴重者會角膜破皮
+                視力模糊
+      factor:
+        name: 乾眼症成因
+        context: "眼睛表面有一層淚膜，覆蓋在眼角膜及結膜上，形成一層濕潤保護膜，維持眼睛表面健康，淚液層由外到內可分為三層："
+        title1: 脂質層
+        text1: 由眼瞼的皮脂腺所分泌，在最外層，主要功用是增加淚膜表面張力，延緩水液層的蒸發，使眼瞼及眼球表面濕潤。
+        title2: 水液層
+        text2:  由淚腺所分泌，在中間層，使眼睛的表面濕潤、提供角膜氧氣、有殺菌及清除代謝物的作用。
+        title3: 黏液層
+        text3: 由結膜的杯狀細胞所產生，在最內層，使水液層能均勻分佈在結膜表面，減少貶眼時產生的摩擦。
+        context2: 淚膜中若有一層分泌不足或分佈不均勻，均可能造成「乾眼症」。
+        tearFilm: 
+          - title: 脂質層分泌不足
+            text: 由於眼瞼疾病造成眼瞼皮脂腺功能不良
+          - title: 水液層淚腺所分泌的淚液不足
+            text: 年齡增長，淚腺功能下降
+            text2: 先天性無淚腺
+            text3: 自體免疫疾病
+            text4: 長時間配戴隱形眼鏡
+            text5: 長期使用某些眼藥水或藥物
+            text6: 荷爾蒙影響(如︰更年期婦女)
+            text7: 某些全身性疾病(如：乾燥綜合症)
+          - title: 黏液層分泌不足
+            text: 缺乏維他命Ａ、慢性結膜炎等
+          - title: 淚液過度蒸發或淚膜分佈不均
+            text: 眼瞼疾病造成眼瞼閉合不良
+            text2: 長期處於乾燥的環境
+            text3: 眨眼次數減少（長時間注視電子螢幕而減少眨眼次數）
+      category: 
+        name: 乾眼症的類別
+        btnText: 想知道屬於哪一種類別？
+        title1: 缺水型
+        text1: 若淚腺受到破壞、功能退化或異常，淚水分泌會減少。當人年紀增長以致淚腺退化；或女士進入更年期後荷爾蒙改變；或有自體免疫性疾病；這些情況都可能引致淚水分泌不足，造成「缺水型」乾眼症。
+        title2: 缺油型
+        text2: 瞼板腺的開口在上下睫毛根部附近，主要的功能為分泌脂質層，健康的脂質層可減緩淚膜水液層的揮發。當淚液缺少脂質層，水分會快速蒸發，造成「瞼板腺功能障礙」。
+        title3: 混合型﹙缺水及缺油﹚
+        text3: 臨床上，多數患者屬於混合型乾眼症，即是淚水分泌不足（缺水）及淚液蒸發太快（缺油）兩者症狀並存。
+      highRisk:
+        name: 患乾眼症的高危人士
+        btnText: 懷疑是高危人士? 立即預約檢查
+        text1: 長時間配戴隱形眼鏡人士
+        text2: 長時間注視電子螢幕人士
+        text3: |
+                長期服用藥物，
+                如︰血管收縮劑、抗抑鬱藥、
+                安眠藥、降血壓藥
+        text4: |
+                長時間處於乾燥環境，
+                如︰有冷氣或暖氣的室內地方、
+                陽光下曝曬
+        text5: |
+                免疫系統疾病患者，
+                如︰關節炎、糖尿病、
+                甲狀腺疾病等
+        text6: 更年期婦女﹙約45歲以上﹚
+      fourthly: 
+        name: 乾眼症的診斷
+        context1: 眼科專科醫生會先了解患者病徵和生活習慣，再根據臨床檢查診斷乾眼症，包括︰檢查角膜表面有沒有傷口、眼皮是否清潔、瞼板腺是否暢通等。透過眼睛檢查，以判斷乾眼症的嚴重程度。
+        name2: 乾眼症研討會︰乾眼症四個等級
+        name3: 診斷過程
+        tables: 
+          th_1: 級別
+          th_2: 第一級
+          th_3: 第二級
+          th_4: 第三級
+          th_5: 第四級
+          tb_1: 程度
+          tb_2: 輕微
+          tb_3: 中度
+          tb_4: 嚴重
+          tb_5: 非常嚴重
+          tb_6: 頻率
+          tb_7: 偶爾不適
+          tb_8: 較常不適
+          tb_9: |
+                經常並持續
+                感到不適
+          tb_10: |
+                嚴重不適，
+                持續不減
+        process1: 詳細問診以了解應診者的病徵及用眼習慣等，以評估導致乾眼的主因。
+        process2: 檢查眼瞼和角膜。
+        process3: 測試以評估淚膜穩定性及量度淚水層破裂時間。
+        process4: 涙水測試以量度淚水分泌。
+        name4: 常見診斷測試
+        testMethod:
+          - title: 淚液分泌試紙測試
+            text1: "進行試紙測試時，首先會在應診者的眼睛滴入表面麻醉的眼藥水，數分鐘後將淚液分泌試紙放在眼角內側，閉上眼5分鐘，讓濾紙吸收淚水，取出濾紙後量度淚水弄濕濾紙的長度。"
+            text2: "如果試紙淚水長度少於或等於5毫米，很可能已經患上乾眼症，屆時醫生會應用其他檢查（例如：角膜染色檢查等）來判斷病人是否存在乾眼。一般來說，若淚水長度少於5毫米，而且角膜染色檢查（+），應診者則多已患上乾眼症。"
+          - title: 裂隙燈淚膜破裂測試
+            text: 此測試是用作分析淚液功能穩定性，醫生會使用裂隙燈及螢光染色，在應診者眼睛的表面點上螢光素，把淚膜染色去觀察淚膜的破裂時間。若淚膜在5秒內破裂，很大機會患上乾眼症。
+      means: 
+        name: 乾眼症治療
+        context: 乾眼症治療的主要目的是減輕乾眼症狀，增加眼球表面的淚液，增加淚水分泌和減少淚水蒸發。乾眼症是慢性疾病，需長期接受治療，並需要患者配合去改變生活習慣。
+        name1: 治療方法
+        name1_1: ""
+        context1: ""
+        name1_2: 使用人工淚液
+        context2_1: 應用人工淚液（盡量使用不含防腐劑的人工淚液），嚴重者可能需要使用自體血清。
+        context2_2: 乾眼症治療除了針對病因治療外，使用人工淚液也是有效的方法。隨著藥物學不斷發展，人工淚液不斷改良。現時有不少新藥物用於治療乾眼症，針對淚膜三層結構來進行治療，大大提高了乾眼症藥物的治療療效。
+        context2_3: "使用人工淚水也有需要注意的細節。市面上，大部分眼藥水為了方便長時間保存，均有添加防腐劑。正常情況下，使用含有防腐劑的眼藥水多數不會對人體造成影響。不過，乾眼症患者的眼睛對防腐劑的耐受性可能較低，因此比較適合使用不含防腐劑的人工淚液，以避免長期接觸防腐劑導致眼睛敏感等問題。人工淚液可分為眼藥水及眼藥膏："
+        title2_1: 眼藥水
+        text2_1: 使用方便、簡單，可在眼球乾澀時直接補充水分，但水分蒸發較快，症狀嚴重的話需要頻密使用。
+        title2_2: 藥膏狀
+        text2_2: 藥膏狀的人工淚液黏貼度較高，可留存在眼內更長的時間，以保持眼睛濕潤，但因太黏，往往會造成短暫的視力模糊，所以一般建議在眼睛休息時（如睡前）使用。
+        name1_3: 減少淚液流失
+        context3: 使用淚道塞子堵塞淚道開口，從而減少淚液流失，病情嚴重者可考慮永久封閉淚道開口。
+        name1_4: 配戴鞏膜鏡
+        context4: 鞏膜鏡是一款高透氣的特製隱形眼鏡，覆蓋眼角膜和角膜周圍的表面，有助淚水停留眼表，滋潤角膜表面。
+        name1_5: 其他紓緩眼乾症狀的方法︰
+        text5_1: 盡量避免服用減少淚液分泌的藥物，如：降血壓藥、抗抑鬱藥、阿托品類似物等。
+        text5_2: 因免疫因素而引起的乾眼問題，可加用免疫抑制劑或短期局部使用激素。
+        text5_3: 減少配戴隱形眼鏡的時間。
+        text5_4: 多喝水來補充身體水份。
+        text5_5: 多吃護眼蔬果來補充營養所需，可食用含豐富維他命A的食物，如：牛奶、雞蛋，也可食用含豐富胡蘿蔔素的蔬菜。
+        name6_1: 彩光治療
+        text6_1: Lumenis OptiLight已獲美國食品及藥物管理局（FDA）批准使用。此技術安全有效地治療眼瞼腺體發炎相關的乾眼症，每次治療時間大約需要數分鐘，在門診即可完成。
+        name6_2: 脈衝光治療原理
+        text6_2: Lumenis OptiLight治療是以強力脈衝光（IPL）為基礎，利用儀器於患者眼睛周圍發放IPL幫助疏通堵塞的瞼板腺，令油脂分泌回復正常，減少淚水蒸發。適合紓緩中度至重度乾眼症症狀，以及改善因瞼板腺功能障礙（MGD）患者存在的眼乾問題。
+        name6_3: 脈衝光治療效果
+        text6_3: Lumenis獲得專利的技術OPT™，治療可提供有針對性、均勻、精確和可控的技術，同時控制炎症過程，並改善由瞼板腺功能障礙（MGD）引起的乾眼症的問題。一般情況，治療能達到以下的功效︰
+        name7_1: 抑制炎症
+        name7_2: 改善不正常血管
+        name7_3: 減少眼睛蠕形蟎的數量
+        name7_4: 調節油脂分泌
+        name7_5: 激活瞼板腺功能
+        text7: 乾眼症是慢性病，有機會需要3至4次治療才見效。在接受治療前、期間和之後，患者應該根據眼科專科醫生的建議護理。
+      prevent:
+        name: 預防乾眼症
+        title1: 避免讓風直接吹眼
+        text1: 不要把風扇、暖氣、冷氣吹出來的風直接往眼睛吹，以免雙眼水分抽走。
+        title2: 讓眼睛有充分休息
+        text2: 看書本或電子螢幕20分鐘，建議雙眼休息20秒或者遠望20呎﹙約50厘米﹚外的景觀，以紓緩眼乾不適。
+        title3: 多眨眼保持眼睛濕潤
+        text3: 每數分鐘就要閉上雙眼休息一下，或者眨眼數下，讓淚液更平均分佈在眼球上， 維持淚膜正常狀態。
+        title4: 避免長期配戴隱形眼鏡
+        text4: 乾眼症患者的角膜比較容易受損，因此要注意配戴隱形眼鏡的時間， 以免乾眼症惡化。
+        title5: 多吃護眼食物
+        text5: 含有維他命Ａ、Ｃ、Ｅ，Omega-3或葉黃素的食物，適宜多吃， 以保持雙眼健康和促進淚液分泌。
+        title6: 熱敷眼睛以紓緩症狀
+        text6: 早晚使用熱毛巾、熱敷袋、熱敷眼罩熱敷眼睛15分鐘，以保持眼晴濕潤， 不過要留意溫度應維持在40°C，避免灼傷。
+      navLists: 
+        name1: 乾眼症
+        name2: 症狀
+        name3: 成因
+        name4: 類別
+        name5: 高危人士
+        name6: 診斷
+        name7: 治療
+        name8: 預防方法
+      btn:
+        name1_1: 已出現以上症狀？
+        name1_2: 立即聯絡我們
+        name2: 想知道屬於哪一種類別？
+        name3: 懷疑是高危人士? 立即預約檢查
+        name4: 我需要預約診斷
+        name5_1: 人工淚液沒有改善？
+        name5_2: 立即致電查詢其他方案
+      dow:
+        text1: 乾眼症
+        text2: 下載小冊子
+    muscae_volitantes: 飛蚊症
+    muscae_volitantes_head: '飛蚊症｜希瑪眼科｜醫療服務'
+    muscaeVolitantes_con:
+      muscaeInfo: 
+        name: 什麼是飛蚊症？
+        context: 「飛蚊症」的學名為玻璃體混濁。隨着眼睛老化、玻璃體萎縮，變得液化，逐漸積聚成塊，便會形成不同形狀的黑點或暗影，飛舞飄動；有的像小雨點、圓圈、雲、網狀、變形蟲或蜘蛛，如同有蚊子在眼前飛舞，尤其在光線充足、單色的背景上更為明顯。
+        name1: "飛蚊症患者看見的浮游物︰"
+        text1: 小雨點
+        text2: 圓圈
+        text3: 雲
+        text4: 網狀
+        text5: 變形蟲
+        text6: 蜘蛛
+      navLists: 
+        name1: 飛蚊症
+        name2: 成因
+        name3: 類別
+        name4: 高危人士
+        name5: 治療
+        name6: 預防方法
+        name7: 常見問題
+      factor: 
+        name: 飛蚊症成因
+        title1: 眼睛退化
+        text1: 眼睛老化引起的飛蚊症屬最常見，隨著年紀增加，眼睛玻璃體退化和變得萎縮，逐漸脫離原本緊密結合的視網膜，而且裡面的玻璃體纖維可能變性，變得混濁。這些混濁的物質，就會在視網膜上投影出許多黑色的小點，成為飛蚊症患者看到的景象。
+        title2: 眼睛外傷、眼後發炎
+        text2: 如果眼睛受過外傷，或曾經有眼後發炎，都有可能導致有雜質進到玻璃體內引致眼睛會看見「飛蚊」。
+        title3: 眼球內出血
+        text3: 糖尿病視網膜病變、高血壓視網膜病變、眼中風等疾病，也都可以導致眼球出血並引致飛蚊症，若是這類狀況，就要趕緊就醫治療。
+        title4: 視網膜疾病
+        text4: 視網膜出現裂孔、剝離、退化等均可能引致飛蚊症。如果是視網膜疾病造成的飛蚊症，必須立刻求醫，否則嚴重時可能有失明的風險。
+      category:
+        name: 飛蚊症種類
+        name1: 良性飛蚊
+        context: 大部分的飛蚊都是良性的，良性飛蚊又稱為生理性飛蚊，基本上對眼睛無害，包括以下兩類：
+        text1: 胎兒在出生前，眼球內的玻璃體充滿血管，血管內有血細胞。這些血管通常在胎兒出生前會被自然吸收。如果未能完全吸收，部分玻璃體的「血管殘留」在玻璃體內，便會出現飛蚊。
+        text2: 隨著年齡的增長，啫喱狀的玻璃體會逐漸發生變性，出現凝縮和液化 (
+                  Liquefaction
+                  )。部分玻璃體中的纖維在液化過程中聚合成絮狀、絲狀、絲狀或無色透明的浮游物，懸浮在液化的玻璃體中，形成飛蚊。年長人士和近視患者一般較常出現這些情況，而近視患者出現這些問題的年齡會較早。
+        name2: 惡性飛蚊
+        context1: 惡性飛蚊可以是一些嚴重眼疾的警告信號，包括後玻璃體脫落、視網膜退化及撕裂、糖尿眼或老年黃斑退化導致玻璃體出血、葡萄膜炎等，應及早治療。
+      highRisk:
+        name: 飛蚊症高危人士
+        name1: 以下人士較大機會患上飛蚊症︰
+        text1: 50歲以上
+        text2: 深近視（近視600度或以上）
+        text3: 長時間看電子螢幕
+        text4: 眼睛曾受過傷、眼睛發炎
+        text5: 有視網膜脫落家族病史
+        text6: 糖尿病患者
+      means:
+        name: 飛蚊症治療
+        context: 對於無併發症的良性飛蚊症，一般都只是觀察而不予治療。但部分病人無法忍受飛蚊症狀，嚴重者甚至會感到視功能受干擾且影響生活，則值得考慮治療。目前治療的方法主要有激光和玻璃體切除治療，其中微創玻璃體切除的風險較低，成效較好，成為越來越普遍用於治療症狀明顯飛蚊症的方法。
+        name1: 激光治療
+        context1: 用於把較大和集中的玻璃體浮游物打散，以改善及消除飛蚊症狀。過程約10至15分鐘，少有痛楚，可於局部麻醉下進行。但並不是所有患者都適合這種治療，如：「飛蚊」較鬆散或位置太接近黃斑或晶體，便不宜進行，以免導致白內障或黃斑受損等併發症。
+        name2_1: 玻璃體
+        name2_2: 切除治療
+        context2_1: 用以治療玻璃體混濁，治療過程僅需15至20分鐘，傷口小（小於1mm），毋須縫線，復原期短。只需表面麻醉，在鞏膜（即眼白）位置製造兩個微創切口，一個作為切割入口，一個作為生理鹽水灌注通道。由於患者視神經沒有被麻醉，醫生能即時與患者溝通，確認是否已清除乾淨混濁的玻璃體。
+        context2_2: 此技術能切除混濁的玻璃體、恢復玻璃體腔內的屈光間質透明性，可與白內障治療同時進行，患者在清除混濁晶體的同時處理混濁的玻璃體，有助於術後進一步提升視力質素。
+        p1: 傷口細、無需縫線、
+        p2: 治療時間短、恢復快
+        p3: 恢復玻璃體腔內
+        p4: 屈光間質的透明性
+        p5: 玻璃體切除
+        p6_1: 治療的
+        p6_2: 好處
+        p7: 治療儀器定位系統有效、精細，
+        p8: 降低周圍組織損傷的風險
+        p9: 能與其他治療同時進行
+      prevent: 
+        name: 預防飛蚊症
+        context: 不良的用眼習慣會誘發或加重飛蚊症症狀，預防飛蚊症建議由日常生活習慣開始。
+        text1: 觀看電子產品螢幕20分鐘，建議雙眼休息20秒，或者遠望20呎（約50厘米）外的景觀。
+        text2: 使用智能電話、平板電腦及電腦時，建議分別保持30厘米、40厘米、50厘米的距離。
+        text3: 在光線充足且穩定不閃爍的環境閱讀。
+        text4: 在猛烈的陽光下，最好戴上能遮擋紫外光和品質良好的太陽眼鏡。
+        text5: 避免吸煙、飲酒等不良習慣，養成早睡早起的習慣，讓眼睛有充足休息時間。
+      faq: 
+        name: 常見問題
+        q1: Q：出現飛蚊，什麼時候應該求醫？
+        a1: 大部分的飛蚊都是良性的，基本上對眼睛無害，但若嚴重影響日常生活，或突然出現大量飛蚊、視野出現異常黑點，建議盡快安排眼科檢查，確定「飛蚊」出現的原因，及早診斷、預防併發症。
+        q2: Q：飛蚊症患者眼前飛蚊突然變多怎麼辦？
+        a2: 如果飛蚊症數量突然增加，並伴隨有閃光、視野缺損、視力模糊等，即可能是嚴重眼疾先兆，建議盡快求醫。
+        q3: Q：點眼藥水或吃藥可以治療飛蚊症嗎？
+        a3: 病理性的飛蚊症在療程中可能會使用消炎用的眼藥水，以助患者紓緩不適；但是退化性的飛蚊症與發炎無關，因此點眼藥水用處不大。
+      dow:
+        text1: 飛蚊症
+        text2: 下載小冊子
+      btn:
+        name1_1: 經常看見飛蚊
+        name1_2: WhatsApp 預約眼睛檢查
+        name2_1: 分辨良性/惡性飛蚊
+        name2_2: 致電預約檢查
+        name3_1: 致電預約
+        name3_2: 了解治療方案
+    conjunctivitis: 結膜炎(紅眼症)
+    conjunctivitis_head: '結膜炎(紅眼症)｜希瑪眼科｜醫療服務'
+    conjunctivitis_con:
+      navLists:
+        name1: 結膜炎
+        name2: 症狀
+        name3: 類別
+        name4: 傳播途徑
+        name5: 高危人士
+        name6: 治療
+        name7: 預防方法
+      conjunctivitisInfo: 
+        name: 什麼是結膜炎？
+        context: 結膜炎俗稱「紅眼症」，指覆蓋著眼白、眼瞼內方及眼球表面的半透明薄膜發生炎症，薄膜會變成粉紅色或紅色。較常見由病毒引起，細菌性感染或過敏反應亦是造成結膜炎的原因。任何人均可能染上結膜炎，兒童更較常受到感染。
+      symptom: 
+        name: 結膜炎(紅眼症)症狀
+        text1: 結膜充血
+        text2: 眼瞼紅腫、沉重
+        text3: 眼睛痕癢、疼痛
+        text4: 異物感、燒灼感
+        text5: 流眼水、畏光
+        text6: 分泌物增多
+      kind:
+        name: 結膜炎(紅眼症)種類
+        title1: 病毒性結膜炎(紅眼症)
+        text1: 通常與上呼吸道感染有關，由病毒引起，主要病原體為腺病毒及腸病毒。這種結膜炎(紅眼症)傳染性很高，但通常在數日內，不需要治療的情況下自行復原。
+        title2: 細菌性結膜炎(紅眼症)
+        text2: 由多種細菌引起，最常見有流感嗜血桿菌和肺炎鏈球菌，其中衣原體感染會令初生嬰兒和成人患上細菌性結膜炎(紅眼症)。若不及時治療，細菌性結膜炎(紅眼症)所感染的細菌可造成眼睛嚴重的傷害。
+        title3: 過敏性結膜炎(紅眼症)
+        text3: 過敏性結膜炎(紅眼症)是較常見的眼疾。當眼睛受致敏原、微生物及環境中的刺激物而發炎時，免疫系統會針對致敏原產生過度的免疫反應，使結膜裡的血管腫脹，以致眼睛發紅。
+        detail:
+          context: 以下是常見過敏性結膜炎(紅眼症)的種類︰
+          caption1: "- 季節性過敏性結膜炎(紅眼症)"
+          content1: 多數發生於季節轉換時，常見致敏原是秋冬季的霉菌孢子及春夏交替時的植物花粉。本身有過敏體質的會更容易患上此病，例如︰氣喘、過敏性鼻炎等。
+          caption2: "- 常年性過敏性結膜炎(紅眼症)"
+          content2: 致敏原多數是空氣中的污染物、灰塵、塵蟎或動物毛屑等，過敏症狀一年四季都可能發生，但症狀多較輕微。
+          caption3: "- 巨柱狀敏感性結膜炎(紅眼症)"
+          content3: 屬長期使用隱形眼鏡常見引起的併發症。由於隱形眼鏡對眼睛來說，屬於異物，長期配戴有可能使得結膜表面發生改變，變得凹凸不平，引起不適症狀。所以若在選擇、驗配、配戴或護理上處理不當，便有機會出現併發和後遺症。
+      approach:
+        name: 結膜炎(紅眼症)傳播途徑
+        context: 結膜炎(紅眼症)分為傳染性及非傳染性。病毒性和細菌性結膜炎(紅眼症)屬傳染性，傳染力極高，主要透過與患者親密接觸，或間接接觸到受污染的物品均可致病。
+        name1: 常見結膜炎(紅眼症)的傳染途徑︰
+        text1: 雙手接觸患者的眼睛或上呼吸道的分泌物傳播
+        text2: 透過患者的個人日用品，如毛巾、衣物、眼部化妝品或眼藥水等交叉感染
+        text3: 如游泳人士在受污染的水源游泳，也有機會受感染
+        context1: 當病毒入侵眼睛，會經過一段潛伏期後才發病，潛伏期為1至12天不等，由病發至康復需要大約10天至數星期。
+      highRisk:
+        name: 患結膜炎(紅眼症)高危人士
+        context: 任何人士都有機會感染結膜炎(紅眼症)，但以下人士較為高危：
+        text1: 5歲或以下兒童及嬰幼兒
+        text2: 有眼或鼻敏感患者
+        text3: 抵抗力較差人士
+        text4: 經常觸摸雙眼人士
+        text5: 長時間配戴隱形眼鏡人士
+        text6: 長時間注視電子螢幕人士
+      means:
+        name: 結膜炎(紅眼症)治療
+        title1: 病毒性結膜炎(紅眼症)
+        text1: 一般情況下，病毒性結膜炎(紅眼症)患者會在大約1星期內痊癒，毋須特別治療。如要紓緩不適的症狀，患者可多作休息，將冷濕的毛巾敷在眼睛上，一日數次。
+        title2: 細菌性結膜炎(紅眼症)
+        text2: 治療細菌性結膜炎(紅眼症)，一般以醫生處方藥物作治療，例如︰含抗生素的眼藥水或眼膏。
+        title3: 過敏性結膜炎(紅眼症)
+        text3: 如屬於因接觸致敏源而導致的結膜炎(紅眼症)，避免接觸致敏源可減輕症狀或減少發作。若因配戴隱形眼鏡所引起則需要停戴。此外，臨床上亦可透過用藥控制過敏性結膜炎(紅眼症)的反應。
+      prevent:
+        name: 預防結膜炎(紅眼症)
+        title1: 避免共用個人物品
+        text1: 不要與他人共用毛巾、枕頭、眼藥水、眼部化妝品、隱形眼鏡和其他可能接觸到眼睛的物品。
+        title2: 觸摸眼睛前要先洗手
+        text2: 觸摸眼睛前應以梘液和清水徹底清潔雙手，並經常保持雙手乾淨衛生。
+        title3: 避免出入高危地方
+        text3: 結膜炎(紅眼症)流行期間，應避免使用公共設施，如游泳池、浴室、桑拿室、遊樂場等高危地方，以減低感染風險。
+        title4: 徹底清潔隱形眼鏡
+        text4: 使用隱形眼鏡護理液清洗鏡片，仔細清洗鏡片的兩面，建議讓鏡片浸泡在新鮮的護理液至少6小時。
+        title5: 避免接觸過敏原
+        text5: 季節交替時，注意小心接觸花粉、塵蟎、動物毛屑等有機會引起結膜炎(紅眼症)的過敏原。
+      btn:
+        name1_1: 已有結膜炎(紅眼症)症狀？
+        name1_2: 致電立即治療
+        name2_1: 結膜炎(紅眼症)經常復發？
+        name2_2: 預約見醫生對症下藥！
+        name3_1: 治療結膜炎(紅眼症)，避免傳染家人！
+        name3_2: 致電預約診治
+      dow: 
+        text1: 結膜炎(紅眼症)
+        text2: 下載小冊子
+    maculopathy: 黃斑病變
+    maculopathy_head: '黃斑病變｜希瑪眼科｜醫療服務'
+    maculopathy_con:
+      navLists:
+        name1: 黃斑病變
+        name2: 症狀
+        name3: 自我檢查
+        name4: 乾性黃斑病變
+        name5: 濕性黃班病變
+        name6: 預防方法
+        name7: 常見問題
+      maculopathyInfo: 
+        name: 什麼是黃斑病變？
+        context: 黃斑區域位於視網膜中央，集中九成的感光神經細胞，負責中心視力和顏色視力。因此，健康黃斑點對人看清事物尤其重要。黃斑病變是指黃斑點出現了病徵，引起視力下降、視物扭曲變形及中心視力變差。
+      sympotm:
+        name: 黃斑病變的症狀
+        text1: |
+              中央視野及
+              視力模糊
+        text2: |
+              視野中心
+              出現暗點
+        text3: |
+              景物變形、線條扭曲、
+              盲點及顏色變暗
+        text4: |
+              嚴重者完全失去
+              中央視野
+      inspect:
+        name: 黃斑病變自我檢查
+        name1: 阿姆斯勒方格表（AMSLER GRID）檢查
+        name2: 使用方法：
+        text1: 如有老花或近視，須配戴原有的眼鏡進行測試
+        text2: 把方格表放在眼前距離30cm，光線要清晰及平均
+        text3: 先用手蓋著左眼，右眼凝視方格表中心黑點
+        text4: 重複步驟1至3檢查左眼
+        name3: 正常觀看方格為棋盤狀直線
+        context: 若出現畫面模糊、扭曲或黑點擴散等非直線狀態，有機會是患上了黃斑病變，應立即諮詢您的眼科專科醫生。
+        title1: 正常視野
+        title2: 顏色變暗
+        title3: 視野扭曲
+        title4: 視力模糊
+        title5: 逐漸失去中央視野
+      types: 
+        name: 常見類型
+        name1: 黃斑病變
+        p1: 老年
+        p2: 黃斑病變
+        p3: 乾性
+        p4: 黃斑病變
+        p5: 濕性
+        p6: 黃斑病變
+        name2: 老年黃斑病變
+        context: 主要成因是色素層及視網膜細胞退化，部分患者血管出現滲漏，甚至血管增生，嚴重破壞黃斑點的感光細胞，導致視力受損。患上老年黃斑病變的人口隨著年齡增加，大於50歲的人群中，每100個就有1至2名黃斑退化患者。
+        name3: 老年黃斑病變分為乾性和濕性︰
+        name4: 乾性黃斑病變
+        text1: 香港每年黃斑病變患者中有九成屬於乾性。乾性黃斑病變是指黃斑區細胞退化並形成積聚代謝物，在黃斑區部下形成玻璃疣，逐步引致視網膜色素上皮萎縮。
+        text2: 多數患者早期並沒有明顯病徵，隨著病情發展，黃斑功能逐漸減弱，視力慢慢下降，但一旦病情惡化，便有機會發展為濕性黃斑病變，而濕性黃斑病變可導致視力永久喪失。目前尚未有針對乾性黃斑退化的根治的方法，需要透過定期追蹤病情，以確保病患不會惡化。
+        name5: 濕性黃班病變
+        text3: 濕性黃斑部病變約佔所有病例的一成。患者黃斑點視網膜下出現異常的血管生長，若這些血管爆裂，會導致出血及結疤，使感光細胞永久受損。
+        text4: 這類病變發病較迅速，對造成中心視野缺損。濕性病變患者常出現其中一隻眼突然發生視功能障礙，另一隻眼正常或已處於病變早期，但幾年後也發生同樣病變。濕性老年黃斑病變可以短時間內造成嚴重視力衰退，有機會於數天內令視力嚴重受損；因此如有懷疑症狀，應立即聯絡眼科醫生。
+      factor:
+        name: 老年黃斑病變成因
+        text1: 年齡增長
+        text2: 吸煙
+        text3: |
+                飲食習慣攝取高飽
+                和脂肪或高膽固醇
+        text4: |
+                眼睛長期被
+                過度日光照射
+        text5: |
+                患有血管系統
+                疾病或高血壓
+        text6: |
+                其中一隻眼已
+                患有黃斑退化
+        text7: 遺傳因素
+      cure:
+        name: 老年黃斑病變治療
+        title1: 激光光凝凝固
+        text1: 利用激光的熱能，去除視網膜下增生的血管，盡量保存未受影響、黃斑病變區內的視網膜。但由於熱力激光並沒有選擇性，病變位置與黃斑點中央需要有一定距離，否則在燒毀增生血管的同時難免會破壞周邊組織，可引致視功能退化或失明，故此治療方法只適用於少數黃斑退化患者。
+        title2: 光動力療法
+        text2: 這個把光敏劑注射到血液內，光敏劑選擇性地積聚在視網膜下不正常的血管上，經一種非熱能激光活化後，光敏劑便能在不影響視網膜其他正常組織的情況下，堵塞這些不正常增生的血管，從而控制病情惡化、改善患者視功能、縮細黑影以及糾正視覺影像扭曲的情況。然而，此療法不能恢復失去了的視功能。光動力療法對治療PCV有良好效果。
+        title3: 類固醇玻璃體注射
+        text3: 曲安奈德是一種鹽皮質類固醇，能減少眼內血管對視網膜屏障的破壞。類固醇玻璃體注射須表面麻醉，並在無菌環境下進行。這注射一般可在診所進行，而醫生將採取一切預防措施，減低感染風險。
+        title4: 抗血管內皮生長因子玻璃體注射
+        text4: 以抗血管內皮生長因子注射來控制濕性黃斑退化是現時主流的治療方法。研究顯示可有效防止視功能進一步衰退，以及能改善視功能。
+      prevent:
+        name: 預防黃斑病變
+        title1: '避免吸煙'
+        text1: '吸煙會增加患黃斑病變機會 3-4 倍。'
+        title2: |
+                控制體重、血壓、
+                血脂、血糖
+        text2: 研究顯示，肥胖和三高可以引起微血管的損害，從而造成黃斑病變的發生和發展。
+        title3: '預防深近視'
+        text3: '深近視人士（600度或以上）均有較大機會患上黃斑病變。'
+        title4: '每年進行眼科檢查'
+        text4: '年紀大也會增加患黃斑病變風險，建議每年安排全面的眼科檢查，及早發現眼睛問題。'
+        title5: '保持均衡飲食'
+        text5: '減少吃高飽和脂肪和高膽固醇食物，多攝取葉黃素、玉米黃素、Omega-3、維他命C及E等營養。'
+        title6: |
+                配戴太陽眼鏡
+                以避免眼睛曝曬
+        text6: '眼睛長時間受紫外線照射，可能增加患上黃斑病變機會。'
+      faq: 
+        name: 常見問題
+        q1: Q：熄燈玩電話會增加黃斑病變風險？
+        a1: 電子屏幕發出的藍光對黃斑無益，特別在黑暗的環境中，瞳孔會放大，眼睛便有機會吸收更多高能量可見光。有些研究已顯示，動物長時間吸收更多高能量可見光，會對黃斑構成傷害，情況類似黃斑病變。但目前沒有研究確切證實電子屏幕發出的藍光損傷黃斑。
+        q2: Q：年紀愈大愈容易患上黃斑病變？
+        a2: 年紀愈大，患上老年黃斑病變風險愈高。同時有吸煙習慣、飲食習慣攝取高飽和脂肪或高膽固醇、眼睛長期被過度日光照射、患有血管系統疾病或高血壓、其中一隻眼已患有黃斑退化、受遺傳因素影響等人士也有較大機會患上黃斑病變。
+        q3: Q：乾性黃斑病變較濕性黃斑病變對眼睛影響較少？
+        a3: 乾性黃斑病變，多數患者早期沒有明顯的病徵，視力下降速度相對較慢，但若病情惡化，也可能明顯影響視力。另外，乾性病變也有可能發展為濕性黃斑退化。而濕性黃斑病變不妥善處理，滲出物和血液聚集於黃斑區會破壞該處的感光細胞，可以永久破壞視野中央位置的視力。相對而言，濕性黃斑病變較乾性黃斑病變嚴重。
+        q4: Q：藥物注射可以治療黃斑病變？
+        a4: 將藥物注射入玻璃體是其中一個治療黃斑病變的方法。透過把藥物注於患者眼內，直接發揮作用。多個醫學報告顯示，這種方法治療糖尿病黃斑水腫療效良好，超過六成患者能獲得不錯的視功能改善。愈早發現並治療，成效就愈好，經治療後有機會回復正常視力水平。
+      btn: 
+        name1_1: 已有初步症狀？
+        name1_2: 別害怕，立即WhatsApp預約治療
+        name2_1: 致電預約治療
+        name2_2: 讓醫生為您選擇合適的治療方案
+      dow:
+        text1: 黃斑病變
+        text2: 下載小冊子
+    strabismusAmblyopia: 兒童斜弱視
+    strabismusAmblyopia_con_head: '兒童斜弱視｜希瑪眼科｜醫療服務'
+    strabismusAmblyopia_con:
+      navLists:
+        name1: 斜視
+        name2: 斜視種類
+        name3: 治療斜視
+        name4: 弱視
+        name5: 弱視種類
+        name6: 治療弱視
+      strabismus:
+        name: 甚麼是斜視？
+        p1: 正常人看事物時，雙眼視軸平行，可以望向同一方向。而斜視是指雙眼看東西時視軸不平行，導致其中一個眼球外斜或內斜（向內、向外、向上或向上傾斜）。若仍處於視覺發育時期，斜視引致其中一隻眼睛經常偏離視軸，大腦可能會抑制該眼睛的影像，久而久之小朋友會慣性棄用斜視眼，從而造成斜視眼視力發育不良，變成弱視眼。
+        p2: 為甚麼會有斜視？腦部、腦神經、眼睛或眼球肌肉的先天性缺陷，或後天的疾病、損傷，又或者是屈光不正（近視或遠視）都可能導致兒童斜視。
+      kind: 
+        name: 常見的斜視種類
+        name1: 內斜視／外斜視
+        context1: 小朋友看東西向前直望時，斜視眼斜向鼻樑方向為內斜視，斜向耳朵方向為外斜視。
+        text1_1: 正常眼位
+        text1_2: 內斜視
+        text1_3: 外斜視
+        name2: 上斜視／下斜視
+        context2: 小朋友看東西向前直望時，斜視眼向上斜為上斜視，向下斜為下斜視。
+        text2_1: 正常眼位
+        text2_2: 上斜視
+        text2_3: 下斜視
+        name3: 如何區分孩子真假斜視？
+        context3: 斜視有真假之分，假斜視是指從外觀上兩隻眼珠位置看似有偏差，視軸並沒有出現不平行的狀況，不會影響正常視力發展。嬰幼兒最常見有「假內斜視」（俗稱「假鬥雞眼」）。
+        text3_1: 正常眼位
+        text3_2: 假性內斜視
+        text3_3: （真）內斜視
+        context4: 當孩子眼部輪廓還未發育完全，如鼻樑扁平，雙眼會顯得較靠近鼻樑且眼球鞏膜露出的部分較小，產生斜視的錯覺。但當用手指把鼻樑旁的皮膚輕輕地捏起，就會發現斜視消失。隨著兒童日漸長大，鼻樑長高，兩旁皮膚自然拉起，假斜視會逐漸消失。
+        name5: 如何發現孩子有斜視？
+        context5: 孩子日常的舉動亦可能反映斜視問題︰
+        text5_1: 眼睛持續看起來不正常
+        text5_2_1: 看東西時雙眼沒有同步移動，
+        text5_2_2: 即一隻眼望向一方，另一隻沒有跟隨
+        text5_3_1: 單眼或遮蓋一隻眼睛
+        text5_3_2: 看電視或書
+        text5_4: 經常側頭看東西
+        text5_5_1: 經常瞇眼、斜側
+        text5_5_2: 凝望、眨眼、揉眼睛
+        text5_6: 經常眼淚汪汪
+      cure: 
+        name: 治療斜視方法
+        title1: 眼鏡矯正
+        text1: 當孩子眼部輪廓還未發育完全，如鼻樑扁平，雙眼會顯得較靠近鼻樑且眼球鞏膜露出的部分較小，產生斜視的錯覺。但當用手指把鼻樑旁的皮膚輕輕地捏起，就會發現斜視消失。隨著兒童日漸長大，鼻樑長高，兩旁皮膚自然拉起，假斜視會逐漸消失。
+        title2: 視軸矯形運動
+        text2: 視軸矯形運動有很多種類，外斜視患者可做眼球肌肉匯聚運動，俗稱「鬥雞練習」。而內斜視患者則可做眼球肌肉放鬆運動。視軸矯形運動也可以鍛煉雙眼單一視功能，幫助斜視患者加強或重新建立視覺立體感。
+        title3: 遮蓋治療（遮眼治療）
+        text3: 由於不少斜視患者也有弱視問題，透過遮眼治療法（用眼貼或特製眼鏡遮蓋正常的眼睛），遮蔽正常的眼睛，驅使患者多用有弱視的眼睛，藉以鍛煉弱視眼及恢復其功能。每天遮眼的時間及療程時期視乎患者的年齡和弱視的嚴重程度，當弱視眼的視力有改善，在眼科醫生的評估及指導下可停止遮眼治療。
+        title4: 手術矯正
+        text4: 手術一般是治療斜視的最後一步，透過改變眼球肌肉的鬆緊程度，使得雙眼視軸回復平衡，治療斜視。手術的時機牽涉多方面的考慮，病人接受手術的時機因人而異，斜視患者在接受手術前必須咨詢眼科醫生的意見。
+      amblyopia:
+        name: 甚麼是弱視？
+        context1: 嬰兒出生時視功能並未發育完成，隨著外界的刺激才慢慢發展出各種視覺機能，而出生後到3歲期間是視功能發育最重要的階段。如果發育受到不良的影響，就有可能導致弱視。弱視患者無法透過配戴眼鏡、動手術或其他任何方法，達致正常視力水平，無論看遠或近的景物都模糊不清。
+        name1: 弱視種類
+        title1: 斜視性弱視
+        text1: 斜視性弱視常見於患有斜視或曾有斜視的4歲以下兒童。患者兩眼視線不平行，大腦皮質會主動抑制斜視眼生成影像，並形成弱視。
+        title2: 屈光參差性弱視（雙眼視差太大）
+        text2: 兩眼視力不同，視網膜成像大小與清晰度都不同。兩眼屈光度數相差300度以上人士，屈光度較高的眼睛會常形成弱視和斜視。
+        title3: 屈光不正性弱視
+        text3: 多發生在高度近視、遠視及散光而未戴矯正眼鏡的兒童或成年人。多數為近視600度以上、遠視500度以上、散光大過或等於200度人士。
+        title4: 視覺剝奪性弱視
+        text4: 嬰兒期上瞼下垂、角膜混濁、先天性白內障，阻擋光線進入的時間太長，使光線不能刺激眼球、妨礙或阻斷黃斑接受視覺刺激，因而產生弱視。
+        title5: 先天性弱視
+        text5: 發病原因尚未明確，可能由於出生後視網膜出血或視神經病變而影響視功能的正常發育，有些則是由眼球震顫全色盲等引起。
+      treat: 
+        name: 治療弱視方法
+        p1: 弱視的治療效果與年齡密切相關，年齡愈小，治療的效果愈好。3至6歲是治療的關鍵期，12歲以後的治癒機率較低。6歲前治癒率高達80%，而大於6歲以及小於12歲的患者，治癒率僅達到50%左右。
+        p2: 由於每個孩子的視功能情況都不一樣，眼科專科醫生需要為孩子制定針對性治療方案，還需根據患者進展情況而適時調整。
+        title1: 配戴眼鏡
+        text1: 部分輕微弱視的小朋友，可以透過配戴正確度數的眼鏡矯正屈光不正，從而使兩隻眼睛一起看東西和改善視力。為保證矯正效果，孩子大多數時間都需要戴著眼鏡。
+        title2: 遮蓋治療（遮眼治療）
+        text2_1: 透過遮蓋正常眼睛，讓弱視眼鍛鍊出正常視力。療程的時間要視乎孩子弱視的嚴重程度、年齡、孩子及家長在遮眼治療上的合作程度而決定。治療過程中，孩子需要定期覆診，由眼科專科醫生檢查正常眼睛和弱視眼睛的視力，並按治療進度調節遮眼時間。如果療程有效，會慢慢減少遮眼時間，直到弱視眼能追上正常視力。
+        text2_2: 遮眼訓練對治療弱視有一定的幫助，若需治療建議盡早進行，愈早治療，效果愈理想。如果8歲後才發現患有弱視，治癒弱眼視力的機會則會較低。
+        title3: 滴散瞳藥水
+        text3: 如小朋友因外觀、不適或皮膚敏感而不願意遮眼，眼科專科醫生會建議家長考慮用散瞳藥水使主力眼近距離視力模糊，從而促使小朋友多使用弱視眼。
+      curativeTime:
+        name: 把握治療斜弱視黃金時期
+        context: 家長應定時帶小朋友檢查視力，及早發現和找出成因。愈早發現和開始治療效果愈好，而治療成效亦需要家長和小朋友配合，才可以有效提升小朋友視力。
+      btn:
+        name1_1: 判斷斜視勿猜測
+        name1_2: 立即WhatsApp預約檢查
+        name2_1: 勿錯過治療弱視黃金期
+        name2_2: 立即致電預約見醫生
+      dow:
+        text1: 兒童斜弱視
+        text2: 下載小冊子
+    amotioRetinae: 視網膜脫落及疾病
+    amotioRetinae_head: '視網膜脫落｜希瑪眼科｜醫療服務'
+    amotioRetinae_con: 
+      title: 視網膜脫落
+      intro: 
+        name: 什麼是視網膜脫落？
+        p1: 5毫米的透明薄膜，是眼球壁的最內層，佈滿感光神經細胞。視網膜是眼內最重要、最複雜但又最脆弱的部分。視網膜一面與玻璃體接觸，另一面緊貼著脈胳膜。視網膜的作用像是相機的菲林，將接收到的光線和影像轉化成神經電信號，再傳送到大腦的視覺中樞，讓我們可以「看見」。視網膜共有十層，第一至九層稱為「感覺神經視網膜」，第十層則稱為「視網膜色素上皮層」，其中色素上皮層主要負責血液及營養供應以及處理代謝所產生的「廢料」。
+        p2: 視網膜脫落是一種較嚴重的
+        p3: 眼科急症
+        p4: ，泛指「感覺神經視網膜」和「視網膜色素上皮層」互相分離，令「感覺神經視網膜」無法得到足夠的血液和營養，新陳代謝產生的廢料也無法被運走。如果脫離狀態持續，「感覺神經視網膜」上的神經細胞會逐漸死亡，看上去原本柔軟而透明的視網膜變得僵硬而發白，情況好比相機的菲林走了光一樣，視網膜無法再正常感應影像的光影信號，也無法將信號傳送到大腦。
+      factor: 
+        name: 視網膜脫落高危因素
+        text1_1: 近視：度數愈深，
+        text1_2: 風險愈高
+        text2_1: 有視網膜脫落
+        text2_2: 家族遺傳史
+        text3: 眼睛曾受外傷
+        text4: 眼內手術史
+        text5: 眼部有腫瘤
+        text6: 眼內發炎
+        text7_1: 糖尿上眼
+        text7_2: （糖尿性視網膜病變）
+      styptom:
+        name: 視網膜脫落先兆及症狀
+        context: 早期視網膜脫落可能沒有任何症狀，或者出現以下情況︰
+        text1_1: 見到大量飛蚊，
+        text1_2: 數量異常地多
+        text2_1: 見到閃光或
+        text2_2: 黑影飄動
+        text3: 眼前固定黑影
+        text4_1: 視野缺失、視力
+        text4_2: 突然明顯下降
+        span1: 如果飛蚊症患者眼前飛蚊（不同形狀的黑點或暗影）突然明顯增加，或者眼前閃光突然出現或者明顯增加，很大機會是視網膜脫落的先兆。
+        span2: 若懷疑出現視網膜脫落的先兆或症狀，必須盡快求醫，向眼科醫生查詢，若確診視網膜脫離，很可能需要緊急手術。
+        span3: 視網膜脫落如沒有及時治療，視網膜脫離的範圍可能會越來越大，一旦脫離到黃斑位置，
+        span4: 將嚴重影響視力，不及時治療將會造成永久性的損害。
+      treat:
+        name: 視網膜脫落治療
+        title1: 充氣性視網膜固定術
+        text1: 在玻璃體內注入特別的氣泡，再輔以冷凍或視網膜激光治療， 術後病人採用俯臥位，利用氣泡向上浮的特性，將脫落的視網膜頂壓在正常位置，這治療適合視網膜範圍較少、視網膜脫落範圍在眼球內上的三分之一及玻璃體較健康的患者。
+        title2: 鞏膜外墊壓術
+        text2: 利用特殊硅膠或海綿墊，對視網膜脫落位置的鞏膜產生壓力，使鞏膜向內凸起，頂住脫落的視網膜，使其復位以及封閉撕裂處，讓脫落的視網膜組織與下方的色素上皮層再黏合，有時會再輔以冷凍或視網膜激光治療。這種方法一般適用於發生在較周邊的視網膜脫離。墊壓術在眼球外進行，減少了發生眼內感染的風險。
+        title3: 微創玻璃體切除術（PPV）
+        text3: 以微創模式，在眼球表面開三個直徑小於一毫米的小洞，直接在眼球內進行玻璃體切除，之後注入擴充性氣體（或者注入硅油），將視網膜頂壓回復到原來正常位置，使得神經視網膜層和色素上皮層重新貼合，術前還會以冷凍或激光的方式把視網膜破孔封上。術後病人需要採取俯臥的位置，保持對視網膜頂壓的力量。
+      diabetes:
+        name: 糖尿上眼（糖尿性視網膜病變）
+        p1: 糖尿上眼學名為「糖尿性視網膜病變」，是糖尿病的併發症，會影響患者眼睛健康。不論是一型糖尿病或二型糖尿病的患者，長期血糖偏高都會損傷血管內皮細胞，都有機會引起糖尿上眼。幾乎所有一型糖尿病患者在發病後15至20年後都會受到視網膜病變影響，其中兩至三成的患者更有失明之虞，而超過六成的二型患者會有不同程度的視網膜病變。
+        p2: 糖尿病視網膜病變初期通常是無聲無息，多數病人沒有明顯症狀，視功能不受影響。但若血糖控制不穩定，血管內皮細胞就會受到永久破壞，引起一連串的眼底病變，如：微血管瘤、糖尿黃斑水腫、視網膜新生血管，甚至視網膜脫落或繼發性青光眼，嚴重者更有失明的危機。如能及早發現並進行針對性治療，病人的視功能大多能保持。因此糖尿病患者應定期檢查眼底，以免視力受損。
+      prevent:
+        name: 預防視網膜脫落
+        context: 預防視網膜脫離可以採取措施降低風險：
+        title1: 定期進行眼科檢查
+        text1: 如果您有近視（尤其是高度近視，600度或以上），眼科檢查是很重要。因為近視使您更容易發生視網膜脫離。而且眼睛檢查中應包含散瞳檢查，以發現有沒有視網膜撕裂先兆。
+        title2: 注意戶外活動安全
+        text2: 在進行劇烈運動或進行其他高風險活動（例如過山車、碰碰車、潛水、跳傘、蹦極）時，請使用護目鏡或其他保護眼睛的裝備。
+        title3: 有需要時及時治療
+        text3: 如果您發現視網膜脫落症狀（突然看到很多飛蚊症和閃光），請立即諮詢您的眼科醫生進行全面的眼科檢查
+        span1: 視網膜脫落可發生於任何年齡，高危人士應該定期接受詳細眼睛檢查。
+        span2: 一旦發現病徵，如大量飛蚊和閃光，就要盡早向眼科專科醫生求醫。
+      faq: 
+        name: 常見問題
+        q1: Q：飛蚊症會引致視網膜脫落？
+        a1: 隨著眼睛老化、玻璃體逐步收縮、液化。部分退化的細胞逐漸積聚成塊，便會形成不同形狀的黑點或暗影，飛舞飄動，就會好像有蚊子在眼前飛舞。飛蚊可分為良性飛蚊和惡性飛蚊。良性飛蚊屬於生理現象，一般不用擔心。惡性飛蚊若表現為飛蚊數量在短時間內明顯增加，面積擴大，或者眼前閃光出現（或明顯增多），則有機會是眼睛出現視網膜脫落。
+        q2: Q：揉眼睛會致視網膜脫落？
+        a2: 不能簡單認為揉眼睛這個動作就是會導致視網膜脫落。這個動作在部位高危病人中（例如超高度數近視患者），有可能是一個危險的動作。因為深近視人士的眼軸變得很長，視網膜因此被拉得很薄，於是很容易會破裂或穿洞，這個情況下，大力揉眼就有可能對眼睛造成很大的傷害。
+        q3: Q：視網膜脫落一定要做手術嗎？
+        a3: 視網膜脫落屬於眼科急症，患者有可能永久失去視力，因此必須盡快治療。治療以激光或手術為主︰如果視網膜脫落範圍較小，沒有內液通過裂孔進入視網膜後方，則眼部激光已經可以固定視網膜；但若範圍較大，手術是主要的醫治方法。
+        q4: Q：視網膜脫落會復發嗎？
+        a4: 視網膜脫落是有機會復發，而由眼部外傷、糖尿上眼引起的視網膜脫落復發風險相對更高。所以，建議曾經歷視網膜脫落人士要養成正確用眼習慣如︰不要長時間及近距離看電子螢幕和閱讀；使用電子產品時要留意有足夠光線；讓眼睛有足夠時間休息等。
+      navLists: 
+        name1: 視網膜脫落
+        name2: 高危因素
+        name3: 先兆及症狀
+        name4: 治療
+        name5: 糖尿上眼
+        name6: 預防方法
+        name7: 常見問題
+      btn:
+        name1_1: 懷疑視網膜脫落？
+        name1_2: 立即致電求醫！
+        name2_1: 視網膜脫落需要哪一種治療？
+        name2_2: 立即WhatsApp了解更多
+      dow:
+        text1: 視網膜脫落
+        text2: 下載小冊子
+    ocularSurfaceDiseases: 眼表及角膜疾病
+    ocularSurfaceDiseases_head: '眼表及角膜疾病｜希瑪眼科｜醫療服務'
+    ocularSurfaceDiseases_con: 
+      pterygium: 
+        title: 翼狀胬肉
+        context: 翼狀胬肉是指沿著角膜生長的翼狀增生組織，一般起源於眼睛的球結膜發生變性、肥厚、增生的結膜組織，非常緩慢地向角膜內生長，呈三角形。其後日漸增大，嚴重時可能引起角膜弧度改變，引發散光；或者胬肉過大（>3mm）而影響視功能，因其形狀酷似昆蟲的翅膀，故名翼狀胬肉。翼狀胬肉多見於熱帶地區，與長期暴露於日光有關。
+        name: 翼狀胬肉成因
+        span1: 遺傳因素
+        span2: 營養缺乏，淚液分泌不足
+        span3: 過敏反應
+        span4: 環境因素，長期受到外界刺激如風沙、煙塵、熱力、日光、花粉等過敏刺激的人群，尤其是漁民、農民、海員、砂石工人等
+        btn1: 難自行分辨是否有翼狀胬肉？
+        btn2: WhatsApp預約醫生檢查
+        name2: 翼狀胬肉影響
+        text1: 翼狀胬肉通常較小，而且不造成影響。有時會出現眼紅、癢、燒灼感或外觀問題。
+        text2: 較大的翼狀胬肉可改變角膜形狀和引起散光，導致視物模糊。部分翼狀胬肉會侵及角膜中央，造成視力喪失。
+        name3: 翼狀胬肉治療
+        text3_1: 翼狀胬肉的治療為盡量避免刺激，小而沒有增大的翼狀胬肉則毋須治療。
+        text3_2: 有明顯徵狀或充血嚴重可使用類固醇眼藥水減輕炎症反應。
+        text3_3: 如果視力受到影響或翼狀胬肉有增大，可以考慮切除。
+        text3_4: 翼狀胬肉術後復發並不少見，減低復發率的方法包括自身結膜移植、使用抗代謝藥物等。
+      blepharitis: 
+        title: 眼瞼炎
+        context: 眼瞼炎即是眼瘡，或俗稱「眼挑針」。最靠近眼球邊緣的皮膚就是眼瞼，因發炎或是病菌感染而引起睫毛及眼瞼邊緣處的發炎稱為「眼瞼炎」。引致眼瘡的原因大多是葡萄球菌，如：金黃葡萄球菌，是最常引起外眼部刺激的因素之一。
+        name: 眼瞼炎成因
+        text1: 揉擦眼睛，使細菌自腺體開口處進入眼瞼並引起感染
+        text2: 與食物過敏有關，如：海鮮過敏、巧克力過敏等
+        text3: 如果感染反復發作，要留意是否與全身性疾病有關，例如：糖尿病
+        text4: 經常熬夜、作息不正常令眼睛過度疲勞，抵抗力下降
+        text5: 患有糖尿病、習慣高脂高糖飲食
+        btn1: 眼挑針已好幾日尚未康復？
+        btn2: WhatsApp預約對症下藥治療
+        name1: 眼瞼炎症狀
+        text1_1: 眼瞼周圍紅腫發癢
+        text1_2: 眼睫毛的根部出現鱗片（脂漏性眼瞼炎的鱗片是黃色油膩物）
+        text1_3: 有時會發生眼睫毛長錯方向或倒睫的情況
+        text1_4: 某些感染性眼瞼炎會伴有結膜炎
+        name2: 眼瞼炎治療
+        text2_1: 眼瘡出現初期可以熱敷處理，能夠改善毛囊阻塞，令受阻的油脂腺打開，幫助油脂排出。可以用連殼熟雞蛋作為熱源，用清潔的毛巾包裹，在眼瘡周圍來回按摩5至10分鐘，按摩3至4次。
+        text2_2: 同時，醫生會處方抗生素藥水或藥膏。
+        text2_3: 若情況沒有改善，便應諮詢眼科醫生並考慮做眼瘡刮除術－於眼瘡位置割一小傷口，將膿泡釋放出來。此治療精準度高，術後傷口極小，可減少感染或腫脹情況發生。
+      keratitis: 
+        title: 角膜炎
+        name: 角膜炎症狀
+        text1: 疼痛
+        text2: 畏光
+        text3: 流淚
+        text4: 眼瞼痙攣
+        text5: 睫狀充血
+        text6: 角膜混濁、浸潤或潰瘍
+        btn1: 已有角膜炎症狀？
+        btn2: 立即致電預約檢查
+        name2: 角膜炎影響
+        text2_1: 潰瘍癒合後，瘢痕會阻礙光線進入，使角膜表面弧度和屈光折射發生改變，物體不能在視網膜上聚焦形成清晰物象，因此視力下降。
+        text2_2: 較為常見的是皰疹病毒引起的角膜炎，是人類常見的一種病毒感染。當身體免疫力下降時，嘴唇周圍會出現皰疹潰瘍症狀，病毒同樣也會侵犯眼睛，引起角膜炎。由皰疹所致的病毒感染而造成的角膜炎如未能及時醫治，容易造成角膜血管增生及形成疤痕（圖A），嚴重者需要透過角膜移植（圖B）才能改善視功能。
+        text2_3: 圖A：角膜血管增生及出現疤痕。 
+        text2_4: 圖B：接受角膜移植，換上透明清晰的角膜，有助改善視功能。
+        name3: 角膜炎治療
+        text3_1: 藥物治療：包括抗病毒藥物、抗生素、皮質類固醇等
+        text3_2: 手術治療
+        text3_3: 散瞳
+      iritis:
+        title: 虹膜炎
+        name: 虹膜炎成因
+        text1_1: 外傷使細菌、病毒、異物、化學物品等進入眼內
+        text1_2: 全身性疾病如：結核、麻風、風濕、鉤端螺旋體病等
+        text1_3: 虹膜附近眼組織的感染，如：角膜炎、鞏膜炎等
+        name2: 虹膜炎症狀
+        text2_1: 疼痛
+        text2_2: 畏光、流淚
+        text2_3: 睫狀充血
+        text2_4_1: 角膜後
+        text2_4_2: 沉著物
+        text2_5_1: 房水/
+        text2_5_2: 玻璃體混濁
+        text2_6_1: 虹膜
+        text2_6_2: 紋理不清
+        text2_7: 瞳孔縮小
+        btn1_1: 不想虹膜炎有後遺症？
+        btn1_2: 即WhatsApp預約 及早治療
+        name3: 虹膜炎併發症
+        text3_1: 角膜混濁、虹膜後黏連、瞳孔閉鎖、虹膜周邊前黏連或房角黏連、瞳孔膜閉、虹膜膨隆
+        text3_2: 併發白內障、繼發性青光眼、眼底病變、眼球萎縮等
+        name4: 虹膜炎治療
+        text4_1: 消炎眼藥水、散瞳、降眼壓眼藥水
+        text4_2: 口服類固醇
+        text4_3: 結膜下或眼內注射類固醇
+      episcleritis:
+        title: 表層鞏膜炎
+        name1: 表層鞏膜炎成因
+        text1_1: 很多時無法找到明確病因，可能與壓力有關
+        text1_2: 內分泌異常
+        text1_3: 由自身免疫類疾病引起
+        name2: 表層鞏膜炎檢查
+        span2_1: 表層鞏膜炎的充血和水腫僅局限在鞏膜表層。其充血多呈暗紅色，滴腎上腺素後血管迅速變白。
+        span2_2: 表層鞏膜血管相對不會移動，因此表層鞏膜炎多局限在角膜緣至直肌附著點的區域內，不影響瞼結膜。充血的血管會呈放射狀沿角膜向後延伸。
+        name3: 表層鞏膜炎併發症
+        span3_1: 前房積膿
+        span3_2: 鞏膜穿孔
+        span3_3_1: 角膜
+        span3_3_2: 後彈力膜膨出
+        span3_4: 白內障
+        name4: 表層鞏膜炎種類
+        name4_1: 單純性表層鞏膜炎（Simple Episcleritis）
+        text4_1: 大多數鞏膜炎都屬於單純性表層鞏膜炎，多出現在女性。會出現眼紅、眼痛等症狀，病變部位呈塊狀的鞏膜表層和球結膜有彌漫性充血水腫，呈紫紅色（如圖）。症狀一般較輕，輕微疼痛和灼熱感，有時會出現眼瞼神經血管性水腫，視功能多不受影響，偶然出現瞳孔括約肌和睫狀肌痙攣，導致瞳孔縮小而出現暫時性近視。這類型的鞏膜炎發病較突然，週期性發作，每次持續一至數天，部分病人每隔一至三個月便會復發。
+        span4_1: 與流行性角結膜炎的彌漫性眼紅不同，單純表層鞏膜炎病人的眼睛局部發紅，而且多不影響角膜。
+        name4_2: 結節性表層鞏膜炎（Nodular Episcleritis）
+        text4_2: 與單純性鞏膜炎相比，結節性表層鞏膜炎多影響年輕女性，恢復時間亦較長。病人可能出現眼紅、疼痛、畏光和流淚症狀，但一般不影響視功能。每次發病持續約2周左右，炎症逐漸消退，約2/3的病人會多次復發。
+        span4_2: 結節性表層鞏膜炎的典型表現是局部隆起的單個結節，周圍有結膜充血和水腫。
+        name5: 表層鞏膜炎治療
+        context: 由於表層鞏膜炎很多時候與身體其他疾病有關，並可能會復發，因此重要的治療原則是去除病因，預防復發。
+        name5_1: 若症狀輕微
+        text5_1: 可以考慮局部使用類固醇藥物。
+        name5_2: 若病情較重或頻繁發作
+        text5_2: 應仔細檢查病人是否合併有自身免疫或結締組織的疾病，以免引起嚴重的併發症。
+        name5_3: 病人如若同時有虹膜或睫狀體發炎
+        text5_3: 應及時滴用放大瞳孔眼藥水，減輕炎症。
+        btn1: 鞏膜炎可能伴隨其他眼疾
+        btn2: 立即致電預約治療
+      damage: 
+        title: 角膜上皮破損
+        context: 角膜共有五層，最表面的一層稱為上皮層，這一層出現刮傷或破損剝落的情況俗稱為角膜破皮，即角膜上皮破損（Corneal Abrasion）。
+        name1: 角膜上皮破損成因
+        text1_1: 隱形眼鏡佩戴不當造成角膜刮傷
+        text1_2: 角膜長期缺氧而水腫剝落
+        text1_3_1: 異物直接傷害角膜，電焊或
+        text1_3_2: 紫外線灼傷（通常在六至十二
+        text1_3_3: 小時後角膜開始破皮）
+        text1_4: 乾眼症
+        text1_5_1: 眼瞼閉合不全
+        text1_5_2: （角膜因乾燥而破皮）
+        text1_6: 角膜病變等
+        name2: 角膜上皮破損症狀
+        text2_1_1: 角膜上皮層底下有豐富的神
+        text2_1_2: 經，一旦角膜破皮會使神經
+        text2_1_3: 暴露出來，非常疼痛
+        text2_2: 怕光、流淚
+        text2_3: 眼睛幾乎睜不開
+        text2_4_1: 角膜周圍的結膜
+        text2_4_2: 會充血發紅
+        text2_5_1: 張開或閉上
+        text2_5_2: 眼睛時有異物感
+        name3: 角膜上皮破損治療
+        name3_1: 藥物治療
+        text3_1: 使用抗生素眼藥水預防感染，並且在每天睡前塗藥膏，在眼皮及角膜之間形成保護膜，避免眼皮把新生角膜上皮層扯下來，並戴上繃帶式隱形眼鏡（Bandage Contact Lens），待傷口癒合。
+        name3_2: 手術治療
+        text3_2: 用針頭在角膜病變處刺出一些較深的傷口，使表皮與下面組織結疤而緊密黏連。但由於此方法會造成角膜瘢痕且有角膜穿孔風險，因此現時較少使用這種治療方法。
+        name3_3: 激光治療
+        text3_3: 激光治療性角膜切割術（Photo-Therapeutic Keratectomy, PTK）可治療復發性角膜上皮破損，成效相當不俗，而且復發率低於10%。
+        btn: WhatsApp了解治療方案
+      keratoconus:
+        title1: 錐形角膜
+        span1_1: 又叫圓錐角膜，是角膜擴張、中央變薄向前突出，呈圓錐形為
+        span1_2: 特徵的一種眼病。患上錐形角膜，會導致近視或散光度數不同，嚴重時可能引起角膜水腫，影響視功能。
+        name1: 錐形角膜成因
+        text1_1: 目前仍未有明確病因，可能是染色體隱性遺傳
+        text1_2: 過敏性疾病
+        text1_3: 常見於唐氏綜合症以及嚴重過敏者
+        text1_4: 經常揉眼
+        name2: 錐形角膜症狀
+        span2_1: 出現向前突起的圓錐，圓錐頂端的角膜基質明顯變薄
+        span2_2: 近視或散光度數變化幅度較大、較快
+        span2_3: 角膜變尖的部分發生水腫甚至穿孔，令視功能突然下降及疼痛
+        btn1: 懷疑自己有錐形角膜？
+        btn2: WhatsApp預約檢查及治療
+        name3: 錐形角膜治療
+        name3_1: 新型隱形眼鏡
+        span3_1: 硬式隱形眼鏡頂壓力較大，可以頂壓角膜變形，但較難適應，有機會在眼睛表面移位。新型的隱形眼鏡（Hybrid Contact Lens）既能提供良好的頂壓力，舒適度亦較良好。
+        name3_2: 膠原交聯術（Corneal Collagen Cross-linking）
+        span3_2_1: 在角膜局部滴核黃素（Riboflavin，即維生素B2，用於增加能量吸收並釋出活性氧）
+        span3_2_2: ，再經由紫外線（UVA）照射，令角膜組織釋放一些粒子，使角膜纖維中的膠原蛋白緊扣一起，角膜因此而變得堅韌穩定。
+        name3_3: 角膜基質環植入術（Intacs Implant）
+        span3_3: 為治療錐形角膜的方法，但若角膜疤痕較嚴重時，病人最終可能需要通過角膜移植來改善視功能。
+      keratoplasty:
+        title: 角膜移植
+        span: 角膜移植是把病變的眼角膜換成正常的眼角膜，使患眼疾的眼睛恢復視力或控制角膜病變，達致增進視功能或治療某些角膜疾病的效果。一些引起患者嚴重視功能受損甚至失明的角膜疾病，或可以此法治療。因為角膜本身不含血管，不會令身體出現排斥反應，所以角膜移植的成功率是器官移植之首。
+        btn1: 角膜移植助您重見光明
+        btn2: 即致電約見醫生了解更多
+        name: 角膜移植適合患者
+        span1_1: 外傷如：刺傷、燒傷、燙傷或化學品灼傷角膜等
+        span1_2: 嚴重角膜感染如：細菌及過濾性病毒感染
+        span1_3: 角膜退化性疾病
+        span1_4: 先天性角膜疾病如：錐形角膜
+        span1_5: 術後角膜退化或損傷
+        text1: 角膜病變可嚴重影響視功能（a），而接受角膜移植，換上透明清晰的角膜後，可以重建視功能（b）
+        name2: 角膜移植併發症
+        span2_1: 排斥反應
+        span2_2: 眼部感染
+        span2_3: 青光眼
+        span2_4_1: 角膜縫線
+        span2_4_2: 鬆脫
+        span2_5_1: 術後
+        span2_5_2: 屈光不正
+        name3: 角膜移植術
+        name3_1: 全層角膜移植
+        span3_1: 傳統的角膜移植多採用全層角膜移植方法，把5層角膜組織全部更換及移植。然而，並非每種病變都會損壞全層角膜。
+        name3_2: 板層角膜移植
+        span3_2: 板層眼角膜移植只更換部分角膜層，盡量保留患者仍具功能的角膜，降低治療入侵及排斥機率，更為安全、有效，術後傷口及視功能恢復也較快。
+        therapy1: 治療方式
+        involve1: 涉及角膜組織
+        postoperation1: 術後併發症
+        therapy2: 全層角膜移植
+        involve2: 全部5層結構
+        postoperation2_1: 對角膜內皮細胞損傷較大
+        postoperation2_2: 術後散光較多
+        postoperation2_3: 術後10年移植失敗率大於20%
+        postoperation2_4: 復原時間較長
+        therapy3: 板層角膜移植
+        involve3_1: |
+                    深層前角膜移植
+                    前面3層結構
+        involve3_2: |
+                    後層角膜移植
+                    後面3層結構
+        postoperation3_1_1: 對角膜內皮細胞損傷少
+        postoperation3_1_2: 術後散光較少
+        postoperation3_1_3: 移植排斥率低，復原時間較快
+        postoperation3_2_1: 無需縫線
+        postoperation3_2_2: 術後散光少
+        postoperation3_2_3: 術後移植失敗率低
+        postoperation3_2_4: 復原時間較快
+      faq: 
+        title: 角膜移植常見問題
+        q1: "Q: 角膜移植的成功率怎樣？"
+        a1: 由於角膜沒有血管，角膜移植是所有器官移植中成功率最高的。有些病人的角膜出現新生血管增生或同時患上其他眼疾，會降低手術的成功率，但使用適當藥物，術後成功率還是較高的。
+        q2: "Q: 術前有什麼注意事項？"
+        a2: 應該保持開朗，有充足睡眠和休息，戒煙酒，預防感冒，並保持排便通暢。
+        q3: "Q: 角膜移植後需注意什麼？"
+        a3_1: 1)避免揉眼、眼部外傷、體力勞動及劇烈運動。
+        a3_2: 2)遵照醫囑複診（包括：視力、眼壓、裂隙燈檢查等）。
+        a3_3: 3)堅持按照醫囑用藥，用藥期間如有不良反應，應及時告訴醫生，以便調整用藥。
+        a3_4: 4)需緊急就診的情況：突然視物不清、眼紅、眼痛、畏光、有眼外傷等。
+      navLists: 
+        name1: 翼狀胬肉
+        name2: 眼瞼炎
+        name3: 角膜炎
+        name4: 虹膜炎
+        name5: 表層鞏膜炎
+        name6: 角膜皮上破損
+        name7: 錐形角膜
+        name8: 角膜移植
+      btn:
+        name1_1: 難自行分辨是否有翼狀胬肉？
+        name1_2: WhatsApp預約醫生檢查
+        name2_1: 眼挑針已好幾日尚未康復？
+        name2_2: WhatsApp預約對症下藥治療
+        name3_1: 已有角膜炎症狀？
+        name3_2: 立即致電預約檢查
+    eyeOrthopaedicDisease: 眼矯形及眼眶疾病
+    eyeOrthopaedicDisease_head: '眼矯形及眼眶疾病｜希瑪眼科｜醫療服務'
+    eyeOrthopaedicDisease_con:
+      ophthalmoplasty:
+        title: 眼整形
+        p: 眼整形外科手術及眼眶服務為眼瞼、眼眶、眼部和淚腺患有先天性和後天性缺陷的患者提供先進治療，以修復他們眼部及面部，還原自然外觀。本中心提供修復因外傷和疾病造成眼部損傷之服務。
+        name: 眼瞼移位種類
+        name1_1: 上瞼下垂
+        p1_1: 上眼瞼下垂可能是先天或後天因素影響。大多數是由提拉眼瞼肌肉無力或斷裂造成。大部分先天性病例是由於出生後肌肉發育不良導致。
+        p1_2: 對於兒童，眼瞼下垂如及早得到矯正，可預防弱視（視覺功能減退）。極少數和瞼裂狹窄綜合癥症有關。做矯正前，醫生會對肌肉的類型及強度進行診斷。
+        name1_2: 治療上瞼下垂
+        p1_3: 種類包括：苗勒氏肌切除術、上瞼下垂矯正術、額肌懸吊術，以及提肌切除或重新植入，通過微創技術盡量達到無疤痕狀態。
+        name2_1: 瞼內翻
+        p2_1: 瞼內翻指瞼緣向眼球方向卷曲。這種病常見於老年人。一般由於眼瞼肌異常、結膜二次創傷（化學，灼熱或機械導致）、感染、炎症疾病，如：史蒂文詹森綜合征所造成。
+        p2_2: 瞼內翻會導致眨眼時，眼睫毛對角膜造成傷害，以致視力下降。瞼內翻可透過矯正術使眼瞼邊緣和眼睫恢復正常。
+        name2_2: 治療瞼內翻
+        p2_3: 治療瞼內翻有很多方法，而黏膜移植通常用於情況較為嚴重的病例。
+        name3_1: 瞼外翻
+        p3_1: 瞼外翻指眼瞼邊緣向外翻轉，通常是因為眼瞼鬆弛所致，繼發於更年期老年人的眼部結構變化。另外，眼瞼皮膚疤痕、面部肌肉麻痺，以及眼瞼的鬆弛都會導致瞼外翻。先天性原因造成的此類疾病較為少見。
+        name3_2: 治療瞼外翻
+        p3_2: 降低眼瞼的鬆弛度和矯正皮膚牽引力。治療方法取決於疾病原因，從簡單眼瞼收緊到皮膚移植。通過臨床診斷後，醫生會建議最合適方法進行治療。
+        name4_1: 兔眼
+        p4_1: 兔眼是由於臉部肌肉麻痺，或是眼瞼皮膚疤痕而導致上下眼瞼無法完全閉合；可導致眼乾，甚至角膜潰瘍。
+        name4_2: 治療兔眼
+        p4_2: 治療的主要目的是防止角膜損傷。此外，也可以通過非外科方式來矯正。
+        btn_1: 眼睛外形影響視野及外觀？
+        btn_2: 即WhatsApp預約治療
+        name5: 其他眼整形
+        title5_1: 眼瞼缺陷
+        text5_1: 眼瞼缺陷由眼瞼撕裂、外傷或眼瞼腫瘤切除後造成的；也有可能是先天性眼瞼缺陷。矯正術可保持眼瞼外觀自然，從簡單修復到使用膜瓣修復也有案例。
+        title5_2: 甲亢突眼
+        text5_2_1: 甲亢突眼常見於成年人，徵狀為眼球向前突出。它往往是從活躍階段逐漸發展至非活躍階段，而患者會因為眼瞼的收縮、眼球凸出，使得面部猙獰。
+        text5_2_2: 如果症狀嚴重，如因壓迫視神經而影響視力，也會導致角膜暴露在外引起損傷和潰瘍。矯正術可通過一個很小的創口進行眼瞼治療。
+        title5_3: 淚水過多
+        text5_3_1: 淚腺堵塞是引發淚眼的原因之一，我們稱之為原發性鼻淚管阻塞（PANDO）。有些人在出生時就有這症狀，但可通過按摩來緩解，否則需要透過外力來清理鼻淚道。成年人一開始病徵為大量流淚，繼而引發感染。此外，創傷、腫瘤和鼻腔疾病也可能引發淚道堵塞。
+        text5_3_2: 治療淚腺堵塞可製造特殊通道使眼淚進入鼻腔而其他治療方法則取決於堵塞的位置。
+        title5_4: 眼眶再造
+        text5_4: 眼球摘除的原因有許多，包括：腫瘤、感染、盲眼以及眼整容所造成的傷害。摘除術包括：眼球摘除、以及眼內容物摘除（保留眼眶和眼肌）。摘除的部分由人工植入義眼填充。其餘部分則通過打磨和噴塗的義眼來保持其美觀效果。義眼都是參照真眼度身訂做。
+        title5_5: 眼眶收縮
+        text5_5: 眼眶收縮下眼眶無法固定義眼。首次治療後如果沒有即時植入義眼，眼眶容易收縮。眼眶收縮的再造是為了達到美觀的效果，包括穹窿構成、義眼二次植入和以自體脂肪移植來還原本來的外觀。
+        name6: 去眼袋
+        text6: 眼袋形成的原因包括遺傳、皮膚老化及生活模式等，而老化是最為普遍的。隨着年齡增長，眼框周邊組織及眼瞼肌肉變弱，失去彈性和張力，令眼皮出現鬆弛，並在眼睛下方形成空隙。當位於眼睛下方的脂肪滑落，就形成眼袋。
+        name7: 手術方法
+        title7_1: 內開式（眼內結膜切口）
+        text7_1_1: 在下眼瞼結膜內製造切口，把多餘脂肪移位或除去
+        text7_1_2: 。完成後無需縫線，也不會在眼皮上留有疤痕。這方法適合較年輕及眼皮緊緻的人士。
+        title7_2: 外開式（眼皮切口）
+        text7_2: 在睫毛下（約1-2mm）製造切口，切取多餘的脂肪及皮膚組織，脂肪亦可填至淚溝凹陷處，再以縫線縫合切口。疤痕在術後大概2-3個月會與眼周皺褶自然融合。這方法適合較年長、眼袋較大、眼皮鬆弛的人士。
+        name8: 雙眼皮手術
+        text8: 當提眼瞼肌組織連接到眼皮褶痕處，便會產生皺折，形成雙眼皮。由於亞洲人的上眼瞼皮膚較厚、脂肪較多、提眼瞼肌組織連接到的眼皮位置較低（近睫毛），故此較多人擁有單眼皮，而接受雙眼皮手術的目的便是︰連接製造提眼瞼肌和眼皮，使眼部看起更精神之間的人工連結。
+        name9: 手術方法
+        operation1: 手術名稱
+        introduce1: 手術介紹
+        durability1: 維持性
+        time1: 手術時程
+        recovery1: 康復時間
+        operation2: 穿線式（吊線）
+        introduce2_1: 在眼皮上製造3至5個小孔，並用外科手術線把小孔縫合，製造雙眼皮的褶痕。數個小孔，並用外科手術線把小孔縫合，製造雙眼皮的折痕。
+        introduce2_2: 適合較年輕、眼皮單薄、較小脂肪及眼皮沒有鬆弛緊緻的人士。
+        durability2_1: 2-3年
+        durability2_2: （會逐漸變得不穩）
+        time2: ~45分鐘
+        recovery2: 7-10天
+        operation3: 切割式（開刀）
+        introduce3_1: 醫生按雙眼皮位置開刀以手術刀切開上眼瞼，抽取多餘的脂肪及皮膚組織，再以縫線縫合切口，將提眼瞼肌的組織與皮膚連接，形成雙眼皮。
+        introduce3_2: 適合眼皮鬆弛及皮下脂肪較厚的人士。
+        durability3: 長久性
+        time3: ~60-90分鐘
+        recovery3_1: 14-21天
+        recovery3_2: （7-10天拆線）
+        name10: 開眼頭手術
+        text10_1: 普遍亞洲人的上眼瞼眼眶內側都有一層稱為蒙古褶（內眥贅皮）的皺摺，令眼皮看來比較浮腫。「內眥贅皮」的皺摺，令眼皮看來比較浮腫。輕度一般不會影響視野及外觀；但嚴重可能會遮擋部分視野、令眼睛裂（眼線）長度縮短及在視覺上雙眼距離增寬。
+        text10_2: 此外，內眥贅皮亦是影響雙眼皮術後效果的重要因素。內眥贅皮會使術後形成的雙眼皮折線在內眼角位置被遮擋甚至消失，令雙眼皮效果不理想。因此，雙眼皮手術多會配合開眼頭一併進行，透過切去多餘的上瞼皮膚以打開眼頭，改善內眥贅皮覆蓋眼頭的情況。
+        span10_1: 維持性：
+        span10_2: 長久性
+        span10_3: 手術時程：
+        span10_4: ～30-45分鐘
+        span10_5: 康復時間：
+        span10_6: 14-30天（7-10天拆線）
+        name11: 眼皮鬆弛
+        p11_1: 眼皮鬆弛較常見於中老年人，眼睛皮下組織因老化而變弱和失去彈性，導致皮膚脂肪積聚過多，形成眼皮浮腫及下垂。近年，亦有不少年輕人因長期配戴隱形眼鏡時，過分拉扯眼周組織，而造成眼皮鬆弛。
+        p11_2: 如果眼皮鬆弛屬輕微，影響不大；但是嚴重的話會影響外觀，眼皮下垂會造成三角眼，甚至遮蓋眼睛，引致視力受阻。
+        name12: 手術方法
+        operation12_1: 手術名稱
+        introduce12_1: 手術介紹
+        durability12_1: 維持性
+        time12_1: 手術時程
+        recovery12_1: 康復時間
+        operation12_2: 穿線式（吊線）
+        introduce12_2_1: 過程不需要切開皮膚，只需開幾個細小傷口，再縫合皮膚肌肉、底層瞼板及提眼瞼肌，達致摺眼皮的效果從而令睫毛向外翻。此方法造成的傷口較小，復原得較快，
+        introduce12_2_2: 適合眼皮鬆弛輕微和皮膚薄的患者。
+        durability12_2_1: 2-3年
+        durability12_2_2: （會逐漸變得不穩）
+        time12_2: ~45分鐘
+        recovery12_2: 7-10天
+        operation12_3: 切割式（開刀）
+        introduce12_3_1: 醫生會將皮膚肌肉、眼肌筋膜打開，切除多餘的脂肪，然後直接將皮膚、瞼板及提眼瞼肌縫合。術後傷口雖然較大和明顯，但傷口一般可收藏在「雙眼皮」的線位，不易被察覺。此方
+        introduce12_3_2: 法較
+        introduce12_3_3: 適合眼皮鬆弛及皮下脂肪較厚的人士。
+        durability12_3: 長久性
+        time12_3: ~60-90分鐘
+        recovery12_3_1: 14-21天
+        recovery12_3_2: （7-10天拆線）
+      eyeNeoplasms:
+        title1: 眼腫瘤
+        p1: 眼腫瘤包括：眼瞼、結膜、眼球及眼球周邊各層組織的腫瘤。眼腫瘤俗稱「眼癌」，不論良性或惡性腫瘤均可損害眼部組織及其功能。惡性腫瘤可損害眼球及視功能，並向眼眶周圍、顱內擴散或轉移全身。同時，身體某些部位的器官組織惡性腫瘤也可轉移至眼部。正常兩側眼球突出幅度是相等的，約1/3人兩側眼球突出的幅度相差0.5至2mm，而相差達2mm的人僅佔1%。
+        title2: 眼腫瘤症狀
+        name2_1: 眼球突出
+        p2_1: 眼球突出度超過22mm，兩眼差值大於2mm或在觀察過程中眼球突出度不斷增長，均被視為病理性眼球突出。引起眼球突出的原因有眼眶腫瘤、眼眶炎症、葛瑞夫茲病、血管畸形、眼眶外傷等。
+        name2_2: 眼球脫垂
+        p2_2: 外傷、腫瘤等令眶壓增高，使眼球向前突出於瞼裂之外。若眼球突出度高且伴有眼瞼痙攣徵狀，則容易發生眼球脫垂。
+        name2_3: 眼球內陷
+        p2_3: 眶腫瘤摘除後，眼球內陷、眼外肌緊張、交感神經麻痺，以及眶脂肪萎縮，也可引起眼球內陷。
+        btn2_1: 眼腫瘤延誤治療 後果嚴重
+        btn2_2: 即致電預約醫生問清問楚
+        title3: 真假眼癌
+        name3_1: 眼瞼癌變
+        text3_1: 角化棘皮瘤
+        text3_2: 鱗狀上皮細胞癌
+        p3_1: 角化棘皮瘤和鱗狀上皮細胞癌的發病都與長期受紫外線影響有關。因色素分佈不同，西方人患眼癌的風險較高，亞洲人相對較少，而鱗狀上皮細胞癌與AIDS感染也有關聯。
+        p3_2: 兩者的主要表徵是眼皮生長新生腫起物。腫起物生長速度快，且可能出現潰瘍，臨床上有時難以區分。要確診眼瞼病變可能需要進行活組織切除檢查。一旦確診，可以根據不同病變種類進行局部化療或冷凍療法等治療。
+        name4: 眼表癌變
+        text4_1: 翼狀胬肉
+        text4_2: 眼表面鱗狀細胞瘤
+        p4_1: 兩者出現均與紫外線慢性侵損有密切關係。其中翼狀胬肉屬於良性的慢性病變，主要表現為眼白部分結膜變厚及凸起，在發病初期症狀並不明顯。而另一種同樣與紫外線照射有關的眼表鱗狀上皮瘤，與翼狀胬肉在臨床上往往不容易區別，但鱗狀上皮瘤是癌前病變，所以必須小心留意。
+        p4_2: 翼狀胬肉一般發展緩慢，多處於靜止期，如無症狀或大小在3mm以下，可觀察而不需治療；如果進入活動期，或大於3mm，則需要考慮接受治療。隨著胬肉增大，可能會造成眼睛不適，使用眼藥水可消炎和舒緩不適。當胬肉生長到角膜中央區域，引起散光、甚至遮蓋瞳孔時，有機會令視功能受損傷，此時就需要考慮切除胬肉。治療安全有效，可在切除胬肉同時改善外觀及散光，一舉數得。而鱗狀上皮瘤，一經診斷應盡快考慮切除，並進行病理檢查，以確定病變性質。
+        name5: 眼內癌變
+        text5_1: 黑色素細胞瘤
+        text5_2: 黑色素瘤
+        p5: 兩者皆是發生於眼內的病變，特點是早期多無病徵，當病變發展至影響視功能時，腫起物的大小多已相當明顯。黑色素細胞瘤較為少見，病徵主要是眼底生長出黑色腫起物，多數是單眼發病及發生於視神經，較多見於深膚色人種及女性。這種病變一般屬於良性病變，因此多不需要治療，但極少數病例可能出現惡性病變情況，則需要考慮放射治療或切除。而黑色素瘤則是惡性病變，會向眼內生長，入侵視網膜和玻璃體，還可能會轉移全身影響重要器官。若確診黑色素瘤，則需要盡快治療，盡可能保存視功能及減低全身轉移的機會。
+        text5_3: 柯氏症
+        text5_4: 視網膜母細胞瘤
+        p5_1: 兩種疾病均多見於兒童，多數是家長觀察到孩子有斜視及白瞳孔現象後而發現的。柯氏症又稱為「滲出性視網膜炎」或「視網膜末梢血管擴張症」，可造成視功能減退，甚至失明。柯氏症一般為單眼入侵，大多在十歲內發作，主要的症狀是視網膜毛細血管異常擴張及增生，導致血漿滲漏到視網膜下，引起一系列病徵。早期可考慮使用放射或是冷凍治療的方式，破壞視網膜異常毛細血管，以阻止病情惡化。
+        p5_2: 視網膜母細胞瘤是最常見的兒童原發性眼內腫瘤，是從視網膜長出來的一種惡性腫瘤。若不治療視網膜母細胞瘤，將會很快由眼底往前生長，更會擴散到眼球外，或沿視神經轉移到腦或全身。而治療必須依患者狀況而定，治療計劃需視乎腫瘤是單側或雙側腫瘤、視功能的殘存程度、腫瘤是否還局限在眼球內、有沒有擴散到視神經、腦部或血行轉移等因素而定。
+        text5_5: 眼球內的腫瘤
+        title6: 治療眼腫瘤
+        name6_1: 激光治療
+        text6_1: 激光治療對於治療體積較小的腫瘤效果良好，多需在全身麻醉的情況下進行。無需在眼睛切割傷口，術後定期複診，直至腫瘤縮小甚至消失為止，治療期間如有需要亦可再次進行激光治療。
+        name6_2: 冷凍治療
+        text6_2: 與激光治療一樣，冷凍治療對治療體積較小的腫瘤的效果較好。不過這種方法需要切斷結膜，直接在病人的鞏膜外進行。醫生需要使用間接眼底鏡定位，然後將冷凍頭放置到腫瘤位置相應的鞏膜外，進行冷凍，目的是有效地把腫瘤冷凍並消滅。治療後，結膜會有傷口，眼皮及眼睛會出現浮腫，約1至5天便消退。
+        name6_3: 放射治療
+        text6_3: 放射治療用於控制局部腫瘤，同時可以保留視功能。視網膜母細胞瘤對放射線十分敏感，而以往放射治療的副作用較大，引起併發症較多，醫生並不常使用，現時的放射線技術可更有效地摧毀局部腫瘤。
+        name6_4: 化學治療
+        text6_4: 全身化療是通過靜脈注射進行，經血液迴圈到達腫瘤細胞，達到減慢腫瘤生長的目的。
+      eyeProsthesis:
+        title: 義眼術
+        context: 植入義眼台可以填充眼窩大部分的空間，殘留的位置可安裝義眼片。通過義眼台帶動義眼片轉動，義眼的活動性較高。義眼台根據不同材料分類：
+        text1_1: 矽膠義眼台
+        text1_2: 羥基磷灰石義眼台
+        text1_3: 多孔聚乙烯義眼台
+        name1: 傳統義眼術
+        context1: 傳統義眼片製作主要是為了改善患者的外觀，盡可能提供義眼靈活度和舒適度；但總的來說舒適度及活動靈活度上的工藝仍有限制。
+        name2: 現代義眼術
+        context2: 現代義眼經過高度改良，每個細節都透過現代高科技製作。
+        text2_1: 患者安裝好義眼台6至8周後，醫生會給患者佩戴臨時義眼片，再根據另一隻眼的情況，配上不同大小和凹槽的義眼片等。
+        text2_2: 然後在義眼片上刻畫虹膜、鞏膜甚至血管紋理等，高度仿真另一眼的外觀。然後，打磨拋光，確保其舒適度及與正常眼之匹配度。
+        text2_3: 大約2至3周後，戴上訂制好的義眼片。如有需要，可再作局部調整，以達高度仿真及確保義眼片的舒適度，幫助患者重拾自信。
+        btn1: 更多詳情
+        btn2: 請WhatsApp聯絡我們
+      usage: 
+        title: 義眼片使用方法
+        name1: 義眼片的安裝
+        text1_1: 安裝前一定要以洗手液洗淨雙手。
+        text1_2: 以拇指及中指持義眼片，有標記的頂部向上。也可用吸盤持義眼片。
+        text1_3: 以另一手拇指（或同一手的其他手指）拉起上眼瞼。
+        text1_4: 食指固定義眼片，同時可鬆開上瞼下拉下瞼，使得義眼片底部滑入下瞼內，直到義眼片位置合適。
+        text1_5: 眨眼2至3次，使義眼片固定在眼內合適位置。
+        text1_6: 輕輕將義眼片頂部滑入上瞼下，直到上瞼遮蓋約義眼片的一半。
+        text1_7: 同時避免義眼片旋轉。
+        name2: 義眼片的取出
+        text2_1: 以吸盤輔助取出更為方便。
+        text2_2: 清洗乾淨手及吸盤。
+        text2_3: 吸盤面濕水或利用無菌溶液沾濕然後放置於義眼片面。
+        text2_4: 向上傾斜放好的吸盤，同時拉開下瞼看到義眼片下緣，此時向前向下拉義眼片即可。
+        text2_5: 直到義眼片脫離義眼座後才能擠壓吸盤。
+        text2_6: 吸盤放置在義眼片的中心虹膜顏色處，輕壓使其吸附在義眼片面。
+        text2_7: |
+                  擠壓吸盤內空氣然後放鬆，使吸盤吸附牢固，可重複動
+                  作直到吸附良好。
+        name3: 注意：
+        text3_1: "1. 取下義眼片需放在乾淨的軟紙巾上，避免接觸。"
+        text3_2: "2. 安裝義眼是非常嚴謹的，應由經驗豐富的義眼定制"
+        span3: 技師根據患者眼窩大小、正常眼睛的神態和色調，經準確測量而訂制。訂制義眼一般需要一天。個別患者還需要額外覆診，根據情況修整義眼。安裝義眼無特殊情況下，以後的覆診安排一般為半年至一年。兒童因眼球摘除後該側的眼窩、面部發育未定型，需定期更換義眼，所以定期覆診是非常重要的。成人一般約4至5年需調整義眼片。
+        name4: 義眼注意事項
+        text4: 義眼片能修復容貌，填充眼眶。經常對義眼片進行必要的修復護理保養才能延長義眼的壽命，增加舒適度，外觀才會更有光澤，達到更好的佩戴效果。因此，義眼片的保養和護理非常重要。
+        name5: 清洗頻率：
+        text5: 醫生會根據患者的眼睛及分泌物情況做評估，請遵照醫囑定期清洗；
+        name6: 清洗溶液：
+        text6: 隱形眼鏡液或義眼專用液，禁用酒精；
+        name7: 清洗方法：
+        text7_1: 常清潔眼瞼、睫毛，保持義眼座乾淨衛生；
+        text7_2: 安放前洗淨雙手；
+        text7_3: 3滴清洗液，再擦去其表面的沉積物。再用溫開水徹底沖洗，然後紙巾擦乾，仔細查看有沒有殘留沉積物，如有可重複步驟清洗。
+        name8: "其他注意事項:"
+        text8_1: 不需每天取下義眼片；
+        text8_2: 建議佩戴護目鏡以保護健眼；
+        text8_3: 游泳及水上運動時需戴上護目鏡。跳水、滑水、潛水時需取下義眼片；
+        text8_4: 兒童佩戴義眼片需成人監護，避免誤吞；
+        text8_5: 有明顯紅腫、疼痛或有惡臭分泌物等，不能繼續佩戴義眼片，並需及時諮詢醫生。
+      navLists: 
+        name1: 眼瞼移位
+        name2: 眼瞼缺陷
+        name3: 甲亢突眼
+        name4: 淚眼
+        name5: 眼眶再造
+        name6: 眼眶收縮
+        name7: 去眼袋
+        name8: 雙眼皮手術
+        name9: 開眼頭手術
+        name10: 眼皮鬆弛
+        name11: 眼瞼癌變
+        name12: 眼睛表面癌變
+        name13: 眼內癌變
+        name14: 義眼術
+    medicalOptometry: 醫學驗光配鏡
+    medicalOptometry_head: '醫學驗光配鏡｜希瑪眼科｜醫療服務'
+    medicalOptometry_con: 
+      introduction:
+        p1: 現代人生活模式改變，每天花大量時間看電子螢幕，雙眼休息不足，容易加速眼睛老化，還造成各種視力甚至眼疾問題。我們相信預防勝於治療。為了預防眼疾，無論任何年齡，都需要定期進行眼睛健康檢查，保持良好視力和擁有健康眼睛。
+        p2: 希瑪眼科中心旗下的視光中心──
+        span1: 希瑪眼科視光中心CMER VISION
+        span2: ，提供
+        span3: 成人眼睛檢查、兒童眼睛檢查、近視控制檢查
+        span4: 等，照顧不同客人的需要。在視光檢查後，如發現有任何眼疾先兆或問題，我們會立即轉介予
+        span5: 眼科專科醫生
+        span6: 跟進，務求令患者得到最合適的治療。
+        btn1: 立即預約
+        btn2: 全面眼睛檢查
+      cause: 
+        name: 為何人生中不同階段都需要眼睛健康檢查？
+        title1: 3-6歲
+        span1: 這個階段的兒童大概能夠理解及配合許多眼科檢查，能夠在註冊視光師和眼科專科醫生指導下完成檢查。兒童能在這段時期透過定期檢查，及早發現和治療弱視、斜視，以及控制近視等。
+        text1: 3 - 6歲兒童眼睛檢查
+        btn1: 立即預約
+        title2: 6-18歲
+        span2: 青少年時期的眼睛及身體發育較快，若用眼習慣不良，近視、散光等度數也增加得較快。定期檢查可觀察眼睛屈光度數的變化，及時控制近視等度數。
+        text2: 6-18歲兒童眼睛檢查
+        btn2: 立即預約
+        span3: 希瑪視光中心十分重視兒童近視控制。視力發育不良會影響孩子日後發展和眼睛健康。所以，希瑪視光中心十分關注學童近視率偏高的問題，並提供詳細眼睛檢查服務及針對性的兒童近視控制方案，包括︰角膜矯形術、每日即棄近視控制隱形眼鏡、兒童近視控制鏡片（DIMS鏡片、MyoVision鏡片），希望能助兒童把握控制近視的黃金治療期。
+        btn3_1: 了解更多
+        btn3_2: 兒童近視控制方案
+        title4: 18-55歲
+        span4: 這時期的眼部檢查，主要針對家族有眼疾病史及患眼疾的高危人士，例如︰青光眼。除了常規眼科檢查外，還有相應的特殊檢查。如中高度近視及糖尿病患者應定期檢查眼底，及早發現眼疾。
+        title5: 55歲以上
+        span5: 隨著年齡增長，患上與年齡相關眼疾的機會也會增加，如白內障、老年黃斑病變等，透過眼底檢查能及早發現眼疾，需要時能及早治療。
+      btn1: "18 - 55歲以上 成人眼睛檢查"
+      btn2: 立即預約
+      navLists: 
+        name1: 醫學驗光配鏡
+        name2: 原因
+    smileHk: 屈光矯視
+    atropine: 阿托品眼藥水
+    atropine_head: '阿托品滴眼液｜希瑪眼科｜醫療服務'
+    atropine_text: 
+      introduce: 
+        span1: 低濃度
+        span2: 高濃度
+      effect:
+        p1: 根據最新一期美國醫學會雜誌的研究
+        p2: ，發現0.05%濃度的阿托品眼藥水對於控制近視加深率效果明顯。兒童使用0.05%濃度的阿托品眼藥水後，有67%的使用者出現減慢近視加深的成效。
+        p3: 有研究數據顯示0.05%濃度比起0.01%濃度的阿托品眼藥水更有效減慢近視加深速度。使用0.05%濃度阿托品眼藥水兩年累積的近視加深率是最低，為28.4%
+        p4: 。使用0.01%濃度的近視加深率是45.9%。此外，使用0.05%濃度阿托品眼藥水的近視加深度數和眼球增長速度也比較低。
+        span: 由此可見0.05%低濃度阿托品眼藥水控制近視效果較為理想。 
+        btn1: |
+              立即WhatsApp查詢
+              了解兒童控制近視方案
+      congruency:
+        btn1: |
+              立即預約見醫生
+              評估孩子是否適用阿托品眼藥水
+      matters:
+        btn1: |
+              立即預約見醫生
+              評估孩子是否適用阿托品眼藥水
+      atropine_text1: 阿托品眼藥水
+      atropine_title1_text1: 阿托品眼藥水控制兒童近視方法
+      atropine_title1_text2: 阿托品眼藥水有不同的劑量，低濃度阿托品眼藥水的副作用較輕微同時能更有效控制近視
+      atropine_title1_p1_span1: 除了光學控制兒童近視，
+      atropine_title1_p1_span2: 由眼科醫生處方的阿托品眼藥水已被證明是目前有效控制近視方法之一
+      atropine_title1_p1_span3: 。阿托品藥水是屬於抗膽鹼藥品，有擴大瞳孔的作用，能抑制鞏膜纖維組織生長、防止或減慢眼球進一步延長，以減慢小朋友近視加深速度。
+      atropine_title1_p2_span1: 阿托品的副作用是令眼睛內的睫狀體肌肉放鬆，使得看近變得困難，
+      atropine_title1_p2_span2: 因此必須由眼科醫生處方適當劑量。 
+      atropine_title1_p3_span1: 阿托品眼藥水有不同的劑量，分為低濃度阿托品眼藥水及高濃度阿托品眼藥水，包括0.01%，0.05%，0.125%及1%等。
+      atropine_title1_p3_span2: 低濃度阿托品眼藥水的副作用較輕微同時能更有效控制近視。
+      atropine_title2_text2: 阿托品眼藥水作用
+      atropine_title2_p1: 根據最新一期美國醫學會雜誌的研究
+      atropine_title2_p2: ，發現0.05%濃度的阿托品眼藥水對於減低近視發生率效果明顯。兒童使用0.05%濃度的阿托品眼藥水後，有67%的使用者出現減慢近視加深的成效。
+      atropine_title2_p3: 有研究數據顯示0.05%濃度比起0.01%濃度的阿托品眼藥水更有效減慢近視加深速度：使用0.05%濃度阿托品眼藥水兩年累積的近視發病率是最低，為28.4%
+      atropine_title2_p4: ，使用0.01%濃度的近視發病率是45.9%。此外，使用0.05%濃度阿托品眼藥水的近視加深度數和眼球增長速度也比較低，由此
+      atropine_title2_span1: 可見
+      atropine_title2_span2: 低濃度阿托品眼藥水，尤其是0.05%濃度控制近視眼效果較為理想。
+      atropine_title3_text3: 阿托品眼藥水好處
+      atropine_title3_p1: 幫助控制發育期間眼球拉長
+      atropine_title3_p2: 減低每年近視度數增加的速度
+      atropine_title3_p3_1: 減低深近視的機會
+      atropine_title3_p3_2: （尤其是有深近視家族病史的兒童），降低患上近視相關眼疾的風險
+      atropine_title3_p4: 使用簡單，一般只需每天睡前滴一次眼藥水
+      atropine_title4_text4: 誰適合使用阿托品眼藥水？
+      atropine_title4_p1: 阿托品眼藥水適合患近視兒童用作近視控制，但需根據每個兒童的眼睛及近視發展調整，或可能需要配合其他近視控制產品一併使用。
+      atropine_title4_p2: 如果父母一方有深度近視，年紀小且遠視度數低於100度以下的兒童也可咨詢醫生意見，看是否適合使用阿托品眼藥水。
+      atropine_title4_p3: 此外，小朋友對戴近視控制隱形眼鏡有抗拒或不適應，亦可考慮使用阿托品眼藥水控制近視，使用方法簡單只需每日滴眼藥水即可有效減慢近視加深。
+      atropine_title4_p4: 若小朋友有斜視或有眼睛協調問題，用阿托品眼藥水會比其他近視控制產品較為適合。
+      atropine_title5_text5: 使用阿托品眼藥水注意事項
+      atropine_title5_p1: 部分兒童可能對阿托品藥物敏感及出現不良反應，如發燒、皮膚泛紅、心跳過快等。
+      atropine_title5_p2: 瞳孔放大導致會有畏光或視力模糊的情況出現。
+      atropine_title5_p3: 控制晶體調節的睫狀肌可能出現麻痺，失去調節能力（兒童或因此需要另配眼鏡）。
+      atropine_title5_p4: 使用阿托品眼藥水不能矯正近視或散光，兒童仍需要佩戴眼鏡才能看清楚。
+      atropine_title5_p5: 如果小朋友使用後出現不適或畏光的徵狀，可以選擇佩戴太陽眼鏡或漸進眼鏡以幫助近距離事物的觀察。
+      atropine_title6_text6: 阿托品眼藥水的使用方法/療程
+      atropine_title6_p1: 使用頻率以及次數
+      atropine_title6_p2: 阿托品眼藥水只需
+      atropine_title6_p3: 便可，使用後需要定期由醫生監察及調整份量。阿托品眼藥水需要在發育期間使用，一般醫生會建議使用藥物直到度數穩定，使用者需要和醫生商量何時適合停用阿托品眼藥水。
+      atropine_title6_p4: 用量（如有）
+      atropine_title6_p5: 一般醫生會先處方一個月用量的阿托品眼藥水再作評估，測量瞳孔及視力的變化以確定小朋友是否適合繼續使用。一般使用第一年，需要每4個月覆診一次，之後可每半年覆診一次，醫生也會再評估是否需要調整用量。
+      atropine_title6_p6: 一旦發現子女有近視，就應該盡快帶子女去眼科醫生進行眼睛檢查，制定近視控制方案以預防他們患有深度近視，並減慢近視加深的速度。
+      atropine_title6_btn: 立即查詢阿托品眼藥水
+      atropine_title6_span1: 每日一次，每次一滴
+    atropine_serviceNavigation:
+      serviceNavigation_anchorName1: 介紹
+      serviceNavigation_anchorName2: 作用
+      serviceNavigation_anchorName3: 好處
+      serviceNavigation_anchorName4: 適用
+      serviceNavigation_anchorName5: 注意事項
+      serviceNavigation_anchorName6: 使用方法/療程
+    # : 屈光矯視
+  ophthalmic_information:
+    ophthalmic_information: 眼科資訊
+    ophthalmic_class: 醫生小教室
+    ophthalmic_information_text:
+      information_p_text1: 醫生小教室
+      information_p_text2: 我們用心製作
+      information_p_text3: 透過拍攝訪問眼科醫生
+      information_p_text4: 希望令大眾更加了解眼疾
+      information_a_text1: 立即播放
+      information_mainContent:
+        mainContent1_title: 小朋友的眼睛檢查與大人有什麼不同？
+        mainContent1_doctor: 林寶生眼科專科醫生
+        mainContent1_text: 兒童年紀小檢查眼睛時，未必聽到懂指示，所以眼科專科醫生會設計不同的測試和檢查，去幫助小朋友檢查眼睛，例如︰顏色測試、眼底檢查、斜視檢查。不過，隨著小朋友年齡增加，到了幼稚園或小學階段，檢查眼睛的方法與成人類似。立即聽聽希瑪眼科中心 - 林寶生眼科專科醫生講解！
+        mainContent2_title: 眼瞼內翻的症狀，眼瞼內翻要做手術嗎？
+        mainContent2_doctor: 張瀞之眼科專科醫生
+        mainContent2_text: 眼瞼內翻可分為先天性和退化性，患者的常見症狀包括︰眼睛有很多分泌物、有異物感和疼痛，甚至會常有沙入眼的感覺、流眼水和眼睛水汪汪等。如果病情嚴重，可能會影響視力和角膜的健康。眼瞼內翻一定要透過做手術治療嗎？
+        mainContent3_title: 揉眼會影響視力？
+        mainContent3_doctor: 李德倫眼科專科醫生
+        mainContent3_text: 我們感到眼睛不適時可能會揉眼，其實這是一個不好的習慣。不要以為揉眼只是一個小動作，它可能造成眼角膜損傷、眼睛細菌感染，嚴重的話甚至出現眼角膜潰瘍，並會大大增加患眼疾的風險，某些人士更要特別注意。
+        mainContent4_title: 怎麼知道眼乾是缺油或是缺水？
+        mainContent4_doctor: 李德倫眼科專科醫生
+        mainContent4_text: 眼乾可以分為「缺水性」和「缺油性」。缺水性是由於眨眼過少，導致淚水揮發多而分泌少，此類型眼乾較常見於中年女士、常看電腦或手機、類風濕關節炎等人士。若患者屬於缺油性眼乾，多數由瞼板腺功能障礙引起，油脂大量分泌並堵塞了油脂孔，令到淚水容易揮發出來。
+    ophthalmic_publicity: 護眼宣傳片
+    ophthalmic_publicity_text:
+      publicity_text1: 護眼宣傳片
+      publicity_text2: 我們用心製作
+      publicity_text3: 透過拍攝訪問醫生
+      publicity_text4: 希望令大眾更加了解眼疾
+      publicity_text5: 眼疾影片
+      publicity_text6: 希瑪星際大冒險
+      publicity_eyeDisease:
+        eye_disease1_title: 天氣轉變提防結膜炎
+        eye_disease1_text: 轉天氣時，有些人會出現眼睛過敏徵狀，包括︰結膜充血、眼瞼紅腫及痕癢、多流眼水、畏光、分泌物增多等，十分影響日常生活。這些可能是季節性過敏性結膜炎引起的，本身有過敏體質，例如︰氣喘、過敏性鼻炎等，會更容易患上此種結膜炎。馬上去片
+        eye_disease2_title: 眼睛乾可以點解決？
+        eye_disease2_text: 乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！
+        eye_disease3_title: 母親必看！如果您有呢種仔女
+        eye_disease3_text: 今年5月14日就喺母親節喇！👩平日媽媽為屋企人辛苦打理家務，🎁身為子女嘅您又準備咗送咩禮物慰勞媽媽呢？但如果子女準備嘅驚喜禮物令您有驚無喜，您又會點？一齊睇到影片最尾，😉睇吓希瑪仔到底準備咗咩「驚喜」畀媽媽啦~ 👍鍾意呢條片就畀個like同comment支持我哋啦，🔔仲要記得訂閱、撳鐘仔留意我哋嘅最新影片啊！我哋日後會繼續做更多嘅影片畀大家睇❣️
+        eye_disease4_title: 情人節男生勿踩地雷!!!
+        eye_disease4_text: 2月14日情人節~ 諗好點同另一半慶祝未呢？😍咁開心和重要嘅日子真係要特別小心，唔好激嬲女朋友啊…  如果一唔小心，搞喊另一半，點算好？一齊去片睇睇喇~ 睇完鍾意嘅話記得畀個Like我哋啊👍p.s. 可以share畀您另一半作提醒😆鐘意呢條片記得訂閱、撳鐘仔、留言、分享嚟支持我哋！我哋會畀心機繼續做更多嘅影片畀大家睇！
+        eye_disease5_title: 眼睛乾可以點解決？- Part 1
+        eye_disease5_text: 乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！
+        eye_disease6_title: 眼睛乾可以點解決？- Part 2
+        eye_disease6_text: 乾眼症是一種長期疾病，需要長期治療才能改善。患上乾眼症想舒緩病情，可以用暖毛巾熱敷眼睛。平日盡量少吃煎炸和食物，以及吃一些omega3補充劑魚肝油丸，可以令眼睛的油質分泌更健康，有助舒緩乾眼症的症狀。馬上去片了解更多啦！
+    ophthalmic_little_theatre: 希瑪小劇場
+    ophthalmic_little_theatre_text:
+      little_theatre_text1: 希瑪小劇場
+      little_theatre_p1: 透過小劇場
+      little_theatre_p2: 利用生動的方法讓大眾了解眼疾
+      little_theatre_a1: 立即播放
+      little_theatre_videoList:
+        videoList1_title: 情人節男生勿踩地雷!!!
+        videoList1_text_1: 2月14日情人節~ 諗好點同另一半慶祝未呢？😍咁開心和重要嘅日子真係要特別小心，唔好激嬲女朋友啊…
+        videoList1_text_2: 如果一唔小心，搞喊另一半，點算好？一齊去片睇睇喇~ 睇完鍾意嘅話記得畀個Like我哋啊👍
+    ophthalmic_press: 新聞資訊
+    ophthalmic_press_text:
+      press_text1: 新聞資訊
+      press_text2: 緊貼醫療新聞
+      press_text3: 注重眼睛健康發展
+      press_text4: 回到文章目錄
+      press_text5_1: '＜上一篇'
+      press_text5_2: '下一篇＞'
+      press_span1: '新聞來源:'
+      press_span2: '醫理:'
+      press_span3: '資料來源:'
+      press_span4: '瀏覽次數:'
+      press_newList:
+        newList1_title: 斜視治療有方法
+        newList1_content_1: 治療斜視有四大方法，分別是眼鏡矯正(Optical Correction)、視軸運動矯正(Orthoptic Exercises)、遮眼治療(Occlusion)及手術治療(Operation)。這四個O的運用，要互相配合，相輔相成，眼科醫生會乎斜視患者的情況制訂治療目標和方案，有些患者可能只用其一，情況便得到改善，有些患者則要多管齊下，才能達到最佳治療效果。
+        newList1_content_2: 針對眼鏡矯正，不少斜視患者同時也有屈光不正，包括近視、遠視及散光；屈光不正會令患者視力模糊，影響大腦傳遞適當訊息控制視軸，令斜視惡化，亦有部分患者是因為高度遠視沒有得到光學糾正，雙眼過度用力聚焦，造成調節性內斜視，部分斜視患者能透過佩戴合適的眼鏡改善或矯正斜視。
+        newList1_content_3: 至於視軸運動矯正，是指透過鍛煉控制眼軸的眼外肌機能，改善斜視。視軸運動有不同種類，一般建議間歇性外斜視患者做眼球肌肉彙聚運動(Convergence Exercise)，俗稱「鬥雞練習」，視軸運動也可幫助斜視患者加強或重建立體感，不過運動訓練需要小朋友和家長高度配合並持之以恆的練習，才會有成效。
+        newList1_content_4: 若發現患者因斜視而導致弱視，即懶惰眼，便需要接受遮眼治療，原理是鋤強扶弱，透過用眼貼或特製眼鏡遮蔽正常的眼睛，強迫患者多用懶惰眼，從而鍛煉及恢復其功能。每天遮眼的時間及療程之長短視乎患者的年齡和弱視的嚴重程度，當懶惰眼的視力得以糾正或再沒有進一步的改善時，遮眼治療便可以終止。大部分弱視患者，愈早開始遮眼治療，視力就愈容易得以改善，但須留意遮眼治療只能改善視力，並不能糾正斜視的外觀。下期續談斜視的手術治療。
+        newList2_title: 視網膜脫落必須動手術嗎？
+        newList2_content_1: 視網膜脫落是眼科中比較嚴重的疾病，治療的主要目的，是保存中央視力，和令脫落的部位歸位。但如果視網膜脫落的範圍細小、在周邊或已有長時間的跡象，病人又全無病徵，則未必需要治療，因為這類病例只有一成的惡化風險，醫生可以安排病人定期覆診，觀察病情有否變化，但其實這類病例較少。 
+        newList2_content_2: 如果不是以上的病例，醫生通常會建議治療。治療可分為激光或手術。如果脫落的範圍非常小和在周邊，有時候眼部激光已可以鞏固視網膜。如果脫落範圍較大，手術是唯一醫治方法。如不動手術，視網膜脫落的範圍有可能擴大，甚至完全脫落，病人的視力會非常之差。脫落的時間愈長，便愈有可能出現增生性玻璃體視網膜病變，令手術成功機會降低。如果視網膜完全脫落，眼球更有可能萎縮、併發白內障、青光眼或眼角膜結疤，最終完全失明。手術的時間也相當重要，剛出現的視網膜脫落，而黃斑點未受影響，理論上手術須盡快進行。但如果黃斑點已經脫落，或脫落已有一段長時間，手術可變為非緊急手術，也算合理。至於手術的選擇，醫生會根據病人的病情、年紀等因素決定使用充氣性視網膜固定術、鞏膜外墊壓術或玻璃體切除術等方法治療。如有疑問，最重要是問清楚眼科醫生的意見，選擇適合您的治療方案。
+        newList3_title: 糖尿上眼可致盲？
+        newList3_content_1: 糖尿病是一種常見的新陳代謝病患，因為都市人的飲食習慣，除長者外，也有不少中年甚至年輕人患上該病。當中「糖尿上眼」為糖尿病人常見的併發症，也是全球十大致盲原因之一。「糖尿上眼」的發病率及嚴重程度，與患者的病齡和血糖控制息息相關，大部分患糖尿病十年以上的患者，都會有一定程度的糖尿相關視網膜病變狀況，而「糖尿上眼」初期可能全無病徵，因此糖尿病人必須定期驗眼。
+        newList3_content_2: 「糖尿上眼」對視力的影響，主要由於黃斑水腫及視網膜病變引發增生血管。長時間血糖水平過高，會導致視網膜的微細血管受到破壞，令其滲出蛋白沉澱物質及血液，如果滲漏位置處於黃斑區或其附近，便會造成黃斑水腫，破壞感光細胞，影響中心視力。更嚴重的是，長時間的視網膜病變狀況，會令視網膜長出不正常的新生血管，造成玻璃體出血、視網膜纖維化、繼發性青光眼，甚至視網膜脫落。當「糖尿上眼」發展至有明顯症狀，如視力模糊、影像變形、眼睛疼痛時，其實病情已經相當嚴重，即使接受治療，也未必能令視力完全康復，因此定期預防性檢查，及早發現「糖尿上眼」並控制病情，是預防「糖尿上眼」致盲最重要的一環。
+        newList3_content_3: 一旦發現「糖尿上眼」引致的黃斑水腫，主要的治療方法為眼內注射「抗血管增生因子」(Anti-VEGF)，眼科醫生會以特幼針嘴，於眼白鞏膜位置，將藥物直接注射入眼球內的玻璃體腔，藥物會慢慢瀰散，令增生血管慢慢萎縮，同時抑制新的增生血管形成，減少黃斑區的滲漏，阻止視力退化。標準治療方案是於首三個月每月注射一次，再按患者的反應和病情，決定是否需要後續注射。如能及早注射，大部分病人都有良好反應，但治療費用特別是藥物成本相對較為昂貴，也可能需要反覆注射以維持療效。對於復發性或持續性黃斑水腫，除了注射抗血管增生因子，也可考慮配合使用「類固醇玻璃體緩釋植入物」，於眼內持續釋放低劑量類固醇藥物，抑制炎症，長效抗水腫。
+        newList4_title1: 全港約50萬人患老年黃斑病變
+        newList4_title2: 視物變形要警惕
+        newList4_content_1: (左至右) 眼科學會會董黃禮文、港大李嘉誠醫學院眼科學系臨床助理教授陳焯鴻、眼科學會會長葉佩珮及會董鍾震宇。香港大學研究指出，老年黃斑病變是港人視障的第二大元兇，香港眼科學會估計，全港有約50萬人患上老年黃斑病變，惟港人對老年黃斑病變的認知甚低，學會憂慮患者延誤確診和治療，造成不可逆轉的視力損失，建議長者應定期接受眼科醫生的視力檢查，亦可經常使用阿姆斯勒方格表自我檢查，有助及早發現問題及診斷，盡早治療。
+        newList4_content_2: 香港眼科學會會董黃禮文醫生表示，老年黃斑病變可分為乾性及濕性，當中9成黃斑病變患者為乾性，1成人為濕性，兩者均會令患者視力衰退，而濕性老年黃斑病變更可能在數天內致視力急速下降。黃禮文又指，此眼疾早期或會毫無病徵，其後患者的顏色辨別能力及影像對比度減低，景物亦會變形扭曲，晚期中央視野更會出現黑影。他說，患者的日常生活大受影響，簡單如使用電話亦會較視力正常的人困難12倍，提醒患者需及早診斷和治療。
+        newList4_content_3: 香港大學在今年6月發布的眼疾認知研究中指出，老年黃斑病變位列港人視障的第二大元兇，222名受訪長者中有7成人不知其病徵，近5成人甚至未聽過此病。
+        newList4_content_4: 香港眼科學會會董鍾震宇醫生表示，病發首3個月是治療「黃金期」，患者應盡早接受治療，在眼球注射「血管內皮生長因子抑制劑」，阻止新增血管生長及滲漏，改善視力。他呼籲市民戒煙及多吃蔬果，並使用「阿姆斯勒方格表」作自我檢查。
+        newList4_content_5: 藝人胡楓約3年前被驗出患有老年黃班病變，他指，最初看到建築物呈彎曲時未有理會，直到彎曲幅度加劇才去看醫生，並連續3個月打針進行治療，視力始見改善，現在仍可繼續駕車出入。
+        newList4_content_6: 60歲患者鄭女士表示，患病初期視力變得模糊，起初以為鏡片有問題或過往眼疾的後遺症，受疫情影響，她延遲求診，再驗眼時才發現患上老年黃斑病變。她說，對該病及其治療方法認知不多，以為長者才會患病，在注射藥物後，視力已回復至患病前的水平。
+        newList5_title: 「微脈衝激光」拯救視力更安全
+        newList5_content_1: 激光治療在眼科治療非常廣泛，除了可用作矯視，亦可以醫治各種眼疾，在六十年代已開始使用。然而早期的激光治療是利用連續性的激光，光束非常穩定且不會斷開，能量較高，容易形成疤痕。若發射至黃斑點中心位，視力更會受損。直至九十年代末，微脈衝激光的出現，令副作用大大減低。微脈衝激光的特點是，激光能源會分段發放，讓眼睛組織迅速降温及休息。若做眼底造影檢查及掃描，會發現患者經過微脈衝激光治療後，並沒有看到有任何疤痕形成，故可供醫生及病人多一個治療選擇。
+        newList5_content_2: 微脈衝激光在臨床上可應用於以下常見眼疾：
+        newList5_content_3: 一、青光眼
+        newList5_content_4: 青光眼是神經線持續受損的一種眼疾，治療方法通常是降低眼壓。激光治療可透過增加眼球排水的循環，或破壞製造眼壓的細胞，從而將眼壓降低。針對青光眼的激光治療分兩種：
+        newList5_content_5: 小梁成形術：主要針對開角型青光眼，在眼睛角落的排水位(即小梁)利用脈衝激光(15%活躍)刺激細胞、減低它們之間的阻力，增進眼球前房水的循環，從而有助降低眼壓。對比傳統選擇性小梁成形手術，激光治療相對出現發炎的風險較小，對於眼睛容易發炎的患者會較為適合。
+        newList5_content_6: 跨鞏膜激光治療：涵蓋較多不同種類的青光眼，例如閉角型青光眼、血管增生性青光眼、發炎性青光眼。醫生會在眼球外發射激光，拉闊鞏膜下面的排水通道，不會影響小梁內的細胞。因為微脈衝激光所用的激光能量較少(33%活躍)，可減低鞏膜發炎、撕裂或手術後眼球萎縮的情況。
+        newList5_content_7: 二、黃斑點水腫
+        newList5_content_8: 糖尿上眼、眼底血管閉塞或倒塞(俗稱眼中風)、脈絡膜血管擴張等都會引致黃斑點水腫。治療上，一般都會處方能預防血管增生的眼內注射藥物，惟價錢不便宜，激光治療則是可供選擇的治療方案。因傳統激光會對黃班點中心直接造成傷害，只能將激光貼近黃斑點，治療效果未必理想。微脈衝激光治療將能量控制至只有5%活躍，其餘都是緩衝期，這樣便能將激光集中在黃斑點中心而不會造成疤痕。
+        newList5_content_9: 與其他激光治療一樣，使用微脈衝激光亦存有風險，患者可能會出現眼睛發炎、疼痛、眼組織流血、視力下降、眼疾復發等。但相對起傳統激光，這些副作用出現的風險較低，比較安全。若眼疾不幸復發，亦可重複使用微脈衝激光，以修補情況。
+        newList6_title: 斜視眼影響深遠 及早糾正救視力
+        newList6_content_1: 斜視眼是常見的兒童眼疾，最早在小兒3至4個月左右出現。俗稱「鬥雞眼」、「高低眼」、「射籬眼」便是斜視的明顯特徵；可以是間歇性或持續性。但此病不僅限於小朋友，成年人都會有斜視眼，原因可能是小時沒有完全糾正，眼部肌肉或神經問題等。要知道自己是否有斜視眼，可找旁人協助，於較遠位置使用電燈或手機的閃光燈，將燈光照向您的眼部，看看在您瞳孔位置的燈光是否在眼睛中央，若有偏移便可能是斜視眼。
+        newList6_content_2: 受斜視影響的兒童有可能因外觀問題容易被同輩取笑，有礙心理發展；斜視亦可能造成「懶惰眼」，令患者慣用較好的一邊眼睛，使另外一邊眼睛的視力發展不全。成人方面，看事物可能會出現重影，例如一隻碗看成兩隻碗，嚴重更會造成危險，尤其行樓梯時可能將一個梯級看成兩級，因而容易跌倒。除此之外，斜視患者的立體感亦會較常人差。故此建議斜視要及早糾正，以確保健全的視力發展。
+        newList6_content_3: 要修正斜視眼，眼科醫生首先會探究導致斜視眼的潛在成因，安排患者作詳細的眼科檢查，如有需要，特別是繼發性患者，更要做其他身體檢查如抽血化驗及影像掃描等，從而診斷是否有其他隱疾例如腦神經病變或甲亢等，對症下藥。常見引起斜視的眼疾包括間歇性外斜視，屈光不正等。症狀輕微的患者可以眼肌練習及訓練加強肌肉力量，如有需要可佩戴特製眼鏡以矯正情況(見下圖)；症狀持續及較嚴重患者可透過手術醫治，將眼部肌肉放鬆或強化，透過縮短或重新固定肌肉，以改善斜視問題。
+        newList7_title: 嚴重濕疹患者 慎防眼睛毛病
+        newList7_content_1: 濕疹是一種常見的過敏性皮膚發炎，患者皮膚乾燥和非常痕癢，甚至發紅發腫、產生鱗屑，嚴重的皮膚會裂開、剝落、結痂或滲血。不少人以為濕疹屬於皮膚病，與眼睛沒有關係，但事實上，濕疹和多種眼睛疾病都有關聯，尤其是過敏性結膜炎、錐形角膜、眼皮炎、眼瞼外翻、白內障和視網膜脫落。
+        newList7_content_2: 由於濕疹常發於在臉部，眼部附近的皮膚，都容易受到影響，導致眼腫和瞼緣發炎，俗稱眼皮炎。如果持續發炎，會導致皮膚結痂收縮，造成眼瞼外翻，露出紅色的結膜，甚至眼睛閉合不全，眼睛無法得到適當保護，淚水過度揮發，引發嚴重乾眼症和暴露性角膜炎。
+        newList7_content_3: 此外，濕疹患者自身較易有其他過敏性疾病，如哮喘、鼻敏感、眼敏感。眼敏感即過敏性結膜炎，令患者感覺眼睛乾澀痕癢，經常眨眼、捽眼，甚至用手指篤或用手掌拍打自己的眼睛。至於錐形角膜，是一種角膜病變，角膜從平滑球面變成圓錐形，造成深度近視和散光，除了濕疹患者自身的軟組織較弱，較容易變形，也估計和長時間用力捽眼，壓迫角膜，令角膜變形有關。
+        newList7_content_4: 濕疹患者較容易患上白內障，白內障是因為透明晶體內的蛋白質老化，令晶體變得渾濁，影響視力。曾經醫治過不少濕疹患者，早至二十多歲便出現白內障，除因為濕疹患者的新陳代謝速率有異，加速眼睛退化，亦因不少患者需要長時間大範圍使用類固醇藥膏控制皮膚發炎，久而久之引發白內障甚至青光眼。
+        newList7_content_5: 最後，嚴重濕疹患者亦較大可能出現視網膜脫落問題，並且較多為巨大視網膜裂口造成，不但手術的複雜性較高，手術預後亦較差，視網膜再脫落的情況普遍，或需要做多次手術，因此濕疹患者一旦發現有視力問題，特別是視力模糊、閃光、飛蚊、出現黑影等，應盡快向眼科專科醫生求醫，及早治療，拯救視力。
+        newList8_title: 屏幕傷眼 學童增百度近視
+        newList8_content_1: 【本報訊】世界衞生組織（WHO）去年4月發佈嬰幼兒使用電子屏幕指引，不足一歲的嬰兒不應觀看電子屏幕，兩至四歲幼兒每天平均使用電子屏幕不應超過一小時。眼科醫生劉凱珊指，沒有一個「安全」使用電子屏幕的時間準則，但她認為兩歲以後每天不應使用電子屏幕逾30分鐘。　
+        newList8_content_2: 劉凱珊表示，有小一生定期驗眼，去年12月才驗過沒有近視，「4月初來驗眼已有百多度近視，其母指兒子着實因為停課大量使用電子產品」，不過目前尚未有足夠數據反映兒童停課期間使用電子屏幕對視力的影響。兒童長時間在家，不用持續離遠看東西，家長未必察覺子女有近視問題。
+        newList8_content_3: 她建議家長用圖畫分開一半做配對，與幼兒相距約兩呎半，逐隻眼測試視力：「他們未能講出自己眼矇，特別是只有一隻眼有近視，可以用另一隻眼看東西。亦有小朋友先天不算看得清楚，根本不知道何謂清楚。」幼兒頻密瞇眼、揉眼，閱讀時將書本拉得得近，甚至動作「論盡」或整體發展疑有遲緩等，都有機會因為近視：「還有，是否脾氣很差？有可能因為看不清楚令小朋友很𤷪𤺧。」
+        newList8_content_4: 研究發現，曬太陽能增加神經傳導物質，減少近視加深的風險，劉凱珊援引台灣研究：「有兩班兒童，一班在戶外小息，另一班則在課室，同樣是廿分鐘，結果顯示，兩班小朋友的近視比例也有分別，外出小息的學生，有近視佔8.5%；室內小息的則有17.5%。」
+        newList8_content_5: 「20-20-20」規律保視力
+        newList8_content_6: 她建議家長遵行「20-20-20」規律，即每隔20分鐘離開電子屏幕，讓眼睛休息20秒，遠望最少20呎（6米）以外的景物，有助延緩近視加深的速度。「就算不外出，可否在露台曬太陽做功課？」至於屏幕大小，則沒有醫學研究指影響近視加深速度：「不過，用電腦較大屏幕，眼睛較手機屏幕相對不會覺太易累。」
+        newList8_content_7: 如不能避免電子教學，家長可減少子女課餘使用電子產品以作平衡，「電子產品是每秒轉了六個螢幕，配合其他閃爍、彈出等畫面效果，更易令幼兒感刺激而『上癮』，因而延長他們觀看時間－－太刺激的畫面，再返回靜態些少的畫面，就算對着老師，也不能每秒轉動太多不同畫面吧！幼兒覺悶，便直接影響對其他活動的專注力。」
+        newList8_content_8: · 記者羅惠儀
+    ophthalmic_article: 文章推薦
+    ophthalmic_article_text:
+      article_text1: 文章推薦
+      article_p1: 緊貼醫療新聞
+      article_p2: 注重眼睛健康發展
+      article_articleList:
+        articleList1_title1: 謹慎挑選隱形眼鏡以免
+        articleList1_title2: 患上 5 大眼疾！
+        articleList1_doctor: ''
+        articleList2_title1: 兒童易感染結膜炎，家長要小心！
+        articleList2_title2: （文附預防貼士）
+        articleList2_doctor: 梁苑珊醫生
+        articleList3_title1: 白內障｜延誤治療可致盲！
+        articleList3_title2: 一文睇清白內障手術5大注意事項
+        articleList3_doctor: ''
+        articleList4_title1: 眼科醫生解構乾眼症成因及治療方法
+        articleList4_title2: 營養師：多吃西蘭花有助護眼
+        articleList4_doctor: 梁苑珊醫生
+        articleList5_title1: 眼角膜受損有哪些症狀？
+        articleList5_title2: 會自然癒合嗎？
+        articleList5_doctor: ''
+    ophthalmic_message: 健康資訊
+    ophthalmic_message_text:
+      message_text1: 健康資訊
+      message_text2: 您的眼睛健康嗎？
+      message_text3: 關注眼睛健康
+      message_text4: 點擊瀏覽
+      message_healthList:
+        healthList1_title: '#護眼食物 ！食住嚟睇世界盃⚽⚽⚽'
+        healthList1_text_1: 睇波點少得零食，不過要食就要食得健康。#希瑪眼科 建議您可以食吓護眼食物，睇波雙眼唔會咁乾澀！
+        healthList2_title: 【視在希瑪】捱夜睇波對眼好攰！4招預防眼乾眼澀
+        healthList2_text_1: 世界盃已經開羅！身為球迷點可以錯過每一場賽事~ 不過返咗一日工後雙眼咁攰，睇完波第二日又要一早起身返工。雙眼乾澀，點算好？
+        healthList2_text_2: '#世界盃 #世界盃直播 #世界盃足球賽 #世界盃2022 #眼睛乾澀 #眼睛疲勞 #眼乾 #乾眼 #淚水 #淚液 #乾眼症 #眼罩 #熱敷眼罩 #護眼方法 #希瑪眼科'
+        healthList3_title: '#護眼食物 ！食住嚟睇世界盃⚽⚽⚽'
+        healthList3_text_1: 經常覺得眼乾、眼澀就係患上乾眼症嗎？乾眼症係一種都市人常見嘅眼疾，長時間唔理嘅話可能會導致角膜損傷、視力下降等。要確認自己係咪有乾眼症，初步可以接受「淚液分泌試紙測試」。
+        healthList3_text_2: '#乾眼症 #眼乾 #眼澀 #乾眼症成因 #乾眼症徵狀 #眼淚 #淚水 #淚水分泌 #淚液分泌測試 #乾眼症測試 #角膜受損 #眼科醫生'
+        healthList4_title: '【放眼逐格睇】眼妝卸乾淨！同眼挑針Say Bye~'
+        healthList4_text_1: 出席party要化個靚妝，不過完咗後記得要卸乾淨眼妝，先可以預防到眼疾㗎！眼妝冇卸好，殘留嘅化妝品可能堵塞眼睛黏板腺，有機會導致生眼挑針，即係生眼瘡。
+        healthList4_text_2: '#眼妝 #化眼妝 #卸妝 #眼挑針 #眼瘡 #眼瘡成因 #眼瘡治療 #眼瘡治療 #眼瘡放膿 #眼瘡初期 #眼睛發炎 #眼瘡放膿手術 #眼挑針治療 #希瑪眼科中心 #希瑪眼科 #希瑪醫療'
+    ophthalmic_eyesight: 視力測試
+  process_cost:
+    process_cost: 流程及費用
+    cost: 費用一覽
+    cont:
+      cost_h1: 費用一覽
+      cost_h3_1: 眼科
+      cost_p1: 本診所價目清晰，絕無其他額外收費
+      cost_h3_2: 特殊檢查項目
+      cost_tr1_td1: 單眼
+      cost_tr1_td2: 雙眼
+      cost_tr2_td1: 光學相干斷層掃描（前房）
+      cost_tr3_td1: 光學相干斷層掃描（青光眼）
+      cost_tr4_td1: 光學相干斷層掃描（黃斑）
+      cost_tr5_td1: 光學相干斷層掃描（青光眼+黃斑）
+      cost_tr19_td1: 超聲生物顯微鏡檢查
+      cost_tr6_td1: A 超聲波掃描
+      cost_tr7_td1: 角膜內皮細胞檢查
+      cost_tr8_td1: 視野分析
+      cost_tr9_td1: 掃描激光眼底檢查
+      cost_tr10_td1: 眼底照相
+      cost_tr11_td1: 眼前節分析 / 角膜厚度測量
+      cost_tr20_td1: 眼軸長度測量
+      cost_tr12_td1: 眼底照相 + 眼底熒光血管造影（包藥費）
+      cost_tr13_td1: 眼底照相 + 靛青綠血管造影（包藥費）
+      cost_tr14_td1: 眼底照相 + 眼底熒光血管造影 + 靛青綠血管造影（包藥費）
+      cost_tr15_td1: B 超聲波掃描
+      cost_tr16_td1: 白內障超聲乳化手術術前檢查
+      cost_tr18_td1: 光學生物測量儀
+      cost_tr17_td1: 隱形眼鏡驗配
+      cost_tr17_td2: 八歲以上
+      cost_tr18_td2: 八歲或以下
+      cost_tr21_td1: 白內障超聲乳化手術(單焦點人工晶體)
+      cost_tr22_td1: 新症
+      cost_tr21_td2: 覆診
+      cost_tr23: 林順潮醫生
+      cost_tr24: 眼科專科醫生(中環)
+      cost_tr25: 眼科專科醫生(衛星診所)
+      cost_p2: 以上價格以
+      cost_p2_1: 港幣
+      cost_p2_2: 結算
+      cost_p3_1_s: '*如需索取以上特殊檢查的複本，我們將會收取行政費用' 
+      cost_p3: 每份詳細眼睛檢查複本將收取
+      cost_p3_1: 行政費
+      cost_p4: "，詳情請向職員查詢。"
+      cost_p5: (視野分析 $10/張、光學相干斷層掃描 $30/張、眼底照相 $100/張)
+      cost_p6: '*申請醫療報告:'
+      cost_p6_1: 不等
+      cost_p7: ( 以每位醫生的每份報告計算，並以報價為準)。
+      cost_p8: 特殊儀器檢查需預見醫生判斷，由醫生決定檢查項目。
+      cost_p9: "最後更新: 01/04/2023"
+      cost_p10: "最後更新: 01/12/2023"
+      cost_form_title: 填寫保險索償申請表
+      cost_form_td1_1: 個案
+      cost_form_td1_2: 收費
+      cost_form_td2_1: 手術
+      cost_form_td2_2: 免費
+      cost_form_td3_1: 門診(涉及醫療程序)
+      cost_form_td4_1: "- 同一個案首份申請"
+      cost_form_td4_2: 免費
+      cost_form_td5_1: "- 其後每份申請"
+      cost_form_td5_2: $200
+      cost_form_td6_1: "門診(無醫療程序)"
+      cost_form_td7_1: "- 每份申請"
+      cost_form_td7_2: $200
+    process: 就診流程
+    process_1:
+      process_h1: 就診流程
+      process_p1: 登記
+      process_p2: 基本檢查
+      process_h3_1: 初步眼睛檢查
+      process_p3_1: 為全面了解您的眼睛狀況，
+      process_p3_2: 我們會先為您進行3-5項基本眼睛檢查。
+      process_p4: 醫生診症
+      process_h3_2: 詳細眼睛檢查
+      process_p5_1: 醫生會根據您的眼睛狀況，
+      process_p5_2: 進行詳細眼睛檢查，
+      process_p5_3: 以準確診斷並作出相應治療。
+      process_p6: 詳細檢查
+      process_p7_1: 門診 / 針灸
+      process_p7_2: 手術
+      process_p8: 付款及取藥
+      process_p9: 其他服務-配鏡
+  talent_recruitment:
+    talent_recruitment: 人才招聘
+    text1: 加入我們，攜手未來
+    text2: 加入我們，盡展所長
+    p1: 希瑪以人為本，注重團隊合作，致力培訓員工
+    p2: 我們希望吸納更多醫護專才
+    p3: 為客人提供「度身訂造」的眼科服務
+    apply: 立即申請
+  contact_us:
+    contact_us: 聯絡我們
+    clinic_information: 診所資料
+    clinic_information_title:
+      clinic_information_title: 眼 科 診 所
+      clinic_information_map: Google 地圖
+      clinic_information_make: 預約
+      clinic_information_serviceNavigation1: 診所資料
+      clinic_information_serviceNavigation2: 電子預約表格
+      clinic_information_addressList:
+        addressList1_regionName: 香港
+        addressList1_addressDetailList:
+          addressDetailList1_addressName: 中環
+          addressDetailList1_addressDetail: 畢打街1-3號中建大廈1515室
+          addressDetailList1_subwayExit: 中環站G出口（鄰近置地廣場）
+          addressDetailList1_clinicHours:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—18:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+          addressDetailList2_addressName: 中環
+          addressDetailList2_addressDetail: 皇后大道中33號萬邦行1908室
+          addressDetailList2_subwayExit: 中環站D2出口
+          addressDetailList2_clinicHours:
+            clinicHours1: 星期一至五：10:00—13:00 / 15:00—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+          addressDetailList3_addressName: 銅鑼灣
+          addressDetailList3_addressDetail: 百德新街2-20號恒隆中心1614-15室
+          addressDetailList3_subwayExit: 銅鑼灣站E出口
+          addressDetailList3_clinicHours:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+        addressList2_regionName: 九龍
+        addressList2_addressDetailList:
+          addressDetailList1_addressName: 尖沙咀
+          addressDetailList1_addressDetail: 梳士巴利道18-24號K11 ATELIER辦公大樓1906室（K11 MUSEA附近）
+          addressDetailList1_subwayExit1: 尖東站J出口
+          addressDetailList1_subwayExit2: 可享限時泊車優惠，詳情請向診所職員查詢
+          addressDetailList1_clinicHours:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—14:00
+            clinicHours3: （星期日及公眾假期休息）
+          addressDetailList2_addressName: 旺角
+          addressDetailList2_addressDetail: 彌敦道625及639號雅蘭中心一期1208室
+          addressDetailList2_addressDetail_1: 彌敦道625及639號雅蘭中心一期1725B室
+          addressDetailList2_subwayExit: 旺角站E1出口
+          addressDetailList2_clinicHours:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+          addressDetailList3_addressName: 觀塘
+          addressDetailList3_addressDetail: 開源道79號鱷魚恤中心16樓1601室
+          addressDetailList3_subwayExit: 觀塘站A2或B3出口
+          addressDetailList3_clinicHours:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+        addressList3_regionName: 新界
+        addressList3_addressDetailList:
+          addressDetailList1_addressName: 沙田
+          addressDetailList1_addressDetail: 沙田正街11-17號偉華中心2樓5A及1C—1F號鋪
+          addressDetailList1_subwayExit: 沙田站A出口
+          addressDetailList1_subwayExit2: 可享限時泊車優惠，詳情請向診所職員查詢
+          addressDetailList1_clinicHours:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+          addressDetailList2_addressName: 元朗（恆香老餅家對面）
+          addressDetailList2_addressDetail: 青山公路45及47號誠信商業大廈地鋪
+          addressDetailList2_subwayExit: ""
+          addressDetailList2_clinicHours:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+          addressDetailList3_addressName: 荃灣
+          addressDetailList3_addressDetail: 沙咀道255號思源樓地下
+          addressDetailList3_subwayExit: ""
+          addressDetailList3_clinicHours:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+          addressDetailList4_addressName: 將軍澳
+          addressDetailList4_addressDetail: 運亨路1號新都城中心一期地下55-56號鋪
+          addressDetailList4_subwayExit: "寶琳站B2出口（出站後右轉）、寶琳站C出口（從地面出口出發，經馬路到達對面商場）"
+          addressDetailList4_clinicHours:
+            clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
+            clinicHours2: 星期六：09:30—13:30
+            clinicHours3: （星期日及公眾假期休息）
+    appointmentForm: 電子預約表格
+    appointmentForm_title:
+      appointmentForm_title: 電子預約表格
+  privacyPolicy:
+    name: "私隱政策"
+    p1: "以下是希瑪眼科醫療控股有限公司與其附屬公司根據《個人資料(私隱)條例》(第486章)之規定所訂之私隱政策聲明。我們將確保我們之職員將執行有關政策，嚴格保密您的個人資料。"
+    p2: "任何個人資料的收集將按本集團的《個人資料收集聲明》的條款所進行。個人資料將會安全穩妥儲存於我們的系統內，而本集團將採取所有切實可行的步驟，以確保個人資料的保存時間不超過將其保存以貫徹該資料被使用於或會被使用於的目的（包括任何直接有關的目的）所需的時間。只有經培訓及獲授權的職員才可獲准查閱該等個人資料，除《個人資料收集聲明》所載之人士除外，我們不會向任何本集團以外的人士發佈該等個人資料，用戶有權根據載於《個人資料收集聲明》的程序，要求存取及更正其個人資料。"
+    p3: "惟在法律准許的情況下，希瑪眼科醫療控股有限公司不會負責任何因以下情況而引致的損失、損毀或責任（不論直接或間接產生），包括但不限於收入、利潤或信譽的損失：(1)任何因電腦、網路、電話、技術或系統的不正常運作或其他問題，包括由電腦系統病毒感染、缺陷、篡改、未經授權的干擾、欺詐、技術故障或其他超出了希瑪眼科醫療控股有限公司的控制範圍的任何原因；(2)任何由第三者所提供的服務的缺乏或不足之處；(3)任何因資料傳送上的錯誤而導致通知的誤傳、延誤、更改或遺失。客戶亦需確保所有登記資料均為真實、準確及完整的資料，以及沒有冒用或盜用任何第三者之資料。如客戶因冒用或盜用任何第三者之資料而引致希瑪眼科醫療控股有限公司或其他第三者有任何損害，客戶須負上一切相關損失、損毀或責任，並對希瑪眼科醫療控股有限公司或其他第三者因此所承受的任何損害作出彌償及使其免於損害。"
+    p4: "本集團可不時根據用戶之個人資料向他們寄出宣傳產品及服務之直接市場推廣訊息。在直接市場推廣過程中，我們將提供適當之「拒絕服務選擇」。"
+    p5: "本集團將竭盡所能，確保用戶之私隱獲得妥善保障。然而，鑑於互聯網之性質，我們不能擔保可以做到「完全保障」。"
+    p6: "本集團會起用第三者內容供應商及服務供應商，並提供接駁其他網站之連結。此等第三者可於用戶使用其服務時收集有關用戶之個人資料。此等第三者將依其私隱政策行事，而我們的《私隱政策聲明》及《個人資料收集聲明》並不涵蓋該等第三者。"
+    p7: "用戶如對我們之私隱政策及慣例有任何疑問，請電郵info{'@'}hkcmer.com致希瑪眼科醫療控股有限公司。"
+    name2: "個人資料收集聲明"
+    p2_1: "本聲明乃遵照《個人資料(私隱)條例》(第486章)的要求而發出，通知閣下收集資料的目的、閣下同意我們如何使用這些資料及閣下的權利。本聲明會不時更改，故請定期查閱。閣下登記使用我們之服務及每次登入我們網站，即表示同意接受當時生效之個人資料收集聲明。"
+    p2_2: "資料之目的及用途"
+    p2_3: "我們所收集之資料將用作以下用途："
+    p2_4: "監控本網站之運作及協助本網站之未來發展；"
+    p2_5: "匯編有關我們之用戶之整體統計資料以作關於網站使用的分析；"
+    p2_6: "識別和核實使用本網站所提供服務的用戶的身份；"
+    p2_7: "就有關或因使用本網站上所提供的服務發生的事項與用戶溝通；"
+    p2_8: "我們有意使用閣下的姓名、聯繫資料和任何與可能感興趣的商品和服務有關的資料，提供閣下可能有興趣的資訊，包括有針對性的橫幅廣告、新服務和產品和其他優惠並進行直接促銷。我們還有意而閣下亦同意，為上述目的轉移和提供上述資料予在香港以內和以外我們的附屬公司和協助本集團為閣下提供各項產品、設施、服務及其他優惠、獎賞或其他得益的供應商。如無閣下的同意，我們則不能如上使用或向該些機構提供上述資料。閣下可在向我們網站提供資料時表示同意，或以書面向我們表示同意，不另收費。"
+    name3: "資料之轉移"
+    p3_1: "除了為上述目的使用有關資料時，合理而有需要把有關資料轉移予的相關人仕及機構外，我們不會以可識別閣下之方式向任何其他人士披露或傳遞閣下之資料。"
+    name4: "資料之查閱"
+    p4_1: "閣下有權根據《個人資料（私隱）條例》(第486章)的規定，要求查閱或更正閣下之個人資料。如有任何查閱或更正資料的要求，請電郵至info{'@'}hkcmer.com。此乃中文譯本，如有任何爭議，一切以英文為準。"
+    p4_2: "希瑪眼科醫療控股有限公司保留隨時更改、刪除或補充此條款及細則之權利，而不作另行通知。"
+    p4_3: "希瑪眼科醫療控股有限公司感謝貴客戶長期支持，我們不時與貴客戶分享希瑪眼科醫療控股有限公司的各種最新資訊。如貴客戶不願意收取希瑪眼科醫療控股有限公司的直接促銷材料及/或資訊，可以電郵至：info{'@'}hkcmer.com。"
+    p4_4: "此乃中文譯本，如有任何爭議，一切以英文為準。"
+  disclaimer:
+    name: 免責條款
+    p1: "希瑪眼科中心網站內的所有資料及內容只能用作一般資訊、教育及參考。如有任何有關健康問題、醫療狀況、護理之事宜，應及時諮詢有關的醫生或醫護人員。"
+    p2: "雖然本中心致力確保此網站內所有資料及內容之準確及適時性，但不作任何擔保，此網站純粹為了方便電腦使用者使用。網站內所有資料及內容可能隨時更改而不作另行通知。"
+    p3: "本網站可能連結到其他網站之內容、服務、商品及廣告，並非由希瑪眼科中心維護或控制，希瑪眼科中心對本網站可能連結到的其他網站、服務及商品之供應，以及其內容或其準確性，概不負責。"
+    p4: "網上預約系統只為病人在希瑪眼科中心預約，咨询醫療服務之用。填寫及提交網上預約表格並不保證閣下之預約時間。希瑪眼科中心職員將酌情處理閣下的申請，並以電郵、電話或短訊等方式就預約，咨询結果聯絡閣下，或就所預約，咨询的日期及時間之改動聯絡閣下。希瑪眼科中心對透過此網上系統作預約申請未能如願而引致的任何後果，概不負責。在此網站提交的預約申請只作排期用途。提交網上預約表格表示閣下同意受本網站有關網上預約系統的免責聲明約束。"
+    p5: "本網站部分文章來自於網絡，版權僅歸原作者所有，若作者有版權聲明或從其他網站轉載而附帶原所有站的版權聲明，其版權歸屬以附帶聲明為準；文章僅代表作者個人觀點，與本網站無關。"
+    p6: "本網站部分圖片來自於網絡，如果侵犯到閣下的權益，請及時與本中心聯絡，本中心將在第一時間內整改、刪除。"
+banners:
+  welcome: 您好, 欢迎来到 %{app_name}!
+others:
+  learn_more: 了解更多
+  copy: 复制
+  enabled: 启用
+  disabled: 禁用
+app:
+  title: 希瑪眼科
+tdk:
+  app:
+    desc: 香港希瑪眼科中心提供全面眼科檢查及眼疾治療，醫療服務包括：白內障、青光眼、乾眼症、飛蚊症、結膜炎、黃斑病變、兒童斜視及弱視、眼表疾病、眼角膜疾病、視網膜脫落、眼眶、眼整形、眼腫瘤、醫學驗光配鏡、屈光矯視。眼科專科診症和治療由經營豐富的醫療團隊主理，包括︰林順潮眼科醫生、李佑榮眼科醫生、范愷眼科醫生、黃俊華眼科醫生、劉凱珊眼科醫生、李煒業眼科醫生、邱俊源眼科醫生、李琬微眼科醫生、胡偉君眼科醫生、李少雄眼科醫生、黎浩樺眼科醫生、李德倫眼科醫生、黃禮文眼科醫生、張瀞之眼科醫生、林寶生眼科醫生、林己明眼科醫生、張明權眼科醫生、陳偉樂眼科醫生、梁苑珊眼科醫生、鄒樞韻眼科醫生、尹浩柟醫生、鄒樂韻醫生。
+  index: 
+    desc: "香港希瑪眼科中心提供各種全面眼睛檢查及眼疾治療，醫療服務包括：白內障、青光眼、兒童眼疾(斜視及弱視)、眼表疾病、眼角膜疾病、黃斑病變、視網膜脫落、眼眶、眼整形及眼腫瘤。眼科診所地點遍佈港、九、新界各區，共有10多間眼科診所。香港希瑪眼科中心有經驗豐富的眼科醫生、視光師及醫療護理人員組成，提供專業眼科醫療服務，為客人提供安全、準確、可靠的眼科檢查及眼科醫療服務。強大的眼科醫生團隊，加上先進的眼科儀器及手術設備，能為大眾提供提供安全、準確、可靠的眼科檢查及眼科治療服務。"
+    key: "希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 希瑪眼科治療  全面眼睛檢查 希瑪林順潮眼科中心 林順潮眼科中心 林順潮眼科診所 眼睛疾病 眼科服務 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼科醫生 眼科診所 希瑪醫療集團 希瑪醫療"
+  contact-us: 
+    desc: "希瑪眼科中心遍佈港、九、新界，位點包括︰中環、旺角、尖沙咀、銅鑼灣、觀塘、沙田、元朗、荃灣、將軍澳，地址方便，交通便利，環境舒適。診所位置鄰近地鐵站和商場，方伊客人覆診。希瑪眼科中心團隊由從事眼科臨床30多年林順潮醫生帶領，加上20多名經驗豐富的眼科專科醫生、多名註冊視光師及醫療護理人員組成。眼科中心配備全面眼睛檢查與先進眼科醫療儀器，為客人提供安全、準確、可靠的眼科檢查及醫療服務。"
+    key: "希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 希瑪眼科治療  全面眼睛檢查 希瑪林順潮眼科中心 林順潮眼科中心 林順潮眼科診所 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼科醫生 眼科診所 希瑪醫療集團 希瑪醫療 中環眼科診所 旺角眼科診所 尖沙咀眼科診所 銅鑼灣眼科診所 觀塘 眼科診所 沙田眼科診所 元朗眼科診所 荃灣眼科診所 將軍澳眼科診所 眼科服務"
+  talent-recruitment: 
+    desc: 香港希瑪眼科中心有強大的眼科醫療團隊，共有20多名經驗豐富的眼科醫生、視光師及醫療護理人員組成，提供專業眼科醫療服務。香港希瑪眼科中心於2022年一度獲得2022開心工作間的獎項，成為開心企業為員工建設開心的工作環境。希瑪眼科中心以人為本，注重員工的團隊合作，致力培訓員工，希望吸納更多醫護專才，為客人提供度身訂造的服務，加入希瑪眼科中心，盡展所長。希瑪眼科中心提供多個職位空缺，有診所護士和註冊視光師的空缺。
+    key: 人才招聘 應聘崗位 希瑪眼科招聘 招聘人事 最新職位空缺 職位空缺 揾工 護士招聘 全職招聘  招聘工作 護理員招聘 招聘全職 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 眼科專科 矯視 眼科診所 香港希瑪眼科林順潮眼科醫生 眼科 眼睛科 眼科醫生 香港眼科 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼科服務
+  medical_team:
+    desc: 希瑪眼科中心有強大的眼科醫生醫療團隊，一共有24位眼科醫生，包括：林順潮眼科醫生、李佑榮眼科醫生、范愷眼科醫生、黃俊華眼科醫生、劉凱珊眼科醫生、李煒業眼科醫生、邱俊源眼科醫生、李琬微眼科醫生、胡偉君眼科醫生、李少雄眼科醫生、黎浩樺眼科醫生、李德倫眼科醫生、黃禮文眼科醫生、張瀞之眼科醫生、林寶生眼科醫生、林己明眼科醫生、張明權眼科醫生、陳偉樂眼科醫生、梁苑珊眼科醫生、鄒樞韻眼科醫生、尹浩柟醫生、鄒樂韻醫生、陳鼎鼐醫生。希瑪眼科醫生會細心評估及治療患者眼疾問題，致力為大眾提供提供安全、準確、可靠的眼科檢查及醫療服務。
+    key: 希瑪眼科中心 眼科專科診所 眼科專科中心 眼科醫生 香港眼科 香港眼科醫生 眼科診所 眼睛檢查 眼科服務 希瑪眼科 林順潮 李佑榮 范愷 黃俊華 劉凱珊 李煒業 邱俊源 李琬微 胡偉君 李少雄 黎浩樺 李德倫 黃禮文 張瀞之 林寶生 林己明 張明權 陳偉樂 梁苑珊 鄒樞韻 尹浩柟 鄒樂韻 陳鼎鼐 希瑪醫療集團 希瑪醫療
+  ophthalmic-information:
+    desc: 希瑪眼科中心是一家提供眼科診療服務的機構，提供不同的眼科資訊影片，提供豐富的影片內容，包括眼科醫生講解眼疾知識、預防眼疾、眼疾治療方法，讓觀眾可以更加深入地了解各種眼疾的病因、症狀和治療方法。通過眼科醫生訪問影片，公眾可以學會如何保護眼睛，識別和預防眼疾，並瞭解診療技術和眼疾手術方法。這些知識可以幫助人們更好地照顧自己的眼睛，減少眼睛疾病的發生風險，提高對眼睛健康的關注和重視，從而達到預防和治療眼疾的目的。
+    key: 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科林順潮眼科醫生 希瑪林順潮眼科中心  眼科醫生 香港眼科 眼科醫生 眼科診所 希瑪眼科 眼科資訊 眼科知識 眼疾 眼疾種類 眼疾症狀 全面眼睛檢查 眼科新聞 眼科專科 希瑪醫療集團 希瑪醫療 眼睛疾病 眼科服務
+  process-and-cost: 
+    desc1: 香港希瑪眼科中心提供快捷的驗光及全面眼睛檢查，設有簡單的就診流程︰登記、基本眼睛檢查、眼睛醫生對患者的診症、特殊眼睛檢查、門診眼科治療 / 矯視治療 、付款及取藥，簡單的眼科就診流程提供予患者最急切的眼科服務。希瑪眼科中心的眼科醫生會透過初步眼睛檢查，全面了解患者的眼睛狀況，一般會進行3-5項基本眼睛檢查。完成初步眼睛檢查，眼科醫生會再根據患者的情況進行詳細眼睛檢查，以準確診斷並提供相應的眼科治療，也提供其他眼科服務如配鏡等就診流程。
+    key1: 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 希瑪眼科治療 全面眼睛檢查 希瑪眼科香港 希瑪眼科治療方案 林順潮眼科中心 林順潮眼科診所 眼科希瑪 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼睛診所 眼科醫生 眼科診所 希瑪醫療集團 希瑪醫療 眼科服務
+    desc2: 香港希瑪眼科中心提供的驗光及全面眼睛檢查，不同的眼睛檢查項目有不同的收費，常見眼疾檢查收費價目表、矯視收費價目表，希瑪眼科診所眼科價目清晰，絕無其他額外收費，讓患者可以放心地進行眼睛檢查和治療，常見眼疾檢查收費價目表包括眼壓測試、角膜地形圖、角膜厚度測試、視力測試、眼底檢查、視野檢查等多個項目，每個項目的收費都在價目表中有明確的標示。
+    key2: 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪眼科收費 希瑪眼科 全面眼睛檢查 希瑪眼科價目 眼科門診收費 希瑪眼科 光學相干斷層掃描 希瑪眼科 OCT 希瑪眼科 希瑪眼科 檢查 視野 眼底檢查 希瑪眼科 眼科專科收費 眼科專科 全面眼睛檢查 眼科專科 視野分析 掃描激光眼底檢查 眼底照相 眼前節分析 角膜厚度測量 角膜地形分析 白內障超聲乳化 希瑪醫療集團 希瑪醫療 眼科服務
+  about-us: 
+    desc1: 希瑪眼科由林順潮醫生於2012年創辦，首間診所位於香港中環。2013年希瑪林順潮眼科醫院於深圳成立。其後陸續在中港兩地開設多個眼科中心和眼科醫院。2019年，希瑪微笑激光矯視中心開始營運，2021年希瑪眼科視光中心成立。現在，希瑪眼科中心已經在中港兩地建立了10間眼科中心、6間眼科醫院、3間矯視中心、2間視光中心和6間希瑪醫療旗下的視光師驗眼中心，為患者提供全方位的眼科醫療服務。
+    key1: 眼睛疾病 眼科醫生 眼科診所 兒童眼科 香港眼科 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科收費 全面眼科檢查 眼睛檢查 希瑪眼科香港 希瑪林順潮眼科中心 林順潮眼科中心 沙田眼科 中環眼科 旺角眼科 元朗眼科 觀塘眼科 荃灣眼科 尖沙咀眼科 將軍澳眼科 銅鑼灣眼科 希瑪醫療集團 希瑪醫療 希瑪微笑矯視中心 希瑪視光中心 眼科服務
+    desc2: 希瑪眼科致力以客人需求為依歸，提供國際水準級眼科醫療服務。希瑪眼科中心以人為本，注重細節，團隊合作，精益求精，並提供一站式眼科醫療服務中心，包括驗光、眼科檢查、眼疾治療、矯視及配鏡。我們擁有20多位眼科專長且經驗豐富的眼科醫生，提供眼科九大眼科專科服務，為患者提供針對性的眼疾治療。
+    key2: 眼科服務 眼睛疾病 眼科醫生 兒童眼科 香港眼科 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 全面眼科檢查 希瑪眼科香港 希瑪眼科治療 希瑪林順潮眼科中心 林順潮眼科中心 眼睛檢查 眼疾治療 希瑪醫療集團 希瑪醫療
+    desc3: "希瑪眼科中心建立國際認可的眼科醫療診所，引入多部先進眼科醫療設備，為客人提供先進、安全、全面的眼科醫療技術及眼科檢查服務，包括白內障超聲乳化儀、光學眼科手術顯微鏡、全視網膜掃描器、微笑激光矯視儀等等。 眼科設備可用於眼疾診斷和眼科治療，眼疾包括: 如白內障、青光眼、黃斑病變等。希瑪眼科中心提供眼科手術設備及服務，由日常眼科檢查至手術治療的眼部疾病，希瑪眼科中心亦可為客人提供專業、優質的眼科醫療服務。"
+    key3: 眼睛疾病 眼科醫生 兒童眼科 香港眼科 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 希瑪眼科治療 全面眼科檢查 希瑪眼科香港 希瑪眼科治療方案 希瑪林順潮眼科中心 林順潮眼科中心 林順潮眼科診所 眼科檢查 眼底檢查 視網膜掃描 角膜掃描 眼壓 屈光 散光 視神經 眼底相 視網膜 白內障 青光眼 希瑪醫療集團 希瑪醫療 眼睛檢查 眼疾治療
+  amotioRetinae:
+    desc: "希瑪眼科中心提供視網膜疾病檢查及治療。視網膜疾病高危成因包括有深近視、視網膜脫落家族遺傳史、眼睛曾受外傷、眼內發炎、糖尿上眼、眼內發炎、眼部有腫瘤等。視網膜疾病先兆包括飛蚊症、眼前出現閃光及黑影飄動、出現固定黑影以及視力明顯突然下降。視網膜脫落治療包括: 充氣性視網膜固定術、鞏膜外墊壓術、微創玻璃體切除術（PPV）。立即查詢治療視網膜詳細及相關費用。"
+    key: "視網膜疾病 視網膜檢查 視網膜治療 視網膜脫落 糖尿上眼 飛蚊症 視網膜剝離 糖尿上眼初期 視網膜脫落手術 視網膜病變 視網膜脫落症狀 視網膜剝離手術 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 林順潮 眼疾 眼睛疾病  眼睛檢查 希瑪 希瑪醫療集團 希瑪醫療"
+  cataract:
+    desc: "希瑪林順潮眼科中心提供全面白內障檢查及 白內障微創手術治療。白內障屬眼疾之一，白內障的症狀包括: 視力模糊、視力下降、眩光、重影、日盲癥、事物顏色變得暗淡、變形、事物顏色變得暗淡、變形。白內障手術是治療白內障的唯一方法。希瑪林順潮眼科中心提供白內障無刀飛秒激光治療，過程安全可靠，精準度高。立即致電查詢白內障手術相關費用。"
+    key: "白內障 白內障收費 白內障成因 白內障晶體 白內障病徵 白內障預防 白內障價錢 白內障先兆 白內障手術 白內障矯視 白內障症狀 白內障種類 白內障眼藥水 白內障青光眼 白內障微創 白內障激光 白內障治療 白內障手術費用 白內障檢查 眼睛退化 眼睛玻璃體退化人工晶體 超聲乳化白內障切除術 單焦點人工晶體 散光型人工晶體 多焦點人工晶體 眼睛檢查 眼睛疾病 眼科醫生 香港眼科 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪 希瑪 希瑪醫療集團 希瑪醫療"
+  conjunctivitis:
+    desc: "結膜炎(紅眼症)是都市人常見眼疾之一，患者會出現眼睛乾澀、紅、腫及分泌物增多等症狀，嚴重結膜炎(紅眼症)的患者甚至會角膜破皮和視力模糊。希瑪眼科中心提供全面結膜炎(紅眼症)診斷，如有需要會建議合適您的結膜炎(紅眼症)治療方案。導致結膜炎(紅眼症)的原因與日常生活相關，長時間配戴隱形眼鏡、注視電子螢幕、處於乾燥環境、有免疫系統疾病，以及更年期婦女都較大機會患上結膜炎(紅眼症)。治療結膜炎(紅眼症)以減輕不適的症狀為主，使用人工淚液是有效治療結膜炎(紅眼症)方法，同時也需要患者養成良好用眼習慣。"
+    key: "結膜炎 紅眼症 結膜炎症狀 結膜炎原因 眼角膜發炎 紅眼症初期 紅眼症傳染 結膜炎先兆 眼發炎 急性結膜炎 紅眼症症狀 慢性結膜炎 眼睛發炎 病毒性結膜炎 角膜發炎 紅眼症治療 結膜炎傳染 結膜炎初期 結膜發炎 紅眼症原因 紅眼症治療 結膜炎角膜炎 眼角膜發炎 眼紅症 急性結膜炎症狀 結膜炎治療 眼睛紅 眼睛紅腫 眼睛檢查 眼睛疾病 眼科醫生 香港眼科  希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療"
+  eyeOrthopaedicDisease:
+    desc: "希瑪眼科中心提供眼整形及眼腫瘤檢查及治療。對於眼瞼、眼眶、淚腺等患有先天性和後天性缺陷的患者，如眼瞼移位、眼瞼缺陷、甲亢突眼、淚眼、眼眶再造及眼眶收縮等，提供整形外科手術和植入義眼術，以修復他們眼部及面部，回復自然外觀。此外對於眼部腫瘤患者，如眼瞼癌變、眼睛表面癌變及眼內癌變等提供專業治療方案包括激光治療、冷凍治療、放射治療及化學治療。立即查詢治療眼矯形及眼腫瘤詳細及相關費用。"
+    key: "眼整形 眼腫瘤 眼瞼移位 眼瞼缺陷 甲亢突眼  突眼 眼突 眼眶再造 眼眶收縮 眼整形手術 義眼術 眼瞼癌變 眼內癌變  眼皮手術 眼皮下垂手術 眼窩凹陷 淚管閉塞 眼凸手術 眼皮下垂改善 眼凸 甲亢眼疾 義眼 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 眼疾 眼睛疾病  眼睛檢查 林順潮 希瑪醫療集團 希瑪醫療"
+  glaucoma: 
+    desc: "希瑪眼科中心提供全面青光眼檢查及治療。一般青光眼患者會出現眼睛脹痛、充血、突然視力模糊、頭痛/ 偏頭痛、噁心/嘔吐、視野收窄等症狀，嚴重青光眼的患者視力可能快速退化，甚至有機會在幾天內失明。希瑪眼科中心提供全面青光眼診斷，並會建議合適您的青光眼治療方案。青光眼成因: 包括: 年齡超過40歲(60歲以上患青光眼機會增加6倍)、有青光眼家族遺傳病史、深近視或嚴重遠視、患糖尿病、高血壓患者、患心血管疾病、眼曾受過眼創傷、 長期使用類固醇，都較大機會患上青光眼。治療青光眼以減輕不適的症狀為主，以藥物控制青光眼病情，若用藥後仍無法控制病情，醫生會考慮採用手術治療。"
+    key: "青光眼 眼壓高 青光眼手術 青光眼症狀 青光眼成因 青光眼治療 青光眼前兆 眼壓 眼壓高原因 急性青光眼 慢性青光眼 青光眼手術 青光眼測試 青光眼初期 青光眼前兆 青光眼藥水 青光眼檢查 眼壓高治療方法 降眼壓藥水 急性青光眼症狀 青光眼激光治療 降眼壓 青光眼預防 預防青光眼 眼壓檢查 青光眼手術費用 急性青光眼成因 青光眼激光治療 眼壓高治療 眼睛疾病 眼科醫生 香港眼科 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療"
+  medical-service:
+    desc: "香港希瑪眼科中心提供全面眼睛檢查及眼疾治療，醫療服務包括：白內障、青光眼、乾眼症、飛蚊症、結膜炎(紅眼症)、黃斑病變、兒童斜視及兒童弱視、眼表疾病(如眼瞼炎)、眼角膜疾病(如角膜炎)、視網膜脫落、眼眶眼矯形(如甲亢突眼、淚眼、義眼術、眼腫瘤。另外, 亦會提供屈光矯視及視光服務。"
+    key: "希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 眼科服務 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪眼科收費 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼科醫生 眼科診所 希瑪醫療集團 希瑪醫療  希瑪眼科香港 希瑪林順潮眼科中心 全面眼睛檢查 眼睛疾病 白內障 青光眼 乾眼症 乾眼飛蚊症 結膜炎 紅眼症 黃斑病變 斜視 弱視 眼瞼炎 角膜炎 視網膜脫落 甲亢突眼 突眼 眼整形 眼腫瘤 糖尿眼 眼睛檢查"
+  maculopathy:
+    desc: "希瑪眼科中心提供全面黃斑病變檢查及治療。黃斑病變的症狀包括: 視力下降、視物扭曲變形及中心視力變差。黃斑病變可以用阿姆斯勒方格表檢查患上黃斑病變的機會。常見的黃斑病變類型有分為濕性黃斑病變以及乾性黃斑病變，老年黃斑病變的成因有很多，當中包括年齡增長、吸煙、飲食習慣攝取高飽和脂肪、眼睛長期被過度日光照射、患有高血壓以及遺傳因素。老年黃斑退化治療包括: 激光光凝凝固、光動力療法、類固醇玻璃體注射及抗血管內皮生長因子玻璃體注射。希瑪眼科中心提供黃斑裂孔眼疾治療，黃斑前膜病變眼疾治療、黃斑水腫治療。治療過程安全可靠，精準度高。"
+    key: "阿姆斯勒方格表 黃斑病變 黃斑點 黃斑部 黃斑病變治療 黃斑病變原因 黃斑病變預防 黃斑病變症狀 黃斑病變手術 黃斑病變測試 黃斑病變治療費用 黃斑病變成因 黃斑病變病徵 黃斑病變先兆 黃斑病變種類 黃斑病變檢查 濕性黃斑病變 乾性黃斑病變 老年黃斑病變 黃斑前膜病變 黃斑裂孔 黃斑裂孔檢查 玻璃體切除術 黃斑水腫 黃斑水腫成因 黃斑水腫症狀 糖尿上眼 糖尿眼症狀 糖尿眼 糖尿眼檢查 糖尿眼治療 糖尿眼手術 眼底檢查 眼睛疾病 眼科醫生 兒童眼科 香港眼科  希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療 "
+  medicalOptometry:
+    desc: "希瑪眼科中心旗下的視光中心，提供成人眼睛檢查、兒童眼睛檢查、近視控制檢查等。兒童眼睛檢查方面，3至6歲兒童建議定期進行眼睛檢查，以及早發現和治療弱視、斜視等問題。6至18歲青少年則可進行近視控制檢查，以及早控制近視度數。希瑪視光中心提供兒童近視控制方案，包括角膜矯形術、每日即棄近視控制隱形眼鏡、兒童近視控制鏡片（DIMS鏡片），有助控制兒童近視加深。成人眼睛檢查主要為及早發現白內障、黃斑病變等問題。如需了解眼睛檢查詳細內容和相關費用，歡迎立即查詢。"
+    key: "視光中心 成人眼睛檢查 兒童眼睛檢查 近視控制檢查 弱視 斜視  角膜矯形術 近視控制隱形眼鏡 兒童近視控制鏡片 DIMS鏡片 眼睛檢查 詳細內容 OK鏡 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 眼疾 眼睛疾病  眼睛檢查 林順潮 阿托品眼藥水 MyoVision鏡片 眼科檢查 眼檢查驗眼中心 驗眼 眼睛健康檢查 香港驗眼中心 眼科檢查收費 矯視隱形眼鏡 ok lens 驗眼服務 驗眼費用 驗眼價錢 驗眼收費"
+  muscae_volitantes:
+    desc: "希瑪眼科中心提供全面飛蚊症檢查及治療。飛蚊症學名為玻璃體混濁。隨着眼睛老化、玻璃體萎縮，便會形成不同形狀的黑點或暗影，有的像小雨點、圓圈、雲、網狀、變形蟲或蜘蛛，如同有蚊子在眼前飛舞。飛蚊症的成因是因眼睛退化、眼睛外傷、眼後發炎、眼球內出血，以及視網膜疾病引致。飛蚊症種類分為良性飛蚊和恐性飛蚊。一般患飛蚊症的高危人士包括︰50歲以上人士、深近視、長時間看電子螢幕、有視網膜脫落家族病史，及糖尿病患者。治療飛蚊症的方法有兩種，有激光治療和玻璃體切除治療。"
+    key: "飛蚊症 飛蚊症檢查 飛蚊 飛蚊症成因 飛蚊症改善方法 飛蚊症初期 飛蚊症治療方法 眼睛黑點 飛蚊症閃光 玻璃體 玻璃體退化 飛蚊症手術 飛蚊症症狀 玻璃體混濁 飛蚊症測試 飛蚊症病徵 改善飛蚊症 玻璃體脫落 治療飛蚊症 飛蚊症檢查 飛蚊閃光 飛蚊症黑點 眼球玻璃體 激光治療飛蚊症 飛蚊症激光 眼睛檢查 眼睛疾病 眼科醫生 香港眼科 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療 "
+  ocularSurfaceDiseases:
+    desc: "希瑪眼科中心提供眼表及角膜疾病檢查及治療。眼表疾病包括翼狀胬肉、眼瞼炎及角膜移植等。角膜疾病包括角膜炎、虹膜炎、表層鞏膜炎、角膜皮上破損、錐形角膜。一般 治療眼表及角膜疾病方法包括使用處方眼藥水、藥膏、口服藥物、注射藥物、手術治療、激光治療、角膜移植、配戴新型隱形眼鏡等。立即查詢治療詳細及相關費用。"
+    key: "眼表疾病 眼疾病 角膜疾病 翼狀胬肉 眼瞼炎 角膜疾病 角膜炎 虹膜炎 表層鞏膜炎 鞏膜炎 錐形角膜 角膜移植 眼瘡 麥粒腫 割眼瘡 眼挑針 眼瞼發炎 生眼瘡 急性角膜炎 角膜受損症狀 眼胬肉 眼科醫生 眼科診所 眼科中心 希瑪眼科中心 希瑪眼科 希瑪 林順潮 眼疾 眼睛疾病  眼睛檢查 希瑪 希瑪醫療集團 希瑪醫療"
+  strabismusAmblyopia:
+    desc: "希瑪眼科中心提供兒童眼科服務。小兒眼疾病包括小兒斜視、小兒弱視、先天性白內障、急性結膜炎、先天性淚囊炎、先天性上瞼下垂及眼外傷。兒童斜視的種類有內斜視／外斜視、上斜視／下斜視，斜視有真假之分，假性內斜視為最常見並隨兒童長大會逐漸消失。治療兒童斜視方法可以透過眼鏡矯正、視軸矯形運動、遮蓋治療及手術矯正去改善斜視。兒童也有機會受發育不良影響患上弱視，弱視種類包括斜視性弱視、屈光參差性弱視、屈光不正性弱視、視覺剝奪性弱視、先天性弱視。預防小兒眼病最有效的方法是進行早期檢查，愈早發現以早治療。"
+    key: "兒童斜弱視 斜視 弱視 兒童眼睛檢查 兒童眼科 兒童視力 兒童視力檢查 幼兒眼科 斜視 斜視手術 斜視成因 斜視治療費用 斜視矯正 斜視測試 斜視運動 弱視 弱視成因 弱視訓練 弱視治療 弱視症狀 先天性白內障 先天性白內障治療 先天性淚囊炎 先天性上瞼下垂 先天性上瞼下垂遺傳 眼睛疾病 眼科醫生 兒童眼科 香港眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪 希瑪醫療集團 希瑪醫療"
+  xerophthalmia:
+    desc: "乾眼症患者會出現眼睛乾澀、紅、腫及分泌物增多等症狀，嚴重乾眼症的患者甚至會角膜破皮和視力模糊。希瑪眼科中心提供全面乾眼症診斷，並會建議合適的乾眼症治療方案。乾眼症成因包括:長時間配戴隱形眼鏡、注視電子螢幕、處於乾燥環境、有免疫系統疾病，以及更年期婦女都較大機會患上乾眼症。乾眼症有分為三種類型，缺水型、缺油型及混合型乾眼症。治療乾眼症以減輕不適的症狀為主，使用彩光治療的脈衝光，以及人工淚液是有效治療乾眼症方法，同時也需要患者養成良好用眼習慣。"
+    key: "眼乾原因 乾眼症症狀 眼睛乾澀 人工淚液 眼乾 乾眼症眼藥水 眼乾眼 藥水 眼乾症 乾眼症治療 眼乾症治療 乾眼症改善 眼澀原因 眼睛乾 乾眼症熱敷 乾眼症成因 眼藥水推薦 乾眼 乾眼症 乾眼病 眼乾痛 淚水分泌不足 眼乾眼痛 眼乾症狀 流眼水 流眼淚 塞淚管 人工淚管 乾眼症原因 乾眼症治療費用 乾眼症藥水 乾眼症手術 眼乾澀 眼睛檢查 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼睛診所 希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 希瑪醫療集團 希瑪醫療"
