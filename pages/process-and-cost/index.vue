@@ -442,7 +442,7 @@ const processedLists: any = ref([
           </div>
         </div>
 
-        <div id="" style="display: block !important">
+        <div id="processed" style="display: block !important">
           <div class="processMain mainCon relative flex items-start">
             <div class="content relative">
               <div class="titleBox">
@@ -1271,7 +1271,7 @@ const processedLists: any = ref([
           </div>
         </div>
 
-        <div id="processed" ref="processBox">
+        <!-- <div id="processed" ref="processBox">
           <div
             class="processMain mainCon relative flex items-start justify-center"
           >
@@ -1382,7 +1382,7 @@ const processedLists: any = ref([
                   </div>
                 </div>
               </div>
-              <!-- <div
+              <div
                 class="py-10 px-8 mt-12 mb-40"
                 :class="{ 'process-en': locale === 'en' }"
               >
@@ -1432,10 +1432,10 @@ const processedLists: any = ref([
                     <p>{{ $t('pages.process_cost.process_1.process_p9') }}</p>
                   </div>
                 </div>
-              </div> -->
+              </div> 
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
       <PageInformation :service-navigation="serviceNavigation" />
     </div>
@@ -1444,6 +1444,7 @@ const processedLists: any = ref([
 </template>
 <style lang="scss" scoped>
 .processed-phone-tip {
+  display: flex;
   color: #5073ba;
   text-align: center;
   font-family: 'Noto Sans HK';
@@ -1917,6 +1918,11 @@ const processedLists: any = ref([
 }
 
 @media screen and (max-width: 768px) {
+  #processed {
+    background: url('https://statichk.cmermedical.com/hkcmereye/jiuzhenliucheng/jiuzhenliucheng-mobile-bg.avif')
+      no-repeat center !important;
+    background-size: cover;
+  }
   .ClaimFormBox {
     div {
       span {
@@ -2073,6 +2079,7 @@ const processedLists: any = ref([
     background: url('https://static.cmereye.com/imgs/2023/07/c20c5728572d0992.jpg');
     background-position: top left !important;
     background-size: 100% auto !important;
+    padding-bottom: 150px;
   }
   #processed {
     background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')
