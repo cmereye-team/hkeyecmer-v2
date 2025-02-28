@@ -1477,6 +1477,7 @@ const processedLists: any = ref([
 
 .processAndCostPage {
   margin-bottom: 50px;
+
 }
 .processAndCost {
   transition: all 0.5s;
@@ -1738,6 +1739,9 @@ const processedLists: any = ref([
 }
 .updateBox {
   text-align: center;
+}
+#processed{
+  padding-bottom: 100px;
 }
 
 .processed-in {
@@ -2079,7 +2083,7 @@ const processedLists: any = ref([
     background: url('https://static.cmereye.com/imgs/2023/07/c20c5728572d0992.jpg');
     background-position: top left !important;
     background-size: 100% auto !important;
-    padding-bottom: 150px;
+
   }
   #processed {
     background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')
