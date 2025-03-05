@@ -17,6 +17,7 @@ let menus = computed((): IMenuItem[] => [
     text: t('pages.index.home'),
     route: { name:  'en-index' }, // 首页
   },
+  
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
@@ -67,62 +68,62 @@ let menus = computed((): IMenuItem[] => [
       {
         type: 'link',
         text: t('pages.medical_service.cataract.cataract_title'),
-        route: { name:  'en-medical-service-cataract' }, // 白內障
+        route: { path:  'en-medical-service-cataract' }, // 白內障
       },
       {
         type: 'link',
         text: t('pages.medical_service.maculopathy'),
-        route: { name:  'en-medical-service-maculopathy' },
+        route: { path:  'en-medical-service-maculopathy' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.muscae_volitantes'),
-        route: { name:  'en-medical-service-muscaeVolitantes' },
+        route: { path:  'en-medical-service-muscaeVolitantes' },
       },
       {
         type: 'link', // 視網膜脫落
         text: t('pages.medical_service.amotioRetinae'),
-        route: { name:  'en-medical-service-amotioRetinae' },
+        route: { path:  'en-medical-service-amotioRetinae' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.glaucoma'),
-        route: { name:  'en-medical-service-glaucoma' },
+        route: { path:  'en-medical-service-glaucoma' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.conjunctivitis'),
-        route: { name:  'en-medical-service-conjunctivitis' }, // 結膜炎
+        route: { path:  'en-medical-service-conjunctivitis' }, // 結膜炎
       },
       {
         type: 'link',
         text: t('pages.medical_service.xerophthalmia'),
-        route: { name:  'en-medical-service-xerophthalmia' },
+        route: { path:  'en-medical-service-xerophthalmia' },
       },
       {
         type: 'link', // 眼表及角膜疾病
         text: t('pages.medical_service.ocularSurfaceDiseases'),
-        route: { name:  'en-medical-service-ocularSurfaceDiseases' },
+        route: { path:  'en-medical-service-ocularSurfaceDiseases' },
       },
       {
         type: 'link', // 兒童斜弱視
         text: t('pages.medical_service.strabismusAmblyopia'),
-        route: { name:  'en-medical-service-strabismusAmblyopia' },
+        route: { path:  'en-medical-service-strabismusAmblyopia' },
       },
       {
         type: 'link', // 阿托品滴眼液
         text: t('pages.medical_service.atropine'),
-        route: { name:  'en-medical-service-atropine' },
+        route: { path:  'en-medical-service-atropine' },
       },
       {
         type: 'link', // 眼矯形及眼眶疾病
         text: t('pages.medical_service.eyeOrthopaedicDisease'),
-        route: { name:  'en-medical-service-eyeOrthopaedicDisease' },
+        route: { path:  'en-medical-service-eyeOrthopaedicDisease' },
       },
       {
         type: 'link', // 醫學驗光配鏡
         text: t('pages.medical_service.medicalOptometry'),
-        route: { name:  'en-medical-service-medicalOptometry' },
+        route: { path:  'en-medical-service-medicalOptometry' },
       },
       {
         type: 'link', // 眼矯形及眼眶疾病
@@ -270,6 +271,7 @@ const hashActive = (child: any) => {
               class="hover:no-underline fatherBg"
               >{{ item.text }}</Anchor
             >
+        
             <div
               v-if="item.childMenuList && item.childMenuList.length"
               :class="[

@@ -18,6 +18,7 @@ let menus = computed((): IMenuItem[] => [
     text: t('pages.index.home'),
     route: { name: 'index' }, // 首页
   },
+  
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
@@ -28,6 +29,7 @@ let menus = computed((): IMenuItem[] => [
         text: t('pages.about_us.center_profile'),
         route: { path: '/about-us', hash: '#centreIntro' },
       },
+      
       {
         type: 'link', // 发展历程
         text: t('pages.about_us.development_course'),
@@ -326,7 +328,7 @@ const locale = useState<string>('locale.setting')
 const newMenus = computed(() => {
   if (locale.value === 'en') {
     let a: any = JSON.parse(JSON.stringify(menus.value))
-    a.splice(4, 1)
+    // a.splice(4, 1)
     return a
   }
   return JSON.parse(JSON.stringify(menus.value))

@@ -5,6 +5,7 @@ nuxt.d.ts
 
 # deps
 node_modules
+.vscode
 
 # build or generate
 .nuxt

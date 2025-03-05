@@ -1924,8 +1924,8 @@ const processedLists: any = ref([
 @media screen and (max-width: 768px) {
   #processed {
     background: url('https://statichk.cmermedical.com/hkcmereye/jiuzhenliucheng/jiuzhenliucheng-mobile-bg.avif')
-      no-repeat center !important;
-    background-size: cover;
+      no-repeat !important;
+    background-size: cover !important;
   }
   .ClaimFormBox {
     div {
