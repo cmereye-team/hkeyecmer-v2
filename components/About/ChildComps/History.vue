@@ -2,12 +2,18 @@
 const locale = useState<string>('locale.setting')
 const historyList = ref([
   {
-    year: 'pages.about_us.course_year.year_24',
+    year: 'pages.about_us.course_year.year_25',
     contentList: [
       {
-        month: 'pages.about_us.course_year.child_24.child24_month_4',
-        info: 'pages.about_us.course_year.child_24.child24_info_4',
+        month: 'pages.about_us.course_year.child_25.child25_month_1',
+        info: 'pages.about_us.course_year.child_25.child25_info_1',
       },
+    ],
+  },
+  {
+    year: 'pages.about_us.course_year.year_24',
+    contentList: [
+
       {
         month: 'pages.about_us.course_year.child_24.child24_month_3',
         info: 'pages.about_us.course_year.child_24.child24_info_3_1',

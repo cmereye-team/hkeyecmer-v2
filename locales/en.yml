@@ -162,6 +162,10 @@ pages:
       media_wechat: 香港希瑪眼科中心
     development_course: Our History
     course_year:
+      year_25: "2025"
+      child_25:
+        child25_month_1: Jan
+        child25_info_1: Central - ZEISS VISION EXPERT
       year_24: "2024"
       child_24:
         child24_month_1: May
@@ -169,7 +173,6 @@ pages:
         child24_month_3: July 
         child24_info_1: Causeway Bay - The Optometry (OPT) Centre
         child24_info_2: Mongkok - C-MER Smile Refractive Center
-        child24_info_3_1: Central - ZEISS VISION EXPERT
       year_23: "2023"
       child_23:
         child23_month_1: August
