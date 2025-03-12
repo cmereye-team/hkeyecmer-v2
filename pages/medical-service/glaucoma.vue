@@ -61,14 +61,18 @@ const symptoms = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/53e4d8c79f82e4a6.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text1',
-    img_title: '青光眼症狀_眼睛脹痛',
-    img_alt: '女患者眼睛脹痛為青光眼症狀表現',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title1',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a58ec7eb4f43f6a4.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text2',
-    img_title: '青光眼症狀_眼睛充血',
-    img_alt: '女患者眼睛充血為青光眼症狀表現',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title2',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b452ba8e2b783f02.png',
@@ -76,8 +80,10 @@ const symptoms = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text3_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text3_2',
     ],
-    img_title: '青光眼症狀_視力模糊',
-    img_alt: '視力模糊為青光眼症狀',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title3',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/e2b8896e55129333.png',
@@ -85,40 +91,52 @@ const symptoms = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text4_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text4_2',
     ],
-    img_title: '青光眼症狀_頭痛_偏頭痛',
-    img_alt: '女患者頭痛或偏頭痛為青光眼症狀表現',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title4',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4c2daf21d82713ee.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text5',
-    img_title: '青光眼症狀_噁心_嘔吐',
-    img_alt: '女患者感到噁心或嘔吐為青光眼症狀表現',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title5',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/376c7e6cf5bda7ef.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text6',
-    img_title: '青光眼症狀_視野收窄',
-    img_alt: '視野收窄為青光眼症狀',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title6',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt6',
   },
 ]
 const worsen = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f751ce73a8968035.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text1',
-    img_alt: '青光眼初期症狀',
-    img_title: '青光眼初期毫無明顯症狀',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.alt1',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b2b1e3c11112c405.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text2',
-    img_alt: '青光眼症狀',
-    img_title: '視野縮小為青光眼症狀',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.alt2',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/68c8066d950ed985.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text3',
-    img_alt: '青光眼症狀_視野缺損',
-    img_title: '視野缺損為嚴重青光眼症狀',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.alt3',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.title3',
   },
 ]
 const congenital = [
@@ -128,8 +146,10 @@ const congenital = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title1',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text1',
     img: 'https://static.cmereye.com/imgs/2023/05/14c6771dcd344e18.png',
-    img_title: '先天性青光眼症狀_流淚_畏光',
-    img_alt: '流淚畏光為先天性青光眼症狀表現',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.congenital.title1',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.congenital.alt1',
   },
   {
     id: '2',
@@ -137,8 +157,10 @@ const congenital = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title2',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text2',
     img: 'https://static.cmereye.com/imgs/2023/05/d63a41599833af19.png',
-    img_title: '先天性青光眼症狀_角膜混濁',
-    img_alt: '角膜混濁為先天性青光眼症狀表現',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.congenital.title2',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.congenital.alt2',
   },
   {
     id: '3',
@@ -146,8 +168,10 @@ const congenital = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title3',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text3',
     img: 'https://static.cmereye.com/imgs/2023/05/422b6918adf2680a.png',
-    img_title: '先天性青光眼症狀_角膜水腫',
-    img_alt: '角膜水腫為先天性青光眼症狀表現',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.congenital.title3',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.congenital.alt3',
   },
 ]
 const kind = [
@@ -235,50 +259,66 @@ const crowd = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text1_2',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text1_3',
     ],
-    img_title: '青光眼高危險群_年長者',
-    img_alt: '年長者為青光眼高危險群',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title1',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/5064b37ea2ec1236.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text2',
-    img_title: '青光眼高危險群',
-    img_alt: '青光眼家族史為青光眼高危險群',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title2',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/600a6ca70769660d.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text3',
-    img_title: '青光眼高危險群_深近視',
-    img_alt: '深近視為青光眼高危險群',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title3',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bc02fc8bab322c86.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text4',
-    img_title: '青光眼高危險群_血糖高',
-    img_alt: '血糖高為青光眼高危險群',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title4',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3d99ac56efdb9366.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text5',
-    img_title: '青光眼高危險群_高血壓',
-    img_alt: '高血壓為青光眼高危險群',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title5',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/8a90c79bd5022fbf.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text6',
-    img_title: '青光眼高危險群_心血管疾病',
-    img_alt: '心血管疾病為青光眼高危險群',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title6',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt6',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1a86d61e93b74709.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text7',
-    img_title: '青光眼高危險群_眼睛外傷',
-    img_alt: '眼睛外傷為青光眼高危險群',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title7',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt7',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/03f99346138862e1.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text8',
-    img_title: '青光眼高危險群_類固醇',
-    img_alt: '服用類固醇藥物為青光眼高危險群',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title8',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt8',
   },
 ]
 // 青光眼主要診斷方法
@@ -286,32 +326,42 @@ const diagnostic = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/e399ba83f28b9812.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text1',
-    img_alt: '青光眼檢查_眼壓檢查',
-    img_title: '眼壓檢查為青光眼檢查項目',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.alt1',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bdc9d326f529ed42.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text2',
-    img_alt: '青光眼檢查_視野測試',
-    img_title: '視野測試為青光眼檢查項目',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.2',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/997263179e4722a8.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text3',
-    img_alt: '青光眼檢查_裂隙燈檢查',
-    img_title: '裂隙燈檢查為青光眼檢查項目',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.alt3',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2c03b6364947c4c5.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text4',
-    img_alt: '青光眼檢查_前房角接觸鏡檢查',
-    img_title: '前房角接觸鏡檢查為青光眼檢查項目',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.alt4',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b098baaa8a2cbdbc.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text5',
-    img_alt: '青光眼檢查_視神經檢查',
-    img_title: '視神經檢查為青光眼檢查項目',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.alt5',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/eef206cba5ab506d.png',
@@ -319,8 +369,10 @@ const diagnostic = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text6_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text6_2',
     ],
-    img_alt: '青光眼檢查_眼底檢查',
-    img_title: '眼底檢查為青光眼檢查項目',
+    img_alt:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.alt6',
+    img_title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title6',
   },
 ]
 // 青光眼的治療
@@ -506,8 +558,12 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/b687a1dc53df1fe7.png"
-              title="青光眼"
-              alt="青光眼眼睛結構"
+              :title="locale === 'en' ? 'Glaucoma' : `青光眼`"
+              :alt="
+                locale === 'en'
+                  ? 'Eye structure showing glaucoma'
+                  : '青光眼眼睛結構'
+              "
             />
           </div>
           <div>
@@ -582,8 +638,8 @@ const bannerData = {
               <img
                 :src="item.img"
                 srcset=""
-                :alt="item.img_alt"
-                :title="item.img_title"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
               />
               <div>
                 <div v-if="Array.isArray(item.text)">
@@ -651,8 +707,8 @@ const bannerData = {
                 <img
                   :src="item.img"
                   srcset=""
-                  :alt="item.img_alt"
-                  :title="item.img_title"
+                  :alt="$t(item.img_alt)"
+                  :title="$t(item.img_title)"
                 />
               </div>
               <div>{{ $t(item.text) }}</div>
@@ -727,8 +783,12 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/8bbf23a05ed24544.png"
-                title="慢性青光眼"
-                alt="慢性青光眼眼睛結構"
+                :title="locale === 'en' ? 'Chronic Glaucoma' : `慢性青光眼`"
+                :alt="
+                  locale === 'en'
+                    ? 'Eye structure of chronic glaucoma'
+                    : '慢性青光眼眼睛結構'
+                "
                 srcset=""
               />
             </div>
@@ -759,8 +819,14 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/a23816f98522475c.png"
-                title="急性青光眼症狀"
-                alt="女患者眼紅為急性青光眼症狀表現"
+                :title="
+                  locale === 'en' ? 'Acute Glaucoma Symptoms' : `急性青光眼症狀`
+                "
+                :alt="
+                  locale === 'en'
+                    ? 'Woman with red eye from acute glaucoma'
+                    : '女患者眼紅為急性青光眼症狀表現'
+                "
                 srcset=""
               />
             </div>
@@ -861,8 +927,8 @@ const bannerData = {
                 <div>
                   <img
                     :src="item.img"
-                    :alt="item.img_alt"
-                    :title="item.img_title"
+                    :alt="$t(item.img_alt)"
+                    :title="$t(item.img_title)"
                   />
                 </div>
               </div>
@@ -903,8 +969,12 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/380b332741dacedb.png"
-                title="原發性青光眼"
-                alt="男患者揉眼睛為原發性青光眼症狀表現"
+                :title="locale === 'en' ? 'Primary Glaucoma' : `原發性青光眼`"
+                :alt="
+                  locale === 'en'
+                    ? 'Man rubbing eyes as a symptom of primary glaucoma'
+                    : '男患者揉眼睛為原發性青光眼症狀表現'
+                "
                 srcset=""
               />
             </div>
@@ -976,14 +1046,26 @@ const bannerData = {
                   <div v-if="item.img">
                     <img
                       :src="item.enImg"
-                      title="繼發性青光眼"
-                      alt="繼發性青光眼眼睛結構"
+                      :title="
+                        locale === 'en' ? 'Secondary Glaucoma' : `繼發性青光眼`
+                      "
+                      :alt="
+                        locale === 'en'
+                          ? 'Eye structure showing secondary glaucoma'
+                          : '繼發性青光眼眼睛結構'
+                      "
                       v-if="locale === 'en'"
                     />
                     <img
                       :src="item.img"
-                      title="繼發性青光眼"
-                      alt="繼發性青光眼眼睛結構"
+                      :title="
+                        locale === 'en' ? 'Secondary Glaucoma' : `繼發性青光眼`
+                      "
+                      :alt="
+                        locale === 'en'
+                          ? 'Eye structure showing secondary glaucoma'
+                          : '繼發性青光眼眼睛結構'
+                      "
                       v-else
                     />
                   </div>
@@ -1023,8 +1105,8 @@ const bannerData = {
               </svg>
               <img
                 :src="item.img"
-                :alt="item.img_alt"
-                :title="item.img_title"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
               />
             </div>
             <div>
@@ -1090,8 +1172,8 @@ const bannerData = {
               <div>
                 <img
                   :src="item.img"
-                  :alt="item.img_alt"
-                  :title="item.img_title"
+                  :alt="$t(item.img_alt)"
+                  :title="$t(item.img_title)"
                 />
               </div>
               <div>
@@ -1192,8 +1274,16 @@ const bannerData = {
                 https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png
               "
               src="https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png"
-              title="預防青光眼_眼科檢查"
-              alt="定期安排眼科檢查以預防青光眼"
+              :title="
+                locale === 'en'
+                  ? 'Preventing Glaucoma_Eye Checkup'
+                  : `預防青光眼_眼科檢查`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Regular eye checkups reduce glaucoma risk'
+                  : '定期安排眼科檢查以預防青光眼'
+              "
             />
           </div>
         </div>
@@ -1248,8 +1338,12 @@ const bannerData = {
           >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              title="青光眼"
-              alt="青光眼_小冊子"
+              :title="locale === 'en' ? 'Glaucoma Leaflet' : `青光眼`"
+              :alt="
+                locale === 'en'
+                  ? 'Regular eye checkups reduce glaucoma risk'
+                  : '青光眼_小冊子'
+              "
               srcset=""
             />
           </a>

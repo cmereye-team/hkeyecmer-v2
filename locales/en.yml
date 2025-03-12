@@ -38,6 +38,9 @@ components:
       chatNow3: Online Service
       callNow: Call now
       chatNow2: Chat Now
+    appointment:
+      title: 'Booking and Enquiry-Cmer Eye Center'
+      alt: 'Book your eye exam and make inquiries at Cmer Eye Center'
 pages:
   404:
     title: page not found
@@ -91,6 +94,39 @@ pages:
       disclaimer: Disclaimer
     subscribe: Chat/Booking now
     inquire: Chat Now
+  serviceLists:
+    item_title1: 'Ophthalmology Service-Cataract'
+    item_alt1: 'Close-up of an eye illustration with Cataract'
+    item_title2: 'Ophthalmology Service-Macular Degeneration'
+    item_alt2: 'Fundus image showing Macular Degeneration'
+    item_title3: 'Ophthalmology Service-Retinal Detachment'
+    item_alt3: 'Illustration of Retinal Detachment'
+    item_title4: 'Ophthalmology Service-Glaucoma'
+    item_alt4: 'Close-up of an eye illustration with with Glaucoma'
+    item_title5: 'Ophthalmology Service-Ocular Surface and Corneal Diseases'
+    item_alt5: 'Close-up of an eye illustration with Ocular Surface and Corneal Diseases'
+    item_title6: 'Ophthalmology Service-Amblyopia and Strabismus'
+    item_alt6: 'Close-up of an eye illustration with Amblyopia and Strabismus'
+    item_title7: 'Ophthalmology Service-Eye Plastic Surgery and Orbital Diseases'
+    item_alt7: 'Close-up of an eye illustration with Eye Plastic Surgery and Orbital Diseases'
+    item_title8: 'Comprehensive Eye Exam-Myopia Control'
+    item_alt8: 'Ophthalmic Equipment used during a Comprehensive Eye Exam for Myopia Control'
+    item_title9: 'Laser Eye Surgery-LASIK & SMILE'
+    item_alt9: 'Advanced Laser Technology used in LASIK and SMILE Eye Surgery'
+  partTwoimage:
+    item_title1: 'Cmer Eye Center-Hong Kong Ophthalmology Clinic'
+    item_alt1: 'Reception area of Cmer Eye Center | Hong Kong Leading Ophthalmology Clinic' 
+    item_title2: 'Experienced Ophthalmologists-Cmer Eye Center'
+    item_alt2: 'Cmer Eye Center Ophthalmologists explaining eye anatomy to a patient using a model' 
+    item_title3: '希瑪眼科中心_眼科診所'
+    item_alt3: '希瑪眼科中心_眼科診所' 
+    item_title4: '希瑪眼科中心_眼科診所推薦'
+    item_alt4: '希瑪眼科中心_眼科診所推薦' 
+    item_title5: '希瑪眼科中心_國際醫療技術'
+    item_alt5: '希瑪眼科中心_國際醫療技術' 
+    item_title6: '香港希瑪國際眼科醫療集團'
+    item_alt6: '香港希瑪國際眼科醫療集團' 
+    
   about_us:
     about_us: About Us
     center_profile: Introduction
@@ -729,6 +765,54 @@ pages:
         cataract_array_Navigation4: Comparison of Intraocular lens (IOL)
         cataract_array_Navigation5: Postoperative Care Instructions
         cataract_array_Navigation6: FAQ
+    CausesofCataract:
+      alt1: UV rays from sunlight causing Cataracts
+      title1: Causes of Cataract-UV Light
+      alt2: Smoking as a common cause of Cataract
+      title2: Causes of Cataract-Smoking
+      alt3: High myopia linked to Cataract development
+      title3: Causes of Cataract-High Myopia
+      alt4: High blood sugar levels causing Cataracts
+      title4: Causes of Cataract-Diabetes
+      alt5: Steroid medication increasing Cataract risk
+      title5: Causes of Cataract-Steroid Use
+      alt6: Family history contributing to Cataract risk
+      title6: Causes of Cataract-Genetics
+      alt7: Eye trauma as a trigger for Cataracts
+      title7: Causes of Cataract-Eye injury
+    SymptomsofCataract:
+      alt1: Blurry vision commonly linked to Cataracts
+      title1: Symptoms of Cataract-Blurry Vision
+      alt2: Double vision as a Cataract symptom
+      title2: Symptoms of Cataract-Double Vision
+      alt3: Distorted images caused by Cataracts
+      title3: Symptoms of Cataract-Distorted Vision
+      alt4: Reduced night vision due to Cataracts
+      title4: Symptoms of Cataract-Poor Night Vision
+      alt5: Frequent eyeglass prescription changes caused by Cataracts
+      title5: Symptoms of Cataract-Frequent eyeglass prescriptions
+    announcementsArr:
+      alt1: An elderly patient wearing a protective eye shield after Cataract Surgery
+      title1: Post-Cataract Surgery Care-Eye shield
+      alt2: An elderly patient putting on a protective eye shield at night after Cataract Surgery
+      title2: Post-Cataract Surgery Care-Sleeping Eye Shield
+      alt3: A person washing hair after Cataract Surgery
+      title3: Post-Cataract Surgery Care-Hairwash
+      alt4: Post-Cataract Surgery Care-Wound Cleaning
+      title4: Close-up of a person cleaning her wound with a cotton pad after Cataract Surgery
+      alt5: Close-up of a person cleaning her wound with a cotton pad after Cataract Surgery
+      title5: Post-Cataract Surgery Care-Wound Cleaning
+      alt6: Administering prescription eye drops after Cataract Surgery
+      title6: Post-Cataract Surgery Care-Prescription Eye Drops
+      alt7: Patient undergoing a post-operative eye check after Cataract Surgery
+      title7: Post-Cataract Surgery Care-Eye Check
+    CataractSurgery:
+      alt1: Local anesthesia using eye drops for cataract surgery
+      title1: Cataract Surgery-anesthetic eye drops
+      alt2: Removing the cloudy lens by Phacoemulsification technique during Cataract Surgery
+      title2: Cataract Surgery-Phacoemulsification
+      alt3: Intraocular lens implantation after phacoemulsification during Cataract Surgery
+      title3: Cataract Surgery-Intraocular lens implantation
     glaucoma: Glaucoma
     medical_service_glaucoma_head: Glaucoma｜CMER｜Medical Services
     service_glaucoma_title:
@@ -770,6 +854,64 @@ pages:
       service_glaucoma_text13: "Patients may have to take some examinations and tests for the diagnosis, including vision examination, visual field text, funduscopic examination, intraocular pressure measurement, etc. The medical history and family history of the patient will also be considered. Common examinations are:"
       service_glaucoma_text14: The goal of glaucoma therapy is to control pressure and slow down the deterioration. Eye drops are considered to be the first-line treatment.
       service_glaucoma_text15: "If the patient's condition could not be well controlled by medication, surgical treatments may be considered to facilitate the drainage of aqueous humor and lower down the pressure. Common surgical treatments are as follows:"
+      service_glaucoma_List:
+       symptoms: 
+        title1: Glaucoma symptoms-Eye Pain
+        alt1: Woman experiencing eye pain from glaucoma
+        title2: Glaucoma symptoms-Eyes Redness
+        alt2: Woman with red eyes due to glaucoma
+        title3: Glaucoma symptoms-Blurry Vision
+        alt3: Blurry vision caused by glaucoma
+        title4: Glaucoma symptoms-Headache-Migraine
+        alt4: Woman with headache or migraine from glaucoma
+        title5: Glaucoma symptoms-Nausea-Vomiting
+        alt5: Woman feeling nausea or vomiting from glaucoma
+        title6: Glaucoma symptoms-Narrowed Vision
+        alt6: Narrowed vision caused by glaucoma
+       worsen:
+        alt1: No noticeable symptoms in early glaucoma
+        title1: Early Symptoms of Glaucoma
+        alt2: Reduced vision as a glaucoma symptom
+        title2: Glaucoma Symptoms
+        alt3: Severe glaucoma causing visual loss
+        title3: Glaucoma Symptoms-Visual Los
+       congenital:
+        title1: Congenital Glaucoma-Tearing-Photophobia
+        alt1: Tearing and light sensitivity in congenital glaucoma
+        title2: Congenital Glaucoma-Corneal Clouding
+        alt2: Corneal clouding in congenital glaucoma
+        title3: Congenital Glaucoma-Corneal Edema
+        alt3: Corneal edema in congenital glaucoma
+       crowd:
+        title1: Glaucoma Risk Group-Aging
+        alt1: Aging population at high risk for glaucoma
+        title2: Glaucoma Risk Group-Family history
+        alt2: Family history increases glaucoma risk
+        title3: Glaucoma Risk Group-High Myopia
+        alt3: High myopia as a glaucoma risk factor
+        title4: Glaucoma Risk Group-High Blood Sugar
+        alt4: High blood sugar linked to glaucoma risk
+        title5: Glaucoma Risk Group-High Blood Pressure
+        alt5: High blood pressure as a glaucoma risk factor
+        title6: Glaucoma Risk Group-Cardiovascular Diseases
+        alt6: Cardiovascular diseases increase glaucoma risk
+        title7: Glaucoma Risk Group-Eye Trauma
+        alt7: Eye trauma as a glaucoma risk factor
+        title8: Glaucoma Risk Group-Steroid Use
+        alt8: Steroid use increases glaucoma risk
+       diagnostic:
+        alt1: Eye pressure test for glaucoma screening
+        title1: Glaucoma Screening-Eye Pressure Test
+        alt2: Visual field test in glaucoma diagnosis
+        title2: Glaucoma Screening-Visual Field Test
+        alt3: Slit lamp exam for glaucoma screenin
+        title3: Glaucoma Screening-Slit Lamp Exam
+        alt4: Gonioscopy for glaucoma diagnosis
+        title4: Glaucoma Screening-Gonioscopy
+        alt5: Optic nerve check for glaucoma evaluation
+        title5: Glaucoma Screening-Optic Nerve Check
+        alt6: Retinal exam as part of glaucoma screening
+        title6: Glaucoma Screening-Retinal Exam
       service_glaucoma_meetArr:
         meetArr_title1: Q：Does glaucoma only affect the elderly? Young people have less risks?
         meetArr_agree1: "Glaucoma is a progressive degeneration of the optic nerve and is associated with increased intraocular pressure (IOP). People over 40 are at higher risk of having glaucoma. However people who are younger have risk of glaucoma too. Risk factors for glaucoma include: high myopia, family history of glaucoma, diabetes, high blood pressure or cardiovascular disease, as well as a history of eye injury and long-term use of steroids."
@@ -883,6 +1025,64 @@ pages:
       service_glaucoma_down_text: ''
     xerophthalmia: Dry Eyes
     xerophthalmia_head: 'Dry Eyes｜CMER｜Medical Services'
+    xerophthalmia_new:
+     xerophthalmiaType: 
+      alt1: Eye dryness as a symptom of dry eyes
+      title1: Dry Eyes Symptoms-Dryness
+      alt2: Eye fatigue as a symptom of dry eyes
+      title2: Dry Eyes Symptoms-Fatigue
+      alt3: Foreign body feeling as a symptom of dry eyes
+      title3: Dry Eyes Symptoms-Foreign Body Sensation
+      alt4: Burning sensation as a symptom of dry eyes
+      title4: Dry Eyes Symptoms-Burning Sensation
+      alt5: Eye discharge as a symptom of dry eyes
+      title5: Dry Eyes Symptoms-Discharge
+      alt6: Redness and swelling as symptoms of dry eyes
+      title6: Dry Eyes Symptoms-Redness and Swelling
+      alt7: Photophobia as a symptom of dry eyes
+      title7: Dry Eyes Symptoms-Photophobia
+      alt8: Corneal abrasion as a symptom of dry eyes
+      title8: Dry Eyes Symptoms-Corneal Abrasio
+     factor:
+      title1: Tear Film-Lipid Layer
+      alt1: Lipid layer in the tear film
+      title2: Tear Film-Aqueous Layer
+      alt2: Aqueous layer in the tear film
+      title3: Tear Film-Mucin Layer
+      alt3: Mucin layer in the tear film
+     tearFilm:
+      title1: Causes of Dry Eyes
+      alt1: Lipid layer deficiency as a cause of dry eyes
+      title2: Causes of Dry Eyes
+      alt2: Aqueous layer deficiency as a cause of dry eyes
+      title3: Causes of Dry Eyes
+      alt3: Mucin layer deficiency as a cause of dry eyes
+      title4: Causes of Dry Eyes
+      alt4: Inadequate tear production as a cause of dry eyes
+     highRisk:
+      title1: Dry Eyes Risk Factors-Contact Lenses
+      alt1: Prolonged contact lens use as a risk factor for dry eyes
+      title2: Dry Eyes Risk Factors-Electronic Devices
+      alt2: Prolonged electronic device use as a risk factor for dry eyes
+      title3: Dry Eyes Risk Factors-Medication Overuse
+      alt3: Medication overuse as a risk factor for dry eyes
+      title4: Dry Eyes Risk Factors-Air Conditioning
+      alt4: Living in air-conditioned environments as a risk factor for dry eyes
+      title5: Dry Eyes Risk Factors-Autoimmune Diseases
+      alt5: Autoimmune diseases as a risk factor for dry eyes
+      title6: Dry Eyes Risk Factors-Menopause
+      alt6: Menopause as a risk factor for dry eyes
+     wayOther:
+      title1: Dry Eyes Relief-Avoid Certain Medications
+      alt1: Avoid medications that reduce tear production for dry eyes relief
+      title2: Dry Eyes Relief-Immunosuppressants
+      alt2: Immunosuppressants as a relief option for dry eyes
+      title3: Dry Eyes Relief-Reduce Contact Lens Use
+      alt3: Reducing contact lens use for dry eyes relief
+      title4: Dry Eyes Relief-Stay Hydrated
+      alt4: Staying hydrated as a way to relieve dry eyes
+      title5: Dry Eyes Relief-Eye-Healthy Foods
+      alt5: Eating eye-healthy foods for dry eyes relief 
     xerophthalmia_con: 
       xerophthalmiaInfo: 
         name: What is dry eye？
@@ -1062,6 +1262,53 @@ pages:
         text2: ''
     muscae_volitantes: Eye Floaters
     muscae_volitantes_head: 'Eye Floaters｜CMER｜Medical Services'
+    muscaeVolitantes:
+      seston:
+       alt1: Small dot floaters in vision
+       title1: Eye Floaters Symptoms-Raindrops
+       alt2: Circular floaters in vision
+       title2: Eye Floaters Symptoms-Circles
+       alt3: Cloud-like floaters in vision
+       title3: Eye Floaters Symptoms-Clouds
+       alt4: Net-shaped floaters in vision
+       title4: Eye Floaters Symptoms-Cobwebs
+       alt5: Amoeba-like floaters in vision
+       title5: Eye Floaters Symptoms-Amoebas
+       alt6: Spider-shaped floaters in vision
+       title6: Eye Floaters Symptoms-Spiders
+      factor:
+       title1: Eye Floaters causes-Presbyopia
+       alt1: Presbyopia as a cause of eye floaters
+       title2: Eye Floaters causes-Eye Inflammation
+       alt2: Eye inflammation as a cause of floaters
+       titel3: Eye Floaters causes-Eye Bleeding
+       alt3: Eye bleeding as a cause of floaters
+       title4: Eye Floaters causes-Retinal Detachment
+       alt4: Retinal Detachment as a cause of floaters
+      highRisk:
+       alt1: Aging as a risk factor of floaters
+       title1: Eye Floaters Risk Factor-Aging
+       alt2: High myopia as a risk factor of floaters
+       title2: Eye Floaters Risk Factor-High Myopia
+       alt3: Phubbing as a risk factor of floaters
+       title3: Eye Floaters Risk Factor-Phubbing
+       alt4: Eye inflammation as a risk factor of floaters
+       title4: Eye Floaters Risk Factor-Eye Inflammation
+       alt5: Heredity as a risk factor of floaters
+       title5: Eye Floaters Risk Factor-Hyperglycemia
+       alt6: Hyperglycemia as a risk factor of floaters
+       title6: Eye Floaters Risk Factor-Hyperglycemia
+      prevent:
+       title1: Eye Floaters prevention
+       alt1: Resting your eyes to prevent floaters
+       title2: Eye Floaters prevention
+       alt2: Keeping distance from screens for prevention
+       title3: Eye Floaters prevention
+       alt3: Reading in good lighting prevents floaters
+       title4: Eye Floaters prevention
+       alt4: Wearing UV-blocking sunglasses for prevention
+       title5: Eye Floaters prevention
+       alt5: Getting enough sleep to prevent floaters
     muscaeVolitantes_con:
       muscaeInfo: 
         name: What are eye floaters?
@@ -1155,6 +1402,97 @@ pages:
         name3_2: ''
     conjunctivitis: Conjunctivitis
     conjunctivitis_head: 'Conjunctivitis｜CMER｜Medical Services'
+    conjunctivitis_new:
+     symptom:
+      alt1: Eye redness as a symptom of conjunctivitis
+      title1: Conjunctivitis Symptoms-Eye Redness
+      alt2: Swollen eyelids as conjunctivitis symptom
+      title2: Conjunctivitis Symptoms-Swollen Eyelids
+      alt3: Eye itching as a symptom of conjunctivitis
+      title3: Conjunctivitis Symptoms-Eye Itching
+      alt4: Foreign body sensation as conjunctivitis symptom
+      title4: Conjunctivitis Symptoms-Foreign Body Sensation
+      alt5: Tearing eyes as a conjunctivitis symptom
+      title5: Conjunctivitis Symptoms-Tearing Eyes
+      alt6: Eye discharge as a symptom of conjunctivitis
+      title6: Conjunctivitis Symptoms-Eye Discharge
+     kind:
+      alt1: Viral conjunctivitis type
+      title1: Viral Conjunctivitis
+      alt2: Bacterial conjunctivitis type
+      title2: Bacterial Conjunctivitis
+      alt3: Allergic conjunctivitis type
+      title3: Allergic Conjunctivitis
+     approach:
+      title1: Red Eye Transmission-Touching
+      alt1: Transmission through touching eyes
+      title2: Red Eye Transmission-Sharing Towels
+      alt2: Towel sharing as red eye transmission
+      title3: Red Eye Transmission-Swimming Pools
+      alt3: Swimming pool as red eye transmission
+     highRisk:
+      title1: Red Eye Risk Factors-Children
+      alt1: Children as high-risk factor for red eyes
+      title2: Red Eye Risk Factors-Sensitive Eyes
+      alt2: Sensitive eyes as a red eye risk
+      title3: Red Eye Risk Factors-Weak Immunity
+      alt3: Weak immune system as a red eye risk
+      title4: Red Eye Risk Factors-Rubbing Eyes
+      alt4: Eye rubbing as a red eye risk
+      title5: Red Eye Risk Factors-Contact Lenses
+      alt5: Contact lenses as a red eye risk
+      title6: Red Eye Risk Factors-Excess Screen Time
+      alt6: Excessive screen use as a red eye risk
+     prevent:
+      title1: Red Eye Prevention-Sharing Items
+      alt1: Avoid sharing items to prevent red eye
+      title2: Red Eye Prevention-Personal Hygiene
+      alt2: Maintain hygiene to prevent red eye
+      title3: Red Eye Prevention-Public Facilities
+      alt3: Avoid public facilities to prevent red eye
+      title4: Red Eye Prevention-Contact Lenses
+      alt4: Keep contact lenses clean to prevent red eye
+      title5: Red Eye Prevention-Avoid Allergens
+      alt5: Avoid allergens to prevent red eye
+    amotioRetinae_new:
+     factorList1: 
+      title1: Retinal Detachment causes-High Myopia
+      alt1: High myopia as a cause of retinal detachment
+      title2: Retinal Detachment causes-Heredity
+      alt2: Heredity as a cause of retinal detachment
+      title3: Retinal Detachment causes-Eye injury
+      alt3: Eye injury as a cause of retinal detachment
+      title4: Retinal Detachment causes-Eye surgery
+      alt4: Past eye surgery as a cause of retinal detachment
+      title5: Retinal Detachment causes-Eye tumors
+      alt5: Eye tumor as a cause of retinal detachment in older adults
+      title6: Retinal Detachment causes-Eye Inflammation
+      alt6: Eye inflammation as a cause of retinal detachment
+      title7: Retinal Detachment causes-Diabetic Retinopathy
+      alt7: Diabetic retinopathy as a cause of retinal detachment in older adults
+     styptomList1:
+      title1: Early Symptoms of Retinal Detachment
+      alt1: Floaters indicating early retinal detachment symptoms
+      title2: Retinal Detachment symptoms-Flashes of Light
+      alt2: Flashes of light as a retinal detachment symptom
+      title3: Retinal Detachment symptoms-Narrow Vision
+      alt3: Narrowing of vision as a retinal detachment symptom
+      title4: Retinal Detachment symptoms-Vision Loss
+      alt4: Vision loss or blind spots as a retinal detachment symptom
+     treatList1:
+      title1: Retinal Detachment treatment-Pneumatic retinopexy
+      alt1: Procedure for pneumatic retinopexy surgery
+      title2: Retinal Detachment treatment-Scleral buckle
+      alt2: Before and after scleral buckling surgery
+      title3: Retinal Detachment treatment-Pars Plana Vitrectomy"
+      alt3: Pars Plana Vitrectomy procedure for retinal detachment
+     preventList1:
+      title1: Retinal Detachment prevention-Eye Exam
+      alt1: Routine eye exams to prevent retinal detachment
+      title2: Retinal Detachment prevention-Avoid Strain
+      alt2: Avoiding strenuous activities to prevent retinal detachment
+      title3: Retinal Detachment prevention-Comprehensive Eye Exam
+      alt3: Comprehensive eye exams to prevent retinal detachment
     conjunctivitis_con:
       navLists:
         name1: Conjunctivitis
@@ -1361,8 +1699,128 @@ pages:
       dow:
         text1: Download Macular
         text2: Degeneration leaflet
+    sympotm:
+     alt1: Tree shape simulating blurred vision symptoms in macular degeneration
+     title1: Macular Degeneration symptoms-Blurred Vision
+     alt2: Tree shape simulating darkened vision symptoms in macular degeneration
+     title2: Macular Degeneration symptoms-Darkened Vision
+     alt3: Tree shape simulating distorted vision symptoms in macular degeneration
+     title3: Macular Degeneration symptoms-Distorted Vision
+     alt4: Tree shape simulating vision loss symptoms in macular degeneration
+     title4: Macular Degeneration symptoms-Loss of Vision
+    examine:
+      img_up_alt1: Simulation of normal vision without macular degeneration
+      img_up_title1: Macular Degeneration symptoms-Normal Vision
+      img_down_alt1: Amsler grid simulating symptoms of macular degeneration
+      img_down_title1: Macular Degeneration test-Amsler Grid
+      img_up_alt2: Simulation of blurred vision symptoms in macular degeneration
+      img_up_title2: Macular Degeneration symptoms-Blurred Vision
+      img_down_alt2: Amsler grid simulating blurred vision in macular degeneration
+      img_down_title2: Macular Degeneration test-Amsler Grid-Blurred Vision
+      img_up_alt3: Simulation of distorted vision symptoms in macular degeneration
+      img_up_title3: Macular Degeneration symptoms-Distorted Vision
+      img_down_alt3: Amsler grid simulating distorted vision in macular degeneration
+      img_down_title3: Macular Degeneration test-Amsler Grid-Distorted Vision
+      img_up_alt4: Simulation of darkened vision symptoms in macular degeneration
+      img_up_title4: Macular Degeneration symptoms-Darkened Vision
+      img_down_alt4: Amsler grid simulating darkened vision in macular degeneration
+      img_down_title4: Macular Degeneration test-Amsler Grid-Darkened Vision
+      img_up_alt5: Simulation of vision loss symptoms in macular degeneration
+      img_up_title5: Macular Degeneration symptoms-Loss of Vision
+      img_down_alt5: Amsler grid simulating vision loss in macular degeneration
+      img_down_title5: Macular Degeneration test-Amsler Grid-Loss of Vision
+    factor:
+     alt1: Aging as a cause of macular degeneration
+     title1: Macular Degeneration causes-Aging
+     alt2: Smoking as a cause of macular degeneration
+     title2: Macular Degeneration causes-Smoking
+     alt3: Poor diet as a cause of macular degeneration
+     title3: Macular Degeneration causes-Poor Diet
+     alt4: UV light exposure as a cause of macular degeneration
+     title4: Macular Degeneration causes-UV Light
+     alt5: High blood pressure as a cause of macular degeneration
+     title5: Macular Degeneration causes-High blood pressure
+     alt6: Macular atrophy as a cause of macular degeneration
+     title6: Macular Degeneration causes-Macular Atrophy
+     alt7: Heredity as a cause of macular degeneration
+     titlt7: Macular Degeneration causes-Heredity
+    prevent:
+     alt1: Quit smoking to prevent macular degeneration
+     title1: Macular Degeneration prevention-Quit Smoking
+     alt2: Maintain healthy weight to prevent macular degeneration
+     title2: Macular Degeneration prevention-Weight Control
+     alt3: Managing nearsightedness to prevent macular degeneration
+     title3: Macular Degeneration prevention-Nearsightedness
+     alt4: Regular eye exams for seniors to prevent macular degeneration
+     title4: Macular Degeneration prevention-Eye Exam
+     alt5: Balanced diet to prevent macular degeneration
+     title5: Macular Degeneration prevention-Balanced Diet
+     alt6: Protect eyes from UV light exposure to prevent macular degeneration
+     title6: Macular Degeneration prevention-UV Light protection
     strabismusAmblyopia: Amblyopia and Strabismus in Children
     strabismusAmblyopia_con_head: 'Amblyopia and Strabismus in Children｜CMER｜Medical Services'
+    strabismusAmblyopia_new:
+     strabismusList1:
+      title1: Strabismus
+      alt1: Eyes showing Strabismus symptoms
+      title2: Inwards Squint
+      alt2: Eyes with Inwards Squint symptoms
+      title3: Outwards Squint
+      alt3: Eyes with Outwards Squint symptoms
+     strabismusList2:
+      title1: Strabismus
+      alt1: Eyes showing strabismus
+      title2: Upwards Squint
+      alt2: Eyes with Upwards Squint symptoms
+      title3: Downwards Squint
+      alt3: Eyes with Downwards Squint symptoms
+     strabismusList3:
+       title1: Strabismus
+       alt1: Strabismus eye condition
+       title2: False Strabismus
+       alt2: Eyes with False Strabismus symptoms
+       title3: Inwards Squint
+       alt3: Eyes showing True Strabismus symptoms
+     strabismusList4:
+       title1: Inwards Squint
+       alt1: Girl with Inwards Squint while studying
+       title2: Inwards Squint
+       alt2: Boy with Inwards Squint condition
+       title3: Kid with Strabismus
+       alt3: Child covering one eye with strabismus
+       title4: Inwards Squint
+       alt4: Child tilting head due to Inwards Squint
+       title5: Strabismus-Eyes Rubbing
+       alt5: Boy rubbing eyes due to Strabismus
+       title6: Strabismus-Tearing
+       alt6: Boy tearing up due to Strabismus
+     strabismusList5:
+       title1: Strabismus Treatment-Correction with glasses
+       alt1: Before and after strabismus correction with glasses in children
+       title2: Strabismus Treatment-Orthoptic exercises
+       alt2: Ophthalmologist helping a boy with strabismus correction
+       title3: Strabismus Treatment-Occlusion therapy
+       alt3: Child undergoing Occlusion therapy for strabismus correction
+       title4: Strabismus Treatment-Surgery
+       alt4: Procedure and process of strabismus surgery
+     amblyopiaList1:
+       title1: Strabismic amblyopia
+       alt1: Side profile of a boy with strabismus and amblyopia
+       title2: Refractive amblyopia
+       alt2: Girl with amblyopia wearing corrective glasses during vision test
+       title3: Amblyopia due to refractive error
+       alt3: Boy with amblyopia wearing glasses to correct refractive errors
+       title4: Deprivation amblyopia
+       alt4: Girl with amblyopia rubbing eyes, showing deprivation symptoms
+       title5: Congenital amblyopia
+       alt5: Young child wearing an eye patch for congenital amblyopia
+     treatList1:
+       title1: Treatment of amblyopia-Correction with glasses
+       alt1: Smiling girl wearing glasses showing amblyopia treatment success
+       titel2: Treatment of amblyopia-Occlusion therapy
+       alt2: Girl undergoing eye patching therapy for amblyopia treatment
+       title3: Treatment of amblyopia-Correction with eye drops
+       alt3: Boy using dilating eye drops for amblyopia treatment 
     strabismusAmblyopia_con:
       navLists:
         name1: Strabismus
@@ -1556,6 +2014,56 @@ pages:
         text3_2: If apparent symptoms or severe hyperemia is experienced, patients can use corticosteroids under medical supervision to reduce inflammation.
         text3_3: If eyesight is affected or pterygium becomes larger, pterygium removal can be considered.
         text3_4: In some cases, a pterygium can return after being surgically removed. The ways to lower the recurrence rate include conjunctival autograft and anti-metabolite drugs.
+      blepharitis_new:
+       blepharitisList2:
+         title1: Blepharitis Symptoms-Swollen Eyelids
+         alt1: Swollen Eyelids as Blepharitis Symptom"
+         title2: Blepharitis Symptoms-Eye Discharge
+         alt2: Eye Discharge as Blepharitis Symptom
+         title3: Blepharitis Symptoms-Trichiasis
+         alt3: Trichiasis as Blepharitis Symptom
+         title4: Blepharitis Symptoms-Conjunctivitis
+         alt4: Swollen Eyelids as Blepharitis Symptom
+       blepharitisList3:
+         title1: Blepharitis Treatment-Hot Compress
+         alt1: Elderly Woman Using Hot Compress as Blepharitis Treatment
+         title2: Blepharitis Treatment-Antibiotic Eye Drops
+         alt2: Antibiotic Eye Drops as Blepharitis Treatment
+         title3: Blepharitis Treatment-Eye Surgery
+         alt3: Eye Surgery as Blepharitis Treatment
+       keratitisList:
+         title1: Keratitis Symptoms-Eye Pain
+         alt1: Eye Pain as Keratitis Symptom
+         title2: Keratitis Symptoms-Photophobia
+         alt2: Photophobia as Keratitis Symptom
+         title3: Keratitis Symptoms-Tearing
+         alt3: Excessive Tearing as Keratitis Symptom
+         title4: Keratitis Symptoms-Blepharospasm
+         alt4: Blepharospasm as Symptom of Keratitis
+         title5: Keratitis Symptoms-Red Eyes
+         alt5: Red Eyes as Symptom of Keratitis
+         titlt6: Keratitis Symptoms
+         alt6: Discomfort in eyes as a symptom of Keratitis
+       damageList2:
+         title1: Corneal Abrasion Symptoms-Optic Neuritis
+         alt1: Optic Neuritis as Corneal Abrasion Symptom
+         title2: Corneal Abrasion Symptoms-Photophobia
+         alt2: Photophobia as Corneal Abrasion Symptom
+         title3: Corneal Abrasion Symptoms-Blepharospasm
+         alt3: Blepharospasm as Corneal Abrasion Symptom
+         title4: Corneal Abrasion Symptoms-Conjunctival Hyperemia
+         alt4: Conjunctival Hyperemia as Corneal Abrasion Symptoms
+         title5: Corneal Abrasion Symptoms-Foreign Body Sensation
+         alt5: Foreign Body Sensation as Corneal Abrasion Symptom
+       keratoconusList1:
+         title1: Keratoconus Causes-Inheritance
+         alt1: Inheritance as a cause of Keratoconus
+         title2: Keratoconus Causes-Allergies
+         alt2: Allergic Diseases as a cause of Keratoconus
+         title3: Keratoconus Causes-Down Syndrome
+         alt3: Down Syndrome as a cause of Keratoconus
+         title4: Keratoconus Causes-Eyes Rubbing
+         alt4: Eyes Rubbing as a cause of Keratoconus
       blepharitis: 
         title: Blepharitis
         context: Blepharitis refers to chalazion or is called as stye. Blepharitis is an inflammation of the eyelashes and the margin of eyelids. It is caused by inflammation or bacterial infection. Chalazion is usually caused by staphylococcus such as staphylococcus aureus, which is the most common external stimuli.
@@ -1785,6 +2293,18 @@ pages:
         name3_2: ''
     eyeOrthopaedicDisease: Eye Plastic Surgery and Orbital Diseases
     eyeOrthopaedicDisease_head: 'Eye Plastic Surgery and Orbital Diseases｜CMER｜Medical Services'
+    eyeOrthopaedicDisease_new:
+      ophthalmoplastyList1:
+        title1: Eye Plastic Surgery-Eyelid Disorders-Eyelid Laceration
+        alt1: Eyelid Disorders or Eyelid Laceration condition before eye plastic surgery
+        title2: Eye Plastic Surgery-Exophthalmos
+        alt2: Exophthalmos condition before eye plastic surgery
+        title3: Eye Plastic Surgery-Watery eyes
+        alt3: Watery eyes condition before eye plastic surgery
+        title4: Eye Plastic Surgery-Socket Reconstruction
+        alt4: Socket Reconstruction as a surgical solution
+        title5: Eye Plastic Surgery-Contracted Socket
+        alt5: Contracted Socket as a surgical solution
     eyeOrthopaedicDisease_con:
       ophthalmoplasty:
         title: Eye plastic surgery

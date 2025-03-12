@@ -33,32 +33,38 @@ const seston = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/267899886dbaf8d9.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text1',
-    alt: '飛蚊症症狀_小雨點浮游物',
+    alt: 'pages.medical_service.muscaeVolitantes.seston.alt1',
+    title: 'pages.medical_service.muscaeVolitantes.seston.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/225dea4ef8edb2ba.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text2',
-    alt: '飛蚊症症狀_圓圈浮游物',
+    alt: 'pages.medical_service.muscaeVolitantes.seston.alt2',
+    title: 'pages.medical_service.muscaeVolitantes.seston.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d5da51be0ea0658a.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text3',
-    alt: '飛蚊症症狀_雲浮游物',
+    alt: 'pages.medical_service.muscaeVolitantes.seston.alt3',
+    title: 'pages.medical_service.muscaeVolitantes.seston.title3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/59f096cb588e2704.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text4',
-    alt: '飛蚊症症狀_網狀浮游物',
+    alt: 'pages.medical_service.muscaeVolitantes.seston.alt4',
+    title: 'pages.medical_service.muscaeVolitantes.seston.title4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d350bf2ddff168ce.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text5',
-    alt: '飛蚊症症狀_變形蟲浮游物',
+    alt: 'pages.medical_service.muscaeVolitantes.seston.alt5',
+    title: 'pages.medical_service.muscaeVolitantes.seston.title5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f3bb62aace9740a1.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text6',
-    alt: '飛蚊症症狀_蜘蛛浮游物',
+    alt: 'pages.medical_service.muscaeVolitantes.seston.alt6',
+    title: 'pages.medical_service.muscaeVolitantes.seston.title6',
   },
 ]
 // 飛蚊症成因
@@ -67,29 +73,29 @@ const factor = [
     img: 'https://static.cmereye.com/imgs/2023/05/54e4419baae2b032.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title1',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text1',
-    img_title: '飛蚊症成因_老花',
-    img_alt: '年長者出現老花症狀為飛蚊症成因',
+    img_title: 'pages.medical_service.muscaeVolitantes.factor.alt1',
+    img_alt: 'pages.medical_service.muscaeVolitantes.factor.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b8098843aeb81226.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title2',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text2',
-    img_title: '飛蚊症成因_眼睛發炎',
-    img_alt: '男患者眼睛發炎為飛蚊症成因',
+    img_title: 'pages.medical_service.muscaeVolitantes.factor.alt2',
+    img_alt: 'pages.medical_service.muscaeVolitantes.factor.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bdb733bc982c8bbe.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title3',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text3',
-    img_title: '飛蚊症成因_眼出血',
-    img_alt: '眼出血為飛蚊症成因',
+    img_title: 'pages.medical_service.muscaeVolitantes.factor.alt3',
+    img_alt: 'pages.medical_service.muscaeVolitantes.factor.title3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bb13ed69d5a61654.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title4',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text4',
-    img_title: '飛蚊症成因_視網膜脫落症狀',
-    img_alt: '男患者出現視網膜脫落症狀為飛蚊症成因',
+    img_title: 'pages.medical_service.muscaeVolitantes.factor.alt4',
+    img_alt: 'pages.medical_service.muscaeVolitantes.factor.title4',
   },
 ]
 // 飛蚊症高危人士
@@ -97,38 +103,38 @@ const highRisk = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/39afb10f87a7de13.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text1',
-    title: '飛蚊症高危一族_年長者',
-    alt: '年長者為飛蚊症高危一族',
+    title: 'pages.medical_service.muscaeVolitantes.highRisk.title1',
+    alt: 'pages.medical_service.muscaeVolitantes.highRisk.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/10a1afee083e56b8.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text2',
-    title: '飛蚊症高危一族_深近視',
-    alt: '深近視的女患者為飛蚊症高危一族',
+    title: 'pages.medical_service.muscaeVolitantes.highRisk.title2',
+    alt: 'pages.medical_service.muscaeVolitantes.highRisk.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f2d9ff06f4237aa6.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text3',
-    title: '飛蚊症高危一族_低頭族',
-    alt: '低頭族為飛蚊症高危一族',
+    title: 'pages.medical_service.muscaeVolitantes.highRisk.title3',
+    alt: 'pages.medical_service.muscaeVolitantes.highRisk.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d3b82336979411ba.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text4',
-    title: '飛蚊症高危一族_眼睛發炎',
-    alt: '眼睛發炎的女患者為飛蚊症高危一族',
+    title: 'pages.medical_service.muscaeVolitantes.highRisk.title4',
+    alt: 'pages.medical_service.muscaeVolitantes.highRisk.alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ee23c5620bd1b8d8.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text5',
-    title: '飛蚊症高危一族_家族遺傳',
-    alt: '家族遺傳為飛蚊症高危一族',
+    title: 'pages.medical_service.muscaeVolitantes.highRisk.title5',
+    alt: 'pages.medical_service.muscaeVolitantes.highRisk.alt5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/8eabb04d3e7fb31b.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text6',
-    title: '飛蚊症高危一族_血糖高',
-    alt: '血糖高為飛蚊症高危一族',
+    title: 'pages.medical_service.muscaeVolitantes.highRisk.title6',
+    alt: 'pages.medical_service.muscaeVolitantes.highRisk.alt6',
   },
 ]
 // 預防飛蚊症s
@@ -136,32 +142,32 @@ const prevent = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1ae9e363893ea9bf.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text1',
-    title: '預防飛蚊症',
-    alt: '閉眼休息以預防飛蚊症',
+    title: 'pages.medical_service.muscaeVolitantes.prevent.title1',
+    alt: 'pages.medical_service.muscaeVolitantes.prevent.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/174add34da3b109f.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text2',
-    title: '預防飛蚊症',
-    alt: '與電子產品保持適當距離以預防飛蚊症',
+    title: 'pages.medical_service.muscaeVolitantes.prevent.title2',
+    alt: 'pages.medical_service.muscaeVolitantes.prevent.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3c1f9464c5101f8b.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text3',
-    title: '預防飛蚊症',
-    alt: '在光線充足的環境下閱讀以預防飛蚊症',
+    title: 'pages.medical_service.muscaeVolitantes.prevent.title3',
+    alt: 'pages.medical_service.muscaeVolitantes.prevent.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/512837cc2419bc81.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text4',
-    title: '預防飛蚊症',
-    alt: '佩戴防紫外線太陽眼鏡以預防飛蚊症',
+    title: 'pages.medical_service.muscaeVolitantes.prevent.title4',
+    alt: 'pages.medical_service.muscaeVolitantes.prevent.alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b1c59499606c7ee4.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text5',
-    title: '預防飛蚊症',
-    alt: '保持充足睡眠以預防飛蚊症',
+    title: 'pages.medical_service.muscaeVolitantes.prevent.title5',
+    alt: 'pages.medical_service.muscaeVolitantes.prevent.alt5',
   },
 ]
 // 常見問題
@@ -241,8 +247,12 @@ const bannerData = {
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/06/eaed11ab4604268b.png"
-            title="飛蚊症症狀"
-            alt="視野出現玻璃體浮游物為飛蚊症症狀"
+            :title="locale === 'en' ? 'Eye Floaters symptoms' : `飛蚊症症狀`"
+            :alt="
+              locale === 'en'
+                ? 'Floaters in vision as eye floaters symptoms'
+                : '視野出現玻璃體浮游物為飛蚊症症狀'
+            "
           />
         </div>
         <div>
@@ -270,7 +280,11 @@ const bannerData = {
         <div>
           <div v-for="(item, index) in seston" :key="index">
             <div>
-              <img :src="item.img" :alt="item.alt" :title="'飛蚊症症狀'" />
+              <img
+                :src="item.img"
+                :alt="$t(item.alt)"
+                :title="$t(item.title)"
+              />
             </div>
             <div>
               <div>{{ $t(item.text) }}</div>
@@ -308,8 +322,8 @@ const bannerData = {
             <div>
               <img
                 :src="item.img"
-                :alt="item.img_alt"
-                :title="item.img_title"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
               />
             </div>
             <div>
@@ -376,13 +390,29 @@ const bannerData = {
               <div>
                 <img
                   src="https://static.cmereye.com/imgs/2023/05/95fa8f20495db188.png"
-                  title="生理性飛蚊症"
-                  alt="生理性飛蚊症視覺"
+                  :title="
+                    locale === 'en'
+                      ? 'Physiological Eye Floaters'
+                      : `生理性飛蚊症`
+                  "
+                  :alt="
+                    locale === 'en'
+                      ? 'Visual appearance of physiological eye floaters'
+                      : '生理性飛蚊症視覺'
+                  "
                 />
                 <img
                   src="https://static.cmereye.com/imgs/2023/05/00467483401c8769.png"
-                  title="生理性飛蚊症症狀"
-                  alt="視野出現玻璃體浮游物為生理性飛蚊症症狀"
+                  :title="
+                    locale === 'en'
+                      ? 'Benign Vitreous Floaters'
+                      : `生理性飛蚊症症狀`
+                  "
+                  :alt="
+                    locale === 'en'
+                      ? 'Benign Vitreous Floaters in physiological floaters'
+                      : '視野出現玻璃體浮游物為生理性飛蚊症症狀'
+                  "
                 />
               </div>
             </div>
@@ -397,14 +427,22 @@ const bannerData = {
           <div>
             <img
               src="https://hkcmereye.com/template/default/picture/fwz_img/exfw_en.jpg"
-              title="惡性飛蚊症"
-              alt="惡性飛蚊症眼睛結構"
+              :title="locale === 'en' ? 'Vitreous Floaters' : `惡性飛蚊症`"
+              :alt="
+                locale === 'en'
+                  ? 'Eye structure in vitreous floaters'
+                  : '惡性飛蚊症眼睛結構'
+              "
               v-if="locale === 'en'"
             />
             <img
               src="https://static.cmereye.com/imgs/2023/05/70ece1913636ef3b.png"
-              title="惡性飛蚊症"
-              alt="惡性飛蚊症眼睛結構"
+              :title="locale === 'en' ? 'Vitreous Floaters' : `惡性飛蚊症`"
+              :alt="
+                locale === 'en'
+                  ? 'Eye structure in vitreous floaters'
+                  : '惡性飛蚊症眼睛結構'
+              "
               v-else
             />
             <div>
@@ -450,7 +488,11 @@ const bannerData = {
           <div>
             <div v-for="(item, index) in highRisk" :key="index">
               <div>
-                <img :src="item.img" :alt="item.alt" :title="item.title" />
+                <img
+                  :src="item.img"
+                  :alt="$t(item.alt)"
+                  :title="$t(item.title)"
+                />
               </div>
               <div>
                 <div>{{ $t(item.text) }}</div>
@@ -500,14 +542,22 @@ const bannerData = {
                 <div>
                   <img
                     src="https://hkcmereye.com/template/default/picture/fwz_img/tr_en.jpg"
-                    title="飛蚊症"
-                    alt="飛蚊症眼睛結構"
+                    :title="locale === 'en' ? 'Eye Floaters' : `飛蚊症`"
+                    :alt="
+                      locale === 'en'
+                        ? 'Eye structure of Eye Floaters'
+                        : '飛蚊症眼睛結構'
+                    "
                     v-if="locale === 'en'"
                   />
                   <img
                     src="https://static.cmereye.com/imgs/2023/05/e7d886f97050a60e.png"
-                    title="飛蚊症"
-                    alt="飛蚊症眼睛結構"
+                    :title="locale === 'en' ? 'Eye Floaters' : `飛蚊症`"
+                    :alt="
+                      locale === 'en'
+                        ? 'Eye structure of Eye Floaters'
+                        : '飛蚊症眼睛結構'
+                    "
                     v-else
                   />
                 </div>
@@ -574,14 +624,26 @@ const bannerData = {
               <div>
                 <img
                   src="https://hkcmereye.com/template/default/picture/fwz_img/ss_en.jpg"
-                  title="飛蚊症治療"
-                  alt="微創玻璃體切除手術為飛蚊症治療方法"
+                  :title="
+                    locale === 'en' ? 'Eye Floaters treatment' : `飛蚊症治療`
+                  "
+                  :alt="
+                    locale === 'en'
+                      ? 'Minimally invasive surgery for floaters'
+                      : '微創玻璃體切除手術為飛蚊症治療方法'
+                  "
                   v-if="locale === 'en'"
                 />
                 <img
                   src="https://static.cmereye.com/imgs/2023/05/aa0d0fc0cbca2315.png"
-                  title="飛蚊症治療"
-                  alt="微創玻璃體切除手術為飛蚊症治療方法"
+                  :title="
+                    locale === 'en' ? 'Eye Floaters treatment' : `飛蚊症治療`
+                  "
+                  :alt="
+                    locale === 'en'
+                      ? 'Minimally invasive surgery for floaters'
+                      : '微創玻璃體切除手術為飛蚊症治療方法'
+                  "
                   v-else
                 />
               </div>
@@ -728,9 +790,13 @@ const bannerData = {
           >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              title="飛蚊症"
-              alt="飛蚊症_小冊子"
               srcset=""
+              :title="locale === 'en' ? 'Eye Floaters Leaflet' : `飛蚊症`"
+              :alt="
+                locale === 'en'
+                  ? 'Eye Floaters Leaflet PDF File'
+                  : '飛蚊症_小冊子'
+              "
             />
           </a>
           <a

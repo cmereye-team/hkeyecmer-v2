@@ -5,7 +5,7 @@ definePageMeta({
 const { t } = useLang()
 useHead(() => ({
   title: t('pages.medical_service.ocularSurfaceDiseases_head'),
-  meta(){
+  meta() {
     return [
       {
         hid: 'ocularSurfaceDiseasesDesc',
@@ -16,7 +16,7 @@ useHead(() => ({
         hid: 'ocularSurfaceDiseasesKey',
         name: 'keywords',
         content: t('tdk.ocularSurfaceDiseases.key'),
-      }
+      },
     ]
   },
 }))
@@ -140,84 +140,110 @@ const blepharitisList2 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/b12fb31271ef4c0e.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_1',
-    img_title: '眼瞼炎症狀_眼瞼紅腫',
-    img_alt: '眼臉紅腫為眼臉炎症狀'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.title1',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/2072d440153d5969.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_2',
-    img_title: '眼瞼炎症狀_眼睛分泌物',
-    img_alt: '眼睛分泌物為眼臉炎症狀'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.title2',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/7aa1338885c18acb.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_3',
-    img_title: '眼瞼炎症狀_倒睫',
-    img_alt: '倒睫為眼臉炎症狀'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.title3',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/4f1cd4190fdbe151.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_4',
-    img_title: '眼瞼炎症狀_結膜炎',
-    img_alt: '男患者眼睛紅腫為眼臉炎症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.title4',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.alt4',
   },
 ]
 const blepharitisList3 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/77695fe77bc38fee.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2_1',
-    img_title: '眼瞼炎治療_熱敷',
-    img_alt: '老年女患者使用熱敷方式進行眼臉炎治療'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.title1',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/9ee874c1ff5832b4.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2_2',
-    img_title: '眼瞼炎治療_抗生素眼藥水',
-    img_alt: '使用抗生素眼藥水進行眼臉炎治療'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.title2',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/0ffb423f9bec8c60.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2_3',
-    img_title: '眼瞼炎治療_眼科手術',
-    img_alt: '眼科手術為眼臉炎治療方法'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.title3',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.alt3',
   },
 ]
 const keratitisList = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/658fd4961f627781.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text1',
-    img_title: '角膜炎症狀_眼睛疼痛',
-    img_alt: '女患者眼睛疼痛為角膜炎症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title1',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/43281acecf701ee5.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2',
-    img_title: '角膜炎症狀_畏光',
-    img_alt: '患者揉眼睛及產生畏光反應為角膜炎症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title2',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/43d36f1afbbadf6b.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3',
-    img_title: '角膜炎症狀_流眼淚',
-    img_alt: '流眼淚為角膜炎症狀'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title3',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/a55f6759de9edca4.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text4',
-    img_title: '角膜炎症狀_眼瞼痙攣',
-    img_alt: '老年男患者眼臉痙攣為角膜炎症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title4',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/ed2c9360e662c9f8.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text5',
-    img_title: '角膜炎症狀_眼紅',
-    img_alt: '女患者眼紅為角膜炎症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title5',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/4a355851bbe49ff3.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text6',
-    img_title: '角膜炎症狀',
-    img_alt: '男患者眼睛不適為角膜炎症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title6',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt6',
   },
 ]
 const damageList1 = [
@@ -255,20 +281,26 @@ const damageList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_1_2',
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_1_3',
     ],
-    img_title: '角膜破皮症狀_眼神經痛',
-    img_alt: '男患者眼神經痛為角膜破皮症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.title1',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/f5488a6cf20b2bfb.png',
     text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_2'],
-    img_title: '角膜破皮症狀_畏光_流眼淚',
-    img_alt: '女患者畏光及流眼淚為角膜破皮症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.title2',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/35c768eeca793a10.png',
     text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_3'],
-    img_title: '角膜破皮症狀_眼瞼痙攣',
-    img_alt: '女患者眼瞼痙攣為角膜破皮症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.title3',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/288f34fab3f9a8cf.png',
@@ -276,8 +308,10 @@ const damageList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_1',
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_2',
     ],
-    img_title: '角膜破皮症狀_結膜充血',
-    img_alt: '患者結膜充血為角膜破皮症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.title4',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/f62bc78110c0bf14.png',
@@ -285,34 +319,44 @@ const damageList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_1',
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_2',
     ],
-    img_title: '角膜破皮症狀_眼睛異物感',
-    img_alt: '女患者眼睛異物感為角膜破皮症狀表現'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.title5',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.alt5',
   },
 ]
 const keratoconusList1 = [
   {
     img: 'https://static.cmereye.com/imgs/2023/06/125b93956e0ebff8.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_1',
-    img_title: '錐形角膜成因_家族遺傳',
-    img_alt: '家族遺傳為錐形角膜成因'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title1',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/efe6bc1656aef6bd.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_2',
-    img_title: '錐形角膜成因_過敏疾病',
-    img_alt: '小朋友患有過敏疾病為錐形角膜成因'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title2',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/8d7ccaa7a5447c03.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_3',
-    img_title: '錐形角膜成因_唐氏綜合症',
-    img_alt: '唐氏綜合症為錐形角膜成因'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title3',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/664bfc9e4aeef087.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_4',
-    img_title: '錐形角膜成因_揉眼睛',
-    img_alt: '男患者揉眼睛為錐形角膜成因'
+    img_title:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title4',
+    img_alt:
+      'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title4',
   },
 ]
 const keratoplastyList1 = [
@@ -402,7 +446,13 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/720e572cb2de6352.png" title="翼狀胬肉症狀" alt="翼狀胬肉發展狀況"
+              src="https://static.cmereye.com/imgs/2023/06/720e572cb2de6352.png"
+              :title="locale === 'en' ? 'Pterygium Symptoms' : `翼狀胬肉症狀`"
+              :alt="
+                locale === 'en'
+                  ? 'Pterygium Growth Progression'
+                  : '翼狀胬肉發展狀況'
+              "
             />
           </div>
         </div>
@@ -458,7 +508,15 @@ const bannerData = {
           </div> -->
           <div class="serviceBtnStyle">
             <service-button-icon
-              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name1_2')"
+              :str="
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.btn.name1_1'
+                ) +
+                '\n' +
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.btn.name1_2'
+                )
+              "
               :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               :type="'4'"
               :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
@@ -528,7 +586,12 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/b38916f2f6699954.png"
-              title="眼臉炎症狀" alt="眼臉炎眼睛紅腫症狀"
+              :title="locale === 'en' ? 'Blepharitis Symptoms' : `眼臉炎症狀`"
+              :alt="
+                locale === 'en'
+                  ? 'Swollen Eyelids from Blepharitis'
+                  : '眼臉炎眼睛紅腫症狀'
+              "
             />
           </div>
           <div class="ocularSurfaceDiseases_text_p_span">
@@ -563,7 +626,16 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/4e605cb3a688c00c.png"
-                title="眼瞼炎原因_揉眼睛" alt="男患者揉眼睛為眼臉炎原因"
+                :title="
+                  locale === 'en'
+                    ? 'Blepharitis Causes-Rubbing Eyes'
+                    : `眼瞼炎原因_揉眼睛`
+                "
+                :alt="
+                  locale === 'en'
+                    ? 'Man Rubbing Eyes as Cause of Blepharitis'
+                    : '男患者揉眼睛為眼臉炎原因'
+                "
               />
             </div>
           </div>
@@ -577,7 +649,15 @@ const bannerData = {
           </div> -->
           <div class="serviceBtnStyle">
             <service-button-icon
-              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name2_2')"
+              :str="
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.btn.name2_1'
+                ) +
+                '\n' +
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.btn.name2_2'
+                )
+              "
               :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               :type="'1'"
               :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
@@ -596,7 +676,13 @@ const bannerData = {
           </div>
           <div>
             <div v-for="(item, index) in blepharitisList2" :key="index">
-              <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+              <div>
+                <img
+                  :src="item.img"
+                  :alt="$t(item.img_alt)"
+                  :title="$t(item.img_title)"
+                />
+              </div>
               <div class="ocularSurfaceDiseases_text_p_span">
                 {{ $t(item.text) }}
               </div>
@@ -616,7 +702,13 @@ const bannerData = {
           <div>
             <div v-for="(item, index) in blepharitisList3" :key="index">
               <div>
-                <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+                <div>
+                  <img
+                    :src="item.img"
+                    :alt="$t(item.img_alt)"
+                    :title="$t(item.img_title)"
+                  />
+                </div>
                 <div>{{ index + 1 }}</div>
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
@@ -647,7 +739,11 @@ const bannerData = {
           <div>
             <div v-for="(item, index) in keratitisList" :key="index">
               <div>
-                <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
+                <img
+                  :src="item.img"
+                  :alt="$t(item.img_alt)"
+                  :title="$t(item.img_title)"
+                />
               </div>
               <div class="ocularSurfaceDiseases_text_p_span">
                 {{ $t(item.text) }}
@@ -664,7 +760,15 @@ const bannerData = {
           </div> -->
           <div class="serviceBtnStyle">
             <service-button-icon
-              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.btn.name3_2')"
+              :str="
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.btn.name3_1'
+                ) +
+                '\n' +
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.btn.name3_2'
+                )
+              "
               :link="'tel: +852 3956 2025'"
               :type="'3'"
               :pageName="'ocularSurfaceDiseases'"
@@ -701,7 +805,12 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/ff742016ad1ea80b.png"
-                title="角膜炎症狀" alt="角膜炎初期炎症特徵"
+                :title="locale === 'en' ? 'Keratitis Symptoms' : `角膜炎症狀`"
+                :alt="
+                  locale === 'en'
+                    ? 'Early Signs of Keratitis'
+                    : '角膜炎初期炎症特徵'
+                "
               />
               <div>
                 {{
@@ -714,7 +823,12 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/ac72de08eb33f8a2.png"
-                title="角膜移植" alt="角膜移植手術"
+                :title="locale === 'en' ? 'Keratoplasty' : `角膜移植`"
+                :alt="
+                  locale === 'en'
+                    ? 'Keratoplasty Surgery Overview'
+                    : '角膜移植手術'
+                "
               />
               <div>
                 {{
@@ -802,7 +916,12 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/2053b0709ed69a3a.png"
-                title="虹膜炎" alt="虹膜炎典型病變細節"
+                :title="locale === 'en' ? 'Iritis' : `虹膜炎`"
+                :alt="
+                  locale === 'en'
+                    ? 'Detailed Features of Iritis Inflammation'
+                    : '虹膜炎典型病變細節'
+                "
               />
             </div>
           </div>
@@ -892,7 +1011,15 @@ const bannerData = {
           </div> -->
           <div class="serviceBtnStyle">
             <service-button
-              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_2')"
+              :str="
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_1'
+                ) +
+                '\n' +
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.iritis.btn1_2'
+                )
+              "
               :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               :pageName="'ocularSurfaceDiseases'"
             />
@@ -984,7 +1111,16 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/38bb162c73f64fc8.png"
-                title="表層鞏膜炎" alt="女患者壓力大導致表層鞏膜炎"
+                :title="
+                  locale === 'en'
+                    ? 'Episcleritis Symptoms-Stress'
+                    : `表層鞏膜炎`
+                "
+                :alt="
+                  locale === 'en'
+                    ? 'Stress as Episcleritis Symptoms'
+                    : '女患者壓力大導致表層鞏膜炎'
+                "
               />
               <div class="ocularSurfaceDiseases_text_p_span">
                 {{
@@ -997,7 +1133,16 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/f978fdcd0118b62a.png"
-                title="表層鞏膜炎" alt="女患者內分泌異常導致表層鞏膜炎"
+                :title="
+                  locale === 'en'
+                    ? 'Episcleritis Symptoms-Hormonal Imbalance'
+                    : `表層鞏膜炎`
+                "
+                :alt="
+                  locale === 'en'
+                    ? 'Hormonal Imbalance as Episcleritis Symptom'
+                    : '女患者內分泌異常導致表層鞏膜炎'
+                "
               />
               <div class="ocularSurfaceDiseases_text_p_span">
                 {{
@@ -1010,7 +1155,16 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/c3f67ba61c369629.png"
-                title="表層鞏膜炎" alt="免疫疾病導致表層鞏膜炎"
+                :title="
+                  locale === 'en'
+                    ? 'Episcleritis Symptoms-Immune Disorders'
+                    : `表層鞏膜炎`
+                "
+                :alt="
+                  locale === 'en'
+                    ? 'Immune Disorders as Episcleritis Symptom'
+                    : '免疫疾病導致表層鞏膜炎'
+                "
               />
               <div class="ocularSurfaceDiseases_text_p_span">
                 {{
@@ -1135,7 +1289,16 @@ const bannerData = {
               <div>
                 <img
                   src="https://static.cmereye.com/imgs/2023/06/8ed21e35080dbfa1.png"
-                  title="單純性表層鞏膜炎" alt="眼紅為單純性表層鞏膜炎症狀表現"
+                  :title="
+                    locale === 'en'
+                      ? 'Simple Episcleritis Symptoms'
+                      : `單純性表層鞏膜炎`
+                  "
+                  :alt="
+                    locale === 'en'
+                      ? 'Red Eyes as Simple Episcleritis Symptom'
+                      : '眼紅為單純性表層鞏膜炎症狀表現'
+                  "
                 />
                 <div>
                   {{
@@ -1166,7 +1329,16 @@ const bannerData = {
               <div>
                 <img
                   src="https://static.cmereye.com/imgs/2023/06/db41b40d23dfba06.png"
-                  title="結節性表層鞏膜炎" alt="眼紅為結節性表層鞏膜炎症狀表現"
+                  :title="
+                    locale === 'en'
+                      ? 'Nodular Episcleritis Symptoms'
+                      : `結節性表層鞏膜炎`
+                  "
+                  :alt="
+                    locale === 'en'
+                      ? 'Red Eyes as Nodular Episcleritis Symptom'
+                      : '眼紅為結節性表層鞏膜炎症狀表現'
+                  "
                 />
                 <div>
                   {{
@@ -1262,7 +1434,15 @@ const bannerData = {
           </div> -->
           <div class="serviceBtnStyle">
             <service-button-icon
-              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn2')"
+              :str="
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn1'
+                ) +
+                '\n' +
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.episcleritis.btn2'
+                )
+              "
               :link="'tel: +852 3956 2025'"
               :type="'3'"
               :pageName="'ocularSurfaceDiseases'"
@@ -1280,7 +1460,10 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/2a769c496ebb7f7f.png"
-              title="角膜破皮" alt="角膜破皮情況"
+              :title="locale === 'en' ? 'Corneal Abrasion' : `角膜破皮`"
+              :alt="
+                locale === 'en' ? 'Corneal Abrasion Condition' : '角膜破皮情況'
+              "
               srcset=""
             />
           </div>
@@ -1319,7 +1502,13 @@ const bannerData = {
           </div>
           <div>
             <div v-for="(item, index) in damageList2" :key="index">
-              <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+              <div>
+                <img
+                  :src="item.img"
+                  :alt="$t(item.img_alt)"
+                  :title="$t(item.img_title)"
+                />
+              </div>
               <div>
                 <span v-for="(ele, i) in item.text" :key="i">{{
                   $t(ele)
@@ -1391,9 +1580,11 @@ const bannerData = {
               $t('pages.medical_service.ocularSurfaceDiseases_con.damage.btn')
             }}</span>
           </div> -->
-           <div class="serviceBtnStyle">
+          <div class="serviceBtnStyle">
             <service-button-icon
-              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.damage.btn')"
+              :str="
+                $t('pages.medical_service.ocularSurfaceDiseases_con.damage.btn')
+              "
               :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
               :type="'4'"
               :pageName="'ocularSurfaceDiseases'"
@@ -1423,7 +1614,13 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/284424c8276caf65.png" title="錐形角膜" alt="錐形角膜眼睛結構"
+              src="https://static.cmereye.com/imgs/2023/06/284424c8276caf65.png"
+              :title="locale === 'en' ? 'Keratoconus' : `錐形角膜`"
+              :alt="
+                locale === 'en'
+                  ? 'Eye Structure of Keratoconus'
+                  : '錐形角膜眼睛結構'
+              "
             />
           </div>
         </div>
@@ -1439,7 +1636,11 @@ const bannerData = {
           </div>
           <div>
             <div v-for="(item, index) in keratoconusList1" :key="index">
-              <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
+              <img
+                :src="item.img"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
+              />
               <div>{{ $t(item.text) }}</div>
             </div>
           </div>
@@ -1457,7 +1658,13 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/5a230949595f4632.png" title="錐形角膜" alt="顯微鏡下錐形角膜特徵"
+                src="https://static.cmereye.com/imgs/2023/06/5a230949595f4632.png"
+                :title="locale === 'en' ? 'Keratoconus' : `錐形角膜`"
+                :alt="
+                  locale === 'en'
+                    ? 'Microscopic Features of Keratoconus'
+                    : '顯微鏡下錐形角膜特徵'
+                "
               />
             </div>
             <div>
@@ -1500,13 +1707,21 @@ const bannerData = {
                 }}</span>
               </div> -->
               <div class="serviceBtnStyle">
-            <service-button-icon
-              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn2')"
-              :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
-              :type="'1'"
-              :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
-            />
-          </div>
+                <service-button-icon
+                  :str="
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn1'
+                    ) +
+                    '\n' +
+                    $t(
+                      'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.btn2'
+                    )
+                  "
+                  :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
+                  :type="'1'"
+                  :pageName="'ocularSurfaceDiseases ocularSurfaceDiseasesLong'"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -1607,7 +1822,15 @@ const bannerData = {
           </div> -->
           <div class="serviceBtnStyle">
             <service-button
-              :str="$t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn1') + '\n' + $t('pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn2')"
+              :str="
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn1'
+                ) +
+                '\n' +
+                $t(
+                  'pages.medical_service.ocularSurfaceDiseases_con.keratoplasty.btn2'
+                )
+              "
               :link="'tel: +852 3956 2025'"
               :pageName="'ocularSurfaceDiseases'"
             />
@@ -1666,13 +1889,25 @@ const bannerData = {
                 <div>
                   <img
                     src="https://static.cmereye.com/imgs/2023/06/ff742016ad1ea80b.png"
-                    title="角膜炎症狀" alt="角膜炎初期炎症特徵"
+                    :title="
+                      locale === 'en' ? 'Keratitis Symptoms' : `角膜炎症狀`
+                    "
+                    :alt="
+                      locale === 'en'
+                        ? 'Early Inflammation Signs of Keratitis'
+                        : '角膜炎初期炎症特徵'
+                    "
                   />
                 </div>
                 <div>
                   <img
                     src="https://static.cmereye.com/imgs/2023/06/ac72de08eb33f8a2.png"
-                    title="角膜移植" alt="角膜移植手術"
+                    :title="locale === 'en' ? 'Keratoplasty' : `角膜移植`"
+                    :alt="
+                      locale === 'en'
+                        ? 'Keratoplasty Surgery Overview'
+                        : '角膜移植手術'
+                    "
                   />
                 </div>
               </div>
@@ -3492,7 +3727,7 @@ const bannerData = {
   -webkit-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);
   // text-shadow: 0 2px 5px #68be92;
-  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
+  text-shadow: 0 2px 5px rgba($color: #000000, $alpha: 0.5);
   &::before {
     content: '';
     position: absolute;
@@ -3500,7 +3735,7 @@ const bannerData = {
     left: -100%;
     bottom: -100%;
     right: -100%;
-    background: linear-gradient(45deg, #FFD1D7 0%, #B7DCFF 100%);
+    background: linear-gradient(45deg, #ffd1d7 0%, #b7dcff 100%);
     background-size: 100% 100%;
     animation: bgposition 5s infinite linear alternate;
     z-index: -1;

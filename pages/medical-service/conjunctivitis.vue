@@ -33,38 +33,38 @@ const symptom = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/49f77c5d99a7780b.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text1',
-    img_alt: '結膜充血為結膜炎症狀',
-    img_title: '結膜炎症狀_結膜充血',
+    img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt1',
+    img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d926dc7d76ec029f.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text2',
-    img_alt: '眼瞼紅腫為結膜炎症狀',
-    img_title: '結膜炎症狀_眼瞼紅腫',
+    img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt2',
+    img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/850716323d310472.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text3',
-    img_alt: '眼睛痕癢為結膜炎症狀',
-    img_title: '結膜炎症狀_眼睛痕癢',
+    img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt3',
+    img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/bcda02c1c5bf937d.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text4',
-    img_alt: '眼睛異物感為結膜炎症狀',
-    img_title: '結膜炎症狀_眼睛異物感',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.stomymp.alt4',
+    img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ccacc25f729b2461.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text5',
-    img_alt: '流眼水為結膜炎症狀',
-    img_title: '結膜炎症狀_流眼水',
+    img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt5',
+    img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d329a39c077ff928.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text6',
-    img_alt: '眼睛分泌物為結膜炎症狀',
-    img_title: '結膜炎症狀_眼睛分泌物',
+    img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt6',
+    img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title6',
   },
 ]
 const kind = [
@@ -72,15 +72,15 @@ const kind = [
     img: 'https://static.cmereye.com/imgs/2023/05/748e5bcb92254caf.png',
     title: 'pages.medical_service.conjunctivitis_con.kind.title1',
     text: 'pages.medical_service.conjunctivitis_con.kind.text1',
-    img_alt: '病毒性結膜炎為結膜炎種類',
-    img_title: '毒性結膜炎',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.kind.alt1',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.kind.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/701397f097eef96c.png',
     title: 'pages.medical_service.conjunctivitis_con.kind.title2',
     text: 'pages.medical_service.conjunctivitis_con.kind.text2',
-    img_alt: '細菌性結膜炎為結膜炎種類',
-    img_title: '細菌性結膜炎',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.kind.alt2',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.kind.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/ef14a865c31942b9.png',
@@ -107,8 +107,8 @@ const kind = [
           'pages.medical_service.conjunctivitis_con.kind.detail.content3',
       },
     ],
-    img_alt: '過敏性結膜炎為結膜炎種類',
-    img_title: '過敏性結膜炎',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.kind.alt3',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.kind.title3',
   },
 ]
 // 傳播途徑
@@ -116,20 +116,20 @@ const approach = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/0d05a89369200317.png',
     text: 'pages.medical_service.conjunctivitis_con.approach.text1',
-    img_title: '紅眼症傳染途徑_接觸',
-    img_alt: '女患者接觸眼睛為紅眼症傳染途徑',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.approach.title1',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.approach.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/f0bec1c3ab794f68.png',
     text: 'pages.medical_service.conjunctivitis_con.approach.text2',
-    img_title: '紅眼症傳染途徑_交叉感染',
-    img_alt: '毛巾的交叉感染為紅眼症傳染途徑',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.approach.title2',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.approach.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4d61a6761a07123c.png',
     text: 'pages.medical_service.conjunctivitis_con.approach.text3',
-    img_title: '紅眼症傳染途徑',
-    img_alt: '泳池為紅眼症傳染途徑',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.approach.title3',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.approach.alt3',
   },
 ]
 // 高危人士
@@ -137,38 +137,38 @@ const highRisk = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1a586d997866355f.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text1',
-    img_title: '紅眼症高危一族_兒童',
-    img_alt: '兒童為紅眼症高危一族',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title1',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/044719c0b3767bdf.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text2',
-    img_title: '紅眼症高危一族_眼敏感',
-    img_alt: '眼敏感的女患者為紅眼症高危一族',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title2',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/9210325662456759.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text3',
-    img_title: '紅眼症高危一族_抵抗力差',
-    img_alt: '抵抗力差的女患者為紅眼症高危一族',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title3',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/0820acef48ffd428.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text4',
-    img_title: '紅眼症高危一族_揉眼睛',
-    img_alt: '揉眼睛的女患者為紅眼症高危一族',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title4',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/42fba00cccac8fd8.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text5',
-    img_title: '紅眼症高危一族_隱形眼鏡',
-    img_alt: '長期配戴隱形眼鏡為紅眼症高危一族',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title5',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d4a7e8890a9e4e9d.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text6',
-    img_title: '紅眼症高危一族_長期使用電子產品',
-    img_alt: '長期使用電子產品的女患者為紅眼症高危一族',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title6',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt6',
   },
 ]
 // 預防結膜炎
@@ -177,36 +177,36 @@ const prevent = [
     title: 'pages.medical_service.conjunctivitis_con.prevent.title1',
     img: 'https://static.cmereye.com/imgs/2023/05/6f78b53bc80256f1.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text1',
-    img_title: '預防紅眼症',
-    img_alt: '避免共用物品以預防紅眼症',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title1',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt1',
   },
   {
     title: 'pages.medical_service.conjunctivitis_con.prevent.title2',
     img: 'https://static.cmereye.com/imgs/2023/05/477c1cc938e1c255.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text2',
-    img_title: '預防紅眼症',
-    img_alt: '注意個人衛生以預防紅眼症',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title2',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt2',
   },
   {
     title: 'pages.medical_service.conjunctivitis_con.prevent.title3',
     img: 'https://static.cmereye.com/imgs/2023/05/9bdb93a2e7d6cdda.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text3',
-    img_title: '預防紅眼症',
-    img_alt: '避免使用公共設施以預防紅眼症',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title3',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt3',
   },
   {
     title: 'pages.medical_service.conjunctivitis_con.prevent.title4',
     img: 'https://static.cmereye.com/imgs/2023/05/f72bd496b4dd4560.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text4',
-    img_title: '預防紅眼症_隱形眼鏡',
-    img_alt: '保持隱形眼鏡清潔以預防紅眼症',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title4',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt4',
   },
   {
     title: 'pages.medical_service.conjunctivitis_con.prevent.title5',
     img: 'https://static.cmereye.com/imgs/2023/05/324f7391c1f7706f.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text5',
-    img_title: '預防紅眼症',
-    img_alt: '避免接觸過敏原以預防紅眼症',
+    img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title5',
+    img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt5',
   },
 ]
 // 内部导航
@@ -292,8 +292,16 @@ const bannerData = {
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/05/3ce6dbff76e16a32.png"
-            title="結膜炎症狀_紅眼症症狀"
-            alt="女患者揉眼睛為結膜炎或紅眼症症狀表現"
+            :title="
+              locale === 'en'
+                ? 'Conjunctivitis Symptoms-Red Eyes'
+                : `結膜炎症狀_紅眼症症狀`
+            "
+            :alt="
+              locale === 'en'
+                ? 'Woman rubbing eyes as conjunctivitis symptom'
+                : '女患者揉眼睛為結膜炎或紅眼症症狀表現'
+            "
           />
         </div>
       </div>
@@ -307,8 +315,8 @@ const bannerData = {
             <div>
               <img
                 :src="item.img"
-                :alt="item.img_alt"
-                :title="item.img_title"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
               />
             </div>
             <div>
@@ -344,8 +352,8 @@ const bannerData = {
               <div>
                 <img
                   :src="item.img"
-                  :alt="item.img_alt"
-                  :title="item.img_title"
+                  :alt="$t(item.img_alt)"
+                  :title="$t(item.img_title)"
                 />
               </div>
               <div>
@@ -399,8 +407,8 @@ const bannerData = {
               <div>
                 <img
                   :src="item.img"
-                  :alt="item.img_alt"
-                  :title="item.img_title"
+                  :alt="$t(item.img_alt)"
+                  :title="$t(item.img_title)"
                 />
               </div>
               <div>{{ $t(item.text) }}</div>
@@ -460,8 +468,8 @@ const bannerData = {
               <div>
                 <img
                   :src="item.img"
-                  :alt="item.img_alt"
-                  :title="item.img_title"
+                  :alt="$t(item.img_alt)"
+                  :title="$t(item.img_title)"
                 />
               </div>
               <div>{{ $t(item.text) }}</div>
@@ -512,8 +520,8 @@ const bannerData = {
             <div>
               <img
                 :src="item.img"
-                :alt="item.img_alt"
-                :title="item.img_title"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
               />
             </div>
             <div>{{ $t(item.text) }}</div>
@@ -532,8 +540,16 @@ const bannerData = {
           >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              title="結膜炎_紅眼症"
-              alt="結膜炎_紅眼症_小冊子"
+              :title="
+                locale === 'en'
+                  ? 'Conjunctivitis-Red Eye Guide'
+                  : `結膜炎_紅眼症`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Elderly person experiencing blurry vision from Cataract'
+                  : 'Conjunctivitis and red eye guide booklet'
+              "
               srcset=""
             />
           </a>

@@ -18,7 +18,7 @@ let menus = computed((): IMenuItem[] => [
     text: t('pages.index.home'),
     route: { name: 'index' }, // 首页
   },
-  
+
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
@@ -29,7 +29,7 @@ let menus = computed((): IMenuItem[] => [
         text: t('pages.about_us.center_profile'),
         route: { path: '/about-us', hash: '#centreIntro' },
       },
-      
+
       {
         type: 'link', // 发展历程
         text: t('pages.about_us.development_course'),
@@ -383,7 +383,7 @@ const hashActive = (child: any) => {
                 {
                   child_en: locale === 'en',
                 },
-                locale === 'en' ? 'ccccc_en' : ''
+                locale === 'en' ? 'ccccc_en' : '',
               ]"
             >
               <div v-for="(child, i) in item.childMenuList" :key="i">
@@ -444,6 +444,28 @@ a {
   width: 100%;
   height: 100%;
   line-height: 3.5;
+}
+.navigtion > div > a {
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.childpage {
+  width: fit-content;
+}
+.ccccc {
+  width: 450px;
+}
+.ccccc > div{
+  width: 150px;
+}
+.childpage a {
+  line-height: 3.5;
+  
+  width: fit-content;
+
 }
 
 .headerTem {
@@ -920,14 +942,14 @@ a {
 }
 
 .ccccc {
-  width: 390px;
+  width: 450px;
   right: 0;
   left: 130px;
   // display: flex;
   // flex-wrap: wrap;
 
   & > div {
-    width: 130px;
+    width: 150px;
     float: left;
     position: relative;
   }

@@ -38,6 +38,9 @@ components:
       chatNow3: 線上客服
       callNow: 立即致電
       chatNow2: 線上對話
+    appointment:
+      title: '希瑪眼科中心_立即預約眼科服務'
+      alt: '希瑪眼科中心_立即預約眼科服務'
 pages:
   404:
     title: 找不到该页面
@@ -82,6 +85,39 @@ pages:
       disclaimer: 免責條款
     subscribe: 立即查詢/預約
     inquire: 在線查詢
+  serviceLists: 
+    item_title1: '眼科服務_白內障'
+    item_alt1:: '眼科服務_白內障'
+    item_title2: '眼科服務_黃斑病變'
+    item_alt2: '眼科服務_黃斑病變'
+    item_title3: '眼科服務_視網膜脫落'
+    item_alt3: '眼科服務_視網膜脫落'
+    item_title4: '眼科服務_青光眼'
+    item_alt4: '眼科服務_青光眼'
+    item_title5: '眼科服務_眼角膜疾病'
+    item_alt5: '眼科服務_眼角膜疾病'
+    item_title6: '眼科服務_兒童斜視_兒童弱視'
+    item_alt6: '眼科服務_兒童斜視_兒童弱視'
+    item_title7: '眼科服務_眼整形_眼眶病'
+    item_alt7: '眼科服務_眼整形_眼眶病'
+    item_title8: '眼科服務_兒童近視控制_眼睛檢查'
+    item_alt8: '眼科服務_兒童近視控制_眼睛檢查'
+    item_title9: '眼科服務_激光矯視_smile矯視'
+    item_alt9: '眼科服務_激光矯視_smile矯視'
+  partTwoimage:
+    item_title1: '希瑪眼科中心_上市眼科中心'
+    item_alt1: '希瑪眼科中心_上市眼科中心' 
+    item_title2: '希瑪眼科中心_眼科醫生團隊'
+    item_alt2: '希瑪眼科中心_眼科醫生團隊' 
+    item_title3: '希瑪眼科中心_眼科診所'
+    item_alt3: '希瑪眼科中心_眼科診所' 
+    item_title4: '希瑪眼科中心_眼科診所推薦'
+    item_alt4: '希瑪眼科中心_眼科診所推薦' 
+    item_title5: '希瑪眼科中心_國際醫療技術'
+    item_alt5: '希瑪眼科中心_國際醫療技術' 
+    item_title6: '香港希瑪國際眼科醫療集團'
+    item_alt6: '香港希瑪國際眼科醫療集團' 
+  
   about_us:
     about_us: 關於我們
     center_profile: 中心簡介
@@ -644,6 +680,54 @@ pages:
         cataract_array_Navigation4: 人工晶體須知
         cataract_array_Navigation5: 術後注意事項
         cataract_array_Navigation6: 常見問題
+    CausesofCataract:
+      alt1: 陽光中紫外線為白內障成因
+      title1: 白內障成因_紫外線
+      alt2: 吸煙為白內障成因
+      title2: 白內障成因_吸煙
+      alt3: 深近視為白內障成因
+      title3: 白內障成因_深近視
+      alt4: 高血糖指數為白內障成因
+      title4: 白內障成因_糖尿病白內障
+      alt5: 口服類固醇藥物為白內障成因
+      title5: 白內障成因_類固醇白內障
+      alt6: 家族遺傳為白內障成因
+      title6: 白內障成因_類固醇白內障
+      alt7: 男患者眼睛創傷為白內障成因
+      title7: 白內障成因_創傷性白內障
+    SymptomsofCataract:
+      alt1: 視力模糊為常見白內障症狀
+      title1: 白內障症狀_視力模糊
+      alt2: 眼睛重影為白內障症狀
+      title2: 白內障症狀_眼睛重影
+      alt3: 視物變形為白內障症狀
+      title3: 白內障症狀_視物變形
+      alt4: 夜間視力變差為白內障症狀
+      title4: 白內障症狀_夜間視力變差
+      alt5: 頻繁更換眼鏡為白內障症狀
+      title5: 白內障症狀
+    announcementsArr:
+      alt1: 戴眼罩為白內障手術後護理方法
+      title1: 白內障手術後護理
+      alt2: 睡前戴眼罩為白內障術後注意事項
+      title2: 白內障術後注意事項
+      alt3: 白內障術後注意事項_平臥或仰臥洗頭
+      title3: 白內障術後注意事項
+      alt4: 白內障手術後護理_保持傷口清潔
+      title4: 白內障手術後護理
+      alt5: 白內障術後注意事項_避免劇烈運動
+      title5: 白內障術後注意事項
+      alt6: 白內障手術後護理_滴上眼科醫生處方眼藥水
+      title6: 白內障手術後護理
+      alt7: 白內障手術後護理_定期眼睛檢查
+      title7: 白內障手術後護理
+    CataractSurgery:
+      alt1: 白內障手術_滴上局部麻醉眼藥水
+      title1: 白內障手術_眼藥水
+      alt2: 白內障手術_切除晶體混濁
+      title2: 白內障手術_晶體混濁
+      alt3: 白內障手術植入人工晶體
+      title3: 白內障手術_人工晶體植入
     glaucoma: 青光眼
     medical_service_glaucoma_head: 青光眼｜希瑪眼科｜醫療服務
     service_glaucoma_title:
@@ -685,6 +769,64 @@ pages:
       service_glaucoma_text13: 臨床診斷時，患者會接受一系列的檢查及測試，包括︰視力檢查、視野檢查、眼底檢查、眼壓測度等，眼科專科醫生還會根據患者過去的病史及家族史診斷，常見的檢查如下︰
       service_glaucoma_text14: 治療青光眼以有效控制眼壓、防止或減慢青光眼的惡化為目標。眼科專科醫生初期一般以藥物控制青光眼病情，達至保護及保持病人的視神經組織及其功能，減少視神經進一步的損害。
       service_glaucoma_text15: 若用藥後仍無法控制病情，醫生會考慮採用手術治療，以平衡房水的生成和排出，使眼球壓力降至安全水平，達致目標眼壓。常見手術方案如下︰
+      service_glaucoma_List:
+       symptoms: 
+        title1: 青光眼症狀_眼睛脹痛
+        alt1: 女患者眼睛脹痛為青光眼症狀表現
+        title2: 青光眼症狀_眼睛充血
+        alt2: 女患者眼睛充血為青光眼症狀表現
+        title3: 青光眼症狀_視力模糊
+        alt3: 視力模糊為青光眼症狀
+        title4: 青光眼症狀_頭痛_偏頭痛
+        alt4: 女患者頭痛或偏頭痛為青光眼症狀表現
+        title5: 青光眼症狀_噁心_嘔吐
+        alt5: 女患者感到噁心或嘔吐為青光眼症狀表現
+        title6: 青光眼症狀_視野收窄
+        alt6: 視野收窄為青光眼症狀
+       worsen:
+        alt1: 青光眼初期症狀
+        title1: 青光眼初期毫無明顯症狀
+        alt2: 青光眼症狀
+        title2: 視野縮小為青光眼症狀
+        alt3: 青光眼症狀_視野缺損
+        title3: 視野缺損為嚴重青光眼症狀
+       congenital:
+        title1: 先天性青光眼症狀_流淚_畏光
+        alt1: 流淚畏光為先天性青光眼症狀表現
+        title2: 先天性青光眼症狀_角膜混濁
+        alt2: 角膜混濁為先天性青光眼症狀表現
+        title3: 先天性青光眼症狀_角膜水腫
+        alt3: 角膜水腫為先天性青光眼症狀表現
+       crowd:
+        title1: 青光眼高危險群_年長者
+        alt1: 年長者為青光眼高危險群
+        title2: 青光眼高危險群
+        alt2: 青光眼家族史為青光眼高危險群
+        title3: 青光眼高危險群_深近視
+        alt3: 深近視為青光眼高危險群
+        title4: 青光眼高危險群_血糖高
+        alt4: 血糖高為青光眼高危險群
+        title5: 青光眼高危險群_高血壓
+        alt5: 高血壓為青光眼高危險群
+        title6: 青光眼高危險群_心血管疾病
+        alt6: 心血管疾病為青光眼高危險群
+        title7: 青光眼高危險群_眼睛外傷
+        alt7: 眼睛外傷為青光眼高危險群
+        title8: 青光眼高危險群_類固醇
+        alt8: 服用類固醇藥物為青光眼高危險群
+       diagnostic:
+        alt1: 青光眼檢查_眼壓檢查
+        title1: 眼壓檢查為青光眼檢查項目
+        alt2: 青光眼檢查_視野測試
+        title2: 視野測試為青光眼檢查項目
+        alt3: 青光眼檢查_裂隙燈檢查
+        title3: 裂隙燈檢查為青光眼檢查項目
+        alt4: 青光眼檢查_前房角接觸鏡檢查
+        title4: 前房角接觸鏡檢查為青光眼檢查項目
+        alt5: 青光眼檢查_視神經檢查
+        title5: 視神經檢查為青光眼檢查項目
+        alt6: 青光眼檢查_眼底檢查
+        title6: 眼底檢查為青光眼檢查項目
       service_glaucoma_meetArr:
         meetArr_title1: Q：青光眼是老年人專屬，年輕人好少機會患上嗎？
         meetArr_agree1: 青光眼是一種視神經病變，主要是由於眼球內壓力（眼壓）上升所致。年齡超過40歲是青光眼高危一族，但是年輕人也有患青光眼的風險。深近視、有青光眼家族遺傳病史，患糖尿病、高血壓、心血管疾病，眼曾受過眼創傷，又或者長期使用類固醇，都有機會增加眼壓，從而增加青光眼風險。
@@ -796,6 +938,64 @@ pages:
       service_glaucoma_down_text: 下載小冊子
     xerophthalmia: 乾眼症
     xerophthalmia_head: '乾眼症｜希瑪眼科｜醫療服務'
+    xerophthalmia_new:
+     xerophthalmiaType: 
+      alt1: 眼睛乾澀為乾眼症症狀
+      title1: 乾眼症症狀_眼睛乾澀
+      alt2: 眼睛疲倦為乾眼症症狀
+      title2: 乾眼症症狀_眼睛疲倦
+      alt3: 眼睛異物感為乾眼症症狀
+      title3: 乾眼症症狀_眼睛異物感
+      alt4: 眼睛灼熱感為乾眼症症狀
+      title4: 眼睛分泌物為乾眼症症狀
+      alt5: 眼睛分泌物為乾眼症症狀
+      title5: 乾眼症症狀_眼睛分泌物
+      alt6: 眼睛紅腫為乾眼症症狀
+      title6: 乾眼症症狀_眼睛紅腫
+      alt7: 畏光為乾眼症症狀
+      title7: 乾眼症症狀_畏光
+      alt8: 角膜破皮為乾眼症症狀
+      title8: 乾眼症症狀_角膜破皮
+     factor:
+      title1: 淚膜_脂質層
+      alt1: 淚膜中的脂質層
+      title2: 淚膜_水液層
+      alt2: 淚膜中的水液層
+      title3: 淚膜_黏液層
+      alt3: 淚膜中的黏液層
+     tearFilm:
+      title1: 乾眼症成因
+      alt1: 脂質層分泌不足為乾眼症成因
+      title2: 乾眼症成因
+      alt2: 水液層分泌不足為乾眼症成因
+      title3: 乾眼症成因
+      alt3: 黏液層分泌不足為乾眼症成因
+      title4: 乾眼症成因
+      alt4: 淚水分泌不足為乾眼症成因
+     highRisk:
+      title1: 乾眼症高危人士_隱形眼鏡
+      alt1: 長時間佩戴隱形眼鏡為乾眼症高危人士
+      title2: 乾眼症高危人士_長時間使用電子產品
+      alt2: 辦公室女職員長時間使用電子產品為乾眼症高危人士
+      title3: 乾眼症高危人士_過量藥物
+      alt3: 服用過量藥物患者為乾眼症高危人士
+      title4: 乾眼症高危人士_空調環境
+      alt4: 患者長期處於空調環境下為乾眼症高危人士
+      title5: 乾眼症高危人士_免疫系統疾病
+      alt5: 免疫系統疾病患者為乾眼症高危人士
+      title6: 乾眼症高危人士_更年期
+      alt6: 表現疲憊姿態的更年期婦女為乾眼症高危人士
+     wayOther:
+      title1: 乾眼症舒緩
+      alt1: 避免服用減少淚液分泌藥物為乾眼症舒緩方法
+      title2: 乾眼症舒緩_免疫抑制劑
+      alt2: 使用免疫抑制劑為乾眼症舒緩方法
+      title3: 眼症舒緩_隱形眼鏡
+      alt3: 減少配戴隱形眼鏡為乾眼症舒緩方法
+      title4: 乾眼症舒緩_補充水份
+      alt4: 補充水份為乾眼症舒緩方法
+      title5: 乾眼症舒緩_護眼食物
+      alt5: 多吃護眼食物為乾眼症舒緩方法 
     xerophthalmia_con: 
       xerophthalmiaInfo: 
         name: 什麼是乾眼症 ？
@@ -986,6 +1186,53 @@ pages:
         text2: 下載小冊子
     muscae_volitantes: 飛蚊症
     muscae_volitantes_head: '飛蚊症｜希瑪眼科｜醫療服務'
+    muscaeVolitantes:
+      seston:
+       alt1: 飛蚊症症狀_小雨點浮游物
+       title1: 飛蚊症症狀_小雨點浮游物
+       alt2: 飛蚊症症狀_圓圈浮游物
+       title2: 飛蚊症症狀_圓圈浮游物
+       alt3: 飛蚊症症狀_雲浮游物
+       title3: 飛蚊症症狀_雲浮游物
+       alt4: 飛蚊症症狀_網狀浮游物
+       title4: 飛蚊症症狀_網狀浮游物
+       alt5: 飛蚊症症狀_變形蟲浮游物
+       title5: 飛蚊症症狀_變形蟲浮游物
+       alt6: 飛蚊症症狀_蜘蛛浮游物
+       title6: 飛蚊症症狀_蜘蛛浮游物
+      factor:
+       title1: 飛蚊症成因_老花
+       alt1: 年長者出現老花症狀為飛蚊症成因
+       title2: 飛蚊症成因_眼睛發炎
+       alt2: 男患者眼睛發炎為飛蚊症成因
+       titel3: 飛蚊症成因_眼出血
+       alt3: 眼出血為飛蚊症成因
+       title4: 飛蚊症成因_視網膜脫落症狀
+       alt4: 男患者出現視網膜脫落症狀為飛蚊症成因
+      highRisk:
+       alt1: 年長者為飛蚊症高危一族
+       title1: 飛蚊症高危一族_年長者
+       alt2: 深近視的女患者為飛蚊症高危一族
+       title2: 飛蚊症高危一族_深近視
+       alt3: 低頭族為飛蚊症高危一族
+       title3: 飛蚊症高危一族_低頭族
+       alt4: 眼睛發炎的女患者為飛蚊症高危一族
+       title4: 飛蚊症高危一族_眼睛發炎
+       alt5: 家族遺傳為飛蚊症高危一族
+       title5: 飛蚊症高危一族_家族遺傳
+       alt6: 血糖高為飛蚊症高危一族
+       title6: 飛蚊症高危一族_血糖高
+      prevent:
+       title1: 預防飛蚊症
+       alt1: 閉眼休息以預防飛蚊症
+       title2: 預防飛蚊症
+       alt2: 與電子產品保持適當距離以預防飛蚊症
+       title3: 預防飛蚊症
+       alt3: 在光線充足的環境下閱讀以預防飛蚊症
+       title4: 預防飛蚊症
+       alt4: 佩戴防紫外線太陽眼鏡以預防飛蚊症
+       title5: 預防飛蚊症
+       alt5: 保持充足睡眠以預防飛蚊症
     muscaeVolitantes_con:
       muscaeInfo: 
         name: 什麼是飛蚊症？
@@ -1081,6 +1328,97 @@ pages:
         name3_2: 了解治療方案
     conjunctivitis: 結膜炎(紅眼症)
     conjunctivitis_head: '結膜炎(紅眼症)｜希瑪眼科｜醫療服務'
+    conjunctivitis_new:
+     symptom:
+      alt1: 結膜充血為結膜炎症狀
+      title1: 結膜炎症狀_結膜充血
+      alt2: 眼瞼紅腫為結膜炎症狀
+      title2: 結膜炎症狀_眼瞼紅腫
+      alt3: 眼睛痕癢為結膜炎症狀
+      title3: 結膜炎症狀_眼睛痕癢
+      alt4: 眼睛異物感為結膜炎症狀
+      title4: 結膜炎症狀_眼睛異物感
+      alt5: 流眼水為結膜炎症狀
+      title5: 結膜炎症狀_流眼水
+      alt6: 眼睛分泌物為結膜炎症狀
+      title6: 結膜炎症狀_眼睛分泌物
+     kind:
+      alt1: 病毒性結膜炎為結膜炎種類
+      title1: 毒性結膜炎
+      alt2: 細菌性結膜炎為結膜炎種類
+      title2: 細菌性結膜炎
+      alt3: 過敏性結膜炎為結膜炎種類
+      title3: 過敏性結膜炎
+     approach:
+      title1: 紅眼症傳染途徑_接觸
+      alt1: 女患者接觸眼睛為紅眼症傳染途徑
+      title2: 紅眼症傳染途徑_交叉感染
+      alt2: 毛巾的交叉感染為紅眼症傳染途徑
+      title3: 紅眼症傳染途徑
+      alt3: 泳池為紅眼症傳染途徑
+     highRisk:
+      title1: 紅眼症高危一族_兒童
+      alt1: 兒童為紅眼症高危一族
+      title2: 紅眼症高危一族_眼敏感
+      alt2: 眼敏感的女患者為紅眼症高危一族
+      title3: 紅眼症高危一族_抵抗力差
+      alt3: 抵抗力差的女患者為紅眼症高危一族
+      title4: 紅眼症高危一族_揉眼睛
+      alt4: 揉眼睛的女患者為紅眼症高危一族
+      title5: 紅眼症高危一族_隱形眼鏡
+      alt5: 長期配戴隱形眼鏡為紅眼症高危一族
+      title6: 紅眼症高危一族_長期使用電子產品
+      alt6: 長期使用電子產品的女患者為紅眼症高危一族
+     prevent:
+      title1: 預防紅眼症
+      alt1: 避免共用物品以預防紅眼症
+      title2: 預防紅眼症
+      alt2: 注意個人衛生以預防紅眼症
+      title3: 預防紅眼症
+      alt3: 避免使用公共設施以預防紅眼症
+      title4: 預防紅眼症_隱形眼鏡
+      alt4: 保持隱形眼鏡清潔以預防紅眼症
+      title5: 預防紅眼症
+      alt5: 避免接觸過敏原以預防紅眼症
+    amotioRetinae_new:
+     factorList1: 
+      title1: 視網膜脫落原因_深近視
+      alt1: 深近視為視網膜脫落原因
+      title2: 視網膜脫落原因_家族遺傳
+      alt2: 家族遺傳為視網膜脫落原因
+      title3: 視網膜脫落原因_眼睛外傷
+      alt3: 眼睛外傷為視網膜脫落原因
+      title4: 視網膜脫落原因_眼手術
+      alt4: 眼手術史為視網膜脫落原因
+      title5: 視網膜脫落原因_眼腫瘤
+      alt5: 年長者患眼腫瘤為視網膜脫落原因
+      title6: 視網膜脫落原因_眼睛發炎
+      alt6: 眼睛發炎為視網膜脫落原因
+      title7: 視網膜脫落原因_糖尿上眼
+      alt7: 年長者糖尿上眼為視網膜脫落原因
+     styptomList1:
+      title1: 視網膜脫落初期
+      alt1: 視野出現飛蚊為視網膜脫落初期症狀
+      title2: 視網膜脫落症狀_閃光
+      alt2: 視野出現閃光或黑影為視網膜脫落症狀
+      title3: 視網膜脫落症狀_視野收窄
+      alt3: 視野收窄為視網膜脫落症狀
+      title4: 視網膜脫落症狀_視野缺損
+      alt4: 視野缺損為視網膜脫落症狀
+     treatList1:
+      title1: 視網膜脫落手術_氣體網膜固定術
+      alt1: 視網膜脫落手術_氣體網膜固定術手術過程
+      title2: 視網膜脫落手術_鞏膜扣壓術
+      alt2: 視網膜脫落手術_鞏膜扣壓術前後對比
+      title3: 視網膜脫落手術_玻璃體切除術
+      alt3: 視網膜脫落手術_玻璃體切除術操作過程
+     preventList1:
+      title1: 視網膜脫落預防_眼睛檢查
+      alt1: 定期接受眼睛檢查為視網膜脫落預防方法
+      title2: 視網膜脫落預防_劇烈運動
+      alt2: 避免劇烈運動為視網膜脫落預防方法
+      title3: 視網膜脫落預防_全面眼睛檢查
+      alt3: 接受全面眼睛檢查為視網膜脫落預防方法
     conjunctivitis_con:
       navLists:
         name1: 結膜炎
@@ -1288,8 +1626,128 @@ pages:
       dow:
         text1: 黃斑病變
         text2: 下載小冊子
+    sympotm:
+     alt1: 模擬黃斑病變視力模糊症狀的樹木形狀圖
+     title1: 黃斑病變症狀_視力模糊
+     alt2: 模擬黃斑病變視野變暗症狀的樹木形狀圖
+     title2: 黃斑病變症狀_視野變暗
+     alt3: 模擬黃斑病變視物變形症狀的樹木形狀圖
+     title3: 黃斑病變症狀_視物變形
+     alt4: 模擬黃斑病變視野缺損症狀的樹木形狀圖
+     title4: 黃斑病變症狀_視野缺損 
+    factor:
+     alt1: 年紀大為黃斑病變成因
+     title1: 黃斑病變成因_年紀大
+     alt2: 吸煙為黃斑病變成因
+     title2: 黃斑病變成因_吸煙
+     alt3: 不良飲食習慣為黃斑病變成因
+     title3: 黃斑病變成因_不良飲食習慣
+     alt4: 紫外線為黃斑病變成因
+     title4: 黃斑病變成因_紫外線
+     alt5: 高血壓為黃斑病變成因
+     title5: 黃斑病變成因_高血壓
+     alt6: 黃斑退化為黃斑病變成因
+     title6: 黃斑病變成因_黃斑退化
+     alt7: 家族遺傳為黃斑病變成因
+     titlt7: 黃斑病變成因_家族遺傳
+    examine:
+      img_up_alt1: 模擬無黃斑病變症狀的視覺圖
+      img_up_title1: 黃斑病變症狀
+      img_down_alt1: 模擬無黃斑病變症狀的阿姆斯勒方格表
+      img_down_title1: 黃斑病變症狀_阿姆斯勒方格表
+      img_up_alt2: 模擬黃斑病變視力模糊症狀的視覺圖
+      img_up_title2: 黃斑病變症狀_視力模糊
+      img_down_alt2: 模擬黃斑病變視力模糊症狀的阿姆斯勒方格表
+      img_down_title2: 黃斑病變症狀_視力模糊_阿姆斯勒方格表
+      img_up_alt3: 模擬黃斑病變視物變形症狀的視覺圖
+      img_up_title3: 黃斑病變症狀_視物變形
+      img_down_alt3: 模擬黃斑病變視物變形症狀的阿姆斯勒方格表
+      img_down_title3: 黃斑病變症狀_視物變形_阿姆斯勒方格表
+      img_up_alt4: 模擬黃斑病變視野變暗症狀的視覺圖
+      img_up_title4: 黃斑病變症狀_視野變暗
+      img_down_alt4: 模擬黃斑病變視野變暗症狀的阿姆斯勒方格表
+      img_down_title4: 黃斑病變症狀_視野變暗_阿姆斯勒方格表
+      img_up_alt5: 黃斑病變症狀_視野缺損
+      img_up_title5: 模擬黃斑病變視野缺損症狀的視覺圖
+      img_down_alt5: 模擬黃斑病變視野缺損症狀的阿姆斯勒方格表
+      img_down_title5: 黃斑病變症狀_視野缺損_阿姆斯勒方格表
+    prevent:
+      alt1: 避免吸煙以預防黃斑病變
+      title1: 預防黃斑病變_避免吸煙
+      alt2: 控制體重以預防黃斑病變
+      title2: 預防黃斑病變_控制體重
+      alt3: 控制近視以預防黃斑病變
+      title3: 預防黃斑病變_深近視
+      alt4: 年長者定期進行眼睛檢查以預防黃斑病變
+      title4: 預防黃斑病變_眼睛檢查
+      alt5: 保持均衡飲食以預防黃斑病變
+      title5: 預防黃斑病變_均衡飲食
+      alt6: 避免眼睛受紫外線照射以預防黃斑病變
+      title6: 預防黃斑病變_紫外線
     strabismusAmblyopia: 兒童斜弱視
     strabismusAmblyopia_con_head: '兒童斜弱視｜希瑪眼科｜醫療服務'
+    strabismusAmblyopia_new:
+     strabismusList1:
+      title1: 斜視
+      alt1: 斜視眼睛狀態
+      title2: 內斜視
+      alt2: 內斜視眼睛狀態
+      title3: 外斜視
+      alt3: 外斜視眼睛狀態
+     strabismusList2:
+      title1: 斜視
+      alt1: 斜視眼睛狀態
+      title2: 上斜視
+      alt2: 上斜視眼睛狀態
+      title3: 下斜視
+      alt3: 下斜視眼睛狀態
+     strabismusList3:
+       title1: 斜視
+       alt1: 斜視眼睛狀態
+       title2: 假性內斜視
+       alt2: 假性內斜視眼睛狀態
+       title3: 內斜視
+       alt3: 內斜視眼睛狀態
+     strabismusList4:
+       title1: 兒童內斜視
+       alt1: 內斜視狀態下寫作業的女童
+       title2: 兒童內斜視
+       alt2: 內斜視狀態下的可愛男童
+       title3: 小朋友斜視
+       alt3: 斜視狀態下的男童遮蓋一隻眼睛
+       title4: 兒童內斜視
+       alt4: 斜視狀態下的女童側頭看東西
+       title5: 小朋友斜視_揉眼睛
+       alt5: 斜視狀態下的男童揉眼睛
+       title6: 小朋友斜視_流眼淚
+       alt6: 斜視狀態下的男童流眼淚
+     strabismusList5:
+       title1: 兒童斜視矯正
+       alt1: 兒童斜視矯正前後效果對比
+       title2: 眼科醫生_斜視矯正訓練
+       alt2: 眼科醫生為男童進行斜視矯正訓練
+       title3: 斜視矯正_遮眼治療
+       alt3: 兒童進行遮眼治療的斜視矯正方法
+       title4: 斜視矯正_眼科手術
+       alt4: 斜視矯正眼科手術步驟及過程
+     amblyopiaList1:
+       title1: 兒童斜視_兒童弱視
+       alt1: 男童側臉展示斜視及弱視
+       title2: 兒童弱視_兒童視力檢查
+       alt2: 患有弱視的女童配戴驗光眼鏡進行視力檢查
+       title3: 兒童弱視_屈光不正
+       alt3: 患有弱視的男童佩戴眼鏡以改善屈光不正
+       title4: 兒童弱視_剝奪性弱視
+       alt4: 患有弱視的女童揉眼睛為剝奪性弱視症狀表現
+       title5: 先天性弱視
+       alt5: 戴眼罩的幼童接受先天性弱視治療
+     treatList1:
+       title1: 弱視治療
+       alt1: 戴眼鏡的女童微笑展現弱視治療成效
+       titel2: 弱視治療_遮眼治療
+       alt2: 女童透過遮眼治療進行弱視治療
+       title3: 弱視治療_放大瞳孔藥水
+       alt3: 男童使用放大瞳孔藥水進行弱視治療 
     strabismusAmblyopia_con:
       navLists:
         name1: 斜視
@@ -1483,6 +1941,56 @@ pages:
         text3_2: 有明顯徵狀或充血嚴重可使用類固醇眼藥水減輕炎症反應。
         text3_3: 如果視力受到影響或翼狀胬肉有增大，可以考慮切除。
         text3_4: 翼狀胬肉術後復發並不少見，減低復發率的方法包括自身結膜移植、使用抗代謝藥物等。
+      blepharitis_new:
+       blepharitisList2:
+         title1: 眼瞼炎症狀_眼瞼紅腫
+         alt1: 眼臉紅腫為眼臉炎症狀
+         title2: 眼瞼炎症狀_眼睛分泌物
+         alt2: 眼睛分泌物為眼臉炎症狀
+         title3: 眼瞼炎症狀_倒睫
+         alt3: 倒睫為眼臉炎症狀
+         title4: 眼瞼炎症狀_結膜炎
+         alt4: 男患者眼睛紅腫為眼臉炎症狀表現
+       blepharitisList3:
+         title1: 眼瞼炎治療_熱敷
+         alt1: 老年女患者使用熱敷方式進行眼臉炎治療
+         title2: 眼瞼炎治療_抗生素眼藥水
+         alt2: 使用抗生素眼藥水進行眼臉炎治療
+         title3: 眼瞼炎治療_眼科手術
+         alt3: 眼科手術為眼臉炎治療方法
+       keratitisList:
+         title1: 角膜炎症狀_眼睛疼痛
+         alt1: 女患者眼睛疼痛為角膜炎症狀表現
+         title2: 角膜炎症狀_畏光
+         alt2: 患者揉眼睛及產生畏光反應為角膜炎症狀表現
+         title3: 角膜炎症狀_流眼淚
+         alt3: 流眼淚為角膜炎症狀
+         title4: 角膜炎症狀_眼瞼痙攣
+         alt4: 老年男患者眼臉痙攣為角膜炎症狀表現
+         title5: 角膜炎症狀_眼紅
+         alt5: 女患者眼紅為角膜炎症狀表現
+         titlt6: 角膜炎症狀
+         alt6: 男患者眼睛不適為角膜炎症狀表現
+       damageList2:
+         title1: 角膜破皮症狀_眼神經痛
+         alt1: 男患者眼神經痛為角膜破皮症狀表現
+         title2: 角膜破皮症狀_畏光_流眼淚
+         alt2: 女患者畏光及流眼淚為角膜破皮症狀表現
+         title3: 角膜破皮症狀_眼瞼痙攣
+         alt3: 女患者眼瞼痙攣為角膜破皮症狀表現
+         title4: 角膜破皮症狀_結膜充血
+         alt4: 患者結膜充血為角膜破皮症狀表現
+         title5: 角膜破皮症狀_眼睛異物感
+         alt5: 女患者眼睛異物感為角膜破皮症狀表現
+       keratoconusList1:
+         title1: 錐形角膜成因_家族遺傳
+         alt1: 家族遺傳為錐形角膜成因
+         title2: 錐形角膜成因_過敏疾病
+         alt2: 小朋友患有過敏疾病為錐形角膜成因
+         title3: 錐形角膜成因_唐氏綜合症
+         alt3: 唐氏綜合症為錐形角膜成因
+         title4: 錐形角膜成因_揉眼睛
+         alt4: 男患者揉眼睛為錐形角膜成因
       blepharitis: 
         title: 眼瞼炎
         context: 眼瞼炎即是眼瘡，或俗稱「眼挑針」。最靠近眼球邊緣的皮膚就是眼瞼，因發炎或是病菌感染而引起睫毛及眼瞼邊緣處的發炎稱為「眼瞼炎」。引致眼瘡的原因大多是葡萄球菌，如：金黃葡萄球菌，是最常引起外眼部刺激的因素之一。
@@ -1712,6 +2220,18 @@ pages:
         name3_2: 立即致電預約檢查
     eyeOrthopaedicDisease: 眼矯形及眼眶疾病
     eyeOrthopaedicDisease_head: '眼矯形及眼眶疾病｜希瑪眼科｜醫療服務'
+    eyeOrthopaedicDisease_new:
+      ophthalmoplastyList1:
+        title1: 眼整形_眼瞼
+        alt1: 進行眼整形前的眼瞼狀況
+        title2: 眼整形_甲亢突眼
+        alt2: 進行眼整形前的甲亢突眼狀況
+        title3: 眼整形_淚眼
+        alt3: 進行眼整形前的淚眼狀況
+        title4: 眼整形_義眼
+        alt4: 義眼移植為眼整形方案
+        title5: 眼整形_眼眶收縮
+        alt5: 眼眶收縮為眼整形方案
     eyeOrthopaedicDisease_con:
       ophthalmoplasty:
         title: 眼整形

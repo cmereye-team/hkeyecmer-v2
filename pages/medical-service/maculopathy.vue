@@ -52,26 +52,26 @@ const sympotm = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/a35e84d4d561b775.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text1',
-    alt: '模擬黃斑病變視力模糊症狀的樹木形狀圖',
-    title: '黃斑病變症狀_視力模糊',
+    alt: 'pages.medical_service.sympotm.alt1',
+    title: 'pages.medical_service.sympotm.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1bc58cb58d984772.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text2',
-    alt: '模擬黃斑病變視野變暗症狀的樹木形狀圖',
-    title: '黃斑病變症狀_視野變暗',
+    alt: 'pages.medical_service.sympotm.alt2',
+    title: 'pages.medical_service.sympotm.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/b5d5aa2f6c40815b.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text3',
-    alt: '模擬黃斑病變視物變形症狀的樹木形狀圖',
-    title: '黃斑病變症狀_視物變形',
+    alt: 'pages.medical_service.sympotm.alt3',
+    title: 'pages.medical_service.sympotm.title3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/43227b62cc0bc253.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text4',
-    alt: '模擬黃斑病變視野缺損症狀的樹木形狀圖',
-    title: '黃斑病變症狀_視野缺損',
+    alt: 'pages.medical_service.sympotm.alt4',
+    title: 'pages.medical_service.sympotm.title4',
   },
 ]
 // 黃斑病變自我檢查
@@ -80,46 +80,46 @@ const examine = [
     title: 'pages.medical_service.maculopathy_con.inspect.title1',
     img_up: 'https://static.cmereye.com/imgs/2023/05/aa1baf80bab50483.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/9450b89f466321db.png',
-    img_up_alt: '模擬無黃斑病變症狀的視覺圖',
-    img_up_title: '黃斑病變症狀',
-    img_down_alt: '模擬無黃斑病變症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_阿姆斯勒方格表',
+    img_up_alt: 'pages.medical_service.examine.img_up_alt1',
+    img_up_title: 'pages.medical_service.examine.img_up_title1',
+    img_down_alt: 'pages.medical_service.examine.img_down_alt1',
+    img_down_title: 'pages.medical_service.examine.img_down_title1',
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title4',
     img_up: 'https://static.cmereye.com/imgs/2023/05/233cb17db72b3823.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/be3b25f7e3770d9f.png',
-    img_up_alt: '模擬黃斑病變視力模糊症狀的視覺圖',
-    img_up_title: '黃斑病變症狀_視力模糊',
-    img_down_alt: '模擬黃斑病變視力模糊症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_視力模糊_阿姆斯勒方格表',
+    img_up_alt: 'pages.medical_service.examine.img_up_alt2',
+    img_up_title: 'pages.medical_service.examine.img_up_title2',
+    img_down_alt: 'pages.medical_service.examine.img_down_alt2',
+    img_down_title: 'pages.medical_service.examine.img_down_title2',
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title3',
     img_up: 'https://static.cmereye.com/imgs/2023/05/940b9c94d772c689.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/6d3dba4eaa1e1303.png',
-    img_up_alt: '模擬黃斑病變視物變形症狀的視覺圖',
-    img_up_title: '黃斑病變症狀_視物變形',
-    img_down_alt: '模擬黃斑病變視物變形症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_視物變形_阿姆斯勒方格表',
+    img_up_alt: 'pages.medical_service.examine.img_up_alt3',
+    img_up_title: 'pages.medical_service.examine.img_up_title3',
+    img_down_alt: 'pages.medical_service.examine.img_down_alt3',
+    img_down_title: 'pages.medical_service.examine.img_down_title3',
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title2',
     img_up: 'https://static.cmereye.com/imgs/2023/05/7e436a4e96ccdc37.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/98c9fd6f9d13b3cb.png',
-    img_up_alt: '模擬黃斑病變視野變暗症狀的視覺圖',
-    img_up_title: '黃斑病變症狀_視野變暗',
-    img_down_alt: '模擬黃斑病變視野變暗症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_視野變暗_阿姆斯勒方格表',
+    img_up_alt: 'pages.medical_service.examine.img_up_alt4',
+    img_up_title: 'pages.medical_service.examine.img_up_title4',
+    img_down_alt: 'pages.medical_service.examine.img_down_alt4',
+    img_down_title: 'pages.medical_service.examine.img_down_title4',
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title5',
     img_up: 'https://static.cmereye.com/imgs/2023/05/89704c6401ded877.png',
     img_down: 'https://static.cmereye.com/imgs/2023/05/8336f08bbc0cda0e.png',
-    img_up_alt: '模擬黃斑病變視野缺損症狀的視覺圖',
-    img_up_title: '黃斑病變症狀_視野缺損',
-    img_down_alt: '模擬黃斑病變視野缺損症狀的阿姆斯勒方格表',
-    img_down_title: '黃斑病變症狀_視野缺損_阿姆斯勒方格表',
+    img_up_alt: 'pages.medical_service.examine.img_up_alt5',
+    img_up_title: 'pages.medical_service.examine.img_up_title5',
+    img_down_alt: 'pages.medical_service.examine.img_down_alt5',
+    img_down_title: 'pages.medical_service.examine.img_down_title5',
   },
 ]
 // 老年黃斑病變成因
@@ -127,44 +127,44 @@ const factor = [
   {
     img: 'https://static.cmereye.com/imgs/2023/05/d318d9ddc48014f0.png',
     text: 'pages.medical_service.maculopathy_con.factor.text1',
-    alt: '年紀大為黃斑病變成因',
-    title: '黃斑病變成因_年紀大',
+    alt: 'pages.medical_service.factor.alt1',
+    title: 'pages.medical_service.factor.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/4c30a5bce1f432ab.png',
     text: 'pages.medical_service.maculopathy_con.factor.text2',
-    alt: '吸煙為黃斑病變成因',
-    title: '黃斑病變成因_吸煙',
+    alt: 'pages.medical_service.factor.alt2',
+    title: 'pages.medical_service.factor.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/fa056cec9377e0b8.png',
     text: 'pages.medical_service.maculopathy_con.factor.text3',
-    alt: '不良飲食習慣為黃斑病變成因',
-    title: '黃斑病變成因_不良飲食習慣',
+    alt: 'pages.medical_service.factor.alt3',
+    title: 'pages.medical_service.factor.title3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/517d3d0735bb283a.png',
     text: 'pages.medical_service.maculopathy_con.factor.text4',
-    alt: '紫外線為黃斑病變成因',
-    title: '黃斑病變成因_紫外線',
+    alt: 'pages.medical_service.factor.alt4',
+    title: 'pages.medical_service.factor.title4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/26091d94736c22f3.png',
     text: 'pages.medical_service.maculopathy_con.factor.text5',
-    alt: '高血壓為黃斑病變成因',
-    title: '黃斑病變成因_高血壓',
+    alt: 'pages.medical_service.factor.alt5',
+    title: 'pages.medical_service.factor.title5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/3f170433f21acc56.png',
     text: 'pages.medical_service.maculopathy_con.factor.text6',
-    alt: '黃斑退化為黃斑病變成因',
-    title: '黃斑病變成因_黃斑退化',
+    alt: 'pages.medical_service.factor.alt6',
+    title: 'pages.medical_service.factor.title6',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/7d119ac9fdaca526.png',
     text: 'pages.medical_service.maculopathy_con.factor.text7',
-    alt: '家族遺傳為黃斑病變成因',
-    title: '黃斑病變成因_家族遺傳',
+    alt: 'pages.medical_service.factor.alt7',
+    title: 'pages.medical_service.factor.title7',
   },
 ]
 // 預防黃斑病變
@@ -173,43 +173,43 @@ const prevent = [
     img: 'https://static.cmereye.com/imgs/2023/05/ef27c15a9ab6f560.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title1',
     text: 'pages.medical_service.maculopathy_con.prevent.text1',
-    img_alt: '避免吸煙以預防黃斑病變',
-    img_title: '預防黃斑病變_避免吸煙',
+    img_alt: 'pages.medical_service.prevent.alt1',
+    img_title: 'pages.medical_service.prevent.title1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/c5572d289a126f73.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title2',
     text: 'pages.medical_service.maculopathy_con.prevent.text2',
-    img_alt: '控制體重以預防黃斑病變',
-    img_title: '預防黃斑病變_控制體重',
+    img_alt: 'pages.medical_service.prevent.alt2',
+    img_title: 'pages.medical_service.prevent.title2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/45fe80f40944cbb0.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title3',
     text: 'pages.medical_service.maculopathy_con.prevent.text3',
-    img_alt: '控制近視以預防黃斑病變',
-    img_title: '預防黃斑病變_深近視',
+    img_alt: 'pages.medical_service.prevent.alt3',
+    img_title: 'pages.medical_service.prevent.title3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/aa448910d3a02a1f.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title4',
     text: 'pages.medical_service.maculopathy_con.prevent.text4',
-    img_alt: '年長者定期進行眼睛檢查以預防黃斑病變',
-    img_title: '預防黃斑病變_眼睛檢查',
+    img_alt: 'pages.medical_service.prevent.alt4',
+    img_title: 'pages.medical_service.prevent.title4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/2078dbb368b52cce.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title5',
     text: 'pages.medical_service.maculopathy_con.prevent.text5',
-    img_alt: '保持均衡飲食以預防黃斑病變',
-    img_title: '預防黃斑病變_均衡飲食',
+    img_alt: 'pages.medical_service.prevent.alt5',
+    img_title: 'pages.medical_service.prevent.title5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/05/1edb292db5fb5f21.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title6',
     text: 'pages.medical_service.maculopathy_con.prevent.text6',
-    img_alt: '避免眼睛受紫外線照射以預防黃斑病變',
-    img_title: '預防黃斑病變_紫外線',
+    img_alt: 'pages.medical_service.prevent.alt6',
+    img_title: 'pages.medical_service.prevent.title6',
   },
 ]
 // 内部导航
@@ -295,7 +295,11 @@ const bannerData = {
         <div>
           <div v-for="(item, i) in sympotm" :key="i">
             <div>
-              <img :src="item.img" :alt="item.alt" :title="item.title" />
+              <img
+                :src="item.img"
+                :alt="$t(item.alt)"
+                :title="$t(item.title)"
+              />
             </div>
             <div>{{ $t(item.text) }}</div>
           </div>
@@ -334,8 +338,16 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/e46966e16b3b006a.png"
-              alt="用於黃斑病變測試的阿姆斯勒方格表"
-              title="黃斑病變測試_阿姆斯勒方格表"
+              :title="
+                locale === 'en'
+                  ? 'Macular Degeneration test-Amsler Grid'
+                  : `黃斑病變測試_阿姆斯勒方格表`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Amsler grid for macular degeneration test'
+                  : '用於黃斑病變測試的阿姆斯勒方格表'
+              "
             />
             <span>{{
               $t('pages.medical_service.maculopathy_con.inspect.name3')
@@ -355,8 +367,8 @@ const bannerData = {
               <div>
                 <img
                   :src="item.img_up"
-                  :alt="item.img_up_alt"
-                  :title="item.img_up_title"
+                  :alt="$t(item.img_up_alt)"
+                  :title="$t(item.img_up_title)"
                 />
               </div>
               <svg
@@ -376,8 +388,8 @@ const bannerData = {
               <div>
                 <img
                   :src="item.img_down"
-                  :alt="item.img_down_alt"
-                  :title="item.img_down_title"
+                  :alt="$t(item.img_down_alt)"
+                  :title="$t(item.img_down_title)"
                 />
               </div>
             </div>
@@ -473,8 +485,16 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/05/ebb756d32ecc201b.png"
-              alt="老年黃斑病變眼睛結構"
-              title="老年黃斑病變"
+              :title="
+                locale === 'en'
+                  ? 'Age-related Macular Degeneration'
+                  : `老年黃斑病變`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Eye structure affected by age-related macular degeneration'
+                  : '老年黃斑病變眼睛結構'
+              "
             />
           </div>
           <div>
@@ -513,8 +533,16 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/ff4d52af6af21a3e.png"
-                title="乾性黃斑病變_視力模糊"
-                alt="乾性黃斑病變導致視力模糊的視覺圖"
+                :title="
+                  locale === 'en'
+                    ? 'Dry Macular Degeneration-Blurred Vision'
+                    : `乾性黃斑病變_視力模糊`
+                "
+                :alt="
+                  locale === 'en'
+                    ? 'Blurred vision caused by dry macular degeneration'
+                    : '乾性黃斑病變導致視力模糊的視覺圖'
+                "
               />
             </div>
             <div>
@@ -535,8 +563,16 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/05/a7c511844cb612a3.png"
-                title="濕性黃班病變_視野缺損"
-                alt="濕性黃班病變導致視野缺損的視覺圖"
+                :title="
+                  locale === 'en'
+                    ? 'Wet Macular Degeneration-Vision Loss'
+                    : `濕性黃班病變_視野缺損`
+                "
+                :alt="
+                  locale === 'en'
+                    ? 'Vision loss caused by wet macular degeneration'
+                    : '濕性黃班病變導致視野缺損的視覺圖'
+                "
               />
             </div>
             <div>
@@ -558,7 +594,11 @@ const bannerData = {
         <div>
           <div v-for="(item, i) in factor" :key="i">
             <div>
-              <img :src="item.img" :title="item.title" :alt="item.alt" />
+              <img
+                :src="item.img"
+                :title="$t(item.title)"
+                :alt="$t(item.alt)"
+              />
             </div>
             <div>{{ $t(item.text) }}</div>
           </div>
@@ -629,8 +669,8 @@ const bannerData = {
             <div>
               <img
                 :src="item.img"
-                :alt="item.img_alt"
-                :title="item.img_title"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
               />
             </div>
             <div>{{ $t(item.title) }}</div>
@@ -662,8 +702,14 @@ const bannerData = {
           >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              alt="黃斑病變_小冊子"
-              title="黃斑病變"
+              :title="
+                locale === 'en' ? 'Macular Degeneration Leaflet' : `黃斑病變`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Macular Degeneration Leaflet PDF File'
+                  : '黃斑病變_小冊子'
+              "
               srcset=""
             />
           </a>

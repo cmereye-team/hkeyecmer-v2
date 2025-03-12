@@ -18,8 +18,7 @@ const backgd = [
 // 内部导航
 const serviceNavigation = [
   {
-    anchorName:
-      'pages.medical_service.atropine_text.atropine_text1',
+    anchorName: 'pages.medical_service.atropine_text.atropine_text1',
     anchorLink: '/medical-service/atropine#introduce',
   },
   {
@@ -56,12 +55,16 @@ const goWhatsApp = () => {
   )
 }
 
-const toWhatsApp = ()=>{
-  window.open('https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2')
+const toWhatsApp = () => {
+  window.open(
+    'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'
+  )
 }
 
-const tozoosnet =()=>{
-  window.open('https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571')
+const tozoosnet = () => {
+  window.open(
+    'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571'
+  )
 }
 
 const bannerData = {
@@ -70,7 +73,7 @@ const bannerData = {
   cnName: '阿托品眼藥水',
   enName: 'ATROPINE EYE DROPS',
   textColor: '#70B8C4',
-  pageName: 'atropine'
+  pageName: 'atropine',
 }
 </script>
 
@@ -80,7 +83,10 @@ const bannerData = {
     <div class="atropine-nav">
       <serviceNav :arrData="serviceNavigation" :pageName="'atropine'" />
     </div>
-    <div class="atropine_nav maxCon" :class="{'atropineNav-en': locale === 'en'}">
+    <div
+      class="atropine_nav maxCon"
+      :class="{ 'atropineNav-en': locale === 'en' }"
+    >
       <div id="introduce">
         <div class="atropine_title_text">
           {{ $t('pages.medical_service.atropine_text.atropine_title1_text1') }}
@@ -133,7 +139,16 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/333f38d7d245b86a.png"
-              title="阿托品_控制近視眼藥水" alt="控制近視的阿托品眼藥水瓶子"
+              :title="
+                locale === 'en'
+                  ? 'Atropine Eye Drops for Myopia Control'
+                  : `阿托品_控制近視眼藥水`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Atropine Eye Drops'
+                  : '控制近視的阿托品眼藥水瓶子'
+              "
             />
           </div>
         </div>
@@ -146,31 +161,70 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/8cd93fc952da0965.png"
-              title="阿托品_控制近視眼藥水" alt="控制近視的0.01%低濃度阿托品眼藥水"
+              :title="
+                locale === 'en'
+                  ? 'Atropine Eye Drops for Myopia Control'
+                  : `阿托品_控制近視眼藥水`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Low-Dose 0.01% Atropine Eye Drops'
+                  : '控制近視的0.01%低濃度阿托品眼藥水'
+              "
             />
             <img
               src="https://static.cmereye.com/imgs/2023/06/b9c0bcc3a444bbcb.png"
-              title="阿托品_控制近視眼藥水" alt="控制近視的0.05%低濃度阿托品眼藥水"
+              :title="
+                locale === 'en'
+                  ? 'Atropine Eye Drops for Myopia Control'
+                  : `阿托品_控制近視眼藥水`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Low-Dose 0.05% Atropine Eye Drops'
+                  : '控制近視的0.05%低濃度阿托品眼藥水'
+              "
             />
             <img
               src="https://static.cmereye.com/imgs/2023/06/a6ac6361a91b9218.png"
-              title="阿托品_控制近視眼藥水" alt="控制近視的0.125%高濃度阿托品眼藥水"
+              :title="
+                locale === 'en'
+                  ? 'Atropine Eye Drops for Myopia Control'
+                  : `阿托品_控制近視眼藥水`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'High-Dose 0.125% Atropine Eye Drops'
+                  : '控制近視的0.125%高濃度阿托品眼藥水'
+              "
             />
             <img
               src="https://static.cmereye.com/imgs/2023/06/130f0b399ca1e541.png"
-              title="阿托品_控制近視眼藥水" alt="控制近視的1%高濃度阿托品眼藥水"
+              :title="
+                locale === 'en'
+                  ? 'Atropine Eye Drops for Myopia Control'
+                  : `阿托品_控制近視眼藥水`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'High-Dose 1% Atropine Eye Drops'
+                  : '控制近視的1%高濃度阿托品眼藥水'
+              "
             />
           </div>
           <div>
             <div>
-              <span>{{$t('pages.medical_service.atropine_text.introduce.span1')}}</span>
+              <span>{{
+                $t('pages.medical_service.atropine_text.introduce.span1')
+              }}</span>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/f294f0db0f83e242.png"
-                
               />
             </div>
             <div>
-              <span>{{$t('pages.medical_service.atropine_text.introduce.span2')}}</span>
+              <span>{{
+                $t('pages.medical_service.atropine_text.introduce.span2')
+              }}</span>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/f78528260ec72142.png"
                 alt=""
@@ -193,25 +247,36 @@ const bannerData = {
             <div>
               <img
                 src="https://static.cmereye.com/imgs/2023/06/84575123f01d27c5.jpg"
-                title="兒童近視控制_阿托品_眼藥水" alt="女童使用阿托品眼藥水以控制近視"
+                :title="
+                  locale === 'en'
+                    ? `Atropine for Children's Myopia Control`
+                    : `兒童近視控制_阿托品_眼藥水`
+                "
+                :alt="
+                  locale === 'en'
+                    ? 'Child Using Atropine Eye Drops'
+                    : '女童使用阿托品眼藥水以控制近視'
+                "
               />
             </div>
             <div>
               <p>
-                {{ $t('pages.medical_service.atropine_text.effect.p1')}}
+                {{ $t('pages.medical_service.atropine_text.effect.p1') }}
                 <span class="up_bid">2</span>
-                {{ $t('pages.medical_service.atropine_text.effect.p2')}}
+                {{ $t('pages.medical_service.atropine_text.effect.p2') }}
               </p>
               <p>
-                {{ $t('pages.medical_service.atropine_text.effect.p3')}}
+                {{ $t('pages.medical_service.atropine_text.effect.p3') }}
                 <span class="up_bid">3</span>
                 。
-                {{ $t('pages.medical_service.atropine_text.effect.p4')}}
+                {{ $t('pages.medical_service.atropine_text.effect.p4') }}
               </p>
             </div>
           </div>
           <div>
-            <span>{{ $t('pages.medical_service.atropine_text.effect.span')}} </span>
+            <span
+              >{{ $t('pages.medical_service.atropine_text.effect.span') }}
+            </span>
           </div>
         </div>
         <div>
@@ -235,7 +300,7 @@ const bannerData = {
         <div class="serviceBtnStyle">
           <service-button-icon
             :str="$t('pages.medical_service.atropine_text.effect.btn1')"
-            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'" 
+            :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
             :type="'4'"
             :pageName="'atropine'"
           />
@@ -249,7 +314,12 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/22f52a2cd4375972.png"
-              title="眼球拉長" alt="眼部特寫顯示眼球拉長"
+              :title="locale === 'en' ? 'Eye Elongation Close-Up' : `眼球拉長`"
+              :alt="
+                locale === 'en'
+                  ? 'Detailed View of Eye Elongatio'
+                  : '眼部特寫顯示眼球拉長'
+              "
             />
             <div>
               {{ $t('pages.medical_service.atropine_text.atropine_title3_p1') }}
@@ -258,7 +328,16 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/7e6f87e0e87fa03b.png"
-              title="兒童近視控制_視力檢查" alt="男童戴眼鏡進行視力檢查以控制近視"
+              :title="
+                locale === 'en'
+                  ? 'Myopia Control Vision Test'
+                  : `兒童近視控制_視力檢查`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Child Wearing Glasses for Vision Tes'
+                  : '男童戴眼鏡進行視力檢查以控制近視'
+              "
             />
             <div>
               {{ $t('pages.medical_service.atropine_text.atropine_title3_p2') }}
@@ -267,7 +346,16 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/e8f9777b29a81b26.png"
-              title="驗眼儀器_屈光檢查" alt="用於屈光檢查的驗眼儀器"
+              :title="
+                locale === 'en'
+                  ? 'Refraction Test Equipment'
+                  : `驗眼儀器_屈光檢查`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Device Used for Refraction Testing'
+                  : '用於屈光檢查的驗眼儀器'
+              "
             />
             <div>
               <span>{{
@@ -281,7 +369,16 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/cc985146128cd086.png"
-              title="阿托品_控制近視眼藥水" alt="使用阿托品眼藥水控制近視的患者"
+              :title="
+                locale === 'en'
+                  ? 'Atropine Eye Drops for Myopia Control'
+                  : `阿托品_控制近視眼藥水`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Patient Using Atropine Eye Drops'
+                  : '使用阿托品眼藥水控制近視的患者'
+              "
             />
             <div>
               {{ $t('pages.medical_service.atropine_text.atropine_title3_p4') }}
@@ -325,7 +422,7 @@ const bannerData = {
         <div class="serviceBtnStyle">
           <service-button-icon
             :str="$t('pages.medical_service.atropine_text.congruency.btn1')"
-            :link="'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571'" 
+            :link="'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=c9dc62b1026349509adfd4cfaeadc550&lng=big5&sid=c663f66caab14ddbad5abbb5ef082d63&p=https%3A//hkcmereye.com/atropine/&rf1=https%3A//hkcmereye&rf2=.com/&msg=&e=hkcmereye.com[youce-goutong]&d=1687852047571'"
             :type="'2'"
             :pageName="'atropine atropine2'"
           />
@@ -423,8 +520,7 @@ const bannerData = {
         </div>
       </div>
     </div>
-    <div>
-    </div>
+    <div></div>
     <div class="fromTable">
       <FormFooterInfo
         :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
@@ -435,27 +531,27 @@ const bannerData = {
   </div>
 </template>
 <style lang="scss" scoped>
-.atropine{
+.atropine {
   margin-bottom: 50px;
 }
 @keyframes bgposition {
-    0% {
-        transform: translate(30%, 30%);
-    }
-    25% {
-        transform: translate(30%, -30%);
-    }
-    50% {
-        transform: translate(-30%, -30%);
-    }
-    75% {
-        transform: translate(-30%, 30%);
-    }
-    100% {
-        transform: translate(30%, 30%);
-    }
+  0% {
+    transform: translate(30%, 30%);
+  }
+  25% {
+    transform: translate(30%, -30%);
+  }
+  50% {
+    transform: translate(-30%, -30%);
+  }
+  75% {
+    transform: translate(-30%, 30%);
+  }
+  100% {
+    transform: translate(30%, 30%);
+  }
 }
-.atropine-nav{
+.atropine-nav {
   margin-top: 30px;
 }
 .atropine_nav {
@@ -778,13 +874,13 @@ const bannerData = {
         -webkit-backface-visibility: hidden;
         -webkit-transform: translate3d(0, 0, 0);
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           top: -100%;
           left: -100%;
           bottom: -100%;
           right: -100%;
-          background: linear-gradient(45deg,  #AEDBD0 0%, #B1D369 100%);
+          background: linear-gradient(45deg, #aedbd0 0%, #b1d369 100%);
           background-size: 100% 100%;
           animation: bgposition 5s infinite linear alternate;
           z-index: -1;
@@ -940,13 +1036,13 @@ const bannerData = {
         -webkit-backface-visibility: hidden;
         -webkit-transform: translate3d(0, 0, 0);
         &::before {
-          content: "";
+          content: '';
           position: absolute;
           top: -100%;
           left: -100%;
           bottom: -100%;
           right: -100%;
-          background: linear-gradient(45deg,  #AEDBD0 0%, #B1D369 100%);
+          background: linear-gradient(45deg, #aedbd0 0%, #b1d369 100%);
           background-size: 100% 100%;
           animation: bgposition 5s infinite linear alternate;
           z-index: -1;
@@ -962,12 +1058,12 @@ const bannerData = {
     font-family: 'NotoSansHK-Medium';
     font-weight: 550;
   }
-  &.atropineNav-en{
+  &.atropineNav-en {
     & > #effect {
       & > div:nth-child(2) {
         & > div:nth-of-type(1) {
           & > div:nth-child(2) {
-            &>p{
+            & > p {
               line-height: 1.6;
             }
           }
@@ -979,7 +1075,7 @@ const bannerData = {
     }
     & > #benefit {
       & > div:nth-child(2) {
-        & > div{
+        & > div {
           font-size: 18px;
           line-height: 1.6;
         }
@@ -1003,7 +1099,7 @@ const bannerData = {
     }
     .matters {
       & > div:nth-child(2) {
-        &>div{
+        & > div {
           align-items: center;
         }
       }
@@ -1057,7 +1153,7 @@ const bannerData = {
     font-size: 22px;
     line-height: 1.6;
   }
-  .atropine-nav{
+  .atropine-nav {
     margin-top: -80px;
   }
   .atropine_nav {
@@ -1076,7 +1172,7 @@ const bannerData = {
           font-size: 14px;
         }
         & > div:nth-child(2) {
-          img{
+          img {
             width: 80%;
             margin: 0 auto;
           }
@@ -1089,7 +1185,7 @@ const bannerData = {
         & > div:nth-child(1) {
           padding: 0;
           margin-top: 20px;
-          img{
+          img {
             width: 70px;
           }
         }
@@ -1132,9 +1228,9 @@ const bannerData = {
             width: calc(100% - 30px);
             position: relative;
 
-            &::before{
+            &::before {
               content: '';
-              background: #F2F2F2;
+              background: #f2f2f2;
               width: 100%;
               height: 100%;
               position: absolute;
@@ -1142,12 +1238,12 @@ const bannerData = {
               top: 30px;
               border-radius: 10px;
             }
-            img{
+            img {
               position: relative;
             }
           }
           & > div:nth-child(2) {
-            &>p{
+            & > p {
               font-size: 14px;
               line-height: 2;
             }
@@ -1178,10 +1274,9 @@ const bannerData = {
         }
       }
       & > div:nth-of-type(3) {
-        
-        p{
+        p {
           width: 110%;
-          transform: scale(.9);
+          transform: scale(0.9);
           margin-left: -5%;
           color: #777;
           margin-top: 10px;
@@ -1189,7 +1284,7 @@ const bannerData = {
       }
       & > div:nth-of-type(4) {
         margin-top: 60px;
-        &>div{
+        & > div {
           width: max-content;
           height: 70px;
           font-size: 16px;
@@ -1206,7 +1301,7 @@ const bannerData = {
         padding: 0;
         margin-top: 45px;
         flex-wrap: wrap;
-        &>div{
+        & > div {
           width: calc(50% - 20px);
           margin-bottom: 50px;
           font-size: 14px;
@@ -1227,7 +1322,7 @@ const bannerData = {
     & > #congruency {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      
+
       & > div:nth-child(2) {
         & > div {
           border-bottom: 2px dashed #c1e8f3;
@@ -1239,8 +1334,8 @@ const bannerData = {
             font-size: 24px;
             line-height: 1.6;
             text-align: left;
-            border-bottom: 2px solid #7BBFCB;
-            &::before{
+            border-bottom: 2px solid #7bbfcb;
+            &::before {
               content: '0';
             }
           }
@@ -1262,7 +1357,7 @@ const bannerData = {
       }
       & > div:nth-of-type(3) {
         margin-top: 55px;
-        &>div{
+        & > div {
           width: max-content;
           height: 70px;
           font-size: 16px;
@@ -1282,7 +1377,7 @@ const bannerData = {
           flex-direction: column;
           & > div {
             width: 100%;
-            &:not(:last-child){
+            &:not(:last-child) {
               margin-bottom: 60px;
             }
             & > div:nth-child(1) {
@@ -1338,7 +1433,7 @@ const bannerData = {
       }
       & > div:nth-of-type(3) {
         margin-top: 55px;
-        &>div{
+        & > div {
           width: max-content;
           height: 70px;
           font-size: 16px;
@@ -1348,18 +1443,18 @@ const bannerData = {
         }
       }
     }
-    &.atropineNav-en{
+    &.atropineNav-en {
       & > #effect {
         & > div:nth-child(2) {
           & > div:nth-child(2) {
             font-size: 18px;
           }
           & > div:nth-of-type(2) {
-            span{
-              &::before{
+            span {
+              &::before {
                 bottom: 80px;
               }
-              &::after{
+              &::after {
                 bottom: -10px;
                 right: -40px;
               }
@@ -1367,7 +1462,7 @@ const bannerData = {
           }
         }
         & > div:nth-child(4) {
-          &>div{
+          & > div {
             max-width: 100%;
             height: 90px;
           }
@@ -1375,7 +1470,7 @@ const bannerData = {
       }
       & > #congruency {
         & > div:nth-child(3) {
-          &>div{
+          & > div {
             max-width: 100%;
             height: 120px;
           }
@@ -1394,7 +1489,7 @@ const bannerData = {
       }
       .matters {
         & > div:nth-child(3) {
-          &>div{
+          & > div {
             max-width: 100%;
             height: 120px;
           }

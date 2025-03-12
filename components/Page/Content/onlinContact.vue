@@ -44,8 +44,8 @@ const rt = ref(route)
           v-if="locale === 'en'"
           id="ga-pc-right-ljyy"
           src="https://static.cmereye.com/imgs/2024/06/347ac843c913da6d.png"
-          alt="希瑪眼科中心_立即預約眼科服務"
-          title="希瑪眼科中心_立即預約眼科服務"
+          alt="Book your eye exam and make inquiries at Cmer Eye Center"
+          title="Booking and Enquiry-Cmer Eye Center"
         />
       </a>
       <a

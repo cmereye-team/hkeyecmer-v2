@@ -97,8 +97,8 @@ const factorList1 = [
       'pages.medical_service.amotioRetinae_con.factor.text1_1',
       'pages.medical_service.amotioRetinae_con.factor.text1_2',
     ],
-    title: '視網膜脫落原因_深近視',
-    alt: '深近視為視網膜脫落原因',
+    title: 'pages.medical_service.amotioRetinae_new.factorList1.title1',
+    alt: 'pages.medical_service.amotioRetinae_new.factorList1.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/1c56f997c3d97b23.png',
@@ -106,32 +106,32 @@ const factorList1 = [
       'pages.medical_service.amotioRetinae_con.factor.text2_1',
       'pages.medical_service.amotioRetinae_con.factor.text2_2',
     ],
-    title: '視網膜脫落原因_家族遺傳',
-    alt: '家族遺傳為視網膜脫落原因',
+    title: 'pages.medical_service.amotioRetinae_new.factorList1.title2',
+    alt: 'pages.medical_service.amotioRetinae_new.factorList1.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/04455c1207c08c9c.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text3'],
-    title: '視網膜脫落原因_眼睛外傷',
-    alt: '眼睛外傷為視網膜脫落原因',
+    title: 'pages.medical_service.amotioRetinae_new.factorList1.title3',
+    alt: 'pages.medical_service.amotioRetinae_new.factorList1.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/88711def3ed108f7.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text4'],
-    title: '視網膜脫落原因_眼手術',
-    alt: '眼手術史為視網膜脫落原因',
+    title: 'pages.medical_service.amotioRetinae_new.factorList1.title4',
+    alt: 'pages.medical_service.amotioRetinae_new.factorList1.alt4',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/ec5a01a0dbf9f84a.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text5'],
-    title: '視網膜脫落原因_眼腫瘤',
-    alt: '年長者患眼腫瘤為視網膜脫落原因',
+    title: 'pages.medical_service.amotioRetinae_new.factorList1.title5',
+    alt: 'pages.medical_service.amotioRetinae_new.factorList1.alt5',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/01900705430260c3.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text6'],
-    title: '視網膜脫落原因_眼睛發炎',
-    alt: '眼睛發炎為視網膜脫落原因',
+    title: 'pages.medical_service.amotioRetinae_new.factorList1.title6',
+    alt: 'pages.medical_service.amotioRetinae_new.factorList1.alt6',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/dab35b2868797ff6.png',
@@ -139,8 +139,8 @@ const factorList1 = [
       'pages.medical_service.amotioRetinae_con.factor.text7_1',
       'pages.medical_service.amotioRetinae_con.factor.text7_2',
     ],
-    title: '視網膜脫落原因_糖尿上眼',
-    alt: '年長者糖尿上眼為視網膜脫落原因',
+    title: 'pages.medical_service.amotioRetinae_new.factorList1.title7',
+    alt: 'pages.medical_service.amotioRetinae_new.factorList1.alt7',
   },
 ]
 const styptomList1 = [
@@ -151,8 +151,8 @@ const styptomList1 = [
       'pages.medical_service.amotioRetinae_con.styptom.text1_1',
       'pages.medical_service.amotioRetinae_con.styptom.text1_2',
     ],
-    img_title: '視網膜脫落初期',
-    img_alt: '視野出現飛蚊為視網膜脫落初期症狀',
+    img_title: 'pages.medical_service.amotioRetinae_new.styptomList1.title1',
+    img_alt: 'pages.medical_service.amotioRetinae_new.styptomList1.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/23aab65d449ee915.jpg',
@@ -161,15 +161,15 @@ const styptomList1 = [
       'pages.medical_service.amotioRetinae_con.styptom.text2_1',
       'pages.medical_service.amotioRetinae_con.styptom.text2_2',
     ],
-    img_title: '視網膜脫落症狀_閃光',
-    img_alt: '視野出現閃光或黑影為視網膜脫落症狀',
+    img_title: 'pages.medical_service.amotioRetinae_new.styptomList1.title2',
+    img_alt: 'pages.medical_service.amotioRetinae_new.styptomList1.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/10/bf20112897ad33ed.jpg',
     title: 'STEP 3',
     text: ['pages.medical_service.amotioRetinae_con.styptom.text3'],
-    img_title: '視網膜脫落症狀_視野收窄',
-    img_alt: '視野收窄為視網膜脫落症狀',
+    img_title: 'pages.medical_service.amotioRetinae_new.styptomList1.title3',
+    img_alt: 'pages.medical_service.amotioRetinae_new.styptomList1.alt3',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/08/e2b2ce4db8b5118d.jpg',
@@ -178,8 +178,8 @@ const styptomList1 = [
       'pages.medical_service.amotioRetinae_con.styptom.text4_1',
       'pages.medical_service.amotioRetinae_con.styptom.text4_2',
     ],
-    img_title: '視網膜脫落症狀_視野缺損',
-    img_alt: '視野缺損為視網膜脫落症狀',
+    img_title: 'pages.medical_service.amotioRetinae_new.styptomList1.title4',
+    img_alt: 'pages.medical_service.amotioRetinae_new.styptomList1.alt4',
   },
 ]
 const treatList1 = [
@@ -189,8 +189,8 @@ const treatList1 = [
     enImg: 'https://static.cmereye.com/imgs/2023/06/d596509569404157.png',
     title: 'pages.medical_service.amotioRetinae_con.treat.title1',
     text: 'pages.medical_service.amotioRetinae_con.treat.text1',
-    img_title: '視網膜脫落手術_氣體網膜固定術',
-    img_alt: '視網膜脫落手術_氣體網膜固定術手術過程',
+    img_title: 'pages.medical_service.amotioRetinae_new.treatList1.title1',
+    img_alt: 'pages.medical_service.amotioRetinae_new.treatList1.alt1',
   },
   {
     id: 0o2,
@@ -198,8 +198,8 @@ const treatList1 = [
     enImg: 'https://static.cmereye.com/imgs/2023/06/8a3b0247791f8510.png',
     title: 'pages.medical_service.amotioRetinae_con.treat.title2',
     text: 'pages.medical_service.amotioRetinae_con.treat.text2',
-    img_title: '視網膜脫落手術_鞏膜扣壓術',
-    img_alt: '視網膜脫落手術_鞏膜扣壓術前後對比',
+    img_title: 'pages.medical_service.amotioRetinae_new.treatList1.title2',
+    img_alt: 'pages.medical_service.amotioRetinae_new.treatList1.alt2',
   },
   {
     id: 0o3,
@@ -207,8 +207,8 @@ const treatList1 = [
     enImg: 'https://hkcmereye.com/template/default/picture/swmtl_img/t3_en.jpg',
     title: 'pages.medical_service.amotioRetinae_con.treat.title3',
     text: 'pages.medical_service.amotioRetinae_con.treat.text3',
-    img_title: '視網膜脫落手術_玻璃體切除術',
-    img_alt: '視網膜脫落手術_玻璃體切除術操作過程',
+    img_title: 'pages.medical_service.amotioRetinae_new.treatList1.title3',
+    img_alt: 'pages.medical_service.amotioRetinae_new.treatList1.alt3',
   },
 ]
 const preventList1 = [
@@ -216,22 +216,22 @@ const preventList1 = [
     img: 'https://static.cmereye.com/imgs/2023/06/13de992a2503809a.png',
     title: 'pages.medical_service.amotioRetinae_con.prevent.title1',
     text: 'pages.medical_service.amotioRetinae_con.prevent.text1',
-    img_title: '視網膜脫落預防_眼睛檢查',
-    img_alt: '定期接受眼睛檢查為視網膜脫落預防方法',
+    img_title: 'pages.medical_service.amotioRetinae_new.preventList1.title1',
+    img_alt: 'pages.medical_service.amotioRetinae_new.preventList1.alt1',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/273a3786c416e9c5.png',
     title: 'pages.medical_service.amotioRetinae_con.prevent.title2',
     text: 'pages.medical_service.amotioRetinae_con.prevent.text2',
-    img_title: '視網膜脫落預防_劇烈運動',
-    img_alt: '避免劇烈運動為視網膜脫落預防方法',
+    img_title: 'pages.medical_service.amotioRetinae_new.preventList1.title2',
+    img_alt: 'pages.medical_service.amotioRetinae_new.preventList1.alt2',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/06/2af412dd5ff25eb6.png',
     title: 'pages.medical_service.amotioRetinae_con.prevent.title3',
     text: 'pages.medical_service.amotioRetinae_con.prevent.text3',
-    img_title: '視網膜脫落預防_全面眼睛檢查',
-    img_alt: '接受全面眼睛檢查為視網膜脫落預防方法',
+    img_title: 'pages.medical_service.amotioRetinae_new.preventList1.title3',
+    img_alt: 'pages.medical_service.amotioRetinae_new.preventList1.alt3',
   },
 ]
 
@@ -274,8 +274,12 @@ const bannerData = {
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png"
-            title="視網膜脫落"
-            alt="視網膜脫落眼睛結構"
+            :title="locale === 'en' ? 'Retinal Detachment' : `視網膜脫落`"
+            :alt="
+              locale === 'en'
+                ? 'Structure of eye in retinal detachment'
+                : '視網膜脫落眼睛結構'
+            "
           />
         </div>
         <!-- <div class="amotioRetinae_title_btn" @click="callTel">
@@ -304,7 +308,11 @@ const bannerData = {
         <div>
           <div v-for="(item, index) in factorList1" :key="index">
             <div>
-              <img :src="item.img" :alt="item.alt" :title="item.title" />
+              <img
+                :src="item.img"
+                :alt="$t(item.alt)"
+                :title="$t(item.title)"
+              />
             </div>
             <div>
               <p v-for="(ele, eleIndex) in item.text" :key="eleIndex">
@@ -335,8 +343,8 @@ const bannerData = {
             <div>
               <img
                 :src="item.img"
-                :alt="item.img_alt"
-                :title="item.img_title"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
               />
             </div>
           </div>
@@ -364,8 +372,8 @@ const bannerData = {
             <div class="amotioRetinae_img">
               <img
                 :src="locale === 'en' ? item.enImg : item.img"
-                :alt="item.img_alt"
-                :title="item.img_title"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
               />
             </div>
             <div>
@@ -409,8 +417,12 @@ const bannerData = {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/06/87ca0bef9c2de97f.png"
-              title="糖尿上眼"
-              alt="糖尿上眼眼睛結構"
+              :title="locale === 'en' ? 'Diabetic Retinopathy' : `糖尿上眼`"
+              :alt="
+                locale === 'en'
+                  ? 'Eye structure in diabetic retinopathy'
+                  : '糖尿上眼眼睛結構'
+              "
             />
           </div>
           <div class="amotioRetinae_text_p_span">
@@ -438,8 +450,8 @@ const bannerData = {
             <div>
               <img
                 :src="item.img"
-                :alt="item.img_alt"
-                :title="item.img_title"
+                :alt="$t(item.img_alt)"
+                :title="$t(item.img_title)"
               />
             </div>
             <div>
@@ -482,8 +494,14 @@ const bannerData = {
           >
             <img
               src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
-              title="視網膜脫落"
-              alt="視網膜脫落_小冊子"
+              :title="
+                locale === 'en' ? 'Retinal Detachment Leaflet' : `視網膜脫落`
+              "
+              :alt="
+                locale === 'en'
+                  ? 'Retinal Detachment Leaflet PDF File'
+                  : '視網膜脫落_小冊子'
+              "
               srcset=""
             />
           </a>

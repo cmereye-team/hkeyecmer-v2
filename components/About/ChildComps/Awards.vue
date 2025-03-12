@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Autoplay } from 'swiper'
+const locale = useState<string>('locale.setting')
 const awardsList = [
   {
     imgUrl: 'https://hkcmereye.com/static/images/honor/easy2024.avif',
@@ -7,6 +8,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_17',
     link: 'https://01market.hk01.com/?popup=healtheasyawards2024',
     alt: '「健康Easy卓越大獎2024」',
+    alt_en: '',
+    title_en: '',
   },
   {
     imgUrl: 'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
@@ -14,6 +17,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_12',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
     alt: '希瑪眼科中心_香港服務名牌2024',
+    alt_en: 'Hong Kong Premier Service Brand 2024 Logo',
+    title_en: 'Hong Kong Premier Service Brand 2024',
   },
   {
     imgUrl: 'https://hkcmereye.com/template/default/images/j1.png',
@@ -21,6 +26,9 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_16',
     link: 'https://iet2.hket.com/event/hket_excellence_awards/zh/2024-winner-list.html#',
     alt: '香港經濟日報企業大獎 2024',
+    title_en: 'HKET Excellence Awards 2024',
+
+    alt_en: 'HKET Excellence Awards 2024 Logo',
   },
   {
     imgUrl: 'https://static.cmereye.com/imgs/2024/01/4c50e32c22889c0a.jpg',
@@ -28,6 +36,9 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_15',
     link: 'https://www.esgpledge.org.hk/',
     alt: '希瑪眼科中心_ESG約章行動',
+    title_en: 'ESG Pledge Scheme',
+
+    alt_en: 'ESG Pledge Scheme Logo',
   },
   {
     imgUrl:
@@ -36,6 +47,9 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
     alt: '希瑪眼科中心_香港服務名牌2023',
+    title_en: 'Hong Kong Top Service Brand 2023',
+
+    alt_en: 'Hong Kong Top Service Brand 2023 Logo',
   },
   {
     imgUrl: 'https://static.cmereye.com/imgs/2023/11/883a77f4cfc02fc3.png',
@@ -43,6 +57,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_14',
     link: 'https://www.commchest.org/tc/news/press-release/detail/1057',
     alt: '希瑪眼科中心_香港公益金_公益卓越獎',
+    title_en: 'The community chest 2023',
+    alt_en: 'The community chest 2023 Logo',
   },
   {
     imgUrl: 'https://static.cmereye.com/imgs/2023/08/2952335675aaf8b0.jpg',
@@ -50,6 +66,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_13',
     link: 'https://hkct-awards.com/articles/59',
     alt: '希瑪眼科中心_HKCT企業大獎',
+    title_en: 'HKCT Business Awards 2023',
+    alt_en: 'HKCT Business Awards 2023 Logo',
   },
 
   {
@@ -58,6 +76,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_12',
     link: '',
     alt: '希瑪眼科中心_香港卓越服務名牌2022',
+    alt_en: 'Hong Kong Premier Service Brand 2022 Logo',
+    title_en: 'Hong Kong Premier Service Brand 2022',
   },
 
   {
@@ -67,6 +87,9 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
     alt: '希瑪眼科中心_香港服務名牌2022',
+    title_en: 'Hong Kong Top Service Brand 2022',
+
+    alt_en: 'Hong Kong Top Service Brand 2022 Logo',
   },
   {
     imgUrl: 'https://static.cmereye.com/imgs/2023/08/cdd4f2920141fa33.png',
@@ -74,6 +97,9 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_11',
     link: 'https://features.hkej.com/template/features/html/2022_sc/winners.html',
     alt: '希瑪眼科中心_社會資本動力獎2022',
+    title_en: 'Social Capital Builder Logo Award 2022',
+
+    alt_en: 'Social Capital Builder Logo Award 2022 Logo',
   },
   {
     imgUrl: 'https://static.cmereye.com/imgs/2023/08/3593bc6113653a80.png',
@@ -81,6 +107,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_10',
     link: '',
     alt: '希瑪眼科中心_香港最有價值品牌大獎2022',
+    title_en: 'Most Valuable Companies in Hong Kong Awards 2022',
+    alt_en: 'Most Valuable Companies in Hong Kong Awards 2022 Logo',
   },
   {
     imgUrl: 'https://static.cmereye.com/imgs/2023/08/ebde2962cbd42e60.png',
@@ -88,6 +116,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_9',
     link: '',
     alt: '希瑪眼科中心_開心工作間2022',
+    title_en: 'Happy Company Award 2022',
+    alt_en: 'Happy Company Award 2022 Logo',
   },
   {
     imgUrl: 'https://static.cmereye.com/imgs/2023/08/f4273176866baf9c.png',
@@ -95,6 +125,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_8',
     link: '',
     alt: '希瑪眼科中心_大灣區企業傑出獎2022',
+    title_en: 'Standard Chartered Corporate Achievement Awards 2022',
+    alt_en: 'Standard Chartered Corporate Achievement Awards 2022 Logo',
   },
   // {
   //   imgUrl:
@@ -110,6 +142,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
     alt: '希瑪眼科中心_香港服務名牌2021',
+    title_en: 'Hong Kong Top Service Brand 2021',
+    alt_en: 'Hong Kong Top Service Brand 2021 Logo',
   },
   {
     imgUrl:
@@ -118,6 +152,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_1',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
     alt: '希瑪眼科中心_香港星級品牌企業獎2020-2021',
+    title_en: 'Hong Kong Star Brand Award 2020-2021',
+    alt_en: 'Hong Kong Star Brand Award 2020-2021 Logo',
   },
   {
     imgUrl:
@@ -126,6 +162,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_5',
     link: 'https://corphub.asia/awards/?route=events&id=1',
     alt: '希瑪眼科中心_香港最優秀企業大獎2020',
+    title_en: "Hong Kong's Most Outstanding Services Awards 2020",
+    alt_en: "Hong Kong's Most Outstanding Services Awards 2020 Logo",
   },
   {
     imgUrl:
@@ -134,6 +172,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_4',
     link: '',
     alt: '希瑪眼科中心_香港旅遊業十優推介2020',
+    title_en: 'Hong Kong Tourism Industry Top 10 Recommendations 2020',
+    alt_en: 'Hong Kong Tourism Industry Top 10 Recommendations 2020 Logo',
   },
   {
     imgUrl:
@@ -142,6 +182,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_3',
     link: 'https://www.youtube.com/watch?v=7k0FhEoCXus',
     alt: '希瑪眼科中心_亞洲最佳價值服務大獎2020',
+    title_en: "Asia's Most Valuable Service Providers Awards 2020",
+    alt_en: "Asia's Most Valuable Service Providers Awards 2020 Logo",
   },
 
   {
@@ -151,6 +193,8 @@ const awardsList = [
     des: 'pages.about_us.awards.awards_des_2',
     link: 'https://www.caringcompany.org.hk/b5_index.php',
     alt: '希瑪眼科中心_商界展關懷2020/2021',
+    title_en: 'Caring Company 2020/2021',
+    alt_en: 'Caring Company 2020/2021 Logo',
   },
 ]
 
@@ -201,8 +245,8 @@ onMounted(() => {
               <img
                 :class="`brandImg${index}`"
                 :src="item.imgUrl"
-                :alt="`${item.alt}標章`"
-                :title="item.alt"
+                :title="locale === 'en' ? item.title_en : `${item.alt}標章`"
+                :alt="locale === 'en' ? item.alt_en : item.alt"
               />
             </div>
             <div>
