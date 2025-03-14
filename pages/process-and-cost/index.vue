@@ -1477,7 +1477,6 @@ const processedLists: any = ref([
 
 .processAndCostPage {
   margin-bottom: 50px;
-
 }
 .processAndCost {
   transition: all 0.5s;
@@ -1740,7 +1739,7 @@ const processedLists: any = ref([
 .updateBox {
   text-align: center;
 }
-#processed{
+#processed {
   padding-bottom: 100px;
 }
 
@@ -2083,7 +2082,6 @@ const processedLists: any = ref([
     background: url('https://static.cmereye.com/imgs/2023/07/c20c5728572d0992.jpg');
     background-position: top left !important;
     background-size: 100% auto !important;
-
   }
   #processed {
     background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')
@@ -2357,14 +2355,14 @@ const processedLists: any = ref([
   content: '';
   position: absolute;
   bottom: -42px;
-  left: -57px;
+  left: -60px;
   width: 123px;
-  height: 50px;
-  background: url('https://statichk.cmermedical.com/hkcmereye/jiuzhenliucheng/rightArrow-mobile.svg')
+  height: 40px;
+  background: url('https://statichk.cmermedical.com/hkcmereye/jiuzhenliucheng/leftArrow-mobile.svg')
     no-repeat center;
 
   background-size: contain;
-  transform: rotateX(180deg);
+  // transform: rotateX(180deg);
 }
 
 .processed-mobile-Boxtwo > .processed-mobile-Boxtwo-item:nth-child(1)::before {
@@ -2389,6 +2387,7 @@ const processedLists: any = ref([
   background: url('https://statichk.cmermedical.com/hkcmereye/jiuzhenliucheng/leftArrow-mobile.svg')
     no-repeat center;
   background-size: contain;
+
   left: -60px;
 }
 

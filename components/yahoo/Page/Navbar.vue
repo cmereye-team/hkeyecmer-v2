@@ -253,7 +253,7 @@ const hashActive = (child: any) => {
 </script>
 
 <template>
-  <div class="headerTemPage">
+  <div class="headerTemPage" id="headerTemPage">
     <yahooBuilderNavbar>
       <template #menu>
         <div class="navigtion">

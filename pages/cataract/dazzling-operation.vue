@@ -111,7 +111,7 @@ const backgd = [
               >歡迎收到醫管局附有資助到期日的邀請信的病人，透過以下途徑預約：</span
             >
             <span
-              >1. 致電<a href="tel:3956 2026"> 3956 2026</a> /
+              >1. 致電<a href="tel:3956 2025"> 3956 2025</a> /
               <a href="tel:3956 2025">3956 2025</a></span
             >
             <span
@@ -201,7 +201,7 @@ const backgd = [
           </div>
         </div>
         <div class="plan-content-btn">
-          <a href="tel:3956 2026" target="_blank">
+          <a href="tel:3956 2025" target="_blank">
             <span
               ><svg
                 xmlns="http://www.w3.org/2000/svg"

@@ -24,7 +24,7 @@ export default defineNuxtConfig({
 
   // build
   build: {
-    transpile: ['@headlessui/vue','gsap'],
+    transpile: ['@headlessui/vue', 'gsap'],
   },
 
   // modules
@@ -38,13 +38,13 @@ export default defineNuxtConfig({
     'nuxt-windicss',
     'nuxt-swiper',
     '@zadigetvoltaire/nuxt-gtm',
-    'nuxt-simple-sitemap'
+    'nuxt-simple-sitemap',
   ],
 
   nitro: {
     preset: 'vercel-edge',
     devProxy: {
-      '/proxy': { 
+      '/proxy': {
         target: 'https://oapi.dingtalk.com',
         changeOrigin: true,
         prependPath: true,
@@ -69,7 +69,7 @@ export default defineNuxtConfig({
         devtools: true,
       },
       siteUrl: process.env.NUXT_PUBLIC_SITE_URL || 'https://hkcmereye.com/',
-    }
+    },
   },
   // auto import components
   components: true,
@@ -85,7 +85,8 @@ export default defineNuxtConfig({
           }),
         ],
       }),
-    ]
+   
+    ],
   },
 
   // app config
@@ -93,6 +94,14 @@ export default defineNuxtConfig({
     // global transition
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css',
+        },
+      ],
+    },
   },
 
   // localization - i18n config
@@ -119,5 +128,5 @@ export default defineNuxtConfig({
     highlight: {
       theme: 'github-dark',
     },
-  }
+  },
 })
