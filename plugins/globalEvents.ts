@@ -65,25 +65,29 @@ export default defineNuxtPlugin((nuxtApp) => {
       })
 
       document.body.appendChild(customMenu)
-
+      window.addEventListener('scroll', () => {
+        customMenu.style.display = 'none'
+      })
       window.addEventListener('contextmenu', (event: MouseEvent) => {
         event.preventDefault()
-        const menuWidth = customMenu.offsetWidth
-        const menuHeight = customMenu.offsetHeight
-        let x = event.pageX
-        let y = event.pageY
-
+        const menuWidth = customMenu.offsetWidth;
+        const menuHeight = customMenu.offsetHeight;
+        
+        // 使用 clientX 和 clientY 并加上页面滚动的距离
+        let x = event.clientX + window.scrollX;
+        let y = event.clientY + window.scrollY;
+        
         // 防止菜单超出屏幕边界
         if (x + menuWidth > window.innerWidth) {
-          x -= menuWidth
+          x -= menuWidth;
         }
         if (y + menuHeight > window.innerHeight) {
-          y -= menuHeight
+          y -= menuHeight;
         }
-
-        customMenu.style.left = `${x}px`
-        customMenu.style.top = `${y}px`
-        customMenu.style.display = 'block'
+        
+        customMenu.style.left = `${x}px`;
+        customMenu.style.top = `${y}px`;
+        customMenu.style.display = 'block';
       })
       window.addEventListener('click', (event) => {
         let shouldHideMenu = true // 默认情况下点击会隐藏菜单
@@ -94,8 +98,6 @@ export default defineNuxtPlugin((nuxtApp) => {
             shouldHideMenu = false // 如果点击在右键菜单内部，不隐藏菜单
           } else if (event.target.closest('.menuItem')) {
             // 检查是否点击了菜单项
-      
-      
           }
         }
 
@@ -107,7 +109,7 @@ export default defineNuxtPlugin((nuxtApp) => {
       // 修改handleMenuItemClick方法以传递菜单位置
       function handleMenuItemClick(action: string, name: string): void {
         if (name === '致電預約') {
-        //   const menuRect = customMenu.getBoundingClientRect() // 获取右键菜单的位置
+          //   const menuRect = customMenu.getBoundingClientRect() // 获取右键菜单的位置
           showPhoneNumberTip(action)
           customMenu.style.display = 'block '
         } else if (action.startsWith('https://') || action.startsWith('/')) {
@@ -116,10 +118,7 @@ export default defineNuxtPlugin((nuxtApp) => {
         }
       }
 
-      function showPhoneNumberTip(
-        phoneNumber: string
-   
-      ): void {
+      function showPhoneNumberTip(phoneNumber: string): void {
         const phone = phoneNumber.replace('tel:', '')
         const tooltip = document.createElement('div')
         tooltip.className = 'tooltip'
@@ -139,24 +138,24 @@ export default defineNuxtPlugin((nuxtApp) => {
         }, 3000) // 显示3秒后自动消失
       }
 
-
-
-
       // 添加一些基础样式并提升层级
       const style = document.createElement('style')
       style.innerHTML = `
         #customContextMenu {
+            padding: 10px 0;
           position: absolute;
           background-color: white;
           border: 1px solid #ccc;
-          box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    
           display: none;
-       
-
+           box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    filter: drop-shadow(0 10px 8px rgba(0, 0, 0, .04)) drop-shadow(0 4px 3px rgba(0, 0, 0, .1));
           animation: fadeIn .3s;
           z-index: 10000; /* 提升层级 */
         }
           .tooltip {
+
   position: absolute; /* 改为绝对定位 */
   background-color: black;
   color: white;
@@ -168,23 +167,30 @@ export default defineNuxtPlugin((nuxtApp) => {
   white-space: nowrap; /* 防止文本换行 */
 }
         .top-buttons {
-          padding: 10px;
+            width: 90%;
+    margin: 0 auto;
+            margin-bottom: 10px;
+          display: flex;
+          justify-content: space-around;
           text-align: center;
-          border-bottom: 1px dashed #ccc;
+          padding: 5px 0 15px 0;
+          border-bottom: 1px dashed lightgray;
         }
         .top-buttons button {
           margin: 0 8px;
           cursor: pointer;
         }
         .menuItem {
-          padding: 10px;
+         padding: 12px 50px 12px 25px;
           cursor: pointer;
           display: flex;
           align-items: center; /* 对齐图标和文字 */
+          
         }
         .menuItem i {
           margin-right: 8px; /* 调整图标与文字之间的间距 */
               width: 20px;
+              text-align: center;
         }
         .menuItem:hover {
           background-color: #f0f0f0;

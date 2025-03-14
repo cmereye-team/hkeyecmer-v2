@@ -20,7 +20,11 @@ export default defineNuxtConfig({
   ],
 
   // plugins
-  plugins: ['~/plugins/navbar.ts'],
+  plugins: [
+    '~/plugins/navbar.ts',
+    '~/plugins/globalEvents.ts',
+    '~/plugins/disableCopyAndDevTools.client.ts',
+  ],
 
   // build
   build: {
@@ -85,7 +89,6 @@ export default defineNuxtConfig({
           }),
         ],
       }),
-   
     ],
   },
 
