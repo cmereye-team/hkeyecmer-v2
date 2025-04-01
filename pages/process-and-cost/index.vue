@@ -368,14 +368,10 @@ const processedLists: any = ref([
                   $t('pages.process_cost.cont.cost_p2_1')
                 }}</span>
                 {{ $t('pages.process_cost.cont.cost_p2_2') }}<br />
-                {{ $t('pages.process_cost.cont.cost_p2_3') }} <br />
-                {{ $t('pages.process_cost.cont.cost_p3_1_s') }}<br />
-                {{ $t('pages.process_cost.cont.cost_p5') }}
-                {{ $t('pages.process_cost.cont.cost_p4') }}<br />
-                {{ $t('pages.process_cost.cont.cost_p6') }}
-                <span class="font-bold">$1,500-$6,000</span>
-                {{ $t('pages.process_cost.cont.cost_p6_1') }}
-                {{ $t('pages.process_cost.cont.cost_p7') }}<br />
+                {{ $t('pages.process_cost.cont.const_p2_new1') }} <br />
+                {{ $t('pages.process_cost.cont.const_p3_new2') }}<br />
+                {{ $t('pages.process_cost.cont.const_p4_new1') }}<br />
+                {{ $t('pages.process_cost.cont.cost_p4_new2') }}<br />
               </p>
               <div class="ClaimFormBox">
                 <div class="title">

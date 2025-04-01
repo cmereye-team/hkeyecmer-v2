@@ -2829,7 +2829,12 @@ pages:
       cost_p3_1_s: '*Handling charge will be applied for each copy of the investigation above' 
       cost_p3: 每份詳細眼睛檢查複本將收取
       cost_p3_1: 行政費
-      cost_p4: "，Please ask our nurse for details."
+      const_p2_new1:  'Request for Medical Report: $1,500 - $6,000 (per doctor for each report, subject to quotation)'
+      const_p3_new2: ' Medical Report is excluded from consultation fee'
+      const_p4_new1:  Handling charge will be applied for each copy of the investigation above
+      cost_p4_new2: '(VF $10/sheet, OCT $30/sheet, FP $100/sheet). Please ask our nurse for details'
+      const_p5_new1:  Fill in Insurance Claim Form
+      cost_p4: "Please ask our nurse for details."
       cost_p5: (VF $10/sheet, OCT $30/sheet, FP $100/sheet)
       cost_p6: '*Request for Medical Report:'
       cost_p6_1: ''
