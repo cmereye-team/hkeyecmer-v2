@@ -414,7 +414,7 @@ const hashActive = (child: any) => {
   background: #ffa88c;
   width: 100%;
   height: 100%;
-  line-height: 3.5;
+  line-height: 49px;
   color: #ffffff;
 }
 .adjustableHover {
@@ -445,27 +445,35 @@ a {
   height: 100%;
   line-height: 3.5;
 }
-.navigtion > div > a {
-  line-height: normal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  white-space: nowrap;
-}
+// .navigtion > div > a {
+//   line-height: normal;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   white-space: nowrap;
+// }
 .childpage {
   width: fit-content;
+}
+.childpage > div,
+.childpage > div > a
+ {
+  width: inherit;
+}
+.navigtion > div > a{
+  width: inherit;
+  line-height: 49px;
 }
 .ccccc {
   width: 450px;
 }
-.ccccc > div{
+.ccccc > div {
   width: 150px;
 }
 .childpage a {
   line-height: 3.5;
-  
-  width: fit-content;
 
+  width: fit-content;
 }
 
 .headerTem {
@@ -955,7 +963,7 @@ a {
   }
   & > div > a::after {
     position: absolute;
-    left: 26px;
+    left: 40px;
     content: '';
     width: 76px;
     margin-top: -1px;

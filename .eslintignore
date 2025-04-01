@@ -3,5 +3,3 @@ nuxt.d.ts
 dist
 .nuxt
 .output
-[*]
-end_of_line = lf

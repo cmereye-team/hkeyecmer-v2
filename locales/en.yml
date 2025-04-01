@@ -2836,7 +2836,7 @@ pages:
       cost_p7: (per doctor for each report, subject to quotation).
       cost_p8: 特殊儀器檢查需預見醫生判斷，由醫生決定檢查項目。
       cost_p9: "Last update: 01/04/2023"
-      cost_p10: "Last update: 01/04/2024"
+      cost_p10: "Last update: 01/04/2025"
       cost_form_title: Fill in Insurance Claim Form
       cost_form_td1_1: Case
       cost_form_td1_2: Charges
@@ -2850,6 +2850,8 @@ pages:
       cost_form_td6_1: "Out patient services without procedure"
       cost_form_td7_1: "- for each application"
       cost_form_td7_2: $200
+      cost_form_td8_1: "- For each application"
+      cost_form_td8_2: $200
     process: Outpatient Services
     process_1:
       process_h1: Outpatient Services

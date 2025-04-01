@@ -440,18 +440,18 @@ let drawer = ref(false)
             background-position: 5px 0;
             background-size: cover;
             width: 20px;
-            height: 20px;
+            // height: 20px;
             &:nth-of-type(2){
-              background-position: -35px 0;
+              background-position: -25px 0;
             }
             &:nth-of-type(3){
-              background-position: -79px 0;
+              background-position: -57px 0;
             }
             &:nth-of-type(4){
-              background-position: -122.6px 0;
+              background-position: -89.6px 0;
             }
             &:nth-of-type(5){
-              background-position: -168.5px 0;
+              background-position: -123.5px 0;
             }
             &:not(:last-child){
               margin-right: 20px;

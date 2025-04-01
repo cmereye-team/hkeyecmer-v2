@@ -481,6 +481,7 @@ const meetArr = [
   width: calc(557 / 1032 * 100%);
 }
 .multifocal-lens-banner-text-title {
+  width: max-content;
   color: #3a5fb2;
   text-shadow: -1.829px 0.61px 2.439px rgba(0, 0, 0, 0.25);
   font-family: Zeyada;

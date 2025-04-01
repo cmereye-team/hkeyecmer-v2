@@ -12,7 +12,11 @@ useHead({
   titleTemplate: `%s - ${t('app.title')}`,
   meta() {
     return [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      {
+        name: 'viewport',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no',
+      },
       {
         property: 'og:image',
         content: 'https://www.hkeyecmer.com/favicon.ico',
@@ -62,162 +66,10 @@ interface Flake {
   step: number
   opacity: number
 }
-const flakes = ref<Flake[]>([]);
-
-// const createdSnowfall = () => {
-//   ;(function () {
-//     // Define variables
-//     flakes.value // Snowflake array
-//     let canvas = document.createElement('canvas'), // Create canvas
-//       ctx = canvas.getContext('2d'), // Get canvas context
-//       flakeCount = 200, // Number of snowflakes
-//       mX = -100, // Mouse X coordinate
-//       mY = -100 // Mouse Y coordinate
-
-//     // Set canvas properties
-//     canvas.setAttribute('id', 'snowfall')
-//     canvas.style.position = 'fixed'
-//     canvas.style.top = '0'
-//     canvas.style.left = '0'
-//     canvas.style.width = '100%'
-//     canvas.style.height = '100%'
-//     canvas.style.zIndex = '999999'
-//     canvas.style.pointerEvents = 'none'
-
-//     // Append the canvas to body
-//     document.body.appendChild(canvas)
-
-//     // Set canvas width and height
-//     canvas.width = window.innerWidth
-//     canvas.height = window.innerHeight
-
-//     // Create snowflake image object
-//     const snowImg = new Image()
-//     snowImg.src = 'https://static.cmereye.com/imgs/2024/12/9e8a48e3ac6fbc27.png'
-
-//     // Snowfall animation function
-//     function snow() {
-//       // Clear the canvas
-//       ctx?.clearRect(0, 0, canvas.width, canvas.height)
-
-//       // Loop through the snowflake array
-//       for (let i = 0; i < flakeCount; i++) {
-//         const flake = flakes.value[i] // Get current snowflake
-//         const x = mX,
-//           y = mY,
-//           minDist = 100,
-//           x2 = flake.x,
-//           y2 = flake.y
-
-//         // Calculate distance and direction
-//         const dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y))
-//         const dx = x2 - x
-//         const dy = y2 - y
-
-//         // If distance is less than minimum distance, update snowflake velocity
-//         if (dist < minDist) {
-//           const force = (minDist * 2) / (dist * dist) // Calculate force
-//           const xcomp = (x - x2) / dist
-//           const ycomp = (y - y2) / dist
-//           const deltaV = force / 2
-
-//           // Update snowflake velocity
-//           flake.velX -= deltaV * xcomp
-//           flake.velY -= deltaV * ycomp
-//         } else {
-//           // If distance is greater than or equal to minimum distance
-//           flake.velX *= 0.98
-//           if (flake.velY <= flake.speed) {
-//             flake.velY = flake.speed
-//           }
-//           flake.velX += Math.cos((flake.step += 0.25)) * flake.stepSize
-//         }
-
-//         // Update snowflake position
-//         flake.y += flake.velY
-//         flake.x += flake.velX
-
-//         // If snowflake goes off-screen, reset it
-//         if (flake.y >= canvas.height || flake.y <= 0) {
-//           reset(flake)
-//         }
-//         if (flake.x >= canvas.width || flake.x <= 0) {
-//           reset(flake)
-//         }
-
-//         // Draw snowflake image
-//         ctx?.drawImage(snowImg, flake.x, flake.y, flake.size, flake.size)
-//       }
-
-//       // Loop the animation
-//       requestAnimationFrame(snow)
-//     }
-
-//     // Reset snowflake function
-//     function reset(flake:any) {
-//       flake.x = Math.floor(Math.random() * canvas.width)
-//       flake.y = 0
-//       flake.size = Math.random() * 20 + 10
-//       flake.speed = Math.random() * 1 + 0.5
-//       flake.velY = flake.speed
-//       flake.velX = 0
-//       flake.opacity = Math.random() * 0.5 + 0.3
-//     }
-
-//     // Initialize snowflakes
-//     function init() {
-//       for (let i = 0; i < flakeCount; i++) {
-//         const x = Math.floor(Math.random() * canvas.width)
-//         const y = Math.floor(Math.random() * canvas.height)
-//         const size = Math.random() * 20 + 10
-//         const speed = Math.random() * 1 + 0.5
-//         const opacity = Math.random() * 0.5 + 0.3
-
-//         // Push snowflake object to array
-//         flakes.value.push({
-//           speed,
-//           velY: speed,
-//           velX: 0,
-//           x,
-//           y,
-//           size,
-//           stepSize: Math.random() / 30,
-//           step: 0,
-//           opacity,
-//         })
-//       }
-
-//       // Start snow animation
-//       snow()
-//     }
-
-//     // Mouse move event listener
-//     document.addEventListener('mousemove', (e) => {
-//       mX = e.clientX
-//       mY = e.clientY
-//     })
-
-//     // Resize event listener for canvas resizing
-//     window.addEventListener('resize', () => {
-//       canvas.width = window.innerWidth
-//       canvas.height = window.innerHeight
-//     })
-
-//     // Initialize snowflakes
-//     init()
-//   })()
-// }
-
-// onBeforeUnmount(() => {
-//   const canvas = document.getElementById('snowfall')
-//   if (canvas) {
-//     canvas.remove() // Remove the canvas element
-//   }
-// })
+const flakes = ref<Flake[]>([])
 </script>
 
 <template>
-
   <Html class="light" :lang="locale">
     <Body
       class="antialiased duration-300 transition-colors text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-900 overscroll-y-none"

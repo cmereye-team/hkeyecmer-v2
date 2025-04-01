@@ -210,28 +210,28 @@ const processedLists: any = ref([
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr2_td1') }}
                     </td>
-                    <td class="text-center">$450</td>
-                    <td class="text-center">$750</td>
+                    <td class="text-center">$500</td>
+                    <td class="text-center">$800</td>
                   </tr>
                   <tr>
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr3_td1') }}
-                    </td>
-                    <td class="text-center">$1,050</td>
-                    <td class="text-center">$1,850</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
                     </td>
                     <td class="text-center">$1,100</td>
                     <td class="text-center">$1,900</td>
                   </tr>
                   <tr>
                     <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
+                    </td>
+                    <td class="text-center">$1,150</td>
+                    <td class="text-center">$1,950</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr5_td1') }}
                     </td>
-                    <td class="text-center">$1,600</td>
+                    <td class="text-center">$1,650</td>
                     <td class="text-center">$2,800</td>
                   </tr>
                   <tr>
@@ -259,8 +259,8 @@ const processedLists: any = ref([
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr7_td1') }}
                     </td>
-                    <td class="text-center">$400</td>
-                    <td class="text-center">$600</td>
+                    <td class="text-center">$450</td>
+                    <td class="text-center">$650</td>
                   </tr>
                   <tr>
                     <td colspan="2">
@@ -287,8 +287,8 @@ const processedLists: any = ref([
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr11_td1') }}
                     </td>
-                    <td class="text-center">$300</td>
-                    <td class="text-center">$600</td>
+                    <td class="text-center">$350</td>
+                    <td class="text-center">$700</td>
                   </tr>
                   <tr>
                     <td colspan="2">
@@ -316,21 +316,21 @@ const processedLists: any = ref([
                       {{ $t('pages.process_cost.cont.cost_tr14_td1') }}
                     </td>
                     <td class="text-center">/</td>
-                    <td class="text-center">$5,500</td>
+                    <td class="text-center">$5,800</td>
                   </tr>
                   <tr>
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr15_td1') }}
                     </td>
-                    <td class="text-center">$500</td>
-                    <td class="text-center">$1,000</td>
+                    <td class="text-center">$550</td>
+                    <td class="text-center">$1,100</td>
                   </tr>
                   <tr>
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr16_td1') }}
                     </td>
                     <td class="text-center">/</td>
-                    <td class="text-center">$650/$850</td>
+                    <td class="text-center">$680/$900</td>
                   </tr>
                   <tr>
                     <td colspan="2">
@@ -425,14 +425,14 @@ const processedLists: any = ref([
                   }}</span>
                   <span></span>
                 </div>
-                <!-- <div>
+                <div>
                   <span>{{
-                    $t('pages.process_cost.cont.cost_form_td7_1')
+                    $t('pages.process_cost.cont.cost_form_td8_1')
                   }}</span>
                   <span>{{
-                    $t('pages.process_cost.cont.cost_form_td7_2')
+                    $t('pages.process_cost.cont.cost_form_td8_2')
                   }}</span>
-                </div> -->
+                </div>
               </div>
               <div class="updateBox mt-12 mb-16">
                 {{ $t('pages.process_cost.cont.cost_p10') }}
