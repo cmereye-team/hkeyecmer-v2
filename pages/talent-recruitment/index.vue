@@ -71,7 +71,7 @@ useHead(() => ({
           {{ $t('pages.talent_recruitment.p3') }}
         </p>
         <a
-          href="https://cmermedical.com/joinus/careers"
+          href="https://hk.cmermedical.com/joinus/careers"
           target="_blank"
           rel="noopener noreferrer"
           class="linkBtn text-white mt-12 inline-block"
