@@ -143,10 +143,11 @@ const rt = ref(route)
         border-right: 1px solid #fff;
       }
       & > div:nth-of-type(1) {
-        width: 25px;
+        // width: 25px;
         margin-right: 5px;
         img {
-          width: 100%;
+          width: initial;
+          max-width: none;
         }
       }
       & > div:nth-of-type(2) {

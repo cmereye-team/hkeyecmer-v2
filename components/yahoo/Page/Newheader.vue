@@ -650,20 +650,22 @@ onMounted(() => {
       background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
       background-repeat: no-repeat;
       background-position: 5px 0;
-      background-size: cover;
+      // background-size: cover;
+      width: 15px;
+      height: 15px;
       display: block;
     }
     &:nth-of-type(2) > a {
-      background-position: -27px 0;
+      background-position: -30px 0;
     }
     &:nth-of-type(3) > a {
-      background-position: -58px 0;
+      background-position: -63px 0;
     }
     &:nth-of-type(4) > div {
-      background-position: -92px 0;
+      background-position: -98px 0;
     }
     &:nth-of-type(5) > a {
-      background-position: -125.5px 0;
+      background-position: -134.5px 0;
     }
     &:not(:last-child) {
       margin-right: 15px;

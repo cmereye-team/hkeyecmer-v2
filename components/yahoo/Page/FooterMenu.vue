@@ -527,7 +527,7 @@ let drawer = ref(false)
             background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
             background-repeat: no-repeat;
             background-position: 5px 0;
-            background-size: cover;
+            // background-size: cover;
             width: 20px;
             height: 20px;
             &:nth-of-type(2) {
