@@ -112,6 +112,8 @@ const getBanner = async () => {
             (item.mpic.indexOf('/static/upload/') !== -1
               ? `https://hkcmereye.com${item.mpic}`
               : item.mpic) || '',
+          // pc_hk_img:`https://hkcmereye.com${item.pic}`,
+          // mb_hk_img:`https://hkcmereye.com${item.mpic}`,
           link: item.link || '',
           img_title: item.title || '',
           img_alt: item.subtitle === '' ? item.title : item.subtitle,

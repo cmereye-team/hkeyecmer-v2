@@ -90,7 +90,7 @@ useHead(() => ({
           alt=""
           class="right2"
         />
-        <img class="right3" src="https://static.cmereye.com/imgs/2023/06/677dce366a5a1e7c.jpg" alt="">
+        <img class="right3" src="https://statichk.cmermedical.com/hkcmereye/16546546544.avif" alt="">
       </div>
     </div>
     <EnFooterMenu />

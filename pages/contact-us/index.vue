@@ -396,7 +396,11 @@ const handleClose = (done: () => void) => {
               :key="itemIndex"
             >
               <div class="imgBox flex items-center justify-center">
-                <img :src="item.img" :alt="$t(item.alt)" :title="$t(item.title)" />
+                <img
+                  :src="item.img"
+                  :alt="$t(item.alt)"
+                  :title="$t(item.title)"
+                />
               </div>
             </swiper-slide>
           </swiper>
@@ -799,7 +803,9 @@ const handleClose = (done: () => void) => {
     .switchReionBtnBox {
       margin-bottom: 120px;
       button {
-        border: solid 1px #515151;
+        border: solid 1px #2958a3;
+        border-radius: 5px;
+        color: #2958a3;
         padding: 3px 55px;
         font-size: 24px;
         line-height: 160%;
@@ -828,7 +834,7 @@ const handleClose = (done: () => void) => {
             padding: 15px 0;
           }
           .orderBtn {
-            background-color: #8ad8dd;
+            background-color: #ef9f28;
             color: #fff;
             width: 150px;
             padding: 15px 0;
@@ -935,7 +941,7 @@ const handleClose = (done: () => void) => {
         margin: 0 auto 40px;
         button {
           font-size: 20px;
-          padding: 0px 24px;
+          padding: 0px clamp(12px, 6.15vw, 24px);
         }
         &.switchReionBtnBox-en {
           flex-direction: column;

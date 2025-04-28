@@ -2813,9 +2813,9 @@ pages:
     contact_us: 聯絡我們
     clinic_information: 診所資料
     clinic_information_title:
-      clinic_information_title: 眼 科 診 所
+      clinic_information_title: 眼科診所地址
       clinic_information_map: Google 地圖
-      clinic_information_make: 預約
+      clinic_information_make: 立即預約
       clinic_information_serviceNavigation1: 診所資料
       clinic_information_serviceNavigation2: 電子預約表格
       clinic_information_addressList:

@@ -242,8 +242,17 @@ const disabledDate = (time: Date) => {
                 value-format="YYYY-MM-DD"
                 :placeholder="$t('components.footerInfo.placeholder4')"
                 :size="'large'"
+                :editable="false"
+                @focus.prevent
                 :disabled-date="disabledDate"
               />
+
+              <template #prev-year>
+                <span></span>
+              </template>
+              <template #next-year>
+                <span></span>
+              </template>
             </el-form-item>
             <el-form-item
               prop="type"
@@ -376,7 +385,9 @@ const disabledDate = (time: Date) => {
         letter-spacing: 0px;
         color: #828383;
       }
-
+      :deep(.el-date-picker__next-btn button) {
+        display: none;
+      }
       :deep(.el-input__inner) {
         height: 50px;
         font-family: none;
@@ -496,12 +507,12 @@ const disabledDate = (time: Date) => {
       z-index: 1;
     }
   }
-  .info_text{
-    font-size:16px;
-    text-align:center;
+  .info_text {
+    font-size: 16px;
+    text-align: center;
     margin-top: 10px;
     letter-spacing: 2px;
-    color:#828383;
+    color: #828383;
   }
 }
 
@@ -559,14 +570,14 @@ const disabledDate = (time: Date) => {
         }
       }
     }
-    .info_text{
-      font-size:14px;
-      text-align:center;
+    .info_text {
+      font-size: 14px;
+      text-align: center;
       margin-top: 10px;
       letter-spacing: 2px;
       box-sizing: border-box;
       padding: 0 40px;
-      color:#828383;
+      color: #828383;
     }
     & > div {
       width: 100%;

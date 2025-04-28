@@ -90,7 +90,7 @@ useHead(() => ({
           title="醫護團隊" alt="醫護團隊微笑展望未來"
           class="right2"
         />
-        <img class="right3" src="https://static.cmereye.com/imgs/2023/06/677dce366a5a1e7c.jpg" title="希瑪眼科中心_開心工作間2022" alt="希瑪眼科中心_開心工作間2022標章">
+        <img class="right3" src="https://statichk.cmermedical.com/hkcmereye/16546546544.avif" title="希瑪眼科中心_開心工作間2022" alt="希瑪眼科中心_開心工作間2022標章">
       </div>
     </div>
     <PageFooterMenu />

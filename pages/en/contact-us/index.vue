@@ -6,24 +6,26 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
-  title: `${t('pages.contact_us.clinic_information')}｜${t('app.title')}｜${t('pages.contact_us.contact_us')}`,
-  meta(){
+  title: `${t('pages.contact_us.clinic_information')}｜${t('app.title')}｜${t(
+    'pages.contact_us.contact_us'
+  )}`,
+  meta() {
     return [
-        {
-          hid: 'contactUsdesc',
-          name: 'description',
-          content: "Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.",
-        },
-        {
-          hid: 'contactUsKey',
-          name: 'keywords',
-          content: "CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic",
-        }
-      ]
+      {
+        hid: 'contactUsdesc',
+        name: 'description',
+        content:
+          'Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 22 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 22 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis.',
+      },
+      {
+        hid: 'contactUsKey',
+        name: 'keywords',
+        content:
+          'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic',
+      },
+    ]
   },
 }))
-
-
 
 // 診所資料電子預約表格
 const serviceNavigation = [
@@ -33,8 +35,7 @@ const serviceNavigation = [
     anchorLink: '/contact-us',
   },
   {
-    anchorName:
-      'pages.about_us.feedback',
+    anchorName: 'pages.about_us.feedback',
     anchorLink: '/contact-us#feedback',
   },
   {
@@ -119,25 +120,25 @@ const addressList = [
       'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_regionName',
     id: 'kln',
     addressDetailList: [
-  //    {
-  //      addressImg:
-  //        'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
-  //      addressName:
-  //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressName',
-  //      addressDetail:
-  //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressDetail',
-  //      subwayExit: [
-  //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit1',
-  //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit2',
-  //      ],
-  //      contactNumber: '+852 3956 2025',
-  //      clinicHours: [
-  //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours1',
-  //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours2',
-  //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
-  //      ],
-  //      googleMaps: 'https://goo.gl/maps/TTtTUsyEVhXdN8Ar5',
-  //  },
+      //    {
+      //      addressImg:
+      //        'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
+      //      addressName:
+      //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressName',
+      //      addressDetail:
+      //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressDetail',
+      //      subwayExit: [
+      //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit1',
+      //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_subwayExit2',
+      //      ],
+      //      contactNumber: '+852 3956 2025',
+      //      clinicHours: [
+      //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours1',
+      //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours2',
+      //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
+      //      ],
+      //      googleMaps: 'https://goo.gl/maps/TTtTUsyEVhXdN8Ar5',
+      //  },
       {
         addressImg:
           'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
@@ -271,30 +272,31 @@ let windowWidth = ref(1920)
 const getWindowWidth = () => {
   windowWidth.value = window.innerWidth
 }
-onMounted(()=>{
+onMounted(() => {
   getWindowWidth()
-  window.addEventListener('resize',getWindowWidth)
+  window.addEventListener('resize', getWindowWidth)
 })
-
 </script>
 
 <template>
   <div class="contact_eye">
     <div>
       <div>
-        <div>
-        </div>
+        <div></div>
         <div>
           <swiper
-            :space-between="windowWidth>768? 40:10"
-            :slides-per-view="windowWidth>768? 4:2.5"
+            :space-between="windowWidth > 768 ? 40 : 10"
+            :slides-per-view="windowWidth > 768 ? 4 : 2.5"
             :modules="[Autoplay]"
             :loop="true"
             :autoplay="{ delay: 0 }"
             :speed="3500"
             class="contact_eye-swiper"
           >
-            <swiper-slide v-for="(item, itemIndex) in bannerList" :key="itemIndex">
+            <swiper-slide
+              v-for="(item, itemIndex) in bannerList"
+              :key="itemIndex"
+            >
               <div class="imgBox flex items-center justify-center">
                 <img :src="item" alt="" />
               </div>
@@ -319,11 +321,14 @@ onMounted(()=>{
           </div>
           <div class="content">
             <div class="addressBox">
-              <div class="switchReionBtnBox flex justify-between items-center" :class="{'switchReionBtnBox-en': locale === 'en'}">
+              <div
+                class="switchReionBtnBox flex justify-between items-center"
+                :class="{ 'switchReionBtnBox-en': locale === 'en' }"
+              >
                 <button
                   v-for="(addressItem, addressItemIndex) in addressList"
                   :key="addressItemIndex"
-                  :class="{ 'activeBtn': addressItemIndex === showIndex }"
+                  :class="{ activeBtn: addressItemIndex === showIndex }"
                   @click="switchReion(addressItemIndex)"
                 >
                   {{ $t(addressItem.regionName) }}
@@ -371,7 +376,9 @@ onMounted(()=>{
                         </span>
                         <div v-if="Array.isArray(addressDetailItem.subwayExit)">
                           <p
-                            v-for="(ele, eleIndex) in addressDetailItem.subwayExit"
+                            v-for="(
+                              ele, eleIndex
+                            ) in addressDetailItem.subwayExit"
                             :key="eleIndex"
                           >
                             {{ $t(ele) }}
@@ -422,7 +429,10 @@ onMounted(()=>{
                             }}</a
                           >
                         </div>
-                        <div class="orderBtn contactUsWhatsapp" @click="goWhatsApp">
+                        <div
+                          class="orderBtn contactUsWhatsapp"
+                          @click="goWhatsApp"
+                        >
                           <a
                             class="contactUsWhatsapp"
                             href=" "
@@ -448,8 +458,12 @@ onMounted(()=>{
     <feedback-con />
     <FormFooterInfo
       :from-style="'margin: 0 232px'"
-      :isShowTopTitle="windowWidth<=768"
-      :bg="windowWidth>768?`background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};margin: 137px auto 0;`:'background:rgba(135, 166, 212, 1);margin: 80px auto 0;'"
+      :isShowTopTitle="windowWidth <= 768"
+      :bg="
+        windowWidth > 768
+          ? `background:${backgd[0]};background:${backgd[1]};background:${backgd[2]};margin: 137px auto 0;`
+          : 'background:rgba(135, 166, 212, 1);margin: 80px auto 0;'
+      "
       :co="`color:${'#6a91cf;'}`"
     />
     <EnInformation :service-navigation="serviceNavigation" />
@@ -517,7 +531,9 @@ onMounted(()=>{
     .switchReionBtnBox {
       margin-bottom: 120px;
       button {
-        border: solid 1px #515151;
+        border: solid 1px #2958a3;
+        border-radius: 5px;
+        color: #2958a3;
         padding: 3px 55px;
         font-size: 24px;
         line-height: 160%;
@@ -546,7 +562,7 @@ onMounted(()=>{
             padding: 15px 0;
           }
           .orderBtn {
-            background-color: #8ad8dd;
+            background-color: #ef9f28;
             color: #fff;
             width: 150px;
             padding: 15px 0;
@@ -609,13 +625,13 @@ onMounted(()=>{
       }
     }
   }
-  .mainCon{
+  .mainCon {
     width: 100%;
   }
-  .contactBody{
+  .contactBody {
     width: 100%;
     margin-top: 40px;
-    .title{
+    .title {
       position: absolute;
       top: 130px;
       writing-mode: initial;
@@ -623,7 +639,7 @@ onMounted(()=>{
       margin-right: 0;
       left: 40px;
       font-size: 28px;
-      letter-spacing: -.1em;
+      letter-spacing: -0.1em;
       color: #515151;
       &::after {
         font-size: 18px;
@@ -637,30 +653,30 @@ onMounted(()=>{
       .switchReionBtnBox {
         width: calc(100% - 60px);
         margin: 0 auto 40px;
-        button{
+        button {
           font-size: 20px;
-          padding: 0px 24px;
+          padding: 0px clamp(12px, 6.15vw, 24px);
         }
-        &.switchReionBtnBox-en{
+        &.switchReionBtnBox-en {
           flex-direction: column;
-          &>button{
-            &:not(:last-child){
+          & > button {
+            &:not(:last-child) {
               margin-bottom: 20px;
             }
           }
         }
       }
     }
-    .addressDetailBox{
+    .addressDetailBox {
       width: calc(100% - 60px);
       margin: 0 auto;
       .addressDetailItem {
         flex-direction: column;
-        .textBox{
+        .textBox {
           width: 100%;
           font-size: 16px;
           margin-top: 30px;
-          .addressName{
+          .addressName {
             font-size: 30px;
           }
           .addressDetailBtnBox {
@@ -691,7 +707,7 @@ onMounted(()=>{
               top: 30px;
             }
           }
-          .textBox{
+          .textBox {
             margin-top: 60px;
           }
         }

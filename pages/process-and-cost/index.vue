@@ -2364,14 +2364,14 @@ const processedLists: any = ref([
 .processed-mobile-Boxtwo > .processed-mobile-Boxtwo-item:nth-child(1)::before {
   content: '';
   position: absolute;
-  background: url('https://statichk.cmermedical.com/hkcmereye/jiuzhenliucheng/leftArrow-mobile.svg')
+  background: url('https://statichk.cmermedical.com/hkcmereye/jiuzhenliucheng/rightArrow-mobile.svg')
     no-repeat center;
-  width: 100px;
-  height: 50px;
   top: -38px;
   left: -55px;
+  width: 123px;
+  height: 50px;
   background-size: contain;
-  transform: rotateX(180deg);
+  // transform: rotateX(180deg);
 }
 
 .processed-mobile-Boxtwo > .processed-mobile-Boxtwo-item:nth-child(2)::after {

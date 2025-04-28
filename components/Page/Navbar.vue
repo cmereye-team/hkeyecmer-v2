@@ -294,11 +294,7 @@ let menus = computed((): IMenuItem[] => [
       },
     ],
   },
-  {
-    type: 'link',
-    text: t('pages.talent_recruitment.talent_recruitment'),
-    route: { name: 'talent-recruitment' },
-  },
+
   {
     type: 'link',
     text: t('pages.contact_us.contact_us'),
@@ -318,6 +314,11 @@ let menus = computed((): IMenuItem[] => [
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
         route: { name: 'contact-us-appointmentForm' },
+      },
+      {
+        type: 'link',
+        text: t('pages.talent_recruitment.talent_recruitment'),
+        route: { name: 'talent-recruitment' },
       },
     ],
   },
@@ -456,11 +457,10 @@ a {
   width: fit-content;
 }
 .childpage > div,
-.childpage > div > a
- {
+.childpage > div > a {
   width: inherit;
 }
-.navigtion > div > a{
+.navigtion > div > a {
   width: inherit;
   line-height: 49px;
 }

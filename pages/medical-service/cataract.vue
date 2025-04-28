@@ -617,6 +617,81 @@ const bannerData = {
             </div>
           </div>
         </div>
+
+        <!-- 新增 -->
+        <div class="s3">
+          <div class="container">
+            <ul>
+              <li>
+                <img
+                  src="https://hkcmereye.com/template/default/picture/bnzv3_img/s3_1.png"
+                  alt="希瑪眼科中心_白內障成因_紫外線"
+                  title="希瑪眼科中心_白內障成因_紫外線"
+                />
+                <span>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator1')}}</span>
+              </li>
+              <li>
+                <img
+                  src="https://hkcmereye.com/template/default/picture/bnzv3_img/s3_2.png"
+                  alt="希瑪眼科中心_白內障成因_吸煙習慣"
+                  title="希瑪眼科中心_白內障成因_吸煙習慣"
+                />
+                <span>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator2')}}</span>
+              </li>
+              <li>
+                <img
+                  src="https://hkcmereye.com/template/default/picture/bnzv3_img/s3_3.png"
+                  alt="希瑪眼科中心_白內障成因_深度近視"
+                  title="希瑪眼科中心_白內障成因_深度近視"
+                />
+                <span>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_1')}}<br />{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_2')}} </span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <img
+                  src="https://hkcmereye.com/template/default/picture/bnzv3_img/s3_4.png"
+                  alt="希瑪眼科中心_白內障成因_糖尿病"
+                  title="希瑪眼科中心_白內障成因_糖尿病"
+                />
+                <span>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator4')}} </span>
+              </li>
+              <li>
+                <img
+                  src="https://hkcmereye.com/template/default/picture/bnzv3_img/s3_5.png"
+                  alt="希瑪眼科中心_白內障成因_藥物性白內障"
+                  title="希瑪眼科中心_白內障成因_藥物性白內障"
+                />
+                <span
+                  >{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_1')}}  <br />
+                  {{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_2')}} </span
+                >
+              </li>
+              <li>
+                <img
+                  src="https://hkcmereye.com/template/default/picture/bnzv3_img/s3_6.png"
+                  alt="希瑪眼科中心_白內障成因_先天性白內障"
+                  title="希瑪眼科中心_白內障成因_先天性白內障"
+                />
+                <span
+                  >{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_1')}}  <br />
+                  {{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_2')}} </span
+                >
+              </li>
+              <li>
+                <img
+                  src="https://hkcmereye.com/template/default/picture/bnzv3_img/s3_7.png"
+                  alt="希瑪眼科中心_白內障成因_創傷性白內障"
+                  title="希瑪眼科中心_白內障成因_創傷性白內障"
+                />
+                <span
+                  >{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_1')}}  <br />
+                  {{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_1')}} </span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <!-- 白內障會引起哪些症狀？ -->
       <div id="symptomArr">
@@ -671,6 +746,69 @@ const bannerData = {
                 </div>
               </div>
             </div>
+            <div class="s4">
+              <div class="container">
+                <ul>
+                  <li>
+                    <span>01</span>
+                    <p>
+                     {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_1')}}<br />
+                     {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_2')}}
+                    </p>
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_1.jpg"
+                      alt="希瑪眼科中心_白內障症狀_視力模糊"
+                      title="希瑪眼科中心_白內障症狀_視力模糊"
+                    />
+                  </li>
+                  <li>
+                    <span>02</span>
+                    <p>
+                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_1')}}<br />
+                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_2')}}
+                    </p>
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_2.jpg"
+                      alt="希瑪眼科中心_白內障症狀_眼睛重影"
+                      title="希瑪眼科中心_白內障症狀_眼睛重影"
+                    />
+                  </li>
+                  <li>
+                    <span>03</span>
+                    <p>
+                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_1')}} <br />
+                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_2')}}
+                    </p>
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_3.jpg"
+                      alt="希瑪眼科中心_白內障症狀_視物變形"
+                      title="希瑪眼科中心_白內障症狀_視物變形"
+                    />
+                  </li>
+                  <li>
+                    <span>04</span>
+                    <p>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom4')}}</p>
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_4.jpg"
+                      alt="希瑪眼科中心_白內障症狀_夜間視力下降"
+                      title="希瑪眼科中心_白內障症狀_夜間視力下降"
+                    />
+                  </li>
+                  <li>
+                    <span>05</span>
+                    <p>
+                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1')}} <br />
+                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1')}}
+                    </p>
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_5.jpg"
+                      alt="希瑪眼科中心_白內障症狀"
+                      title="希瑪眼科中心_白內障症狀"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
             <div>
               <div>
                 <svg
@@ -709,6 +847,7 @@ const bannerData = {
               </div>
             </div>
           </div>
+
           <!-- <div @click="callTel()">
             {{
               $t(
@@ -1331,6 +1470,36 @@ body {
   margin-top: 100px;
 }
 
+// s3
+.s3 {
+  position: relative;
+  z-index: 33;
+}
+.s3 h3 {
+  background-color: #29c384;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+
+.s3 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.s3 ul:nth-child(3) {
+  justify-content: space-between;
+}
+
+.s3 ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
 .dryeye_button {
   text-decoration: none;
   color: white;
@@ -1399,6 +1568,81 @@ body {
 .bnzv3_container .container {
   position: relative;
   z-index: 66;
+}
+
+.s4 {
+  background: url(/template/default/picture/bnzv3_img/s4_bg.jpg) center / cover
+    no-repeat;
+  color: #fff;
+  position: relative;
+  z-index: 34;
+  text-align: center;
+}
+.s4 p {
+  text-align: left;
+}
+.s4 h2 {
+  color: #fff;
+}
+.s4 h2 span {
+  background-image: linear-gradient(90deg, #2db378 0%, #048ab6 100%);
+  background: unset;
+}
+.s4 h2::before {
+  border: solid 2px #ffffff;
+  display: none;
+}
+.s4 h2 img {
+  position: absolute;
+}
+
+.s4 h3 {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #29c384;
+  text-align: center;
+  display: inline-block;
+}
+.s4 ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.s4 ul li {
+  background-color: #fff;
+  color: #5f6462;
+  border-radius: 14px 68px 20px 20px;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.s4 ul li span {
+  background-color: #3dc1ee;
+  color: #fff;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.s4 ul li img {
+  border-radius: 0 0 20px 20px;
+}
+.s4 ul li p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.s4 .end_notice {
+  background: url(/template/default/picture/bnzv3_img/s4_noticebg.png) center /
+    cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .banner h1 {
@@ -3529,6 +3773,12 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .s3 {
+    display: none;
+  }
+  .s4{
+    display: none;
+  }
   .animated-button1::before {
     content: '';
     position: absolute;
@@ -3732,7 +3982,7 @@ body {
       display: flex;
       justify-content: center;
       // margin: auto;
-      margin-top: 103px;
+      margin-top: 30px;
       //   width: 695px;
       //   height: 85px;
       //   background-blend-mode: normal, normal;
@@ -3952,7 +4202,7 @@ body {
             }
           }
         }
-        & > div:nth-child(3) {
+        & > div:nth-child(4) {
           position: relative;
           margin-top: 102px;
           font-family: 'Noto Sans HK';
@@ -4690,7 +4940,7 @@ body {
   .cataract {
     & > div:nth-child(2) {
       & > div:nth-child(2) {
-        margin-top: 100px;
+        margin-top: 30px;
         padding-left: 3px;
         font-family: 'Noto Sans HK';
         font-size: 24px;
@@ -4700,7 +4950,7 @@ body {
         letter-spacing: 0px;
         color: #515151;
         & > p {
-          margin-bottom: 41px;
+          margin-bottom: 10px;
           font-size: 14px;
           line-height: 160%;
         }
@@ -5047,7 +5297,7 @@ body {
       width: 100%;
       font-size: 14px;
       line-height: 160%;
-      margin-top: 50px;
+      margin-top: 20px;
 
       & > p {
         margin-bottom: 20px;
@@ -5063,7 +5313,8 @@ body {
     //}
 
     & > div:nth-child(3) {
-      width: calc(100% - 60px);
+      // width: calc(100% - 60px);
+      // width: 100%;
       margin: 70px auto 0;
       & > div:nth-child(1) {
         & > div:nth-child(1) {
@@ -5104,6 +5355,7 @@ body {
         & > div:nth-child(2) {
           margin-top: 50px;
           & > div {
+            display: none;
             align-items: flex-start;
             margin-bottom: 20px;
             & > div {
@@ -5142,7 +5394,7 @@ body {
       }
     }
     & > div:nth-child(4) {
-      width: calc(100% - 60px);
+      // width: calc(100% - 60px);
       margin: 70px auto 0;
       & > div:nth-child(1) {
         & > div:nth-child(1) {
@@ -5190,6 +5442,7 @@ body {
             justify-content: center;
             padding: 0;
             width: calc(100% + 20px);
+            display: none;
             margin-left: -10px;
             & > div {
               transform: scale(1);
@@ -5206,7 +5459,7 @@ body {
               }
             }
           }
-          & > div:nth-child(3) {
+          & > div:nth-child(4) {
             margin-top: 0;
             padding: 20px 30px;
             font-size: 14px;
@@ -5240,7 +5493,7 @@ body {
       }
     }
     & > div:nth-child(5) {
-      width: calc(100% - 60px);
+      // width: calc(100% - 60px);
       margin: 70px auto 0;
       & > div:nth-child(1) {
         & > div:nth-child(1) {
@@ -5423,7 +5676,8 @@ body {
       }
     }
     & > div:nth-child(6) {
-      width: calc(100% - 60px);
+      // width: calc(100% - 60px);
+      width: 100%;
       margin: 70px auto 0;
       & > div:nth-child(1) {
         & > div:nth-child(1) {
@@ -5451,7 +5705,8 @@ body {
           line-height: 2;
         }
         & > div:nth-child(2) {
-          font-size: 12px;
+          margin: 0 -24px;
+          font-size: 13px;
           line-height: 1.4;
           & > div {
             height: auto;
@@ -5533,7 +5788,7 @@ body {
           }
           & > div:nth-child(6) {
             height: auto;
-            font-size: 12px;
+            font-size: 13px;
             & > div {
               padding: 15px 5px;
               &:nth-of-type(n + 2) {
@@ -5585,7 +5840,7 @@ body {
       }
     }
     & > div:nth-child(7) {
-      width: calc(100% - 60px);
+      // width: calc(100% - 60px);
       margin: 70px auto 0;
       & > div:nth-child(1) {
         & > div:nth-child(1) {
@@ -5656,7 +5911,7 @@ body {
       }
     }
     & > div:nth-child(8) {
-      width: calc(100% - 60px);
+      // width: calc(100% - 60px);
       margin: 70px auto 0;
       & > div:nth-child(1) {
         & > div:nth-child(1) {
@@ -5827,6 +6082,98 @@ body {
         }
       }
     }
+  }
+
+  // s3
+
+  .s3 .imgbg1 {
+    width: 80vw;
+    bottom: 60vw;
+  }
+  .s3 .imgbg2 {
+    width: 80vw;
+    top: 40vw;
+  }
+  .s3 h3 {
+    display: block;
+    width: 55vw;
+    margin: 0 auto;
+    padding: 4vw 0;
+    margin-bottom: 10vw;
+  }
+  .s3 ul {
+    flex-flow: column;
+  }
+  .s3 ul li {
+    flex-flow: row;
+    justify-content: start;
+    width: 90vw;
+    margin: 0 auto;
+    margin-bottom: 10vw;
+    font-size: 18px;
+  }
+
+  .s3 ul li img {
+    width: 45vw;
+    margin-right: 4vw;
+  }
+
+  /* s4 */
+  .s4 {
+    margin-top: 10vw;
+    // padding: 20vw 0;
+  }
+  .s4 h2::before {
+    width: 48%;
+    height: 158%;
+  }
+  .s4 h2 img {
+    position: absolute;
+    width: 53vw;
+  }
+  .s4 h3 {
+    padding: 5vw 3vw;
+    margin: 10vw 0;
+  }
+
+  .s4 ul {
+    flex-wrap: wrap;
+    // width: 95vw;
+    // margin: 5vw auto;
+    justify-content: space-around;
+    margin-top: 10vw;
+  }
+
+  .s4 ul li {
+    width: 80vw;
+    margin-bottom: 10vw;
+    border-radius: 20px;
+    flex-flow: revert;
+  }
+  .s4 ul li p {
+    height: 20vw;
+    order: 2;
+    font-size: 18px;
+    margin-left: 5vw;
+  }
+
+  .s4 ul li img {
+    width: 35vw;
+    order: 1;
+    border-radius: 20px;
+  }
+  .s4 ul li span {
+    width: 10vw;
+    height: 10vw;
+    top: -5vw;
+  }
+
+  .s4 .end_notice {
+    background: unset;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 5vw 7vw;
+    text-align: justify;
   }
 }
 @media (min-width: 678px) and (max-width: 1200px) {

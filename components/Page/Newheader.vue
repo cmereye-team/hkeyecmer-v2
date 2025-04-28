@@ -219,12 +219,7 @@ const menus = computed(() => {
         },
       ],
     },
-    {
-      type: 'link',
-      text: t('pages.talent_recruitment.talent_recruitment'),
-      link: { path: '/talent-recruitment' },
-      childMenuList: [],
-    },
+
     {
       type: 'link',
       text: t('pages.contact_us.contact_us'),
@@ -240,6 +235,12 @@ const menus = computed(() => {
           text: t('pages.contact_us.appointmentForm'),
           link: { path: '/contact-us/appointmentForm' },
         },
+            {
+      type: 'link',
+      text: t('pages.talent_recruitment.talent_recruitment'),
+      link: { path: '/talent-recruitment' },
+      childMenuList: [],
+    },
       ],
     },
   ]
