@@ -6,9 +6,18 @@ const props = defineProps({
     default: () => ({}),
   },
 })
+const locale = useState<string>('locale.setting')
 const goYoutube = (link: string) => {
   window.open(link, '_blank')
 }
+
+onMounted(() => {
+  if (window.location.pathname.includes('/en/')) {
+    locale.value = 'en'
+  }
+  try {
+  } catch (e) {}
+})
 </script>
 
 <template>
@@ -26,7 +35,11 @@ const goYoutube = (link: string) => {
     >
       <div class="videoList" @click="goYoutube(item.link)">
         <div>
-          <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
+          <img
+            :src="item.img"
+            :title="locale === 'en' ? item.img_title_En : item.img_title"
+            :alt="locale === 'en' ? item.img_alt_En : item.img_alt"
+          />
         </div>
         <div>{{ $t(item.title) }}</div>
         <div class="text">

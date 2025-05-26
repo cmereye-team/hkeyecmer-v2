@@ -1,3 +1,4 @@
+lang: en
 components:
   language_switcher:
     change_language: change language

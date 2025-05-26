@@ -19,6 +19,8 @@ useHead(() => ({
   ],
 }))
 // 新闻列表
+const locale = useState<string>('locale.setting')
+
 const newList = [
   {
     newSource: 'BOWTIE',
@@ -183,7 +185,7 @@ const detail = ref({
   date: '',
   content: '',
   ext_paperRecoFrom: '',
-  visits: ''
+  visits: '',
 })
 const newId = ref(0)
 const newDeatil = (id: number) => {
@@ -206,7 +208,7 @@ const pageTurning = (flag: string) => {
       detail.value = pressLists.value[newId.value]
       toTop()
     }
-  } else if (newId.value+1 >= newList.length) {
+  } else if (newId.value + 1 >= newList.length) {
     ElMessage.error('當前是本页最後一條！')
   } else {
     newId.value++
@@ -214,9 +216,9 @@ const pageTurning = (flag: string) => {
     toTop()
   }
 }
-let pressLists:any = ref([])
+let pressLists: any = ref([])
 let totalPageNum = ref(0)
-let actPageNum = ref(1) 
+let actPageNum = ref(1)
 let errorPage = ref(false)
 const getPressContent = async () => {
   const loading = ElLoading.service({
@@ -224,27 +226,29 @@ const getPressContent = async () => {
     text: 'Loading',
     background: 'rgba(0, 0, 0, 0.7)',
   })
-  try{
-  const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/4/page/${actPageNum.value}/num/8/order/date`)
-  let res = JSON.parse(data.value)
-  totalPageNum.value = Math.ceil(res.rowtotal / 8)
-  pressLists.value = res.data.map((item:any) => {
-    let date = new Date(item.date);
-    let y = date.getFullYear();
-    let MM:any = date.getMonth() + 1;
-    MM = MM < 10 ? ('0' + MM) : MM;
-    let d = date.getDate();
-    return {
-      id: item.id,
-      img: `https://hkcmereye.com${item.ico}`,
-      content: item.content,
-      ext_paperRecoFrom: item.source,
-      visits: item.visits,
-      title: item.title,
-      date: y+'-'+MM+'-'+d
-    }
-  })
-  }catch{
+  try {
+    const { data }: any = await useFetch(
+      `https://hkcmereye.com/api.php/list/4/page/${actPageNum.value}/num/8/order/date`
+    )
+    let res = JSON.parse(data.value)
+    totalPageNum.value = Math.ceil(res.rowtotal / 8)
+    pressLists.value = res.data.map((item: any) => {
+      let date = new Date(item.date)
+      let y = date.getFullYear()
+      let MM: any = date.getMonth() + 1
+      MM = MM < 10 ? '0' + MM : MM
+      let d = date.getDate()
+      return {
+        id: item.id,
+        img: `https://hkcmereye.com${item.ico}`,
+        content: item.content,
+        ext_paperRecoFrom: item.source,
+        visits: item.visits,
+        title: item.title,
+        date: y + '-' + MM + '-' + d,
+      }
+    })
+  } catch {
     errorPage.value = true
   }
   toTop()
@@ -252,37 +256,40 @@ const getPressContent = async () => {
 }
 
 const subNum = () => {
-  if(actPageNum.value > 1){
-    actPageNum.value --
-    sessionStorage.setItem('pressPage',JSON.stringify(actPageNum.value))
+  if (actPageNum.value > 1) {
+    actPageNum.value--
+    sessionStorage.setItem('pressPage', JSON.stringify(actPageNum.value))
     getPressContent()
   }
 }
 
 const addNum = () => {
-  if(actPageNum.value < totalPageNum.value){
-    actPageNum.value ++
-    sessionStorage.setItem('pressPage',JSON.stringify(actPageNum.value))
+  if (actPageNum.value < totalPageNum.value) {
+    actPageNum.value++
+    sessionStorage.setItem('pressPage', JSON.stringify(actPageNum.value))
     getPressContent()
   }
 }
 
 const toTop = () => {
-  let topHeight:number = document.getElementById('pressContent')?.offsetTop || 0
-  document.body.scrollTop = document.documentElement.scrollTop = topHeight -= 100
+  let topHeight: number =
+    document.getElementById('pressContent')?.offsetTop || 0
+  document.body.scrollTop =
+    document.documentElement.scrollTop =
+    topHeight -=
+      100
 }
 
-const to_ext_paperRecoFrom = () =>{
+const to_ext_paperRecoFrom = () => {
   location.href = detail.value.ext_paperRecoFrom
 }
 
-onMounted(()=>{
-  setTimeout(()=>{
+onMounted(() => {
+  setTimeout(() => {
     actPageNum.value = Number(sessionStorage.getItem('pressPage')) || 1
     getPressContent()
-  },0)
+  }, 0)
 })
-
 </script>
 
 <template>
@@ -290,13 +297,40 @@ onMounted(()=>{
     <div class="press">
       <div>
         <div>
-          <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
-            srcset="https://static.cmereye.com/imgs/2023/07/f668cb9e24a8fd3e.jpg 768w, https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
-            alt="新聞資訊" src="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png" />
-          <svg width="9" height="144" viewBox="0 0 9 144" fill="none" xmlns="http://www.w3.org/2000/svg"
-            data-v-1d8b93bf="" data-v-a125a221="" data-v-4b343dd3="">
-            <path d="M1 1V143L7.5 130.5" stroke="#2958A3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-              data-v-1d8b93bf="" data-v-a125a221="" data-v-4b343dd3=""></path>
+          <img
+            data-cfsrc="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
+            srcset="
+              https://static.cmereye.com/imgs/2023/07/f668cb9e24a8fd3e.jpg 768w,
+              https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png
+            "
+            :title="locale == 'en' ? 'News Reporting' : ''"
+            :alt="
+              locale == 'en'
+                ? 'A journalist in front of the camera reporting news'
+                : '新聞資訊'
+            "
+            src="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
+          />
+          <svg
+            width="9"
+            height="144"
+            viewBox="0 0 9 144"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            data-v-1d8b93bf=""
+            data-v-a125a221=""
+            data-v-4b343dd3=""
+          >
+            <path
+              d="M1 1V143L7.5 130.5"
+              stroke="#2958A3"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              data-v-1d8b93bf=""
+              data-v-a125a221=""
+              data-v-4b343dd3=""
+            ></path>
           </svg>
         </div>
         <div>
@@ -310,10 +344,14 @@ onMounted(()=>{
           <div>
             <div>NEWS</div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/05/e3060c56238575c3.png" />
+              <img
+                src="https://static.cmereye.com/imgs/2023/05/e3060c56238575c3.png"
+              />
             </div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/05/90e21d8b0b56ea96.png" />
+              <img
+                src="https://static.cmereye.com/imgs/2023/05/90e21d8b0b56ea96.png"
+              />
             </div>
           </div>
           <div>
@@ -335,14 +373,25 @@ onMounted(()=>{
         </div>
       </div>
       <div id="pressContent" v-if="!errorPage">
-        <div v-for="(item, index) in pressLists" v-show="isNewLIst" :key="index" @click="newDeatil(index)">
+        <div
+          v-for="(item, index) in pressLists"
+          v-show="isNewLIst"
+          :key="index"
+          @click="newDeatil(index)"
+        >
           <div><img :src="item.img" /></div>
-          <div>{{item.date}}</div>
+          <div>{{ item.date }}</div>
           <div>
-            <p>{{item.title}}</p>
+            <p>{{ item.title }}</p>
           </div>
           <div>
-            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg
+              width="17"
+              height="17"
+              viewBox="0 0 17 17"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
               <path d="M0 16H16V0" stroke="#2958A3" stroke-width="2" />
             </svg>
           </div>
@@ -353,18 +402,14 @@ onMounted(()=>{
     <div v-if="isDetail" class="content_press">
       <div>
         <div>
-          <div>{{detail.title}}</div>
+          <div>{{ detail.title }}</div>
         </div>
+        <div></div>
         <div>
-        </div>
-        <div>
-          <div v-html="detail.content">
-          </div>
+          <div v-html="detail.content"></div>
           <div>
-            <div>
-            </div>
-            <div>
-            </div>
+            <div></div>
+            <div></div>
             <div @click="to_ext_paperRecoFrom()">
               {{
                 $t(
@@ -425,7 +470,7 @@ onMounted(()=>{
           />
         </svg>
       </div>
-      <div>{{actPageNum}}/{{totalPageNum}}</div>
+      <div>{{ actPageNum }}/{{ totalPageNum }}</div>
       <div @click="addNum">
         <svg
           width="9"
@@ -458,7 +503,7 @@ onMounted(()=>{
 }
 .press {
   position: relative;
-  &>div:nth-child(1) {
+  & > div:nth-child(1) {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -472,10 +517,10 @@ onMounted(()=>{
       position: absolute;
       top: 0;
       left: 0;
-      width: calc((100vw - 1493px)/2 + 1460px);
+      width: calc((100vw - 1493px) / 2 + 1460px);
       height: 750px;
     }
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       position: relative;
       margin: 122px auto 0;
       bottom: -2vw;
@@ -483,7 +528,7 @@ onMounted(()=>{
       max-width: 1490px;
       &::before {
         content: '';
-        background: rgba($color: #000000, $alpha: .2);
+        background: rgba($color: #000000, $alpha: 0.2);
         position: absolute;
         top: 0;
         left: 0;
@@ -491,19 +536,19 @@ onMounted(()=>{
         height: 100%;
         z-index: 6;
       }
-      &>img {
+      & > img {
         width: 100%;
         position: relative;
         z-index: 5;
       }
-      &>svg {
+      & > svg {
         position: absolute;
         left: 50%;
         bottom: -100px;
         z-index: 7;
       }
     }
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       text-align: center;
       position: absolute;
       left: 50%;
@@ -514,7 +559,7 @@ onMounted(()=>{
       flex-direction: column;
       align-items: center;
       z-index: 7;
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
@@ -525,9 +570,9 @@ onMounted(()=>{
         color: #ffffff;
         margin-bottom: 12px;
       }
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         margin-bottom: 41px;
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           font-family: 'Metropolis';
           font-style: normal;
           font-weight: 700;
@@ -539,7 +584,7 @@ onMounted(()=>{
           color: #ffffff;
         }
       }
-      &>div:nth-child(3) {
+      & > div:nth-child(3) {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 700;
@@ -548,7 +593,7 @@ onMounted(()=>{
         text-align: right;
         letter-spacing: 0.3em;
         color: #ffffff;
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           font-weight: 400;
           font-size: 15.8025px;
           line-height: 24px;
@@ -559,7 +604,7 @@ onMounted(()=>{
     }
   }
 
-  &>div:nth-child(2) {
+  & > div:nth-child(2) {
     width: 100%;
     max-width: 927px;
     margin: 290px auto 0;
@@ -567,14 +612,14 @@ onMounted(()=>{
     flex-wrap: wrap;
     justify-content: space-between;
 
-    &>div {
+    & > div {
       cursor: pointer;
       width: 400px;
       height: 420px;
       background: #f2f2f2;
       margin-bottom: 120px;
       position: relative;
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         margin: 33px 31px 0;
         height: 240px;
         display: flex;
@@ -582,13 +627,13 @@ onMounted(()=>{
         justify-content: center;
         background: #fff;
         overflow: hidden;
-        img{
+        img {
           max-width: 100%;
           max-height: 100%;
         }
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         margin-top: 10px;
         width: 141px;
         height: 38px;
@@ -605,7 +650,7 @@ onMounted(()=>{
         justify-content: center;
       }
 
-      &>div:nth-child(3) {
+      & > div:nth-child(3) {
         margin: 0 31px;
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -624,7 +669,7 @@ onMounted(()=>{
         overflow: hidden;
       }
 
-      &>div:nth-child(4) {
+      & > div:nth-child(4) {
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -659,8 +704,8 @@ onMounted(()=>{
   margin: 0 26.0412%;
   margin-bottom: 122px;
 
-  &>div:nth-child(1) {
-    &>div:nth-child(1) {
+  & > div:nth-child(1) {
+    & > div:nth-child(1) {
       font-family: 'Noto Sans HK';
       font-style: normal;
       font-weight: 400;
@@ -672,7 +717,7 @@ onMounted(()=>{
       position: relative;
     }
 
-    &>div:nth-child(1)::after {
+    & > div:nth-child(1)::after {
       content: '';
       border-bottom: 3px solid #515151;
       display: inline-block;
@@ -682,7 +727,7 @@ onMounted(()=>{
       left: 0;
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -693,7 +738,7 @@ onMounted(()=>{
         margin-top: 24px;
         position: static;
 
-        &>img {
+        & > img {
           position: relative;
           z-index: 5;
           width: 100%;
@@ -712,7 +757,7 @@ onMounted(()=>{
         background: #f2f2f2;
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         position: static;
         font-family: 'Metropolis';
         font-style: normal;
@@ -729,9 +774,9 @@ onMounted(()=>{
       }
     }
 
-    &>div:nth-child(3) {
+    & > div:nth-child(3) {
       margin-bottom: 80px;
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         margin-bottom: 120px;
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -741,11 +786,11 @@ onMounted(()=>{
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: #515151;
-        &>p {
+        & > p {
           margin-bottom: 35px;
         }
       }
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
@@ -754,20 +799,20 @@ onMounted(()=>{
         letter-spacing: 0.1em;
         text-transform: uppercase;
         color: #515151;
-        &>div:nth-child(3){
+        & > div:nth-child(3) {
           cursor: pointer;
         }
       }
     }
   }
 
-  &>div:nth-child(2) {
+  & > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
 
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       width: fit-content;
       padding: 15px 25px;
       background: #8ad8dd;
@@ -786,12 +831,12 @@ onMounted(()=>{
       cursor: pointer;
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
 
-      &>div {
+      & > div {
         cursor: pointer;
         margin: 0 60px;
       }
@@ -801,7 +846,7 @@ onMounted(()=>{
 
 @media screen and (max-width: 768px) {
   .press {
-    &>div:nth-child(1) {
+    & > div:nth-child(1) {
       margin-top: 78px;
       height: auto;
 
@@ -811,7 +856,7 @@ onMounted(()=>{
         left: 50px;
       }
 
-      &>div:nth-child(1) {
+      & > div:nth-child(1) {
         margin: 0 auto;
         bottom: 0;
 
@@ -819,25 +864,25 @@ onMounted(()=>{
           display: none;
         }
 
-        &>svg {
+        & > svg {
           transform: scale(0.5);
           bottom: -90px;
         }
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         bottom: 20px;
 
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           font-size: 28px;
           line-height: 120%;
           margin-bottom: 5px;
         }
 
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           margin-bottom: 18px;
 
-          &>div:nth-child(1) {
+          & > div:nth-child(1) {
             font-size: 30px;
             line-height: 100%;
           }
@@ -850,12 +895,12 @@ onMounted(()=>{
           }
         }
 
-        &>div:nth-child(3) {
+        & > div:nth-child(3) {
           font-size: 16px;
           line-height: 160%;
           text-align: center;
 
-          &>div:nth-child(2) {
+          & > div:nth-child(2) {
             font-size: 12px;
             line-height: 120%;
           }
@@ -863,27 +908,27 @@ onMounted(()=>{
       }
     }
 
-    &>div:nth-child(2) {
+    & > div:nth-child(2) {
       margin: 120px auto 0;
       width: calc(100% - 60px);
 
-      &>div {
+      & > div {
         margin-bottom: 60px;
         width: 100%;
         height: auto;
         padding-bottom: 20px;
 
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           margin: 20px;
           height: auto;
           min-height: 180px;
         }
 
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           margin-top: 0;
         }
 
-        &>div:nth-child(3) {
+        & > div:nth-child(3) {
           font-size: 18px;
           width: calc(100% - 40px);
           margin: 10px auto;
@@ -898,15 +943,15 @@ onMounted(()=>{
     margin-bottom: 30px;
     padding: 0 25px;
 
-    &>div:nth-child(1) {
-      &>div:nth-child(1) {
+    & > div:nth-child(1) {
+      & > div:nth-child(1) {
         font-size: 24px;
         margin-bottom: 30px;
         display: inline-block;
         padding-bottom: 5px;
       }
 
-      &>div:nth-child(1)::after {
+      & > div:nth-child(1)::after {
         content: '';
         border-bottom: 3px solid #515151;
         display: inline-block;
@@ -916,15 +961,15 @@ onMounted(()=>{
         left: 0;
       }
 
-      &>div:nth-child(2) {
+      & > div:nth-child(2) {
         width: 90%;
 
-        &>div:nth-child(1) {
+        & > div:nth-child(1) {
           width: 100%;
           height: auto;
           margin: auto;
 
-          &>img {
+          & > img {
             position: relative;
             z-index: 5;
             width: 100%;
@@ -934,27 +979,27 @@ onMounted(()=>{
           }
         }
 
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           margin-top: 20px;
           font-size: 20px;
           line-height: 36px;
         }
 
-        &>div:nth-child(1)::after {
+        & > div:nth-child(1)::after {
           content: '';
           width: 100%;
           height: 200px;
         }
       }
 
-      &>div:nth-child(3) {
-        &>div:nth-child(1) {
+      & > div:nth-child(3) {
+        & > div:nth-child(1) {
           margin-bottom: 72px;
           font-size: 16px;
           line-height: 1.8;
           text-align: justify;
         }
-        &>div:nth-child(2) {
+        & > div:nth-child(2) {
           display: none;
           font-size: 16px;
           line-height: 1.8;
@@ -962,9 +1007,8 @@ onMounted(()=>{
       }
     }
 
-    &>div:nth-child(2) {
-
-      &>div:nth-child(1) {
+    & > div:nth-child(2) {
+      & > div:nth-child(1) {
         width: fit-content;
         height: auto;
         padding: 5px 10px;
@@ -972,14 +1016,14 @@ onMounted(()=>{
         line-height: 1.6;
       }
 
-      &>div:nth-child(2) {
-        &>div {
+      & > div:nth-child(2) {
+        & > div {
           margin: 0 15px;
         }
       }
     }
   }
-  .paging{
+  .paging {
     justify-content: center;
   }
 }

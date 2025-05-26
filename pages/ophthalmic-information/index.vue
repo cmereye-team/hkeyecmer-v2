@@ -3,21 +3,22 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
 useHead(() => ({
   title: '醫生小教室｜眼科資訊｜香港希瑪眼科中心',
-  meta(){
+  meta() {
     return [
-    {
-      hid: 'ophthalmicDesc',
-      name: 'description',
-      content: t('tdk.ophthalmic-information.desc'),
-    },
-    {
-      hid: 'ophthalmicKey',
-      name: 'keywords',
-      content: t('tdk.ophthalmic-information.key'),
-    }
-  ]
+      {
+        hid: 'ophthalmicDesc',
+        name: 'description',
+        content: t('tdk.ophthalmic-information.desc'),
+      },
+      {
+        hid: 'ophthalmicKey',
+        name: 'keywords',
+        content: t('tdk.ophthalmic-information.key'),
+      },
+    ]
   },
 }))
 
@@ -29,11 +30,13 @@ let mainContent = ref([
     doctor: '',
     text: '',
     img_title: '',
-    img_alt: ''
-  }
+    img_alt: '',
+    img_title_En: '',
+    img_alt_En: '',
+  },
 ])
 let totalPageNum = ref(0)
-let actPageNum = ref(1) 
+let actPageNum = ref(1)
 let errorPage = ref(false)
 const getMainContent = async () => {
   const loading = ElLoading.service({
@@ -41,11 +44,13 @@ const getMainContent = async () => {
     text: 'Loading',
     background: 'rgba(0, 0, 0, 0.7)',
   })
-  try{
-    const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/3/page/${actPageNum.value}/num/4`)
+  try {
+    const { data }: any = await useFetch(
+      `https://hkcmereye.com/api.php/list/3/page/${actPageNum.value}/num/4`
+    )
     let res = JSON.parse(data.value)
     totalPageNum.value = Math.ceil(res.rowtotal / 4)
-    mainContent.value = res.data.map((item:any) => {
+    mainContent.value = res.data.map((item: any) => {
       return {
         img: `https://hkcmereye.com${item.ico}`,
         link: item.source,
@@ -53,10 +58,12 @@ const getMainContent = async () => {
         doctor: item.ext_doctor_name,
         text: item.ext_context,
         img_title: item.ext_caseimg_title,
-        img_alt: item.ext_caseimg_alt
+        img_alt: item.ext_caseimg_alt,
+        img_title_En: item.ext_EnTitle,
+        img_alt_En: item.ext_EnAlt,
       }
     })
-  }catch{
+  } catch {
     errorPage.value = true
   }
   toTop()
@@ -64,31 +71,33 @@ const getMainContent = async () => {
 }
 
 const subNum = () => {
-  if(actPageNum.value > 1){
-    actPageNum.value --
+  if (actPageNum.value > 1) {
+    actPageNum.value--
     getMainContent()
   }
 }
 
 const addNum = () => {
-  if(actPageNum.value < totalPageNum.value){
-    actPageNum.value ++
+  if (actPageNum.value < totalPageNum.value) {
+    actPageNum.value++
     getMainContent()
   }
 }
 
 const toTop = () => {
-  let topHeight:number = document.getElementById('doctorClassConetnt')?.offsetTop || 0
-  document.body.scrollTop = document.documentElement.scrollTop = topHeight -= 100
+  let topHeight: number =
+    document.getElementById('doctorClassConetnt')?.offsetTop || 0
+  document.body.scrollTop =
+    document.documentElement.scrollTop =
+    topHeight -=
+      100
 }
 
-onMounted(()=>{
-  setTimeout(()=>{
+onMounted(() => {
+  setTimeout(() => {
     getMainContent()
-  },0)
+  }, 0)
 })
-
-
 </script>
 
 <template>
@@ -96,10 +105,24 @@ onMounted(()=>{
     <!-- 起始 -->
     <div class="doctorClass-top">
       <div>
-        <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg" 
-          srcset="https://static.cmereye.com/imgs/2023/07/8e1ebf18405f8010.jpg 768w, https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"  
-          title="眼科醫生_眼科服務" alt="眼科醫生團隊提供優質眼科服務"
-          src="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"/>
+        <img
+          data-cfsrc="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"
+          srcset="
+            https://static.cmereye.com/imgs/2023/07/8e1ebf18405f8010.jpg 768w,
+            https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg
+          "
+          :title="
+            locale === 'en'
+              ? 'Ophthalmologist_Ophthalmology Services'
+              : '眼科醫生_眼科服務'
+          "
+          :alt="
+            locale === 'en'
+              ? 'Ophthalmologist teams provides high-quality ophthalmic services'
+              : '眼科醫生團隊提供優質眼科服務'
+          "
+          src="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"
+        />
       </div>
       <div>
         <div>
@@ -190,7 +213,13 @@ onMounted(()=>{
             }}</a>
           </div>
         </div>
-        <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+        <div>
+          <img
+            :src="item.img"
+            :title="locale === 'en' ? item.img_title_En : item.img_title"
+            :alt="locale === 'en' ? item.img_alt_En : item.img_alt"
+          />
+        </div>
       </div>
     </div>
     <div id="doctorClassConetnt" v-else>服務異常</div>
@@ -213,7 +242,7 @@ onMounted(()=>{
           />
         </svg>
       </div>
-      <div>{{actPageNum}}/{{totalPageNum}}</div>
+      <div>{{ actPageNum }}/{{ totalPageNum }}</div>
       <div @click="addNum">
         <svg
           width="9"
@@ -451,7 +480,7 @@ onMounted(()=>{
         right: 0;
         margin-right: 64px;
         margin-top: 39px;
-        img{
+        img {
           max-width: 410px;
         }
       }
@@ -530,7 +559,7 @@ onMounted(()=>{
           }
         }
       }
-      & > svg{
+      & > svg {
         bottom: -90px;
         transform: scale(0.5);
       }
@@ -538,7 +567,7 @@ onMounted(()=>{
     & > div:nth-child(2) {
       width: calc(100% - 60px);
       margin: 100px auto 0;
-      &>div{
+      & > div {
         max-width: 100%;
         flex-direction: column;
         padding: 25px 20px 30px;
@@ -562,12 +591,12 @@ onMounted(()=>{
         & > div:nth-child(2) {
           margin-right: 0;
           margin-top: 36px;
-          img{
+          img {
             width: 100%;
             max-width: 100%;
           }
         }
-        &:last-child{
+        &:last-child {
           margin-bottom: 30px;
         }
       }

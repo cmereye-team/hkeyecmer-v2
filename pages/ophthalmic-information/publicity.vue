@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+const locale = useState<string>('locale.setting')
 definePageMeta({
   layout: 'page',
 })
@@ -126,6 +127,8 @@ interface mainContent {
   text: Array<string>
   img_title: string
   img_alt: string
+  img_title_En: string
+  img_alt_En: string
 }
 
 const eyeDisease = ref<mainContent[]>([])
@@ -151,6 +154,8 @@ const getMainContent = async () => {
         text: delTextBrTag(item.ext_context),
         img_title: item.ext_caseimg_title,
         img_alt: item.ext_caseimg_alt,
+        img_title_En: item.ext_EnTitle,
+        img_alt_En: item.ext_EnAlt,
       }
     })
   } catch {
@@ -178,6 +183,11 @@ const toTop = () => {
 }
 
 onMounted(() => {
+  if (window.location.pathname.includes('/en/')) {
+    locale.value = 'en'
+  }
+  try {
+  } catch (e) {}
   getMainContent()
 })
 </script>
@@ -194,8 +204,16 @@ onMounted(() => {
                 https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png
               "
               src="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"
-              title="宣傳片_影片拍攝"
-              alt="拍攝團隊正專注進行宣傳片拍攝工作"
+              :title="
+                locale === 'en'
+                  ? 'Promotional Video_Filming'
+                  : '宣傳片_影片拍攝'
+              "
+              :alt="
+                locale === 'en'
+                  ? 'The Crew is focusing on filming the promotional video'
+                  : '拍攝團隊正專注進行宣傳片拍攝工作'
+              "
             />
           </div>
         </div>
@@ -278,7 +296,11 @@ onMounted(() => {
       <div class="publicity-content-mb">
         <div v-for="(item, index) in eyeDisease" :key="index">
           <div>
-            <img :src="item.img" :alt="item.img_alt" :title="item.img_title" />
+            <img
+              :src="item.img"
+              :title="locale === 'en' ? item.img_title_En : item.img_title"
+              :alt="locale === 'en' ? item.img_alt_En : item.img_alt"
+            />
           </div>
           <div>
             <div>{{ $t(item.title) }}</div>

@@ -20,15 +20,18 @@ useHead(() => ({
 const toLinkPage = (_data: any) => {
   window.location.href = `/ophthalmic-information/detail?id=${_data.id}`
 }
+
 const articleList = ref([
   {
     img: '',
     title: [],
+    EnTitle: '',
+    EnAlt: '',
     date: '',
     source: '',
-    doctor:'',
+    doctor: '',
     img_title: '',
-    img_alt: ''
+    img_alt: '',
   },
 ])
 let errorPage = ref(false)
@@ -38,38 +41,44 @@ const getArticleList = async () => {
     text: 'Loading',
     background: 'rgba(0, 0, 0, 0.7)',
   })
-  try{
-  const { data }:any = await useFetch(`https://hkcmereye.com/api.php/list/204`)
-  let res = JSON.parse(data.value)
-  articleList.value = res.data.map((item:any) => {
-    let date = new Date(item.date);
-    let y = date.getFullYear();
-    let MM:any = date.getMonth() + 1;
-    MM = MM < 10 ? ('0' + MM) : MM;
-    let d = date.getDate();
-    return {
-      id: item.id,
-      img: `https://hkcmereye.com${item.ico}`,
-      title: [item.title],
-      date: y+'-'+MM+'-'+d,
-      source: item.ext_paperRecoFrom,
-      doctor: item.ext_paperRecoDoctor,
-      img_title: item.ext_img_title,
-      img_alt: item.ext_img_alt
-    }
-  })
-  }catch{
+  try {
+    const { data }: any = await useFetch(
+      `https://hkcmereye.com/api.php/list/204`
+    )
+    let res = JSON.parse(data.value)
+    articleList.value = res.data.map((item: any) => {
+      let date = new Date(item.date)
+      let y = date.getFullYear()
+      let MM: any = date.getMonth() + 1
+      MM = MM < 10 ? '0' + MM : MM
+      let d = date.getDate()
+
+      return {
+        id: item.id,
+        img: `https://hkcmereye.com${item.ico}`,
+        title: [item.title],
+        EnTitle: item.ext_ext_EnTitle,
+        EnAlt: item.ext_ext_EnAlt,
+        date: y + '-' + MM + '-' + d,
+        source: item.ext_paperRecoFrom,
+        doctor: item.ext_paperRecoDoctor,
+        img_title: item.ext_img_title,
+        img_alt: item.ext_img_alt,
+      }
+    })
+  } catch {
     errorPage.value = true
   }
   loading.close()
 }
 
-onMounted(()=>{
-  setTimeout(()=>{
-    getArticleList()
-  },0)
-})
+onMounted(() => {
 
+  setTimeout(() => {
+    getArticleList()
+  }, 0)
+})
+const locale = useState<string>('locale.setting')
 </script>
 
 <template>
@@ -77,10 +86,24 @@ onMounted(()=>{
     <div class="article">
       <div>
         <div>
-           <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png" 
-          srcset="https://static.cmereye.com/imgs/2023/07/a161f8aa946ba13a.jpg 768w, https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"  
-          title="文章閱讀_文章推薦" alt="一位年輕少女正專注閱讀文章"
-          src="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"/>
+          <img
+            data-cfsrc="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"
+            srcset="
+              https://static.cmereye.com/imgs/2023/07/a161f8aa946ba13a.jpg 768w,
+              https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png
+            "
+            :title="
+              locale == 'en'
+                ? 'Teenagers_Article Reading_Recommended articles'
+                : '文章閱讀_文章推薦'
+            "
+            :alt="
+              locale == 'en'
+                ? 'A young  girl is concentrating on reading articles'
+                : '一位年輕少女正專注閱讀文章'
+            "
+            src="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"
+          />
           <svg
             width="9"
             height="144"
@@ -149,8 +172,18 @@ onMounted(()=>{
         </div>
       </div>
       <div v-if="!errorPage">
-        <div v-for="(item, index) in articleList" :key="index" @click="toLinkPage(item)">
-          <div><img :src="item.img" :alt="item.img_alt" :title="item.img_title" /></div>
+        <div
+          v-for="(item, index) in articleList"
+          :key="index"
+          @click="toLinkPage(item)"
+        >
+          <div>
+            <img
+              :src="item.img"
+              :title="locale === 'en' ? item.EnTitle : item.img_title"
+              :alt="locale === 'en' ? item.EnAlt : item.img_alt"
+            />
+          </div>
           <div>
             <p v-for="(ele, index) in item.title" :key="index">{{ $t(ele) }}</p>
           </div>
@@ -172,7 +205,7 @@ onMounted(()=>{
   </div>
 </template>
 <style lang="scss" scoped>
-.footerMenuPom{
+.footerMenuPom {
   margin-bottom: 50px;
 }
 .article {
@@ -180,9 +213,9 @@ onMounted(()=>{
     margin-top: 122px;
     position: relative;
     padding: 50px 0;
-    &::before{
+    &::before {
       content: '';
-      width: calc((100% - 1490px)/2 + 1400px);
+      width: calc((100% - 1490px) / 2 + 1400px);
       height: 100%;
       position: absolute;
       top: 0;
@@ -288,7 +321,7 @@ onMounted(()=>{
       cursor: pointer;
       & > div:nth-child(1) {
         padding: 0 35px;
-        img{
+        img {
           width: 100%;
         }
       }
@@ -348,85 +381,85 @@ onMounted(()=>{
 @media screen and (max-width: 768px) {
   .article {
     > div:nth-child(1) {
-    margin-top: 78px;
-    padding: 0;
-    &::before{
-      width: calc( 100% - 50px);
-      height: 300px;
-      left: 50px;
-    }
-    & > div:nth-child(1) {
-      & > svg {
-        left: 49%;
-        bottom: -90px;
-        transform: scale(.5);
+      margin-top: 78px;
+      padding: 0;
+      &::before {
+        width: calc(100% - 50px);
+        height: 300px;
+        left: 50px;
       }
-    }
-    & > div:nth-child(2) {
-      top: auto;
-      bottom: 20px;
       & > div:nth-child(1) {
-        font-size: 28px;
-        line-height: 120%;
-        & > div:nth-child(2) {
-          margin-bottom: 20px;
-          & > div:nth-child(1) {
-            font-weight: 600;
-            font-size: 30px;
-            line-height: 100%;
-          }
-          &>div{
-            img{
-              width: 100px;
+        & > svg {
+          left: 49%;
+          bottom: -90px;
+          transform: scale(0.5);
+        }
+      }
+      & > div:nth-child(2) {
+        top: auto;
+        bottom: 20px;
+        & > div:nth-child(1) {
+          font-size: 28px;
+          line-height: 120%;
+          & > div:nth-child(2) {
+            margin-bottom: 20px;
+            & > div:nth-child(1) {
+              font-weight: 600;
+              font-size: 30px;
+              line-height: 100%;
+            }
+            & > div {
+              img {
+                width: 100px;
+              }
             }
           }
         }
-      }
-      & > div:nth-child(2) {
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 160%;
-        & > p:nth-child(2) {
-          font-size: 14px;
-          line-height: 120%;
-          margin-top: 0;
+        & > div:nth-child(2) {
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 160%;
+          & > p:nth-child(2) {
+            font-size: 14px;
+            line-height: 120%;
+            margin-top: 0;
+          }
         }
       }
     }
-  }
-  & > div:nth-child(2) {
-    width: 100%;
-    margin: 100px auto 200px;
-    & > div {
+    & > div:nth-child(2) {
       width: 100%;
-      padding: 20px 0;
-      margin: 0 30px 45px;
-      & > div:nth-child(1) {
-        padding: 0 20px;
-      }
-      & > div:nth-child(2) {
-        padding: 0 20px;
-        font-size: 18px;
-        line-height: 1.6;
-      }
-      & > div:nth-child(3) {
-        font-size: 12px;
-        height: 34px;
-        & > span:nth-child(1) {
-          font-size: 12px;
-          letter-spacing: 0.03em;
+      margin: 100px auto 200px;
+      & > div {
+        width: 100%;
+        padding: 20px 0;
+        margin: 0 30px 45px;
+        & > div:nth-child(1) {
+          padding: 0 20px;
         }
-        & > span:nth-child(2)::before,
-        & > span:nth-child(3)::before {
-          content: '|';
-          padding: 0 8px;
-          display: inline-block;
-          vertical-align: middle;
-          color: #515151;
+        & > div:nth-child(2) {
+          padding: 0 20px;
+          font-size: 18px;
+          line-height: 1.6;
+        }
+        & > div:nth-child(3) {
+          font-size: 12px;
+          height: 34px;
+          & > span:nth-child(1) {
+            font-size: 12px;
+            letter-spacing: 0.03em;
+          }
+          & > span:nth-child(2)::before,
+          & > span:nth-child(3)::before {
+            content: '|';
+            padding: 0 8px;
+            display: inline-block;
+            vertical-align: middle;
+            color: #515151;
+          }
         }
       }
     }
   }
-}
 }
 </style>
