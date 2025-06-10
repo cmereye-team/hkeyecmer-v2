@@ -161,15 +161,20 @@ let testPageSwipers = ref([
     ct: '',
   },
 ])
+
 var list_item: any = list.find((item) => item.id == testId)
-testTitle.value = list_item.title
-list_item.imageUrl.forEach((item: any) => {
-  if (item.ct === null) {
-    item.ct = list_item.ct
-  }
-})
-testPageSwipers.value = list_item.imageUrl || []
+
+  testTitle.value = list_item?.title
+  list_item.imageUrl.forEach((item: any) => {
+    if (item.ct === null) {
+      item.ct = list_item.ct
+    }
+  })
+
+
+  testPageSwipers.value = list_item.imageUrl || []
 let _l = ref(testPageSwipers.value.length - 1)
+
 const toEyesight = () => {
   location.href = '/ophthalmic-information/eyesight'
 }
