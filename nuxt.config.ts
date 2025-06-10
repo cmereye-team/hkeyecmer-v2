@@ -99,9 +99,10 @@ export default defineNuxtConfig({
     layoutTransition: { name: 'layout', mode: 'out-in' },
     head: {
       link: [
+  
         {
           rel: 'stylesheet',
-          href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css',
+          href: 'https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css',
         },
       ],
     },

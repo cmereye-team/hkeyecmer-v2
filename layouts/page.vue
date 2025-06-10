@@ -7,20 +7,15 @@ const PageFooter = resolveComponent('PageFooter')
 const EnNavbar = resolveComponent('EnNavbar')
 const EnNewheader = resolveComponent('EnNewheader')
 const EnFooter = resolveComponent('EnFooter')
-const yahooPageNavbar = resolveComponent('yahooPageNavbar')
-const yahooPageNewheader = resolveComponent('yahooPageNewheader')
-const yahooPageFooter = resolveComponent('yahooPageFooter')
+
 let showEnCon = ref(false)
-let yahooCon = ref(false)
+
 // console.log('当前页',rt.value.path)
 onMounted(() => {
   if (rt.value.path.includes('/en/')) {
     showEnCon.value = true
   }
-  if (rt.value.path.includes('/yahoo/' || '/yahoo')) {
-    console.log('yahoo')
-    yahooCon.value = true
-  }
+
   isWhatNavbar()
   isWhatNewheader()
   isWhatFooter()
@@ -29,11 +24,6 @@ onMounted(() => {
 const isWhatNavbar = () => {
   if (rt.value.path.includes('/en/') || rt.value.path.includes('/en')) {
     return EnNavbar
-  } else if (
-    rt.value.path.includes('/yahoo/') ||
-    rt.value.path.includes('/yahoo')
-  ) {
-    return yahooPageNavbar
   } else {
     return PageNavbar
   }
@@ -41,8 +31,6 @@ const isWhatNavbar = () => {
 const isWhatNewheader = () => {
   if (rt.value.path.includes('/en/')) {
     return EnNewheader
-  } else if (rt.value.path.includes('/yahoo/')) {
-    return yahooPageNewheader
   } else {
     return PageNewheader
   }
@@ -50,8 +38,6 @@ const isWhatNewheader = () => {
 const isWhatFooter = () => {
   if (rt.value.path.includes('/en/') || rt.value.path.includes('/en')) {
     return EnFooter
-  } else if (rt.value.path.includes('/yahoo/') || rt.value.path.includes('/yahoo')) {
-    return yahooPageFooter
   } else {
     return PageFooter
   }
@@ -72,8 +58,8 @@ const isWhatFooter = () => {
       <slot name="footer">
         <!-- <PageFooter /> -->
         <component :is="isWhatFooter()"></component>
-        <yahooPageMbFooter v-if="yahooCon" />
-        <PageMbFooter v-else />
+
+        <PageMbFooter />
       </slot>
     </div>
   </div>

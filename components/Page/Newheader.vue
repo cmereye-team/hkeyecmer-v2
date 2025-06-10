@@ -91,6 +91,12 @@ const menus = computed(() => {
           text: t('pages.medical_service.dazzling_operation'),
           link: { path: '/csp-programme' },
         },
+
+        {
+          type: 'link',
+          text: '白內障關注月',
+          link: { path: '/cataract/cataract-awareness-month' },
+        },
       ],
     },
     {
@@ -235,12 +241,12 @@ const menus = computed(() => {
           text: t('pages.contact_us.appointmentForm'),
           link: { path: '/contact-us/appointmentForm' },
         },
-            {
-      type: 'link',
-      text: t('pages.talent_recruitment.talent_recruitment'),
-      link: { path: '/talent-recruitment' },
-      childMenuList: [],
-    },
+        {
+          type: 'link',
+          text: t('pages.talent_recruitment.talent_recruitment'),
+          link: { path: '/talent-recruitment' },
+          childMenuList: [],
+        },
       ],
     },
   ]

@@ -30,12 +30,7 @@ useHead({
       href: 'https://www.hkeyecmer.com/favicon.ico',
     },
   ],
-  script: [
-    {
-      type: 'text/javascript',
-      src: 'https://statichk.cmermedical.com/publicjs/xuehua.js',
-    },
-  ],
+
 })
 let cookieBoxShow = ref(false)
 const handleSetCookie = () => {
@@ -91,6 +86,10 @@ const flakes = ref<Flake[]>([])
 <style lang="scss">
 body {
   overflow-x: hidden !important;
+}
+
+#snowfall {
+  display: none !important;
 }
 
 ::-webkit-scrollbar {

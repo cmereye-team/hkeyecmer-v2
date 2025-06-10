@@ -87,6 +87,12 @@ let menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.dazzling_operation'),
         route: { name: 'csp-programme' },
       },
+
+      {
+        type: 'link',
+        text: '白內障關注月',
+        route: { path: '/cataract/cataract-awareness-month' },
+      },
     ],
   },
   {
@@ -458,9 +464,11 @@ a {
 }
 .childpage > div,
 .childpage > div > a {
+  color: white;
   width: inherit;
 }
 .navigtion > div > a {
+  color: white;
   width: inherit;
   line-height: 49px;
 }
