@@ -5,7 +5,7 @@ export default defineNuxtPlugin(() => {
       e.preventDefault()
     })
     const triggerDebugger = () => {
-      debugger
+      // debugger
     }
 
     const checkDevTools = () => {

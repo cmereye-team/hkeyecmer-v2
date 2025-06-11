@@ -4,7 +4,7 @@ definePageMeta({
   layout: 'page',
 })
 const route = useRoute()
-let testId: any = route.query.id
+let testId: any = route.query.id || '01'
 
 var w = [
     {
@@ -165,14 +165,14 @@ let testPageSwipers = ref([
 var list_item: any = list.find((item) => item.id == testId)
 
   testTitle.value = list_item?.title
-  list_item.imageUrl.forEach((item: any) => {
+  list_item?.imageUrl.forEach((item: any) => {
     if (item.ct === null) {
       item.ct = list_item.ct
     }
   })
 
 
-  testPageSwipers.value = list_item.imageUrl || []
+  testPageSwipers.value = list_item?.imageUrl || []
 let _l = ref(testPageSwipers.value.length - 1)
 
 const toEyesight = () => {

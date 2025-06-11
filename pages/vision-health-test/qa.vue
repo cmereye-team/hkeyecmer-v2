@@ -3,7 +3,7 @@ definePageMeta({
   layout: 'page',
 })
 const route = useRoute()
-let testId: any = route.query.id
+let testId: any = route.query.id || '06'
 var list = [
   {
     id: '06',
