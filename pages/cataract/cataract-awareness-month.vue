@@ -528,46 +528,6 @@ const meetArr = [
     <section id="video" class="py-5 video-section">
       <div class="container">
         <div class="row align-items-center">
-          <!-- <div
-            id="carouselExampleFade"
-            class="col-lg-6 animated carousel slide carousel-fade"
-            data-bs-ride="carousel"
-            data-bs-interval="3000"
-          >
-            <div class="carousel-inner">
-              <div class="video-bg carousel-item active">
-                <iframe
-                  src="https://www.youtube.com/embed/F5fdrLskDdc?si=LtDK6KFgoIz_BNTR"
-                  frameborder="0"
-                  width="100%"
-                  height="100%"
-                  allowfullscreen
-                >
-                </iframe>
-              </div>
-              <div class="video-bg carousel-item">
-                <iframe
-                  src="https://www.youtube.com/embed/fDo35wPIcBw?si=bQGhAFdkAjNeB0Md"
-                  frameborder="0"
-                  width="100%"
-                  height="100%"
-                  allowfullscreen
-                >
-                </iframe>
-              </div>
-              <div class="video-bg carousel-item">
-                <iframe
-                  src="https://www.youtube.com/embed/8ip-wGoPqmQ?si=zOhre5Vjd_8MKccF"
-                  frameborder="0"
-                  width="100%"
-                  height="100%"
-                  allowfullscreen
-                >
-                </iframe>
-              </div>
-            </div>
-          </div> -->
-
           <Swiper
             class="carouselExampleFade"
             :navigation="true"
@@ -594,15 +554,6 @@ const meetArr = [
                 </iframe>
               </div>
             </SwiperSlide>
-
-            <!-- <button @click="swiper.prev()">
-
-    Prev
-  </button>
-
-  <button @click="swiper.next()">
-    Next
-  </button> -->
           </Swiper>
 
           <div class="col-lg-6 animated fadeInRight fadeIn">
@@ -643,6 +594,9 @@ const meetArr = [
               ></a>
             </div>
           </div>
+
+
+
         </div>
       </div>
     </section>

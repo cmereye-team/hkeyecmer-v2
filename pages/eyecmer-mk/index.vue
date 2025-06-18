@@ -2,79 +2,114 @@
   <div>
     <!-- banner -->
     <div class="head_img text-center">
-        <div class="head_logo" style="display:none">
-            <img src="https://static.cmereye.com/imgs/2022/12/6954cd4c6ffe34ed.png" alt="">
-            
-        </div>
-        <div class="head_title">
-            <!-- <span>希瑪眼科中心</span><br> -->
-            <!-- <span>元朗</span> -->
-        </div>
-        <!-- <img class="head_banner" src="https://static.cmereye.com/imgs/2022/12/fe581626946b7ccf.jpg" alt=""> -->
-        <img class="head_banner" src="https://statichk.cmermedical.com/hkcmereye/MK/MkBanner-pc.avif" alt="">
+      <div class="head_logo" style="display: none">
+        <img
+          src="https://static.cmereye.com/imgs/2022/12/6954cd4c6ffe34ed.png"
+          alt=""
+        />
+      </div>
+      <div class="head_title">
+        <!-- <span>希瑪眼科中心</span><br> -->
+        <!-- <span>元朗</span> -->
+      </div>
+      <!-- <img class="head_banner" src="https://static.cmereye.com/imgs/2022/12/fe581626946b7ccf.jpg" alt=""> -->
+      <img
+        class="head_banner"
+        src="https://statichk.cmermedical.com/hkcmereye/MK/MkBanner-pc.avif"
+        alt=""
+      />
     </div>
 
+    <div>
+      <div class="container">
+        <div
+          class="center_title text-center font-weight-bold text-xs-center cener_title fs-md-34 fs-lg-34 fs-xs-26"
+        >
+          旺角診所地址
+        </div>
 
-   <div>
-        <div class="container">
-            <div
-                class="center_title  text-center font-weight-bold text-xs-center cener_title  fs-md-34  fs-lg-34  fs-xs-26 ">
-                旺角診所地址</div>
+        <div class="textimgbox">
+          <ul class="contentbox">
+            <li><i class="fa-1x fa fa-phone"></i>+852 3956 2025</li>
 
+            <li>
+              <i class="fa-1x fa fa-home"></i
+              >彌敦道625及639號雅蘭中心一期1208室及1725B室（旺角站E1出口）
+            </li>
 
-            <div class="textimgbox">
+            <li class="d-flex">
+              <i class="fa-1x fa fa-calendar pr-2"></i
+              >1208室營業時間：<br />星期一至五：09:30—13:30 / 14:30—19:00
+              <br />
+              星期六：09:30—13:30 <br />（星期日及公眾假期休息）
+            </li>
 
-                <ul class="contentbox
-                ">
+            <li class="d-flex">
+              <i class="fa-1x fa fa-calendar pr-2"></i
+              >1725B室營業時間：<br />星期一至五：09:30—13:30 / 14:30—19:00
+              <br />
+              星期六：09:30—13:30 <br />（星期日及公眾假期休息）
+            </li>
 
-                    <li><i class="fa-1x fa fa-phone"></i>+852 3956 2025</li>
+            <li>
+              <i class="fa-1x fa fa-subway"></i
+              >以下公共交通線路會停靠雅蘭中心附近:<br />
+              巴士：118、287X、33A、795X、87D<br />
+              地鐵：荃灣綫 旺角站、觀塘綫 旺角站、東鐵綫 旺角東站
+            </li>
+            <div class="mt-4">
+              <div class="mt-4">
+                <a
+                  href="https://goo.gl/maps/TpF3b2jWo8crsZTz9"
+                  target="_blank"
+                  class="ui-link"
+                  ><span
+                    ><button class="menuButton">Google地圖</button>
+                  </span></a
+                >
 
-                    <li><i class="fa-1x fa fa-home"></i>彌敦道625及639號雅蘭中心一期1208室及1725B室（旺角站E1出口）
-
-
-                    </li>
-
-                    <li class="d-flex"><i class="fa-1x fa fa-calendar pr-2"></i>1208室營業時間：<br>星期一至五：09:30—13:30 /
-                        14:30—19:00 <br>
-                        星期六：09:30—13:30 <br>（星期日及公眾假期休息）</li>
-
-
-                    <li class="d-flex"><i class="fa-1x fa fa-calendar pr-2"></i>1725B室營業時間：<br>星期一至五：09:30—13:30 /
-                        14:30—19:00 <br>
-                        星期六：09:30—13:30 <br>（星期日及公眾假期休息）</li>
-
-                    <li><i class="fa-1x fa fa-subway"></i>以下公共交通線路會停靠雅蘭中心附近:<br>
-                        巴士：118、287X、33A、795X、87D<br>
-                        地鐵：荃灣綫 旺角站、觀塘綫 旺角站、東鐵綫 旺角東站</li>
-                    <div class="mt-4 ">
-
-                        <div class="mt-4 ">
-                            <a href="https://goo.gl/maps/TpF3b2jWo8crsZTz9" target="_blank"
-                                class="ui-link"><span><button class="menuButton">Google地圖 </button> </span></a>
-
-                            <a href="https://api.whatsapp.com/send?phone=85293451508&text=你好，我想預約" target="_blank"
-                                class="ui-link ga4-clinicappointment ml-5"><span><button
-                                        style="background-color: #ef9e28;" class="menuButton">立即預約</button> </span>
-                            </a>
-
-
-                        </div>
-                        </div>
-
-
-                </ul>
-
-
-                <img src='https://statichk.cmermedical.com/hkcmereye/MK/MkAdress.avif' />
-
+                <a
+                  href="https://api.whatsapp.com/send?phone=85293451508&text=你好，我想預約"
+                  target="_blank"
+                  class="ui-link ga4-clinicappointment ml-5"
+                  ><span
+                    ><button
+                      style="background-color: #ef9e28"
+                      class="menuButton"
+                    >
+                      立即預約
+                    </button>
+                  </span>
+                </a>
+              </div>
             </div>
+          </ul>
 
-
-
+          <!-- <img src='https://statichk.cmermedical.com/hkcmereye/MK/MkAdress.avif' /> -->
+          <div class="imgBox">
+            <swiper
+              :loop="true"
+              :slides-per-view="1"
+              :spaceBetween="20"
+              :autoplay="{ delay: 3000 }"
+              :pagination="{ clickable: true }"
+              :navigation="true"
+              :modules="[Autoplay, Navigation]"
+            >
+              <swiper-slide
+                class=""
+                v-for="(swiperItem, swiperIndex) in clinicSlides"
+                :key="swiperIndex"
+              >
+                <img :src="swiperItem.image" alt="" />
+              </swiper-slide>
+            </swiper>
+          </div>
         </div>
+      </div>
     </div>
 
-   <!-- 中心介绍 -->
+    <!-- 中心介绍 -->
     <div>
       <div class="container">
         <div
@@ -139,8 +174,6 @@
         </div>
       </div>
     </div>
-
-
 
     <!--醫療服務-->
     <div class="background-server">
@@ -393,119 +426,51 @@
       <div
         class="text-center font-weight-bold text-xs-center cener_title fs-md-34 clinic_env fs-lg-34 fs-xs-26"
       >
-        旺角診所環境
+        白內障真實客戶分享
       </div>
-      <!-- <div id="certify" class="pcshow">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img
-                loading="lazy"
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg1.avif"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                loading="lazy"
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg2.avif"
-                alt=""
-              />
-            </div>
-
-            <div class="swiper-slide">
-              <img
-                loading="lazy"
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg3.avif"
-                alt=""
-              />
-            </div>
-
-            <div class="swiper-slide">
-              <img
-                loading="lazy"
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg4.avif"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                loading="lazy"
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg5.avif"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div> -->
-
-      <swiper
+     <swiper
         :loop="true"
-        :slides-per-view="3"
-              :spaceBetween="20"
-        :autoplay="{ delay: 3000 }"
+        :slides-per-view="5"
+        :spaceBetween="0"
+        :autoplay="{
+          delay: 4000,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }"
         :pagination="{ clickable: true }"
-        :modules="[Autoplay]"
+        :navigation="true"
+        :modules="[Autoplay, Navigation, EffectCoverflow]"
+        :effect="'coverflow'"
+        :coverflow-effect="{
+          rotate: 0,
+          stretch: 10,
+          depth: 100,
+          modifier: 2,
+          slideShadows: false,
+        }"
         id="certify"
         class="pcshow"
       >
         <swiper-slide
           class="slideBox swiper-container"
-          v-for="(swiperItem, swiperIndex) in clinicSlides"
+          v-for="(swiperItem, swiperIndex) in eyeCenterImgList"
           :key="swiperIndex"
         >
-          <img :src="swiperItem.image" alt="" />
+          <!-- <img :src="swiperItem.img" alt="" /> -->
+
+          <iframe
+            :src="swiperItem.img"
+            loading="lazy"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </swiper-slide>
       </swiper>
-
-      <!-- <div id="certifyTwo" class="mbshow">
-        <div class="swiper-container swiper-container-cer">
-          <div class="swiper-wrapper">
-  
-            <div class="swiper-slide">
-              <img
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg1.avif"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg2.avif"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg3.avif"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg4.avif"
-                alt=""
-              />
-            </div>
-            <div class="swiper-slide">
-              <img
-                src="https://statichk.cmermedical.com/hkcmereye/TW/TwBg5.avif"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination-cer"></div>
-        <div class="swiper-button-prev-cer"></div>
-        <div class="swiper-button-next-cer"></div>
-      </div> -->
-
       <swiper
         :loop="true"
         :slides-per-view="1"
-              :spaceBetween="20"
+        :spaceBetween="20"
         :autoplay="{ delay: 3000 }"
         :pagination="{ clickable: true }"
         :modules="[Autoplay]"
@@ -514,10 +479,16 @@
       >
         <swiper-slide
           class="slideBox"
-          v-for="(swiperItem, swiperIndex) in clinicSlides"
+          v-for="(swiperItem, swiperIndex) in eyeCenterImgList"
           :key="swiperIndex"
         >
-          <img :src="swiperItem.image" alt="" />
+          <iframe
+            :src="swiperItem.img"
+               loading="lazy"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </swiper-slide>
       </swiper>
     </div>
@@ -532,330 +503,10 @@
         </div>
         <div style="padding: 30px 0">
           <div class="index_bottom_banner pcshow">
-            <!-- <div class="swiper-container swiper-container-friend" id="case4">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2022/12/ed18fa038434cd78.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林順潮醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://statichk.cmermedical.com/HKEYECMER/54154895641564.avif"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李佑榮醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_fk.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 范愷醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/template/default/picture/doctor_hjh.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黃俊華醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/template/default/picture/doctor_lks.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 劉凱珊醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_lwy.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李煒業醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_qjy.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 邱俊源醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/7eaf25af1aed62ba.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李琬微醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_hwj.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 胡偉君醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/template/default/picture/doctor_lsh.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李少雄醫生</a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黎浩樺醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李德倫醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黃禮文醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://static.cmereye.com/imgs/2023/08/423d199fdb161409.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 張瀞之醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林寶生醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林己明醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20201028/1603854608124490.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 張明權醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/static/upload/image/20201028/1603855080360770.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 陳偉樂醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20211018/1634523531823992.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 梁苑珊醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20220406/1649211019454510.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 鄒樞韻醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="		https://www.hkcmereye.com/static/upload/image/20220408/1649380369273990.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 尹浩柟醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20220408/1649380438451221.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 鄒樂韻醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/7dce7444c1c14da4.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 陳鼎鼐醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240528/1716881356882191.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 熊健慧醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240802/1722560007196049.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 高德全醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240902/1725240859365715.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 吳兆駿醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev">
-              <img
-                src="https://static.cmereye.com/imgs/2022/12/05ca2b06f750608f.png"
-                alt=""
-              />
-            </div>
-            <div class="swiper-button-next">
-              <img
-                src="https://static.cmereye.com/imgs/2022/12/bdeac20e23a3fdef.png"
-                alt=""
-              />
-            </div> -->
             <swiper
               :loop="true"
               :slides-per-view="4"
-                  :spaceBetween="20"
+              :spaceBetween="20"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :modules="[Autoplay]"
@@ -877,334 +528,10 @@
             </swiper>
           </div>
           <div class="index_bottom_banner mbshow">
-            <!-- <div
-              class="swiper-container swiper-container-friend swiper-container-mb"
-              id="case4"
-            >
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2022/12/ed18fa038434cd78.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林順潮醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://statichk.cmermedical.com/HKEYECMER/54154895641564.avif"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李佑榮醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_fk.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 范愷醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/template/default/picture/doctor_hjh.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黃俊華醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/template/default/picture/doctor_lks.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 劉凱珊醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_lwy.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李煒業醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_qjy.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 邱俊源醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/7eaf25af1aed62ba.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李琬微醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_hwj.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 胡偉君醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/template/default/picture/doctor_lsh.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李少雄醫生</a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黎浩樺醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李德倫醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黃禮文醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://static.cmereye.com/imgs/2023/08/423d199fdb161409.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 張瀞之醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林寶生醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林己明醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20201028/1603854608124490.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 張明權醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/static/upload/image/20201028/1603855080360770.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 陳偉樂醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20211018/1634523531823992.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 梁苑珊醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20220406/1649211019454510.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 鄒樞韻醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="		https://www.hkcmereye.com/static/upload/image/20220408/1649380369273990.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 尹浩柟醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20220408/1649380438451221.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 鄒樂韻醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/7dce7444c1c14da4.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 陳鼎鼐醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240528/1716881356882191.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 熊健慧醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240802/1722560007196049.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 高德全醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240902/1725240859365715.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 吳兆駿醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev">
-              <img
-                src="https://static.cmereye.com/imgs/2022/12/05ca2b06f750608f.png"
-                alt=""
-              />
-            </div>
-            <div class="swiper-button-next">
-              <img
-                src="https://static.cmereye.com/imgs/2022/12/bdeac20e23a3fdef.png"
-                alt=""
-              />
-            </div> -->
-
             <swiper
               :loop="true"
               :slides-per-view="1"
-                    :spaceBetween="20"
+              :spaceBetween="20"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :modules="[Autoplay]"
@@ -1294,96 +621,19 @@
                   alt=""
                 />
               </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/4f7d7c0523b8eda5.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/8c82c0b018270d7c.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
+                                <div class="item1">
                 <img
                   src="https://static.cmereye.com/imgs/2022/12/ed1709b111c3cf55.png"
                   alt=""
                 />
               </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/35302f36b3687320.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/bf5e84f2da957609.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/32788fa8550052da.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
+                   <div class="item1">
                 <img
                   src="https://static.cmereye.com/imgs/2022/12/49b6a12e9ed5126f.png"
                   alt=""
                 />
               </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
+             
             </div>
           </div>
         </div>
@@ -1392,14 +642,14 @@
   </div>
 </template>
 <script   lang="ts" setup>
-import { Pagination, Autoplay } from 'swiper'
+import { Pagination, Autoplay, Navigation,EffectCoverflow} from 'swiper'
 
 definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
 useHead(() => ({
-  title: "希瑪眼科中心｜旺角眼科診所",
+  title: '希瑪眼科中心｜旺角眼科診所',
   meta() {
     return [
       {
@@ -1414,7 +664,33 @@ useHead(() => ({
   },
 }))
 const locale = useState<string>('locale.setting')
+const eyeCenterImgList = [
+  {
+    img: 'https://www.youtube.com/embed/fDo35wPIcBw?si=bQGhAFdkAjNeB0Md',
+  },
+  {
+    img: 'https://www.youtube.com/embed/8ip-wGoPqmQ?si=zOhre5Vjd_8MKccF',
+  },
+  {
+    img: 'https://www.youtube.com/embed/h6H16bsZRAE?si=m93oEuGAIpV4ZNcV',
+  },
+  {
+    img: 'https://www.youtube.com/embed/zbYpdLZtL0c?si=Ut5Rfau6oLzqxpFZ',
+  },
+  {
+    img: 'https://www.youtube.com/embed/Jt0fmKmfiIU?si=0KDi84kmkTi3gZnG',
+  },
 
+  {
+    img: 'https://www.youtube.com/embed/F5fdrLskDdc?si=LtDK6KFgoIz_BNTR',
+  },
+  {
+    img: 'https://www.youtube.com/embed/Ds5NBkrQLXo?si=dUeT3ar_Q5zEp0Rl',
+  },
+  {
+    img: 'https://www.youtube.com/embed/0Hscxb-v_Ig?si=w3A2HNYwNtygA72K',
+  },
+]
 // 诊所环境轮播图数据
 const clinicSlides = [
   {
@@ -1608,52 +884,88 @@ const teamSlides = [
     left: -26px !important;
   }
 
-  /* 客户评分  start */
-  .person_box {
-    background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png)
-      no-repeat;
-    background-size: 100% 100%;
-    height: 1500px;
+  .imgBox {
     position: relative;
+    width: 500px;
+    height: auto;
   }
 
-  .pingfen_list {
-    background-color: #ffffff;
-    height: 90%;
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    overflow: scroll;
+  .imgBox .swiper-container {
+    width: 100%;
   }
 
-  .pingfen_list img {
-    max-width: 100%;
+  .textimgbox .imgBox img {
+    width: 100%;
   }
 
-  .pingfen_list .item1 {
-    /*width: calc(100% / 4);*/
-    display: inline-block;
-    height: 100%;
-    padding: 7px;
+  .imgBox .swiper-button-next::after,
+  .imgBox .swiper-button-prev::after {
+    content: 'none';
   }
 
-  .pingfen {
-    background-color: #dee6fb;
-    border-radius: 20px;
-    width: 1200px;
-    height: 1070px;
-    /* padding-top: 39px; */
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    margin-top: 187px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+  .imgBox .swiper-button-next {
+    background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
+      no-repeat !important;
+    background-size: 80% !important;
   }
+
+  .imgBox .swiper-button-prev {
+    left: -47px !important;
+    background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
+      no-repeat !important;
+    background-size: 80% !important;
+  }
+
+  /* 客户评分  start */
+    .person_box {
+                background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png) no-repeat;
+                background-size: 100% 100%;
+                height: 1000px;
+                position: relative;
+            }
+
+            .pingfen_list {
+                grid-gap: 10px;
+                margin: 50px 0;
+                border-radius: 10px;
+                background-color: #fff;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 0fr;
+                overflow: hidden;
+                width: 90%;
+            }
+
+            .pingfen_list img {
+                max-width: 100%;
+            }
+
+            .pingfen_list .item1 {
+                /*width: calc(100% / 4);*/
+                display: inline-block;
+                height: 100%;
+                padding: 7px;
+            }
+
+            .pingfen {
+                background-color: #dee6fb;
+                border-radius: 20px;
+                width: 1200px;
+                height: fit-content;
+                /* padding-top: 39px; */
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto;
+                /* margin-top: 187px; */
+                top: 50%;
+                transform: translateY(-50%);
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+            }
+
 
   /* 客户评分  end */
   /* 朗眼科診所環境 start */
@@ -1692,9 +1004,14 @@ const teamSlides = [
     padding-top: 60px;
   }
 
-  #certify .swiper-slide img {
-    width: 410px;
+  #certify .swiper-slide {
+    overflow: visible;
+  }
+  #certify .swiper-slide img,
+  #certify .swiper-slide iframe {
+    width: 500px;
     height: 333px;
+    flex-shrink: 0;
   }
 
   .bg-partTwo {
@@ -1706,7 +1023,7 @@ const teamSlides = [
   /* 眼科服务 start */
   .service_box .service_item .service_hover .service_txt p {
     /*padding-top: 2rem;*/
-        margin-top:1rem ;
+    margin-top: 1rem;
   }
 
   .service_box .service_item .service_pic {
@@ -1716,8 +1033,8 @@ const teamSlides = [
   .service_box .service_item .service_pic img {
     max-width: 137px !important;
     margin-top: 16px;
-   margin-left: auto;
-   margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .background-server {
@@ -1755,7 +1072,7 @@ const teamSlides = [
 		/* 中心介绍  star*/
   .cener_title {
     color: #1b407a;
-    margin-top: 100px;
+    // margin-top: 100px;
     position: relative;
   }
 
@@ -1883,6 +1200,16 @@ const teamSlides = [
     margin-top: 29px;
   }
 
+  .imgBox {
+    width: 100%;
+    position: relative;
+  }
+
+  .imgBox .swiper-button-next::after,
+  .imgBox .swiper-button-prev::after {
+    content: '';
+  }
+
   /*头部banner start  */
   .head_logo {
     padding: unset;
@@ -1981,7 +1308,12 @@ const teamSlides = [
   /*中心介绍 end*/
   /* 朗眼科診所環境 start */
   #certifyTwo {
-    margin-top: 54px !important;
+    // margin-top: 54px !important;
+      padding-bottom: 20%;
+  }
+  #certifyTwo iframe{
+    width: 100%;
+    height: 320px;
   }
 
   .clinic_env {
@@ -2050,7 +1382,6 @@ const teamSlides = [
   #certifyTwo .swiper-slide-prev {
     transform: translateY(10%) scale(0.7);
     z-index: 1;
-
   }
 
   .bg-partTwo {
@@ -2203,5 +1534,172 @@ ul.contentbox li i {
 
 .textimgbox img {
   width: 45%;
+}
+
+section {
+  font-size: 16px;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #2958a3;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+  background-color: #2958a3;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 87, 146, 0.3);
+}
+
+.highlight {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 209, 102, 0.2),
+    rgba(255, 209, 102, 0.4)
+  );
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #29c384;
+  font-weight: 500;
+}
+
+.highlight-box {
+  background-color: rgba(0, 187, 240, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #2958a3;
+}
+
+.highlight-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2958a3;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.highlight-text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.section-title {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: #29c384;
+}
+
+.section-title.text-center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 991px) {
+  .section-title {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 1.7rem;
+  }
+}
+
+.carouselExampleFade {
+  padding: 0;
+  margin-bottom: 2rem;
+  height: 200px;
+  border-radius: 15px;
+}
+.eyeList {
+  height: -webkit-fill-available;
+}
+
+@media screen and (min-width: 768px) {
+  .carouselExampleFade {
+    max-width: 546px;
+    height: 350px;
+    border-radius: 15px;
+  }
+
+  .eyeList {
+    height: -webkit-fill-available;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carouselExampleFade .swiper-pagination {
+    bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carouselExampleFade .swiper-pagination {
+    bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  :deep(.carouselExampleFade .swiper-button-next) {
+    right: 20px;
+  }
+  :deep(.carouselExampleFade .swiper-button-prev) {
+    left: 20px;
+  }
+
+  :deep(.carouselExampleFade .swiper-button-prev:after) {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    padding-top: 8px;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    flex-shrink: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  :deep(.carouselExampleFade .swiper-button-next::after) {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    padding-top: 8px;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    flex-shrink: 0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 </style>
