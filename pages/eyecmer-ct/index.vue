@@ -8,8 +8,7 @@
           alt=""
         />
       </div>
-      <div class="head_title">
-      </div>
+      <div class="head_title"></div>
       <img
         class="head_banner"
         src="https://static.cmereye.com/imgs/2023/08/02de40e5cd704ccc.avif"
@@ -74,9 +73,9 @@
           /> -->
           <div class="imgBox">
             <swiper
-              :loop="true"
-              :slides-per-view="3"
-              :spaceBetween="20"
+              :loop="false"
+              :slides-per-view="1"
+              :spaceBetween="0"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :navigation="true"
@@ -139,8 +138,8 @@
           <div class="imgBox">
             <swiper
               :loop="true"
-              :slides-per-view="3"
-              :spaceBetween="20"
+              :slides-per-view="1"
+              :spaceBetween="0"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :navigation="true"
@@ -476,11 +475,12 @@
       <div
         class="text-center font-weight-bold text-xs-center cener_title fs-md-34 clinic_env fs-lg-34 fs-xs-26"
       >
-        白內障真實客戶分享
+        真實客戶分享
       </div>
-   <swiper
+
+      <swiper
         :loop="true"
-        :slides-per-view="5"
+        :centered-slides="true"
         :spaceBetween="0"
         :autoplay="{
           delay: 4000,
@@ -493,8 +493,8 @@
         :effect="'coverflow'"
         :coverflow-effect="{
           rotate: 0,
-          stretch: 10,
-          depth: 100,
+          stretch: 300,
+          depth: 210,
           modifier: 2,
           slideShadows: false,
         }"
@@ -506,8 +506,6 @@
           v-for="(swiperItem, swiperIndex) in eyeCenterImgList"
           :key="swiperIndex"
         >
-          <!-- <img :src="swiperItem.img" alt="" /> -->
-
           <iframe
             :src="swiperItem.img"
             loading="lazy"
@@ -519,11 +517,12 @@
       </swiper>
       <swiper
         :loop="true"
-           :slides-per-view="5"
+        :slides-per-view="1"
         :spaceBetween="0"
         :autoplay="{ delay: 3000 }"
         :pagination="{ clickable: true }"
-        :modules="[Autoplay]"
+          :navigation="true"
+        :modules="[Autoplay, Navigation]"
         id="certifyTwo"
         class="mbshow"
       >
@@ -534,7 +533,7 @@
         >
           <iframe
             :src="swiperItem.img"
-             loading="lazy"
+            loading="lazy"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -1258,132 +1257,60 @@
         客戶評分
       </div>
       <div class="person_box">
-        <div class="container">
+      <div class="container">
           <div class="pingfen">
             <div class="pingfen_list">
               <div class="item1">
                 <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/01.jpg"
+                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
                   alt=""
                 />
               </div>
               <div class="item1">
                 <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/02.jpg"
+                  src="https://static.cmereye.com/imgs/2022/12/4f7d7c0523b8eda5.png"
                   alt=""
                 />
               </div>
               <div class="item1">
                 <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/03.jpg"
+                  src="https://static.cmereye.com/imgs/2022/12/8c82c0b018270d7c.png"
                   alt=""
                 />
               </div>
               <div class="item1">
                 <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/04.jpg"
+                  src="https://static.cmereye.com/imgs/2022/12/ed1709b111c3cf55.png"
                   alt=""
                 />
               </div>
               <div class="item1">
                 <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/05.jpg"
+                  src="https://static.cmereye.com/imgs/2022/12/35302f36b3687320.png"
                   alt=""
                 />
               </div>
               <div class="item1">
                 <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/06.jpg"
+                  src="https://static.cmereye.com/imgs/2022/12/bf5e84f2da957609.png"
                   alt=""
                 />
               </div>
               <div class="item1">
                 <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/07.jpg"
+                  src="https://static.cmereye.com/imgs/2022/12/32788fa8550052da.png"
                   alt=""
                 />
               </div>
               <div class="item1">
                 <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/08.jpg"
+                  src="https://static.cmereye.com/imgs/2022/12/49b6a12e9ed5126f.png"
                   alt=""
                 />
               </div>
               <div class="item1">
                 <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/09.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/10.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/11.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/12.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/13.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/14.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/15.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/16.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/17.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/18.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/19.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/20.jpg"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/static/hkcmereye/imgs/21.jpg"
+                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
                   alt=""
                 />
               </div>
@@ -1399,6 +1326,7 @@
                   alt=""
                 />
               </div>
+             
             </div>
           </div>
         </div>
@@ -1407,7 +1335,7 @@
   </div>
 </template>
 <script   lang="ts" setup>
-import { Pagination, Autoplay, Navigation,EffectCoverflow} from 'swiper'
+import { Pagination, Autoplay, Navigation, EffectCoverflow } from 'swiper'
 
 definePageMeta({
   layout: 'page',
@@ -1459,31 +1387,31 @@ const eyeCenterImgList = [
 // 诊所环境轮播图数据
 const clinicSlides = [
   {
-    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/1.avif',
+    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/01.avif',
     alt: 'TwBg1',
   },
   {
-    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/2.avif',
+    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/02.avif',
     alt: 'TwBg2',
   },
   {
-    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/3.avif',
+    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/03.avif',
     alt: 'TwBg3',
-  }
+  },
 ]
 const clinicSlidesTwo = [
   {
-    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/4.avif',
+    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/04.avif',
     alt: 'TwBg1',
   },
   {
-    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/5.avif',
+    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/05.avif',
     alt: 'TwBg2',
   },
   {
-    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/6.avif',
+    image: 'https://statichk.cmermedical.com/hkcmereye/zhAd/06.avif',
     alt: 'TwBg3',
-  }
+  },
 ]
 
 // 医疗团队轮播图数据
@@ -1657,7 +1585,7 @@ const teamSlides = [
 
   .imgBox {
     position: relative;
-    width: 518px;
+    width: 500px;
     height: auto;
   }
 
@@ -1688,79 +1616,129 @@ const teamSlides = [
   }
 
   /* 客户评分  start */
-     .person_box {
-                background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png) no-repeat;
-                background-size: 100% 100%;
-                height: 1000px;
-                position: relative;
-            }
+  .person_box {
+    background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png)
+      no-repeat;
+    background-size: 100% 100%;
+    height: 1000px;
+    position: relative;
+  }
 
-            .pingfen_list {
-                grid-gap: 10px;
-                margin: 50px 0;
-                border-radius: 10px;
-                background-color: #fff;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 0fr;
-                overflow: hidden;
-                width: 90%;
-            }
+  .pingfen_list {
+    grid-gap: 10px;
+    margin: 50px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0fr;
+    overflow: hidden;
+    width: 90%;
+  }
 
-            .pingfen_list img {
-                max-width: 100%;
-            }
+  .pingfen_list img {
+    max-width: 100%;
+  }
 
-            .pingfen_list .item1 {
-                /*width: calc(100% / 4);*/
-                display: inline-block;
-                height: 100%;
-                padding: 7px;
-            }
+  .pingfen_list .item1 {
+    /*width: calc(100% / 4);*/
+    display: inline-block;
+    height: 100%;
+    padding: 7px;
+  }
 
-            .pingfen {
-                background-color: #dee6fb;
-                border-radius: 20px;
-                width: 1200px;
-                height: fit-content;
-                /* padding-top: 39px; */
-                position: absolute;
-                left: 0;
-                right: 0;
-                margin: auto;
-                /* margin-top: 187px; */
-                top: 50%;
-                transform: translateY(-50%);
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
-
-            }
+  .pingfen {
+    background-color: #dee6fb;
+    border-radius: 20px;
+    width: 1200px;
+    height: fit-content;
+    /* padding-top: 39px; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* margin-top: 187px; */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
 
   /* 客户评分  end */
+
+  .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  /* 自定义导航按钮样式 */
   /* 朗眼科診所環境 start */
   #certify {
     margin-top: 54px !important;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .clinic_env {
     color: #ffffff !important;
     margin-top: 0 !important;
   }
-
-  #certify .swiper-button-next {
-    background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
-      no-repeat !important;
-    background-size: 49% !important;
-    /* width: auto !important; */
+  :deep(#certify .swiper-button-prev) {
+    left: 30px;
+  }
+  :deep(#certify .swiper-button-next) {
+    right: 30px;
+  }
+  :deep(#certify .swiper-button-next::after) {
+    background: rgba(6, 178, 201, 0.4);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    flex-shrink: 0;
+  }
+  :deep(#certify .swiper-button-prev::after) {
+ background: rgba(6, 178, 201, 0.4);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    flex-shrink: 0;
   }
 
-  #certify .swiper-button-prev {
-    background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
-      no-repeat !important;
-    background-size: 49% !important;
-    /* width: auto !important; */
-  }
+  //  :deep(#certify .swiper-button-next)  {
+
+  //     background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
+  //       no-repeat !important;
+  //     background-size: 49% !important;
+  //     /* width: auto !important; */
+  //   }
+
+  //  :deep(#certify .swiper-button-prev){
+  //     background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
+  //       no-repeat !important;
+  //     background-size: 49% !important;
+  //     /* width: auto !important; */
+  //   }
 
   #certify .swiper-slide {
     background: unset !important;
@@ -1842,7 +1820,7 @@ const teamSlides = [
 		/* 中心介绍  star*/
   .cener_title {
     color: #1b407a;
-    // margin-top: 100px;
+   margin-top: 100px;
     position: relative;
   }
 
@@ -2077,33 +2055,61 @@ const teamSlides = [
 
   /*中心介绍 end*/
   /* 朗眼科診所環境 start */
-  #certifyTwo {
-    // margin-top: 54px !important;
-      padding-bottom: 20%;
-  }
-  #certifyTwo iframe{
-    width: 100%;
-    height: 320px;
-  }
+   #certifyTwo {
+                margin-top: 54px !important;
+                position: relative;
+            }
 
-  .clinic_env {
-    color: #ffffff !important;
-    margin-top: 0 !important;
-  }
+            .clinic_env {
+                color: #ffffff !important;
+                margin-top: 0 !important;
 
-  #certifyTwo .swiper-button-next {
+            }
+ :deep( #certifyTwo .swiper-button-next::after){
+  content: "none";
+ }
+  :deep( #certifyTwo .swiper-button-prev::after){
+  content: "none";
+ }
+ :deep( #certifyTwo .swiper-button-next) {
+
+    right: 10px;
     background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
       no-repeat !important;
     background-size: 49% !important;
-    /* width: auto !important; */
   }
 
-  #certifyTwo .swiper-button-prev {
+ :deep(#certifyTwo .swiper-button-prev ) {
+
+    left: 20px;
     background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
       no-repeat !important;
     background-size: 49% !important;
-    /* width: auto !important; */
   }
+
+
+
+            #certifyTwo .swiper-slide {
+                background: unset !important;
+                box-shadow: unset !important;
+                height: auto;
+                /* width: 240px !important; */
+            }
+
+            #certifyTwo .swiper-slide img {
+                width: 100%;
+                height: auto;
+            }
+
+            #certifyTwo .swiper-slide iframe {
+                /* width: 290px;
+                height: 200px; */
+                width: 74.35vw;
+                height: 51.28vw;
+                margin: 0 auto;
+                display: block;
+
+            }
 
   // #certifyTwo .swiper-slide {
   //   background: unset !important;
@@ -2150,7 +2156,7 @@ const teamSlides = [
 
   #certifyTwo .swiper-slide-active,
   #certifyTwo .swiper-slide-prev {
-    transform: translateY(10%) scale(0.7);
+    // transform: translateY(10%) scale(0.7);
     z-index: 1;
   }
 

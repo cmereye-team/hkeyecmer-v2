@@ -418,12 +418,12 @@
       <div
         class="text-center font-weight-bold text-xs-center cener_title fs-md-34 clinic_env fs-lg-34 fs-xs-26"
       >
-        白內障真實客戶分享
+        真實客戶分享
       </div>
 
- <swiper
-        :loop="true"
-        :slides-per-view="5"
+    <swiper
+        :loop="false"
+        :centered-slides="true"
         :spaceBetween="0"
         :autoplay="{
           delay: 4000,
@@ -436,8 +436,8 @@
         :effect="'coverflow'"
         :coverflow-effect="{
           rotate: 0,
-          stretch: 10,
-          depth: 100,
+          stretch: 300,
+          depth: 210,
           modifier: 2,
           slideShadows: false,
         }"
@@ -449,8 +449,6 @@
           v-for="(swiperItem, swiperIndex) in eyeCenterImgList"
           :key="swiperIndex"
         >
-          <!-- <img :src="swiperItem.img" alt="" /> -->
-
           <iframe
             :src="swiperItem.img"
             loading="lazy"
@@ -469,7 +467,8 @@
         :spaceBetween="20"
         :autoplay="{ delay: 3000 }"
         :pagination="{ clickable: true }"
-        :modules="[Autoplay]"
+          :navigation="true"
+        :modules="[Autoplay, Navigation]"
         id="certifyTwo"
         class="mbshow"
       >
@@ -1620,27 +1619,67 @@ const teamSlides = [
   /* 朗眼科診所環境 start */
   #certify {
     margin-top: 54px !important;
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
   .clinic_env {
     color: #ffffff !important;
     margin-top: 0 !important;
   }
-
-  #certify .swiper-button-next {
-    background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
-      no-repeat !important;
-    background-size: 49% !important;
-    /* width: auto !important; */
+  :deep(#certify .swiper-button-prev) {
+    left: 30px;
+  }
+  :deep(#certify .swiper-button-next) {
+    right: 30px;
+  }
+  :deep(#certify .swiper-button-next::after) {
+    background: rgba(6, 178, 201, 0.4);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    flex-shrink: 0;
+  }
+  :deep(#certify .swiper-button-prev::after) {
+ background: rgba(6, 178, 201, 0.4);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+    flex-shrink: 0;
   }
 
-  #certify .swiper-button-prev {
-    background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
-      no-repeat !important;
-    background-size: 49% !important;
-    /* width: auto !important; */
-  }
+  //  :deep(#certify .swiper-button-next)  {
 
+  //     background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
+  //       no-repeat !important;
+  //     background-size: 49% !important;
+  //     /* width: auto !important; */
+  //   }
+
+  //  :deep(#certify .swiper-button-prev){
+  //     background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
+  //       no-repeat !important;
+  //     background-size: 49% !important;
+  //     /* width: auto !important; */
+  //   }
   #certify .swiper-slide {
     background: unset !important;
     box-shadow: unset !important;
@@ -1720,7 +1759,7 @@ const teamSlides = [
 		/* 中心介绍  star*/
   .cener_title {
     color: #1b407a;
-    // margin-top: 100px;
+     margin-top: 100px;
     position: relative;
   }
 
@@ -1955,33 +1994,62 @@ const teamSlides = [
 
   /*中心介绍 end*/
   /* 朗眼科診所環境 start */
-  #certifyTwo {
-    // margin-top: 54px !important;
-      padding-bottom: 20%;
-  }
-  #certifyTwo iframe{
-    width: 100%;
-    height: 320px;
-  }
+    #certifyTwo {
+                margin-top: 54px !important;
+                position: relative;
+            }
 
-  .clinic_env {
-    color: #ffffff !important;
-    margin-top: 0 !important;
-  }
+            .clinic_env {
+                color: #ffffff !important;
+                margin-top: 0 !important;
 
-  #certifyTwo .swiper-button-next {
+            }
+
+      :deep( #certifyTwo .swiper-button-next::after){
+  content: "none";
+ }
+  :deep( #certifyTwo .swiper-button-prev::after){
+  content: "none";
+ }
+ :deep( #certifyTwo .swiper-button-next) {
+
+    right: 10px;
     background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
       no-repeat !important;
     background-size: 49% !important;
-    /* width: auto !important; */
   }
 
-  #certifyTwo .swiper-button-prev {
+ :deep(#certifyTwo .swiper-button-prev ) {
+
+    left: 20px;
     background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
       no-repeat !important;
     background-size: 49% !important;
-    /* width: auto !important; */
   }
+
+
+
+            #certifyTwo .swiper-slide {
+                background: unset !important;
+                box-shadow: unset !important;
+                height: auto;
+                /* width: 240px !important; */
+            }
+
+            #certifyTwo .swiper-slide img {
+                width: 100%;
+                height: auto;
+            }
+
+            #certifyTwo .swiper-slide iframe {
+                /* width: 290px;
+                height: 200px; */
+                width: 74.35vw;
+                height: 51.28vw;
+                margin: 0 auto;
+                display: block;
+
+            }
 
   // #certifyTwo .swiper-slide {
   //   background: unset !important;
@@ -2028,7 +2096,7 @@ const teamSlides = [
 
   #certifyTwo .swiper-slide-active,
   #certifyTwo .swiper-slide-prev {
-    transform: translateY(10%) scale(0.7);
+    // transform: translateY(10%) scale(0.7);
     z-index: 1;
   }
 

@@ -12,7 +12,7 @@
     "build": "nuxt build",
     "dev": "nuxt dev --p 3009",  
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
+    "pre view": "nuxt preview",
     "start": "node .output/server/index.mjs",
     "serve": "serve dist/",
     "postinstall": "husky install",
