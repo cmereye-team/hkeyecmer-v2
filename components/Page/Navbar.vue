@@ -88,11 +88,11 @@ let menus = computed((): IMenuItem[] => [
         route: { name: 'csp-programme' },
       },
 
-      {
-        type: 'link',
-        text: '白內障關注月',
-        route: { path: '/cataract/cataract-awareness-month' },
-      },
+      // {
+      //   type: 'link',
+      //   text: '白內障關注月',
+      //   route: { path: '/cataract/cataract-awareness-month' },
+      // },
     ],
   },
   {

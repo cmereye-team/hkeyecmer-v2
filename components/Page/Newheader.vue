@@ -92,11 +92,11 @@ const menus = computed(() => {
           link: { path: '/csp-programme' },
         },
 
-        {
-          type: 'link',
-          text: '白內障關注月',
-          link: { path: '/cataract/cataract-awareness-month' },
-        },
+        // {
+        //   type: 'link',
+        //   text: '白內障關注月',
+        //   link: { path: '/cataract/cataract-awareness-month' },
+        // },
       ],
     },
     {
