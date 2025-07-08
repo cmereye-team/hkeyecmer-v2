@@ -3,9 +3,12 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
 useHead(() => ({
-  title: `${t('pages.talent_recruitment.talent_recruitment')}｜${t('pages.index.title')}`,
-  meta(){
+  title: `${t('pages.talent_recruitment.talent_recruitment')}｜${t(
+    'pages.index.title'
+  )}`,
+  meta() {
     return [
       {
         hid: 'talentDesc',
@@ -16,7 +19,7 @@ useHead(() => ({
         hid: 'talentKey',
         name: 'keywords',
         content: t('tdk.talent-recruitment.key'),
-      }
+      },
     ]
   },
 }))
@@ -28,7 +31,12 @@ useHead(() => ({
       <div>
         <img
           src="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"
-          title="醫護團隊" alt="醫護團隊享受廣闊視野"
+          :title="locale === 'en' ? 'Medical Team' : `醫護團隊`"
+          :alt="
+            locale === 'en'
+              ? 'The medical team enjoys a broad and inspiring vision'
+              : '醫護團隊享受廣闊視野'
+          "
         />
       </div>
       <div>
@@ -82,15 +90,30 @@ useHead(() => ({
       <div class="imgBox">
         <img
           src="https://static.cmereye.com/imgs/2023/02/833b5617b3c72216.png"
-          title="驗眼服務" alt="一位年輕女生遮蓋單眼享受驗眼服務"
+          :title="locale === 'en' ? 'Eye Examination' : `驗眼服務`"
+          :alt="
+            locale === 'en'
+              ? 'A young woman covers one eye while enjoying a professional eye examination'
+              : '一位年輕女生遮蓋單眼享受驗眼服務'
+          "
           class="right1"
         />
         <img
           src="https://static.cmereye.com/imgs/2023/02/f7e9031c1b6f047d.png"
-          title="醫護團隊" alt="醫護團隊微笑展望未來"
+          :title="locale === 'en' ? 'Medical Team' : `醫護團隊`"
+          :alt="
+            locale === 'en'
+              ? 'The medical team looks forward to a bright future'
+              : '醫護團隊微笑展望未來'
+          "
           class="right2"
         />
-        <img class="right3" src="https://statichk.cmermedical.com/hkcmereye/16546546544.avif" title="希瑪眼科中心_開心工作間2022" alt="希瑪眼科中心_開心工作間2022標章">
+        <img
+          class="right3"
+          src="https://statichk.cmermedical.com/hkcmereye/16546546544.avif"
+          title="希瑪眼科中心_開心工作間2022"
+          alt="希瑪眼科中心_開心工作間2022標章"
+        />
       </div>
     </div>
     <PageFooterMenu />
@@ -104,11 +127,11 @@ useHead(() => ({
     display: flex;
     flex-direction: column;
     position: relative;
-    &::before{
+    &::before {
       content: '';
       top: 56px;
       left: 0;
-      width: calc((100vw - 1080px)/2 + 800px);
+      width: calc((100vw - 1080px) / 2 + 800px);
       position: absolute;
       background: #f1f1f1;
       height: 880px;
@@ -139,7 +162,7 @@ useHead(() => ({
         font-size: 55px;
         color: #fff;
         margin-bottom: 30px;
-         display: inline-block;
+        display: inline-block;
       }
     }
 
@@ -210,7 +233,7 @@ useHead(() => ({
 @media screen and (max-width: 768px) {
   .careers {
     & > div:nth-child(1) {
-      &::before{
+      &::before {
         width: calc(100% - 30px);
         height: 290px;
       }
@@ -222,24 +245,24 @@ useHead(() => ({
         transform: none;
         width: calc(100% - 60px);
         bottom: 90px;
-        &>p{
+        & > p {
           font-size: 30px;
           margin-bottom: 0;
           filter: drop-shadow(2px 2px 1px #515151);
         }
-        img{
+        img {
           width: 100%;
           margin-top: -10px;
         }
       }
-      & > svg{
+      & > svg {
         display: none;
       }
     }
   }
   .mianConten {
     flex-direction: column;
-    .imgBox{
+    .imgBox {
       width: calc(100% - 60px);
       margin: 130px auto 0;
       height: 180px;
@@ -258,22 +281,22 @@ useHead(() => ({
       }
     }
   }
-  .desBox{  
+  .desBox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin: 20px auto;
-    h1{
+    h1 {
       font-size: 26px;
       margin-bottom: 20px;
     }
-    p{
+    p {
       font-size: 16px;
       line-height: 250%;
     }
-    a{
+    a {
       font-size: 20px;
       padding: 10px 20px;
       margin-top: 30px;
