@@ -120,6 +120,11 @@ const menuLists = computed(() => [
         icon: 'https://static.cmereye.com/imgs/2023/07/4ed161ebeea271cd.png',
         link: 'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
       },
+      {
+        name: '(Whatsapp)白內障專線：60629611',
+        icon: 'https://static.cmereye.com/imgs/2023/07/4ed161ebeea271cd.png',
+        link: 'https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢',
+      },
       // {
       //   name: 'SMILE專線: (852) 6730 8554',
       //   icon: 'https://static.cmereye.com/imgs/2023/07/e4927ce3113f0a5d.png',

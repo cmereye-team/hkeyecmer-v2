@@ -304,76 +304,7 @@ pages:
       awards_des_15: 「ESG約章」行動
       awards_des_16: 香港經濟日報企業大獎
       awards_des_17: 「健康Easy卓越大獎2024」
-  Light_Adjustable_Lens:
-    Light_Adjustable_Lens: 光調節人工晶狀體（LAL）
-    Light_text_p1: 光調節人工晶體
-    Light_text_p2: 令白內障術後達至理想度數
-    Light_text_p3: Light Adjustable Lens™
-    Light_what_text:
-      Light_what_text_1: 什麼是
-      Light_what_text_p: Light Adjustable Lens™（光調節人工晶體，簡稱LAL）是一項突破性的眼科技術，專為白內障手術後提供個性化視力優化解決方案。傳統的白內障手術摘除混濁的晶體後植入固定度數的人工晶體（IOL），無法根據術後度數情況進行調整。<span>而LAL技術則突破了這一限制，允許在手術後根據患者的個體需求進行度數調整，實現更優良的術後視力效果。</span>LAL是目前市場上首款且唯一一款可在白內障手術後調節度數的人工晶體，為患者帶來前所未有的視覺體驗。
-    Light_theory_text:
-      Light_theory_text_1: 原理
-      Light_theory_text_p: Light Adjustable Lens™ 採用一種特殊的光敏材料製成，植入眼內後可通過紫外線（UV）改變植入晶體的形狀和強度。
-      Light_theory_text_p2: 手術後，醫生可根據患者的個體需求進行個性化調整度數，使用光照傳輸裝置（LDD）進行一次或多次的光照治療，每次需約95-125 秒，精確調節人工晶體度數，以達到最佳視力效果。
-      Light_theory_text1: 紫外線照射
-      Light_theory_text2: 經改良的形狀
-      Light_theory_text3: 如欲了解更多，請觀看以下影片
-      Light_theory_text4: 播放影片
-    Light_unique_text:
-      Light_unique_text_1: 創新性及獨特性
-      Light_unique_text_2: 傳統的白內障手術使用固定度數的單焦點人工晶體，無法在術後進行調整，限制了視力矯正的精確性。<span>而Light AdjustableLens™允許醫生在術後根據患者的實際生活視力需求和術後度數進行多次微調，從而實現個性化的視力矯正。 </span>相較於接受單焦點人工晶體的患者，LAL患者6個月後不戴眼鏡雙眼視力達到20/20的可能性高出一倍。
-      Light_unique_text_3: 即按了解更多Light Adjustable Lens™！
-      Light_unique_text_4: <span>LAL</span> <span>與</span> 傳統人工晶體
-      Light_unique_table_left_th:
-        Light_unique_table_left_th_1: 可調性        
-        Light_unique_table_left_th_2: 個性化需求
-        Light_unique_table_left_th_3: 散光
-        Light_unique_table_left_th_4: 術後視力和眼 鏡依賴
-        Light_unique_table_left_th_5: 治療過程
-        Light_unique_table_left_th_6: 術後護理
-        Light_unique_table_left_th_7: 適合人群
-      Light_unique_table_lal: 
-        Light_unique_text_lal_1: Light Adjustable Lens™(LAL)
-        Light_unique_text_lal_2: <span>術後</span>透過<span>光照治療</span>精確調節度數
-        Light_unique_text_lal_3: 根據<span>個性化用眼需求調整</span><br class="pcShow" />配合個人生活需要
-        Light_unique_text_lal_4: 不需使用散光人工晶體，（連同<br class="pcShow"/>手術切口）可調節300度內的散<br class="pcShow" />光度數
-        Light_unique_text_lal_5: 減少依賴眼鏡，通過雙眼互補，<br class="pcShow" />增加<span>術後不用眼鏡便能達到</span><br class="pcShow" />20/20視力的比例
-        Light_unique_text_lal_6: 需進行數次光照調整治療
-        Light_unique_text_lal_7: <span>鎖定度數前需佩戴</span>
-        Light_unique_text_lal_8: 術前預估度數較困難者（如曾接<br class="pcShow"/>受激光矯視手術），希望可以定制<br class="pcShow"/>視力，追求更佳視覺效果者
-      Light_unique_table_iol: 
-        Light_unique_table_iol_1: 傳統人工晶體 (IOL)
-        Light_unique_table_iol_2: 術後度數固定，一般無法調整
-        Light_unique_table_iol_3: 標準化設計
-        Light_unique_table_iol_4: 需要使用散光人工晶體，若術後晶體<br class="pcShow"/>出現轉位，散光可能再出現
-        Light_unique_table_iol_5: 術前預估和術後實際度數可能不一致，<br class="pcShow"/>術後可能需配戴眼鏡
-        Light_unique_table_iol_6: 單次手術，無需後續調整度數過程
-        Light_unique_table_iol_7: 常規術後護理，無特殊要求
-        Light_unique_table_iol_8: 一般白內障患者
-    Light_why_choose:
-      Light_why_choose_1: 為何選擇 LAL？
-      Light_why_choose_2: 選擇 Light Adjustable Lens™，享受專屬於你的最佳視覺體驗，提升生活品質，重拾清楚視界。
-      Light_why_choose_3: 貼合個性化用眼需求
-      Light_why_choose_4: 在白內障手術後，眼科醫生會根據客人的用眼需求與生活方式，精確定制視力，不再完全依賴手術前的度數預測，實現理想視覺效果。
-      Light_why_choose_5: 先進技術
-      Light_why_choose_6: 採用特殊光敏材料，LAL可透過紫外線精確改變人工晶體的形狀，實現個性化度數調整，滿足客人對視覺的不同需求。
-      Light_why_choose_7: 減少術後眼鏡依賴，雙眼視力質素更佳
-      Light_why_choose_8: 研究顯示，使用 LAL 調整的患者達到20/20視力的可能性是傳統單焦點人工晶體的兩倍，減少對眼鏡的依賴，提升日常生活品質。
-      Light_why_choose_9: 立即預約體驗Light Adjustable Lens™！
-    Light_faq_text:
-      Light_faq_text: 常見問題解答
-      Light_faq_text_q1: Q:哪些人不適合接受這種治療？
-      Light_faq_text_a1: 如果您正在服用可能增加對紫外線 (UV) 敏感性的藥物；如果您正在服用被認為對視網膜有害的藥物或患有眼球運動失控（眼球震顫）；或者如果您無法遵守醫生 的 LDD 光治療時間表以及白內障手術後數週內佩戴特殊紫外線防護眼鏡的指引，則不建議使用 LAL和 LDD 系統。如果您曾患或現在正患有眼病（例如眼部皰疹病毒感染），需要詳細告知並咨詢醫生以決定是否適合。
-      Light_faq_text_q2: Q:我應該注意哪些警告？
-      Light_faq_text_a2: 某些眼疾可能增加併發症的風險。您的醫生會判斷您是否適合 LAL。如果您在植入 LAL之前的白內障手術期間出現任何併發症，您可能需要植入另一個人工晶體 (IOL)，而不是 LAL。
-      Light_faq_text_q3: Q:我應該注意哪些預防措施？
-      Light_faq_text_a3: LAL 和 LDD 的安全性和有效性尚未在患有某些眼部疾病的患者或在白內障手術期間經歷某些併發症的患者中得到證實。手術後，您必須在鎖定度數前（約 4 至 8 週）佩戴特殊的防紫外線眼鏡，並遵守醫生的 LDD 光治療時間表。如不當佩戴紫外線防護眼鏡，在暴露於紫外線（如陽光）後，可能導致無法預料的視力變化或視力品質下降。這可能需要進行第二次手術，從您的眼睛中取出 LAL並用另一個 IOL 替換。
-      Light_faq_text_q4: Q:Light Adjustable Lens™ (LAL)有哪些潛在風險？
-      Light_faq_text_a4: 與任何外科手術一樣，白內障手術和人工晶狀體植入術也存在風險。請與您的醫生討論 這些風險。LDD 光照治療的潛在風險包括：輕微的色覺改變（短暫性，一般可數天內自行恢復）；光刺激眼睛表面導致不適或乾燥；以及激活之前未確診的眼部皰疹病毒感染。與紫外線照射有關的更持久和嚴重的不良反應亦可能發生，但非常罕見。您的視力有可能變差，或者可能因併發症而需要額外進行手術。
-    Light_pdf_title:
-      Light_pdf_text_1: 患者手冊 
-      Light_pdf_text_2: 防紫外線眼鏡手冊 
+
   medical_team:
     medical_team: 醫療團隊
     medical_team_title: 醫 療 團 隊

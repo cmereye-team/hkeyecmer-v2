@@ -26,99 +26,675 @@ useHead(() => ({
 </script>
 
 <template>
-  <div id="careers" class="careers">
-    <div>
-      <div>
-        <img
-          src="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"
-          :title="locale === 'en' ? 'Medical Team' : `醫護團隊`"
-          :alt="
-            locale === 'en'
-              ? 'The medical team enjoys a broad and inspiring vision'
-              : '醫護團隊享受廣闊視野'
-          "
-        />
+  <div class="section_joinus">
+    <section class="head">
+      <!-- <Menu zhHkLink="/joinus" enLink="/joinus-en" /> -->
+      <!-- <div class="fixed_scroll">
+        <div class="fixed_scroll_text en_nu_fa">Scroll</div>
+      </div> -->
+      <div class="banner relative">
+        <div class="absolute title_box">
+          <span class="block text-white">加入我們</span>
+          <span class="en_nu_fa">Work With Us/</span>
+          <a href="https://hk.cmermedical.com/joinus/careers/" target="_blank">
+            <div class="link_box flex items-center justify-between">
+              <span class="link_text">職位空缺</span>
+              <span class="link_icon flex items-center justify-center">
+                <i class="fa fa-angle-right"></i>
+              </span>
+            </div>
+          </a>
+        </div>
+        <div class="bluetitle_box text-white absolute">人才為本 共同成長</div>
       </div>
-      <div>
-        <p class="">{{ $t('pages.talent_recruitment.text1') }}</p>
-        <img
-          class=""
-          src="https://static.cmereye.com/imgs/2023/03/f47c6bf2d4a3693a.png"
-          alt=""
-        />
-      </div>
-      <svg
-        width="9"
-        height="144"
-        viewBox="0 0 9 144"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        data-v-1d8b93bf=""
-        data-v-a125a221=""
-      >
-        <path
-          d="M1 1V143L7.5 130.5"
-          stroke="#2958A3"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          data-v-1d8b93bf=""
-          data-v-a125a221=""
-        ></path>
-      </svg>
-    </div>
+    </section>
 
-    <div class="mianConten mainCon pb-64 flex items-center justify-between">
-      <div class="desBox mt-52 mr-10">
-        <h1 class="text-4xl mb-10">
-          {{ $t('pages.talent_recruitment.text2') }}
-        </h1>
-        <p class="leading-8">
-          {{ $t('pages.talent_recruitment.p1') }}<br />
-          {{ $t('pages.talent_recruitment.p2') }}<br />
-          {{ $t('pages.talent_recruitment.p3') }}
+    <section class="mainContent">
+      <img
+        class="mainContent-img"
+        src="https://statichk.cmermedical.com/hkcmereye/16546546544.avif"
+        alt=""
+      />
+      <section class="mainContent-img-text relative">
+        <p class="text-center flex justify-center mainContent-img-text-en">
+          JobsDB The Hong Kong HR Awards 2024/25 | Best Growth In HR<br />
+          Initiative Award – Recruitment | Hong Kong (International) Eye Care
+          Group Limited
         </p>
-        <a
-          href="https://hk.cmermedical.com/joinus/careers"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="linkBtn text-white mt-12 inline-block"
-          >{{ $t('pages.talent_recruitment.apply') }}</a
-        >
-      </div>
 
-      <div class="imgBox">
-        <img
-          src="https://static.cmereye.com/imgs/2023/02/833b5617b3c72216.png"
-          :title="locale === 'en' ? 'Eye Examination' : `驗眼服務`"
-          :alt="
-            locale === 'en'
-              ? 'A young woman covers one eye while enjoying a professional eye examination'
-              : '一位年輕女生遮蓋單眼享受驗眼服務'
-          "
-          class="right1"
-        />
-        <img
-          src="https://static.cmereye.com/imgs/2023/02/f7e9031c1b6f047d.png"
-          :title="locale === 'en' ? 'Medical Team' : `醫護團隊`"
-          :alt="
-            locale === 'en'
-              ? 'The medical team looks forward to a bright future'
-              : '醫護團隊微笑展望未來'
-          "
-          class="right2"
-        />
-        <img
-          class="right3"
-          src="https://statichk.cmermedical.com/hkcmereye/16546546544.avif"
-          title="希瑪眼科中心_開心工作間2022"
-          alt="希瑪眼科中心_開心工作間2022標章"
-        />
-      </div>
-    </div>
-    <PageFooterMenu />
+        <p class="text-center flex justify-center">
+          希瑪醫療集團秉持以人為本的理念，重視團隊合作，並致力於員工的專業<br
+            class="text-hidden"
+          />培訓，以及積極吸納更多專業醫護人才，確保為客戶提供高質量的專業醫療服務。
+        </p>
+      </section>
+
+      <section class="section1 relative">
+        <p class="text-center flex justify-center" v-if="locale != 'en'">
+          希瑪醫療能夠取得長足發展，
+          <br />實有賴全體員工堅守專業精神及熱誠工作態度，<br
+            class="md:hidden"
+          />同心協力， <br />為客人提供「度身訂造」的綜合醫療服務。
+        </p>
+        <p class="text-center flex justify-center en-text" v-else>
+          The remarkable achievement of C-MER Medical is attributable to the
+          professionalism and <br class="mb_hidden" />
+          commitment of our staff team. Together, we work as one team to provide
+          tailor-made and <br class="mb_hidden" />
+          integrated specialty medical services for our customers
+        </p>
+      </section>
+      <section class="section2">
+        <h2
+          class="flex items-center justify-center font-black wow animate__animated animate__fadeInUp"
+          data-wow-duration="1s"
+          data-wow-delay="0s"
+          v-if="locale != 'en'"
+        >
+          員工文化
+        </h2>
+        <h2
+          v-else
+          class="flex items-center justify-center font-black wow animate__animated animate__fadeInUp"
+          data-wow-duration="1s"
+          data-wow-delay="0s"
+        >
+          OUR WORK CULTURE
+        </h2>
+
+        <ul class="flex flex-col md:justify-end" v-if="locale != 'en'">
+          <li class="md:ml-auto relative">
+            <img
+              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_1.jpg"
+              alt=""
+            />
+            <div class="text absolute">
+              <h3>共同成長</h3>
+              <p>
+                希瑪醫療重視員工的發展及培訓，為新加入的醫生及護士提供指導，幫助他們掌握嶄新技術，熟悉公司的服務標準、政策及程序。
+              </p>
+            </div>
+          </li>
+
+          <li class="relative">
+            <img
+              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_2.jpg"
+              alt=""
+            />
+            <div class="text absolute">
+              <h3>各顯才能</h3>
+              <p>
+                希瑪醫療網羅不同學科的人才，令團隊更多元創新，抱著以客戶為中心的共同目標，為顧客提供度身訂造的專科醫療服務。
+              </p>
+            </div>
+          </li>
+
+          <li class="md:ml-auto relative">
+            <img
+              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_3.jpg"
+              alt=""
+            />
+            <div class="text absolute">
+              <h3>熱誠投入</h3>
+              <p>
+                希瑪醫療相信我們的人才優勢在於團隊合作，對工作充滿熱誠和全情投入，更對美好生活滿懷熱情。我們致力為員工締造開心工作環境，達致工作生活平衡及提升生產力。
+              </p>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="flex flex-col md:justify-end" v-else>
+          <li class="md:ml-auto relative">
+            <img
+              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_1.jpg"
+              alt=""
+            />
+            <div class="text absolute">
+              <h3>GROWTH</h3>
+              <p class="en-text">
+                C-MER Medical invests in you. We value the development and
+                training of our staffs and invest substantial resources in
+                providing guidance to newly joined medical practitioners and
+                nurses. They are empowered with new techniques and get familiar
+                with the service standards, policies and procedures of the
+                Company.
+              </p>
+            </div>
+          </li>
+
+          <li class="relative">
+            <img
+              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_2.jpg"
+              alt=""
+            />
+            <div class="text absolute">
+              <h3>TALENT</h3>
+              <p class="en-text">
+                C-MER Medical employs talents in multiple disciplines to ensure
+                our team has the flexibility to think outside the box. Shared
+                the common belief of patient centricity, we are dedicated to
+                providing customized specialty medical services for our
+                customers.
+              </p>
+            </div>
+          </li>
+
+          <li class="md:ml-auto relative">
+            <img
+              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_3.jpg"
+              alt=""
+            />
+            <div class="text absolute">
+              <h3>Commitment</h3>
+              <p class="en-text">
+                C-MER Medical believes that our talent advantage lies in our
+                team spirit. It is imperative important to be not only
+                passionate about work, but also to have passion for life. We aim
+                to create happy workplaces for employees, help them to strike a
+                work-life balance and enhance their productivity.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section
+        class="section3 flex items-center justify-center flex-col"
+        v-if="locale != 'en'"
+      >
+        <div class="text_box text-center">
+          我們希望吸納更多醫護及不同學科的專才，
+          <br />加入希瑪醫療，盡展所長！
+        </div>
+
+        <a
+          href="https://hk.cmermedical.com/joinus/careers/"
+          target="_blank"
+          class=""
+        >
+          <div class="link_box flex items-center justify-between">
+            <span class="link_text">職位空缺</span>
+            <span class="link_icon flex items-center justify-center">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </div>
+        </a>
+      </section>
+
+      <section
+        class="section3 flex items-center justify-center flex-col"
+        v-else
+      >
+        <div class="text_box text-center en-text">
+          We are looking for professionals of healthcare and multiple
+          disciplines <br />
+          to join us. Be a member of C-MER Medical to reach your full potential.
+        </div>
+
+        <a href="mailto:hr@cmereye.com">
+          <div class="link_box flex items-center justify-between">
+            <span class="link_text">JOIN US</span>
+            <span class="link_icon flex items-center justify-center">
+              <i class="fa fa-angle-right"></i>
+            </span>
+          </div>
+        </a>
+      </section>
+    </section>
   </div>
+
+  <PageFooterMenu />
 </template>
+
+
+<style scoped>
+.section_joinus .banner {
+  background-image: url('https://static.cmereye.com/imgs/cmermedical/images/joinus/banner_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section_joinus .head .banner .bluetitle_box {
+  background: rgba(128, 197, 222, 0.8);
+}
+
+.section_joinus .mainContent .mainContent-img {
+  max-width: 300px;
+  margin: 30px auto 0;
+}
+.section_joinus .mainContent .mainContent-img-text {
+  font-size: 0.8rem;
+  text-indent: 0;
+  color: #404040;
+  font-weight: 300;
+}
+.section_joinus .mainContent .mainContent-img-text p {
+  margin-top: 20px;
+  padding: 0 10px;
+}
+
+.section_joinus .mainContent .mainContent-img-text-en {
+  font-size: 0.6rem;
+  font-weight: 600;
+}
+.section_joinus .mainContent .section1 {
+}
+
+.section_joinus .mainContent .section1 p::before {
+  content: ' ';
+  position: absolute;
+  border-bottom: 5px solid #f09038;
+}
+
+.section_joinus .mainContent .section2 ul li img {
+  position: relative;
+  z-index: 0;
+}
+
+.section_joinus .mainContent .section2 h2 {
+  color: #114678;
+}
+
+.section_joinus .mainContent .section2 .text {
+  z-index: 2;
+}
+
+.section_joinus .mainContent .section2 .text h3 {
+  color: #114678;
+  position: relative;
+}
+
+.section_joinus .mainContent .section2 .text h3::before {
+  content: ' ';
+  position: absolute;
+  border: 2px solid #f09038;
+  border-right: none;
+  border-bottom: none;
+  top: 0;
+  left: 0;
+}
+
+.section_joinus .mainContent .section2 .text p {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.section_joinus .mainContent .section3 .text_box {
+  color: #f09038;
+}
+
+.section_joinus .link_box {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-hidden {
+    display: none;
+  }
+  .section_joinus {
+    margin-top: 70px;
+    padding-bottom: 50px;
+  }
+  .section_joinus .head .banner {
+    width: 90vw;
+    margin: 0 auto;
+    height: 55vw;
+  }
+
+  .section_joinus .mainContent .section2 h2 {
+    font-size: 25px;
+    margin-bottom: 5vw;
+  }
+
+  .section_joinus .mainContent .section2 h2::before {
+    position: absolute;
+    content: 'CMER';
+    color: rgba(240, 144, 56, 0.1);
+    font-size: 24px;
+    top: -3vw;
+    font-weight: 900;
+    font-family: 'Metropolis';
+  }
+
+  .section_joinus .mainContent .section2 h2 img {
+    width: 12vw;
+  }
+
+  .en-text {
+    font-size: 0.6rem !important;
+    white-space: normal;
+  }
+}
+
+/* pc */
+@media only screen and (min-width: 768px) {
+  .en-text {
+    font-size: 1rem !important;
+  }
+  .section_joinus {
+    padding-bottom: 50px;
+  }
+
+  .section_joinus .head .banner {
+    height: 33vw;
+    width: 85vw;
+    margin: 0 auto;
+  }
+
+  .section_joinus .head .banner .title_box {
+    font-size: 3vw;
+    color: #404040;
+    right: 11vw;
+    top: 3.5vw;
+  }
+
+  .section_joinus .head .banner .title_box span {
+    font-size: 3.5vw;
+  }
+
+  .section_joinus .head .banner .bluetitle_box {
+    font-size: 2.7vw;
+    padding: 2vw 3vw 4vw 5vw;
+    left: -7vw;
+    top: 32vw;
+    letter-spacing: 0.2vw;
+  }
+  .section_joinus .mainContent .mainContent-img {
+    max-width: 600px;
+    margin: 40px auto 0;
+  }
+
+  .section_joinus .mainContent .mainContent-img-text {
+    font-size: 1.7rem;
+    text-indent: 0;
+    color: #404040;
+    font-weight: 100;
+  }
+  .section_joinus .mainContent .mainContent-img-text p {
+    margin-top: 20px;
+  }
+  .section_joinus .mainContent .mainContent-img-text-en {
+    font-size: 1rem;
+  }
+  .section_joinus .mainContent .section1 {
+    margin: 45px 0;
+  }
+
+  .section_joinus .mainContent .section1 p::before {
+    width: 3vw;
+    top: 0;
+  }
+
+  .section_joinus .mainContent .section1 p {
+    text-indent: 0;
+    color: #404040;
+    padding-top: 45px;
+    line-height: 1.5;
+    font-size: 1.7rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+  }
+
+  .section_joinus .mainContent .section2 h2 {
+    font-size: 2.7vw;
+  }
+
+  .section_joinus .mainContent .section2 h2::before {
+    position: absolute;
+    content: 'CMER';
+    color: rgba(240, 144, 56, 0.1);
+    font-size: 2.5vw;
+    top: -1vw;
+    font-weight: 900;
+    font-family: 'Metropolis';
+  }
+
+  .section_joinus .mainContent .section2 h2 img {
+    width: 5vw;
+  }
+
+  .section_joinus .mainContent .section2 ul {
+    width: 80vw;
+    margin: 0 auto;
+  }
+
+  .section_joinus .mainContent .section2 ul li {
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  .section_joinus .mainContent .section2 ul li img {
+    width: 60vw;
+  }
+
+  .section_joinus .mainContent .section2 .text {
+    width: 40vw;
+    top: 7vw;
+    left: -12vw;
+  }
+
+  .section_joinus .mainContent .section2 .text h3 {
+    padding-top: 2vw;
+    padding-left: 2vw;
+    font-size: 2vw;
+    margin-left: -0.5vw;
+  }
+
+  .section_joinus .mainContent .section2 .text h3::before {
+    width: 1vw;
+    height: 1vw;
+  }
+
+  .section_joinus .mainContent .section2 .text p {
+    padding: 1vw 2vw;
+    font-size: 24px;
+  }
+
+  .section_joinus .mainContent .section2 ul li:nth-child(2) .text {
+    left: unset;
+    right: 7vw;
+  }
+
+  .section_joinus .mainContent .section2 ul li:nth-child(2) .text p {
+    padding-right: 1vw;
+  }
+
+  .section_joinus .mainContent .section2 ul li:nth-child(2) .text h3 {
+    text-align: right;
+    margin-left: 0vw;
+    padding-left: 0vw;
+    padding-right: 2vw;
+    padding-top: 2vw;
+  }
+
+  .section_joinus .mainContent .section2 ul li:nth-child(2) .text h3::before {
+    right: 0;
+    left: unset;
+    border: 2px solid #f09038;
+    border-bottom: none;
+    border-left: none;
+  }
+
+  .section_joinus .mainContent .section2 ul li:nth-child(3) .text {
+    width: 47vw;
+  }
+
+  .section_joinus .mainContent .section3 {
+    /* margin-top: 3vw; */
+  }
+
+  .section_joinus .mainContent .section3 .text_box {
+    font-size: 2rem;
+    letter-spacing: 0.2vw;
+  }
+
+  .section_joinus a:hover .link_box {
+    box-shadow: 10px 10px 0 #80c5de;
+    transform: translate(-12px, -12px) !important;
+  }
+
+  .section_joinus .link_box {
+    color: #114678;
+    border: #80c5de 2px solid;
+    font-size: 1.5vw;
+    width: 22vw;
+    height: 5vw;
+    margin-top: 2vw;
+    transition: all 0.5s;
+  }
+
+  .section_joinus .banner .link_box {
+    width: 10vw;
+    height: 3vw;
+    margin-right: -8vw;
+    margin-left: auto;
+    margin-top: 1vw;
+  }
+
+  .section_joinus .link_box .link_text {
+    width: 17vw;
+    text-align: center;
+  }
+
+  .section_joinus .banner .link_box .link_text {
+    font-size: 1.2vw !important;
+  }
+
+  .section_joinus .link_box .link_icon {
+    width: 5vw;
+    border-left: solid 2px #80c5de;
+    height: 100%;
+    font-size: 3vw;
+  }
+
+  .section_joinus .banner .link_box .link_icon {
+    font-size: 1vw !important;
+  }
+
+  .section_joinus .mainContent .section3 .link_box .link_icon i {
+  }
+}
+
+/* mb */
+@media only screen and (max-width: 768px) {
+  .section_joinus .head .banner .bluetitle_box {
+    top: 40vw;
+    padding: 2vw;
+    width: fit-content;
+    text-align: right;
+    left: -5vw;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+  }
+
+  .section_joinus .head .banner .title_box {
+    top: 3vw;
+    right: 4vw;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  .section_joinus .head .banner .title_box .en_nu_fa {
+    font-size: 20px;
+  }
+
+  .section_joinus .mainContent .section1 {
+    margin: 15vw auto;
+    width: 84vw;
+    margin-top: 20vw;
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+  }
+
+  .section_joinus .mainContent .section1 p::before {
+    width: 13vw;
+    top: -8vw;
+  }
+
+  .section2 {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .section2 ul li {
+    margin: 20vw 0;
+  }
+
+  .section_joinus .mainContent .section2 .text h3 {
+    margin-top: -42vw;
+    font-size: 16px;
+    padding: 2vw;
+    font-weight: 400;
+  }
+
+  .section_joinus .mainContent .section2 .text p {
+    margin-top: 35vw;
+    letter-spacing: 0.08em;
+  }
+
+  .section_joinus .mainContent .section2 .text h3::before {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #f09038;
+    border-right: none;
+    border-bottom: none;
+  }
+
+  .section_joinus .mainContent .section2 ul li:nth-child(2) .text h3 {
+    text-align: right;
+  }
+
+  .section_joinus .mainContent .section2 ul li:nth-child(2) .text h3::before {
+    right: 0;
+    left: unset;
+    border-left: none;
+    border-right: 1px solid #f09038;
+  }
+
+  section.section3 {
+    margin-top: 23vw;
+  }
+
+  .section_joinus .mainContent .section3 a:hover .link_box {
+    /* box-shadow: 10px 10px 0 #80c5de; */
+  }
+
+  .section_joinus .mainContent .section3 .text_box {
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+  }
+
+  .section_joinus .link_box {
+    color: #114678;
+    border: #80c5de 1px solid;
+    font-size: 16px;
+    width: 45vw;
+    height: 11vw;
+    margin-top: 8vw;
+  }
+
+  .section_joinus .link_box .link_text {
+    width: 32.5vw;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .section_joinus .link_box .link_icon {
+    width: 11vw;
+    border-left: solid 1px #80c5de;
+    height: 101%;
+    font-size: 16px;
+  }
+
+  .footer {
+    margin-top: 30vw;
+  }
+}
+</style>
+
+
+
 <style lang="scss" scoped>
 .careers {
   width: 100%;

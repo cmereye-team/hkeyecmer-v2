@@ -298,76 +298,7 @@ pages:
       awards_des_15: 「ESG約章」行動
       awards_des_16: 香港經濟日報企業大獎
       awards_des_17:  '"Healthy Easy Awards 2024"'
-  Light_Adjustable_Lens:
-    Light_Adjustable_Lens: Light Adjustable Lens™
-    Light_text_p1: A Novel Light-Adjustable Intraocular Lens Technology
-    Light_text_p2: Enabling the Achievement of Targeted Refractive Outcomes Post-Cataract Surgery
-    Light_text_p3: Light Adjustable Lens™
-    Light_what_text:
-      Light_what_text_1: What is
-      Light_what_text_p: The Light Adjustable Lens™ (Abbreviated as LAL) is a groundbreaking ophthalmic technology specifically designed to provide personalized vision optimization solutions following cataract surgery. In traditional cataract surgery, the cloudy natural lens is removed and replaced with an intraocular lens (IOL) of fixed power, which cannot be adjusted 
-    Light_theory_text:
-      Light_theory_text_1: How It Works
-      Light_theory_text_p: The Light Adjustable Lens™ is crafted from a specialized photosensitive material that, once implanted intraocularly, allows for modifications to the lens's shape and power through ultraviolet (UV) light.
-      Light_theory_text_p2: Postoperatively, ophthalmologists can customize the lens power to meet each patient's specific needs by utilizing a Light Delivery Device (LDD) to administer a series of non-invasive phototherapy sessions. Each session lasts approximately 95–125 seconds, enabling precise adjustments of the intraocular lens (IOL) power to achieve optimal visual outcomes.
-      Light_theory_text1: UV Irradiation
-      Light_theory_text2: Improved shape
-      Light_theory_text3: To learn more, watch the video below
-      Light_theory_text4: Play a video
-    Light_unique_text:
-      Light_unique_text_1: Innovation and Uniqueness
-      Light_unique_text_2: Traditional cataract surgery utilizes fixed-power monofocal intraocular lenses (IOLs), which cannot be adjusted postoperatively, thereby limiting the precision of visual correction. 
-      Light_unique_text_3: Know More Light Adjustable Lens™！
-      Light_unique_text_4: <span>LAL</span><span>&amp;</span><span>Traditional Intraocular Lens</span>
-      Light_unique_table_left_th:
-        Light_unique_table_left_th_1: Adjustability        
-        Light_unique_table_left_th_2: Personalized Needs
-        Light_unique_table_left_th_3: Astigmatism
-        Light_unique_table_left_th_4: Postoperative Visual Acuity and Dependence
-        Light_unique_table_left_th_5: Treatment Process
-        Light_unique_table_left_th_6: Postoperative Care
-        Light_unique_table_left_th_7: Suitability
-      Light_unique_table_lal: 
-        Light_unique_text_lal_1: Light Adjustable Lens™(LAL)
-        Light_unique_text_lal_2: Postoperative light treatment<br> for precise power adjustment
-        Light_unique_text_lal_3: <span>Personalized adjustment based <br>on individual visual needs and<br>lifestyle requirements after LAL<br>implantation</span>
-        Light_unique_text_lal_4: No need for toric intraocular <br>lenses (IOLs); can correct up to <br>300 degrees of astigmatism <br>(including the surgical incision)
-        Light_unique_text_lal_5: Reduces dependency on <br>glasses; increases the proportion <br>of patients achieving 20/20 vision <br>without glasses postoperatively <br>through binocular <br>complementation
-        Light_unique_text_lal_6: Requires multiple LDD light treatments
-        Light_unique_text_lal_7: Needs to wear UV-protective <br>glasses before finalizing the <br>power
-        Light_unique_text_lal_8: Those with difficult pre-operative <br>power estimation (e.g., previous <br>laser refractive surgery), and <br>those seeking customized vision <br>and optimal visual outcomes
-      Light_unique_table_iol: 
-        Light_unique_table_iol_1: Traditional Intraocular Lens (IOL)
-        Light_unique_table_iol_2: Fixed post-operative power; generally not adjustable
-        Light_unique_table_iol_3: Standardized design
-        Light_unique_table_iol_4: <span> Requires toric IOLs; if the lens<br>rotates post-operatively,<br>astigmatism may recur</span>
-        Light_unique_table_iol_5: <span> Pre-operative estimation and post-<br> operative actual power sometimes<br> may not match; glasses may be<br> needed post-operatively </span>
-        Light_unique_table_iol_6: Single surgery; no subsequent <br>power adjustment process required
-        Light_unique_table_iol_7: Routine post-operative care; no <br>special requirements
-        Light_unique_table_iol_8: General cataract patients
-    Light_why_choose:
-      Light_why_choose_1: Why Choose Light Adjustable Lens™ (LAL)?
-      Light_why_choose_2: Choose the Light Adjustable Lens™ and enjoy the best personalized visual experience tailored for you. Enhance your quality of life and regain clear vision.
-      Light_why_choose_3: Customized to your individual visual needs
-      Light_why_choose_4: After cataract surgery, your ophthalmologist will precisely customize your vision based on your visual needs and lifestyle. No longer rely on pre-surgical refractive predictions - achieve your desired visual outcomes.
-      Light_why_choose_5: Reduce dependency on post-surgical glasses, achieve superior binocular visual quality
-      Light_why_choose_6: Studies show that patients who use LAL to adjust their intraocular lens are twice as likely to achieve 20/20 vision compared to those with traditional monofocal IOLs. Reduce your reliance on spectacles and elevate your daily quality of life.
-      Light_why_choose_7: Cutting-edge technology
-      Light_why_choose_8: Utilizing special photosensitive material, LAL allows precise modification of the intraocular lens shape using ultraviolet light. This enables personalized refractive adjustments to meet each patient's unique visual demands.
-      Light_why_choose_9: Book your Light Adjustable Lens™ experience today!
-    Light_faq_text:
-      Light_faq_text: Frequently asked questions (FAQ)
-      Light_faq_text_q1: Q:What are the contraindications for this treatment?
-      Light_faq_text_a1: LAL and LDD systems are not recommended if you are taking medications that may increase sensitivity to ultraviolet (UV) light; if you are taking medications considered toxic to the retina or have uncontrolled eye movements (nystagmus); or if you cannot follow your doctor's LDD light treatment schedule and wear special UV protective glasses for several weeks after cataract surgery. If you have had or currently have an eye disease (such as an ocular herpes virus infection), you need to inform your doctor in detail and consult with them to determine if the treatment is appropriate for you.
-      Light_faq_text_q2: Q:What warnings should I be aware of?
-      Light_faq_text_a2: Certain eye diseases may increase the risk of complications. Your doctor will determine if you are a candidate for LAL. If you experience any complications during your cataract surgery prior to LAL implantation, you may need a different intraocular lens (IOL) implanted instead of LAL.
-      Light_faq_text_q3: Q:What precautions should I take?
-      Light_faq_text_a3: The safety and effectiveness of LAL and LDD have not been established in patients with certain ocular diseases or who experience certain complications during cataract surgery. <br /><br />You should discuss these issues with your doctor. After surgery, you must wear special UV protective glasses until your power is locked in (approximately 4-8 weeks) and follow your doctor's LDD light treatment schedule. Failure to properly wear UV protective glasses may result in unpredictable changes in vision or decreased quality of vision following exposure to UV light such as sunlight. This may require a second surgery to remove the LAL from your eye and replace it with another IOL.
-      Light_faq_text_q4: Q:What are the potential risks of the Light Adjustable Lens™ (LAL)?
-      Light_faq_text_a4: 'As with any surgical procedure, there are risks associated with cataract surgery and intraocular lens implantation. Discuss these risks with your doctor. Potential risks of LDD light treatments include: mild color vision changes (transient, typically resolving within days); light stimulation causing ocular surface discomfort or dryness; and activation of a previously undiagnosed ocular herpes virus infection. More persistent and severe adverse reactions associated with UV exposure may also occur but are very rare. It is possible that your vision could be made worse, or that you might need additional surgery because of complications.'
-    Light_pdf_title:
-      Light_pdf_text_1: Patient manual 
-      Light_pdf_text_2: Uv protection Glasses manual 
+
   medical_team:
     medical_team: Medical Team
     medical_team_title: Medical Team

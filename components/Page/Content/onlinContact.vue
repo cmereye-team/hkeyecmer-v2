@@ -117,11 +117,12 @@ const rt = ref(route)
         class="cataract_btn ga-pc-right-cataract_btn"
         id="ga-pc-right-cataract_btn"
       >
-        <div>
+        <div class="ocitem-img-last">
           <img
             src="https://static.cmereye.com/imgs/2024/06/f747a3559095f38e.png"
             alt=""
           />
+          <span>60629611</span>
         </div>
         <div>
           <img
@@ -310,6 +311,29 @@ const rt = ref(route)
 @media (min-width: 768px) and (max-width: 1920px) {
   .onlinContact {
     bottom: 100px;
+  }
+}
+
+.ocitem-img-last span {
+  display: none;
+}
+
+.ocitem-img-last:hover {
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #e23540;
+    border-top: none;
+    width: 178px;
+    height: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #e23540;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    top: -6px;
   }
 }
 </style>
