@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+import { Autoplay, Pagination, Navigation } from 'swiper'
 import { getPdf } from '@/assets/js/common'
 definePageMeta({
   layout: 'page',
@@ -40,6 +41,19 @@ const backgd = [
   '-webkit-linear-gradient(to right, #83cdd3, #64bcd1);',
   'linear-gradient(to right, #83cdd3, #64bcd1);',
 ]
+
+const eyeCenterImgList = [
+  {
+    img: 'https://www.youtube.com/embed/fDo35wPIcBw?si=bQGhAFdkAjNeB0Md',
+  },
+  {
+    img: 'https://www.youtube.com/embed/8ip-wGoPqmQ?si=zOhre5Vjd_8MKccF',
+  },
+  {
+    img: 'https://www.youtube.com/embed/h6H16bsZRAE?si=m93oEuGAIpV4ZNcV',
+  },
+]
+
 // 白內障形成的成因
 const fatorArr = [
   {
@@ -628,7 +642,11 @@ const bannerData = {
                   alt="希瑪眼科中心_白內障成因_紫外線"
                   title="希瑪眼科中心_白內障成因_紫外線"
                 />
-                <span>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator1')}}</span>
+                <span>{{
+                  $t(
+                    'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator1'
+                  )
+                }}</span>
               </li>
               <li>
                 <img
@@ -636,7 +654,11 @@ const bannerData = {
                   alt="希瑪眼科中心_白內障成因_吸煙習慣"
                   title="希瑪眼科中心_白內障成因_吸煙習慣"
                 />
-                <span>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator2')}}</span>
+                <span>{{
+                  $t(
+                    'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator2'
+                  )
+                }}</span>
               </li>
               <li>
                 <img
@@ -644,7 +666,17 @@ const bannerData = {
                   alt="希瑪眼科中心_白內障成因_深度近視"
                   title="希瑪眼科中心_白內障成因_深度近視"
                 />
-                <span>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_1')}}<br />{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_2')}} </span>
+                <span
+                  >{{
+                    $t(
+                      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_1'
+                    )
+                  }}<br />{{
+                    $t(
+                      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_2'
+                    )
+                  }}
+                </span>
               </li>
             </ul>
             <ul>
@@ -654,7 +686,13 @@ const bannerData = {
                   alt="希瑪眼科中心_白內障成因_糖尿病"
                   title="希瑪眼科中心_白內障成因_糖尿病"
                 />
-                <span>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator4')}} </span>
+                <span
+                  >{{
+                    $t(
+                      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator4'
+                    )
+                  }}
+                </span>
               </li>
               <li>
                 <img
@@ -663,9 +701,18 @@ const bannerData = {
                   title="希瑪眼科中心_白內障成因_藥物性白內障"
                 />
                 <span
-                  >{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_1')}}  <br />
-                  {{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_2')}} </span
-                >
+                  >{{
+                    $t(
+                      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_1'
+                    )
+                  }}
+                  <br />
+                  {{
+                    $t(
+                      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_2'
+                    )
+                  }}
+                </span>
               </li>
               <li>
                 <img
@@ -674,9 +721,18 @@ const bannerData = {
                   title="希瑪眼科中心_白內障成因_先天性白內障"
                 />
                 <span
-                  >{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_1')}}  <br />
-                  {{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_2')}} </span
-                >
+                  >{{
+                    $t(
+                      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_1'
+                    )
+                  }}
+                  <br />
+                  {{
+                    $t(
+                      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_2'
+                    )
+                  }}
+                </span>
               </li>
               <li>
                 <img
@@ -685,9 +741,18 @@ const bannerData = {
                   title="希瑪眼科中心_白內障成因_創傷性白內障"
                 />
                 <span
-                  >{{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_1')}}  <br />
-                  {{$t('pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_1')}} </span
-                >
+                  >{{
+                    $t(
+                      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_1'
+                    )
+                  }}
+                  <br />
+                  {{
+                    $t(
+                      'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_1'
+                    )
+                  }}
+                </span>
               </li>
             </ul>
           </div>
@@ -752,8 +817,16 @@ const bannerData = {
                   <li>
                     <span>01</span>
                     <p>
-                     {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_1')}}<br />
-                     {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_2')}}
+                      {{
+                        $t(
+                          'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_1'
+                        )
+                      }}<br />
+                      {{
+                        $t(
+                          'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_2'
+                        )
+                      }}
                     </p>
                     <img
                       src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_1.jpg"
@@ -764,8 +837,16 @@ const bannerData = {
                   <li>
                     <span>02</span>
                     <p>
-                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_1')}}<br />
-                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_2')}}
+                      {{
+                        $t(
+                          'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_1'
+                        )
+                      }}<br />
+                      {{
+                        $t(
+                          'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_2'
+                        )
+                      }}
                     </p>
                     <img
                       src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_2.jpg"
@@ -776,8 +857,17 @@ const bannerData = {
                   <li>
                     <span>03</span>
                     <p>
-                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_1')}} <br />
-                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_2')}}
+                      {{
+                        $t(
+                          'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_1'
+                        )
+                      }}
+                      <br />
+                      {{
+                        $t(
+                          'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_2'
+                        )
+                      }}
                     </p>
                     <img
                       src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_3.jpg"
@@ -787,7 +877,13 @@ const bannerData = {
                   </li>
                   <li>
                     <span>04</span>
-                    <p>{{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom4')}}</p>
+                    <p>
+                      {{
+                        $t(
+                          'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom4'
+                        )
+                      }}
+                    </p>
                     <img
                       src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_4.jpg"
                       alt="希瑪眼科中心_白內障症狀_夜間視力下降"
@@ -797,8 +893,17 @@ const bannerData = {
                   <li>
                     <span>05</span>
                     <p>
-                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1')}} <br />
-                      {{$t('pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1')}}
+                      {{
+                        $t(
+                          'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1'
+                        )
+                      }}
+                      <br />
+                      {{
+                        $t(
+                          'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1'
+                        )
+                      }}
                     </p>
                     <img
                       src="https://hkcmereye.com/template/default/picture/bnzv3_img/s4_5.jpg"
@@ -1296,18 +1401,40 @@ const bannerData = {
             :type="'1'"
           />
         </div>
+
         <div>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/l3Jo-_4VCyQ?si=ODIF1maT_tJISfLu"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <Swiper
+            class="carouselExampleFade"
+            :navigation="true"
+            :modules="[Pagination, Autoplay, Navigation]"
+            :pagination="{ clickable: true }"
+            :centeredSlides="true"
+            :slides-per-view="1"
+            :loop="true"
+            :effect="'creative'"
+            :autoplay="{
+              delay: 8000,
+              pauseOnMouseEnter: true, // 鼠标悬停时暂停
+              disableOnInteraction: false,
+            }"
+          >
+            <SwiperSlide v-for="(slide, idx) in eyeCenterImgList" :key="idx">
+              <div class="eyeList">
+                <iframe
+                  :src="slide.img"
+                  frameborder="0"
+                  width="560"
+                  height="350"
+                  style="margin: 0 auto"
+                  allowfullscreen
+                >
+                </iframe>
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
       </div>
+
       <!-- 白內障的術後注意事項 -->
       <div id="announcementsArr">
         <div>
@@ -3776,7 +3903,7 @@ body {
   .s3 {
     display: none;
   }
-  .s4{
+  .s4 {
     display: none;
   }
   .animated-button1::before {

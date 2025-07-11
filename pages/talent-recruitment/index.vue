@@ -275,7 +275,7 @@ useHead(() => ({
 
 .section_joinus .mainContent .mainContent-img-text-en {
   font-size: 0.6rem;
-  font-weight: 600;
+  font-weight: 300;
 }
 .section_joinus .mainContent .section1 {
 }
@@ -413,7 +413,8 @@ useHead(() => ({
     margin-top: 20px;
   }
   .section_joinus .mainContent .mainContent-img-text-en {
-    font-size: 1rem;
+    font-size: 0.7rem;
+    font-weight: 300;
   }
   .section_joinus .mainContent .section1 {
     margin: 45px 0;

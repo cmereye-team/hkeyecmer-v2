@@ -120,6 +120,8 @@ const addressList = ref([
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_clinicHours.clinicHours3',
         ],
         googleMaps: 'https://goo.gl/maps/8GnSZHx69s4PgPif6',
+        addressbtn: '診所概覽',
+        addressLink: '/eyecmer-ct/',
       },
       {
         addressImg:
@@ -140,6 +142,8 @@ const addressList = ref([
         googleMaps: 'https://goo.gl/maps/cTtPrK89qYcgNVcT8',
         title: 'pages.contact_us.contact_us_img.contact_us_img_title2',
         alt: 'pages.contact_us.contact_us_img.contact_us_img_alt2',
+        addressbtn: '診所概覽',
+        addressLink: '/eyecmer-ct/',
       },
       {
         addressImg:
@@ -160,6 +164,9 @@ const addressList = ref([
         googleMaps: 'https://goo.gl/maps/DUouFYZSJ9z4cpKx9',
         title: 'pages.contact_us.contact_us_img.contact_us_img_title3',
         alt: 'pages.contact_us.contact_us_img.contact_us_img_alt3',
+
+        addressbtn: '診所概覽',
+        addressLink: '/eyecmer-cwb',
       },
     ],
   },
@@ -209,6 +216,8 @@ const addressList = ref([
         googleMaps: 'https://goo.gl/maps/CqwrB3htjnM7b8XEA',
         title: 'pages.contact_us.contact_us_img.contact_us_img_title5',
         alt: 'pages.contact_us.contact_us_img.contact_us_img_alt5',
+        addressbtn: '診所概覽',
+        addressLink: '/eyecmer-mk/',
       },
       {
         addressImg:
@@ -229,6 +238,9 @@ const addressList = ref([
         googleMaps: 'https://goo.gl/maps/wwwesw4YnXwr7NtL8',
         title: 'pages.contact_us.contact_us_img.contact_us_img_title11',
         alt: 'pages.contact_us.contact_us_img.contact_us_img_alt11',
+
+        addressbtn: '診所概覽',
+        addressLink: '/eyecmer-kt/',
       },
     ],
   },
@@ -256,6 +268,8 @@ const addressList = ref([
         googleMaps: 'https://goo.gl/maps/7zAGzUVwRMzQ78av7',
         title: 'pages.contact_us.contact_us_img.contact_us_img_title7',
         alt: 'pages.contact_us.contact_us_img.contact_us_img_alt7',
+        addressbtn: '診所概覽',
+        addressLink: '/eyecmer-st/',
       },
       {
         addressImg:
@@ -276,6 +290,9 @@ const addressList = ref([
         googleMaps: 'https://goo.gl/maps/Nfh4nebSBo5zTHycA',
         title: 'pages.contact_us.contact_us_img.contact_us_img_title12',
         alt: 'pages.contact_us.contact_us_img.contact_us_img_alt12',
+
+        addressbtn: '診所概覽',
+        addressLink: '/eyecmer-yl/',
       },
       {
         addressImg:
@@ -296,6 +313,8 @@ const addressList = ref([
         googleMaps: 'https://goo.gl/maps/FukN8ZhA4jCUe7qV9',
         title: 'pages.contact_us.contact_us_img.contact_us_img_title9',
         alt: 'pages.contact_us.contact_us_img.contact_us_img_alt9',
+        addressbtn: '診所概覽',
+        addressLink: '/eyecmer-tw/',
       },
       {
         addressImg:
@@ -317,6 +336,9 @@ const addressList = ref([
         title: 'pages.contact_us.contact_us_img.contact_us_img_title10',
         alt: 'pages.contact_us.contact_us_img.contact_us_img_alt10',
         isShowVideo: true,
+
+        addressbtn: '診所概覽',
+        addressLink: '/eyecmer-tko/',
       },
     ],
   },
@@ -465,7 +487,9 @@ const handleClose = (done: () => void) => {
                       <h3 class="addressName text-xl mb-4">
                         {{ $t(addressDetailItem.addressName) }}
                       </h3>
-                      <div
+                      <a
+                        :href="addressDetailItem.googleMaps"
+                        target="_blank"
                         v-if="addressDetailItem.addressDetail[0] !== ''"
                         class="addressDetail flex items-center justify-start mb-4"
                       >
@@ -481,9 +505,10 @@ const handleClose = (done: () => void) => {
                             $t(addressDetailItem.addressName) == 'Mong Kok'
                           "
                         >
-                          <span>{{
-                            $t(addressDetailItem.addressDetail[0])
-                          }}</span>
+                          <span
+                            style="text-decoration: underline; color: #0056b3"
+                            >{{ $t(addressDetailItem.addressDetail[0]) }}</span
+                          >
                         </p>
                         <p
                           v-else-if="
@@ -491,6 +516,7 @@ const handleClose = (done: () => void) => {
                           "
                         >
                           <span
+                            style="text-decoration: underline; color: #0056b3"
                             v-for="(e, i) in addressDetailItem.addressDetail"
                             :key="i"
                             >{{ $t(e) }}</span
@@ -499,7 +525,13 @@ const handleClose = (done: () => void) => {
                         <p v-else>
                           {{ $t(addressDetailItem.addressDetail) }}
                         </p>
-                      </div>
+
+                        <img
+                          class="contentboxAddressSvg"
+                          src="https://hkcmereye.com/static/images/svg/googleMap.svg"
+                          alt=""
+                        />
+                      </a>
                       <div
                         v-if="addressDetailItem.subwayExit !== ''"
                         class="subwayExit flex items-center justify-start mb-4"
@@ -588,14 +620,9 @@ const handleClose = (done: () => void) => {
                       >
                         <div class="googleMaps">
                           <a
-                            :href="addressDetailItem.googleMaps"
-                            target="_blank"
+                            :href="addressDetailItem.addressLink"
                             rel="noopener noreferrer"
-                            >{{
-                              $t(
-                                'pages.contact_us.clinic_information_title.clinic_information_map'
-                              )
-                            }}</a
+                            >{{ addressDetailItem.addressbtn }}</a
                           >
                         </div>
                         <div
@@ -999,6 +1026,19 @@ const handleClose = (done: () => void) => {
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  img.contentboxAddressSvg {
+    width: 18px !important;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  img.contentboxAddressSvg {
+    width: 25px;
   }
 }
 </style>
