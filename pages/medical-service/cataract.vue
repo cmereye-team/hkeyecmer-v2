@@ -1,11 +1,43 @@
 <script lang="ts" setup>
 import { Autoplay, Pagination, Navigation } from 'swiper'
+import { ref, onMounted, onUnmounted } from 'vue'
 import { getPdf } from '@/assets/js/common'
+
 definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
+
+// 定义响应式变量来保存屏幕尺寸
+interface ScreenSize {
+  width: number
+  height: number
+}
+
+const screenSize = ref<ScreenSize>({
+  width: window.innerWidth,
+  height: window.innerHeight,
+})
+
+// 更新尺寸的函数
+const updateScreenSize = () => {
+  screenSize.value = {
+    width: window.innerWidth,
+    height: window.innerHeight,
+  }
+}
+
+// 监听 resize 事件
+onMounted(() => {
+  window.addEventListener('resize', updateScreenSize)
+})
+
+// 移除监听器，避免内存泄漏
+onUnmounted(() => {
+  window.removeEventListener('resize', updateScreenSize)
+})
+
 useHead(() => ({
   title: '白內障治療｜內容及收費｜手術過程 | 免費講座 | 希瑪眼科中心',
   meta() {
@@ -43,15 +75,16 @@ const backgd = [
 ]
 
 const eyeCenterImgList = [
+    {
+    img: 'https://www.youtube.com/embed/h6H16bsZRAE?si=m93oEuGAIpV4ZNcV',
+  },
   {
     img: 'https://www.youtube.com/embed/fDo35wPIcBw?si=bQGhAFdkAjNeB0Md',
   },
   {
     img: 'https://www.youtube.com/embed/8ip-wGoPqmQ?si=zOhre5Vjd_8MKccF',
   },
-  {
-    img: 'https://www.youtube.com/embed/h6H16bsZRAE?si=m93oEuGAIpV4ZNcV',
-  },
+
 ]
 
 // 白內障形成的成因
@@ -1405,15 +1438,13 @@ const bannerData = {
         <div>
           <Swiper
             class="carouselExampleFade"
-            :navigation="true"
-            :modules="[Pagination, Autoplay, Navigation]"
+            :modules="[Autoplay]"
             :pagination="{ clickable: true }"
-            :centeredSlides="true"
-            :slides-per-view="1"
+            :space-between="screenSize.width > 768 ? 10 : 0"
+            :slides-per-view="screenSize.width > 768 ? 3 : 1"
             :loop="true"
-            :effect="'creative'"
             :autoplay="{
-              delay: 8000,
+              delay: 5000,
               pauseOnMouseEnter: true, // 鼠标悬停时暂停
               disableOnInteraction: false,
             }"
@@ -4925,9 +4956,10 @@ body {
       margin-top: 100px;
       display: flex;
       justify-content: center;
+
       iframe {
-        width: 760px;
-        height: calc(315 / 560 * 760px);
+        width: 360px;
+        height: calc(315 / 560 * 360px);
       }
     }
   }
