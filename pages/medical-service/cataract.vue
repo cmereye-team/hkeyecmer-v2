@@ -1437,17 +1437,13 @@ const bannerData = {
 
           <!-- 移动端 -->
           <Swiper
-            class="carouselExampleFade  d-none d-lg-block "
-            :modules="[Autoplay]"
+            class="carouselExampleFade d-none d-lg-block"
+            :navigation="true"
+            :modules="[Autoplay, Navigation]"
             :pagination="{ clickable: true }"
             :space-between="0"
             :slides-per-view="1"
             :loop="true"
-            :autoplay="{
-              delay: 5000,
-              pauseOnMouseEnter: true, // 鼠标悬停时暂停
-              disableOnInteraction: false,
-            }"
           >
             <SwiperSlide v-for="(slide, idx) in eyeCenterImgList" :key="idx">
               <div class="eyeList">
