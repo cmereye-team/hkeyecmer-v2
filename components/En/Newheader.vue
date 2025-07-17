@@ -611,33 +611,33 @@ const changeLang = (_lang: any) => {
 .imgLists {
   display: flex;
   justify-content: center;
-  margin: 10px 40px 10px 0;
+
   & > div {
     width: 15px;
     // height: 15px;
-    & > div,
-    & > a {
-      background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
-      background-repeat: no-repeat;
-      background-position: 5px 0;
-      // background-size: cover;
-      display: block;
-    }
-    &:nth-of-type(2) > a {
-      background-position: -29px 0;
-    }
-    &:nth-of-type(3) > a {
-      background-position: -63px 0;
-    }
-    &:nth-of-type(4) > div {
-      background-position: -98px 0;
-    }
-    &:nth-of-type(5) > a {
-      background-position: -133px 0;
-    }
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
+    // & > div,
+    // & > a {
+    //   background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
+    //   background-repeat: no-repeat;
+    //   background-position: 5px 0;
+    //   // background-size: cover;
+    //   display: block;
+    // }
+    // &:nth-of-type(2) > a {
+    //   background-position: -29px 0;
+    // }
+    // &:nth-of-type(3) > a {
+    //   background-position: -63px 0;
+    // }
+    // &:nth-of-type(4) > div {
+    //   background-position: -98px 0;
+    // }
+    // &:nth-of-type(5) > a {
+    //   background-position: -133px 0;
+    // }
+    // &:not(:last-child) {
+    //   margin-right: 15px;
+    // }
   }
 }
 .drawerIn {

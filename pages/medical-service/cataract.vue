@@ -3935,6 +3935,7 @@ body {
     width: 60vw;
     top: 65vw;
   }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -3958,7 +3959,7 @@ body {
   }
 
   .s1 {
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .s1 .imgbg2 {
     top: -20px;
@@ -5396,10 +5397,10 @@ body {
 @media screen and (max-width: 768px) {
   .cataract {
     transform: scale(1);
-    margin: 0;
+    margin: 20px auto 0;
     // & > div:nth-child(2) {
     width: calc(100% - 50px);
-    margin: 0 auto;
+    // margin:100px auto -40%;
     & > div:nth-child(1) {
       width: 100%;
       flex-direction: column;

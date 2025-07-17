@@ -8,18 +8,36 @@ const locale = useState<string>('locale.setting')
 const eyeCenterImgList = [
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/sli1.jpg',
-    title: locale.value == 'zh-hk' ? '希瑪眼科中心_將軍澳診所': 'Cmer Eye Center - Tseung Kwan O Clinic',
-    alt: locale.value == 'zh-hk' ? '希瑪眼科中心_將軍澳診所接待區': 'Reception area at Cmer Eye Center - Tseung Kwan O Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_將軍澳診所'
+        : 'Cmer Eye Center - Tseung Kwan O Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_將軍澳診所接待區'
+        : 'Reception area at Cmer Eye Center - Tseung Kwan O Clinic',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/2.jpg',
-    title: locale.value == 'zh-hk' ? '希瑪眼科中心_觀塘診所': 'Cmer Eye Center - Kwun Tong Clinic',
-    alt: locale.value == 'zh-hk' ? '希瑪眼科中心_觀塘診所明亮寬敞的接待區': 'Spacious and bright reception area at Cmer Eye Center - Kwun Tong Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_觀塘診所'
+        : 'Cmer Eye Center - Kwun Tong Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_觀塘診所明亮寬敞的接待區'
+        : 'Spacious and bright reception area at Cmer Eye Center - Kwun Tong Clinic',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/1.jpg',
-    title: locale.value == 'zh-hk' ? '希瑪眼科中心_觀塘診所': 'Cmer Eye Center - Kwun Tong Clinic',
-    alt: locale.value == 'zh-hk' ? '希瑪眼科中心_觀塘診所接待區環境': 'Modern and inviting reception environment at Cmer Eye Center - Kwun Tong Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_觀塘診所'
+        : 'Cmer Eye Center - Kwun Tong Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_觀塘診所接待區環境'
+        : 'Modern and inviting reception environment at Cmer Eye Center - Kwun Tong Clinic',
   },
   // {
   //   img: 'https://hkcmereye.com/template/default/picture/centre_introduction/3.jpg',
@@ -33,13 +51,25 @@ const eyeCenterImgList = [
   // },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/edf32e5449c237d9.jpg',
-    title: locale.value == 'zh-hk' ? '希瑪眼科中心_將軍澳診所': 'Cmer Eye Center - Tseung Kwan O Clinic',
-    alt: locale.value == 'zh-hk' ? '希瑪眼科中心_將軍澳診所入口': 'Main entrance of Cmer Eye Center - Tseung Kwan O Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_將軍澳診所'
+        : 'Cmer Eye Center - Tseung Kwan O Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_將軍澳診所入口'
+        : 'Main entrance of Cmer Eye Center - Tseung Kwan O Clinic',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/5.jpg',
-    title: locale.value == 'zh-hk' ? '希瑪眼科中心_眼科診所': 'Cmer Eye Center - Eye Clinic',
-    alt: locale.value == 'zh-hk' ? '希瑪眼科中心_眼科診所候診區': 'Comfortable waiting area at Cmer Eye Center - Eye Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科診所'
+        : 'Cmer Eye Center - Eye Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科診所候診區'
+        : 'Comfortable waiting area at Cmer Eye Center - Eye Clinic',
   },
   // {
   //   img: 'https://hkcmereye.com/template/default/picture/centre_introduction/6.jpg',
@@ -48,18 +78,36 @@ const eyeCenterImgList = [
   // },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/7.jpg',
-    title: locale.value == 'zh-hk' ? '希瑪眼科中心_眼科檢查儀器': 'Cmer Eye Center - Eye Examination Equipment',
-    alt: locale.value == 'zh-hk' ? '希瑪眼科中心配備高端的眼科檢查儀器': 'High-end eye examination equipment at Cmer Eye Center',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科檢查儀器'
+        : 'Cmer Eye Center - Eye Examination Equipment',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心配備高端的眼科檢查儀器'
+        : 'High-end eye examination equipment at Cmer Eye Center',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/8.jpg',
-    title: locale.value == 'zh-hk' ? '希瑪眼科中心_眼科檢查服務': 'Cmer Eye Center - Eye Examination Services',
-    alt: locale.value == 'zh-hk' ? '希瑪眼科中心提供優質的眼科檢查服務': 'Premium eye examination services offered by Cmer Eye Cente',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科檢查服務'
+        : 'Cmer Eye Center - Eye Examination Services',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心提供優質的眼科檢查服務'
+        : 'Premium eye examination services offered by Cmer Eye Cente',
   },
   {
     img: 'https://hkcmereye.com/template/default/picture/centre_introduction/9.jpg',
-    title: locale.value == 'zh-hk' ? '希瑪眼科中心_中環診所_眼科檢查儀器': 'Cmer Eye Center - Central Clinic Eye Examination Equipment',
-    alt: locale.value == 'zh-hk' ? '希瑪眼科中心_中環診所配備先進的眼科檢查儀器': 'Advanced eye examination equipment at Cmer Eye Center - Central Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_中環診所_眼科檢查儀器'
+        : 'Cmer Eye Center - Central Clinic Eye Examination Equipment',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_中環診所配備先進的眼科檢查儀器'
+        : 'Advanced eye examination equipment at Cmer Eye Center - Central Clinic',
   },
 ]
 
@@ -67,38 +115,80 @@ const eyeCenterImgList = [
 const smileImgList = [
   {
     img: 'https://static.cmereye.com/imgs/2024/08/126203ce0bec257e.jpg',
-    title: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心':'Cmer Smile Refractive Surgery Center - Central Clinic',
-    alt: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心':'Signage at Cmer Smile Refractive Surgery Center - Central Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心'
+        : 'Signage at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/08/9d313bf93f6c9bc9.jpg',
-    title: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心_驗眼儀器':'Cmer Smile Refractive Surgery Center - Central Clinic',
-    alt: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心配備先進的驗眼儀器':'Comfortable waiting area at Cmer Smile Refractive Surgery Center - Central Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_驗眼儀器'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心配備先進的驗眼儀器'
+        : 'Comfortable waiting area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/08/c1018f324df72d8f.jpg',
-    title: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心_眼科檢查儀器':'Cmer Smile Refractive Surgery Center - Central Clinic',
-    alt: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心配備先進的眼科檢查儀器':'Comfortable reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_眼科檢查儀器'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心配備先進的眼科檢查儀器'
+        : 'Comfortable reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/08/a6ff956020a1caa6.jpg',
-    title: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心_眼科檢查儀器':'Cmer Smile Refractive Surgery Center - Central Clinic',
-    alt: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心配備高端的眼科檢查儀器':'Spacious and bright reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_眼科檢查儀器'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心配備高端的眼科檢查儀器'
+        : 'Spacious and bright reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/08/368e45086074bccb.jpg',
-    title: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心_驗眼儀器':'Cmer Smile Refractive Surgery Center - Central Clinic',
-    alt: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心配備高端的驗眼儀器':'Comfortable clinical environment at Cmer Smile Refractive Surgery Center - Central Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_驗眼儀器'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心配備高端的驗眼儀器'
+        : 'Comfortable clinical environment at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/08/3c5132843b258482.jpg',
-    title: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心_中環診所':'Cmer Smile Refractive Surgery Center - Central Clinic',
-    alt: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心_中環診所舒適的候診區':'Reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_中環診所'
+        : 'Cmer Smile Refractive Surgery Center - Central Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_中環診所舒適的候診區'
+        : 'Reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
     img: 'https://static.cmereye.com/imgs/2024/08/28965e3f184af285.jpg',
-    title: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心_中環診所':'Cmer Smile Refractive Surgery Center',
-    alt: locale.value == 'zh-hk'  ? '希瑪微笑矯視中心_中環診所明亮舒適的候診區':'Signage at Cmer Smile Refractive Surgery Center',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_中環診所'
+        : 'Cmer Smile Refractive Surgery Center',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪微笑矯視中心_中環診所明亮舒適的候診區'
+        : 'Signage at Cmer Smile Refractive Surgery Center',
   },
 ]
 
@@ -106,43 +196,91 @@ const smileImgList = [
 const visionImgList = [
   {
     img: 'https://hkcmereye.com/static/aboutUs/dee5b8226c4541b045602cc10bf3d6b3.jpg',
-    title:locale.value == 'zh-hk'? '希瑪視光中心_中環診所':'Cmer Vision Center - ZEISS Vision Expert',
-    alt: locale.value == 'zh-hk'? '希瑪視光中心_中環中心舒適的接待區': 'Spacious and bright reception area at Cmer Vision Center - ZEISS Vision Expert',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_中環診所'
+        : 'Cmer Vision Center - ZEISS Vision Expert',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_中環中心舒適的接待區'
+        : 'Spacious and bright reception area at Cmer Vision Center - ZEISS Vision Expert',
   },
   {
     img: 'https://hkcmereye.com/static/aboutUs/b838bea701eab1d3b5a3cb46e3de9325.jpg',
-    title: locale.value == 'zh-hk'? '希瑪視光中心_配眼鏡': 'Cmer Vision Center - ZEISS Vision Expert',
-    alt: locale.value == 'zh-hk'? '希瑪視光中心提供驗配眼鏡服務': 'Reception area at Cmer Vision Center - ZEISS Vision Expert',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_配眼鏡'
+        : 'Cmer Vision Center - ZEISS Vision Expert',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心提供驗配眼鏡服務'
+        : 'Reception area at Cmer Vision Center - ZEISS Vision Expert',
   },
   {
     img: 'https://hkcmereye.com/static/aboutUs/f294eed8effc0e84e335f90d31d2b80a.jpg',
-    title: locale.value == 'zh-hk'? '希瑪視光中心_旺角診所_配眼鏡': 'Cmer Vision Center - ZEISS Vision Expert"',
-    alt: locale.value == 'zh-hk'? '希瑪視光中心_旺角中心提供兒童驗配眼鏡服務': 'Glasses display at Cmer Vision Center - ZEISS Vision Expert',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角診所_配眼鏡'
+        : 'Cmer Vision Center - ZEISS Vision Expert"',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角中心提供兒童驗配眼鏡服務'
+        : 'Glasses display at Cmer Vision Center - ZEISS Vision Expert',
   },
   {
     img: 'https://hkcmereye.com/static/aboutUs/da5e97aac3aab2275403c868ec2f0283.jpg',
-    title: locale.value == 'zh-hk'? '希瑪視光中心_旺角診所_配眼鏡': 'Cmer Vision Center - ZEISS Vision Expert',
-    alt: locale.value == 'zh-hk'? '希瑪視光中心_旺角中心提供兒童驗配眼鏡服務': 'VISUFIT 1000 at Cmer Vision Center - ZEISS Vision Expert',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角診所_配眼鏡'
+        : 'Cmer Vision Center - ZEISS Vision Expert',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角中心提供兒童驗配眼鏡服務'
+        : 'VISUFIT 1000 at Cmer Vision Center - ZEISS Vision Expert',
   },
   {
     img: 'https://www.hkcmereye.com/template/default/picture/mainIntroImg/vision1.jpg',
-    title: locale.value == 'zh-hk'? '希瑪視光中心_旺角診所': 'Cmer Vision Center - Mong Kok Clinic',
-    alt: locale.value == 'zh-hk'? '希瑪視光中心_旺角中心環境': 'Modern and inviting environment at Cmer Vision Center - Mong Kok Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角診所'
+        : 'Cmer Vision Center - Mong Kok Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_旺角中心環境'
+        : 'Modern and inviting environment at Cmer Vision Center - Mong Kok Clinic',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/3561eb13d077d63d.jpg',
-    title: locale.value == 'zh-hk'? '希瑪視光中心_將軍澳診所': 'Cmer Vision Center - Tseung Kwan O Clinic',
-    alt: locale.value == 'zh-hk'? '希瑪視光中心_將軍澳中心入口及展示窗': 'Main entrance and display window at Cmer Vision Center - Tseung Kwan O Clinic',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_將軍澳診所'
+        : 'Cmer Vision Center - Tseung Kwan O Clinic',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_將軍澳中心入口及展示窗'
+        : 'Main entrance and display window at Cmer Vision Center - Tseung Kwan O Clinic',
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/46b2e6c9ee085ddf.jpg',
-    title: locale.value == 'zh-hk'? '希瑪視光中心_將軍澳中心_兒童近視控制': 'Cmer Vision Center - Tseung Kwan O Clinic for Myopia Control in Children',
-    alt: locale.value == 'zh-hk'? '希瑪視光中心_將軍澳中心的兒童近視控制專區': "Dedicated area for children's myopia control at Cmer Vision Center - Tseung Kwan O Clinic",
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_將軍澳中心_兒童近視控制'
+        : 'Cmer Vision Center - Tseung Kwan O Clinic for Myopia Control in Children',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪視光中心_將軍澳中心的兒童近視控制專區'
+        : "Dedicated area for children's myopia control at Cmer Vision Center - Tseung Kwan O Clinic",
   },
   {
     img: 'https://static.cmereye.com/imgs/2023/02/2dc0bc6c85093e17.jpg',
-    title: locale.value == 'zh-hk'? '希瑪眼科中心_眼科檢查儀器': 'Cmer Eye Center - Eye Examination Equipment',
-    alt: locale.value == 'zh-hk'? '希瑪眼科中心配備各種先進的眼科檢查儀器': 'Comprehensive range of advanced eye examination equipment at Cmer Eye Center',
+    title:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心_眼科檢查儀器'
+        : 'Cmer Eye Center - Eye Examination Equipment',
+    alt:
+      locale.value == 'zh-hk'
+        ? '希瑪眼科中心配備各種先進的眼科檢查儀器'
+        : 'Comprehensive range of advanced eye examination equipment at Cmer Eye Center',
   },
 ]
 // 跳转Facebook
@@ -207,8 +345,16 @@ const goInstagram = (type: string) => {
             <img
               class="mianImg"
               src="https://static.cmereye.com/imgs/2024/04/e06af078f24f2d14.png"
-              :title="locale == 'zh-hk' ? '希瑪眼科中心_眼科医生' : 'Cmer Eye Center - Ophthalmologist'"
-              :alt="locale == 'zh-hk' ? '希瑪眼科中心眼科医生' : 'Ophthalmologist at Cmer Eye Center'"
+              :title="
+                locale == 'zh-hk'
+                  ? '希瑪眼科中心_眼科医生'
+                  : 'Cmer Eye Center - Ophthalmologist'
+              "
+              :alt="
+                locale == 'zh-hk'
+                  ? '希瑪眼科中心眼科医生'
+                  : 'Ophthalmologist at Cmer Eye Center'
+              "
             />
           </p>
         </div>
@@ -369,14 +515,30 @@ const goInstagram = (type: string) => {
         <div>
           <img
             src="https://static.cmereye.com/imgs/2023/03/87bec646d374d093.png"
-              :title="locale == 'zh-hk' ? '希瑪眼科中心_眼科檢查服務' : 'Cmer Eye Center - High-Quality Eye Examination Services'"
-              :alt="locale == 'zh-hk' ? '希瑪眼科中心提供高品質的眼科檢查服務' : 'Cmer Eye Center provides top-notch eye examination services'"
+            :title="
+              locale == 'zh-hk'
+                ? '希瑪眼科中心_眼科檢查服務'
+                : 'Cmer Eye Center - High-Quality Eye Examination Services'
+            "
+            :alt="
+              locale == 'zh-hk'
+                ? '希瑪眼科中心提供高品質的眼科檢查服務'
+                : 'Cmer Eye Center provides top-notch eye examination services'
+            "
           />
           <img
             src="https://static.cmereye.com/imgs/2023/03/13753bf3c5149f9b.png"
-            :title="locale == 'zh-hk' ? '希瑪眼科中心_將軍澳診所' : 'Cmer Eye Center - Tseung Kwan O Clinic'"
-              :alt="locale == 'zh-hk' ? '希瑪眼科中心_將軍澳診所舒適的接待區' : 'Comfortable reception area at Cmer Eye Center - Tseung Kwan O Clinic'"
-        />
+            :title="
+              locale == 'zh-hk'
+                ? '希瑪眼科中心_將軍澳診所'
+                : 'Cmer Eye Center - Tseung Kwan O Clinic'
+            "
+            :alt="
+              locale == 'zh-hk'
+                ? '希瑪眼科中心_將軍澳診所舒適的接待區'
+                : 'Comfortable reception area at Cmer Eye Center - Tseung Kwan O Clinic'
+            "
+          />
         </div>
         <div>
           <a
@@ -385,8 +547,16 @@ const goInstagram = (type: string) => {
           >
             <img
               src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/redbook.png"
-              :title="locale == 'zh-hk '? '希瑪眼科中心_小紅書': 'Cmer Eye Center - Xiaohongshu'"
-              :alt="locale == 'zh-hk '? '希瑪眼科中心_小紅書圖標': 'Cmer Eye Center - Xiaohongshu icon'"
+              :title="
+                locale == 'zh-hk'
+                  ? '希瑪眼科中心_小紅書'
+                  : 'Cmer Eye Center - Xiaohongshu'
+              "
+              :alt="
+                locale == 'zh-hk'
+                  ? '希瑪眼科中心_小紅書圖標'
+                  : 'Cmer Eye Center - Xiaohongshu icon'
+              "
             />
             {{ $t('pages.about_us.media.media_redbook') }}
           </a>
@@ -396,16 +566,32 @@ const goInstagram = (type: string) => {
           >
             <img
               src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/yt.png"
-              :title="locale == 'zh-hk '? '希瑪眼科中心_YouTube': 'Cmer Eye Center - YouTube'"
-              :alt="locale == 'zh-hk '? '希瑪眼科中心_YouTube圖標': 'Cmer Eye Center - YouTube icon'"
+              :title="
+                locale == 'zh-hk'
+                  ? '希瑪眼科中心_YouTube'
+                  : 'Cmer Eye Center - YouTube'
+              "
+              :alt="
+                locale == 'zh-hk'
+                  ? '希瑪眼科中心_YouTube圖標'
+                  : 'Cmer Eye Center - YouTube icon'
+              "
             />
             {{ $t('pages.about_us.media.media_youtube') }}
           </a>
           <a href="javascript:void(0)" class="isWechat">
             <img
               src="https://www.hkcmereye.com/template/default/picture/mainIntroImg/wecha.png"
-              :title="locale == 'zh-hk '? '希瑪眼科中心_微信': 'Cmer Eye Center - WeChat'"
-              :alt="locale == 'zh-hk '? '希瑪眼科中心_微信圖標': 'Cmer Eye Center - WeChat icon'"
+              :title="
+                locale == 'zh-hk'
+                  ? '希瑪眼科中心_微信'
+                  : 'Cmer Eye Center - WeChat'
+              "
+              :alt="
+                locale == 'zh-hk'
+                  ? '希瑪眼科中心_微信圖標'
+                  : 'Cmer Eye Center - WeChat icon'
+              "
             />
             {{ $t('pages.about_us.media.media_wechat') }}
             <div class="isShow">
@@ -422,8 +608,16 @@ const goInstagram = (type: string) => {
           <div>
             <img
               src="https://static.cmereye.com/imgs/2023/03/730235c6f84d2dee.png"
-              :title="locale == 'zh-hk' ? '希瑪視光中心_旺角診所': 'Cmer Vision Center - Mong Kok Clinic'"
-              :alt="locale == 'zh-hk' ? '希瑪視光中心_旺角中心舒適寬敞的接待區': 'Spacious and comfortable reception area at Cmer Vision Center - Mong Kok Clinic'"
+              :title="
+                locale == 'zh-hk'
+                  ? '希瑪視光中心_旺角診所'
+                  : 'Cmer Vision Center - Mong Kok Clinic'
+              "
+              :alt="
+                locale == 'zh-hk'
+                  ? '希瑪視光中心_旺角中心舒適寬敞的接待區'
+                  : 'Spacious and comfortable reception area at Cmer Vision Center - Mong Kok Clinic'
+              "
             />
           </div>
           <a
@@ -432,8 +626,12 @@ const goInstagram = (type: string) => {
           >
             <img
               src="https://static.cmereye.com/imgs/2023/03/84174afa22901c0b.png"
-              :title="locale == 'zh-hk '? '希瑪眼科中心': 'Cmer Eye Center'"
-              :alt="locale == 'zh-hk '? '希瑪眼科中心_業務小冊子': 'Cmer Eye Center business brochure'"
+              :title="locale == 'zh-hk ' ? '希瑪眼科中心' : 'Cmer Eye Center'"
+              :alt="
+                locale == 'zh-hk '
+                  ? '希瑪眼科中心_業務小冊子'
+                  : 'Cmer Eye Center business brochure'
+              "
             />
             <div class="downloadpdf">
               {{ $t('pages.about_us.download.download') }}

@@ -278,23 +278,27 @@ const imgLists = [
   {
     type: 'link',
     link: 'https://www.facebook.com/cmereyecenter/',
+    icon: 'fa fa-facebook-f',
   },
   {
     type: 'link',
     link: 'https://www.instagram.com/cmer_eye_center/',
+    icon: 'fa fa-instagram',
   },
   {
     type: 'link',
     link: 'https://www.youtube.com/channel/UCkYbtBhKYc8XyrgG7SAFzRg',
+    icon: 'fa fa-youtube',
   },
   {
     type: 'drawer',
     link: '',
+    icon: 'fa fa-wechat',
   },
-  {
-    type: 'link',
-    link: 'https://weibo.com/u/7083441648?refer_flag=1001030103_&is_all=1',
-  },
+  // {
+  //   type: 'link',
+  //   link: 'https://weibo.com/u/7083441648?refer_flag=1001030103_&is_all=1',
+  // },
 ]
 
 let newMenus: any = computed(() => {
@@ -422,8 +426,12 @@ onMounted(() => {
               class="w-full h-full"
               @click="handleImgLists(iconItem)"
               v-if="iconItem.type === 'drawer'"
-            ></div>
-            <a class="w-full h-full" v-else :href="iconItem.link"></a>
+            >
+              <i :class="iconItem.icon"></i>
+            </div>
+            <a class="w-full h-full" v-else :href="iconItem.link">
+              <i :class="iconItem.icon"></i>
+            </a>
           </div>
         </div>
         <div
@@ -674,34 +682,43 @@ onMounted(() => {
 // }
 .imgLists {
   display: flex;
-  justify-content: center;
-  margin: 10px 40px 10px 0;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-right: 40px;
+  // margin: 10px 40px 10px 0;
   & > div {
     width: 15px;
-    height: 15px;
-    & > div,
-    & > a {
-      background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
-      background-repeat: no-repeat;
-      background-position: 5px 0;
-      // background-size: cover;
-      display: block;
+    // height: 15px;
+
+    gap: 14px;
+    i {
+      font-size: 20px;
+      color: #2958a3;
     }
-    &:nth-of-type(2) > a {
-      background-position: -27px 0;
-    }
-    &:nth-of-type(3) > a {
-      background-position: -58px 0;
-    }
-    &:nth-of-type(4) > div {
-      background-position: -92px 0;
-    }
-    &:nth-of-type(5) > a {
-      background-position: -125.5px 0;
-    }
-    &:not(:last-child) {
-      margin-right: 15px;
-    }
+    // & > div,
+    // & > a {
+    //   background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
+    //   background-repeat: no-repeat;
+    //   background-position: 5px 0;
+    //   // background-size: cover;
+    //   display: block;
+    // }
+    // &:nth-of-type(2) > a {
+    //   background-position: -27px 0;
+    // }
+    // &:nth-of-type(3) > a {
+    //   background-position: -58px 0;
+    // }
+    // &:nth-of-type(4) > div {
+    //   background-position: -92px 0;
+    // }
+    // &:nth-of-type(5) > a {
+    //   background-position: -125.5px 0;
+    // }
+    // &:not(:last-child) {
+    //   margin-right: 15px;
+    // }
   }
 }
 .drawerIn {

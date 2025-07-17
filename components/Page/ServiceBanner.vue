@@ -55,12 +55,12 @@ defineProps({
       &:nth-of-type(1){
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: 'NotoSansCJKtc--Bold';
-        font-size: 118px;
+        font-size: clamp(59px,6.15vw,118px);
       } 
       &:nth-of-type(2){
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-family: "DINCondensed-Bold";
-        font-size: 88.72px;
+        font-size: clamp(44.36px,4.62vw,88.72px);
       }
     }
     &.cataract{
@@ -118,8 +118,9 @@ defineProps({
 }
 @media screen and (max-width: 768px) {
   .serviceBanner{
+    max-height: 53.85vw;
     &-text{
-      top: 150px;
+      top: 23.08vw;
       span{
         line-height: 1.1;
         &:nth-of-type(1){
