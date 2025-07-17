@@ -2665,7 +2665,7 @@ const bannerData = {
 
   .xerophthalmia {
     transform: scale(1);
-    margin: 30px 0 0;
+    // margin: 30px 0 0;
 
     & > div:nth-child(1) {
       width: calc(100% - 60px);

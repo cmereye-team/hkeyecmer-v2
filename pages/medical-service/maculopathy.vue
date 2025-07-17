@@ -1476,7 +1476,7 @@ const bannerData = {
 @media screen and (max-width: 768px) {
   .maculopathy_nav {
     transform: scale(1);
-    margin: -50px 0 0;
+    // margin: -50px 0 0;
     & > div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;

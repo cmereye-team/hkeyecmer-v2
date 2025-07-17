@@ -3592,7 +3592,7 @@ const bannerData = {
   .eyeOrthopaedicDisease_nav {
     max-width: 100%;
     width: 100%;
-    margin: 30px 0 0;
+    // margin: 30px 0 0;
     transform: scale(1);
     padding: 0 30px;
     & > #ophthalmoplasty {

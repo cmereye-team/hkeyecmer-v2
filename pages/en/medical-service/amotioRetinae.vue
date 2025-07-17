@@ -1016,7 +1016,7 @@ const bannerData = {
 @media screen and (max-width: 768px) {
   .amotioRetinae_nav {
     max-width: 100%;
-    margin: -80px 0 0;
+    // margin: -80px 0 0;
     transform: scale(1);
     padding: 0 40px;
 

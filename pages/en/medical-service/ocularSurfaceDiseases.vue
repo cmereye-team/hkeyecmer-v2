@@ -3532,7 +3532,7 @@ const bannerData = {
   }
   .ocularSurfaceDiseases_nav {
     transform: scale(1);
-    margin: 30px auto 0;
+    // margin: 30px auto 0;
     & > #pterygium {
       width: calc(100% - 60px);
       margin: 0 auto 0;

@@ -653,7 +653,7 @@ const bannerData = {
   max-width: 1200px;
   transform: scale(0.9);
   transform-origin: center top;
-  margin: 100px auto -60%;
+  margin: 120px auto -60%;
   & > #strabismus {
     & > div:nth-child(2) {
       line-height: 46px;
@@ -1252,7 +1252,7 @@ const bannerData = {
   }
   .strabismusAmblyopia_nav {
     transform: scale(1);
-    margin: 30px 0 0;
+    // margin: 30px 0 0;
     & > #strabismus {
       width: calc(100% - 60px);
       margin: 0 auto 0;

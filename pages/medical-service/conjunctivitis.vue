@@ -595,7 +595,7 @@ const bannerData = {
 }
 .conjunctivitis_nav {
   max-width: 1200px;
-  margin: 100px auto -50%;
+  margin: 60px auto -50%;
   transform: scale(0.9);
   transform-origin: center top;
   & > div:nth-child(1) {
@@ -1138,7 +1138,7 @@ const bannerData = {
 @media screen and (max-width: 768px) {
   .conjunctivitis_nav {
     transform: scale(1);
-    margin: -80px 0 0;
+    // margin: -80px 0 0;
     & > div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;

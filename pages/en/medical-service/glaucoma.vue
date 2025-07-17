@@ -2821,7 +2821,7 @@ const bannerData = {
 @media screen and (max-width: 768px) {
   .glaucoma-in {
     transform: scale(1);
-    margin: 30px 0 0;
+    //margin: 30px 0 0;
     & > div {
       padding-top: 0px;
     }

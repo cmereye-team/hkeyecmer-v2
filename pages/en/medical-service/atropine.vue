@@ -459,7 +459,7 @@ const bannerData = {
   margin-top: 30px;
 }
 .atropine_nav {
-  margin: 100px auto 280px;
+  margin: 120px auto 280px;
   & > #introduce {
     margin-bottom: 164px;
     & > div:nth-child(2) {
@@ -1061,7 +1061,8 @@ const bannerData = {
     margin-top: -80px;
   }
   .atropine_nav {
-    margin: 30px auto 100px;
+    margin-top: 160px;
+    // margin: 30px auto 100px;
     & > #introduce {
       margin-bottom: 0;
       width: calc(100% - 60px);

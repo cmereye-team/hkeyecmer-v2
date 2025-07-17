@@ -761,7 +761,7 @@ const bannerData = {
 }
 .muscaeNav {
   max-width: 1200px;
-  margin: 100px auto -40%;
+  margin: 60px auto -40%;
   transform: scale(0.9);
   transform-origin: center top;
   // 什麼是飛蚊症？
@@ -1600,7 +1600,7 @@ const bannerData = {
   }
   .muscaeNav {
     transform: scale(1);
-    margin: 30px 0 0;
+    // margin: 30px 0 0;
     & > div:nth-child(1) {
       width: calc(100% - 60px);
       margin: 0 auto;

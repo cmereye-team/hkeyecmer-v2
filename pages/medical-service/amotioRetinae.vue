@@ -526,7 +526,7 @@ const bannerData = {
 <style lang="scss" scoped>
 .amotioRetinae_nav {
   max-width: 1200px;
-  margin: 100px auto -50%;
+  margin: 60px auto -50%;
   transform: scale(0.9);
   transform-origin: center top;
   & > #intro {
@@ -1034,7 +1034,7 @@ const bannerData = {
 @media screen and (max-width: 768px) {
   .amotioRetinae_nav {
     max-width: 100%;
-    margin: -80px 0 0;
+    // margin: -80px 0 0;
     transform: scale(1);
     padding: 0 40px;
 
