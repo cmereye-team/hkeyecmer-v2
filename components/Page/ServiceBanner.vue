@@ -131,11 +131,11 @@ defineProps({
         line-height: 1.1;
         &:nth-of-type(1) {
           text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-          font-size: 62.001px;
+          font-size: clamp(31px, 15.9vw, 62px);
         }
         &:nth-of-type(2) {
           text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
-          font-size: 46.617px;
+          font-size: clamp(23.3px, 11.95vw, 46.6px);
         }
       }
       &.atropine {
@@ -231,9 +231,9 @@ defineProps({
 }
 @media screen and (max-width: 350px) {
   .serviceBanner {
-    max-height: 460px;
+    // max-height: clamp(230px, 117.95vw, 460px);
     &-text {
-      top: 40vw;
+      // top: 40vw;
       &.ocularSurfaceDiseases,
       &.maculopathy,
       &.conjunctivitis,

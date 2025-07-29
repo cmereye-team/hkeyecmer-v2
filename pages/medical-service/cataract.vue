@@ -3878,13 +3878,15 @@ body {
   }
 
   .s1 .btn_box .bt-box .animated-button1 {
-    font-size: 22px;
+    font-size: 20px;
     margin: auto;
     width: 64vw;
     line-height: 1.5;
     padding: 3px 0;
   }
   .s1 h1 {
+    position: relative;
+    z-index: 2;
     text-shadow: rgb(255 255 255) 3px 0px 0px,
       rgb(255 255 255) 2.83333px 0.983333px 0px,
       rgb(255 255 255) 2.35px 1.85px 0px,
@@ -3905,26 +3907,27 @@ body {
       rgb(255 255 255) 2.45px -1.73333px 0px,
       rgb(255 255 255) 2.88333px -0.833333px 0px;
     font-family: Arial;
-    font-size: 32px;
+    font-size: 30px;
+    line-height: 1.5;
     text-align: center;
   }
   .s1 .btn_box {
-    width: 80vw;
+    width: 75vw;
     margin: auto;
-    padding: 10vw 0vw 5vw;
-
+    padding: 5vw 0vw 5vw;
     border-radius: 50px 20px 20px 20px;
   }
   .s1 .btn_box .bt-box {
     justify-content: start;
   }
   .s1 .btn_box img {
-    width: 49vw;
+    width: 32vw;
     position: absolute;
     right: 0;
-    top: -24vw;
+    top: 0vw;
     left: 0;
-    margin: auto;
+    margin-left: auto;
+    opacity: 0.5;
   }
   .s1 .p1 {
     margin-top: 10vw;
@@ -3935,7 +3938,6 @@ body {
     width: 60vw;
     top: 65vw;
   }
-
 }
 
 @media screen and (min-width: 768px) {
@@ -4057,7 +4059,7 @@ body {
       // margin-left: 78px;
       position: relative;
       & > div:nth-child(1) {
-        margin-top: 100px;
+        // margin-top: 100px;
         z-index: 2;
       }
       & > div {
