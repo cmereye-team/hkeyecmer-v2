@@ -458,7 +458,16 @@ const bannerData = {
 
 <template>
   <div>
-    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <PageServiceBanner :bannerData="bannerData" /> -->
+     <div class="banner-bg-wrap">
+       <img
+      data-cfsrc="https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png"
+      srcset="https://static.cmereye.com/imgs/2023/10/5934acd90d66772b.png 768w, https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png"
+      alt="白內障"
+      src="https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png"
+    />
+     </div>
+     <div class="banner-bg"></div>
     <serviceNav :arrData="serviceNavigation" />
     <div class="cataract" :class="{ 'cataract-en': locale === 'en' }">
       <!-- 白內障 -->
@@ -5397,7 +5406,18 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .banner-bg-wrap{
+    background-image: url('https://static.cmereye.com/imgs/2023/10/5934acd90d66772b.png');
+    background-size:100% 100%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+
+  }
+  
   .cataract {
+    
     transform: scale(1);
     margin: 20px auto 0;
     // & > div:nth-child(2) {
@@ -5466,7 +5486,8 @@ body {
       width: 100%;
       font-size: 14px;
       line-height: 160%;
-      margin-top: 20px;
+      // margin-top: 20px;
+      margin-top: 100px;
 
       & > p {
         margin-bottom: 20px;
@@ -6345,7 +6366,22 @@ body {
     text-align: justify;
   }
 }
+@media (min-width: 768px) {
+   .banner-bg-wrap{
+    background-image: url('https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png');
+    background-size:100% 100%;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+
+  }
+    .banner-bg{
+      height: 100px;
+   }
+}
 @media (min-width: 678px) and (max-width: 1200px) {
+  
   .cataract {
     margin-bottom: -80%;
   }
