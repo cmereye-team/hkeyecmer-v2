@@ -112,7 +112,8 @@ const rt = ref(route)
           </div>
         </div>
       </a>
-      <a
+
+      <!-- <a
         href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
         class="cataract_btn ga-pc-right-cataract_btn"
         id="ga-pc-right-cataract_btn"
@@ -129,6 +130,25 @@ const rt = ref(route)
             src="https://static.cmereye.com/imgs/2024/06/012f428c7e43ad79.png"
             alt=""
           />
+        </div>
+      </a> -->
+
+      <a
+        class="catarct-wrap"
+        href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
+        target="_blank"
+      >
+        <img
+          src="https://static.cmereye.com/imgs/2024/06/012f428c7e43ad79.png"
+          alt=""
+          class="catarct-wrap__callicon"
+        />
+        <div class="catarct-whatsapp">
+          <div class="ga-whatsapp__info">
+            <div class="ga-whatsapp__info--whatsapp">WhatsApp</div>
+            <div class="ga-whatsapp__info--number">60629611</div>
+          </div>
+          <div class="ga-whatsapp__text">白內障專線</div>
         </div>
       </a>
     </div>
@@ -268,6 +288,7 @@ const rt = ref(route)
         }
       }
     }
+
     .cataract_btn {
       margin-top: 20px;
       display: flex;
@@ -278,6 +299,90 @@ const rt = ref(route)
         left: -30%;
         animation: identifier 2s linear infinite;
       }
+    }
+
+    .catarct-wrap {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+      border: 5px solid #e13540;
+      border-radius: 5px;
+      width: 200px;
+      position: relative;
+    }
+
+    .catarct-wrap .catarct-whatsapp {
+      font-weight: bold;
+      color: #e13540;
+      font-size: 20px;
+    }
+
+    .catarct-whatsapp .ga-whatsapp__info {
+      height: 34px;
+      overflow: hidden;
+    }
+
+    .catarct-wrap .catarct-wrap__callicon {
+      width: 88px;
+      height: 88px;
+      position: absolute;
+      left: -38px;
+      top: -6px;
+      animation: identifier 2s linear infinite;
+      z-index: 9;
+      /* transform: translate(0, 50%); 移动自身宽高的一半 */
+    }
+
+    .catarct-whatsapp .ga-whatsapp__info .ga-whatsapp__info--whatsapp {
+      line-height: 34px;
+      text-align: center;
+      flex: 1;
+      height: 34px;
+      position: relative;
+      transition: all 0.3s;
+      background-color: #fff;
+      padding-left: 30px;
+    }
+
+    .catarct-wrap:hover
+      .catarct-whatsapp
+      .ga-whatsapp__info
+      .ga-whatsapp__info--whatsapp {
+      transform: translateY(-100%);
+    }
+
+    .catarct-whatsapp .ga-whatsapp__info .ga-whatsapp__info--number {
+      line-height: 34px;
+      text-align: center;
+      flex: 1;
+      height: 34px;
+      position: relative;
+      transition: all 0.3s;
+      background-color: #fff;
+      padding-left: 30px;
+    }
+
+    .catarct-wrap:hover
+      .catarct-whatsapp
+      .ga-whatsapp__info
+      .ga-whatsapp__info--number {
+      transform: translateY(-100%);
+      background-color: #e13540;
+      color: #fff;
+    }
+
+    .catarct-wrap .ga-whatsapp__text {
+      border-top: 5px solid #e13540;
+      text-align: center;
+      font-size: 20px;
+      line-height: 34px;
+      color: #e13540;
+      transition: all 0.3s;
+      height: 110%;
+      font-weight: bold;
+      font-family: 'Noto Sans HK';
+      background-color: #fff;
+      padding-left: 30px;
     }
   }
 }

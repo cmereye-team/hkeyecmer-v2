@@ -28,7 +28,13 @@ export default defineNuxtConfig({
 
   // build
   build: {
-    transpile: ['@headlessui/vue', 'gsap'],
+    transpile: [
+      '@headlessui/vue',
+      'gsap',
+      '@intlify/message-compiler',
+      '@intlify/shared',
+      'vue-i18n',
+    ],
   },
 
   // modules
@@ -99,7 +105,6 @@ export default defineNuxtConfig({
     layoutTransition: { name: 'layout', mode: 'out-in' },
     head: {
       link: [
-  
         {
           rel: 'stylesheet',
           href: 'https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css',
@@ -115,6 +120,7 @@ export default defineNuxtConfig({
       locale: 'zh-hk',
       fallbackLocale: 'zh-hk',
       availableLocales: ['zh-hk', 'zh', 'en'],
+      legacy: false,
     },
   },
 
