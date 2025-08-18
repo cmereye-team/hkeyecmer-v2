@@ -24,8 +24,8 @@ useHead(() => ({
       //   content: t('tdk.cataract.key'),
       // },
       {
-        hid: 'Keywords',
-        name: 'Keywords',
+        hid: 'keywords',
+        name: 'keywords',
         content:
           '白內障 白內障收費 白內障成因 白內障晶體 白內障病徵 白內障預防 白內障價錢 白內障先兆 白內障手術 白內障矯視 白內障症狀 白內障種類 白內障眼藥水 白內障青光眼 白內障微創 白內障激光 白內障治療 白內障手術過程 白內障眼鏡 白內障檢查 眼球渾濁 老人白內障 老人白內障手術 老人白內障手術費用 老人家白內障 眼睛退化 眼睛玻璃體退化 先天性白內障 視力模糊 視力下降 人工晶體 超聲乳化白內障切除術 單焦點人工晶體 散光型人工晶體 多焦點人工晶體 眼睛檢查 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼睛診所  耀眼行動 白內障手術計劃 白內障手術資助計劃 政府白內障資助 長者白內障資助	',
       },
@@ -450,16 +450,16 @@ const bannerData = {
   pcSrc: 'https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png',
   mbSrc: 'https://static.cmereye.com/imgs/2023/10/5934acd90d66772b.png',
   cnName: '白內障',
-  enName: 'CATARACT',
-  textColor: '#3DBAD7',
+  // enName: 'CATARACT',
+  textColor: '#29c384',
   pageName: 'cataract',
 }
 </script>
 
 <template>
   <div>
-    <!-- <PageServiceBanner :bannerData="bannerData" /> -->
-    <div class="banner-bg-wrap">
+    <PageServiceBanner :bannerData="bannerData" />
+    <!-- <div class="banner-bg-wrap">
       <img
         data-cfsrc="https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png"
         srcset="
@@ -470,7 +470,7 @@ const bannerData = {
         src="https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png"
       />
     </div>
-    <div class="banner-bg"></div>
+    <div class="banner-bg"></div> -->
     <serviceNav :arrData="serviceNavigation" />
     <div class="cataract" :class="{ 'cataract-en': locale === 'en' }">
       <!-- 白內障 -->
@@ -479,7 +479,7 @@ const bannerData = {
       </div>
       <!-- 白內障影響日常生活？ -->
       <div id="cataract">
-        <div class="s1">
+        <!-- <div class="s1">
           <div class="container">
             <div class="btn_box">
               <h1>
@@ -507,7 +507,7 @@ const bannerData = {
               />
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- <div>
           <div>
@@ -569,7 +569,7 @@ const bannerData = {
           </p>
         </div>
 
-        <div>
+        <!-- <div>
           <service-button-icon
             :str="
               $t(
@@ -579,7 +579,7 @@ const bannerData = {
             :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
             :type="'2'"
           />
-        </div>
+        </div> -->
       </div>
 
       <!-- 白內障治療，手術 -->
@@ -3928,6 +3928,11 @@ body {
     margin-top: 125px;
     margin-bottom: 30px;
   }
+  .cataract {
+    p {
+      font-size: 24px;
+    }
+  }
 }
 
 .cataract {
@@ -3938,7 +3943,7 @@ body {
   transform-origin: center top;
   & > div:nth-child(2) {
     & > div:nth-child(1) {
-      display: flex;
+      // display: flex;
       flex-direction: row;
       justify-content: space-between;
       // margin-left: 78px;
@@ -4992,6 +4997,15 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .serviceBanner {
+    max-height: 6.5vw;
+  }
+  :deep(.serviceBanner-text) {
+    top:15.08vw;
+  }
+  :deep(.serviceBanner .serviceBanner-text span){
+    font-size: clamp(31px,8.5vw,62px);
+  }
   .cataract {
     & > div:nth-child(2) {
       & > div:nth-child(2) {
@@ -5294,7 +5308,7 @@ body {
 
   .cataract {
     transform: scale(1);
-    margin: 20px auto 0;
+    margin: 10px auto 0;
     // & > div:nth-child(2) {
     width: calc(100% - 50px);
     // margin:100px auto -40%;
@@ -5362,7 +5376,7 @@ body {
       font-size: 14px;
       line-height: 160%;
       // margin-top: 20px;
-      margin-top: 100px;
+      margin-top: 80px;
 
       & > p {
         margin-bottom: 20px;
@@ -5569,11 +5583,11 @@ body {
     }
     & > #surgeryArr {
       // width: calc(100% - 60px);
-      margin: 70px auto 0;
+      margin: 10px auto 0;
       & > div:nth-child(1) {
         & > div:nth-child(1) {
           width: 200px;
-          height: 130px;
+          height: 110px;
           border-radius: 15px;
           & > div {
             // width: 330px;
@@ -5589,7 +5603,7 @@ body {
         }
       }
       & > div:nth-child(2) {
-        margin-top: 30px;
+        margin-top: 10px;
         & > div:nth-child(1) {
           font-size: 14px;
           line-height: 2;
