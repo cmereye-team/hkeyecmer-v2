@@ -76,8 +76,8 @@ interface NewList {
       min-width: 31.25vw;
       height: fit-content;
       position: relative;
-      &>img,
-      &>div {
+      & > img,
+      & > div {
         position: relative;
         z-index: 5;
       }
@@ -101,7 +101,7 @@ interface NewList {
       width: 32.29165vw;
       height: 31.25vw;
       display: inline-block;
-      background: #F2F2F2;
+      background: #f2f2f2;
       position: absolute;
       bottom: 0;
       right: 0;
@@ -128,6 +128,17 @@ interface NewList {
         :deep(p) {
           margin-bottom: 1.665vw;
         }
+      }
+    }
+  }
+}
+.docList:nth-child(12),
+.docList:nth-child(13) {
+  & > div:nth-child(2) {
+    & > div:nth-child(1) {
+      div {
+        bottom: -9vw;
+        white-space: nowrap;
       }
     }
   }
@@ -245,5 +256,4 @@ li:nth-child(24) {
     }
   }
 }
-
 </style>

@@ -155,11 +155,7 @@ const getWindowWidth = () => {
         </li>
 
         <li v-for="(item, index) in NewList" :key="index" class="docList">
-          <div
-            class="docDes"
-        
-            :class="{ 'docDes-en': locale === 'en' }"
-          >
+          <div class="docDes" :class="{ 'docDes-en': locale === 'en' }">
             <div :class="['docName', { 'docName-en': locale === 'en' }]">
               {{ item.doctorName }}
             </div>
@@ -184,11 +180,7 @@ const getWindowWidth = () => {
               </div>
             </div>
           </div>
-          <div
-            class="docImg"
-       
-            :class="{ 'docImg-en': locale === 'en' }"
-          >
+          <div class="docImg" :class="{ 'docImg-en': locale === 'en' }">
             <div>
               <img
                 :src="
@@ -434,7 +426,7 @@ const getWindowWidth = () => {
     & > div:nth-child(2) {
       & > div:nth-child(2) {
         top: 74px;
-        left: -37px;
+        left: -84px;
       }
     }
   }
@@ -446,8 +438,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        top: 102px;
-        left: -116px;
+        top: 118px;
+        left: -148px;
       }
 
       & > div:nth-child(1)::before {
@@ -491,8 +483,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -53px;
-        top: 37px;
+        left: -88px;
+        top: -42px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -511,7 +503,7 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -107px;
+        left: -153px;
         top: 129px;
       }
 
@@ -557,8 +549,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -62px;
-        top: 102px;
+        left: -124px;
+        top: -30px;
       }
 
       & > div:nth-child(1)::before {
@@ -580,7 +572,7 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        right: -66px;
+        right: -98px;
         top: 0;
       }
 
@@ -626,8 +618,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        right: -71px;
-        top: -3px;
+        right: -63px;
+        top: -27px;
       }
 
       & > div:nth-child(1)::before {
@@ -676,8 +668,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -80px;
-        top: 100px;
+        left: -160px;
+        top: 77px;
       }
 
       & > div:nth-child(1)::before {
@@ -700,7 +692,7 @@ const getWindowWidth = () => {
 
       & > div:nth-child(2) {
         left: -120px;
-        top: 30px;
+        top: -54px;
       }
 
       & > div:nth-child(1)::before {
@@ -722,8 +714,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -136px;
-        top: 135px;
+        left: -180px;
+        top: 2px;
       }
 
       & > div:nth-child(1)::before {
@@ -745,7 +737,7 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -100px;
+        right: -100px;
         top: 30px;
       }
 
@@ -768,8 +760,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -120px;
-        top: 130px;
+        left: -174px;
+        top: 117px;
       }
 
       & > div:nth-child(1)::before {
@@ -789,8 +781,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -86px;
-        top: 13px;
+        left: -140px;
+        top: -27px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -810,7 +802,7 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -111px;
+        right: -111px;
         top: 129px;
       }
       & > div:nth-child(1)::before {
@@ -831,7 +823,7 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        right: -96px;
+        left: -121px;
         top: 40px;
       }
       & > div:nth-child(1)::before {
@@ -852,8 +844,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -68px;
-        top: 40px;
+        left: -190px;
+        top: -14px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -894,7 +886,7 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -100px;
+        left: -260px;
         top: 156px;
       }
       & > div:nth-child(1)::before {
@@ -916,7 +908,7 @@ const getWindowWidth = () => {
         height: auto;
       }
       & > div:nth-child(2) {
-        left: -103px;
+        right: -183px;
         top: 7px;
       }
       & > div:nth-child(1)::before {
@@ -943,7 +935,7 @@ const getWindowWidth = () => {
         // height: 330px;
       }
       & > div:nth-child(2) {
-        right: -103px;
+        right: -145px;
         top: 157px;
       }
       & > div:nth-child(1)::before {
@@ -968,8 +960,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        right: -120px;
-        top: 50px;
+        left: -138px;
+        top: 94px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -994,8 +986,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        bottom: 150px;
-        right: -70px;
+        bottom: 69px;
+        right: -75px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -1040,7 +1032,7 @@ const getWindowWidth = () => {
     .mainCon {
       margin-left: 0;
       margin-top: 30.2083vw;
-      padding:  0 5vw  0 6.25vw ;
+      padding: 0 5vw 0 6.25vw;
       .docList {
         flex-direction: row-reverse;
         width: 100%;
