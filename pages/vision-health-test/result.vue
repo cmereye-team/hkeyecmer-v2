@@ -301,6 +301,8 @@ let rightDataList = ref({
 })
 
 let ShowBool = ref(false)
+const projectName = ref('')
+const projectLink = ref('')
 onMounted(() => {
   if (!['01', '05', '06', '07', '08'].includes(testId)) {
     ShowBool.value = true
@@ -338,6 +340,8 @@ onMounted(() => {
   }
   if (testId == '07') {
     resultTitle.value = '乾眼症測試'
+    projectName.value = '乾眼症'
+    projectLink.value = '/medical-service/xerophthalmia'
     if (testSum <= 9) {
       datalist.value = list[1][0]
     } else if (testSum >= 10 && testSum <= 18) {
@@ -348,6 +352,8 @@ onMounted(() => {
   }
   if (testId == '08') {
     resultTitle.value = '白內障測試'
+    projectName.value = '白內障'
+    projectLink.value = '/medical-service/cataract'
     if (testSum <= 1) {
       datalist.value = list[2][0]
     } else if (testSum >= 2 && testSum <= 3) {
@@ -383,7 +389,9 @@ onMounted(() => {
     }
   }
   if (testId == '04') {
-    resultTitle.value = '黃斑病變'
+    resultTitle.value = '黃斑病變';
+    projectName.value = '黃斑病變'
+    projectLink.value = '/medical-service/maculopathy'
     datalist.value = leftSum > 0 ? list[7][1] : list[7][0]
     rightDataList.value = rightSum > 0 ? list[7][3] : list[7][2]
   }
@@ -461,11 +469,8 @@ const toEyesight = () => {
       </div>
     </div>
     <div class="resultPage-btn">
-      <a
-        href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.hkcmereye.com%2F/result01&amp;src=sdkpreparse"
-        target="_block"
-        ><div>分享</div></a
-      >
+      <a v-if="!projectLink" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.hkcmereye.com%2F/result01&amp;src=sdkpreparse" target="_blank"><div>分享</div></a>
+      <nuxt-link v-else :to="projectLink"><div>瞭解{{ projectName }}</div></nuxt-link>
       <a href="tel: +852 3956 2025"><div>立即預約眼睛檢查</div></a>
     </div>
   </div>
