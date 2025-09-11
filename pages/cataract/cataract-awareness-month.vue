@@ -3436,7 +3436,7 @@ body {
     bottom: -1px;
   }
   .bnzv3_container .s1 .btn_box .bt-box {
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 0px;
   }
   .bnzv3_container .s1 .btn_box .bt-box a {
@@ -3781,7 +3781,7 @@ letter-spacing: 8.933px;  display: inline-flex; text-align: center;
   .bnzv3_container .s9 .accordion h2 {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     border-bottom: 2px solid #3dc1ee;
     padding: 0;
     padding-bottom: 10px;
@@ -4050,7 +4050,7 @@ letter-spacing: 8.933px;  display: inline-flex; text-align: center;
     border-radius: 50px 20px 20px 20px;
   }
   .bnzv3_container .s1 .btn_box .bt-box {
-    justify-content: start;
+    justify-content: flex-start;
   }
   .bnzv3_container .s1 .btn_box img {
     width: 49vw;
@@ -4119,7 +4119,7 @@ letter-spacing: 8.933px;  display: inline-flex; text-align: center;
   }
   .bnzv3_container .s3 ul li {
     flex-flow: row;
-    justify-content: start;
+    justify-content: flex-start;
     width: 90vw;
     margin: 0 auto;
     margin-bottom: 10vw;
@@ -4257,7 +4257,7 @@ letter-spacing: 8.933px;  display: inline-flex; text-align: center;
   .bnzv3_container .s6 ul li {
     flex-flow: row;
     margin-top: 7vw;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .bnzv3_container .s6 ul li img {
     width: 40vw;
@@ -4400,7 +4400,7 @@ letter-spacing: 8.933px;  display: inline-flex; text-align: center;
   .bnzv3_container .s9 .accordion h2 {
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
     border-bottom: 2px solid #3dc1ee;
     padding: 0;
     padding-bottom: 10px;

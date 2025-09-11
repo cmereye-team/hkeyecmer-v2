@@ -2232,7 +2232,7 @@ ul.contentbox li {
   margin-bottom: 15px;
   display: flex;
   align-items: self-start;
-  justify-content: start;
+  justify-content: flex-start;
 }
 
 ul.contentbox li i {
