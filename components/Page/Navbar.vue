@@ -18,7 +18,11 @@ let menus = computed((): IMenuItem[] => [
     text: t('pages.index.home'),
     route: { name: 'index' }, // 首页
   },
-
+  {
+    type: 'link',
+    text: '眼睛健康大使',//眼睛健康大使
+    route: { name: 'carolcheng' },
+  },
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
