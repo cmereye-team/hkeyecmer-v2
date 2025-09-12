@@ -343,7 +343,7 @@ const newMenus = computed(() => {
     if(item.route?.path === '/2025/eye-health-ambassador/carolcheng'){
       item.styleClass = 'text-[#ff4da6] font-bold'
     } else if (item.route?.name === 'medical-service-cataract'){
-      item.styleClass = 'text-[#ff6b2c]'
+      item.styleClass = 'text-[#ff6b2c] font-bold'
     }
   })
   return menusCopy
