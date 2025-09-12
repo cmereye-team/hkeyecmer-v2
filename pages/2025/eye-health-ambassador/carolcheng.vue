@@ -1,8 +1,8 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:47:28
- * @LastEditTime: 2025-09-12 14:37:55
- * @FilePath: /pages/2025/eye-health-ambassado/carolcheng.vue
+ * @LastEditTime: 2025-09-12 17:07:06
+ * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 眼睛健康大使
 -->
 <script setup lang="ts">
@@ -368,27 +368,17 @@ onMounted(() => {
             <p class="examination-item-text">{{ item.text }}</p>
           </div>
         </div>
-        <div class="button-online">免費線上初步驗眼</div>
+        <div class="flex justify-center">
+          <div class="button-online">免費線上初步驗眼</div>
+        </div>
       </div>
     </section>
     <section class="cmer">
       <div class="wrap">
-        <h2 class="cmer-title text-center">希瑪眼科中心</h2>
+        <div class="cmer-title">
+          <h2 class="cmer-title-text">希瑪眼科中心</h2>
+        </div>
         <div class="cmer-main">
-          <div class="cmer-intro">
-            <p>
-              希瑪眼科中心擁有龐大規模眼科醫療網絡，設有10間眼科診所，遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上26名經驗豐富的眼科專科醫生，以及多名註冊視光師及醫護人員組成，為市民提供全面眼科專科醫療服務。
-            </p>
-            <p>
-              希瑪眼科中心嚴格遵守香港及國際醫療技術操作規範，設有多間符合國際標準的無菌手術室，配備先進尖端的眼科醫療儀器，秉持「度身訂造」原則，為病人提供安全、準確、可靠的眼科檢查及治療。
-            </p>
-            <nuxt-link to="/contact-us" class="button-wrap mb-4"
-              ><div class="button-contact">
-                <span class="transition"></span><span class="gradient"></span
-                ><span class="label">診所地址及電話</span>
-              </div></nuxt-link
-            >
-          </div>
           <div class="cmer-swiper">
             <swiper loop>
               <swiper-slide v-for="(item, index) in swiperList" :key="index">
@@ -402,14 +392,28 @@ onMounted(() => {
               </swiper-slide>
             </swiper>
           </div>
+          <div class="cmer-intro">
+            <p>
+              希瑪眼科中心擁有龐大規模眼科醫療網絡，設有10間眼科診所，遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上26名經驗豐富的眼科專科醫生，以及多名註冊視光師及醫護人員組成，為市民提供全面眼科專科醫療服務。
+            </p>
+            <p>
+              希瑪眼科中心嚴格遵守香港及國際醫療技術操作規範，設有多間符合國際標準的無菌手術室，配備先進尖端的眼科醫療儀器，秉持「度身訂造」原則，為病人提供安全、準確、可靠的眼科檢查及治療。
+            </p>
+            <nuxt-link to="/contact-us" class="button-wrap"
+              ><div class="button-contact">
+                <span class="transition"></span><span class="gradient"></span
+                ><span class="label">診所地址及電話</span>
+              </div></nuxt-link
+            >
+          </div>
         </div>
       </div>
     </section>
-    <section class="services">
+    <section class="services mb-4">
       <div class="wrap">
         <h2 class="section-title text-center">醫療服務</h2>
         <div class="services-list">
-          <div v-for="(item, index) in servicesList" :key="index">
+          <template v-for="(item, index) in servicesList" :key="index">
             <nuxt-link :to="item.href" class="services-item">
               <img
                 class="services-img"
@@ -419,13 +423,13 @@ onMounted(() => {
               />
               <p class="services-name">{{ item.name }}</p>
             </nuxt-link>
-          </div>
+          </template>
         </div>
       </div>
     </section>
     <section class="ratings bg-[#F8F9FA] mt-5 py-5">
-      <div class="ratings-title text-center mb-2 lg:mb-4">
-        <h2 class="font-blod text-primary mb-2">客戶評分</h2>
+      <div class="ratings-title text-center mb-2 lg:mb-10">
+        <h2 class="section-title mb-2">客戶評分</h2>
         <p class="text-gray-600">來自 Google 平台的真實體驗分享</p>
       </div>
       <swiper
@@ -438,7 +442,7 @@ onMounted(() => {
         :speed="1500"
       >
         <swiper-slide v-for="item in ratingsList" :key="item.id">
-          <div class="ratings-item bg-white p-3">
+          <div class="ratings-item flex-[1] p-3">
             <div class="info flex items-center mb-4">
               <div class="img mr-3">
                 <img
@@ -521,6 +525,9 @@ onMounted(() => {
 // 验眼的重要性
 .examination {
   margin-bottom: 80px;
+  &-list {
+    margin-bottom: 70px;
+  }
   &-item {
     text-align: center;
     &-icon {
@@ -545,27 +552,39 @@ onMounted(() => {
 }
 .cmer {
   .wrap {
-    box-shadow: 0 2px 32px 0 rgba(0, 0, 0, 0.15);
     position: relative;
   }
   &-title {
-    background-color: #1b407a;
-    color: #fff;
-    font-size: 30px;
-    border-radius: 20px 0;
-    padding: 15px;
-    font-weight: 600;
+    text-align: center;
+    &-text {
+      background-color: #1b407a;
+      color: #fff;
+      font-size: 30px;
+      border-radius: 30px 0;
+      padding: 15px;
+      font-weight: 600;
+      width: 200px;
+    }
   }
   &-main {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
   }
   &-intro {
+    width: 50%;
     padding: 15px 15px 30px 15px;
+    p {
+      color: #515151;
+      font-size: 20px;
+      line-height: 34px;
+      text-align: justify;
+      text-indent: 45px;
+      margin-bottom: 20px;
+    }
   }
   &-swiper {
-    width: 100%;
+    width: 50%;
     height: 100%;
     img {
       width: 100%;
@@ -605,9 +624,18 @@ onMounted(() => {
     margin-right: 10px;
   }
 }
+.ratings {
+  .swiper-slide {
+    display: flex;
+    height: auto !important;
+    background-color: #fff;
+  }
+}
 .button-wrap {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 16px;
 
   &:hover {
     color: #fff;
@@ -823,24 +851,21 @@ onMounted(() => {
   .video {
     padding: 80px;
   }
-  .examination {
-    margin-bottom: 150px;
-  }
+  // .examination {
+  //   margin-bottom: 80px;
+  // }
   .cmer {
     &-title {
-      font-size: 45px;
-      border-radius: 0 35px 0 0;
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      &-text {
+        width: 332px;
+      }
     }
     &-intro {
       padding: 30px 35px;
       text-align: justify;
-      width: 55%;
-    }
-    &-swiper {
-      position: absolute;
-      left: -30%;
-      top: -8%;
-      width: 68%;
     }
   }
   .services {
