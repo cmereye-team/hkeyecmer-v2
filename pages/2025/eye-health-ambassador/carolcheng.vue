@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:47:28
- * @LastEditTime: 2025-09-11 18:16:18
+ * @LastEditTime: 2025-09-12 14:37:55
  * @FilePath: /pages/2025/eye-health-ambassado/carolcheng.vue
  * @Description: 眼睛健康大使
 -->
@@ -9,7 +9,6 @@
 import { Autoplay } from 'swiper'
 definePageMeta({
   layout: 'page',
-  name: 'carolcheng',
 })
 useHead(() => ({
   title: '眼睛健康大使 | 希瑪眼科中心',
@@ -233,8 +232,38 @@ onMounted(() => {
 })
 </script>
 <template>
-  <main class="main">
+  <div class="main">
     <!-- <PageServiceBanner :bannerData="bannerData" /> -->
+    <section class="banner">
+      <picture>
+        <source
+          media="(max-width: 767px)"
+          type="image/avif"
+          srcset="
+            https://statichk.cmermedical.com/hkcmereye/carolcheng/banner-m.avif
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          type="image/avif"
+          srcset="
+            https://statichk.cmermedical.com/hkcmereye/carolcheng/banner-pc.avif
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          type="image/jpeg"
+          srcset="
+            https://statichk.cmermedical.com/hkcmereye/carolcheng/banner-m.jpg
+          "
+        />
+        <img
+          class="banner-img"
+          src="https://statichk.cmermedical.com/hkcmereye/carolcheng/banner-pc.jpg"
+          alt="希瑪眼科中心"
+        />
+      </picture>
+    </section>
     <section class="video bg-[#F8F9FA]">
       <div
         class="wrap flex flex-col lg:flex-row gap-4 justify-center items-center"
@@ -345,7 +374,7 @@ onMounted(() => {
     <section class="cmer">
       <div class="wrap">
         <h2 class="cmer-title text-center">希瑪眼科中心</h2>
-        <div class="flex relative">
+        <div class="cmer-main">
           <div class="cmer-intro">
             <p>
               希瑪眼科中心擁有龐大規模眼科醫療網絡，設有10間眼科診所，遍佈港、九、新界。由從事眼科臨床30多年林順潮醫生帶領，加上26名經驗豐富的眼科專科醫生，以及多名註冊視光師及醫護人員組成，為市民提供全面眼科專科醫療服務。
@@ -353,7 +382,12 @@ onMounted(() => {
             <p>
               希瑪眼科中心嚴格遵守香港及國際醫療技術操作規範，設有多間符合國際標準的無菌手術室，配備先進尖端的眼科醫療儀器，秉持「度身訂造」原則，為病人提供安全、準確、可靠的眼科檢查及治療。
             </p>
-            <div class="button-contact">診所地址及電話</div>
+            <nuxt-link to="/contact-us" class="button-wrap mb-4"
+              ><div class="button-contact">
+                <span class="transition"></span><span class="gradient"></span
+                ><span class="label">診所地址及電話</span>
+              </div></nuxt-link
+            >
           </div>
           <div class="cmer-swiper">
             <swiper loop>
@@ -432,15 +466,12 @@ onMounted(() => {
       :co="`color:${'#64bcd1;'}`"
     />
     <PageFooterMenu />
-  </main>
+  </div>
 </template>
 <style lang="scss" scoped>
 // 公共部分
 .wrap {
   margin: 0 auto;
-}
-.main {
-  padding-top: 40px;
 }
 .section {
   &-title {
@@ -489,6 +520,7 @@ onMounted(() => {
 }
 // 验眼的重要性
 .examination {
+  margin-bottom: 80px;
   &-item {
     text-align: center;
     &-icon {
@@ -512,6 +544,10 @@ onMounted(() => {
   }
 }
 .cmer {
+  .wrap {
+    box-shadow: 0 2px 32px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+  }
   &-title {
     background-color: #1b407a;
     color: #fff;
@@ -520,12 +556,17 @@ onMounted(() => {
     padding: 15px;
     font-weight: 600;
   }
+  &-main {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
   &-intro {
     padding: 15px 15px 30px 15px;
   }
   &-swiper {
-    position: absolute;
     width: 100%;
+    height: 100%;
     img {
       width: 100%;
       border-radius: 30px;
@@ -564,212 +605,214 @@ onMounted(() => {
     margin-right: 10px;
   }
 }
-.button {
-  &-wrap {
-    display: flex;
-    justify-content: center;
+.button-wrap {
+  display: flex;
+  justify-content: center;
 
-    &:hover {
-      color: #fff;
-    }
+  &:hover {
+    color: #fff;
   }
-  /* 立即預約驗眼 */
-  &-more {
-    position: relative;
+}
+
+// 立即預約驗眼
+.button-more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 42px;
+  border: 2px solid #e55f53;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: #e55f53;
+  box-shadow: 0 0 0 2px #e55f53;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+
+  &-arr2,
+  &-arr1 {
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    position: absolute;
     display: flex;
     align-items: center;
-    gap: 4px;
-    padding: 16px 42px;
-    border: 2px solid #e55f53;
-    border-color: transparent;
-    font-size: 16px;
-    background-color: inherit;
-    border-radius: 100px;
-    font-weight: 600;
-    color: #e55f53;
-    box-shadow: 0 0 0 2px #e55f53;
-    cursor: pointer;
-    overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    justify-content: center;
+  }
 
-    &-arr1,
-    &-arr2 {
-      border-radius: 50%;
-      width: 32px;
-      height: 32px;
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+  svg {
+    width: 24px;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .button-more-arr2 {
+    background-color: #e55f53;
+    right: 16px;
 
     svg {
-      width: 24px;
-      z-index: 9;
-      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      fill: #fff;
+    }
+  }
+
+  .button-more-arr1 {
+    background-color: #fff;
+    left: -25%;
+
+    svg {
+      fill: #e55f53;
+    }
+  }
+
+  .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #e55f53;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  &:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #fff;
+    border-radius: 12px;
+
+    .button-more-arr2 {
+      right: -25%;
     }
 
-    &-arr2 {
-      background-color: #e55f53;
-      right: 16px;
-
-      svg {
-        fill: #fff;
-      }
-    }
-
-    &-arr1 {
-      background-color: #fff;
-      left: -25%;
-
-      svg {
-        fill: #e55f53;
-      }
-    }
-
-    .circle {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 20px;
-      height: 20px;
-      background-color: #e55f53;
-      border-radius: 50%;
-      opacity: 0;
-      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    .button-more-arr1 {
+      left: 16px;
     }
 
     .text {
-      position: relative;
-      z-index: 1;
-      transform: translateX(-12px);
-      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: translateX(12px);
     }
 
-    &:hover {
-      box-shadow: 0 0 0 12px transparent;
-      color: #fff;
-      border-radius: 12px;
-
-      &-arr2 {
-        right: -25%;
-      }
-
-      &-arr1 {
-        left: 16px;
-      }
-
-      .text {
-        transform: translateX(12px);
-      }
-
-      .circle {
-        width: 220px;
-        height: 220px;
-        opacity: 1;
-      }
-    }
-
-    &:active {
-      scale: 0.95;
-      box-shadow: 0 0 0 4px #e55f53;
+    .circle {
+      width: 220px;
+      height: 220px;
+      opacity: 1;
     }
   }
-  /* 免費線上初步驗眼 */
-  &-online {
-    width: fit-content;
-    margin: 42px auto 0;
-    padding: 12px 24px;
-    position: relative;
-    overflow: hidden;
-    background-color: #fff;
-    z-index: 0;
-    color: #e55f53;
-    border: 2px solid #e55f53;
-    transition: color 0.15s ease 0.25s;
-    font-weight: bold;
+
+  &:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 4px #e55f53;
+  }
+}
+
+// 免費線上初步驗眼
+.button-online {
+  padding: 12px 24px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 0;
+  color: #e55f53;
+  border: 2px solid #e55f53;
+  transition: color 0.15s ease 0.25s;
+  font-weight: bold;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #e55f53;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease-in-out;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #fff;
 
     &::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background-color: #e55f53;
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.4s ease-in-out;
-      z-index: -1;
-    }
-
-    &:hover {
-      color: #fff;
-
-      &::before {
-        transform: scaleX(1);
-      }
-    }
-  }
-
-  &-contact {
-    font-size: 17px;
-    padding: 1em 2.7em;
-    font-weight: 500;
-    background-color: #e55f53;
-    color: white;
-    border: none;
-    position: relative;
-    overflow: hidden;
-    border-radius: 2.7em;
-    cursor: pointer;
-
-    &-gradient {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      border-radius: 0.6em;
-      margin-top: -0.25em;
-      background-image: linear-gradient(
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0),
-        rgba(0, 0, 0, 0.3)
-      );
-    }
-
-    &-label {
-      position: relative;
-      top: -1px;
-    }
-
-    &-transition {
-      transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-      transition-duration: 500ms;
-      background-color: #fea851;
-      border-radius: 9999px;
-      width: 0;
-      height: 0;
-      position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &:hover {
-      color: #fff;
-
-      &-transition {
-        width: 14em;
-        height: 14em;
-      }
-    }
-
-    &:active {
-      transform: scale(0.97);
+      transform: scaleX(1);
     }
   }
 }
 
+// 診所地址及電話
+.button-contact {
+  font-size: 17px;
+  padding: 1em 2.7em;
+  font-weight: 500;
+  background-color: #e55f53;
+  color: white;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2.7em;
+  cursor: pointer;
+
+  .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 0.6em;
+    margin-top: -0.25em;
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.3)
+    );
+  }
+
+  .label {
+    position: relative;
+    top: -1px;
+  }
+
+  .transition {
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    transition-duration: 500ms;
+    background-color: #fea851;
+    border-radius: 9999px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    color: #fff;
+
+    .transition {
+      width: 14em;
+      height: 14em;
+    }
+  }
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+@media screen and (max-width: 767px) {
+  .main {
+    padding-top: 76px;
+  }
+}
 // 平板和电脑
 @media screen and (min-width: 768px) {
   .section {
@@ -780,6 +823,9 @@ onMounted(() => {
   .video {
     padding: 80px;
   }
+  .examination {
+    margin-bottom: 150px;
+  }
   .cmer {
     &-title {
       font-size: 45px;
@@ -788,8 +834,10 @@ onMounted(() => {
     &-intro {
       padding: 30px 35px;
       text-align: justify;
+      width: 55%;
     }
     &-swiper {
+      position: absolute;
       left: -30%;
       top: -8%;
       width: 68%;
