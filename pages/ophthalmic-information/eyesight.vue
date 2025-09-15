@@ -127,14 +127,7 @@ const toTestPage = (_id: string) => {
       <div class="eyesight-remark">
         <!-- 本網站提供的視力測試只是初步評估測試者的視力，如果您有任何眼睛不適的症狀，應盡快尋求眼科專科醫生檢查及治療。 -->
         <div class="eyesight-remark-in">
-          <img
-            srcset="
-              https://static.cmereye.com/imgs/2024/04/76decfbf3c0b2ade.png 768w,
-              https://static.cmereye.com/imgs/2024/04/914738d8159c2150.png
-            "
-            src="https://static.cmereye.com/imgs/2024/04/914738d8159c2150.png"
-            alt=""
-          />
+          <img src="https://statichk.cmermedical.com/opd/imgs/914738d8159c2150.webp" alt=""/>
           本網站提供的視力測試只是初步評估測試者的視力，<br />如果您有任何眼睛不適的症狀，<br />應盡快尋求眼科專科醫生檢查及治療。
         </div>
       </div>

@@ -344,7 +344,7 @@ const goInstagram = (type: string) => {
             {{ $t('pages.about_us.profile_centent.profile_group_hema') }}
             <img
               class="mianImg"
-              src="https://static.cmereye.com/imgs/2024/04/e06af078f24f2d14.png"
+              src="https://statichk.cmermedical.com/opd/person/person_ok1.webp"
               :title="
                 locale == 'zh-hk'
                   ? '希瑪眼科中心_眼科医生'

@@ -251,6 +251,10 @@ const getWindowWidth = () => {
 <style lang="scss" scoped>
 @import url(~/assets/font/font.css);
 
+:depp(.footerMenu .footerImg) {
+  right: -20vw;
+}
+
 .medical-team {
   .docImgDS {
     max-width: 312px !important;
@@ -1539,8 +1543,6 @@ const getWindowWidth = () => {
     }
   }
 }
-</style>
-<style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .medical-team {
     margin: auto;
@@ -1553,6 +1555,16 @@ const getWindowWidth = () => {
     & > div:first-child {
       margin-left: 190px;
     }
+  }
+}
+@media screen and (min-width: 1200px) {
+  :deep(.footerMenu .footerImg) {
+    right: -3vw;
+  }
+}
+@media screen and (min-width: 1441px) {
+  :deep(.footerMenu .footerImg) {
+    right: -18vw;
   }
 }
 </style>

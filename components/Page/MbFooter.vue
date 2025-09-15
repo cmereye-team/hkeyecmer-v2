@@ -111,18 +111,45 @@ const rt = ref(route)
     <div
       v-if="route.name !== 'index'"
       id="mbFooterTop"
-      class="mbFooter-top"
-      @click="toTop"
+      class="mbFooter-top backtop-mb"
     >
-      <img
+      <nuxt-link
+        class="backtop-mb-enter"
+        to="/2025/eye-health-ambassador/carolcheng"
+      >
+        <img
+          class="enter-text enter-t1"
+          src="https://statichk.cmermedical.com/opd/icons/icon-kol-t1.svg"
+          alt="眼睛健康大使"
+        />
+        <img
+          src="https://statichk.cmermedical.com/opd/icons/icon-kol-avatar@2x.png"
+          srcset="
+            https://statichk.cmermedical.com/opd/icons/icon-kol-avatar@2x.png 2x,
+            https://statichk.cmermedical.com/opd/icons/icon-kol-avatar@3x.png 3x
+          "
+          alt="眼睛健康大使鄭裕玲小姐頭像"
+        />
+        <img
+          class="enter-text enter-t2"
+          src="https://statichk.cmermedical.com/opd/icons/icon-kol-t2.svg"
+          alt="鄭裕玲小姐"
+        />
+      </nuxt-link>
+      <div class="backtop-mb-main" @click="toTop">
+        <img src="https://statichk.cmermedical.com/opd/svg/icon-backtop.svg" />
+      </div>
+      <!-- <img
         src="https://static.cmereye.com/imgs/2023/07/3a2e901023d9c537.png"
         alt=""
-      />
+      /> -->
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
+// .backtop {
+// }
 .mbFooter {
   position: fixed;
   bottom: 0;
@@ -159,7 +186,7 @@ const rt = ref(route)
         flex: 1.3;
       }
     }
-    .btn_whatsApp{
+    .btn_whatsApp {
       position: relative;
       & > div:nth-child(1) {
         border-right: none !important;
@@ -323,7 +350,34 @@ const rt = ref(route)
   &-top {
     position: absolute;
     right: 20px;
-    top: -150px;
+    // top: -150px;
+    bottom: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 36.5px;
+  }
+}
+.backtop {
+  &-mb {
+    &-enter {
+      position: relative;
+      .enter-text {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        &.enter-t1 {
+          top: -14px;
+        }
+        &.enter-t2 {
+          bottom: -14px;
+        }
+      }
+    }
+    &-main {
+      width: 34px;
+      height: 34px;
+    }
   }
 }
 @keyframes topDownCircle {
