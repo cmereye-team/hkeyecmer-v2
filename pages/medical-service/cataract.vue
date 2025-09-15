@@ -3759,7 +3759,7 @@ body {
     margin-top: 20px;
   }
   .s1 .btn_box .bt-box {
-    justify-content: start;
+    justify-content: flex-start;
   }
 
   .s1 .btn_box .bt-box .animated-button1 {
@@ -3803,7 +3803,7 @@ body {
     border-radius: 50px 20px 20px 20px;
   }
   .s1 .btn_box .bt-box {
-    justify-content: start;
+    justify-content: flex-start;
   }
   .s1 .btn_box img {
     width: 32vw;
@@ -3874,7 +3874,7 @@ body {
     bottom: -1px;
   }
   .s1 .btn_box .bt-box {
-    justify-content: start;
+    justify-content: flex-start;
     margin-top: 0px;
   }
   .s1 .btn_box .bt-box a {
@@ -6195,7 +6195,7 @@ body {
   }
   .s3 ul li {
     flex-flow: row;
-    justify-content: start;
+    justify-content: flex-start;
     width: 90vw;
     margin: 0 auto;
     margin-bottom: 10vw;

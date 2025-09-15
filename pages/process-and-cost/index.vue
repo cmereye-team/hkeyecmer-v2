@@ -2338,7 +2338,7 @@ const processedLists: any = ref([
 .processed-mobile-Boxtwo {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .processed-mobile-Boxtwo:last-child {
   margin-bottom: 78px;
@@ -2531,7 +2531,7 @@ const processedLists: any = ref([
 
   .processed-pc-BoxTwo {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 116px;
     padding-right: 50px;
     padding-top: 68px;
