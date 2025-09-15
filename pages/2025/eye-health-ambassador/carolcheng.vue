@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:47:28
- * @LastEditTime: 2025-09-12 17:07:06
+ * @LastEditTime: 2025-09-12 20:54:05
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 眼睛健康大使
 -->
@@ -369,7 +369,9 @@ onMounted(() => {
           </div>
         </div>
         <div class="flex justify-center">
-          <div class="button-online">免費線上初步驗眼</div>
+          <nuxt-link to="/ophthalmic-information/eyesight" class="button-online"
+            >免費線上初步驗眼</nuxt-link
+          >
         </div>
       </div>
     </section>
@@ -399,12 +401,13 @@ onMounted(() => {
             <p>
               希瑪眼科中心嚴格遵守香港及國際醫療技術操作規範，設有多間符合國際標準的無菌手術室，配備先進尖端的眼科醫療儀器，秉持「度身訂造」原則，為病人提供安全、準確、可靠的眼科檢查及治療。
             </p>
-            <nuxt-link to="/contact-us" class="button-wrap"
-              ><div class="button-contact">
-                <span class="transition"></span><span class="gradient"></span
-                ><span class="label">診所地址及電話</span>
-              </div></nuxt-link
-            >
+            <nuxt-link to="/contact-us" class="button-wrap">
+              <div class="button-contact">
+                <span class="transition"></span>
+                <span class="gradient"></span>
+                <span class="label">診所地址及電話</span>
+              </div>
+            </nuxt-link>
           </div>
         </div>
       </div>
@@ -414,7 +417,11 @@ onMounted(() => {
         <h2 class="section-title text-center">醫療服務</h2>
         <div class="services-list">
           <template v-for="(item, index) in servicesList" :key="index">
-            <nuxt-link :to="item.href" class="services-item">
+            <nuxt-link
+              :to="item.href"
+              class="services-item"
+              :style="{ animationDelay: index + 1 + 's;' }"
+            >
               <img
                 class="services-img"
                 :src="item.img"
@@ -427,19 +434,24 @@ onMounted(() => {
         </div>
       </div>
     </section>
-    <section class="ratings bg-[#F8F9FA] mt-5 py-5">
-      <div class="ratings-title text-center mb-2 lg:mb-10">
+    <section class="ratings">
+      <div class="ratings-title text-center mb-5 lg:mb-10">
         <h2 class="section-title mb-2">客戶評分</h2>
         <p class="text-gray-600">來自 Google 平台的真實體驗分享</p>
       </div>
       <swiper
         class="ratings-list flex gap-[30px]"
         loop
-        :space-between="windowW > 767 ? 40 : 10"
-        :slides-per-view="windowW > 767 ? 4 : 1.5"
         :modules="[Autoplay]"
-        :autoplay="{ delay: 0 }"
-        :speed="1500"
+        :breakpoints="{
+          0: { slidesPerView: 1.5, spaceBetween: 10 },
+          768: { slidesPerView: 2.5, spaceBetween: 20 },
+          992: { slidesPerView: 4, spaceBetween: 40 },
+        }"
+        :autoplay="{ delay: 0, disableOnInteraction: false }"
+        :speed="5000"
+        :free-mode="true"
+        :free-mode-momentum="false"
       >
         <swiper-slide v-for="item in ratingsList" :key="item.id">
           <div class="ratings-item flex-[1] p-3">
@@ -479,7 +491,8 @@ onMounted(() => {
 }
 .section {
   &-title {
-    font-size: 1.8rem;
+    // font-size: 24px;
+    font-size: 1.8em;
     font-weight: 700;
     margin-bottom: 25px;
     color: #2958a3;
@@ -507,6 +520,45 @@ onMounted(() => {
 // 视频
 .video {
   padding: 20px 0;
+  &-info {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    background: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(#fff, #fff),
+      linear-gradient(45deg, #3363ae, #1b407a);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: all 0.3s ease;
+    &:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 34px rgba(0, 0, 0, 0.25);
+    }
+    &-main {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #333, #555);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
   &-intro {
     padding: 30px;
     border-radius: 15px;
@@ -559,7 +611,7 @@ onMounted(() => {
     &-text {
       background-color: #1b407a;
       color: #fff;
-      font-size: 30px;
+      font-size: 24px;
       border-radius: 30px 0;
       padding: 15px;
       font-weight: 600;
@@ -572,19 +624,18 @@ onMounted(() => {
     flex-wrap: wrap;
   }
   &-intro {
-    width: 50%;
+    width: 100%;
     padding: 15px 15px 30px 15px;
     p {
       color: #515151;
-      font-size: 20px;
-      line-height: 34px;
       text-align: justify;
-      text-indent: 45px;
+      font-size: 14px;
+      line-height: 25px;
       margin-bottom: 20px;
     }
   }
   &-swiper {
-    width: 50%;
+    width: 100%;
     height: 100%;
     img {
       width: 100%;
@@ -611,6 +662,8 @@ onMounted(() => {
     animation: tagHighlight 9s infinite linear;
     animation-fill-mode: both;
     transition: all 0.3s ease-out;
+    color: #fff;
+    border-radius: 24px;
     &:hover {
       transform: translateY(-3px);
       color: #ffffff;
@@ -625,10 +678,16 @@ onMounted(() => {
   }
 }
 .ratings {
+  background: #f8f9fa;
+  padding: 20px 0 50px;
+  .swiper-wrap {
+    transition-timing-function: linear !important;
+  }
   .swiper-slide {
     display: flex;
     height: auto !important;
     background-color: #fff;
+    // transition: transform .1s linear;
   }
 }
 .button-wrap {
@@ -837,8 +896,21 @@ onMounted(() => {
   }
 }
 @media screen and (max-width: 767px) {
+  .wrap {
+    padding: 0 15px;
+  }
   .main {
     padding-top: 76px;
+  }
+  .cmer {
+    &-title {
+      &-text {
+        margin: 0 auto;
+      }
+    }
+    &-swiper {
+      padding: 30px 15px 0 15px;
+    }
   }
 }
 // 平板和电脑
@@ -848,12 +920,16 @@ onMounted(() => {
       font-size: 2rem;
     }
   }
+  .banner {
+    &-img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+    }
+  }
   .video {
     padding: 80px;
   }
-  // .examination {
-  //   margin-bottom: 80px;
-  // }
   .cmer {
     &-title {
       display: flex;
@@ -861,11 +937,21 @@ onMounted(() => {
       width: 100%;
       &-text {
         width: 332px;
+        font-size: 30px;
       }
     }
     &-intro {
+      width: 50%;
       padding: 30px 35px;
       text-align: justify;
+      p {
+        font-size: 20px;
+        line-height: 34px;
+        text-indent: 45px;
+      }
+    }
+    &-swiper {
+      width: 50%;
     }
   }
   .services {
@@ -881,6 +967,7 @@ onMounted(() => {
       border-radius: 15px;
       flex: 0 0 calc((100% - (5 - 1) * 15px) / 5);
       background: none;
+      color: #212529;
     }
     &-img {
       margin-right: 0;
@@ -893,6 +980,11 @@ onMounted(() => {
 @media screen and (min-width: 1200px) {
   .wrap {
     max-width: 1200px;
+  }
+  .video {
+    &-info {
+      padding-bottom: 30%;
+    }
   }
 }
 </style>
