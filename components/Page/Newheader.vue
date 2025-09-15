@@ -25,6 +25,12 @@ const menus = computed(() => {
     },
     {
       type: 'link',
+      text: '眼睛健康大使', //眼睛健康大使
+      link: { path: '/2025/eye-health-ambassador/carolcheng' },
+      childMenuList: [],
+    },
+    {
+      type: 'link',
       text: t('pages.about_us.about_us'),
       link: '/about-us', // 关于我们
       childMenuList: [
@@ -55,7 +61,7 @@ const menus = computed(() => {
         },
         {
           type: 'link',
-          text: t('pages.about_us.enterprise_vision'),
+          text: t('pages.about_us.enterprise_awards'),
           link: { path: '/about-us', hash: '#awards' },
         },
       ],
@@ -301,13 +307,24 @@ const imgLists = [
   // },
 ]
 
-let newMenus: any = computed(() => {
-  if (locale.value === 'en') {
-    let a: any = JSON.parse(JSON.stringify(menus.value))
-    a.splice(4, 1)
-    return a
-  }
-  return JSON.parse(JSON.stringify(menus.value))
+// let newMenus: any = computed(() => {
+//   if (locale.value === 'en') {
+//     let a: any = JSON.parse(JSON.stringify(menus.value))
+//     a.splice(4, 1)
+//     return a
+//   }
+//   return JSON.parse(JSON.stringify(menus.value))
+// })
+const newMenus = computed(() => {
+  let menusCopy:any = JSON.parse(JSON.stringify(menus.value))
+  menusCopy.forEach((item:any)=>{
+    if(item.link?.path === '/2025/eye-health-ambassador/carolcheng'){
+      item.styleClass = 'nav-carolcheng'
+    } else if (item.link?.path === '/medical-service/cataract'){
+      item.styleClass = 'nav-cataract'
+    }
+  })
+  return menusCopy
 })
 
 const handleToLinks = (_link: any) => {
@@ -343,13 +360,6 @@ watch(menuBool, (o, n) => {
     style: { display: 'none' },
   }
   a.style.display = n ? 'none' : 'block'
-  var b: any = document.getElementById('mbFooterTop')
-  let routeName: any = route.name
-  if (route.name === 'index') {
-  } else if (serciceLists.includes(routeName)) {
-  } else {
-    b.style.display = n ? 'block' : 'none'
-  }
 })
 
 let bgopn = ref(0)
@@ -456,6 +466,7 @@ onMounted(() => {
             <section
               v-for="(menusItem, menusIndex) in newMenus"
               :key="menusIndex"
+              :class="[menusItem.styleClass || '']"
             >
               <el-sub-menu
                 v-if="menusItem.childMenuList.length"
@@ -648,6 +659,21 @@ onMounted(() => {
   font-size: 16px;
   padding: 0 20px !important;
   font-weight: 500;
+}
+.nav-cataract {
+  .el-sub-menu__title {
+    font-weight: bold;
+    color: #ff6b2c;
+    i {
+      color: #2958a3;
+    }
+  }
+}
+.nav-carolcheng {
+  .el-menu-item {
+    font-weight: bold;
+    color: #ff4da6;
+  }
 }
 .itemCr {
   text-indent: 30px;

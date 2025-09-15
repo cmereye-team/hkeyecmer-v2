@@ -18,7 +18,11 @@ let menus = computed((): IMenuItem[] => [
     text: t('pages.index.home'),
     route: { name: 'index' }, // 首页
   },
-
+  {
+    type: 'link',
+    text: '眼睛健康大使',//眼睛健康大使
+    route: { path: '/2025/eye-health-ambassador/carolcheng' },
+  },
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
@@ -332,13 +336,23 @@ let menus = computed((): IMenuItem[] => [
 
 const locale = useState<string>('locale.setting')
 
+// 菜单处理i18n和单独样式
 const newMenus = computed(() => {
-  if (locale.value === 'en') {
-    let a: any = JSON.parse(JSON.stringify(menus.value))
-    // a.splice(4, 1)
-    return a
-  }
-  return JSON.parse(JSON.stringify(menus.value))
+  let menusCopy:any = JSON.parse(JSON.stringify(menus.value))
+  menusCopy.forEach((item:any)=>{
+    if(item.route?.path === '/2025/eye-health-ambassador/carolcheng'){
+      item.styleClass = 'text-[#ff4da6] font-bold'
+    } else if (item.route?.name === 'medical-service-cataract'){
+      item.styleClass = 'text-[#ff6b2c] font-bold'
+    }
+  })
+  return menusCopy
+  // if (locale.value === 'en') {
+  //   let a: any = JSON.parse(JSON.stringify(menus.value))
+  //   // a.splice(4, 1)
+  //   return a
+  // }
+  // return JSON.parse(JSON.stringify(menus.value))
 })
 
 const route = useRoute()
@@ -378,6 +392,7 @@ const hashActive = (child: any) => {
               :to="item.route ? item.route : undefined"
               :href="item.href ? item.href : undefined"
               class="hover:no-underline fatherBg"
+              :class="[item.styleClass || '']"
               >{{ item.text }}</Anchor
             >
             <div
@@ -422,7 +437,7 @@ const hashActive = (child: any) => {
   width: 100%;
   height: 100%;
   line-height: 49px;
-  color: #ffffff;
+  // color: #ffffff;
 }
 .adjustableHover {
   position: relative;
@@ -468,7 +483,7 @@ a {
   width: inherit;
 }
 .navigtion > div > a {
-  color: white;
+  // color: white;
   width: inherit;
   line-height: 49px;
 }
