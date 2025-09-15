@@ -179,7 +179,8 @@ defineProps({
   },
   formbgimg: {
     type: String,
-    default: 'https://static.cmereye.com/imgs/2024/04/71b31da046e561bc.png',
+    default:
+      'https://statichk.cmermedical.com/opd/2025/index/09/01j8y4yx2h7p5d1kq4sm3r9n8g.webp',
   },
 })
 
@@ -302,6 +303,7 @@ const disabledDate = (time: Date) => {
     z-index: 0;
     bottom: 0;
     left: 7%;
+    max-width: 40%;
   }
   & > div {
     background: rgba(0, 0, 0, 0);
@@ -520,6 +522,13 @@ const disabledDate = (time: Date) => {
   .form {
     .formbgimg {
       left: calc((100% - 1920px) / 2 + (1920px / 100));
+    }
+  }
+}
+@media screen and (min-width: 1921px) {
+  .form {
+    .formbgimg {
+      max-width: 30vw;
     }
   }
 }

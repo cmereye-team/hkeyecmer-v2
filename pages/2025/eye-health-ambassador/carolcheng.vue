@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:47:28
- * @LastEditTime: 2025-09-12 20:54:05
+ * @LastEditTime: 2025-09-15 14:41:18
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 眼睛健康大使
 -->
@@ -260,7 +260,7 @@ onMounted(() => {
         <img
           class="banner-img"
           src="https://statichk.cmermedical.com/hkcmereye/carolcheng/banner-pc.jpg"
-          alt="希瑪眼科中心"
+          alt="希瑪眼科中心_眼睛健康大使_鄭裕玲小姐"
         />
       </picture>
     </section>
@@ -271,7 +271,7 @@ onMounted(() => {
         <div class="video-info mb-4 flex-[1]">
           <div class="video-info-main">
             <iframe
-              src="https://www.youtube.com/embed/Z5ut-9tIhmo"
+              src="https://www.youtube.com/embed/ruREESXot40"
               frameborder="0"
             ></iframe>
           </div>
@@ -362,6 +362,7 @@ onMounted(() => {
                 class="examination-item-icon"
                 :src="item.img"
                 :alt="'希瑪眼科中心_' + item.title"
+                :title="'希瑪眼科中心_' + item.title"
               />
             </picture>
             <h3 class="examination-item-title">{{ item.title }}</h3>
@@ -382,13 +383,18 @@ onMounted(() => {
         </div>
         <div class="cmer-main">
           <div class="cmer-swiper">
-            <swiper loop>
+            <swiper
+              loop
+              :modules="[Autoplay]"
+              :autoplay="{ delay: 2000 }"
+              :speed="5000"
+            >
               <swiper-slide v-for="(item, index) in swiperList" :key="index">
                 <div class="cmer-swiper-wrap">
                   <picture>
                     <source type="image/avif" :srcset="item.avif" />
                     <source type="image/webp" :srcset="item.webp" />
-                    <img :src="item.img" alt="希瑪眼科中心_眼科診所_眼科醫生" />
+                    <img :src="item.img" alt="希瑪眼科中心_眼科診所_眼科醫生" title="希瑪眼科中心_眼科診所_眼科醫生" />
                   </picture>
                 </div>
               </swiper-slide>

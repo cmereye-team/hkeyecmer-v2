@@ -422,7 +422,7 @@ const pageNav = ref([
           <div class="partTwo-in">
             <div class="partTwo-in-image">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/b727a18986eee34a.jpg"
+                src="https://statichk.cmermedical.com/opd/imgs/q3f9a7k2.webp"
                 :title="
                   locale === 'en'
                     ? 'Experienced Ophthalmologists-Cmer Eye Center'

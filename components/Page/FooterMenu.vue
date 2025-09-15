@@ -296,13 +296,12 @@ let drawer = ref(false)
     </client-only>
     <div class="footerImg">
       <img
-        src="https://static.cmereye.com/imgs/2024/06/26b728816b4ed3a0.png"
+        src="https://statichk.cmermedical.com/opd/2025/index/09/01j8y4yx2h7p5d1kq4sm3r9n8k.webp"
         alt=""
       />
     </div>
   </div>
 </template>
-
 
 <style lang="scss" scoped>
 .footerMenu {
@@ -433,6 +432,7 @@ let drawer = ref(false)
     z-index: 0;
     bottom: 0;
     right: -3vw;
+    width: 55%;
   }
 }
 .drawerIn {
@@ -442,13 +442,28 @@ let drawer = ref(false)
   height: 100%;
   padding-bottom: 100px;
 }
-@media (min-width: 768px) and (max-width: 1920px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .footerMenu {
     .footerImg {
       position: absolute;
       z-index: 0;
       right: 5vw;
       bottom: 0;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footerMenu {
+    .footerImg {
+      max-width: 32vw;
+    }
+  }
+}
+@media screen and (min-width: 1921px) {
+  .footerMenu {
+    .footerImg {
+      right: 8vw;
+      max-width: 25vw;
     }
   }
 }
