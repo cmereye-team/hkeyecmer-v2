@@ -9,12 +9,24 @@
         />
       </div>
       <div class="head_title"></div>
-
-      <img
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp"
+        />
+        <img
+          class="head_banner"
+          src="https://hkcmereye.com/static/upload/other/20250915/1757902218138949.webp"
+          title="眼睛健康大使鄭裕玲小姐"
+          alt="眼睛健康大使鄭裕玲小姐"
+        />
+      </picture>
+      <!-- 默认banner图勿删，目前用新上代言人banner -->
+      <!-- <img
         class="head_banner"
         src="https://statichk.cmermedical.com/hkcmereye/ST/StBanner-pc.avif"
         alt=""
-      />
+      /> -->
     </div>
 
     <div>
@@ -845,6 +857,11 @@ const teamSlides = [
 .service_box {
   max-width: unset;
   margin-top: 61px;
+}
+
+.head_banner {
+  max-height: 700px;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {

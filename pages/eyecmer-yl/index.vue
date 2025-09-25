@@ -9,11 +9,24 @@
         />
       </div>
       <div class="head_title"></div>
-      <img
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp"
+        />
+        <img
+          class="head_banner"
+          src="https://hkcmereye.com/static/upload/other/20250915/1757902218138949.webp"
+          title="眼睛健康大使鄭裕玲小姐"
+          alt="眼睛健康大使鄭裕玲小姐"
+        />
+      </picture>
+      <!-- 默认banner图勿删，目前用新上代言人banner -->
+      <!-- <img
         class="head_banner"
         src="https://static.cmereye.com/imgs/2023/04/93240e6f248cf35d.avif"
         alt=""
-      />
+      /> -->
     </div>
 
     <div>
@@ -21,7 +34,7 @@
         <div
           class="center_title text-center font-weight-bold text-xs-center cener_title fs-md-34 fs-lg-34 fs-xs-26"
         >
-          診所地址
+          元朗診所地址
         </div>
 
         <div class="textimgbox">
@@ -888,6 +901,11 @@ const teamSlides = [
 .service_box {
   max-width: unset;
   margin-top: 61px;
+}
+
+.head_banner {
+  max-height: 700px;
+  object-fit: cover;
 }
 
 @media only screen and (min-width: 768px) {
