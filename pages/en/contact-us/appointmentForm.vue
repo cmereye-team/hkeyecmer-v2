@@ -1,3 +1,10 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-09-11 08:19:38
+ * @LastEditTime: 2025-09-25 17:51:27
+ * @FilePath: /pages/en/contact-us/appointmentForm.vue
+ * @Description: 
+-->
 <script lang="ts" setup>
 definePageMeta({
   layout: 'page',
@@ -44,6 +51,9 @@ const serviceNavigation = [
   </div>
 </template>
 <style lang="scss" scoped>
+:deep(.form .info_text) {
+  color: #828383;
+}
 .appointmentForm {
   background: url('https://static.cmereye.com/imgs/2023/03/2e0bad9ed9608023.jpg') no-repeat;
   background-size: auto;

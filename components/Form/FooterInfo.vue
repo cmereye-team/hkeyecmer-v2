@@ -182,6 +182,10 @@ defineProps({
     default:
       'https://statichk.cmermedical.com/opd/2025/index/09/01j8y4yx2h7p5d1kq4sm3r9n8g.webp',
   },
+  infoTextColor:{
+    type:String,
+    default:'#fff'
+  }
 })
 
 const disabledDate = (time: Date) => {
@@ -286,7 +290,7 @@ const disabledDate = (time: Date) => {
             </el-form-item>
           </el-form>
         </div>
-        <div class="info_text">{{ $t('components.footerInfo.infoText') }}</div>
+        <div class="info_text" :style="{color:infoTextColor}">{{ $t('components.footerInfo.infoText') }}</div>
         <div :style="co" id="submitForm" @click="submitForm(ruleFormRef)">
           {{ $t('components.footerInfo.submitForm') }}
         </div>
@@ -514,7 +518,7 @@ const disabledDate = (time: Date) => {
     text-align: center;
     margin-top: 10px;
     letter-spacing: 2px;
-    color: #828383;
+    // color: #fff;
   }
 }
 

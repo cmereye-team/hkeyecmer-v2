@@ -33,6 +33,7 @@ const serviceNavigation = [
     </div>
     <div>
       <FormFooterInfo
+        infoTextColor="#828383"
         :from-style="'margin: 0 520px;'"
         :form-title-color="'color:#515151'"
         :bg="`background:${'#00000000'}`"

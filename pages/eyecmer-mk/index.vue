@@ -98,7 +98,7 @@
           </ul>
 
           <!-- <img src='https://statichk.cmermedical.com/hkcmereye/MK/MkAdress.avif' /> -->
-          <div class="imgBox">
+          <!-- <div class="imgBox">
             <swiper
               :loop="true"
               :slides-per-view="1"
@@ -116,7 +116,8 @@
                 <img :src="swiperItem.image" alt="" />
               </swiper-slide>
             </swiper>
-          </div>
+          </div> -->
+          <FormClinicAppointment />
         </div>
       </div>
     </div>

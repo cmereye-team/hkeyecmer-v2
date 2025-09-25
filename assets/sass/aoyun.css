@@ -43,7 +43,9 @@ p, dl, dt, dd ,ul{ margin: 0px; padding: 0px; }
 
 /*上下外边距*/
 
-.mt-6, .my-6 {
+.mt--100{margin-top: -100px;}
+.mb-50{margin-bottom: 3.571rem;}
+/* .mt-6, .my-6 {
 	margin-top: 4rem !important;
 }
 .mt-7, .my-7 {
@@ -58,9 +60,6 @@ p, dl, dt, dd ,ul{ margin: 0px; padding: 0px; }
 .mt-10, .my-10 {
 	margin-top: 8rem !important;
 }
-.mt--100{margin-top: -100px;}
-
-
 .mb-6, .my-6 {
 	margin-bottom: 4rem !important;
 }
@@ -75,10 +74,9 @@ p, dl, dt, dd ,ul{ margin: 0px; padding: 0px; }
 }
 .mb-10, .my-10 {
 	margin-bottom: 8rem !important;
-}
-.mb-50{margin-bottom: 3.571rem;}
+} */
 /*上下内边距*/
-.pt-6, .mp-6 {
+/* .pt-6, .mp-6 {
 	padding-top: 4rem !important;
 }
 .pt-7, .py-7 {
@@ -107,10 +105,9 @@ p, dl, dt, dd ,ul{ margin: 0px; padding: 0px; }
 }
 .pb-10, .py-10 {
 	padding-bottom: 8rem !important;
-}
+} */
 .pb-0{padding-bottom: 0!important;}
 .pb-50{padding-bottom:3.571rem;}
-
 .pb-100{padding-bottom: 7.142rem!important;}
 .pb-150{padding-bottom: 10.714rem!important;}
 /*边框*/

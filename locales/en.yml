@@ -16,6 +16,7 @@ components:
     leaflet: Through promotional leaflets/cards
     rest: other
     label1: Where can I find our website? (More than one option can be selected)
+    label1One: Where can I find our website?
     text1: Make an appointment now and fill in your data
     text2: We will contact you as soon as we receive the appointment request.
     placeholder1: Name

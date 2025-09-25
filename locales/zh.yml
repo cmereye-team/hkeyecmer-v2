@@ -16,6 +16,7 @@ components:
     leaflet: 透過宣傳單張/卡片
     rest: 其他
     label1: 從哪裡找到我們的網站？ （可選擇多於一項）
+    label1One: 從哪裡找到我們的網站？
     text1: 希瑪眼科重視每一位客人的問題，隨時發問。
     text2: 請留下聯絡方法，我們的客戶服務專員會透過 Email 或電話解答你。
     placeholder1: 姓名

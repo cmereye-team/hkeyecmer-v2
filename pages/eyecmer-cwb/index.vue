@@ -92,8 +92,7 @@
           <!-- <img
             src="https://static.cmereye.com/imgs/2023/08/2c27250793407eea.avif"
           /> -->
-
-          <div class="imgBox">
+          <!-- <div class="imgBox">
             <swiper
               :loop="true"
               :slides-per-view="1"
@@ -111,7 +110,8 @@
                 <img :src="swiperItem.image" alt="" />
               </swiper-slide>
             </swiper>
-          </div>
+          </div> -->
+          <FormClinicAppointment />
         </div>
       </div>
     </div>
