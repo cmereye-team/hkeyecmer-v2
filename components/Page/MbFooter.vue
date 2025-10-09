@@ -109,7 +109,6 @@ const rt = ref(route)
       </a>
     </div>
     <div
-      v-if="route.name !== 'index'"
       id="mbFooterTop"
       class="mbFooter-top backtop-mb"
     >
@@ -123,6 +122,7 @@ const rt = ref(route)
           alt="眼睛健康大使"
         />
         <img
+          class="w-[74px]"
           src="https://statichk.cmermedical.com/opd/icons/icon-kol-avatar@2x.png"
           srcset="
             https://statichk.cmermedical.com/opd/icons/icon-kol-avatar@2x.png 2x,
