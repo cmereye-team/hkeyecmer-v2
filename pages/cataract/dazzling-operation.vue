@@ -104,7 +104,7 @@ const backgd = [
         <!--  </div>-->
         <!--</div>-->
         <div>
-          <div class="plan-content-title">· 希瑪眼科參加計劃的病人</div>
+          <div class="plan-content-title">· 希瑪眼科參加計劃的醫生</div>
           <div class="plan-content-text">
             <span>希瑪眼科有<i>超過10位醫生</i>為「耀眼行動」參與醫生</span>
             <span
