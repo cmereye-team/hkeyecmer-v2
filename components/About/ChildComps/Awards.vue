@@ -3,6 +3,15 @@ import { Autoplay } from 'swiper'
 const locale = useState<string>('locale.setting')
 const awardsList = [
   {
+    imgUrl: 'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
+    year: 'pages.about_us.awards.awards_year_15',
+    des: 'pages.about_us.awards.awards_des_12',
+    link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
+    alt: '希瑪眼科中心_香港服務名牌2025',
+    alt_en: 'Hong Kong Premier Service Brand 2025 Logo',
+    title_en: 'Hong Kong Premier Service Brand 2025',
+  },
+  {
     imgUrl: 'https://hkcmereye.com/static/images/honor/easy2024.avif',
     year: 'pages.about_us.awards.awards_year_14',
     des: 'pages.about_us.awards.awards_des_17',
