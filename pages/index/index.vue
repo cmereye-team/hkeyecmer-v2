@@ -396,7 +396,7 @@ const pageNav = ref([
           <div class="partTwo-in">
             <div class="partTwo-in-image">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/4f0397cca2473c61.jpg"
+                src="https://statichk.cmermedical.com/opd/imgs/r8d5z0m2nq1x.jpg"
                 :title="
                   locale === 'en'
                     ? 'Cmer Eye Center-Hong Kong Ophthalmology Clinic'
@@ -857,6 +857,8 @@ const pageNav = ref([
       .partTwo-in-image img {
         position: relative;
         z-index: 2;
+        aspect-ratio: 9 / 4;
+        object-fit: cover;
       }
       .partTwo-in-image::after {
         content: '';
