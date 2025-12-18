@@ -28,30 +28,34 @@ const advantageSlides = [
   {
     img: 'intro-swiper-04',
     title: '上市集團 信心保證',
-    link: '/cmereyecentre-introduction/',
+    link: '/about-us#centreIntro',
     stock: true,
   },
   {
     img: 'intro-swiper-03',
     title: '國際認證 醫療技術',
-    link: '/medical-equipment/',
+    link: '/about-us#medicalEquipment',
   },
-  { img: 'intro-swiper-06', title: '香港眼科 專科中心', link: '/contact/' },
+  { img: 'intro-swiper-06', title: '香港眼科 專科中心', link: '/contact-us' },
   {
     img: 'intro-swiper-05',
     title: '先進尖端 醫療設備',
-    link: '/medical-equipment/',
+    link: '/about-us#medicalEquipment',
   },
   {
     img: 'intro-swiper-01',
     title: '醫療團隊 全程跟進',
-    link: '/medical-team/',
+    link: '/medical-team',
   },
-  { img: 'intro-swiper-07', title: '九大眼科 醫療服務', link: '/service/' },
+  {
+    img: 'intro-swiper-07',
+    title: '九大眼科 醫療服務',
+    link: '/medical-service',
+  },
   {
     img: 'intro-swiper-02',
     title: '以人為本 精益精進',
-    link: '/cmereyecentre-introduction/',
+    link: '/about-us#centreIntro',
   },
 ]
 
@@ -278,13 +282,12 @@ const currentClinics = computed(() => {
       <!-- 優勢輪播 + 按鈕 -->
       <section class="mb-13 lg:mb-35">
         <p
-          class="text-[#2958A3] text-center text-xl lg:text-5xl font-bold tracking-widest leading-[1.5] lg:leading-[1.35] mb-[20px] lg:mb-[48px]"
+          class="text-[#5B97D0] text-center text-xl lg:text-5xl font-bold tracking-widest leading-[1.5] lg:leading-[1.35] mb-[20px] lg:mb-[48px]"
         >
           <span>以守護大眾視力為目標</span><br />
           <span>提供安全、準確、可靠的眼科</span><br class="block lg:hidden" />
           <span>專科醫療服務</span>
         </p>
-
         <div
           class="intro-swiper overflow-hidden relative pb-20 max-w-[1840px] mx-auto"
         >
@@ -293,15 +296,18 @@ const currentClinics = computed(() => {
             :loop="true"
             :autoplay="{ delay: 3000 }"
             :pagination="{ clickable: true, el: '.intro-swiper-pagination' }"
-            :slides-per-view="1"
+            :centered-slides="true"
+            :slides-per-view="2"
             :space-between="20"
             :breakpoints="{
               768: { slidesPerView: 3 },
-              1024: { slidesPerView: 5 },
             }"
           >
             <SwiperSlide v-for="slide in advantageSlides" :key="slide.img">
-              <a :href="slide.link" target="_blank" class="relative block">
+              <nuxt-link
+                :to="slide.link"
+                class="relative block pointer-events-auto"
+              >
                 <picture>
                   <source
                     :srcset="`${baseImg}${slide.img}.avif`"
@@ -320,20 +326,17 @@ const currentClinics = computed(() => {
                 >
                   <i class="iconfont icon-line-chart mr-1" /> 上市編號03309.HK
                 </span>
-              </a>
+              </nuxt-link>
             </SwiperSlide>
           </Swiper>
-          <div
-            class="intro-swiper-pagination absolute bottom-7 left-1/2 -translate-x-1/2 w-fit whitespace-nowrap"
-          />
+          <div class="intro-swiper-pagination" />
         </div>
 
         <div
           class="flex justify-center gap-6 lg:gap-35 text-base lg:text-4xl font-bold tracking-widest"
         >
-          <a
-            href="/service/"
-            target="_blank"
+          <nuxt-link
+            to="/medical-service"
             class="flex items-center justify-center rounded-2xl lg:rounded-4xl bg-gradient-to-b from-[#E8FDFD] to-[#B3DBFB] shadow-[0_0_6.3px_1.7px_rgba(8,173,255,0.29)] lg:shadow-[0_0_15px_4px_rgba(8,173,255,0.29)] h-10 w-44 lg:h-22 lg:w-96"
           >
             <img
@@ -342,7 +345,7 @@ const currentClinics = computed(() => {
               class="w-7 h-4 lg:w-16 lg:h-9"
             />
             <span class="text-[#4299EB] pl-[4px] lg:pl-[20px]">醫療服務</span>
-          </a>
+          </nuxt-link>
           <a
             href="https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2"
             target="_blank"
@@ -580,6 +583,12 @@ main {
 }
 /* 分页圆点样式 */
 .intro-swiper-pagination {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+  white-space: nowrap;
   .swiper-pagination-bullet {
     width: 10.5px;
     height: 10.5px;
@@ -593,13 +602,13 @@ main {
   }
 }
 .grid-area-title {
-  grid-area: 'title';
+  grid-area: title;
 }
 .grid-area-img {
-  grid-area: 'img';
+  grid-area: img;
 }
 .grid-area-desc {
-  grid-area: 'desc';
+  grid-area: desc;
 }
 .intro-do {
   grid-template-areas: 'title' 'img' 'desc';
