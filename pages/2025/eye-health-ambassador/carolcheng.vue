@@ -109,13 +109,103 @@ const ratings = [
 
 const baseImg = 'https://statichk.cmermedical.com/newopd/about/carolcheng/'
 const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
+
+interface Clinic {
+  name: string
+  img: string
+  avif?: string
+  link: string
+}
+interface Region {
+  id: 'hk' | 'kl' | 'nt'
+  label: string
+  clinics: Clinic[]
+}
+const regions: Region[] = [
+  {
+    id: 'kl',
+    label: '九龍',
+    clinics: [
+      {
+        name: '旺角雅蘭中心',
+        img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-kl-01.png',
+        avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-kl-01.avif',
+        link: '/eyecmer-mk',
+      },
+      {
+        name: '觀塘鱷魚恤中心',
+        img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-kl-02.png',
+        avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-kl-02.avif',
+        link: '/eyecmer-kt',
+      },
+    ],
+  },
+  {
+    id: 'hk',
+    label: '香港',
+    clinics: [
+      {
+        name: '中環中建大廈',
+        img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-01.png',
+        avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-01.avif',
+        link: '/eyecmer-ct',
+      },
+      {
+        name: '中環萬邦行',
+        img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-02.png',
+        avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-02.avif',
+        link: '/eyecmer-kt',
+      },
+      {
+        name: '銅鑼灣恒隆中心',
+        img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-03.png',
+        avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-03.avif',
+        link: '/eyecmer-cwb',
+      },
+    ],
+  },
+  {
+    id: 'nt',
+    label: '新界',
+    clinics: [
+      {
+        name: '沙田偉華中心',
+        img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-01.png',
+        avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-01.avif',
+        link: '/eyecmer-st',
+      },
+      {
+        name: '元朗誠信大廈',
+        img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-02.png',
+        avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-02.avif',
+        link: '/eyecmer-yl',
+      },
+      {
+        name: '荃灣思源樓',
+        img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-03.png',
+        avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-03.avif',
+        link: '/eyecmer-tw',
+      },
+      {
+        name: '將軍澳新都城中心',
+        img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-04.png',
+        avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-04.avif',
+        link: '/eyecmer-tko',
+      },
+    ],
+  },
+]
+const currentRegion = ref<'hk' | 'kl' | 'nt'>('hk')
+const currentClinics = computed(() => {
+  return regions.find((r) => r.id === currentRegion.value)?.clinics || []
+})
 </script>
 
 <template>
   <div class="relative">
     <!-- 頂部裝飾偽元素 -->
     <div
-      class="relative lg:before:content-[''] lg:before:absolute lg:before:bg-[ur[](https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-pc-left.svg)] lg:before:bg-no-repeat lg:before:h-4/5 lg:before:w-[40%] lg:before:left-0 lg:before:bottom-0 lg:before:bg-contain lg:before:pointer-events-none lg:after:content-[''] lg:after:absolute lg:after:bg-[ur[](https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-pc-right.svg)] lg:after:bg-no-repeat lg:after:h-4/5 lg:after:w-[40%] lg:after:right-0 lg:after:-bottom-10 lg:after:bg-contain lg:after:bg-right lg:after:pointer-events-none"
+      class="relative lg:before:content-[''] lg:before:absolute lg:before:bg-[ur[(https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-pc-left.svg)] lg:before:bg-no-repeat lg:before:h-4/5 lg:before:w-[40%] lg:before:left-0 lg:before:bottom-0 lg:before:bg-contain lg:before:pointer-events-none lg:after:content-[''] lg:after:absolute lg:after:bg-[ur[](https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-pc-right.svg)] lg:after:bg-no-repeat lg:after:h-4/5 lg:after:w-[40%] lg:after:right-0 lg:after:-bottom-10 lg:after:bg-contain lg:after:bg-right lg:after:pointer-events-none"
     >
       <!-- 首屏視頻 -->
       <section class="mt-15 md:mt-23 lg:mt-0 lg:-z-1">
@@ -139,11 +229,9 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
 
       <!-- Do姐介紹 -->
       <section
-        class="container mx-auto px-3 xl:px-0 pb-15 lg:pb-30 relative before:content-[''] before:absolute before:w-full before:h-1/2 before:top-0 before:left-0 before:bg-[ur[](https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-m-01.svg)] before:bg-no-repeat before:bg-[position:0_-40px] before:-z-1 after:content-[''] after:absolute after:w-full after:h-3/5 after:bottom-0 after:right-0 after:bg-[ur[](https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-m-02.svg)] after:bg-no-repeat after:bg-[position:100%_0] after:-z-1 lg:before:hidden lg:after:hidden"
+        class="container mx-auto px-3 xl:px-0 pb-15 lg:pb-30 relative before:content-[''] before:absolute before:w-full before:h-1/2 before:top-0 before:left-0 before:bg-[ur[(https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-m-01.svg)] before:bg-no-repeat before:bg-[position:0_-40px] before:-z-1 after:content-[''] after:absolute after:w-full after:h-3/5 after:bottom-0 after:right-0 after:bg-[ur[](https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-m-02.svg)] after:bg-no-repeat after:bg-[position:100%_0] after:-z-1 lg:before:hidden lg:after:hidden"
       >
-        <div
-          class="grid grid-areas-[title_img_desc] lg:grid-areas-[title_img_desc_img]"
-        >
+        <div class="grid intro-do">
           <div class="grid-area-title">
             <img
               src="https://statichk.cmermedical.com/newopd/about/carolcheng/intro-title-01.svg"
@@ -234,7 +322,7 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
             </SwiperSlide>
           </Swiper>
           <div
-            class="intro-swiper-pagination absolute !bottom-7 !left-1/2 -translate-x-1/2 !w-fit whitespace-nowrap"
+            class="intro-swiper-pagination absolute bottom-7 left-1/2 -translate-x-1/2 w-fit whitespace-nowrap"
           />
         </div>
 
@@ -261,7 +349,7 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
             <img
               src="https://statichk.cmermedical.com/newopd/about/carolcheng/icon-whatsapp.svg"
               alt=""
-              class="size-5 lg:size-11"
+              class="w-5 :h-5 lg:w-11 lg:h-11"
             />
             <span class="text-[#1DC48C] pl-[4px] lg:pl-[20px]"
               >WhatsApp查詢</span
@@ -271,11 +359,11 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
       </section>
     </div>
     <section
-      class="lg:bg-[url(https://statichk.cmermedical.com/newopd/about/carolcheng/center-bg-pc.png)] bg-cover bg-center bg-no-repeat lg:pt-12 lg:pb-50 mb-4 lg:mb-14"
+      class="cmer bg-cover bg-center bg-no-repeat lg:pt-12 lg:pb-50 mb-4 lg:mb-14"
     >
       <div class="lg:container lg:mx-auto mb-4 lg:mb-14">
         <h2
-          class="text-primary-index !text-xl lg:!text-5xl !font-bold text-center tracking-widest !mb-[20px] lg:mb-18"
+          class="text-primary-index text-xl lg:text-5xl font-bold text-center tracking-widest mb-[20px] lg:mb-18"
         >
           希瑪眼科中心
         </h2>
@@ -283,11 +371,11 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
           class="flex flex-col lg:flex-row lg:items-center container mx-auto"
         >
           <ul
-            class="lg:flex-1 whitespace-nowrap container mx-auto px-3 lg:!px-0 text-[#515151] space-y-5 lg:space-y-15 !w-fit !pb-[60px] lg:!py-0 relative before:bg-[radial-gradient(50%_50%_at_50%_50%,rgba(182,219,255,0.82)_0%,rgba(200,227,255,0)_100%)] before:absolute before:w-full before:aspect-square before:content-[''] lg:before:w-3/4"
+            class="lg:flex-1 whitespace-nowrap container mx-auto px-3 lg:!px-0 text-[#515151] space-y-5 lg:space-y-15 w-fit pb-[60px] lg:py-0 relative before:bg-[radial-gradient(50%_50%_at_50%_50%,rgba(182,219,255,0.82)_0%,rgba(200,227,255,0)_100%)] before:absolute before:w-full before:aspect-square before:content-[''] lg:before:w-3/4"
           >
             <li class="flex gap-3 lg:gap-7 items-center">
               <strong
-                class="!font-black text-3xl lg:text-6xl size-8 lg:size-16 text-center text-primary-index"
+                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-primary-index"
                 >C</strong
               >
               <p
@@ -299,7 +387,7 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
             </li>
             <li class="flex gap-3 lg:gap-7 items-center">
               <strong
-                class="!font-black text-3xl lg:text-6xl size-8 lg:size-16 text-center text-primary-index"
+                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-primary-index"
                 >M</strong
               >
               <p
@@ -310,7 +398,7 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
             </li>
             <li class="flex gap-3 lg:gap-7 items-center">
               <strong
-                class="!font-black text-3xl lg:text-6xl size-8 lg:size-16 text-center text-primary-index"
+                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-primary-index"
                 >E</strong
               >
               <p
@@ -321,7 +409,7 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
             </li>
             <li class="flex gap-3 lg:gap-7 items-center">
               <strong
-                class="!font-black text-3xl lg:text-6xl size-8 lg:size-16 text-center text-primary-index"
+                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-primary-index"
                 >R</strong
               >
               <p
@@ -332,273 +420,58 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
             </li>
           </ul>
           <div
-            class="clinic lg:flex-1 bg-[url(https://statichk.cmermedical.com/newopd/about/carolcheng/center-bg-m.png)] bg-cover bg-center bg-no-repeat lg:bg-none container mx-auto px-3 lg:!px-0 flex flex-col justify-between lg:flex-row gap-8 lg:gap-5 xl:gap-25 pt-4 pb-15 lg:py-0 lg:h-[680px]"
+            class="clinic lg:flex-1 bg-cover bg-center bg-no-repeat lg:bg-none container mx-auto px-3 lg:px-0 flex flex-col justify-between lg:flex-row gap-8 lg:gap-5 xl:gap-25 pt-4 pb-15 lg:py-0 lg:h-[680px]"
           >
             <input
-              id="clinic-kl"
+              v-for="region in regions"
+              :id="'clinic-' + region.id"
+              :key="region.id"
+              v-model="currentRegion"
               type="radio"
-              name="clinic"
-              class="hidden peer/kl"
-            />
-            <input
-              id="clinic-hk"
-              type="radio"
-              name="clinic"
-              class="hidden peer/hk"
-              checked
-            />
-            <input
-              id="clinic-nt"
-              type="radio"
-              name="clinic"
-              class="hidden peer/nt"
+              name="clinic-region"
+              class="hidden"
+              :class="'peer/' + region.id"
+              :value="region.id"
             />
             <div
               class="clinic-tabs whitespace-nowrap order-1 flex justify-around lg:flex-col text-primary-index border-primary-index border-b-1 lg:border-l-2 lg:border-b-0 pb-[16px] lg:pb-0 lg:pl-[36px] tracking-widest leading-6 lg:leading-15 font-bold relative lg:h-[660px] lg:my-auto lg:justify-center lg:gap-[20%]"
             >
               <label
-                for="clinic-kl"
+                v-for="region in regions"
+                :key="region.id"
+                :for="'clinic-' + region.id"
                 class="cursor-pointer relative transition-all duration-300 ease"
-                >九龍</label
               >
-              <label
-                for="clinic-hk"
-                class="cursor-pointer relative transition-all duration-300 ease"
-                >香港</label
-              >
-              <label
-                for="clinic-nt"
-                class="cursor-pointer relative transition-all duration-300 ease"
-                >新界</label
-              >
+                {{ region.label }}
+              </label>
             </div>
             <div
-              class="clinic-list order-2 hidden w-4/5 lg:w-full xl:w-3/5 lg:my-auto mx-auto peer-checked/kl:block"
+              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-12"
             >
-              <a
-                class="clinic-item relative w-[92%]"
-                href="/cmereye-mk/"
-                target="_blank"
+              <div
+                v-for="clinic in currentClinics"
+                :key="clinic.name"
+                class="clinic-item relative"
               >
-                <picture>
-                  <source
-                    srcset="
-                      https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-kl-01.avif
-                    "
-                    type="image/avif"
-                  />
-                  <img
-                    src="https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-kl-01.png"
-                    alt="旺角雅蘭中心"
-                    title="旺角雅蘭中心"
-                    loading="lazy"
-                    class="w-full lg:scale-120 lg:translate-x-7 mb-2 lg:mb-5"
-                  />
-                </picture>
-                <p class="clinic-name">
-                  旺角雅蘭中心<i class="iconfont icon-arrow-right"></i>
-                </p>
-              </a>
-              <a
-                class="clinic-item relative w-[92%] ml-auto"
-                href="/cmereye-kt/"
-                target="_blank"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-kl-02.avif
-                    "
-                    type="image/avif"
-                  />
-                  <img
-                    src="https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-kl-02.png"
-                    alt="觀塘鱷魚恤中心"
-                    title="觀塘鱷魚恤中心"
-                    loading="lazy"
-                    class="w-full lg:scale-120 lg:translate-x-7"
-                  />
-                </picture>
-                <p class="clinic-name">
-                  觀塘鱷魚恤中心<i class="iconfont icon-arrow-right"></i>
-                </p>
-              </a>
-            </div>
-            <div
-              class="clinic-list order-2 hidden w-4/5 xl:w-3/5 lg:my-auto mx-auto peer-checked/hk:block"
-            >
-              <a
-                class="clinic-item relative w-[92%]"
-                href="/cmereye-ct/"
-                target="_blank"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-01.avif
-                    "
-                    type="image/avif"
-                  />
-                  <img
-                    src="https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-01.png"
-                    alt="中環中建大廈"
-                    title="中環中建大廈"
-                    loading="lazy"
-                    class="w-full"
-                  />
-                </picture>
-                <p class="clinic-name">
-                  中環中建大廈<i class="iconfont icon-arrow-right"></i>
-                </p>
-              </a>
-              <a
-                class="clinic-item relative w-[92%] ml-auto"
-                href="/cmereye-ct/"
-                target="_blank"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-02.avif
-                    "
-                    type="image/avif"
-                  />
-                  <img
-                    src="https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-02.png"
-                    alt="中環萬邦行"
-                    title="中環萬邦行"
-                    loading="lazy"
-                    class="w-full"
-                  />
-                </picture>
-                <p class="clinic-name">
-                  中環萬邦行<i class="iconfont icon-arrow-right"></i>
-                </p>
-              </a>
-              <a
-                class="clinic-item relative w-[92%]"
-                href="/cmereye-cwb/"
-                target="_blank"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-03.avif
-                    "
-                    type="image/avif"
-                  />
-                  <img
-                    src="https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-03.png"
-                    alt="銅鑼灣恒隆中心"
-                    title="銅鑼灣恒隆中心"
-                    loading="lazy"
-                    class="w-full"
-                  />
-                </picture>
-                <p class="clinic-name">
-                  銅鑼灣恒隆中心<i class="iconfont icon-arrow-right"></i>
-                </p>
-              </a>
-            </div>
-            <div
-              class="clinic-list order-2 hidden w-4/5 xl:w-3/5 lg:my-auto mx-auto peer-checked/nt:block"
-            >
-              <a
-                class="clinic-item relative w-[92%]"
-                href="/cmereye-st/"
-                target="_blank"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-01.avif
-                    "
-                    type="image/avif"
-                  />
-                  <img
-                    src="https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-01.png"
-                    alt="沙田偉華中心"
-                    title="沙田偉華中心"
-                    loading="lazy"
-                    class="w-full"
-                  />
-                </picture>
-                <p class="clinic-name">
-                  沙田偉華中心<i class="iconfont icon-arrow-right"></i>
-                </p>
-              </a>
-              <a
-                class="clinic-item relative w-[92%] ml-auto"
-                href="/cmereye-yl/"
-                target="_blank"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-02.avif
-                    "
-                    type="image/avif"
-                  />
-                  <img
-                    src="https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-02.png"
-                    alt="元朗誠信大廈"
-                    title="元朗誠信大廈"
-                    loading="lazy"
-                    class="w-full"
-                  />
-                </picture>
-                <p class="clinic-name">
-                  元朗誠信大廈<i class="iconfont icon-arrow-right"></i>
-                </p>
-              </a>
-              <a
-                class="clinic-item relative w-[92%]"
-                href="/cmereye-tw/"
-                target="_blank"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-03.avif
-                    "
-                    type="image/avif"
-                  />
-                  <img
-                    src="https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-03.png"
-                    alt="荃灣思源樓"
-                    title="荃灣思源樓"
-                    loading="lazy"
-                    class="w-full"
-                  />
-                </picture>
-                <p class="clinic-name">
-                  荃灣思源樓<i class="iconfont icon-arrow-right"></i>
-                </p>
-              </a>
-              <a
-                class="clinic-item relative w-[92%] ml-auto"
-                href="/cmereye-tko/"
-                target="_blank"
-              >
-                <picture>
-                  <source
-                    srcset="
-                      https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-04.avif
-                    "
-                    type="image/avif"
-                  />
-                  <img
-                    src="https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-nt-04.png"
-                    alt="將軍澳新都城中心"
-                    title="將軍澳新都城中心"
-                    loading="lazy"
-                    class="w-full"
-                  />
-                </picture>
-                <p class="clinic-name">
-                  將軍澳新都城中心<i class="iconfont icon-arrow-right"></i>
-                </p>
-              </a>
+                <a :href="clinic.link" target="_blank">
+                  <picture>
+                    <source
+                      v-if="clinic.avif"
+                      :srcset="clinic.avif"
+                      type="image/avif"
+                    />
+                    <img
+                      :src="clinic.img"
+                      :alt="clinic.name"
+                      loading="lazy"
+                      class="w-full lg:scale-120 lg:translate-x-7 mb-2 lg:mb-5"
+                    />
+                  </picture>
+                  <div class="clinic-name">
+                    {{ clinic.name }}<i class="iconfont icon-arrow-right"></i>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -606,7 +479,7 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
     </section>
     <!-- 客戶評價輪播 -->
     <section class="py-10 bg-[#F8F9FA]">
-      <div class="container mx-auto px-3">
+      <div class="px-3 xl:px-0">
         <h2
           class="text-3xl lg:text-5xl font-bold text-center text-[#2958A3] mb-10 tracking-widest"
         >
@@ -626,13 +499,13 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
           }"
           class="ratings-swiper"
         >
-          <SwiperSlide v-for="item in ratings" :key="item.name">
+          <SwiperSlide v-for="item in ratings" :key="item.name" class="!h-auto">
             <article class="h-full rounded-md shadow-sm bg-white p-4 space-y-4">
               <div class="flex items-center">
                 <img
                   :src="`${baseRatings}${item.avatar}.avif`"
                   :alt="item.name"
-                  class="size-12 mr-3 rounded-full"
+                  class="w-12 h-12 mr-3 rounded-full"
                   loading="lazy"
                 />
                 <div>
@@ -661,11 +534,9 @@ const baseRatings = 'https://statichk.cmermedical.com/newopd/about/us/'
 </template>
 
 <style lang="scss" scoped>
-// assets/css/kol-do.scss 或页面内 <style scoped lang="scss">
 main {
   font-family: 'Noto Sans HK', sans-serif;
 }
-
 /* 移动端视频画中画固定 */
 .pip-fixed {
   position: fixed;
@@ -680,20 +551,16 @@ main {
   overflow: hidden;
   background: #000;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-
   @media (min-width: 768px) and (max-width: 1024px) {
     bottom: 12px;
   }
-
   @media (min-width: 1024px) {
     display: none; // PC 端关闭画中画
   }
-
   @media (min-width: 1025px) {
     right: 280px;
   }
 }
-
 /* 优势轮播 - 非活跃 slide 缩放 */
 .intro-swiper {
   .swiper-slide {
@@ -705,7 +572,6 @@ main {
     }
   }
 }
-
 /* 分页圆点样式 */
 .intro-swiper-pagination {
   .swiper-pagination-bullet {
@@ -720,153 +586,177 @@ main {
     }
   }
 }
-
-/* 诊所名称悬浮文字 */
-.clinic-name {
-  position: absolute;
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0) 0%,
-    #b6dbff 53.85%,
-    rgba(251, 253, 255, 0) 100%
-  );
-  color: #515151;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
-    1px 1px 0 #fff;
-
-  @media (max-width: 1023px) {
-    font-size: 20px;
-  }
-
+.grid-area-title {
+  grid-area: 'title';
+}
+.grid-area-img {
+  grid-area: 'img';
+}
+.grid-area-desc {
+  grid-area: 'desc';
+}
+.intro-do {
+  grid-template-areas: 'title' 'img' 'desc';
   @media (min-width: 1024px) {
-    font-size: 24px;
+    grid-template-areas: 'title img' 'desc img';
   }
 }
-
-.clinic-item:nth-child(odd) .clinic-name {
-  right: 2%;
-  bottom: 0;
-}
-
-.clinic-item:nth-child(even) .clinic-name {
-  left: 2%;
-  bottom: 5%;
-}
-
-/* 诊所 Tab 装饰点 */
-.clinic-tabs {
-  position: relative;
-
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    border-radius: 50%;
-    background-color: #5b97d0;
-  }
-
-  @media (max-width: 1023px) {
-    &::before {
-      left: -2px;
-      bottom: -2px;
-    }
-    &::after {
-      right: -2px;
-      bottom: -2px;
-    }
-    &::before,
-    &::after {
-      width: 4px;
-      height: 4px;
-    }
-  }
-
+.cmer {
   @media (min-width: 1024px) {
-    &::before {
-      top: -4px;
-      left: -5px;
-    }
-    &::after {
-      bottom: -4px;
-      left: -5px;
-    }
-    &::before,
-    &::after {
-      width: 8px;
-      height: 8px;
-    }
+    background-image: url('https://statichk.cmermedical.com/newopd/about/carolcheng/center-bg-pc.png');
+  }
+}
+.clinic {
+  @media (max-width: 1023px) {
+    background-image: url('https://statichk.cmermedical.com/newopd/about/carolcheng/center-bg-m.png');
   }
 
-  label {
+  .clinic-item:nth-child(odd) .clinic-name {
+    right: 2%;
+    bottom: 0;
+  }
+
+  .clinic-item:nth-child(even) .clinic-name {
+    left: 2%;
+    bottom: 5%;
+  }
+
+  /* 诊所 Tab 装饰点 */
+  .clinic-tabs {
     position: relative;
-    font-size: 20px;
-    cursor: pointer;
 
-    &::before {
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       border-radius: 50%;
       background-color: #5b97d0;
-      transition: all 0.3s ease;
     }
+
+    @media (max-width: 1023px) {
+      &::before {
+        left: -2px;
+        bottom: -2px;
+      }
+      &::after {
+        right: -2px;
+        bottom: -2px;
+      }
+      &::before,
+      &::after {
+        width: 4px;
+        height: 4px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      &::before {
+        top: -4px;
+        left: -5px;
+      }
+      &::after {
+        bottom: -4px;
+        left: -5px;
+      }
+      &::before,
+      &::after {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    label {
+      position: relative;
+      font-size: 20px;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        background-color: #5b97d0;
+        transition: all 0.3s ease;
+      }
+
+      @media (max-width: 1023px) {
+        font-size: 20px;
+
+        &::before {
+          width: 8px;
+          height: 8px;
+          bottom: -28px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        font-size: 40px;
+
+        &::before {
+          width: 16px;
+          height: 16px;
+          left: -46px;
+          bottom: 50%;
+          transform: translateY(50%);
+        }
+      }
+    }
+  }
+  /* 诊所名称悬浮文字 */
+  .clinic-name {
+    position: absolute;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      #b6dbff 53.85%,
+      rgba(251, 253, 255, 0) 100%
+    );
+    color: #515151;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+      1px 1px 0 #fff;
 
     @media (max-width: 1023px) {
       font-size: 20px;
-
-      &::before {
-        width: 8px;
-        height: 8px;
-        bottom: -28px;
-        left: 50%;
-        transform: translateX(-50%);
-      }
     }
 
     @media (min-width: 1024px) {
-      font-size: 40px;
-
-      &::before {
-        width: 16px;
-        height: 16px;
-        left: -46px;
-        bottom: 50%;
-        transform: translateY(50%);
-      }
+      font-size: 24px;
     }
   }
-}
 
-/* Tab 选中状态 */
-input[type='radio']:checked ~ .clinic-tabs label[for],
-.peer:checked ~ .clinic-tabs label[for] {
-  color: #febd62;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-decoration: underline;
-  text-underline-offset: 8px;
-  text-decoration-thickness: 2px;
-  transform: translateY(-8px);
-
-  @media (min-width: 1024px) {
-    font-size: 60px;
-    text-decoration-thickness: 3px;
-  }
-
-  &::before {
-    background-color: #febd62;
-
-    @media (max-width: 1023px) {
-      width: 12px;
-      height: 12px;
-      bottom: -38px;
-    }
+  /* Tab 选中状态 */
+  input[type='radio']:checked ~ .clinic-tabs label[for],
+  .peer:checked ~ .clinic-tabs label[for] {
+    color: #febd62;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+    transform: translateY(-8px);
 
     @media (min-width: 1024px) {
-      width: 28px;
-      height: 28px;
-      left: -50px;
+      font-size: 60px;
+      text-decoration-thickness: 3px;
+    }
+
+    &::before {
+      background-color: #febd62;
+
+      @media (max-width: 1023px) {
+        width: 12px;
+        height: 12px;
+        bottom: -38px;
+      }
+
+      @media (min-width: 1024px) {
+        width: 28px;
+        height: 28px;
+        left: -50px;
+      }
     }
   }
 }
@@ -896,14 +786,5 @@ input[type='radio']:checked ~ .clinic-tabs label[for],
     box-shadow: 0 4px 4px 0 rgba(47, 126, 252, 0.25);
     padding: 16px 84px;
   }
-}
-
-/* 其他小优化（如有需要可继续添加） */
-.backtop-mb {
-  bottom: 240px;
-}
-
-.backtop-mb-enter {
-  display: none;
 }
 </style>
