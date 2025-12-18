@@ -221,6 +221,8 @@ const currentClinics = computed(() => {
               muted
               playsinline
               loop
+              controls
+              controlsList="nodownload"
               src="https://statichk.cmermedical.com/hkcmereye/video/video-vueFgSecCMM.mp4"
             />
           </div>
@@ -361,21 +363,21 @@ const currentClinics = computed(() => {
     <section
       class="cmer bg-cover bg-center bg-no-repeat lg:pt-12 lg:pb-50 mb-4 lg:mb-14"
     >
-      <div class="lg:container lg:mx-auto mb-4 lg:mb-14">
+      <div class="cmer-main lg:mx-auto mb-4 lg:mb-14">
         <h2
-          class="text-primary-index text-xl lg:text-5xl font-bold text-center tracking-widest mb-[20px] lg:mb-18"
+          class="text-[#5B97D0] text-xl lg:text-5xl font-bold text-center tracking-widest mb-4 lg:mb-18"
         >
           希瑪眼科中心
         </h2>
         <div
-          class="flex flex-col lg:flex-row lg:items-center container mx-auto"
+          class="flex flex-col lg:flex-row lg:items-center container w-fit mx-auto"
         >
           <ul
-            class="lg:flex-1 whitespace-nowrap container mx-auto px-3 lg:!px-0 text-[#515151] space-y-5 lg:space-y-15 w-fit pb-[60px] lg:py-0 relative before:bg-[radial-gradient(50%_50%_at_50%_50%,rgba(182,219,255,0.82)_0%,rgba(200,227,255,0)_100%)] before:absolute before:w-full before:aspect-square before:content-[''] lg:before:w-3/4"
+            class="cmer-vision lg:flex-1 whitespace-nowrap container mx-auto px-3 lg:!px-0 text-[#515151] space-y-5 lg:space-y-15 w-fit pb-[60px] lg:py-0 relative before:absolute before:w-full before:aspect-square before:content-[''] lg:before:w-3/4"
           >
             <li class="flex gap-3 lg:gap-7 items-center">
               <strong
-                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-primary-index"
+                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-[#5B97D0]"
                 >C</strong
               >
               <p
@@ -387,7 +389,7 @@ const currentClinics = computed(() => {
             </li>
             <li class="flex gap-3 lg:gap-7 items-center">
               <strong
-                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-primary-index"
+                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-[#5B97D0]"
                 >M</strong
               >
               <p
@@ -398,7 +400,7 @@ const currentClinics = computed(() => {
             </li>
             <li class="flex gap-3 lg:gap-7 items-center">
               <strong
-                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-primary-index"
+                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-[#5B97D0]"
                 >E</strong
               >
               <p
@@ -409,7 +411,7 @@ const currentClinics = computed(() => {
             </li>
             <li class="flex gap-3 lg:gap-7 items-center">
               <strong
-                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-primary-index"
+                class="font-black text-3xl lg:text-6xl w-8 :h-8 lg:w-16 lg:h-16 text-center text-[#5B97D0]"
                 >R</strong
               >
               <p
@@ -420,7 +422,7 @@ const currentClinics = computed(() => {
             </li>
           </ul>
           <div
-            class="clinic lg:flex-1 bg-cover bg-center bg-no-repeat lg:bg-none container mx-auto px-3 lg:px-0 flex flex-col justify-between lg:flex-row gap-8 lg:gap-5 xl:gap-25 pt-4 pb-15 lg:py-0 lg:h-[680px]"
+            class="clinic lg:flex-1 bg-cover bg-center bg-no-repeat lg:bg-none container mx-auto px-3 lg:px-0 flex flex-col justify-between items-center lg:flex-row gap-8 lg:gap-5 xl:gap-25 pt-4 pb-15 lg:py-0 lg:h-[680px]"
           >
             <input
               v-for="region in regions"
@@ -434,7 +436,7 @@ const currentClinics = computed(() => {
               :value="region.id"
             />
             <div
-              class="clinic-tabs whitespace-nowrap order-1 flex justify-around lg:flex-col text-primary-index border-primary-index border-b-1 lg:border-l-2 lg:border-b-0 pb-[16px] lg:pb-0 lg:pl-[36px] tracking-widest leading-6 lg:leading-15 font-bold relative lg:h-[660px] lg:my-auto lg:justify-center lg:gap-[20%]"
+              class="order-1 clinic-tabs w-full lg:w-1/2 whitespace-nowrap flex justify-around lg:flex-col text-[#5B97D0] border-[#5B97D0] border-b-1 lg:border-l-2 lg:border-b-0 pb-[16px] lg:pb-0 lg:pl-[36px] tracking-widest leading-6 lg:leading-15 font-bold relative lg:h-[660px] lg:my-auto lg:justify-center lg:gap-[20%]"
             >
               <label
                 v-for="region in regions"
@@ -445,15 +447,13 @@ const currentClinics = computed(() => {
                 {{ region.label }}
               </label>
             </div>
-            <div
-              class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-12"
-            >
+            <div class="order-2 w-4/5 lg:my-auto mx-auto">
               <div
                 v-for="clinic in currentClinics"
                 :key="clinic.name"
                 class="clinic-item relative"
               >
-                <a :href="clinic.link" target="_blank">
+                <nuxt-link :to="clinic.link">
                   <picture>
                     <source
                       v-if="clinic.avif"
@@ -464,13 +464,13 @@ const currentClinics = computed(() => {
                       :src="clinic.img"
                       :alt="clinic.name"
                       loading="lazy"
-                      class="w-full lg:scale-120 lg:translate-x-7 mb-2 lg:mb-5"
+                      class="w-full lg:scale-120 lg:translate-x-7"
                     />
                   </picture>
                   <div class="clinic-name">
                     {{ clinic.name }}<i class="iconfont icon-arrow-right"></i>
                   </div>
-                </a>
+                </nuxt-link>
               </div>
             </div>
           </div>
@@ -478,51 +478,56 @@ const currentClinics = computed(() => {
       </div>
     </section>
     <!-- 客戶評價輪播 -->
-    <section class="py-10 bg-[#F8F9FA]">
-      <div class="px-3 xl:px-0">
-        <h2
-          class="text-3xl lg:text-5xl font-bold text-center text-[#2958A3] mb-10 tracking-widest"
-        >
-          客戶評價
+    <section class="mb-13 lg:mb-15 text-[#5B97D0]">
+      <div class="text-center mb-9 lg:mb-13">
+        <h2 class="text-xl lg:text-5xl font-bold mb-[8px] lg:mb-[24px]">
+          客戶評分
         </h2>
-        <Swiper
-          :modules="[Autoplay]"
-          :loop="true"
-          :autoplay="{ delay: 0, disableOnInteraction: false }"
-          :speed="6000"
-          :free-mode="true"
-          :slides-per-view="1.2"
-          :space-between="20"
-          :breakpoints="{
-            768: { slidesPerView: 2.5 },
-            1024: { slidesPerView: 4 },
-          }"
-          class="ratings-swiper"
+        <p
+          class="text-[clamp(0.75rem,-0.964rem_+_8.57vw,1.125rem)] font-bold lg:font-light"
         >
-          <SwiperSlide v-for="item in ratings" :key="item.name" class="!h-auto">
-            <article class="h-full rounded-md shadow-sm bg-white p-4 space-y-4">
-              <div class="flex items-center">
-                <img
-                  :src="`${baseRatings}${item.avatar}.avif`"
-                  :alt="item.name"
-                  class="w-12 h-12 mr-3 rounded-full"
-                  loading="lazy"
-                />
-                <div>
-                  <h3 class="text-lg font-medium">{{ item.name }}</h3>
-                  <time class="text-sm text-gray-500">{{ item.date }}</time>
-                </div>
-              </div>
-              <div class="flex text-[#ffc107]">
-                <i v-for="n in 5" :key="n" class="iconfont icon-star" />
-              </div>
-              <p class="text-base text-gray-700 whitespace-pre-line">
-                {{ item.text }}
-              </p>
-            </article>
-          </SwiperSlide>
-        </Swiper>
+          來自GOOGLE平台的真實體驗分享
+        </p>
       </div>
+      <Swiper
+        :modules="[Autoplay]"
+        :loop="true"
+        :autoplay="{ delay: 0, disableOnInteraction: false }"
+        :speed="6000"
+        :free-mode="true"
+        :slides-per-view="1.2"
+        :space-between="20"
+        :breakpoints="{
+          768: { slidesPerView: 2.5 },
+          1024: { slidesPerView: 4 },
+        }"
+        class="ratings-swiper"
+      >
+        <SwiperSlide v-for="item in ratings" :key="item.name" class="!h-auto">
+          <article class="h-full rounded-md shadow-sm bg-white p-4 space-y-4">
+            <div class="flex items-center">
+              <img
+                :src="`${baseRatings}${item.avatar}.avif`"
+                :alt="item.name"
+                class="w-12 h-12 mr-3 rounded-full"
+                loading="lazy"
+              />
+              <div>
+                <h3 class="text-lg font-medium text-[#212529]">
+                  {{ item.name }}
+                </h3>
+                <time class="text-sm text-gray-500">{{ item.date }}</time>
+              </div>
+            </div>
+            <div class="flex text-[#ffc107]">
+              <i v-for="n in 5" :key="n" class="iconfont icon-star" />
+            </div>
+            <p class="text-base text-gray-700 whitespace-pre-line">
+              {{ item.text }}
+            </p>
+          </article>
+        </SwiperSlide>
+      </Swiper>
     </section>
 
     <!-- 表單區域（使用項目現有組件） -->
@@ -530,6 +535,7 @@ const currentClinics = computed(() => {
       :bg="`background:#64bcd1;background:-webkit-linear-gradient(to right, #83cdd3, #64bcd1);background:linear-gradient(to right, #83cdd3, #64bcd1);`"
       :co="`color:#64bcd1;`"
     />
+    <PageFooterMenu />
   </div>
 </template>
 
@@ -604,6 +610,18 @@ main {
 .cmer {
   @media (min-width: 1024px) {
     background-image: url('https://statichk.cmermedical.com/newopd/about/carolcheng/center-bg-pc.png');
+  }
+  .cmer-main {
+    @media (min-width: 1024px) {
+      width: fit-content;
+    }
+  }
+  .cmer-vision {
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      rgba(182, 219, 255, 0.82) 0%,
+      rgba(200, 227, 255, 0) 100%
+    );
   }
 }
 .clinic {
@@ -684,7 +702,7 @@ main {
         &::before {
           width: 8px;
           height: 8px;
-          bottom: -28px;
+          bottom: -20px;
           left: 50%;
           transform: translateX(-50%);
         }
@@ -728,8 +746,9 @@ main {
   }
 
   /* Tab 选中状态 */
-  input[type='radio']:checked ~ .clinic-tabs label[for],
-  .peer:checked ~ .clinic-tabs label[for] {
+  #clinic-kl:checked ~ .clinic-tabs label[for='clinic-kl'],
+  #clinic-hk:checked ~ .clinic-tabs label[for='clinic-hk'],
+  #clinic-nt:checked ~ .clinic-tabs label[for='clinic-nt'] {
     color: #febd62;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -749,7 +768,7 @@ main {
       @media (max-width: 1023px) {
         width: 12px;
         height: 12px;
-        bottom: -38px;
+        bottom: -30px;
       }
 
       @media (min-width: 1024px) {
