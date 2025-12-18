@@ -1,3 +1,10 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-09-15 14:59:45
+ * @LastEditTime: 2025-12-18 18:10:23
+ * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
+ * @Description: 
+-->
 <script setup lang="ts">
 import { Autoplay, Pagination } from 'swiper'
 
@@ -203,136 +210,18 @@ const currentRegion = ref<'hk' | 'kl' | 'nt'>('hk')
 const currentClinics = computed(() => {
   return regions.find((r) => r.id === currentRegion.value)?.clinics || []
 })
-const videoEl = ref<HTMLVideoElement | null>(null)
-const videoWrapper = ref<HTMLElement | null>(null)
-const sentinel = ref<HTMLElement | null>(null)
-
-const isPlaying = ref(false)
-const isMuted = ref(true)
-const progress = ref(0)
-const isFullscreen = ref(false)
-const supportsPip = ref(false)
-
-let observer: IntersectionObserver | null = null
-
-// 更新进度条
-const updateProgress = () => {
-  if (!videoEl.value || !videoEl.value.duration) return
-  progress.value = (videoEl.value.currentTime / videoEl.value.duration) * 100
-}
-
-// 播放/暂停
-const togglePlay = async () => {
-  if (!videoEl.value) return
-  if (videoEl.value.paused) {
-    await videoEl.value.play()
-    isPlaying.value = true
-  } else {
-    videoEl.value.pause()
-    isPlaying.value = false
-  }
-}
-
-// 静音切换
-const toggleMute = () => {
-  if (!videoEl.value) return
-  videoEl.value.muted = !videoEl.value.muted
-  isMuted.value = videoEl.value.muted
-}
-
-// 进度条点击跳转
-const seek = (e: MouseEvent) => {
-  if (!videoEl.value || !videoEl.value.duration) return
-  const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()
-  const pos = (e.clientX - rect.left) / rect.width
-  videoEl.value.currentTime = pos * videoEl.value.duration
-}
-
-// 全屏切换
-const toggleFullscreen = async () => {
-  if (!videoWrapper.value) return
-  try {
-    if (!document.fullscreenElement) {
-      await videoWrapper.value.requestFullscreen()
-    } else {
-      await document.exitFullscreen()
-    }
-  } catch (err) {
-    console.warn('Fullscreen error:', err)
-  }
-}
-
-// 浏览器原生画中画（非固定小窗）
-const togglePip = async () => {
-  if (!videoEl.value) return
-  try {
-    if (document.pictureInPictureElement) {
-      await document.exitPictureInPicture()
-    } else {
-      await videoEl.value.requestPictureInPicture()
-    }
-  } catch (err) {
-    console.warn('PiP error:', err)
-  }
-}
-
-onMounted(async () => {
-  if (!videoEl.value || !videoWrapper.value || !sentinel.value) return
-
-  // 默认静音 + 自动播放（移动端兼容）
-  videoEl.value.muted = true
-  isMuted.value = true
-  await videoEl.value.play().catch(() => {
-    // 部分浏览器可能阻止自动播放，静默处理
-  })
-  isPlaying.value = !videoEl.value.paused
-
-  // 进度监听
-  videoEl.value.addEventListener('timeupdate', updateProgress)
-
-  // 检查是否支持 PiP
-  supportsPip.value = 'pictureInPictureEnabled' in document
-
-  // 全屏状态监听
-  document.addEventListener('fullscreenchange', () => {
-    isFullscreen.value = !!document.fullscreenElement
-  })
-
-  // 移动端自动固定小窗（≤1024px）
-  if (window.innerWidth <= 1024) {
-    observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          videoWrapper.value!.classList.remove('pip-fixed')
-        } else {
-          videoWrapper.value!.classList.add('pip-fixed')
-        }
-      },
-      { threshold: 0.01 }
-    )
-    observer.observe(sentinel.value)
-  }
-})
-
-onUnmounted(() => {
-  observer?.disconnect()
-})
 </script>
 
 <template>
   <div class="relative">
     <!-- 頂部裝飾偽元素 -->
-    <div
-      class="relative lg:before:content-[''] lg:before:absolute lg:before:bg-[ur[(https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-pc-left.svg)] lg:before:bg-no-repeat lg:before:h-4/5 lg:before:w-[40%] lg:before:left-0 lg:before:bottom-0 lg:before:bg-contain lg:before:pointer-events-none lg:after:content-[''] lg:after:absolute lg:after:bg-[ur[](https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-pc-right.svg)] lg:after:bg-no-repeat lg:after:h-4/5 lg:after:w-[40%] lg:after:right-0 lg:after:-bottom-10 lg:after:bg-contain lg:after:bg-right lg:after:pointer-events-none"
-    >
+    <div class="video relative">
       <!-- 首屏視頻 -->
       <section class="mt-15 md:mt-23 lg:mt-0 lg:-z-1">
         <div
           class="flex justify-center bg-gradient-to-br from-[#E0E6F0] via-[#E7EDF3] to-[#D7E8F2]"
         >
-          <div
-            class="relative aspect-video w-full xl:h-[680px] xl:w-[1210px] group"
-          >
+          <div class="relative aspect-video w-full xl:h-[680px] xl:w-[1210px]">
             <video
               id="my-player"
               class="w-full h-full object-cover"
@@ -341,80 +230,16 @@ onUnmounted(() => {
               muted
               playsinline
               loop
+              controls
+              controlsList="nodownload"
               src="https://statichk.cmermedical.com/hkcmereye/video/video-vueFgSecCMM.mp4"
             />
-            <div
-              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100"
-            >
-              <div class="flex items-center gap-4 text-white">
-                <!-- 播放/暂停 -->
-                <button
-                  class="text-2xl hover:scale-110 transition"
-                  @click="togglePlay"
-                >
-                  <i
-                    class="iconfont"
-                    :class="isPlaying ? 'icon-video-pause' : 'icon-video-play'"
-                  ></i>
-                </button>
-
-                <!-- 进度条 -->
-                <div
-                  class="flex-1 relative h-1 bg-white/30 rounded-full cursor-pointer group"
-                  @click="seek"
-                >
-                  <div
-                    class="absolute h-full bg-[#febd62] rounded-full transition-all"
-                    :style="{ width: progress + '%' }"
-                  ></div>
-                  <div
-                    class="absolute w-4 h-4 bg-[#febd62] rounded-full -top-1.5 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity"
-                    :style="{ left: progress + '%' }"
-                  ></div>
-                </div>
-
-                <!-- 音量 -->
-                <button
-                  class="text-xl hover:scale-110 transition"
-                  @click="toggleMute"
-                >
-                  <i
-                    class="iconfont"
-                    :class="isMuted ? 'icon-volume-off' : 'icon-volume-on'"
-                  ></i>
-                </button>
-
-                <!-- 画中画按钮（浏览器支持时显示） -->
-                <button
-                  v-if="supportsPip"
-                  class="text-xl hover:scale-110 transition"
-                  @click="togglePip"
-                >
-                  <i class="iconfont icon-pip"></i>
-                </button>
-
-                <!-- 全屏 -->
-                <button
-                  class="text-xl hover:scale-110 transition"
-                  @click="toggleFullscreen"
-                >
-                  <i
-                    class="iconfont"
-                    :class="
-                      isFullscreen ? 'icon-fullscreen-exit' : 'icon-fullscreen'
-                    "
-                  ></i>
-                </button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
 
       <!-- Do姐介紹 -->
-      <section
-        class="container mx-auto px-3 xl:px-0 pb-15 lg:pb-30 relative before:content-[''] before:absolute before:w-full before:h-1/2 before:top-0 before:left-0 before:bg-[ur[(https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-m-01.svg)] before:bg-no-repeat before:bg-[position:0_-40px] before:-z-1 after:content-[''] after:absolute after:w-full after:h-3/5 after:bottom-0 after:right-0 after:bg-[ur[](https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-m-02.svg)] after:bg-no-repeat after:bg-[position:100%_0] after:-z-1 lg:before:hidden lg:after:hidden"
-      >
+      <section class="kol container mx-auto px-3 xl:px-0 pb-15 lg:pb-30">
         <div class="grid intro-do">
           <div class="grid-area-title">
             <img
@@ -711,7 +536,7 @@ onUnmounted(() => {
       </Swiper>
     </section>
 
-    <!-- 表單區域（使用項目現有組件） -->
+    <!-- 表單區域 -->
     <FormFooterInfo
       :bg="`background:#64bcd1;background:-webkit-linear-gradient(to right, #83cdd3, #64bcd1);background:linear-gradient(to right, #83cdd3, #64bcd1);`"
       :co="`color:#64bcd1;`"
@@ -726,25 +551,109 @@ main {
 }
 /* 移动端视频画中画固定 */
 .pip-fixed {
-  position: fixed !important;
+  position: fixed;
   right: 24px;
   bottom: 100px;
-  width: 60% !important;
-  max-width: 220px !important;
+  width: 60%;
+  max-width: 220px;
+  height: auto;
   aspect-ratio: 16 / 9;
   z-index: 60;
   border-radius: 12px;
   overflow: hidden;
   background: #000;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
-  transition: all 0.3s ease;
-
   @media (min-width: 768px) and (max-width: 1024px) {
     bottom: 12px;
   }
-
+  @media (min-width: 1024px) {
+    display: none; // PC 端关闭画中画
+  }
   @media (min-width: 1025px) {
-    display: none !important; // PC 端关闭画中画
+    right: 280px;
+  }
+}
+.video {
+  position: relative;
+
+  // PC 端左边装饰图
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url('https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-pc-left.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 80%; // h-4/5 ≈ 80%
+    width: 40%;
+    left: 0;
+    bottom: 0;
+    pointer-events: none;
+
+    @media (max-width: 1023px) {
+      // lg 以下隐藏
+      display: none;
+    }
+  }
+
+  // PC 端右边装饰图
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-pc-right.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 80%;
+    width: 40%;
+    right: 0;
+    bottom: -2.5rem; // -bottom-10 = -2.5rem (10 * 0.25rem)
+    pointer-events: none;
+
+    @media (max-width: 1023px) {
+      // lg 以下隐藏
+      display: none;
+    }
+  }
+}
+.kol {
+  position: relative;
+
+  // 移动端上方装饰图
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%; // h-1/2
+    top: 0;
+    left: 0;
+    background-image: url('https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-m-01.svg');
+    background-repeat: no-repeat;
+    background-position: 0 -40px;
+    z-index: -1;
+
+    @media (min-width: 1024px) {
+      // lg 及以上隐藏
+      display: none;
+    }
+  }
+
+  // 移动端下方装饰图
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 60%; // h-3/5 ≈ 60%
+    bottom: 0;
+    right: 0;
+    background-image: url('https://statichk.cmermedical.com/newopd/about/carolcheng/intro-round-m-02.svg');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    z-index: -1;
+
+    @media (min-width: 1024px) {
+      // lg 及以上隐藏
+      display: none;
+    }
   }
 }
 /* 优势轮播 - 非活跃 slide 缩放 */
