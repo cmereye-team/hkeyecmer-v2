@@ -6,7 +6,7 @@ const year = new Date().getFullYear()
   <div class="footerTem">
     <PageContentBackToTop />
     <PageContentOnlinContact />
-    <footer class="bg-blue-900">
+    <footer class="bg-green">
       <section class="footer">
         <div>
           {{ $t('pages.index.footer.company') }}

@@ -231,7 +231,7 @@ const setTestSwiperRef = (swiper: any) => {
         </swiper-slide>
       </swiper>
     </div>
-    <div :class="['testPage-nextBtn', 'bg-blue-900']" @click="handleNext">
+    <div :class="['testPage-nextBtn', 'bg-green']" @click="handleNext">
       {{ cnum === _l ? '開始' : '下一步' }}
     </div>
   </div>

@@ -73,7 +73,7 @@ onMounted(() => {
   <div ref="tabs" class="tabs">
     <ClientOnly>
       <div
-        class="tabs-header relative overflow-hidden flex space-x-6 text-sm font-bold text-gray-300 bg-primary-700/45 rounded-t-lg px-5 py-3"
+        class="tabs-header relative overflow-hidden flex space-x-6 text-sm font-bold text-gray-300 bg-green-700/45 rounded-t-lg px-5 py-3"
       >
         <div
           v-for="item in tabItems"
