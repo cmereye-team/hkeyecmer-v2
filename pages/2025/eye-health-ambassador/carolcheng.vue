@@ -203,6 +203,120 @@ const currentRegion = ref<'hk' | 'kl' | 'nt'>('hk')
 const currentClinics = computed(() => {
   return regions.find((r) => r.id === currentRegion.value)?.clinics || []
 })
+const videoEl = ref<HTMLVideoElement | null>(null)
+const videoWrapper = ref<HTMLElement | null>(null)
+const sentinel = ref<HTMLElement | null>(null)
+
+const isPlaying = ref(false)
+const isMuted = ref(true)
+const progress = ref(0)
+const isFullscreen = ref(false)
+const supportsPip = ref(false)
+
+let observer: IntersectionObserver | null = null
+
+// 更新进度条
+const updateProgress = () => {
+  if (!videoEl.value || !videoEl.value.duration) return
+  progress.value = (videoEl.value.currentTime / videoEl.value.duration) * 100
+}
+
+// 播放/暂停
+const togglePlay = async () => {
+  if (!videoEl.value) return
+  if (videoEl.value.paused) {
+    await videoEl.value.play()
+    isPlaying.value = true
+  } else {
+    videoEl.value.pause()
+    isPlaying.value = false
+  }
+}
+
+// 静音切换
+const toggleMute = () => {
+  if (!videoEl.value) return
+  videoEl.value.muted = !videoEl.value.muted
+  isMuted.value = videoEl.value.muted
+}
+
+// 进度条点击跳转
+const seek = (e: MouseEvent) => {
+  if (!videoEl.value || !videoEl.value.duration) return
+  const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()
+  const pos = (e.clientX - rect.left) / rect.width
+  videoEl.value.currentTime = pos * videoEl.value.duration
+}
+
+// 全屏切换
+const toggleFullscreen = async () => {
+  if (!videoWrapper.value) return
+  try {
+    if (!document.fullscreenElement) {
+      await videoWrapper.value.requestFullscreen()
+    } else {
+      await document.exitFullscreen()
+    }
+  } catch (err) {
+    console.warn('Fullscreen error:', err)
+  }
+}
+
+// 浏览器原生画中画（非固定小窗）
+const togglePip = async () => {
+  if (!videoEl.value) return
+  try {
+    if (document.pictureInPictureElement) {
+      await document.exitPictureInPicture()
+    } else {
+      await videoEl.value.requestPictureInPicture()
+    }
+  } catch (err) {
+    console.warn('PiP error:', err)
+  }
+}
+
+onMounted(async () => {
+  if (!videoEl.value || !videoWrapper.value || !sentinel.value) return
+
+  // 默认静音 + 自动播放（移动端兼容）
+  videoEl.value.muted = true
+  isMuted.value = true
+  await videoEl.value.play().catch(() => {
+    // 部分浏览器可能阻止自动播放，静默处理
+  })
+  isPlaying.value = !videoEl.value.paused
+
+  // 进度监听
+  videoEl.value.addEventListener('timeupdate', updateProgress)
+
+  // 检查是否支持 PiP
+  supportsPip.value = 'pictureInPictureEnabled' in document
+
+  // 全屏状态监听
+  document.addEventListener('fullscreenchange', () => {
+    isFullscreen.value = !!document.fullscreenElement
+  })
+
+  // 移动端自动固定小窗（≤1024px）
+  if (window.innerWidth <= 1024) {
+    observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoWrapper.value!.classList.remove('pip-fixed')
+        } else {
+          videoWrapper.value!.classList.add('pip-fixed')
+        }
+      },
+      { threshold: 0.01 }
+    )
+    observer.observe(sentinel.value)
+  }
+})
+
+onUnmounted(() => {
+  observer?.disconnect()
+})
 </script>
 
 <template>
@@ -216,7 +330,9 @@ const currentClinics = computed(() => {
         <div
           class="flex justify-center bg-gradient-to-br from-[#E0E6F0] via-[#E7EDF3] to-[#D7E8F2]"
         >
-          <div class="relative aspect-video w-full xl:h-[680px] xl:w-[1210px]">
+          <div
+            class="relative aspect-video w-full xl:h-[680px] xl:w-[1210px] group"
+          >
             <video
               id="my-player"
               class="w-full h-full object-cover"
@@ -225,10 +341,72 @@ const currentClinics = computed(() => {
               muted
               playsinline
               loop
-              controls
-              controlsList="nodownload"
               src="https://statichk.cmermedical.com/hkcmereye/video/video-vueFgSecCMM.mp4"
             />
+            <div
+              class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-within:opacity-100"
+            >
+              <div class="flex items-center gap-4 text-white">
+                <!-- 播放/暂停 -->
+                <button
+                  class="text-2xl hover:scale-110 transition"
+                  @click="togglePlay"
+                >
+                  <i
+                    class="iconfont"
+                    :class="isPlaying ? 'icon-video-pause' : 'icon-video-play'"
+                  ></i>
+                </button>
+
+                <!-- 进度条 -->
+                <div
+                  class="flex-1 relative h-1 bg-white/30 rounded-full cursor-pointer group"
+                  @click="seek"
+                >
+                  <div
+                    class="absolute h-full bg-[#febd62] rounded-full transition-all"
+                    :style="{ width: progress + '%' }"
+                  ></div>
+                  <div
+                    class="absolute w-4 h-4 bg-[#febd62] rounded-full -top-1.5 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity"
+                    :style="{ left: progress + '%' }"
+                  ></div>
+                </div>
+
+                <!-- 音量 -->
+                <button
+                  class="text-xl hover:scale-110 transition"
+                  @click="toggleMute"
+                >
+                  <i
+                    class="iconfont"
+                    :class="isMuted ? 'icon-volume-off' : 'icon-volume-on'"
+                  ></i>
+                </button>
+
+                <!-- 画中画按钮（浏览器支持时显示） -->
+                <button
+                  v-if="supportsPip"
+                  class="text-xl hover:scale-110 transition"
+                  @click="togglePip"
+                >
+                  <i class="iconfont icon-pip"></i>
+                </button>
+
+                <!-- 全屏 -->
+                <button
+                  class="text-xl hover:scale-110 transition"
+                  @click="toggleFullscreen"
+                >
+                  <i
+                    class="iconfont"
+                    :class="
+                      isFullscreen ? 'icon-fullscreen-exit' : 'icon-fullscreen'
+                    "
+                  ></i>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -548,26 +726,25 @@ main {
 }
 /* 移动端视频画中画固定 */
 .pip-fixed {
-  position: fixed;
+  position: fixed !important;
   right: 24px;
   bottom: 100px;
-  width: 60%;
-  max-width: 220px;
-  height: auto;
+  width: 60% !important;
+  max-width: 220px !important;
   aspect-ratio: 16 / 9;
   z-index: 60;
   border-radius: 12px;
   overflow: hidden;
   background: #000;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  transition: all 0.3s ease;
+
   @media (min-width: 768px) and (max-width: 1024px) {
     bottom: 12px;
   }
-  @media (min-width: 1024px) {
-    display: none; // PC 端关闭画中画
-  }
+
   @media (min-width: 1025px) {
-    right: 280px;
+    display: none !important; // PC 端关闭画中画
   }
 }
 /* 优势轮播 - 非活跃 slide 缩放 */
