@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-15 14:59:45
- * @LastEditTime: 2025-12-18 18:10:23
+ * @LastEditTime: 2025-12-19 10:50:42
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 
 -->
@@ -165,7 +165,7 @@ const regions: Region[] = [
         name: '中環萬邦行',
         img: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-02.png',
         avif: 'https://statichk.cmermedical.com/newopd/about/carolcheng/clinic-hk-02.avif',
-        link: '/eyecmer-kt',
+        link: '/eyecmer-ct',
       },
       {
         name: '銅鑼灣恒隆中心',
@@ -210,10 +210,78 @@ const currentRegion = ref<'hk' | 'kl' | 'nt'>('hk')
 const currentClinics = computed(() => {
   return regions.find((r) => r.id === currentRegion.value)?.clinics || []
 })
-</script>
 
+const setupPipObserver = () => {
+  const videoWrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
+  const sentinel = document.querySelector('.js-pip-sentinel') as HTMLElement
+
+  if (!videoWrapper || !sentinel) return
+
+  // 先清理可能存在的旧 observer（防止重复添加）
+  if ((videoWrapper as any)._pipObserver) {
+    ;(videoWrapper as any)._pipObserver.disconnect()
+  }
+
+  // 只在移动端/平板（≤1024px）启用
+  if (window.innerWidth > 1024) {
+    videoWrapper.classList.remove('pip-fixed')
+    return
+  }
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        videoWrapper.classList.remove('pip-fixed')
+      } else {
+        videoWrapper.classList.add('pip-fixed')
+      }
+    },
+    {
+      root: null,
+      threshold: 0,
+      rootMargin: '0px 0px -100px 0px',
+    }
+  )
+
+  observer.observe(sentinel)
+  ;(videoWrapper as any)._pipObserver = observer
+}
+
+// 防抖函数（300ms）
+const debounce = <T extends (...args: any[]) => any>(fn: T, wait: number) => {
+  let timer: ReturnType<typeof setTimeout> | null = null
+  return (...args: Parameters<T>) => {
+    if (timer) clearTimeout(timer)
+    timer = setTimeout(() => {
+      fn(...args)
+      timer = null
+    }, wait)
+  }
+}
+
+const debouncedSetup = debounce(setupPipObserver, 300)
+
+onMounted(() => {
+  // 初始执行
+  setupPipObserver()
+
+  // 监听 resize
+  window.addEventListener('resize', debouncedSetup)
+})
+
+onBeforeUnmount(() => {
+  // 清理事件监听
+  window.removeEventListener('resize', debouncedSetup)
+
+  // 清理 observer
+  const videoWrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
+  if (videoWrapper && (videoWrapper as any)._pipObserver) {
+    ;(videoWrapper as any)._pipObserver.disconnect()
+  }
+})
+</script>
 <template>
-  <div class="relative">
+  <div class="relative page-carolcheng">
     <!-- 頂部裝飾偽元素 -->
     <div class="video relative">
       <!-- 首屏視頻 -->
@@ -222,18 +290,24 @@ const currentClinics = computed(() => {
           class="flex justify-center bg-gradient-to-br from-[#E0E6F0] via-[#E7EDF3] to-[#D7E8F2]"
         >
           <div class="relative aspect-video w-full xl:h-[680px] xl:w-[1210px]">
-            <video
-              id="my-player"
-              class="w-full h-full object-cover"
-              preload="auto"
-              autoplay
-              muted
-              playsinline
-              loop
-              controls
-              controlsList="nodownload"
-              src="https://statichk.cmermedical.com/hkcmereye/video/video-vueFgSecCMM.mp4"
-            />
+            <!-- 画中画 wrapper -->
+            <div class="js-pip-wrapper relative w-full h-full">
+              <video
+                id="my-player"
+                class="js-pip-video w-full h-full object-cover transition-all duration-300"
+                preload="auto"
+                autoplay
+                muted
+                playsinline
+                loop
+                controls
+                controlsList="nodownload"
+                src="https://statichk.cmermedical.com/hkcmereye/video/video-vueFgSecCMM.mp4"
+              />
+            </div>
+
+            <!-- 用来检测是否在视口的 sentinel（放在视频下方一点点） -->
+            <div class="js-pip-sentinel h-1"></div>
           </div>
         </div>
       </section>
@@ -268,7 +342,7 @@ const currentClinics = computed(() => {
             />
           </picture>
           <div
-            class="grid-area-desc text-base lg:text-3xl font-bold lg:font-medium tracking-wide lg:tracking-widest leading-8 lg:leading-[1.35] space-y-12 lg:space-y-10"
+            class="grid-area-desc text-justify text-base lg:text-3xl font-bold lg:font-medium tracking-wide lg:tracking-widest leading-8 lg:leading-[1.35] space-y-12 lg:space-y-10"
           >
             <p>
               <span class="text-[#E6A446]">鄭裕玲小姐（Do姐）</span
@@ -323,11 +397,8 @@ const currentClinics = computed(() => {
                     class="w-full"
                   />
                 </picture>
-                <span
-                  v-if="slide.stock"
-                  class="absolute bottom-[3%] left-1/2 -translate-x-1/2 text-[#FA7E20] text-[1vw] font-bold [text-shadow:-1px_-1px_0_#fff,1px_-1px_0_#fff,-1px_1px_0_#fff,1px_1px_0_#fff]"
-                >
-                  <i class="iconfont icon-line-chart mr-1" /> 上市編號03309.HK
+                <span v-if="slide.stock" class="stock-label">
+                  <i class="iconfont icon-data-line" /> 上市編號03309.HK
                 </span>
               </nuxt-link>
             </SwiperSlide>
@@ -544,34 +615,42 @@ const currentClinics = computed(() => {
     <PageFooterMenu />
   </div>
 </template>
-
 <style lang="scss" scoped>
-main {
-  font-family: 'Noto Sans HK', sans-serif;
-}
 /* 移动端视频画中画固定 */
 .pip-fixed {
-  position: fixed;
-  right: 24px;
+  position: fixed !important;
+  right: 16px;
   bottom: 100px;
-  width: 60%;
-  max-width: 220px;
-  height: auto;
+  width: 60% !important;
+  max-width: 260px;
+  height: auto !important;
   aspect-ratio: 16 / 9;
   z-index: 60;
   border-radius: 12px;
   overflow: hidden;
   background: #000;
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+
   @media (min-width: 768px) and (max-width: 1024px) {
-    bottom: 12px;
-  }
-  @media (min-width: 1024px) {
-    display: none; // PC 端关闭画中画
+    bottom: 16px;
+    right: 16px;
+    width: 50%;
+    max-width: 320px;
   }
   @media (min-width: 1025px) {
-    right: 280px;
+    display: none !important; // PC 端不启用
   }
+}
+.stock-label {
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fa7e20;
+  font-size: 1vw;
+  font-weight: bold;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
 }
 .video {
   position: relative;
@@ -700,6 +779,9 @@ main {
   grid-template-areas: 'title' 'img' 'desc';
   @media (min-width: 1024px) {
     grid-template-areas: 'title img' 'desc img';
+  }
+  @media (min-width: 1280px) and (max-width: 2200px) {
+    padding-left: 20%;
   }
 }
 .cmer {
