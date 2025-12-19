@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-15 14:59:45
- * @LastEditTime: 2025-12-19 10:50:42
+ * @LastEditTime: 2025-12-19 11:29:14
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 
 -->
@@ -211,29 +211,80 @@ const currentClinics = computed(() => {
   return regions.find((r) => r.id === currentRegion.value)?.clinics || []
 })
 
+const videoEl = ref<HTMLVideoElement | null>(null)
+
+// 判斷是否為移動設備（真機或模擬窄屏都能觸發）
+const isMobileDevice = () => {
+  return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || window.innerWidth <= 1024
+}
+
+// 進入 PiP：優先原生 API，失敗則降級到 CSS 固定小窗
+const enterPip = async () => {
+  if (
+    videoEl.value &&
+    document.pictureInPictureEnabled &&
+    !videoEl.value.disablePictureInPicture
+  ) {
+    try {
+      if (document.pictureInPictureElement) return
+      await videoEl.value.requestPictureInPicture()
+      // 原生 PiP 成功後移除 CSS 固定（避免重疊）
+      const wrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
+      wrapper?.classList.remove('pip-fixed')
+      return
+    } catch (err) {
+      console.warn('原生 PiP 失敗，使用 CSS 保底:', err)
+    }
+  }
+
+  // 最終保底：強制使用 CSS 固定小窗
+  const wrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
+  wrapper?.classList.add('pip-fixed')
+}
+
+// 退出 PiP：退出原生 PiP 並移除 CSS 固定
+const exitPip = async () => {
+  if (document.pictureInPictureElement) {
+    try {
+      await document.exitPictureInPicture()
+    } catch (err) {
+      console.warn('退出原生 PiP 失敗:', err)
+    }
+  }
+  const wrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
+  wrapper?.classList.remove('pip-fixed')
+}
+
+// 設置 IntersectionObserver 監聽視頻是否離開視口
 const setupPipObserver = () => {
   const videoWrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
   const sentinel = document.querySelector('.js-pip-sentinel') as HTMLElement
+  const video = document.querySelector('.js-pip-video') as HTMLVideoElement
 
-  if (!videoWrapper || !sentinel) return
+  if (!videoWrapper || !sentinel || !video) return
 
-  // 先清理可能存在的旧 observer（防止重复添加）
+  videoEl.value = video
+
+  // 清理舊的 observer
   if ((videoWrapper as any)._pipObserver) {
     ;(videoWrapper as any)._pipObserver.disconnect()
   }
 
-  // 只在移动端/平板（≤1024px）启用
-  if (window.innerWidth > 1024) {
+  // 只在移動設備（含模擬）上啟用
+  if (!isMobileDevice()) {
     videoWrapper.classList.remove('pip-fixed')
+    exitPip()
     return
   }
 
   const observer = new IntersectionObserver(
     ([entry]) => {
       if (entry.isIntersecting) {
-        videoWrapper.classList.remove('pip-fixed')
+        // 回到視口：退出 PiP
+        exitPip()
       } else {
-        videoWrapper.classList.add('pip-fixed')
+        // 離開視口：進入 PiP
+        enterPip()
       }
     },
     {
@@ -247,7 +298,7 @@ const setupPipObserver = () => {
   ;(videoWrapper as any)._pipObserver = observer
 }
 
-// 防抖函数（300ms）
+// 防抖
 const debounce = <T extends (...args: any[]) => any>(fn: T, wait: number) => {
   let timer: ReturnType<typeof setTimeout> | null = null
   return (...args: Parameters<T>) => {
@@ -261,23 +312,20 @@ const debounce = <T extends (...args: any[]) => any>(fn: T, wait: number) => {
 
 const debouncedSetup = debounce(setupPipObserver, 300)
 
+// 掛載時初始化 + 監聽 resize
 onMounted(() => {
-  // 初始执行
   setupPipObserver()
-
-  // 监听 resize
   window.addEventListener('resize', debouncedSetup)
 })
 
+// 卸載時清理
 onBeforeUnmount(() => {
-  // 清理事件监听
   window.removeEventListener('resize', debouncedSetup)
-
-  // 清理 observer
   const videoWrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
   if (videoWrapper && (videoWrapper as any)._pipObserver) {
     ;(videoWrapper as any)._pipObserver.disconnect()
   }
+  exitPip() // 確保離開頁面時不殘留 PiP
 })
 </script>
 <template>
@@ -294,6 +342,7 @@ onBeforeUnmount(() => {
             <div class="js-pip-wrapper relative w-full h-full">
               <video
                 id="my-player"
+                ref="videoEl"
                 class="js-pip-video w-full h-full object-cover transition-all duration-300"
                 preload="auto"
                 autoplay
