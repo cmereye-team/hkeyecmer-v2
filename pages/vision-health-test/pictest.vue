@@ -275,7 +275,7 @@ checkAcItem()
         <div>{{ _data.questions[acQuestions].remind }}</div>
         <div>
           <div
-            class="question-btn testPage-nextBtn bg-blue-900"
+            class="question-btn testPage-nextBtn bg-green"
             @click.stop="handleNextBtn"
           >
             下一步

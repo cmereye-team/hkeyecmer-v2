@@ -262,7 +262,7 @@ const hashActive = (child: any) => {
           <div
             v-for="(item, itemIndex) in newMenus"
             :key="itemIndex"
-            class="hover:bg-red-901 hover:text-while"
+            class="hover:bg-green-hover hover:text-while"
           >
             <Anchor
               v-if="item.type === 'link'"

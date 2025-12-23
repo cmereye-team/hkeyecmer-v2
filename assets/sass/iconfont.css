@@ -1,0 +1,449 @@
+@font-face {
+  font-family: 'iconfont'; /* Project id 5016103 */
+  src: url('//at.alicdn.com/t/c/font_5016103_2h20ylz19w.woff2?t=1766050209873')
+      format('woff2'),
+    url('//at.alicdn.com/t/c/font_5016103_2h20ylz19w.woff?t=1766050209873')
+      format('woff'),
+    url('//at.alicdn.com/t/c/font_5016103_2h20ylz19w.ttf?t=1766050209873')
+      format('truetype');
+}
+
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-fullscreen-exit:before {
+  content: '\e661';
+}
+
+.icon-pip-exit:before {
+  content: '\e662';
+}
+
+.icon-video-play:before {
+  content: '\e663';
+}
+
+.icon-pip:before {
+  content: '\e664';
+}
+
+.icon-fullscreen:before {
+  content: '\e665';
+}
+
+.icon-video-pause:before {
+  content: '\e666';
+}
+
+.icon-volume-on:before {
+  content: '\e667';
+}
+
+.icon-volume-off:before {
+  content: '\e668';
+}
+
+.icon-careers-arrow-right:before {
+  content: '\eb03';
+}
+
+.icon-filter:before {
+  content: '\e660';
+}
+
+.icon-about-arrow-right:before {
+  content: '\e65f';
+}
+
+.icon-process-eye:before {
+  content: '\e65e';
+}
+
+.icon-process-arrow:before {
+  content: '\e65d';
+}
+
+.icon-dryeyes-arrow:before {
+  content: '\e65c';
+}
+
+.icon-amblyopia-treat-2:before {
+  content: '\e65b';
+}
+
+.icon-amblyopia-treat-1:before {
+  content: '\e659';
+}
+
+.icon-amblyopia-treat-3:before {
+  content: '\e65a';
+}
+
+.icon-eyelid-left:before {
+  content: '\e658';
+}
+
+.icon-eyelid-right:before {
+  content: '\e657';
+}
+
+.icon-ms-eyelid:before {
+  content: '\e656';
+}
+
+.icon-glaucoma-eye:before {
+  content: '\e655';
+}
+
+.icon-arrow-down-second:before {
+  content: '\e654';
+}
+
+.icon-floaters-check-04:before {
+  content: '\e644';
+}
+
+.icon-floaters-check-06:before {
+  content: '\e64f';
+}
+
+.icon-floaters-check-05:before {
+  content: '\e650';
+}
+
+.icon-floaters-check-01:before {
+  content: '\e651';
+}
+
+.icon-floaters-check-03:before {
+  content: '\e652';
+}
+
+.icon-floaters-check-02:before {
+  content: '\e653';
+}
+
+.icon-arrow-right-treat:before {
+  content: '\e64e';
+}
+
+.icon-quota:before {
+  content: '\e64d';
+}
+
+.icon-down-test:before {
+  content: '\e64c';
+}
+
+.icon-ms-macular:before {
+  content: '\e63e';
+}
+
+.icon-ms-conjunctivitis:before {
+  content: '\e648';
+}
+
+.icon-ms-floaters:before {
+  content: '\e649';
+}
+
+.icon-ms-retinal:before {
+  content: '\e64a';
+}
+
+.icon-ms-glaucoma:before {
+  content: '\e64b';
+}
+
+.icon-arrow-left-triple:before {
+  content: '\e647';
+}
+
+.icon-checked:before {
+  content: '\e646';
+}
+
+.icon-arrow-down-o:before {
+  content: '\e645';
+}
+
+.icon-phone-chat:before {
+  content: '\e643';
+}
+
+.icon-arrow-up-o:before {
+  content: '\e642';
+}
+
+.icon-arrow-right-triple:before {
+  content: '\e641';
+}
+
+.icon-swiper-tips:before {
+  content: '\e640';
+}
+
+.icon-expand:before {
+  content: '\e63f';
+}
+
+.icon-warn-hexagon:before {
+  content: '\e63d';
+}
+
+.icon-eye-main:before {
+  content: '\e63c';
+}
+
+.icon-intro:before {
+  content: '\e63b';
+}
+
+.icon-eye-check:before {
+  content: '\e63a';
+}
+
+.icon-arrow-right2:before {
+  content: '\e639';
+}
+
+.icon-ms-cataract:before {
+  content: '\e638';
+}
+
+.icon-backtop:before {
+  content: '\e637';
+}
+
+.icon-eye-open:before {
+  content: '\e630';
+}
+
+.icon-arrow-up:before {
+  content: '\e61a';
+}
+
+.icon-star:before {
+  content: '\e601';
+}
+
+.icon-minus:before {
+  content: '\e7fd';
+}
+
+.icon-plus:before {
+  content: '\e8fe';
+}
+
+.icon-language:before {
+  content: '\e602';
+}
+
+.icon-chat:before {
+  content: '\e636';
+}
+
+.icon-cataract:before {
+  content: '\e635';
+}
+
+.icon-inquiries:before {
+  content: '\e620';
+}
+
+.icon-whatsapp:before {
+  content: '\e624';
+}
+
+.icon-font-add:before {
+  content: '\e634';
+}
+
+.icon-youtube-color:before {
+  content: '\e633';
+}
+
+.icon-arrow-down2:before {
+  content: '\e614';
+}
+
+.icon-youtube:before {
+  content: '\e603';
+}
+
+.icon-arrow-right-half:before {
+  content: '\e632';
+}
+
+.icon-close:before {
+  content: '\e631';
+}
+
+.icon-arrow-down-round:before {
+  content: '\e62d';
+}
+
+.icon-play:before {
+  content: '\e62e';
+}
+
+.icon-play2:before {
+  content: '\e62f';
+}
+
+.icon-mascot:before {
+  content: '\e62a';
+}
+
+.icon-collapse:before {
+  content: '\e62b';
+}
+
+.icon-expand2:before {
+  content: '\e62c';
+}
+
+.icon-pointer:before {
+  content: '\e629';
+}
+
+.icon-download:before {
+  content: '\e627';
+}
+
+.icon-mouse:before {
+  content: '\e628';
+}
+
+.icon-menu:before {
+  content: '\e61f';
+}
+
+.icon-phone-line:before {
+  content: '\e621';
+}
+
+.icon-advantages-3:before {
+  content: '\e622';
+}
+
+.icon-advantages-2:before {
+  content: '\e623';
+}
+
+.icon-chat2:before {
+  content: '\e625';
+}
+
+.icon-advantages-1:before {
+  content: '\e626';
+}
+
+.icon-bell:before {
+  content: '\e61c';
+}
+
+.icon-download2:before {
+  content: '\e61d';
+}
+
+.icon-down:before {
+  content: '\e61e';
+}
+
+.icon-like:before {
+  content: '\e61b';
+}
+
+.icon-arrow-right-3:before {
+  content: '\e615';
+}
+
+.icon-loading:before {
+  content: '\e616';
+}
+
+.icon-home:before {
+  content: '\e617';
+}
+
+.icon-warn:before {
+  content: '\e618';
+}
+
+.icon-search-round:before {
+  content: '\e619';
+}
+
+.icon-address:before {
+  content: '\e60d';
+}
+
+.icon-phone:before {
+  content: '\e60e';
+}
+
+.icon-honors:before {
+  content: '\e60f';
+}
+
+.icon-subway:before {
+  content: '\e610';
+}
+
+.icon-calendar:before {
+  content: '\e611';
+}
+
+.icon-arrow-left:before {
+  content: '\e612';
+}
+
+.icon-arrow-right:before {
+  content: '\e613';
+}
+
+.icon-phone-fill:before {
+  content: '\e60b';
+}
+
+.icon-font:before {
+  content: '\e60c';
+}
+
+.icon-data-line:before {
+  content: '\e60a';
+}
+
+.icon-logo:before {
+  content: '\e609';
+}
+
+.icon-weibo:before {
+  content: '\e604';
+}
+
+.icon-wechat:before {
+  content: '\e605';
+}
+
+.icon-facebook:before {
+  content: '\e606';
+}
+
+.icon-instagram:before {
+  content: '\e607';
+}
+
+.icon-arrow-down:before {
+  content: '\e608';
+}
+
+.icon-font-reduce:before {
+  content: '\e600';
+}

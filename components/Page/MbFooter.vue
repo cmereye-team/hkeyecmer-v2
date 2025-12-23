@@ -19,7 +19,7 @@ const handleScroll = () => {
 }
 
 const isShow = ref(false)
-const touch_btn_whatsApp = () => {
+const touchBtnWhatsApp = () => {
   isShow.value = !isShow.value
 }
 const isShowTopBtn = ref(false)
@@ -27,13 +27,20 @@ onMounted(() => {
   window.addEventListener('scroll', handleScroll)
 })
 const rt = ref(route)
+// 判断是否是do姐代言人页面，隐藏代言人图片并上移backtop
+const isCarolPage = computed(() => {
+  return (
+    route.path === '/2025/eye-health-ambassador/carolcheng' ||
+    route.name === 'carolcheng'
+  )
+})
 </script>
 
 <template>
   <div class="mbFooter">
     <div class="mbFooter-in">
       <a class="btn_whatsApp ga-mb-bottom-WhatsApp">
-        <div @click="touch_btn_whatsApp()">
+        <div @click="touchBtnWhatsApp()">
           <div class="ga-mb-bottom-WhatsApp">
             <img
               class="ga-mb-bottom-WhatsApp"
@@ -43,7 +50,7 @@ const rt = ref(route)
           </div>
           <div class="ga-mb-bottom-WhatsApp">WhatsApp</div>
         </div>
-        <div class="touch_btn_whatsApp" v-if="isShow">
+        <div v-if="isShow" class="touchBtnWhatsApp">
           <a
             href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
             target="_blank"
@@ -111,6 +118,7 @@ const rt = ref(route)
     <div
       id="mbFooterTop"
       class="mbFooter-top backtop-mb"
+      :class="{ 'mbFooter-top--carol': isCarolPage }"
     >
       <nuxt-link
         class="backtop-mb-enter"
@@ -356,6 +364,12 @@ const rt = ref(route)
     flex-direction: column;
     align-items: flex-end;
     gap: 36.5px;
+    &--carol {
+      bottom: 260px;
+      .backtop-mb-enter {
+        display: none;
+      }
+    }
   }
 }
 .backtop {

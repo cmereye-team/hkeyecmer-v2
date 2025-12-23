@@ -71,6 +71,6 @@ onMounted(() => {
   right: 0;
 }
 .switch-checkbox:checked + .switch-label {
-  @apply bg-primary-500;
+  @apply bg-green-500;
 }
 </style>
