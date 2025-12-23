@@ -16,7 +16,6 @@ export default defineNuxtConfig({
     '~/assets/sass/vendor.scss',
     '~/assets/sass/app.scss',
     '~/assets/sass/_variables.scss',
-    '~/assets/sass/iconfont.css',
   ],
 
   // plugins

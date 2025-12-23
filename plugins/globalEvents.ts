@@ -13,7 +13,7 @@ const menuItems: MenuItem[] = [
     name: '致電預約',
     action: 'tel:85239562025',
     id: 'call-appointment',
-    iconHtml: '<i class="fa fa-phone"></i>',
+    iconHtml: '📞',
   },
   {
     name: 'WhatsApp 查询',
@@ -27,13 +27,13 @@ const menuItems: MenuItem[] = [
     action:
       'https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=149cdac9b31444cd81512a1ce54d1ae9&lng=big5&sid=6ac3c6650aef4b099f1018a3cd8a7887&p=https//www.hkcmereye.com/&rf1=&rf2=&msg=&e=www.hkcmereye.com[youce-goutong]&d=1692675682853&r=&rf1=&rf2=/',
     id: 'online-chat',
-    iconHtml: '<i class="fa fa-headphones"></i>',
+    iconHtml: '💬',
   },
   {
     name: '診所地址',
     action: '/contact-us',
     id: 'clinic-address',
-    iconHtml: '<i class="fa fa-home"></i>',
+    iconHtml: '🏥',
   },
 ]
 
@@ -49,10 +49,10 @@ export default defineNuxtPlugin((nuxtApp) => {
       const topButtons = document.createElement('div')
       topButtons.className = 'top-buttons'
       topButtons.innerHTML = `
-        <button onclick="history.back()" title="向前"><i class="fa fa-arrow-left"></i></button>
-        <button onclick="history.forward()" title="向后"><i class="fa fa-arrow-right"></i></button>
-        <button onclick="location.reload()" title="刷新"><i class="fa fa-refresh"></i></button>
-        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="回到顶部"><i class="fa fa-arrow-up"></i></button>
+        <button onclick="history.back()" title="向前">⬅️</button>
+        <button onclick="history.forward()" title="向后">➡️</button>
+        <button onclick="location.reload()" title="刷新">🔄</button>
+        <button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" title="回到顶部">⬆️</button>
       `
       customMenu.appendChild(topButtons)
 

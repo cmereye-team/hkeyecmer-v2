@@ -1,12 +1,13 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-15 14:59:45
- * @LastEditTime: 2025-12-19 11:29:14
+ * @LastEditTime: 2025-12-23 11:01:33
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 
 -->
 <script setup lang="ts">
 import { Autoplay, Pagination } from 'swiper'
+import '~/assets/sass/iconfont.css'
 
 definePageMeta({
   layout: 'page',
@@ -129,6 +130,7 @@ interface Clinic {
 }
 interface Region {
   id: 'hk' | 'kl' | 'nt'
+  isScale?: boolean
   label: string
   clinics: Clinic[]
 }
@@ -213,9 +215,105 @@ const currentClinics = computed(() => {
 
 const videoEl = ref<HTMLVideoElement | null>(null)
 
+const isPlaying = ref(true) // 因為 autoplay + loop，初始為播放
+const isMuted = ref(true) // 初始靜音（符合 iOS 自動播放政策）
+const currentTime = ref(0)
+const duration = ref(0)
+const progress = ref(0)
+
+const controlsVisible = ref(false)
+let hideTimer: ReturnType<typeof setTimeout> | null = null
+// 重置隐藏计时器
+const resetHideTimer = () => {
+  if (hideTimer) clearTimeout(hideTimer)
+  hideTimer = setTimeout(() => {
+    controlsVisible.value = false
+  }, 3000)
+}
+// 控制條是否可見
+const showControlsIfHidden = () => {
+  if (!controlsVisible.value) {
+    controlsVisible.value = true
+  }
+  resetHideTimer()
+}
+const isFullscreen = ref(false)
+
+// 格式化時間 mm:ss
+const formatTime = (seconds: number) => {
+  if (!isFinite(seconds)) return '00:00'
+  const m = Math.floor(seconds / 60)
+    .toString()
+    .padStart(2, '0')
+  const s = Math.floor(seconds % 60)
+    .toString()
+    .padStart(2, '0')
+  return `${m}:${s}`
+}
+
+// 播放/暫停
+const togglePlay = () => {
+  console.log(`播放暂停按钮,isplay=${isPlaying.value},videoEl=`, videoEl.value)
+  if (videoEl.value) {
+    if (videoEl.value.paused) {
+      videoEl.value.play()
+      isPlaying.value = true
+    } else {
+      videoEl.value.pause()
+      isPlaying.value = false
+    }
+  }
+  resetHideTimer()
+}
+
+// 靜音切換（用戶點擊後開聲）
+const toggleMute = () => {
+  console.log(`静音状态切换,isMuted=${isMuted.value},videoEl=`, videoEl.value)
+  if (videoEl.value) {
+    videoEl.value.muted = !videoEl.value.muted
+    isMuted.value = videoEl.value.muted
+  }
+  resetHideTimer()
+}
+
+// 進度條點擊跳轉
+const seek = (e: MouseEvent) => {
+  if (!videoEl.value || !duration.value || isNaN(duration.value)) return
+
+  const rect = (e.currentTarget as HTMLElement).getBoundingClientRect()
+  const percent = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width))
+  videoEl.value.currentTime = percent * duration.value
+
+  // 操作进度条也重置隐藏计时器
+  resetHideTimer()
+}
+
+// 全屏切換（保持視頻原始比例，不裁剪）
+const toggleFullscreen = () => {
+  const wrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
+  if (!wrapper) return
+
+  if (!document.fullscreenElement) {
+    wrapper.requestFullscreen?.() ||
+      (wrapper as any).webkitRequestFullscreen?.() ||
+      (wrapper as any).mozRequestFullScreen?.() ||
+      (wrapper as any).msRequestFullscreen?.()
+  } else {
+    document.exitFullscreen?.() ||
+      (document as any).webkitExitFullscreen?.() ||
+      (document as any).mozCancelFullScreen?.() ||
+      (document as any).msExitFullscreen?.()
+  }
+  isFullscreen.value = !!document.fullscreenElement
+  resetHideTimer()
+}
+
 // 判斷是否為移動設備（真機或模擬窄屏都能觸發）
 const isMobileDevice = () => {
-  return /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) || window.innerWidth <= 1024
+  return (
+    /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) ||
+    window.innerWidth <= 1024
+  )
 }
 
 // 進入 PiP：優先原生 API，失敗則降級到 CSS 固定小窗
@@ -309,17 +407,41 @@ const debounce = <T extends (...args: any[]) => any>(fn: T, wait: number) => {
     }, wait)
   }
 }
-
 const debouncedSetup = debounce(setupPipObserver, 300)
 
 // 掛載時初始化 + 監聽 resize
 onMounted(() => {
+  if (videoEl.value) {
+    videoEl.value.addEventListener('timeupdate', () => {
+      currentTime.value = videoEl.value!.currentTime
+      duration.value = videoEl.value!.duration
+      if (duration.value && isFinite(duration.value)) {
+        progress.value = (currentTime.value / duration.value) * 100
+      }
+    })
+
+    videoEl.value.addEventListener('loadedmetadata', () => {
+      duration.value = videoEl.value!.duration
+    })
+
+    videoEl.value.addEventListener('play', () => (isPlaying.value = true))
+    videoEl.value.addEventListener('pause', () => (isPlaying.value = false))
+
+    // 全屏变化监听
+    document.addEventListener('fullscreenchange', () => {
+      isFullscreen.value = !!document.fullscreenElement
+    })
+  }
+
+  // 初始隐藏控制条
+  controlsVisible.value = false
   setupPipObserver()
   window.addEventListener('resize', debouncedSetup)
 })
 
 // 卸載時清理
 onBeforeUnmount(() => {
+  if (hideTimer) clearTimeout(hideTimer)
   window.removeEventListener('resize', debouncedSetup)
   const videoWrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
   if (videoWrapper && (videoWrapper as any)._pipObserver) {
@@ -341,20 +463,86 @@ onBeforeUnmount(() => {
             <!-- 画中画 wrapper -->
             <div class="js-pip-wrapper relative w-full h-full">
               <video
-                id="my-player"
                 ref="videoEl"
-                class="js-pip-video w-full h-full object-cover transition-all duration-300"
+                class="js-pip-video w-full h-full object-contain transition-all duration-300"
                 preload="auto"
                 autoplay
                 muted
                 playsinline
                 loop
-                controls
-                controlsList="nodownload"
-                src="https://statichk.cmermedical.com/hkcmereye/video/video-vueFgSecCMM.mp4"
+                src="https://statichk.cmermedical.com/newopd/video/vueFgSecCMM.mp4"
               />
-            </div>
+              <!-- 全区域触发控制条显示 -->
+              <div
+                class="absolute inset-0 pb-32"
+                @mousemove="showControlsIfHidden"
+                @touchstart.prevent="showControlsIfHidden"
+                @click.prevent="showControlsIfHidden"
+              ></div>
+              <div
+                :class="
+                  controlsVisible
+                    ? 'opacity-100 pointer-events-auto'
+                    : 'opacity-0 pointer-events-none'
+                "
+                class="video-controls absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent px-4 py-5 flex items-center gap-5 text-white transition-all duration-300"
+                @click.stop
+              >
+                <button
+                  class="text-3xl hover:scale-110 transition flex justify-center items-center"
+                  @click.stop="togglePlay"
+                >
+                  <i
+                    :class="
+                      isPlaying
+                        ? 'iconfont icon-video-pause'
+                        : 'iconfont icon-video-play'
+                    "
+                  />
+                </button>
+                <div
+                  class="flex-1 h-1 flex items-center cursor-pointer"
+                  @click.stop="seek"
+                >
+                  <div
+                    class="relative w-full h-1 bg-white/30 rounded-full overflow-hidden"
+                  >
+                    <div
+                      :style="{ width: progress + '%' }"
+                      class="absolute inset-y-0 left-0 bg-[#FEBD62] transition-all duration-100"
+                    />
+                  </div>
+                </div>
 
+                <span class="text-sm font-medium min-w-24 text-right">
+                  {{ formatTime(currentTime) }} / {{ formatTime(duration) }}
+                </span>
+                <button
+                  class="text-3xl hover:scale-110 transition flex justify-center items-center"
+                  @click.stop="toggleMute"
+                >
+                  <i
+                    :class="
+                      isMuted
+                        ? 'iconfont icon-volume-off'
+                        : 'iconfont icon-volume-on'
+                    "
+                  />
+                </button>
+                <button
+                  class="text-3xl hover:scale-110 transition flex justify-center items-center"
+                  @click.stop="toggleFullscreen"
+                >
+                  <i
+                    :class="
+                      isFullscreen
+                        ? 'iconfont icon-fullscreen-exit'
+                        : 'iconfont icon-fullscreen'
+                    "
+                  />
+                </button>
+              </div>
+            </div>
             <!-- 用来检测是否在视口的 sentinel（放在视频下方一点点） -->
             <div class="js-pip-sentinel h-1"></div>
           </div>
@@ -573,7 +761,7 @@ onBeforeUnmount(() => {
                 {{ region.label }}
               </label>
             </div>
-            <div class="order-2 w-4/5 lg:my-auto mx-auto">
+            <div class="order-2 w-4/5 lg:my-auto mx-auto flex flex-col">
               <div
                 v-for="clinic in currentClinics"
                 :key="clinic.name"
@@ -665,6 +853,12 @@ onBeforeUnmount(() => {
   </div>
 </template>
 <style lang="scss" scoped>
+.clinic-kl {
+  gap: 16px;
+  @media (min-width: 1280px) {
+    scale: 1.2;
+  }
+}
 /* 移动端视频画中画固定 */
 .pip-fixed {
   position: fixed !important;
