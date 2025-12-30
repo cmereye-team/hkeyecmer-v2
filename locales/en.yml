@@ -31,7 +31,7 @@ components:
     medicalService: Medical Services
     contactUs: Contact Us
     wechat: 'Wechat 公眾號: 香港希瑪眼科中心'
-    footerMenuB1: Copyright © 2025 C-MER Eye Center
+    footerMenuB1: Copyright © 2026 C-MER Eye Center
     footerMenuB2: C-MER Eye Care Holdings Ltd
     footerMenuB3: 'Stock code: 03309.HK'
   content:
@@ -88,7 +88,7 @@ pages:
       span3_2: ""
       span3_3: ""
     footer:
-      company: Copyright © 2025 C-MER Eye Center
+      company: Copyright © 2026 C-MER Eye Center
       copy_right: ""
       language: language
       fonts: fonts
