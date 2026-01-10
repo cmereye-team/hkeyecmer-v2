@@ -89,7 +89,7 @@ pages:
     inquire: 在線查詢
   serviceLists: 
     item_title1: '眼科服務_白內障'
-    item_alt1:: '眼科服務_白內障'
+    item_alt1: '眼科服務_白內障'
     item_title2: '眼科服務_黃斑病變'
     item_alt2: '眼科服務_黃斑病變'
     item_title3: '眼科服務_視網膜脫落'
