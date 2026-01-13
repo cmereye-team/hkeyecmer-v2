@@ -3,7 +3,7 @@
  * @Date: 2025-09-15 14:59:45
  * @LastEditTime: 2025-12-23 11:25:28
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
- * @Description: 
+ * @Description: 眼睛健康大使-郑裕玲小姐
 -->
 <script setup lang="ts">
 import { Autoplay, Pagination } from 'swiper'

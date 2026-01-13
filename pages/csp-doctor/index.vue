@@ -31,10 +31,6 @@ const backgd = [
 <template>
   <main>
     <div class="banner"></div>
-    <FormFooterInfo
-      :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
-      :co="`color:${'#64bcd1;'}`"
-    />
     <PageFooterMenu />
   </main>
 </template>
