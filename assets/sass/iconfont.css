@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'iconfont'; /* Project id 5016103 */
-  src: url('//at.alicdn.com/t/c/font_5016103_2h20ylz19w.woff2?t=1766050209873')
+  src: url('//at.alicdn.com/t/c/font_5016103_jqzuevovssa.woff2?t=1767921621590')
       format('woff2'),
-    url('//at.alicdn.com/t/c/font_5016103_2h20ylz19w.woff?t=1766050209873')
+    url('//at.alicdn.com/t/c/font_5016103_jqzuevovssa.woff?t=1767921621590')
       format('woff'),
-    url('//at.alicdn.com/t/c/font_5016103_2h20ylz19w.ttf?t=1766050209873')
+    url('//at.alicdn.com/t/c/font_5016103_jqzuevovssa.ttf?t=1767921621590')
       format('truetype');
 }
 
@@ -14,6 +14,34 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-csp-surgical:before {
+  content: '\e66c';
+}
+
+.icon-csp-tel:before {
+  content: '\e66d';
+}
+
+.icon-csp-search:before {
+  content: '\e66e';
+}
+
+.icon-csp-clinic:before {
+  content: '\e66f';
+}
+
+.icon-csp-phone:before {
+  content: '\e66a';
+}
+
+.icon-csp-whatsapp:before {
+  content: '\e66b';
+}
+
+.icon-lens:before {
+  content: '\e669';
 }
 
 .icon-fullscreen-exit:before {

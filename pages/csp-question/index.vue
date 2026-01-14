@@ -1,4 +1,12 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2026-01-12 18:01:04
+ * @LastEditTime: 2026-01-13 11:48:05
+ * @FilePath: /pages/csp-question/index.vue
+ * @Description: 耀眼行动常见问题
+-->
 <script lang="ts" setup>
+import '~/assets/sass/iconfont.css'
 definePageMeta({
   layout: 'page',
 })
@@ -30,7 +38,8 @@ const backgd = [
 </script>
 <template>
   <main>
-    <div class="banner"></div>
+    <CspBanner active="question" />
+    <CspButton />
     <PageFooterMenu />
   </main>
 </template>
