@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-01-13 12:03:25
+ * @LastEditTime: 2026-01-14 15:33:46
  * @FilePath: /pages/csp-programme/index.vue
  * @Description: 耀眼行动计划简介
 -->
@@ -150,7 +150,7 @@ const backgd = [
                 </li>
                 <li>
                   <a
-                    href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
+                    href="https://rebrand.ly/耀眼行動計劃查詢"
                     target="_blank"
                     class="!text-[#2958a3] !underline underline-offset-4"
                     >白內障WhatsApp專線：6062 9611</a
@@ -261,28 +261,25 @@ const backgd = [
         <p>* 如客人選擇非單焦距人工晶體鏡片，需支付額外費用</p>
       </section>
       <section class="container mx-auto px-[12px] xl:px-0">
-        <h2 class="title-normal text-center">醫療保險索償</h2>
-        <p>可依照保險條款向保險公司申請索償</p>
-      </section>
-      <section class="container mx-auto px-[12px] xl:px-0">
-        <h2 class="title-normal text-center">申請耀眼行動詳情</h2>
-        <div class="mb-[12px] lg:mb-[36px]">
-          <h3>合資格人士：</h3>
-          <p>毋需自行申請，醫管局會優先邀約輪候時間最長及符合條件的病人</p>
-        </div>
-        <div>
-          <h3>參加計劃後續步驟：</h3>
-          <ol class="!list-decimal">
-            <li>病人須登記電子健康紀錄互通系統（醫健通）</li>
-            <li>
-              選定私家醫生並聯絡安排手術前評估並提供邀請信上的登記號碼給醫生以確認資助
-            </li>
-            <li>
-              於資助到期日前完成手術前評估及於完成手術前評估後3個月內完成手術
-            </li>
-            <li>完成兩次術後覆診</li>
-          </ol>
-        </div>
+        <h2>補充資料︰</h2>
+        <ul>
+          <li>
+            <a
+              href="https://www4.ha.org.hk/ppp/ppp-programmes/csp/programme-intro"
+              target="_blank"
+              class="text-[#2958a3] underline underline-offset-4"
+              >醫院管理局 - 耀眼行動計劃</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.ha.org.hk/visitor/sopc_waiting_time.asp?id=2&lang=CHIB5"
+              target="_blank"
+              class="text-[#2958a3] underline underline-offset-4"
+              >公營眼科門診新症輪候時間</a
+            >
+          </li>
+        </ul>
         <CspButton />
       </section>
     </div>

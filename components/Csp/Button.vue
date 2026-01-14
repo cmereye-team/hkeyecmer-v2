@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 09:02:59
- * @LastEditTime: 2026-01-13 12:04:13
+ * @LastEditTime: 2026-01-14 15:31:32
  * @FilePath: /components/Csp/Button.vue
  * @Description: CSP耀眼行动按钮组
 -->
@@ -88,7 +88,7 @@ const totalButtons = computed(() => (props.clinic ? 3 : 2))
       </i18n-t>
     </a>
     <a
-      href="https://bit.ly/耀眼行動計劃查詢"
+      href="https://rebrand.ly/耀眼行動計劃查詢"
       target="_blank"
       class="gtm-eyesight-whatsapp csp-whatsapp basis-full lg:basis-auto flex justify-center w-fit"
       :style="{ '--i': clinic ? 2 : 1 }"
