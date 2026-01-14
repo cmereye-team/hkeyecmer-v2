@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-01-14 15:33:46
+ * @LastEditTime: 2026-01-14 16:34:24
  * @FilePath: /pages/csp-programme/index.vue
  * @Description: 耀眼行动计划简介
 -->
@@ -169,7 +169,7 @@ const backgd = [
           <span>了解更多</span>
           <span>隱藏</span>
           <i
-            class="iconfont icon-arrow-down-o !text-xs lg:!text-2xl duration-300 transition-all"
+            class="iconfont icon-arrow-down-o text-xs lg:text-2xl duration-300 transition-all"
           ></i>
         </div>
       </label>
