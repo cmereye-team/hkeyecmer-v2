@@ -1,8 +1,8 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 10:44:23
- * @LastEditTime: 2026-01-13 11:32:53
- * @FilePath: /components/Csp/banner.vue
+ * @LastEditTime: 2026-01-14 19:39:30
+ * @FilePath: /components/Csp/Banner.vue
  * @Description: 顶部
 -->
 <script setup lang="ts">
@@ -23,35 +23,37 @@ const activeClass =
   '!text-[#2958A3] relative before:absolute before:w-full before:h-1 before:-bottom-1 before:bg-[#2958A3]'
 </script>
 <template>
-  <section class="banner pt-4 lg:pt-16">
-    <div
-      class="flex justify-center items-center gap-6 lg:gap-[9.792vw] mb-5 lg:mb-10"
-    >
-      <picture class="order-1 lg:order-2">
-        <source
-          srcset="
-            https://statichk.cmermedical.com/newopd/services/csp/csp-icon.avif
-          "
-          type="image/avif"
-        />
-        <img
-          src="https://statichk.cmermedical.com/newopd/services/csp/csp-icon.jpg"
-          alt="耀眼行動_白內障手術_希瑪眼科中心"
-          title="耀眼行動_白內障手術_希瑪眼科中心"
-          loading="lazy"
-          class="max-w-[100px] lg:max-w-[260px]"
-        />
-      </picture>
-      <h1
-        class="banner-title order-2 lg:order-1 bg-[#fff2d5] text-2xl lg:text-5xl text-primary font-medium leading-none p-4 lg:py-[60px] lg:px-12"
+  <template v-if="props.active === 'doctor'">
+    <section class="banner pt-[76px] lg:pt-16">
+      <div
+        class="flex justify-center items-center gap-6 lg:gap-[9.792vw] mb-5 lg:mb-10"
       >
-        <i18n-t keypath="csp.title" tag="span" scope="global">
-          <template #br><br /></template>
-        </i18n-t>
-      </h1>
-    </div>
+        <picture class="order-1 lg:order-2">
+          <source
+            srcset="
+              https://statichk.cmermedical.com/newopd/services/csp/csp-icon.avif
+            "
+            type="image/avif"
+          />
+          <img
+            src="https://statichk.cmermedical.com/newopd/services/csp/csp-icon.jpg"
+            alt="耀眼行動_白內障手術_希瑪眼科中心"
+            title="耀眼行動_白內障手術_希瑪眼科中心"
+            loading="lazy"
+            class="max-w-[100px] lg:max-w-[260px]"
+          />
+        </picture>
+        <h1
+          class="banner-title order-2 lg:order-1 bg-[#fff2d5] text-2xl lg:text-5xl text-primary font-medium leading-none p-4 lg:py-[60px] lg:px-12"
+        >
+          <i18n-t keypath="csp.title" tag="span" scope="global">
+            <template #br><br /></template>
+          </i18n-t>
+        </h1>
+      </div>
+    </section>
     <div
-      class="bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-[24px] lg:px-[32px] text-lg lg:text-3xl font-bold"
+      class="bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-6 lg:px-8 text-lg lg:text-3xl font-bold sticky top-[74px] lg:static"
     >
       <nuxt-link
         v-for="item in navItems"
@@ -62,7 +64,49 @@ const activeClass =
         {{ t(item.label) }}
       </nuxt-link>
     </div>
-  </section>
+  </template>
+  <template v-else>
+    <section class="banner pt-[76px] lg:pt-16">
+      <div
+        class="flex justify-center items-center gap-6 lg:gap-[9.792vw] mb-5 lg:mb-10"
+      >
+        <picture class="order-1 lg:order-2">
+          <source
+            srcset="
+              https://statichk.cmermedical.com/newopd/services/csp/csp-icon.avif
+            "
+            type="image/avif"
+          />
+          <img
+            src="https://statichk.cmermedical.com/newopd/services/csp/csp-icon.jpg"
+            alt="耀眼行動_白內障手術_希瑪眼科中心"
+            title="耀眼行動_白內障手術_希瑪眼科中心"
+            loading="lazy"
+            class="max-w-[100px] lg:max-w-[260px]"
+          />
+        </picture>
+        <h1
+          class="banner-title order-2 lg:order-1 bg-[#fff2d5] text-2xl lg:text-5xl text-primary font-medium leading-none p-4 lg:py-[60px] lg:px-12"
+        >
+          <i18n-t keypath="csp.title" tag="span" scope="global">
+            <template #br><br /></template>
+          </i18n-t>
+        </h1>
+      </div>
+      <div
+        class="bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-6 lg:px-8 text-lg lg:text-3xl font-bold"
+      >
+        <nuxt-link
+          v-for="item in navItems"
+          :key="item.id"
+          :to="item.path"
+          :class="props.active === item.id ? activeClass : ''"
+        >
+          {{ t(item.label) }}
+        </nuxt-link>
+      </div>
+    </section>
+  </template>
 </template>
 <style lang="scss" scoped>
 .banner-title {
