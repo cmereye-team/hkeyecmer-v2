@@ -13,9 +13,6 @@ interface Doctor {
 const props = defineProps<{
   list: Doctor[]
 }>()
-onMounted(() => {
-  console.log(`length=${props.list.length},list=`, props.list)
-})
 </script>
 <template>
   <div
@@ -44,7 +41,7 @@ onMounted(() => {
                   class="w-6 lg:w-9"
                 />
               </div>
-              <strong class="text-primary">電話</strong>
+              <strong class="text-primary">{{ t('csp.doctor.tel') }}</strong>
             </div>
             <p class="field-value">{{ doctor.tel }}</p>
           </div>
@@ -58,7 +55,9 @@ onMounted(() => {
                   class="w-5 lg:w-7"
                 />
               </div>
-              <strong class="text-primary">診所地址</strong>
+              <strong class="text-primary">
+                {{ t('csp.doctor.clinic.address') }}
+              </strong>
             </div>
             <p v-if="doctor.clinic.length === 1" class="field-value">
               {{ doctor.clinic[0] }}
@@ -80,7 +79,9 @@ onMounted(() => {
                 class="w-6 lg:w-9"
               />
             </div>
-            <strong class="text-primary">手術中心地址</strong>
+            <strong class="text-primary">
+              {{ t('csp.doctor.surgical.address') }}
+            </strong>
           </div>
           <p v-if="doctor.surgical.length === 1" class="field-value">
             {{ doctor.surgical[0] }}

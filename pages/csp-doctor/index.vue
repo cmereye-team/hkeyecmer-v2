@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-01-14 19:41:22
+ * @LastEditTime: 2026-01-15 11:06:02
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -13,7 +13,7 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
-  title: '「耀眼行動」白內障手術政府資助計劃 | 申請資格及費用 | 希瑪眼科中心',
+  title: t('tdk.csp.title_doctor'),
   meta() {
     return [
       {
@@ -29,7 +29,7 @@ useHead(() => ({
     ]
   },
 }))
-export type TabKey = 'hk' | 'kl' | 'nt'
+type TabKey = 'hk' | 'kl' | 'nt'
 const tabs = [
   { id: 'hk' as const },
   { id: 'kl' as const },
@@ -1132,7 +1132,7 @@ watch([activeTab, searchKeyword], () => {
   currentPage.value = 1
 })
 const currentRegionLabel = computed(() =>
-  t(`csp.doctor.tab-${activeTab.value}`)
+  t(`csp.doctor.tab_${activeTab.value}`)
 )
 // 過濾後的完整列表（搜尋 + 地區）
 const displayedDoctors = computed(() => {
@@ -1185,7 +1185,7 @@ const setPage = (page: number) => {
           <input
             v-model="searchKeyword"
             type="search"
-            placeholder="搜尋醫生名稱"
+            :placeholder="t('csp.doctor.search')"
             class="size-full focus:outline-[#2958A3] p-2 rounded-2xl lg:rounded-3xl text-xl lg:text-3xl"
           />
         </div>
@@ -1199,7 +1199,7 @@ const setPage = (page: number) => {
             :class="{ active: activeTab === tab.id }"
             @click="changeTab(tab.id)"
           >
-            {{ t(`csp.doctor.tab-${tab.id}`) }}
+            {{ t(`csp.doctor.tab_${tab.id}`) }}
           </div>
         </div>
       </div>
