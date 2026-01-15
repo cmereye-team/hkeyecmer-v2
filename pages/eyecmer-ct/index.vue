@@ -12,7 +12,9 @@
       <picture>
         <source
           media="(min-width: 768px)"
-          srcset="https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp"
+          srcset="
+            https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp
+          "
         />
         <img
           class="head_banner"
@@ -535,7 +537,7 @@
         :spaceBetween="0"
         :autoplay="{ delay: 3000 }"
         :pagination="{ clickable: true }"
-          :navigation="true"
+        :navigation="true"
         :modules="[Autoplay, Navigation]"
         id="certifyTwo"
         class="mbshow"
@@ -1271,7 +1273,7 @@
         客戶評分
       </div>
       <div class="person_box">
-      <div class="container">
+        <div class="container">
           <div class="pingfen">
             <div class="pingfen_list">
               <div class="item1">
@@ -1328,19 +1330,18 @@
                   alt=""
                 />
               </div>
-                                <div class="item1">
+              <div class="item1">
                 <img
                   src="https://static.cmereye.com/imgs/2022/12/ed1709b111c3cf55.png"
                   alt=""
                 />
               </div>
-                   <div class="item1">
+              <div class="item1">
                 <img
                   src="https://static.cmereye.com/imgs/2022/12/49b6a12e9ed5126f.png"
                   alt=""
                 />
               </div>
-             
             </div>
           </div>
         </div>
@@ -1348,7 +1349,7 @@
     </div>
   </div>
 </template>
-<script   lang="ts" setup>
+<script lang="ts" setup>
 import { Pagination, Autoplay, Navigation, EffectCoverflow } from 'swiper'
 
 definePageMeta({
@@ -1728,7 +1729,7 @@ const teamSlides = [
     flex-shrink: 0;
   }
   :deep(#certify .swiper-button-prev::after) {
- background: rgba(6, 178, 201, 0.4);
+    background: rgba(6, 178, 201, 0.4);
     border: none;
     width: 50px;
     height: 50px;
@@ -1839,7 +1840,7 @@ const teamSlides = [
 		/* 中心介绍  star*/
   .cener_title {
     color: #1b407a;
-   margin-top: 100px;
+    margin-top: 100px;
     position: relative;
   }
 
@@ -2074,61 +2075,55 @@ const teamSlides = [
 
   /*中心介绍 end*/
   /* 朗眼科診所環境 start */
-   #certifyTwo {
-                margin-top: 54px !important;
-                position: relative;
-            }
+  #certifyTwo {
+    margin-top: 54px !important;
+    position: relative;
+  }
 
-            .clinic_env {
-                color: #ffffff !important;
-                margin-top: 0 !important;
-
-            }
- :deep( #certifyTwo .swiper-button-next::after){
-  content: "none";
- }
-  :deep( #certifyTwo .swiper-button-prev::after){
-  content: "none";
- }
- :deep( #certifyTwo .swiper-button-next) {
-
+  .clinic_env {
+    color: #ffffff !important;
+    margin-top: 0 !important;
+  }
+  :deep(#certifyTwo .swiper-button-next::after) {
+    content: 'none';
+  }
+  :deep(#certifyTwo .swiper-button-prev::after) {
+    content: 'none';
+  }
+  :deep(#certifyTwo .swiper-button-next) {
     right: 10px;
     background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
       no-repeat !important;
     background-size: 49% !important;
   }
 
- :deep(#certifyTwo .swiper-button-prev ) {
-
+  :deep(#certifyTwo .swiper-button-prev) {
     left: 20px;
     background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
       no-repeat !important;
     background-size: 49% !important;
   }
 
+  #certifyTwo .swiper-slide {
+    background: unset !important;
+    box-shadow: unset !important;
+    height: auto;
+    /* width: 240px !important; */
+  }
 
+  #certifyTwo .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
 
-            #certifyTwo .swiper-slide {
-                background: unset !important;
-                box-shadow: unset !important;
-                height: auto;
-                /* width: 240px !important; */
-            }
-
-            #certifyTwo .swiper-slide img {
-                width: 100%;
-                height: auto;
-            }
-
-            #certifyTwo .swiper-slide iframe {
-                /* width: 290px;
+  #certifyTwo .swiper-slide iframe {
+    /* width: 290px;
                 height: 200px; */
-                width: 74.35vw;
-                height: 51.28vw;
-                margin: 0 auto;
-                display: block;
-
-            }
+    width: 74.35vw;
+    height: 51.28vw;
+    margin: 0 auto;
+    display: block;
+  }
 
   // #certifyTwo .swiper-slide {
   //   background: unset !important;

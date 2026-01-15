@@ -11,72 +11,72 @@ useHead(() => ({
   <div class="privacyPolicy">
     <div>
       <div>
-        <div>{{$t('pages.privacyPolicy.name')}}</div>
+        <div>{{ $t('pages.privacyPolicy.name') }}</div>
         <div>
           <div>
-            {{$t('pages.privacyPolicy.p1')}}
+            {{ $t('pages.privacyPolicy.p1') }}
           </div>
           <div>
-            {{$t('pages.privacyPolicy.p2')}}
+            {{ $t('pages.privacyPolicy.p2') }}
           </div>
           <div>
-            {{$t('pages.privacyPolicy.p3')}}
+            {{ $t('pages.privacyPolicy.p3') }}
           </div>
           <div>
-            {{$t('pages.privacyPolicy.p4')}}
+            {{ $t('pages.privacyPolicy.p4') }}
           </div>
           <div>
-            {{$t('pages.privacyPolicy.p5')}}
+            {{ $t('pages.privacyPolicy.p5') }}
           </div>
           <div>
-            {{$t('pages.privacyPolicy.p6')}}
+            {{ $t('pages.privacyPolicy.p6') }}
           </div>
           <div>
-            {{$t('pages.privacyPolicy.p7')}}
+            {{ $t('pages.privacyPolicy.p7') }}
           </div>
         </div>
       </div>
       <div>
         <div>
-          <div>{{$t('pages.privacyPolicy.name2')}}</div>
+          <div>{{ $t('pages.privacyPolicy.name2') }}</div>
           <div>
-            {{$t('pages.privacyPolicy.p2_1')}}
+            {{ $t('pages.privacyPolicy.p2_1') }}
           </div>
         </div>
         <div>
-          <div>{{$t('pages.privacyPolicy.p2_2')}}</div>
+          <div>{{ $t('pages.privacyPolicy.p2_2') }}</div>
           <div>
-            <div>{{$t('pages.privacyPolicy.p2_3')}}</div>
+            <div>{{ $t('pages.privacyPolicy.p2_3') }}</div>
             <div>
-              <p>{{$t('pages.privacyPolicy.p2_4')}}</p>
-              <p>{{$t('pages.privacyPolicy.p2_5')}}</p>
-              <p>{{$t('pages.privacyPolicy.p2_6')}}</p>
-              <p>{{$t('pages.privacyPolicy.p2_7')}}</p>
+              <p>{{ $t('pages.privacyPolicy.p2_4') }}</p>
+              <p>{{ $t('pages.privacyPolicy.p2_5') }}</p>
+              <p>{{ $t('pages.privacyPolicy.p2_6') }}</p>
+              <p>{{ $t('pages.privacyPolicy.p2_7') }}</p>
               <p>
-                {{$t('pages.privacyPolicy.p2_8')}}
+                {{ $t('pages.privacyPolicy.p2_8') }}
               </p>
             </div>
           </div>
         </div>
         <div>
-          <div>{{$t('pages.privacyPolicy.name3')}}</div>
+          <div>{{ $t('pages.privacyPolicy.name3') }}</div>
           <div>
-            {{$t('pages.privacyPolicy.p3_1')}}
+            {{ $t('pages.privacyPolicy.p3_1') }}
           </div>
         </div>
         <div>
-          <div>{{$t('pages.privacyPolicy.name4')}}</div>
+          <div>{{ $t('pages.privacyPolicy.name4') }}</div>
           <div>
             <div>
-              {{$t('pages.privacyPolicy.p4_1')}}
+              {{ $t('pages.privacyPolicy.p4_1') }}
             </div>
             <div>
-              {{$t('pages.privacyPolicy.p4_2')}}
+              {{ $t('pages.privacyPolicy.p4_2') }}
             </div>
             <div>
-              {{$t('pages.privacyPolicy.p4_3')}}
+              {{ $t('pages.privacyPolicy.p4_3') }}
             </div>
-            <div>{{$t('pages.privacyPolicy.p4_4')}}</div>
+            <div>{{ $t('pages.privacyPolicy.p4_4') }}</div>
           </div>
         </div>
       </div>

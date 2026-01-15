@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-01-15 11:06:02
+ * @LastEditTime: 2026-01-15 14:38:28
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -1131,9 +1131,6 @@ const currentPage = ref<number>(1)
 watch([activeTab, searchKeyword], () => {
   currentPage.value = 1
 })
-const currentRegionLabel = computed(() =>
-  t(`csp.doctor.tab_${activeTab.value}`)
-)
 // 過濾後的完整列表（搜尋 + 地區）
 const displayedDoctors = computed(() => {
   return allDoctors.value.filter((doctor) => {
@@ -1217,7 +1214,6 @@ const setPage = (page: number) => {
         >
           <i class="iconfont icon-arrow-left !text-xs lg:!text-base"></i>
         </div>
-
         <div
           v-if="currentPage > 1"
           class="page cursor-pointer"
@@ -1225,13 +1221,10 @@ const setPage = (page: number) => {
         >
           {{ currentPage - 1 }}
         </div>
-
         <div class="page active">
           {{ currentPage }}
         </div>
-
         <span v-if="currentPage + 1 < totalPages">...</span>
-
         <div
           v-if="currentPage < totalPages"
           class="page cursor-pointer"
@@ -1239,7 +1232,6 @@ const setPage = (page: number) => {
         >
           {{ totalPages }}
         </div>
-
         <div
           v-if="currentPage < totalPages"
           class="page next cursor-pointer"

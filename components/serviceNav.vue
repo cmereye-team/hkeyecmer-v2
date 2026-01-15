@@ -1,30 +1,34 @@
 <script lang="ts" setup>
 defineProps({
-  arrData:{
-    type: [Array,Object,String],
-    default(){
+  arrData: {
+    type: [Array, Object, String],
+    default() {
       return []
-    }
+    },
   },
   pageName: {
     type: String,
-    default: ''
-  }
+    default: '',
+  },
 })
 </script>
 
 <template>
-  <div :class="['serviceNav',pageName]">
-    <div class="serviceNav-in" v-for="(navItem,navIndex) in arrData" :key="navIndex">
+  <div :class="['serviceNav', pageName]">
+    <div
+      v-for="(navItem, navIndex) in arrData"
+      :key="navIndex"
+      class="serviceNav-in"
+    >
       <nuxt-link :to="navItem.anchorLink || '/'">
-        <div :class="pageName">{{$t(navItem.anchorName)}}</div>
+        <div :class="pageName">{{ $t(navItem.anchorName) }}</div>
       </nuxt-link>
     </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.serviceNav{
+.serviceNav {
   width: 100%;
   max-width: 1080px;
   margin: 30px auto 0;
@@ -32,24 +36,24 @@ defineProps({
   justify-content: center;
   flex-wrap: wrap;
   padding-left: 100px;
-  &.strabismusAmblyopia{
+  &.strabismusAmblyopia {
     padding-left: 0;
-    .serviceNav-in{
+    .serviceNav-in {
       margin-right: 90px;
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
   }
-  &.eyeOrthopaedicDisease{
-    .serviceNav-in{
+  &.eyeOrthopaedicDisease {
+    .serviceNav-in {
       margin-right: 70px;
     }
   }
-  &-in{
+  &-in {
     margin-right: 100px;
     margin-bottom: 35px;
-    div{
+    div {
       color: #515151;
       font-size: 30px;
       font-style: normal;
@@ -58,116 +62,116 @@ defineProps({
       text-align: center;
       position: relative;
       display: inline-block;
-      transition: all .3s;
-      &::after{
+      transition: all 0.3s;
+      &::after {
         content: '';
         height: 2px;
         width: 0;
-        transition: all .3s;
-        background: #7AC0D4;
+        transition: all 0.3s;
+        background: #7ac0d4;
         position: absolute;
         left: -10px;
         bottom: -5px;
       }
-      &:hover{
-        color: #7AC0D4;
-        &::after{
+      &:hover {
+        color: #7ac0d4;
+        &::after {
           width: calc(100% + 20px);
         }
       }
-      &.muscaeVolitantes{
-        &::after{
-          background: #90B6D3;
+      &.muscaeVolitantes {
+        &::after {
+          background: #90b6d3;
         }
-        &:hover{
-          color: #90B6D3;
-        }
-      }  
-      &.maculopathy{
-        &::after{
-          background: #D2B982;
-        }
-        &:hover{
-          color: #D2B982;
+        &:hover {
+          color: #90b6d3;
         }
       }
-      &.glaucoma{
-        &::after{
-          background: #83C9C5;
+      &.maculopathy {
+        &::after {
+          background: #d2b982;
         }
-        &:hover{
-          color: #83C9C5;
-        }
-      }
-      &.atropine{
-        &::after{
-          background: #91CED8;
-        }
-        &:hover{
-          color: #91CED8;
+        &:hover {
+          color: #d2b982;
         }
       }
-      &.strabismusAmblyopia{
-        &::after{
-          background: #FBBFA1;
+      &.glaucoma {
+        &::after {
+          background: #83c9c5;
         }
-        &:hover{
-          color: #FBBFA1;
-        }
-      }
-      &.conjunctivitis{
-        &::after{
-          background: #A4A4D3;
-        }
-        &:hover{
-          color: #A4A4D3;
+        &:hover {
+          color: #83c9c5;
         }
       }
-      &.xeroheader{
-        &::after{
-          background: #9792D2;
+      &.atropine {
+        &::after {
+          background: #91ced8;
         }
-        &:hover{
-          color: #9792D2;
-        }
-      }
-      &.medicalOptometry{
-        &::after{
-          background: #AAC67D;
-        }
-        &:hover{
-          color: #AAC67D;
+        &:hover {
+          color: #91ced8;
         }
       }
-      &.amotioRetinae{
-        &::after{
-          background: #EAB1A6;
+      &.strabismusAmblyopia {
+        &::after {
+          background: #fbbfa1;
         }
-        &:hover{
-          color: #EAB1A6;
-        }
-      }
-      &.ocularSurfaceDiseases{
-        &::after{
-          background: #88C9A6;
-        }
-        &:hover{
-          color: #88C9A6;
+        &:hover {
+          color: #fbbfa1;
         }
       }
-      &.eyeOrthopaedicDisease{
-        &::after{
-          background: #DEB083;
+      &.conjunctivitis {
+        &::after {
+          background: #a4a4d3;
         }
-        &:hover{
-          color: #DEB083;
+        &:hover {
+          color: #a4a4d3;
+        }
+      }
+      &.xeroheader {
+        &::after {
+          background: #9792d2;
+        }
+        &:hover {
+          color: #9792d2;
+        }
+      }
+      &.medicalOptometry {
+        &::after {
+          background: #aac67d;
+        }
+        &:hover {
+          color: #aac67d;
+        }
+      }
+      &.amotioRetinae {
+        &::after {
+          background: #eab1a6;
+        }
+        &:hover {
+          color: #eab1a6;
+        }
+      }
+      &.ocularSurfaceDiseases {
+        &::after {
+          background: #88c9a6;
+        }
+        &:hover {
+          color: #88c9a6;
+        }
+      }
+      &.eyeOrthopaedicDisease {
+        &::after {
+          background: #deb083;
+        }
+        &:hover {
+          color: #deb083;
         }
       }
     }
   }
 }
 @media screen and (max-width: 768px) {
-  .serviceNav{
+  .serviceNav {
     display: none;
   }
 }
