@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-15 14:59:45
- * @LastEditTime: 2026-01-15 14:41:16
+ * @LastEditTime: 2026-01-19 16:58:13
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 眼睛健康大使-郑裕玲小姐
 -->
@@ -456,9 +456,7 @@ onBeforeUnmount(() => {
     <div class="video relative">
       <!-- 首屏視頻 -->
       <section class="mt-15 md:mt-23 lg:mt-0 lg:-z-1">
-        <div
-          class="flex justify-center bg-gradient-to-br from-[#E0E6F0] via-[#E7EDF3] to-[#D7E8F2]"
-        >
+        <div class="flex justify-center video-wrapper">
           <div class="relative aspect-video w-full xl:h-[680px] xl:w-[1210px]">
             <!-- 画中画 wrapper -->
             <div class="js-pip-wrapper relative w-full h-full">
@@ -574,7 +572,6 @@ onBeforeUnmount(() => {
             <img
               src="https://statichk.cmermedical.com/newopd/about/carolcheng/intro-person.png"
               alt="鄭裕玲小姐"
-              loading="lazy"
               class="w-[51.282vw] max-h-[652px] object-contain mx-auto -mb-2 lg:mb-0 lg:pt-[10%]"
             />
           </picture>
@@ -857,6 +854,23 @@ onBeforeUnmount(() => {
   gap: 16px;
   @media (min-width: 1280px) {
     scale: 1.2;
+  }
+}
+.video-wrapper {
+  @media (max-width: 1023px) {
+    background-image: url('https://i.ytimg.com/vi/vueFgSecCMM/hqdefault.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  @media (min-width: 1024px) {
+    background: linear-gradient(
+      135deg,
+      #e0e6f0 0%,
+      #e7edf3 35%,
+      #ffffff 65%,
+      #d7e8f2 100%
+    );
   }
 }
 /* 移动端视频画中画固定 */
