@@ -35,20 +35,6 @@ const props = defineProps<{
             <div class="field-key">
               <div class="doctor-icon">
                 <img
-                  src="https://statichk.cmermedical.com/newopd/services/csp/icon-csp-tel.svg"
-                  alt="電話圖標"
-                  loading="lazy"
-                  class="w-6 lg:w-9"
-                />
-              </div>
-              <strong class="text-primary">{{ t('csp.doctor.tel') }}</strong>
-            </div>
-            <p class="field-value">{{ doctor.tel }}</p>
-          </div>
-          <div class="field space-y-3 lg:space-y-5">
-            <div class="field-key">
-              <div class="doctor-icon">
-                <img
                   src="https://statichk.cmermedical.com/newopd/services/csp/icon-csp-clinic.svg"
                   alt="診所地址圖標"
                   loading="lazy"
@@ -68,32 +54,6 @@ const props = defineProps<{
               </li>
             </ul>
           </div>
-        </div>
-        <div class="field space-y-3 lg:space-y-5">
-          <div class="field-key">
-            <div class="doctor-icon">
-              <img
-                src="https://statichk.cmermedical.com/newopd/services/csp/icon-csp-surgical.svg"
-                alt="手術中心地址圖標"
-                loading="lazy"
-                class="w-6 lg:w-9"
-              />
-            </div>
-            <strong class="text-primary">
-              {{ t('csp.doctor.surgical.address') }}
-            </strong>
-          </div>
-          <p v-if="doctor.surgical.length === 1" class="field-value">
-            {{ doctor.surgical[0] }}
-          </p>
-          <ul
-            v-else-if="doctor.surgical.length > 1"
-            class="field-value list-decimal space-y-2 lg:space-y-4"
-          >
-            <li v-for="(item, index) in doctor.surgical" :key="index">
-              {{ item }}
-            </li>
-          </ul>
         </div>
       </div>
     </li>
