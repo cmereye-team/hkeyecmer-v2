@@ -6,7 +6,7 @@
  * @Description: 耀眼行动常见问题
 -->
 <script lang="ts" setup>
-import '~/assets/sass/iconfont.css'
+import '~/assets/plugins/iconfont/iconfont.css'
 definePageMeta({
   layout: 'page',
 })

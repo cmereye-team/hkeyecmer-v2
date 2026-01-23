@@ -1,12 +1,12 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-01-15 14:38:28
+ * @LastEditTime: 2026-01-23 17:48:16
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
 <script lang="ts" setup>
-import '~/assets/sass/iconfont.css'
+import '~/assets/plugins/iconfont/iconfont.css'
 definePageMeta({
   layout: 'page',
 })
