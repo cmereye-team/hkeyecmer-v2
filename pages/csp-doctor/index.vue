@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-01-23 18:58:22
+ * @LastEditTime: 2026-01-23 19:00:32
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -103,9 +103,9 @@ const allDoctors = ref<Doctor[]>([
     id: 5,
     name: '張瀞之',
     enName: 'Dr. Janice Cheung',
-    area: 'kl',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-013-full.webp',
+    area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室及1725B室'],
   },
@@ -265,7 +265,7 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 31,
+    id: 20,
     name: '林峯',
     enName: 'Dr. Robert Lam',
     avatar:
@@ -278,7 +278,7 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 33,
+    id: 21,
     name: '林峯',
     enName: 'Dr. Robert Lam',
     avatar:
@@ -288,7 +288,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
   },
   {
-    id: 34,
+    id: 22,
     name: '李煒業',
     enName: 'Dr. Jacky Lee',
     avatar:
@@ -298,7 +298,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: ['中環畢打街1-3號中建大廈1515室'],
   },
   {
-    id: 35,
+    id: 23,
     name: '李煒業',
     enName: 'Dr. Jacky Lee',
     avatar:
@@ -308,7 +308,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
   },
   {
-    id: 36,
+    id: 24,
     name: '李煒業',
     enName: 'Dr. Jacky Lee',
     avatar:
@@ -321,7 +321,7 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 38,
+    id: 25,
     name: '李佑榮',
     enName: 'Dr. Vincent Lee',
     avatar:
@@ -334,191 +334,191 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 39,
+    id: 26,
     name: '李佑榮',
     enName: 'Dr. Vincent Lee',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-001-full.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
+  },
+  {
+    id: 27,
+    name: '梁苑珊',
+    enName: 'Dr. Gloria Leung',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-full.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: [
+      '中環畢打街1-3號中建大廈1515室',
+      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
+    ],
+  },
+  {
+    id: 28,
+    name: '梁苑珊',
+    enName: 'Dr. Gloria Leung',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-full.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [
+      '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
+      '觀塘開源道79號鱷魚恤中心16樓1601室',
+    ],
+  },
+  {
+    id: 29,
+    name: '梁苑珊',
+    enName: 'Dr. Gloria Leung',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-full.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [
+      '沙田正街11-17號偉華中心2樓5A及1C—1F號鋪',
+      '元朗青山公路45及47號誠信商業大廈地鋪',
+      '荃灣沙咀道255號思源樓地下',
+    ],
+  },
+  {
+    id: 30,
+    name: '李德倫',
+    enName: 'Dr. Stephen Li',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-full.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: ['中環畢打街1-3號中建大廈1515室'],
+  },
+  {
+    id: 31,
+    name: '李德倫',
+    enName: 'Dr. Stephen Li',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-full.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [
+      '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
+      '觀塘開源道79號鱷魚恤中心16樓1601室',
+    ],
+  },
+  {
+    id: 32,
+    name: '李德倫',
+    enName: 'Dr. Stephen Li',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-full.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [
+      '沙田正街11-17號偉華中心2樓5A及1C—1F號鋪',
+      '元朗青山公路45及47號誠信商業大廈地鋪',
+      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
+    ],
+  },
+  {
+    id: 33,
+    name: '吳兆駿',
+    enName: 'Dr. Danny Ng',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-full.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: [
+      '中環畢打街1-3號中建大廈1515室',
+      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
+    ],
+  },
+  {
+    id: 34,
+    name: '吳兆駿',
+    enName: 'Dr. Danny Ng',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-full.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
+  },
+  {
+    id: 35,
+    name: '吳兆駿',
+    enName: 'Dr. Danny Ng',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-full.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [
+      '元朗青山公路45及47號誠信商業大廈地鋪',
+      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
+    ],
+  },
+  {
+    id: 36,
+    name: '尹浩柟',
+    enName: 'Dr. Kelvin Wan',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-full.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: [
+      '中環畢打街1-3號中建大廈1515室',
+      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
+    ],
+  },
+  {
+    id: 37,
+    name: '尹浩柟',
+    enName: 'Dr. Kelvin Wan',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-full.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [
+      '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
+      '觀塘開源道79號鱷魚恤中心16樓1601室',
+    ],
+  },
+  {
+    id: 38,
+    name: '尹浩柟',
+    enName: 'Dr. Kelvin Wan',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-full.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [
+      '沙田正街11-17號偉華中心2樓5A及1C—1F號鋪',
+      '元朗青山公路45及47號誠信商業大廈地鋪',
+      '荃灣沙咀道255號思源樓地下',
+      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
+    ],
+  },
+  {
+    id: 39,
+    name: '黃俊華',
+    enName: 'Dr. Alex Wong',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-full.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: ['中環畢打街1-3號中建大廈1515室'],
+  },
+  {
+    id: 40,
+    name: '黃俊華',
+    enName: 'Dr. Alex Wong',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-full.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
   },
   {
     id: 41,
-    name: '梁苑珊',
-    enName: 'Dr. Gloria Leung',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-full.webp',
-    area: 'hk',
-    regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
-  },
-  {
-    id: 42,
-    name: '梁苑珊',
-    enName: 'Dr. Gloria Leung',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-full.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [
-      '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
-      '觀塘開源道79號鱷魚恤中心16樓1601室',
-    ],
-  },
-  {
-    id: 44,
-    name: '梁苑珊',
-    enName: 'Dr. Gloria Leung',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-full.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1F號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '荃灣沙咀道255號思源樓地下',
-    ],
-  },
-  {
-    id: 48,
-    name: '李德倫',
-    enName: 'Dr. Stephen Li',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-full.webp',
-    area: 'hk',
-    regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
-  },
-  {
-    id: 49,
-    name: '李德倫',
-    enName: 'Dr. Stephen Li',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-full.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [
-      '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
-      '觀塘開源道79號鱷魚恤中心16樓1601室',
-    ],
-  },
-  {
-    id: 51,
-    name: '李德倫',
-    enName: 'Dr. Stephen Li',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-full.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1F號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
-    ],
-  },
-  {
-    id: 54,
-    name: '吳兆駿',
-    enName: 'Dr. Danny Ng',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-full.webp',
-    area: 'hk',
-    regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
-  },
-  {
-    id: 55,
-    name: '吳兆駿',
-    enName: 'Dr. Danny Ng',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-full.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
-  },
-  {
-    id: 56,
-    name: '吳兆駿',
-    enName: 'Dr. Danny Ng',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-full.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
-    ],
-  },
-  {
-    id: 59,
-    name: '尹浩柟',
-    enName: 'Dr. Kelvin Wan',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-full.webp',
-    area: 'hk',
-    regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
-  },
-  {
-    id: 60,
-    name: '尹浩柟',
-    enName: 'Dr. Kelvin Wan',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-full.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [
-      '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
-      '觀塘開源道79號鱷魚恤中心16樓1601室',
-    ],
-  },
-  {
-    id: 62,
-    name: '尹浩柟',
-    enName: 'Dr. Kelvin Wan',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-full.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1F號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '荃灣沙咀道255號思源樓地下',
-      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
-    ],
-  },
-  {
-    id: 67,
-    name: '黃俊華',
-    enName: 'Dr. Alex Wong',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-full.webp',
-    area: 'hk',
-    regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
-  },
-  {
-    id: 68,
-    name: '黃俊華',
-    enName: 'Dr. Alex Wong',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-full.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
-  },
-  {
-    id: 69,
     name: '黃俊華',
     enName: 'Dr. Alex Wong',
     avatar:
@@ -531,7 +531,7 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 71,
+    id: 42,
     name: '邱俊源',
     enName: 'Dr. Jackey Yau',
     avatar:
@@ -544,7 +544,7 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 72,
+    id: 43,
     name: '邱俊源',
     enName: 'Dr. Jackey Yau',
     avatar:
@@ -557,7 +557,7 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 74,
+    id: 44,
     name: '邱俊源',
     enName: 'Dr. Jackey Yau',
     avatar:
