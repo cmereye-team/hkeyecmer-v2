@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     '~/assets/sass/vendor.scss',
     '~/assets/sass/app.scss',
     '~/assets/sass/_variables.scss',
+    '~/assets/plugins/fontawesome/font-awesome.min.css',
   ],
 
   // plugins
@@ -102,14 +103,6 @@ export default defineNuxtConfig({
     // global transition
     pageTransition: { name: 'page', mode: 'out-in' },
     layoutTransition: { name: 'layout', mode: 'out-in' },
-    head: {
-      link: [
-        {
-          rel: 'stylesheet',
-          href: 'https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css',
-        },
-      ],
-    },
   },
 
   // localization - i18n config

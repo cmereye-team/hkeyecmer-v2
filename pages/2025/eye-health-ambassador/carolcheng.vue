@@ -7,7 +7,7 @@
 -->
 <script setup lang="ts">
 import { Autoplay, Pagination } from 'swiper'
-import '~/assets/sass/iconfont.css'
+import '~/assets/plugins/iconfont/iconfont.css'
 
 definePageMeta({
   layout: 'page',

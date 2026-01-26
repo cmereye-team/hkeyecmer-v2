@@ -1,14 +1,15 @@
 <script lang="ts" setup>
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
+type TabKey = 'hk' | 'kl' | 'nt'
 interface Doctor {
   id: number
   name: string
+  enName: string
+  avatar: string
+  area: TabKey
   regions: string
-  districts?: string
-  tel: string
   clinic: Array<string>
-  surgical: Array<string>
 }
 const props = defineProps<{
   list: Doctor[]
@@ -22,75 +23,32 @@ const props = defineProps<{
       v-for="doctor in props.list"
       :key="doctor.id"
       :area="doctor.regions"
-      :etdst="doctor.districts"
       class="doctor-item flex doctor-nt flex-col lg:flex-row"
     >
       <div class="doctor-name">
-        <h2>{{ doctor.name }}</h2>
-        <span>{{ t('csp.doctor.text') }}</span>
-      </div>
-      <div class="doctor-main flex-1 lg:[&>*]:flex-1">
-        <div class="flex flex-col gap-4 lg:gap-13">
-          <div class="field space-y-3 lg:space-y-5">
-            <div class="field-key">
-              <div class="doctor-icon">
-                <img
-                  src="https://statichk.cmermedical.com/newopd/services/csp/icon-csp-tel.svg"
-                  alt="電話圖標"
-                  loading="lazy"
-                  class="w-6 lg:w-9"
-                />
-              </div>
-              <strong class="text-primary">{{ t('csp.doctor.tel') }}</strong>
-            </div>
-            <p class="field-value">{{ doctor.tel }}</p>
-          </div>
-          <div class="field space-y-3 lg:space-y-5">
-            <div class="field-key">
-              <div class="doctor-icon">
-                <img
-                  src="https://statichk.cmermedical.com/newopd/services/csp/icon-csp-clinic.svg"
-                  alt="診所地址圖標"
-                  loading="lazy"
-                  class="w-5 lg:w-7"
-                />
-              </div>
-              <strong class="text-primary">
-                {{ t('csp.doctor.clinic.address') }}
-              </strong>
-            </div>
-            <p v-if="doctor.clinic.length === 1" class="field-value">
-              {{ doctor.clinic[0] }}
-            </p>
-            <ul v-else-if="doctor.clinic.length > 1" class="field-value">
-              <li v-for="(item, index) in doctor.clinic" :key="index">
-                {{ item }}
-              </li>
-            </ul>
-          </div>
+        <div class="flex items-baseline">
+          <h2>{{ doctor.name }}</h2>
+          <span>{{ t('csp.doctor.text') }}</span>
         </div>
-        <div class="field space-y-3 lg:space-y-5">
+        <span class="en">{{ doctor.enName }}</span>
+      </div>
+      <div class="doctor-main items-center flex-1">
+        <div class="avatar w-1/5 rounded-full lg:rounded-sm overflow-hidden">
+          <img
+            :src="doctor.avatar"
+            alt="{{ t('csp.plan_title') }}_{{t('csp.nav.doctor')}}_{{ doctor.name }}{{ t('csp.doctor.text') }}"
+            loading="lazy"
+            class="w-full max-h-[300px] object-contain lg:object-cover object-top"
+          />
+        </div>
+        <div class="field flex-1 px-3 py-2 lg:py-5 lg:space-y-5">
           <div class="field-key">
-            <div class="doctor-icon">
-              <img
-                src="https://statichk.cmermedical.com/newopd/services/csp/icon-csp-surgical.svg"
-                alt="手術中心地址圖標"
-                loading="lazy"
-                class="w-6 lg:w-9"
-              />
-            </div>
             <strong class="text-primary">
-              {{ t('csp.doctor.surgical.address') }}
+              {{ t('csp.doctor.clinic.address') }}
             </strong>
           </div>
-          <p v-if="doctor.surgical.length === 1" class="field-value">
-            {{ doctor.surgical[0] }}
-          </p>
-          <ul
-            v-else-if="doctor.surgical.length > 1"
-            class="field-value list-decimal space-y-2 lg:space-y-4"
-          >
-            <li v-for="(item, index) in doctor.surgical" :key="index">
+          <ul class="field-value list-disc list-inside">
+            <li v-for="(item, index) in doctor.clinic" :key="index">
               {{ item }}
             </li>
           </ul>
@@ -105,25 +63,23 @@ const props = defineProps<{
   color: #fff;
   display: flex;
   justify-content: center;
-  align-items: end;
-  padding: 20px 0;
+  align-items: flex-end;
+  padding: 8px 0;
   white-space: nowrap;
+  gap: 8px;
 }
 .doctor-list .doctor-name h2 {
-  font-size: 48px;
+  font-size: 24px;
   margin-bottom: 0;
   line-height: 1;
 }
 .doctor-list .doctor-name span {
-  font-size: 30px;
+  font-size: 16px;
   line-height: 1;
 }
 .doctor-list .doctor-main {
   background-color: #e3eaf4;
   display: flex;
-  flex-direction: column;
-  padding: 32px 24px 16px 24px;
-  gap: 16px;
 }
 .doctor-list .field-key {
   display: flex;
@@ -137,17 +93,11 @@ const props = defineProps<{
   justify-content: center;
   align-items: center;
 }
-@media screen and (max-width: 1023px) {
-  .field-value {
-    padding-left: 32px;
-  }
-}
 @media screen and (min-width: 1024px) {
   .doctor-list .doctor-name {
-    padding: 60px 32px 0 32px;
-    justify-content: start;
-    align-items: baseline;
     width: 316px;
+    align-items: center;
+    flex-direction: column;
   }
   .doctor-list .doctor-name h2 {
     font-size: 60px;
@@ -155,10 +105,11 @@ const props = defineProps<{
   .doctor-list .doctor-name span {
     font-size: 36px;
   }
+  .doctor-list .doctor-name .en {
+    font-size: 30px;
+  }
   .doctor-list .doctor-main {
-    flex-direction: row;
-    padding: 36px 56px 56px 56px;
-    gap: 10%;
+    gap: 5%;
   }
   .doctor-list .field-key {
     gap: 20px;
