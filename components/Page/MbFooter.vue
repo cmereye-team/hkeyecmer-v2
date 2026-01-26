@@ -9,13 +9,39 @@ const toTop = () => {
     }
   }, 10)
 }
+
+// 新增：控制動畫狀態
+const isTransformRight = ref(false)
+let animationTimer: ReturnType<typeof setTimeout> | null = null
+
+// 新增：ref 綁定 carol 入口元素（可選，如果只用狀態控制 class 其實不需要 ref）
+const carolEnterEl = ref<HTMLElement | null>(null)
+
 const handleScroll = () => {
   const scrollHeight = document.documentElement.scrollTop
+
+  // 控制回到頂部按鈕顯示（建議後面模板加上 v-show）
   if (scrollHeight >= 900) {
     isShowTopBtn.value = true
   } else {
     isShowTopBtn.value = false
   }
+
+  // 動畫邏輯（只在非 Carol 頁面執行）
+  if (isCarolPage.value || !carolEnterEl.value) return
+
+  // 立刻顯示動畫
+  isTransformRight.value = true
+
+  // 清除上一次定時器，實現 debounce 效果
+  if (animationTimer) {
+    clearTimeout(animationTimer)
+  }
+
+  // 停止滾動 500ms 後移除
+  animationTimer = setTimeout(() => {
+    isTransformRight.value = false
+  }, 500)
 }
 
 const isShow = ref(false)
@@ -25,8 +51,15 @@ const touchBtnWhatsApp = () => {
 const isShowTopBtn = ref(false)
 onMounted(() => {
   window.addEventListener('scroll', handleScroll)
+  handleScroll()
 })
-const rt = ref(route)
+onUnmounted(() => {
+  window.removeEventListener('scroll', handleScroll)
+  if (animationTimer) {
+    clearTimeout(animationTimer)
+  }
+})
+// const rt = ref(route)
 // 判断是否是do姐代言人页面，隐藏代言人图片并上移backtop
 const isCarolPage = computed(() => {
   return (
@@ -82,8 +115,8 @@ const isCarolPage = computed(() => {
         <div class="ga-mb-bottom-WhatsApp">WhatsApp</div>
       </a> -->
       <a
-        href="tel: +852 3956 2025"
         id="ga-mb-bottom-ljzd"
+        href="tel: +852 3956 2025"
         class="ga-mb-bottom-ljzd"
       >
         <div class="ga-mb-bottom-ljzd">
@@ -99,8 +132,8 @@ const isCarolPage = computed(() => {
         </div>
       </a>
       <a
-        href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&lng=big5"
         id="ga-mb-bottom-xsdh"
+        href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&lng=big5"
         class="ga-mb-bottom-xsdh"
       >
         <div class="ga-mb-bottom-xsdh">
@@ -121,7 +154,9 @@ const isCarolPage = computed(() => {
       :class="{ 'mbFooter-top--carol': isCarolPage }"
     >
       <nuxt-link
-        class="backtop-mb-enter"
+        ref="carolEnterEl"
+        class="backtop-mb-enter duration-300 ease-in-out"
+        :class="{ 'transform-right': isTransformRight }"
         to="/2025/eye-health-ambassador/carolcheng"
       >
         <img
@@ -158,6 +193,9 @@ const isCarolPage = computed(() => {
 <style lang="scss" scoped>
 // .backtop {
 // }
+.transform-right {
+  transform: translateX(100vw);
+}
 .mbFooter {
   position: fixed;
   bottom: 0;
