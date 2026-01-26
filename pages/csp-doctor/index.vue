@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-01-23 19:00:32
+ * @LastEditTime: 2026-01-26 10:12:03
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -611,38 +611,148 @@ const setPage = (page: number) => {
   currentPage.value = page
   scrollToTop()
 }
+const navItems = [
+  { id: 'intro', path: '/csp-programme', label: 'csp.nav.intro' },
+  { id: 'doctor', path: '/csp-doctor', label: 'csp.nav.doctor' },
+  { id: 'question', path: '/csp-question', label: 'csp.nav.question' },
+]
+const doctorFixed = ref<HTMLElement | null>(null)
+const PC_MIN_WIDTH = 1024
+let lastScroll = 0
+let peakScroll = 0
+let scrollListener: (() => void) | null = null
+
+const threshold = 300 // 向上滾多少 px 才顯示
+const hideStartHeight = 312 // 超過這個高度才允許隱藏
+
+const debounce = (fn: Function, delay = 300) => {
+  let timer: ReturnType<typeof setTimeout> | null = null
+  return (...args: any[]) => {
+    if (timer) clearTimeout(timer)
+    timer = setTimeout(() => fn(...args), delay)
+  }
+}
+
+const setupMobileNavHide = async () => {
+  await nextTick() // 確保 DOM 已渲染
+
+  const el = doctorFixed.value
+  if (!el) return
+
+  const isMobile = window.innerWidth < PC_MIN_WIDTH
+
+  // 非移動端 → 強制顯示並移除監聽
+  if (!isMobile) {
+    if (scrollListener) {
+      window.removeEventListener('scroll', scrollListener)
+      scrollListener = null
+    }
+    el.classList.remove('transform-top')
+    return
+  }
+
+  // 移動端：如果已綁定，直接返回（避免重複）
+  if (scrollListener) return
+
+  lastScroll = window.scrollY
+  peakScroll = window.scrollY
+
+  scrollListener = () => {
+    const current = window.scrollY
+
+    // 更新峰值（向下滾時持續刷新）
+    if (current > peakScroll) {
+      peakScroll = current
+    }
+    if (current <= hideStartHeight) {
+      // 1. 回到近頂部區域 → 強制顯示 + 重置峰值（優先級最高）
+      el.classList.remove('transform-top')
+      peakScroll = current
+    } else if (current > lastScroll) {
+      // 2. 向下滾 → 隱藏
+      el.classList.add('transform-top')
+    } else if (current < peakScroll - threshold) {
+      // 3. 向上滾且距離足夠 → 顯示 + 重置峰值
+      el.classList.remove('transform-top')
+      peakScroll = current
+    }
+
+    lastScroll = current
+  }
+
+  window.addEventListener('scroll', scrollListener)
+  scrollListener() // 初始立即執行一次
+}
+
+// 初始掛載 + resize 處理
+onMounted(() => {
+  setupMobileNavHide()
+
+  window.addEventListener(
+    'resize',
+    debounce(() => {
+      setupMobileNavHide()
+    }, 300)
+  )
+})
+
+onUnmounted(() => {
+  if (scrollListener) {
+    window.removeEventListener('scroll', scrollListener)
+  }
+  window.removeEventListener(
+    'resize',
+    debounce(() => {})
+  )
+})
 </script>
 <template>
   <main class="doctor">
     <CspBanner active="doctor" />
-    <section
-      class="container max-w-5xl mx-auto px-3 xl:px-0 sticky top-[150px] lg:static"
-    >
+    <section ref="doctorFixed" class="sticky top-[74px] lg:static z-10">
       <div
-        class="flex flex-col lg:flex-row lg:justify-between pb-2 lg:pb-0 mb-5 lg:mb-18 gap-6 sticky top-[calc(12.6vw+72.5px)] lg:static bg-white pt-7 lg:pt-22"
+        class="bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-4 lg:px-8 text-lg lg:text-3xl font-bold sticky top-[74px] lg:static z-10"
       >
-        <div
-          class="search order-1 lg:order-2 border-2 lg:border-3 border-[#C7C5C5] rounded-2xl lg:rounded-3xl flex items-center gap-2 lg:gap-3 py-1 pl-3 pr-2 lg:py-2 lg:px-6"
+        <nuxt-link
+          v-for="item in navItems"
+          :key="item.id"
+          :to="item.path"
+          :class="
+            item.id === 'doctor'
+              ? '!text-[#2958A3] relative before:absolute before:w-full before:h-1 before:-bottom-1 before:bg-[#2958A3]'
+              : ''
+          "
         >
-          <i class="iconfont icon-csp-search !text-2xl lg:!text-4xl"></i>
-          <input
-            v-model="searchKeyword"
-            type="search"
-            :placeholder="t('csp.doctor.search')"
-            class="size-full focus:outline-[#2958A3] p-2 rounded-2xl lg:rounded-3xl text-xl lg:text-3xl"
-          />
-        </div>
+          {{ t(item.label) }}
+        </nuxt-link>
+      </div>
+      <div class="container max-w-5xl mx-auto px-3 xl:px-0">
         <div
-          class="doctor-tabs text-xl lg:text-2xl lg:leading-[56px] order-2 lg:order-1 text-[#1B407A] text-center flex items-center justify-between lg:justify-start lg:gap-[3vw]"
+          class="flex flex-col lg:flex-row lg:justify-between pb-2 lg:pb-0 mb-2 lg:mb-18 gap-3 sticky top-[calc(12.6vw+72.5px)] lg:static bg-white pt-3 lg:pt-22"
         >
           <div
-            v-for="tab in tabs"
-            :key="tab.id"
-            class="tab w-3/10 lg:w-[132px] rounded-md lg:rounded-lg"
-            :class="{ active: activeTab === tab.id }"
-            @click="changeTab(tab.id)"
+            class="search order-1 lg:order-2 border-2 lg:border-3 border-[#C7C5C5] rounded-2xl lg:rounded-3xl flex items-center gap-2 lg:gap-3 py-1 pl-3 pr-2 lg:py-2 lg:px-6"
           >
-            {{ t(`csp.doctor.tab_${tab.id}`) }}
+            <i class="iconfont icon-csp-search !text-2xl lg:!text-4xl"></i>
+            <input
+              v-model="searchKeyword"
+              type="search"
+              :placeholder="t('csp.doctor.search')"
+              class="size-full focus:outline-[#2958A3] p-2 rounded-2xl lg:rounded-3xl text-xl lg:text-3xl"
+            />
+          </div>
+          <div
+            class="doctor-tabs text-xl lg:text-2xl lg:leading-[56px] order-2 lg:order-1 text-[#1B407A] text-center flex items-center justify-between lg:justify-start lg:gap-[3vw]"
+          >
+            <div
+              v-for="tab in tabs"
+              :key="tab.id"
+              class="tab w-3/10 lg:w-[132px] rounded-md lg:rounded-lg"
+              :class="{ active: activeTab === tab.id }"
+              @click="changeTab(tab.id)"
+            >
+              {{ t(`csp.doctor.tab_${tab.id}`) }}
+            </div>
           </div>
         </div>
       </div>
@@ -692,6 +802,10 @@ const setPage = (page: number) => {
   </main>
 </template>
 <style lang="scss" scoped>
+.transform-top {
+  transform: translateY(-300px);
+  transition: transform 0.3s ease-in-out;
+}
 .doctor {
   .tab {
     border: 1px solid #1b407a;
