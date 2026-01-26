@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 10:44:23
- * @LastEditTime: 2026-01-26 08:53:12
+ * @LastEditTime: 2026-01-26 10:01:41
  * @FilePath: /components/Csp/Banner.vue
  * @Description: 顶部
 -->
@@ -52,18 +52,6 @@ const activeClass =
         </h1>
       </div>
     </section>
-    <div
-      class="bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-6 lg:px-8 text-lg lg:text-3xl font-bold sticky top-[74px] lg:static z-10"
-    >
-      <nuxt-link
-        v-for="item in navItems"
-        :key="item.id"
-        :to="item.path"
-        :class="props.active === item.id ? activeClass : ''"
-      >
-        {{ t(item.label) }}
-      </nuxt-link>
-    </div>
   </template>
   <template v-else>
     <section class="banner pt-[76px] lg:pt-16">
