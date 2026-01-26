@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-01-23 19:00:32
+ * @LastEditTime: 2026-01-26 08:52:59
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -616,7 +616,7 @@ const setPage = (page: number) => {
   <main class="doctor">
     <CspBanner active="doctor" />
     <section
-      class="container max-w-5xl mx-auto px-3 xl:px-0 sticky top-[150px] lg:static"
+      class="container max-w-5xl mx-auto px-3 xl:px-0 sticky top-[150px] lg:static z-10"
     >
       <div
         class="flex flex-col lg:flex-row lg:justify-between pb-2 lg:pb-0 mb-5 lg:mb-18 gap-6 sticky top-[calc(12.6vw+72.5px)] lg:static bg-white pt-7 lg:pt-22"
