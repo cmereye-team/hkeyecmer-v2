@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-01-26 10:12:03
+ * @LastEditTime: 2026-01-26 11:36:15
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -14,21 +14,18 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
   title: t('tdk.csp.title_doctor'),
-  meta() {
-    return [
-      {
-        hid: 'description',
-        name: 'description',
-        content: t('tdk.csp.desc'),
-      },
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content: t('tdk.csp.key'),
-      },
-    ]
-  },
+  meta: [
+    {
+      name: 'description',
+      content: t('tdk.csp.desc'),
+    },
+    {
+      name: 'keywords',
+      content: t('tdk.csp.key'),
+    },
+  ],
 }))
+
 type TabKey = 'hk' | 'kl' | 'nt'
 const tabs = [
   { id: 'hk' as const },

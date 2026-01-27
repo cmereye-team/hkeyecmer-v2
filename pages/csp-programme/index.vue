@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-01-15 12:05:58
+ * @LastEditTime: 2026-01-27 16:34:02
  * @FilePath: /pages/csp-programme/index.vue
  * @Description: 耀眼行动计划简介
 -->
@@ -14,20 +14,16 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
   title: t('tdk.csp.title'),
-  meta() {
-    return [
-      {
-        hid: 'description',
-        name: 'description',
-        content: t('tdk.csp.desc'),
-      },
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content: t('tdk.csp.key'),
-      },
-    ]
-  },
+  meta: [
+    {
+      name: 'description',
+      content: t('tdk.csp.desc'),
+    },
+    {
+      name: 'keywords',
+      content: t('tdk.csp.key'),
+    },
+  ],
 }))
 // 传递背景色
 const backgd = [
@@ -129,6 +125,12 @@ const backgd = [
                     </strong>
                   </template>
                 </i18n-t>
+                <nuxt-link
+                  to="/csp-doctor"
+                  class="bg-primary text-white py-1 px-2 rounded-lg block w-fit"
+                >
+                  {{ $t('csp.link_doctor') }}
+                </nuxt-link>
               </p>
               <p>{{ t('csp.intro.part3.p2') }}</p>
               <ul class="!mb-0 !list-decimal">
@@ -295,6 +297,9 @@ const backgd = [
 ul,
 ol {
   list-style-position: inside;
+}
+.w-fit {
+  width: fit-content;
 }
 .title-normal {
   font-size: 24px;

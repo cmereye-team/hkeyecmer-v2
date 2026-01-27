@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:01:04
- * @LastEditTime: 2026-01-15 10:48:03
+ * @LastEditTime: 2026-01-27 17:10:58
  * @FilePath: /pages/csp-question/index.vue
  * @Description: 耀眼行动常见问题
 -->
@@ -14,20 +14,16 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
   title: t('tdk.csp.title_question'),
-  meta() {
-    return [
-      {
-        hid: 'description',
-        name: 'description',
-        content: t('tdk.csp.desc'),
-      },
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content: t('tdk.csp.key'),
-      },
-    ]
-  },
+  meta: [
+    {
+      name: 'description',
+      content: t('tdk.csp.desc'),
+    },
+    {
+      name: 'keywords',
+      content: t('tdk.csp.key'),
+    },
+  ],
 }))
 // 传递背景色
 const backgd = [
