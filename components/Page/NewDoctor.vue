@@ -40,11 +40,10 @@ interface NewList {
           </div>
         </div>
         <a
+          id="medicalTeamLink"
           href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&amp;cid=7f3c58ea65c34d9d82c1f6455384212f&amp;lng=big5&amp;sid=cd5457bae7eb4c9db0534553310cb509&amp;p=https%3A//hkcmereye.com/&amp;rf1=&amp;rf2=&amp;msg=&amp;e=hkcmereye.com[youce-goutong]&amp;d=1692676040714"
           rel="noopener noreferrer"
           class="orderLink text-white inline-block"
-          id="medicalTeamLink"
-          data-v-ba4e2cd6=""
           >預約</a
         >
       </li>
@@ -131,25 +130,36 @@ interface NewList {
       }
     }
   }
-}
-.docList:nth-child(12),
-.docList:nth-child(13) {
-  & > div:nth-child(2) {
-    & > div:nth-child(1) {
-      div {
-        bottom: -9vw;
-        white-space: nowrap;
+  &:nth-child(12),
+  &:nth-child(13) {
+    & > div:nth-child(2) {
+      & > div:nth-child(1) {
+        div {
+          bottom: -9vw;
+          white-space: nowrap;
+        }
       }
     }
   }
-}
-.medical-team .mainCon .docList .orderLink {
-  margin: 0 !important;
-  margin-right: 17.5vw !important;
-  margin-left: auto !important;
-}
-.docList:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .orderLink {
+    width: 130px;
+    height: 51px;
+    background: #8ad8dd;
+    line-height: 51px;
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 15;
+    margin: 43px 0 0 200px;
+  }
 }
 li:nth-child(1) {
   & > div:nth-child(2) {
@@ -253,6 +263,18 @@ li:nth-child(24) {
       bottom: -8.75vw;
       left: -8.75vw;
       right: auto;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .docList {
+    .orderLink {
+      width: 90px;
+      height: 34px;
+      font-size: 16px;
+      line-height: 34px;
+      display: block;
+      margin: 20px auto 0 44vw;
     }
   }
 }

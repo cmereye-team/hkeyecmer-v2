@@ -23,7 +23,7 @@ useHead(() => ({
   },
 }))
 
-let doctorList: any = ref([
+const doctorList: any = ref([
   {
     doctorName: 'pages.medical_team.doctorList.doctor_1.doctor_1_name',
     doctorIntro: 'pages.medical_team.doctorList.doctor_1.doctor_1_intro',
@@ -48,14 +48,14 @@ watch(
   },
   { deep: true }
 )
-interface NewList {
+interface NewListType {
   doctorName: string
   doctorIntro: string
   doctorEnName: string
   doctorEducation: string[]
   doctorImgUrl: string
 }
-const NewList = ref<NewList[]>([])
+const NewList = ref<NewListType[]>([])
 const getData = async () => {
   NewList.value.splice(0)
   if (locale.value === 'zh-hk') {
@@ -63,7 +63,7 @@ const getData = async () => {
       `https://hkcmereye.com/api.php/list/12/num/50`
     )
     const res: any = JSON.parse(data.value)
-    let list: any = res.data.map((item: any, index: any) => {
+    const list: any = res.data.map((item: any, index: any) => {
       return {
         doctorName: item.title,
         doctorEnName: item.subtitle,
@@ -82,7 +82,7 @@ const getData = async () => {
     )
     const res: any = JSON.parse(data.value)
 
-    let list: any = res.data.map((item: any, index: any) => {
+    const list: any = res.data.map((item: any, index: any) => {
       return {
         doctorName: item.title,
         doctorEnName: item.subtitle,
@@ -106,7 +106,7 @@ onMounted(() => {
   window.addEventListener('resize', getWindowWidth)
 })
 
-let windowWidth = ref(390)
+const windowWidth = ref(390)
 const getWindowWidth = () => {
   windowWidth.value = window.innerWidth
 }
@@ -136,8 +136,8 @@ const getWindowWidth = () => {
                   <span>{{ $t(ele) }}</span>
                 </div>
                 <nuxt-link
-                  class="orderLink text-white inline-block"
                   id="medicalTeamLink"
+                  class="orderLink text-white inline-block"
                   to="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
                   >{{ $t('pages.medical_team.doctor_order') }}</nuxt-link
                 >
@@ -172,8 +172,8 @@ const getWindowWidth = () => {
                   v-html="item.doctorEducation"
                 ></div>
                 <nuxt-link
-                  class="orderLink text-white inline-block"
                   id="medicalTeamLink"
+                  class="orderLink text-white inline-block"
                   to="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
                   >{{ $t('pages.medical_team.doctor_order') }}</nuxt-link
                 >
@@ -221,8 +221,8 @@ const getWindowWidth = () => {
                     <span>{{ $t(ele) }}</span>
                   </div>
                   <nuxt-link
-                    class="orderLink text-white inline-block"
                     id="medicalTeamLink"
+                    class="orderLink text-white inline-block"
                     to="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
                     >{{ $t('pages.medical_team.doctor_order') }}</nuxt-link
                   >
@@ -421,10 +421,6 @@ const getWindowWidth = () => {
   ul > li:nth-child(1) {
     .orderLink {
       bottom: -80px !important;
-    }
-
-    & > div:nth-child(1) {
-      // margin-top: 65px !important;
     }
 
     & > div:nth-child(2) {
@@ -1054,7 +1050,7 @@ const getWindowWidth = () => {
           height: 34px;
           font-size: 16px;
           line-height: 34px;
-          margin: 24.5px auto 0;
+          margin: 24px auto 0 0;
           display: block;
         }
 
