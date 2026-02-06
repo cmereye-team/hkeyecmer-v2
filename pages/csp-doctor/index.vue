@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-01-26 11:36:15
+ * @LastEditTime: 2026-02-06 11:59:41
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -51,7 +51,7 @@ const allDoctors = ref<Doctor[]>([
     name: '陳偉樂',
     enName: 'Dr. Leo Chan',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: [
@@ -64,7 +64,7 @@ const allDoctors = ref<Doctor[]>([
     name: '陳偉樂',
     enName: 'Dr. Leo Chan',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: [
@@ -77,7 +77,7 @@ const allDoctors = ref<Doctor[]>([
     name: '陳偉樂',
     enName: 'Dr. Leo Chan',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -91,7 +91,7 @@ const allDoctors = ref<Doctor[]>([
     name: '張瀞之',
     enName: 'Dr. Janice Cheung',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: ['中環畢打街1-3號中建大廈1515室'],
@@ -101,7 +101,7 @@ const allDoctors = ref<Doctor[]>([
     name: '張瀞之',
     enName: 'Dr. Janice Cheung',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室及1725B室'],
@@ -111,7 +111,7 @@ const allDoctors = ref<Doctor[]>([
     name: '張瀞之',
     enName: 'Dr. Janice Cheung',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -125,7 +125,7 @@ const allDoctors = ref<Doctor[]>([
     name: '熊健慧',
     enName: 'Dr. Jennifer Hung',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-022-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-022-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
@@ -135,7 +135,7 @@ const allDoctors = ref<Doctor[]>([
     name: '熊健慧',
     enName: 'Dr. Jennifer Hung',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-022-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-022-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: ['沙田正街11-17號偉華中心2樓1C—1E號鋪'],
@@ -145,7 +145,7 @@ const allDoctors = ref<Doctor[]>([
     name: '高德全',
     enName: 'Dr. Simon Ko',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-023-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-023-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: ['中環畢打街1-3號中建大廈1515室'],
@@ -155,7 +155,7 @@ const allDoctors = ref<Doctor[]>([
     name: '高德全',
     enName: 'Dr. Simon Ko',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-023-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-023-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
@@ -165,7 +165,7 @@ const allDoctors = ref<Doctor[]>([
     name: '黎浩樺',
     enName: 'Dr. Kenny Lai',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: ['中環畢打街1-3號中建大廈1515室'],
@@ -175,7 +175,7 @@ const allDoctors = ref<Doctor[]>([
     name: '黎浩樺',
     enName: 'Dr. Kenny Lai',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室及1725B室'],
@@ -185,7 +185,7 @@ const allDoctors = ref<Doctor[]>([
     name: '黎浩樺',
     enName: 'Dr. Kenny Lai',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -198,7 +198,7 @@ const allDoctors = ref<Doctor[]>([
     name: '林己明',
     enName: 'Dr. Jasmine Lam',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: ['中環畢打街1-3號中建大廈1515室'],
@@ -208,7 +208,7 @@ const allDoctors = ref<Doctor[]>([
     name: '林己明',
     enName: 'Dr. Jasmine Lam',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室及1725B室'],
@@ -218,7 +218,7 @@ const allDoctors = ref<Doctor[]>([
     name: '林己明',
     enName: 'Dr. Jasmine Lam',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -232,7 +232,7 @@ const allDoctors = ref<Doctor[]>([
     name: '林寶生',
     enName: 'Dr. Carol Lam',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: ['中環畢打街1-3號中建大廈1515室'],
@@ -242,7 +242,7 @@ const allDoctors = ref<Doctor[]>([
     name: '林寶生',
     enName: 'Dr. Carol Lam',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室及1725B室'],
@@ -252,7 +252,7 @@ const allDoctors = ref<Doctor[]>([
     name: '林寶生',
     enName: 'Dr. Carol Lam',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -266,7 +266,7 @@ const allDoctors = ref<Doctor[]>([
     name: '林峯',
     enName: 'Dr. Robert Lam',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-025-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-025-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: [
@@ -279,7 +279,7 @@ const allDoctors = ref<Doctor[]>([
     name: '林峯',
     enName: 'Dr. Robert Lam',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-025-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-025-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
@@ -289,7 +289,7 @@ const allDoctors = ref<Doctor[]>([
     name: '李煒業',
     enName: 'Dr. Jacky Lee',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: ['中環畢打街1-3號中建大廈1515室'],
@@ -299,7 +299,7 @@ const allDoctors = ref<Doctor[]>([
     name: '李煒業',
     enName: 'Dr. Jacky Lee',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
@@ -309,7 +309,7 @@ const allDoctors = ref<Doctor[]>([
     name: '李煒業',
     enName: 'Dr. Jacky Lee',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -322,7 +322,7 @@ const allDoctors = ref<Doctor[]>([
     name: '李佑榮',
     enName: 'Dr. Vincent Lee',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-001-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-001-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: [
@@ -335,7 +335,7 @@ const allDoctors = ref<Doctor[]>([
     name: '李佑榮',
     enName: 'Dr. Vincent Lee',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-001-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-001-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
@@ -345,7 +345,7 @@ const allDoctors = ref<Doctor[]>([
     name: '梁苑珊',
     enName: 'Dr. Gloria Leung',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: [
@@ -358,7 +358,7 @@ const allDoctors = ref<Doctor[]>([
     name: '梁苑珊',
     enName: 'Dr. Gloria Leung',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: [
@@ -371,7 +371,7 @@ const allDoctors = ref<Doctor[]>([
     name: '梁苑珊',
     enName: 'Dr. Gloria Leung',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -385,7 +385,7 @@ const allDoctors = ref<Doctor[]>([
     name: '李德倫',
     enName: 'Dr. Stephen Li',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: ['中環畢打街1-3號中建大廈1515室'],
@@ -395,7 +395,7 @@ const allDoctors = ref<Doctor[]>([
     name: '李德倫',
     enName: 'Dr. Stephen Li',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: [
@@ -408,7 +408,7 @@ const allDoctors = ref<Doctor[]>([
     name: '李德倫',
     enName: 'Dr. Stephen Li',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -422,7 +422,7 @@ const allDoctors = ref<Doctor[]>([
     name: '吳兆駿',
     enName: 'Dr. Danny Ng',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: [
@@ -435,7 +435,7 @@ const allDoctors = ref<Doctor[]>([
     name: '吳兆駿',
     enName: 'Dr. Danny Ng',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
@@ -445,7 +445,7 @@ const allDoctors = ref<Doctor[]>([
     name: '吳兆駿',
     enName: 'Dr. Danny Ng',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -458,7 +458,7 @@ const allDoctors = ref<Doctor[]>([
     name: '尹浩柟',
     enName: 'Dr. Kelvin Wan',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: [
@@ -471,7 +471,7 @@ const allDoctors = ref<Doctor[]>([
     name: '尹浩柟',
     enName: 'Dr. Kelvin Wan',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: [
@@ -484,7 +484,7 @@ const allDoctors = ref<Doctor[]>([
     name: '尹浩柟',
     enName: 'Dr. Kelvin Wan',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -499,7 +499,7 @@ const allDoctors = ref<Doctor[]>([
     name: '黃俊華',
     enName: 'Dr. Alex Wong',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: ['中環畢打街1-3號中建大廈1515室'],
@@ -509,7 +509,7 @@ const allDoctors = ref<Doctor[]>([
     name: '黃俊華',
     enName: 'Dr. Alex Wong',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
@@ -519,7 +519,7 @@ const allDoctors = ref<Doctor[]>([
     name: '黃俊華',
     enName: 'Dr. Alex Wong',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
@@ -532,7 +532,7 @@ const allDoctors = ref<Doctor[]>([
     name: '邱俊源',
     enName: 'Dr. Jackey Yau',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-006-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: [
@@ -545,7 +545,7 @@ const allDoctors = ref<Doctor[]>([
     name: '邱俊源',
     enName: 'Dr. Jackey Yau',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-006-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'kl',
     regions: '九龍',
     clinic: [
@@ -558,7 +558,7 @@ const allDoctors = ref<Doctor[]>([
     name: '邱俊源',
     enName: 'Dr. Jackey Yau',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-006-full.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
