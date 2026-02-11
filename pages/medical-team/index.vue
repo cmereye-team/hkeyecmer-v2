@@ -461,8 +461,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        top: 116px;
-        left: -102px;
+        top: 88px;
+        left: -158px;
       }
 
       & > div:nth-child(1)::before {
@@ -483,8 +483,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -88px;
-        top: -42px;
+        left: -124px;
+        top: -20px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -526,7 +526,7 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -100px;
+        left: -144px;
         top: 70px;
       }
 
@@ -573,7 +573,7 @@ const getWindowWidth = () => {
 
       & > div:nth-child(2) {
         right: -98px;
-        top: 0;
+        top: -28px;
       }
 
       & > div:nth-child(1)::before {
@@ -595,8 +595,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -80px;
-        top: 69px;
+        left: -220px;
+        top: 108px;
       }
 
       & > div:nth-child(1)::before {
@@ -619,7 +619,7 @@ const getWindowWidth = () => {
 
       & > div:nth-child(2) {
         right: -63px;
-        top: -27px;
+        top: -40px;
       }
 
       & > div:nth-child(1)::before {
@@ -645,7 +645,7 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -100px;
+        left: -160px;
         top: 69px;
       }
 
@@ -668,8 +668,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -160px;
-        top: 77px;
+        left: -240px;
+        top: 160px;
       }
 
       & > div:nth-child(1)::before {
@@ -737,7 +737,7 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        right: -100px;
+        right: -180px;
         top: 30px;
       }
 
@@ -802,7 +802,7 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        right: -111px;
+        right: -220px;
         top: 129px;
       }
       & > div:nth-child(1)::before {
@@ -823,8 +823,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -121px;
-        top: 40px;
+        left: -180px;
+        top: -20px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -844,7 +844,7 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -190px;
+        left: -120px;
         top: -14px;
       }
       & > div:nth-child(1)::before {
@@ -865,8 +865,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -120px;
-        top: 16px;
+        left: -212px;
+        top: 112px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -886,8 +886,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -260px;
-        top: 156px;
+        left: -276px;
+        top: 220px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -935,8 +935,8 @@ const getWindowWidth = () => {
         // height: 330px;
       }
       & > div:nth-child(2) {
-        right: -145px;
-        top: 157px;
+        right: -168px;
+        top: 108px;
       }
       & > div:nth-child(1)::before {
         content: '';
