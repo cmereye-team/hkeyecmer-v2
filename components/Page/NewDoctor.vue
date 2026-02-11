@@ -130,8 +130,9 @@ interface NewList {
       }
     }
   }
+  &:nth-child(11),
   &:nth-child(12),
-  &:nth-child(13) {
+  &:nth-child(21) {
     & > div:nth-child(2) {
       & > div:nth-child(1) {
         div {
