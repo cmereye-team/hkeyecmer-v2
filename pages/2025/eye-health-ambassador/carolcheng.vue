@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-15 14:59:45
- * @LastEditTime: 2026-01-19 16:58:13
+ * @LastEditTime: 2026-02-13 17:02:38
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 眼睛健康大使-郑裕玲小姐
 -->
@@ -253,7 +253,7 @@ const formatTime = (seconds: number) => {
 
 // 播放/暫停
 const togglePlay = () => {
-  console.log(`播放暂停按钮,isplay=${isPlaying.value},videoEl=`, videoEl.value)
+  // console.log(`播放暂停按钮,isplay=${isPlaying.value},videoEl=`, videoEl.value)
   if (videoEl.value) {
     if (videoEl.value.paused) {
       videoEl.value.play()
@@ -268,7 +268,7 @@ const togglePlay = () => {
 
 // 靜音切換（用戶點擊後開聲）
 const toggleMute = () => {
-  console.log(`静音状态切换,isMuted=${isMuted.value},videoEl=`, videoEl.value)
+  // console.log(`静音状态切换,isMuted=${isMuted.value},videoEl=`, videoEl.value)
   if (videoEl.value) {
     videoEl.value.muted = !videoEl.value.muted
     isMuted.value = videoEl.value.muted
@@ -312,7 +312,7 @@ const toggleFullscreen = () => {
 const isMobileDevice = () => {
   return (
     /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) ||
-    window.innerWidth <= 1024
+    window.innerWidth <= 769
   )
 }
 
@@ -455,7 +455,7 @@ onBeforeUnmount(() => {
     <!-- 頂部裝飾偽元素 -->
     <div class="video relative">
       <!-- 首屏視頻 -->
-      <section class="mt-15 md:mt-23 lg:mt-0 lg:-z-1">
+      <section class="mt-18.5 [@media(min-width:820px)]:mt-0 lg:-z-1">
         <div class="flex justify-center video-wrapper">
           <div class="relative aspect-video w-full xl:h-[680px] xl:w-[1210px]">
             <!-- 画中画 wrapper -->
@@ -911,6 +911,12 @@ onBeforeUnmount(() => {
 }
 .video {
   position: relative;
+
+  section {
+    @media (min-width: 769px) {
+      margin-top: 0;
+    }
+  }
 
   // PC 端左边装饰图
   &::before {
