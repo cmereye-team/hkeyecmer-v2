@@ -434,6 +434,16 @@ const processedLists: any = ref([
                 {{ $t('pages.process_cost.cont.cost_p10') }}
                 <!-- 最後更新: 01/04/2023 -->
               </div>
+              <a
+                href="https://api.whatsapp.com/send?phone=85293451508&text=你好,我想查詢"
+                class="const-btn relative overflow-hidden block mx-auto py-3 px-8 lg:py-6 lg:px-13 bg-gradient-to-r from-[#FACD68] to-[#FC76B3] text-2xl lg:text-4xl text-white hover:text-[#2958a3]"
+              >
+                <span class="line top"></span>
+                <span class="line right"></span>
+                <span class="line bottom"></span>
+                <span class="line left"></span>
+                {{ $t('pages.process_cost.cont.cost_btn') }}
+              </a>
             </div>
           </div>
         </div>
@@ -1711,7 +1721,41 @@ const processedLists: any = ref([
     }
   }
 }
+@keyframes animateTop {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
+@keyframes animateRight {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes animateBottom {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes animateLeft {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
 .ClaimFormBox {
   margin: 0 auto;
   width: 100%;
@@ -1730,6 +1774,45 @@ const processedLists: any = ref([
         text-align: right;
       }
     }
+  }
+}
+.const-btn {
+  width: fit-content;
+  .line {
+    position: absolute;
+    display: block;
+  }
+  .top {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to left, rgba(43, 8, 8, 0), #d92626);
+    animation: animateTop 1.5s linear infinite;
+  }
+  .right {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to top, rgba(43, 8, 8, 0), #d92626);
+    animation: animateRight 1.5s linear infinite -0.75s;
+  }
+  .bottom {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, rgba(43, 8, 8, 0), #d92626);
+    animation: animateBottom 1.5s linear infinite;
+  }
+  .left {
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(43, 8, 8, 0), #d92626);
+    animation: animateLeft 1.5s linear infinite -0.75s;
   }
 }
 .updateBox {
