@@ -403,7 +403,7 @@ let drawer = ref(false)
               }
             }
             &.twoD {
-              margin-left: 60px;
+              margin-left: 12px;
             }
           }
         }
@@ -441,6 +441,13 @@ let drawer = ref(false)
   align-items: center;
   height: 100%;
   padding-bottom: 100px;
+}
+@media screen and (min-width: 1024px) {
+  .footerMenu {
+    .t-in-b > div.twoD {
+      margin-left: 60px;
+    }
+  }
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .footerMenu {
@@ -487,7 +494,7 @@ let drawer = ref(false)
                   }
                 }
                 &.twoD {
-                  margin-left: 0px;
+                  margin-left: 0;
                 }
               }
             }
@@ -529,7 +536,7 @@ let drawer = ref(false)
                 }
               }
               &.twoD {
-                margin-left: 0px;
+                margin-left: 0;
               }
             }
           }

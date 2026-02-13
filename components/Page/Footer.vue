@@ -7,7 +7,7 @@ const year = new Date().getFullYear()
     <PageContentBackToTop />
     <PageContentOnlinContact />
     <footer class="bg-primary">
-      <section class="footer">
+      <section class="footer 2xl:pl-37">
         <div>
           {{ $t('pages.index.footer.company') }}
           {{ $t('pages.index.footer.copy_right') }}
@@ -36,7 +36,7 @@ const year = new Date().getFullYear()
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  padding-left: 150px;
+  // padding-left: 150px;
   height: 46px;
   & > div:nth-child(1) {
     font-family: 'Noto Sans HK';

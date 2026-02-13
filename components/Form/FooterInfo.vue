@@ -207,7 +207,7 @@ const disabledDate = (time: Date) => {
         <div>{{ $t('components.footerInfo.text2') }}</div>
       </div>
       <div>
-        <div>
+        <div class="md:px-3 lg:px-0">
           <el-form
             ref="ruleFormRef"
             :model="ruleForm"
