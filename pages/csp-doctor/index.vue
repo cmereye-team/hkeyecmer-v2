@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-02-06 11:59:41
+ * @LastEditTime: 2026-02-13 17:36:43
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -706,9 +706,9 @@ onUnmounted(() => {
 <template>
   <main class="doctor">
     <CspBanner active="doctor" />
-    <section ref="doctorFixed" class="sticky top-[74px] lg:static z-10">
+    <section ref="doctorFixed" class="doctor-wrapper lg:static z-10">
       <div
-        class="bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-4 lg:px-8 text-lg lg:text-3xl font-bold sticky top-[74px] lg:static z-10"
+        class="doctor-nav bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-4 lg:px-8 text-lg lg:text-3xl font-bold lg:static z-10"
       >
         <nuxt-link
           v-for="item in navItems"
@@ -804,6 +804,11 @@ onUnmounted(() => {
   transition: transform 0.3s ease-in-out;
 }
 .doctor {
+  .doctor-wrapper,
+  .doctor-nav {
+    position: sticky;
+    top: 74px;
+  }
   .tab {
     border: 1px solid #1b407a;
     padding: 8px 0;
@@ -830,6 +835,14 @@ onUnmounted(() => {
     &.active {
       background-color: #e3eaf4;
       font-weight: bold;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .doctor {
+    .doctor-wrapper,
+    .doctor-nav {
+      top: 0;
     }
   }
 }

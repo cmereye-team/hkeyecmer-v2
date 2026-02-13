@@ -363,7 +363,7 @@ const bannerData = {
           </div>
           <div>
             <div v-for="(item, i) in examine" :key="i">
-              <div>{{ $t(item.title) }}</div>
+              <div class="result-title">{{ $t(item.title) }}</div>
               <div>
                 <img
                   :src="item.img_up"
@@ -732,6 +732,9 @@ const bannerData = {
   </div>
 </template>
 <style lang="scss" scoped>
+.result-title {
+  width: 100%;
+}
 .maculopathy_nav {
   max-width: 1200px;
   margin: 100px auto -40%;
@@ -902,7 +905,6 @@ const bannerData = {
           align-items: center;
           position: relative;
           & > div:nth-child(1) {
-            width: 237px;
             height: 54px;
             background: #bfa876;
             display: flex;
@@ -2055,8 +2057,11 @@ const bannerData = {
     }
   }
 }
-</style>
-<style lang="scss" scoped>
+@media screen and (min-width: 1280px) {
+  .result-title {
+    width: 237px;
+  }
+}
 @media screen and (min-width: 1980px) {
   .dow {
     margin-top: -20%;
