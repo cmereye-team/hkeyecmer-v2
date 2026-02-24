@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-02-13 17:36:43
+ * @LastEditTime: 2026-02-24 14:58:30
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -708,7 +708,7 @@ onUnmounted(() => {
     <CspBanner active="doctor" />
     <section ref="doctorFixed" class="doctor-wrapper lg:static z-10">
       <div
-        class="doctor-nav bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-4 lg:px-8 text-lg lg:text-3xl font-bold lg:static z-10"
+        class="doctor-nav bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-4 lg:px-8 text-lg lg:text-3xl font-bold z-10"
       >
         <nuxt-link
           v-for="item in navItems"
@@ -847,6 +847,12 @@ onUnmounted(() => {
   }
 }
 @media screen and (min-width: 1024px) {
+  .doctor {
+    .doctor-wrapper,
+    .doctor-nav {
+      position: relative;
+    }
+  }
   .pagination {
     .page {
       border-width: 1px;
