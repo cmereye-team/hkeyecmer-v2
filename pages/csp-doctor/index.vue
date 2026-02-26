@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-02-24 14:58:30
+ * @LastEditTime: 2026-02-25 14:21:59
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -716,7 +716,7 @@ onUnmounted(() => {
           :to="item.path"
           :class="
             item.id === 'doctor'
-              ? '!text-[#2958A3] relative before:absolute before:w-full before:h-1 before:-bottom-1 before:bg-[#2958A3]'
+              ? '!text-[#2958A3] relative before:content-[\'\'] before:absolute before:w-full before:h-1 before:-bottom-1 before:bg-[#2958A3]'
               : ''
           "
         >
@@ -739,7 +739,7 @@ onUnmounted(() => {
             />
           </div>
           <div
-            class="doctor-tabs text-xl lg:text-2xl lg:leading-[56px] order-2 lg:order-1 text-[#1B407A] text-center flex items-center justify-between lg:justify-start lg:gap-[3vw]"
+            class="doctor-tabs text-xl lg:text-2xl lg:leading-[56px] order-2 lg:order-1 text-[#1B407A] text-center flex items-center justify-between lg:justify-start lg:gap-[2vw]"
           >
             <div
               v-for="tab in tabs"

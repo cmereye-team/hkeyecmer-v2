@@ -20,7 +20,7 @@ const navItems = [
   { id: 'question', path: '/csp-question', label: 'csp.nav.question' },
 ]
 const activeClass =
-  '!text-[#2958A3] relative before:absolute before:w-full before:h-1 before:-bottom-1 before:bg-[#2958A3]'
+  "!text-[#2958A3] relative before:content-[''] before:absolute before:w-full before:h-1 before:-bottom-1 before:bg-[#2958A3]"
 </script>
 <template>
   <template v-if="props.active === 'doctor'">
