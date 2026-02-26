@@ -46,6 +46,18 @@ const meetArr = [
     title: 'pages.medical_service.maculopathy_con.faq.q4',
     agree: 'pages.medical_service.maculopathy_con.faq.a4',
   },
+  {
+    title: 'pages.medical_service.maculopathy_con.faq.q5',
+    agree: 'pages.medical_service.maculopathy_con.faq.a5',
+  },
+  {
+    title: 'pages.medical_service.maculopathy_con.faq.q6',
+    agree: 'pages.medical_service.maculopathy_con.faq.a6',
+  },
+  {
+    title: 'pages.medical_service.maculopathy_con.faq.q7',
+    agree: 'pages.medical_service.maculopathy_con.faq.a7',
+  },
 ]
 // 黃斑病變的症狀
 const sympotm = [
