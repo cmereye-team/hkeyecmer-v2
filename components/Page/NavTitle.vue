@@ -60,14 +60,15 @@ const props = defineProps({
   letter-spacing: 0px;
   color: #6c899e;
   padding: 0 30px;
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .title {
     & > div:nth-child(2) {
       letter-spacing: 0.06em;
     }
-    svg{
-      transform: scale(.6);
+    svg {
+      transform: scale(0.6);
     }
   }
   .caption_text_color {
