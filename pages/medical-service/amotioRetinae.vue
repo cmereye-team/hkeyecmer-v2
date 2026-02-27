@@ -89,6 +89,18 @@ const meetArr = [
     title: 'pages.medical_service.amotioRetinae_con.faq.q4',
     agree: 'pages.medical_service.amotioRetinae_con.faq.a4',
   },
+  {
+    title: 'pages.medical_service.amotioRetinae_con.faq.q5',
+    agree: 'pages.medical_service.amotioRetinae_con.faq.a5',
+  },
+  {
+    title: 'pages.medical_service.amotioRetinae_con.faq.q6',
+    agree: 'pages.medical_service.amotioRetinae_con.faq.a6',
+  },
+  {
+    title: 'pages.medical_service.amotioRetinae_con.faq.q7',
+    agree: 'pages.medical_service.amotioRetinae_con.faq.a7',
+  },
 ]
 const factorList1 = [
   {
