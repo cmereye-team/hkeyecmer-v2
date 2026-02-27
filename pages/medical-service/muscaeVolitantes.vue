@@ -184,6 +184,18 @@ const meetArr: any = [
     title: 'pages.medical_service.muscaeVolitantes_con.faq.q3',
     agree: 'pages.medical_service.muscaeVolitantes_con.faq.a3',
   },
+  {
+    title: 'pages.medical_service.muscaeVolitantes_con.faq.q4',
+    agree: 'pages.medical_service.muscaeVolitantes_con.faq.a4',
+  },
+  {
+    title: 'pages.medical_service.muscaeVolitantes_con.faq.q5',
+    agree: 'pages.medical_service.muscaeVolitantes_con.faq.a5',
+  },
+  {
+    title: 'pages.medical_service.muscaeVolitantes_con.faq.q6',
+    agree: 'pages.medical_service.muscaeVolitantes_con.faq.a6',
+  },
 ]
 // 内部导航
 const serviceNavigation = [
@@ -318,6 +330,9 @@ const bannerData = {
           />
         </div>
         <div>
+          <p class="text-base lg:text-2xl text-[#515151] mt-5 lg:mt-12">
+            {{ $t('pages.medical_service.muscaeVolitantes_con.factor.intro') }}
+          </p>
           <div v-for="(item, index) in factor" :key="index">
             <div>
               <img
@@ -340,14 +355,17 @@ const bannerData = {
             $t('pages.medical_service.muscaeVolitantes_con.category.name')
           "
         />
-        <div>
+        <p class="text-[#515151] text-base lg:text-2xl mt-5 lg:mt-12">
+          {{ $t('pages.medical_service.muscaeVolitantes_con.category.intro') }}
+        </p>
+        <div class="category-item benign">
           <div>
             {{
               $t('pages.medical_service.muscaeVolitantes_con.category.name1')
             }}
           </div>
           <div>
-            <div>
+            <div class="category-item-main">
               {{
                 $t(
                   'pages.medical_service.muscaeVolitantes_con.category.context'
@@ -418,13 +436,13 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div>
+        <div class="category-item malignant">
           <div>
             {{
               $t('pages.medical_service.muscaeVolitantes_con.category.name2')
             }}
           </div>
-          <div>
+          <div class="category-item-main">
             <img
               src="https://hkcmereye.com/template/default/picture/fwz_img/exfw_en.jpg"
               :title="locale === 'en' ? 'Vitreous Floaters' : `惡性飛蚊症`"
@@ -458,7 +476,7 @@ const bannerData = {
           {{$t('pages.medical_service.muscaeVolitantes_con.btn.name2_1')}}<br />
           {{$t('pages.medical_service.muscaeVolitantes_con.btn.name2_2')}}
         </div> -->
-        <div class="serviceBtnStyle">
+        <div class="serviceBtnStyle mt-12 lg:mt-25">
           <service-button-icon
             :str="
               $t('pages.medical_service.muscaeVolitantes_con.btn.name2_1') +
@@ -886,8 +904,12 @@ const bannerData = {
       flex-wrap: wrap;
       justify-content: space-between;
       margin-top: 120px;
+      gap: 120px 0;
       & > div {
         width: 33.33333%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         & > div:nth-child(2) {
           width: 258px;
           display: flex;
@@ -902,22 +924,22 @@ const bannerData = {
           color: #697389;
         }
       }
-      & > div:nth-child(2),
-      & > div:nth-child(5) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      & > div:nth-child(3),
-      & > div:nth-child(6) {
-        display: flex;
-        justify-content: right;
-        flex-direction: column;
-        align-items: center;
-      }
-      & > div:nth-child(n + 4) {
-        margin-top: 120px;
-      }
+      // & > div:nth-child(2),
+      // & > div:nth-child(5) {
+      //   display: flex;
+      //   flex-direction: column;
+      //   // align-items: center;
+      // }
+      // // & > div:nth-child(3),
+      // & > div:nth-child(6) {
+      //   display: flex;
+      //   justify-content: right;
+      //   flex-direction: column;
+      //   align-items: center;
+      // }
+      // & > div:nth-child(n + 4) {
+      //   margin-top: 120px;
+      // }
     }
     & > div:nth-child(3) {
       margin-top: 128px;
@@ -1023,7 +1045,7 @@ const bannerData = {
   // 飛蚊症種類
   & > div:nth-child(4) {
     margin-top: 230px;
-    & > div:nth-child(2) {
+    & > .benign {
       margin-top: 85px;
       margin-left: 30px;
       background-color: #ffffff;
@@ -1092,7 +1114,7 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(3) {
+    & > .malignant {
       margin-top: 80px;
       margin-left: 30px;
       background-color: #ffffff;
@@ -1116,7 +1138,7 @@ const bannerData = {
         left: -30px;
         top: 30px;
       }
-      & > div:nth-child(2) {
+      & > .category-item-main {
         margin-top: 60px;
         margin-left: 35px;
         padding-bottom: 50px;
@@ -1137,11 +1159,11 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(4) {
-      margin-top: 100px;
-      // width: 508px;
-      // height: 140px;
-    }
+    // & > div:nth-child(4) {
+    //   margin-top: 100px;
+    //   // width: 508px;
+    //   // height: 140px;
+    // }
   }
   // 以下人士較大機會患上飛蚊症︰
   & > div:nth-child(5) {
@@ -1706,9 +1728,10 @@ const bannerData = {
       & > div:nth-child(2) {
         margin-top: 50px;
         padding: 0;
+        gap: 48px 0;
+        margin-bottom: 48px;
         & > div {
           width: 27%;
-          margin-bottom: 50px;
           & > div:nth-child(2) {
             width: 100%;
             font-size: 16px;
@@ -1794,7 +1817,7 @@ const bannerData = {
     & > div:nth-child(4) {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      & > div:nth-child(2) {
+      & > .benign {
         margin-top: 30px;
         margin-left: 20px;
         & > div:nth-child(1) {
@@ -1842,7 +1865,7 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(3) {
+      & > .malignant {
         margin-top: 30px;
         margin-left: 20px;
         & > div:nth-child(1) {
@@ -1866,14 +1889,6 @@ const bannerData = {
             padding-right: 30px;
           }
         }
-      }
-      & > div:nth-child(4) {
-        margin-top: 50px;
-        // width: max-content;
-        // height: 85px;
-        // font-size: 18px;
-        // line-height: 1.6;
-        // padding: 0 50px;
       }
     }
     & > div:nth-child(5) {
