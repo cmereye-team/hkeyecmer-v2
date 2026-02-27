@@ -1457,7 +1457,7 @@ const bannerData = {
   color: #a18a5a;
 }
 .dow {
-  margin-top: -35%;
+  margin-top: -880px;
   margin-bottom: 233px;
   color: #fff;
   font-size: 30px;
@@ -1492,7 +1492,7 @@ const bannerData = {
     transform: scale(1);
     // margin: -50px 0 0;
     & > div:nth-child(1) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 0 auto;
       & > div:nth-child(1) {
         font-size: 24px;
@@ -1501,13 +1501,13 @@ const bannerData = {
         margin-bottom: 20px;
       }
       & > div:nth-child(2) {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 2;
         margin-left: 0;
       }
     }
     & > div:nth-child(2) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 45px;
@@ -1516,14 +1516,14 @@ const bannerData = {
           width: calc(50% - 30px);
           margin-bottom: 60px;
           & > div:nth-child(2) {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.6;
             white-space: initial;
             margin: 20px auto 0;
           }
           &:nth-of-type(1) {
             & > div:nth-child(2) {
-              width: 75px;
+              width: 84px;
             }
           }
           &:nth-of-type(2) {
@@ -1540,7 +1540,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(3) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 0 auto;
       & > div:nth-child(2) {
         margin-top: 45px;
@@ -1562,7 +1562,7 @@ const bannerData = {
           & > div:nth-child(4),
           & > div:nth-child(5),
           & > div:nth-child(6) {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.8;
             margin-bottom: 35px;
             & > span {
@@ -1579,7 +1579,7 @@ const bannerData = {
           width: 80%;
           margin: 0 auto;
           & > span {
-            font-size: 14px;
+            font-size: 16px;
             margin-top: 10px;
           }
         }
@@ -1635,16 +1635,16 @@ const bannerData = {
       }
     }
     & > div:nth-child(4) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         padding: 0;
         margin: 0;
         & > div:nth-child(1) {
-          width: 70px;
-          height: 70px;
-          min-width: 70px;
-          font-size: 16px;
+          width: 92px;
+          height: 92px;
+          min-width: 92px;
+          font-size: 20px;
           line-height: 1.2;
         }
         & > svg {
@@ -1655,10 +1655,10 @@ const bannerData = {
           }
         }
         & > div:nth-child(3) {
-          width: 65px;
-          height: 65px;
-          min-width: 65px;
-          font-size: 14px;
+          width: 88px;
+          height: 88px;
+          min-width: 88px;
+          font-size: 18px;
           line-height: 1.2;
           margin-left: 0px;
         }
@@ -1681,17 +1681,17 @@ const bannerData = {
         }
         & > div:nth-child(5) {
           & > div {
-            width: 60px;
-            height: 60px;
-            min-width: 60px;
-            font-size: 12px;
+            width: 72px;
+            height: 72px;
+            min-width: 72px;
+            font-size: 16px;
             line-height: 1.2;
           }
         }
       }
     }
     & > div:nth-child(5) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 0;
@@ -1715,7 +1715,7 @@ const bannerData = {
           }
           & > div:nth-child(2) {
             padding: 22px 12px;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.8;
             position: relative;
           }
@@ -1723,7 +1723,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(6) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 0;
@@ -1760,7 +1760,7 @@ const bannerData = {
             // margin-top: -10px;
             width: 100%;
             height: auto;
-            font-size: 14px;
+            font-size: 16px;
             padding: 60px 15px 15px;
             line-height: 1.8;
             & > div:nth-child(2) {
@@ -1792,7 +1792,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(7) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 120px auto 0;
       & > div:nth-child(2) {
         margin-top: 40px;
@@ -1802,7 +1802,7 @@ const bannerData = {
           justify-content: flex-start;
           width: calc(50% - 10px);
           & > div:nth-child(2) {
-            font-size: 14px;
+            font-size: 16px;
             height: auto;
           }
           &:last-child {
@@ -1824,7 +1824,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(8) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 20px auto 0;
       & > div:nth-child(2) {
         margin-top: 35px;
@@ -1842,7 +1842,7 @@ const bannerData = {
             margin-bottom: 15px;
           }
           & > div:nth-child(2) {
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.8;
           }
         }
@@ -1861,7 +1861,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(9) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 45px;
@@ -1870,13 +1870,13 @@ const bannerData = {
           height: auto;
           margin-bottom: 50px;
           & > div:nth-child(2) {
-            font-size: 14px;
+            font-size: 16px;
             height: auto;
             line-height: 1.6;
             margin: 16px 0 10px;
           }
           & > div:nth-child(3) {
-            font-size: 12px;
+            font-size: 16px;
             padding: 0 20px 15px;
             line-height: 1.8;
           }
@@ -1890,7 +1890,7 @@ const bannerData = {
       }
     }
     & > :last-child {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 20px auto 0;
       & > div:first-child {
         margin-bottom: 30px;
@@ -1923,13 +1923,13 @@ const bannerData = {
         width: 100%;
         & > div:nth-child(2) {
           & > div:nth-child(1) {
-            font-size: 14px;
+            font-size: 16px;
             width: 100px;
             height: 100px;
             min-width: 100px;
           }
           & > div:nth-child(3) {
-            font-size: 12px;
+            font-size: 16px;
             margin-left: 0;
             width: 90px;
             height: 90px;
@@ -1940,12 +1940,12 @@ const bannerData = {
           }
           & > div:nth-child(5) {
             & > div {
-              font-size: 12px;
+              font-size: 16px;
               width: 80px;
               height: 80px;
             }
             & > div:nth-child(1) {
-              font-size: 12px;
+              font-size: 16px;
             }
           }
         }
@@ -1955,7 +1955,7 @@ const bannerData = {
           & > div:nth-child(2) {
             & > div:nth-child(2) {
               padding: 22px 12px;
-              font-size: 14px;
+              font-size: 16px;
             }
           }
         }
@@ -1971,7 +1971,7 @@ const bannerData = {
           }
           & > div:nth-child(2) {
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               padding-top: 40px;
             }
           }
@@ -1987,7 +1987,7 @@ const bannerData = {
           }
           & > div:nth-child(2) {
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               padding-top: 40px;
             }
           }
@@ -2040,7 +2040,7 @@ const bannerData = {
     line-height: 1.6;
   }
   .dow {
-    margin-top: 100px;
+    margin-top: 280px;
     margin-bottom: 100px;
     font-size: 16px;
     & > div:nth-child(1) {
