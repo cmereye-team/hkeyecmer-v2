@@ -929,16 +929,32 @@ const bannerData = {
 }
 
 .amotioRetinae_title_text_bg {
-  background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png');
+  // background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png');
+  background-position: center;
   background-size: 100%;
-  width: 609px;
-  height: 106px;
+  width: 720px;
+  height: 125px;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   line-height: 1.2;
+  position: relative;
+  font-weight: bold;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    border: 1px solid #e8a89b;
+    border-radius: 48px 0 48px 0;
+    width: 100%;
+    height: 100%;
+  }
+  &::after {
+    bottom: -8px;
+    left: -8px;
+  }
 }
 
 .amotioRetinae_title_btn {
@@ -1036,7 +1052,8 @@ const bannerData = {
     max-width: 100%;
     // margin: -80px 0 0;
     transform: scale(1);
-    padding: 0 40px;
+    padding: 0 16px;
+    font-size: 16px;
 
     & > #intro {
       & > div:nth-child(1) {
@@ -1046,9 +1063,8 @@ const bannerData = {
       & > div:nth-child(2) {
         margin-top: 25px;
         margin-bottom: 30px;
-
         font-family: 'Noto Sans HK';
-        font-size: 14px;
+        font-size: 18px;
         font-weight: normal;
         font-stretch: normal;
         line-height: 1.8;
@@ -1114,7 +1130,7 @@ const bannerData = {
             margin: auto;
             margin-top: 5px;
             flex-direction: column;
-            font-size: 12px;
+            font-size: 16px;
             font-weight: normal;
             font-stretch: normal;
             line-height: 1.4;
@@ -1255,6 +1271,7 @@ const bannerData = {
           .amotioRetinae_img {
             position: absolute;
             top: 60px;
+            padding: 0 32px;
           }
           & > div:nth-child(2) {
             width: 100%;
@@ -1319,7 +1336,7 @@ const bannerData = {
           margin-left: 0;
           line-height: 1.8;
           text-indent: 0;
-          font-size: 12px;
+          font-size: 16px;
           & > p:nth-child(2) {
             margin-top: 34px;
           }
@@ -1335,7 +1352,7 @@ const bannerData = {
       margin: 80px auto;
       & > div:nth-child(2) {
         margin: 30px auto 25px;
-        font-size: 12px;
+        font-size: 16px;
       }
       & > div:nth-child(3) {
         margin-bottom: 20px;
@@ -1432,7 +1449,7 @@ const bannerData = {
         & > div:nth-child(2) {
           & > div {
             & > div:nth-child(2) {
-              font-size: 12px;
+              font-size: 16px;
               line-height: 1.4;
             }
           }
@@ -1476,7 +1493,7 @@ const bannerData = {
 
   .amotioRetinae_text_p_span {
     font-family: 'Noto Sans HK';
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 400;
     font-stretch: normal;
     letter-spacing: 0px;
@@ -1498,16 +1515,24 @@ const bannerData = {
   }
 
   .amotioRetinae_title_text_bg {
-    background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png')
-      no-repeat;
-    background-size: 100%;
+    // background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png')
+    //   no-repeat;
+    // background-size: 100%;
     width: 100%;
     height: auto;
-    min-height: 54px;
+    min-height: 58px;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    &::before,
+    &::after {
+      border-radius: 32px 0 32px 0;
+    }
+    &::after {
+      bottom: -4px;
+      left: -4px;
+    }
     &.amotioRetinae_title_text_bg-en {
       font-size: 16px;
     }
