@@ -56,6 +56,30 @@ const meetArr = [
     agree:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_agree4',
   },
+  {
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_title5',
+    agree:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_agree5',
+  },
+  {
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_title6',
+    agree:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_agree6',
+  },
+  {
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_title7',
+    agree:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_agree7',
+  },
+  {
+    title:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_title8',
+    agree:
+      'pages.medical_service.service_glaucoma_title.service_glaucoma_meetArr.meetArr_agree8',
+  },
 ]
 const symptoms = [
   {
@@ -750,7 +774,7 @@ const bannerData = {
         <div></div>
       </div>
       <!-- 青光眼的類別 -->
-      <div id="category">
+      <div id="category" class="types">
         <div>
           {{
             $t(
@@ -758,8 +782,11 @@ const bannerData = {
             )
           }}
         </div>
+        <p class="text-base lg:text-2xl text-[#515151] mb-10 lg:mb-35">
+          {{ $t('pages.medical_service.glaucoma_intro.types') }}
+        </p>
         <!-- 慢性青光眼 -->
-        <div>
+        <div class="glaucoma-type-item">
           <div>
             <div>
               <div>Chronic Glaucoma</div>
@@ -795,7 +822,7 @@ const bannerData = {
           </div>
         </div>
         <!-- 急性青光眼 -->
-        <div>
+        <div class="glaucoma-type-item">
           <div>
             <div>
               <div>Acute Glaucoma</div>
@@ -833,22 +860,6 @@ const bannerData = {
           </div>
         </div>
         <!-- button -->
-        <!-- <div @click="callTel()">
-          <div>
-            {{
-              $t(
-                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn3_1'
-              )
-            }}
-          </div>
-          <div>
-            {{
-              $t(
-                'pages.medical_service.service_glaucoma_title.service_glaucoma_btn3_2'
-              )
-            }}
-          </div>
-        </div> -->
         <div class="serviceBtnStyle">
           <service-button-icon
             :str="
@@ -866,7 +877,7 @@ const bannerData = {
           />
         </div>
         <!-- 先天性青光眼 -->
-        <div>
+        <div class="glaucoma-type-item">
           <div>
             <div>
               <div>Congenital Glaucoma</div>
@@ -936,7 +947,7 @@ const bannerData = {
           </div>
         </div>
         <!-- 原發性青光眼 -->
-        <div>
+        <div class="glaucoma-type-item">
           <div>
             <div>
               <div>Primary Glaucoma</div>
@@ -981,7 +992,7 @@ const bannerData = {
           </div>
         </div>
         <!-- 先天性青光眼 -->
-        <div>
+        <div class="glaucoma-type-item">
           <div>
             <div>
               <div>Secondary Glaucoma</div>
@@ -1076,7 +1087,7 @@ const bannerData = {
         </div>
       </div>
       <!-- 青光眼高危人士 -->
-      <div id="crowd">
+      <div id="crowd" class="highrisk">
         <div>
           {{
             $t(
@@ -1084,8 +1095,15 @@ const bannerData = {
             )
           }}
         </div>
-        <div>
-          <div v-for="(item, index) in crowd" :key="index">
+        <p class="text-base lg:text-2xl text-[#515151] mt-5 lg:mt-12">
+          {{ $t('pages.medical_service.glaucoma_intro.highrisk') }}
+        </p>
+        <div class="highrisk-list">
+          <div
+            v-for="(item, index) in crowd"
+            :key="index"
+            class="highrisk-item"
+          >
             <div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -1248,7 +1266,7 @@ const bannerData = {
         </div>
       </div>
       <!-- 預防青光眼 -->
-      <div id="guardAgainst">
+      <div id="guardAgainst" class="prevention">
         <div>
           {{
             $t(
@@ -1256,6 +1274,9 @@ const bannerData = {
             )
           }}
         </div>
+        <p class="text-base lg:text-2xl text-[#515151] mt-5 lg:mt-12">
+          {{ $t('pages.medical_service.glaucoma_intro.prevention') }}
+        </p>
         <div>
           <div>
             <div v-for="item in guardAgainst" :key="item.id">
@@ -1713,84 +1734,17 @@ const bannerData = {
     }
   }
   // 青光眼的類別
-  & > div:nth-child(5) {
+  & > .types {
     & > div:nth-of-type(1) {
       text-align: center;
       font-size: 52px;
       font-weight: normal;
       font-stretch: normal;
-      margin-bottom: 100px;
+      margin-bottom: 40px;
       letter-spacing: 0px;
       color: #58a49f;
     }
-    & > div:nth-child(2) {
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      position: relative;
-      & > div:nth-child(1) {
-        width: 446px;
-        height: 340px;
-        background-image: linear-gradient(#a1d7cf, #a1d7cf),
-          linear-gradient(#f2f2f2, #f2f2f2);
-        background-blend-mode: normal, normal;
-        border-radius: 10px;
-        position: absolute;
-        top: -50px;
-        left: 0;
-        z-index: 1;
-        writing-mode: vertical-lr;
-        & > div {
-          margin-top: 50px;
-          margin-left: 37px;
-          & > div:nth-child(1) {
-            font-family: 'Metropolis-Regular';
-            font-size: 20px;
-            font-weight: normal;
-            font-stretch: normal;
-            letter-spacing: 0px;
-            color: #ffffff;
-          }
-          & > div:nth-child(2) {
-            font-family: 'NotoSansHK-Medium';
-            font-size: 42px;
-            font-weight: normal;
-            font-stretch: normal;
-            line-height: 38px;
-            letter-spacing: 2px;
-            color: #ffffff;
-          }
-        }
-      }
-      & > div:nth-child(2) {
-        width: 1050px;
-        height: 350px;
-        background-image: linear-gradient(#ffffff, #ffffff),
-          linear-gradient(#f2f2f2, #f2f2f2);
-        background-blend-mode: normal, normal;
-        box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.29);
-        border-radius: 10px;
-        z-index: 3;
-        position: relative;
-        right: 0;
-        display: flex;
-        align-items: center;
-        padding: 36px 40px;
-        & > div:nth-child(1) {
-          width: calc(100% - 280px);
-          margin-right: 26px;
-          font-family: 'Noto Sans HK';
-          font-size: 24px;
-          font-weight: normal;
-          font-stretch: normal;
-          line-height: 44px;
-          letter-spacing: 0px;
-          color: #515151;
-        }
-      }
-    }
     & > div:nth-child(3) {
-      margin-top: 150px;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
@@ -1857,42 +1811,76 @@ const bannerData = {
       }
     }
     & > div:nth-child(4) {
-      // cursor: pointer;
-      margin: 100px auto;
-      // width: 508px;
-      // height: 140px;
-      // background-blend-mode: normal, normal;
-      // border-radius: 20px;
-      // font-family: 'Noto Sans HK';
-      // font-size: 32px;
-      // font-weight: normal;
-      // font-stretch: normal;
-      // line-height: 50px;
-      // letter-spacing: 0px;
-      // color: #ffffff;
-      // display: flex;
-      // flex-direction: column;
-      // align-items: center;
-      // justify-content: center;
-      // position: relative;
-      // overflow: hidden;
-      // -webkit-backface-visibility: hidden;
-      // -webkit-transform: translate3d(0, 0, 0);
-      // text-shadow: 0 2px 5px rgba($color: #000000, $alpha: .5);
-      // &::before {
-      //   content: "";
-      //   position: absolute;
-      //   top: -100%;
-      //   left: -100%;
-      //   bottom: -100%;
-      //   right: -100%;
-      //   background: linear-gradient(45deg,  #F6BDCE 0%, #F8E5C9 100%);
-      //   background-size: 100% 100%;
-      //   animation: bgposition 5s infinite linear alternate;
-      //   z-index: -1;
-      // }
+      margin-top: 150px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      position: relative;
+      & > div:nth-child(1) {
+        width: 446px;
+        height: 340px;
+        background-image: linear-gradient(#a1d7cf, #a1d7cf),
+          linear-gradient(#f2f2f2, #f2f2f2);
+        background-blend-mode: normal, normal;
+        border-radius: 10px;
+        position: absolute;
+        top: -50px;
+        left: 0;
+        z-index: 1;
+        writing-mode: vertical-lr;
+        & > div {
+          margin-top: 50px;
+          margin-left: 37px;
+          & > div:nth-child(1) {
+            font-family: 'Metropolis-Regular';
+            font-size: 20px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #ffffff;
+          }
+          & > div:nth-child(2) {
+            font-family: 'NotoSansHK-Medium';
+            font-size: 42px;
+            font-weight: normal;
+            font-stretch: normal;
+            line-height: 38px;
+            letter-spacing: 2px;
+            color: #ffffff;
+          }
+        }
+      }
+      & > div:nth-child(2) {
+        width: 1050px;
+        height: 350px;
+        background-image: linear-gradient(#ffffff, #ffffff),
+          linear-gradient(#f2f2f2, #f2f2f2);
+        background-blend-mode: normal, normal;
+        box-shadow: 3px 4px 10px 0px rgba(0, 0, 0, 0.29);
+        border-radius: 10px;
+        z-index: 3;
+        position: relative;
+        right: 0;
+        display: flex;
+        align-items: center;
+        padding: 36px 40px;
+        & > div:nth-child(1) {
+          width: calc(100% - 280px);
+          margin-right: 26px;
+          font-family: 'Noto Sans HK';
+          font-size: 24px;
+          font-weight: normal;
+          font-stretch: normal;
+          line-height: 44px;
+          letter-spacing: 0px;
+          color: #515151;
+        }
+      }
     }
     & > div:nth-child(5) {
+      margin: 100px auto;
+    }
+    & > div:nth-child(6) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -2037,7 +2025,7 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(6) {
+    & > div:nth-child(7) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -2106,7 +2094,7 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(7) {
+    & > div:nth-child(8) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -2280,7 +2268,7 @@ const bannerData = {
     }
   }
   // 青光眼高危人士
-  & > div:nth-child(6) {
+  .highrisk {
     & > div:nth-child(1) {
       font-family: 'NotoSansHK-Bold';
       font-size: 52px;
@@ -2291,7 +2279,7 @@ const bannerData = {
       color: #58a49f;
       text-align: center;
     }
-    & > div:nth-child(2) {
+    .highrisk-list {
       margin-top: 87px;
       display: flex;
       flex-wrap: wrap;
@@ -2575,7 +2563,7 @@ const bannerData = {
     }
   }
   // 預防青光眼
-  & > div:nth-child(9) {
+  .prevention {
     & > div:nth-child(1) {
       font-family: 'NotoSansHK-Bold';
       font-size: 52px;
@@ -2586,7 +2574,7 @@ const bannerData = {
       color: #58a49f;
       text-align: center;
     }
-    & > div:nth-child(2) {
+    & > div:nth-child(3) {
       margin-top: 150px;
       display: flex;
       justify-content: space-between;
@@ -2915,7 +2903,7 @@ const bannerData = {
 @media screen and (max-width: 768px) {
   .glaucoma-in {
     transform: scale(1);
-   // margin: 30px 0 0;
+    // margin: 30px 0 0;
     & > div {
       padding-top: 0px;
     }
@@ -3067,14 +3055,14 @@ const bannerData = {
         // border-radius: 10px;
       }
     }
-    & > div:nth-child(5) {
+    & > .types {
       width: calc(100% - 60px);
       margin: 70px auto 0;
       & > div:nth-child(1) {
         font-size: 24px;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
       }
-      & > div:nth-child(2) {
+      & > div:nth-child(3) {
         flex-direction: column;
         & > div:nth-child(1) {
           top: 0;
@@ -3123,7 +3111,7 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(3) {
+      & > div:nth-child(4) {
         margin-top: 90px;
         flex-direction: column;
         & > div:nth-child(1) {
@@ -3171,17 +3159,10 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(4) {
-        // width: max-content;
-        // height: auto;
-        // padding: 0 30px;
-        // line-height: 1.6;
-        // font-size: 18px;
-        margin-top: 50px;
-        // padding: 10px 40px 5px;
-        // border-radius: 10px;
-      }
       & > div:nth-child(5) {
+        margin-top: 50px;
+      }
+      & > div:nth-child(6) {
         margin-top: 90px;
         flex-direction: column;
         & > div:nth-child(1) {
@@ -3275,7 +3256,7 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(6) {
+      & > div:nth-child(7) {
         margin-top: 90px;
         flex-direction: column;
         & > div:nth-child(1) {
@@ -3325,7 +3306,7 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(7) {
+      & > div:nth-child(8) {
         margin-top: 90px;
         flex-direction: column;
         & > div:nth-child(1) {
@@ -3414,14 +3395,14 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(6) {
+    .highrisk {
       width: calc(100% - 60px);
       margin: 20px auto 0;
       & > div:nth-child(1) {
         font-size: 24px;
         margin-bottom: 30px;
       }
-      & > div:nth-child(2) {
+      .highrisk-list {
         margin-top: 40px;
         & > div:nth-child(n + 5) {
           margin-top: 0px;
@@ -3579,14 +3560,14 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(9) {
+    .prevention {
       width: calc(100% - 60px);
       margin: 70px auto 0;
       & > div:nth-child(1) {
         font-size: 24px;
         margin-bottom: 30px;
       }
-      & > div:nth-child(2) {
+      & > div:nth-child(3) {
         margin-top: 50px;
         flex-direction: column;
         & > div:nth-child(1) {
