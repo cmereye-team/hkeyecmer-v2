@@ -209,6 +209,21 @@ const prevent = [
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt5',
   },
 ]
+// 常見問題
+const meetArr = [
+  {
+    title: 'pages.medical_service.conjunctivitis_con.faq.q1',
+    agree: 'pages.medical_service.conjunctivitis_con.faq.a1',
+  },
+  {
+    title: 'pages.medical_service.conjunctivitis_con.faq.q2',
+    agree: 'pages.medical_service.conjunctivitis_con.faq.a2',
+  },
+  {
+    title: 'pages.medical_service.conjunctivitis_con.faq.q3',
+    agree: 'pages.medical_service.conjunctivitis_con.faq.a3',
+  },
+]
 // 内部导航
 const serviceNavigation = [
   {
@@ -238,6 +253,10 @@ const serviceNavigation = [
   {
     anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name7',
     anchorLink: '/medical-service/conjunctivitis#prevent',
+  },
+  {
+    anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name8',
+    anchorLink: '/medical-service/conjunctivitis#faq',
   },
 ]
 // 跳转Whatsapp
@@ -346,7 +365,10 @@ const bannerData = {
         <div class="conjun_text_color">
           {{ $t('pages.medical_service.conjunctivitis_con.kind.name') }}
         </div>
-        <div>
+        <p class="mt-6 lg:mt-12 text-base lg:text-2xl text-[#6a6e8e]">
+          {{ $t('pages.medical_service.conjunctivitis_con.kind.intro') }}
+        </p>
+        <div class="kind-list">
           <div v-for="(item, index) in kind" :key="index">
             <div>
               <div>
@@ -514,7 +536,10 @@ const bannerData = {
         <div class="conjun_text_color">
           {{ $t('pages.medical_service.conjunctivitis_con.prevent.name') }}
         </div>
-        <div>
+        <p class="text-base lg:text-2xl text-[#515151] mt-6 lg:mt-15">
+          {{ $t('pages.medical_service.conjunctivitis_con.prevent.intro') }}
+        </p>
+        <div class="prevent-list">
           <div v-for="(item, i) in prevent" :key="i">
             <div>{{ $t(item.title) }}</div>
             <div>
@@ -526,6 +551,18 @@ const bannerData = {
             </div>
             <div>{{ $t(item.text) }}</div>
           </div>
+        </div>
+      </div>
+      <div id="faq">
+        <div class="conjun_text_color">
+          {{ $t('pages.medical_service.maculopathy_con.faq.name') }}
+        </div>
+        <div class="mt-8 lg:mt-20">
+          <PageCollapse
+            :answer="meetArr"
+            downarr="conjunctivitis"
+            :style="{ '--subassembly-color': '#545989' }"
+          />
         </div>
       </div>
     </div>
@@ -685,9 +722,9 @@ const bannerData = {
     }
   }
   // 結膜炎種類
-  & > div:nth-child(3) {
+  #kind {
     margin-top: 180px;
-    & > div:nth-child(2) {
+    .kind-list {
       margin-top: 200px;
       & > div {
         margin-bottom: 180px;
@@ -775,9 +812,7 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(3) {
-      // width: 580px;
-      // height: 140px;
+    .serviceBtnStyle {
       margin-top: 100px;
     }
   }
@@ -930,9 +965,9 @@ const bannerData = {
   }
 
   // 預防結膜炎
-  & > div:nth-child(7) {
+  #prevent {
     margin-top: 180px;
-    & > div:nth-child(2) {
+    .prevent-list {
       margin-top: 150px;
       margin-bottom: 266px;
       padding: 0 45px 0 49px;
@@ -1200,10 +1235,11 @@ const bannerData = {
         // padding: 0 50px;
       }
     }
-    & > div:nth-child(3) {
+    // 結膜炎種類
+    #kind {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      & > div:nth-child(2) {
+      .kind-list {
         margin-top: 50px;
         & > div {
           margin-bottom: 50px;
@@ -1258,13 +1294,8 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(3) {
+      .serviceBtnStyle {
         margin-top: 55px;
-        // width: max-content;
-        // height: 85px;
-        // font-size: 18px;
-        // line-height: 1.6;
-        // padding: 0 50px;
       }
     }
     // 傳播途徑
@@ -1384,10 +1415,10 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(7) {
+    #prevent {
       width: calc(100% - 60px);
       margin: 70px auto 0;
-      & > div:nth-child(2) {
+      .prevent-list {
         margin-top: 45px;
         margin-bottom: 0px;
         padding: 0;
@@ -1505,7 +1536,7 @@ const bannerData = {
     height: 2px;
   }
   .dow {
-    margin-top: 40px;
+    margin-top: 300px;
     margin-bottom: 100px;
     font-size: 16px;
     & > div:nth-child(1) {
@@ -1525,15 +1556,15 @@ const bannerData = {
     }
   }
 }
-</style>
-<style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .conjunctivitis_nav {
     margin-bottom: -40%;
   }
   .dow {
     margin-top: -25%;
+    margin-bottom: 400px;
     & > div:nth-child(1) {
+      transform: translateY(100px);
       & > div {
         & > div:nth-child(1) {
           margin-left: 32.2vw;
