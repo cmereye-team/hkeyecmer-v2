@@ -480,7 +480,7 @@ const bannerData = {
           {{ $t('pages.medical_service.conjunctivitis_con.highRisk.name') }}
         </div>
         <div>
-          <div>
+          <div class="md:mt-9 lg:mt-12">
             {{
               $t('pages.medical_service.conjunctivitis_con.highRisk.context')
             }}
@@ -553,7 +553,7 @@ const bannerData = {
           </div>
         </div>
       </div>
-      <div id="faq">
+      <div id="faq" class="px-4 xl:px-0">
         <div class="conjun_text_color">
           {{ $t('pages.medical_service.maculopathy_con.faq.name') }}
         </div>
@@ -1175,7 +1175,7 @@ const bannerData = {
     transform: scale(1);
     // margin: -80px 0 0;
     & > div:nth-child(1) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 0 auto;
       flex-direction: column;
       & > div:nth-child(1) {
@@ -1187,7 +1187,7 @@ const bannerData = {
           text-align: center;
         }
         & > div:nth-child(2) {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 1.8;
           margin-top: 20px;
         }
@@ -1210,7 +1210,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(2) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 100px auto 0;
       & > div:nth-child(2) {
         margin-top: 25px;
@@ -1237,7 +1237,7 @@ const bannerData = {
     }
     // 結膜炎種類
     #kind {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       .kind-list {
         margin-top: 50px;
@@ -1269,7 +1269,7 @@ const bannerData = {
           }
           & > div:nth-child(2) {
             margin-top: -30px;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.8;
             padding: 40px 15px 25px;
           }
@@ -1282,7 +1282,7 @@ const bannerData = {
             & > div:nth-child(3),
             & > div:nth-child(4),
             & > div:nth-child(5) {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               & > div > div:nth-child(1) {
                 font-size: 16px;
@@ -1300,17 +1300,17 @@ const bannerData = {
     }
     // 傳播途徑
     & > div:nth-child(4) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 35px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.8;
       }
       & > div:nth-child(3) {
         margin-top: 20px;
         & > div:nth-child(1) {
-          font-size: 14px;
+          font-size: 16px;
         }
         & > div:nth-child(2) {
           flex-direction: column;
@@ -1332,7 +1332,7 @@ const bannerData = {
               flex: 1;
               margin-left: -40px;
               padding: 10px 15px 5px 50px;
-              font-size: 13px;
+              font-size: 16px;
               line-height: 1.6;
               border-radius: 15px;
               border: 2px solid #e5e5e5;
@@ -1342,7 +1342,7 @@ const bannerData = {
         }
       }
       & > div:nth-child(4) {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.8;
         padding: 25px 20px 20px 30px;
         border-radius: 30px;
@@ -1365,11 +1365,11 @@ const bannerData = {
       }
     }
     & > div:nth-child(5) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         & > div:nth-child(1) {
-          font-size: 13px;
+          font-size: 16px;
           margin-top: 35px;
           line-height: 1.8;
         }
@@ -1379,7 +1379,7 @@ const bannerData = {
             width: calc(50% - 20px);
             margin-bottom: 50px;
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.6;
               margin-top: 15px;
               width: 120%;
@@ -1393,7 +1393,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(6) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 20px auto 0;
       & > div:nth-child(2) {
         & > div {
@@ -1405,7 +1405,7 @@ const bannerData = {
             margin-bottom: 10px;
           }
           & > div:nth-child(2) {
-            font-size: 14px;
+            font-size: 16px;
             margin-top: 5px;
             line-height: 1.8;
           }
@@ -1416,7 +1416,7 @@ const bannerData = {
       }
     }
     #prevent {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       .prevent-list {
         margin-top: 45px;
@@ -1443,7 +1443,7 @@ const bannerData = {
           }
           & > div:nth-child(3) {
             width: calc(100% - 25px);
-            font-size: 13px;
+            font-size: 16px;
             line-height: 1.7;
           }
         }
