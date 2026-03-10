@@ -377,7 +377,7 @@ const goWhatsApp = () => {
     '_blank'
   )
 }
-let windowWidth = ref(1920)
+const windowWidth = ref(1920)
 const getWindowWidth = () => {
   windowWidth.value = window.innerWidth
 }
@@ -385,7 +385,7 @@ onMounted(() => {
   getWindowWidth()
   window.addEventListener('resize', getWindowWidth)
 })
-let dialogVisible = ref(false)
+const dialogVisible = ref(false)
 const handleClose = (done: () => void) => {
   done()
   // ElMessageBox.confirm('Are you sure to close this dialog?')
@@ -664,7 +664,8 @@ const handleClose = (done: () => void) => {
         </div>
       </div>
     </div>
-    <feedback-con />
+    <!-- <feedback-con /> -->
+    <PageRating hasTitle />
     <FormFooterInfo
       :from-style="'margin: 0 232px'"
       :isShowTopTitle="windowWidth <= 768"

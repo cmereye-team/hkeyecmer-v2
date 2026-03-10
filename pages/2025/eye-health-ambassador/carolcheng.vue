@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-15 14:59:45
- * @LastEditTime: 2026-02-13 17:02:38
+ * @LastEditTime: 2026-03-10 16:14:34
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 眼睛健康大使-郑裕玲小姐
 -->
@@ -800,7 +800,8 @@ onBeforeUnmount(() => {
           來自GOOGLE平台的真實體驗分享
         </p>
       </div>
-      <Swiper
+      <PageRating />
+      <!-- <Swiper 
         :modules="[Autoplay]"
         :loop="true"
         :autoplay="{ delay: 0, disableOnInteraction: false }"
@@ -838,7 +839,7 @@ onBeforeUnmount(() => {
             </p>
           </article>
         </SwiperSlide>
-      </Swiper>
+      </Swiper> -->
     </section>
 
     <!-- 表單區域 -->

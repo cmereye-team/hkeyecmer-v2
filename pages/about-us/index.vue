@@ -112,7 +112,8 @@ const CORPORATE_Lists = [
         </div>
       </div>
       <AboutChildCompsMedicalEquipment />
-      <feedback-con />
+      <!-- <feedback-con /> -->
+      <PageRating hasTitle />
       <AboutChildCompsAwards />
       <PageFooterMenu />
     </div>
