@@ -4,8 +4,7 @@ definePageMeta({
   layout: 'page',
 })
 const activeNames = ref('1')
-const handleChange = (val: string) => {
-}
+const handleChange = (val: string) => {}
 const judgeActive = (data: any) => {
   return activeNames.value.indexOf(data)
 }
@@ -149,24 +148,20 @@ const props = defineProps({
 .downArrow1 {
   background-image: url(../../assets/images/+.png);
 }
-
 .downArrow2 {
   background-image: url(../../assets/images/-.png);
 }
-
 // cataract 白内障
 .cataract1 {
   background-image: url(../../assets/images/+.png);
 }
-
 .cataract2 {
   background-image: url(../../assets/images/-.png);
 }
-
+// 黄斑病变
 .maculopathy1 {
   background-image: url(../../assets/images/+maculopathy.png);
 }
-
 .maculopathy2 {
   background-image: url(../../assets/images/-maculopathy.png);
 }
@@ -174,31 +169,37 @@ const props = defineProps({
 .muscaeVolitantes1 {
   background-image: url(../../assets/images/+muscaeVolitantes.png);
 }
-
 .muscaeVolitantes2 {
   background-image: url(../../assets/images/-muscaeVolitantes.png);
 }
-
+// 青光眼
 .glaucoma1 {
   background-image: url(../../assets/images/+glaucoma.png);
 }
-
 .glaucoma2 {
   background-image: url(../../assets/images/-glaucoma.png);
 }
+// 视网膜脱落
 .amotioRetinae1 {
   background-image: url(../../assets/images/+amotioRetinae.png);
 }
 .amotioRetinae2 {
   background-image: url(../../assets/images/-amotioRetinae.png);
 }
-.ocularSurfaceDiseases1{
+.ocularSurfaceDiseases1 {
   background-image: url(../../assets/images/+ocularSurfaceDiseases.png);
 }
-.ocularSurfaceDiseases2{
+.ocularSurfaceDiseases2 {
   background-image: url(../../assets/images/-ocularSurfaceDiseases.png);
 }
-:deep(.el-collapse-item__content){
+// 结膜炎
+.conjunctivitis1 {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOCIgaGVpZ2h0PSIzOCIgdmlld0JveD0iMCAwIDM4IDM4IiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNMTkgMzhDMjkuNDkzNCAzOCAzOCAyOS40OTM0IDM4IDE5QzM4IDguNTA2NTkgMjkuNDkzNCAwIDE5IDBDOC41MDY1OSAwIDAgOC41MDY1OSAwIDE5QzAgMjkuNDkzNCA4LjUwNjU5IDM4IDE5IDM4WiIgZmlsbD0iI2MwYzBlNiIvPgogIDxwYXRoIGQ9Ik0xOC4wMDIgMzBDMTcuNDcxNSAzMCAxNi45NjI4IDI5Ljc4OTEgMTYuNTg3OCAyOS40MTQxQzE2LjIxMjcgMjkuMDM5IDE2LjAwMiAyOC41MzA0IDE2LjAwMiAyOFYyMkgxMC4wMDJDOS40NzE1MiAyMiA4Ljk2Mjg0IDIxLjc4OTEgOC41ODc3NyAyMS40MTQxQzguMjEyNyAyMS4wMzkgOC4wMDE5NSAyMC41MzA0IDguMDAxOTUgMjBWMThDOC4wMDE5NSAxNy40Njk2IDguMjEyNyAxNi45NjEgOC41ODc3NyAxNi41ODU5QzguOTYyODQgMTYuMjEwOSA5LjQ3MTUyIDE2IDEwLjAwMiAxNkgxNi4wMDJWMTBDMTYuMDAyIDkuNDY5NTcgMTYuMjEyNyA4Ljk2MTAxIDE2LjU4NzggOC41ODU5NEMxNi45NjI4IDguMjEwODYgMTcuNDcxNSA4IDE4LjAwMiA4SDIwLjAwMkMyMC41MzI0IDggMjEuMDQxMiA4LjIxMDg2IDIxLjQxNjMgOC41ODU5NEMyMS43OTEzIDguOTYxMDEgMjIuMDAyIDkuNDY5NTcgMjIuMDAyIDEwVjE2SDI4LjAwMkMyOC41MzI0IDE2IDI5LjA0MTIgMTYuMjEwOSAyOS40MTYzIDE2LjU4NTlDMjkuNzkxMyAxNi45NjEgMzAuMDAyIDE3LjQ2OTYgMzAuMDAyIDE4VjIwQzMwLjAwMiAyMC41MzA0IDI5Ljc5MTMgMjEuMDM5IDI5LjQxNjMgMjEuNDE0MUMyOS4wNDEyIDIxLjc4OTEgMjguNTMyNCAyMiAyOC4wMDIgMjJIMjIuMDAyVjI4QzIyLjAwMiAyOC41MzA0IDIxLjc5MTMgMjkuMDM5IDIxLjQxNjMgMjkuNDE0MUMyMS4wNDEyIDI5Ljc4OTEgMjAuNTMyNCAzMCAyMC4wMDIgMzBIMTguMDAyWiIgZmlsbD0iI0ZFRkZGRCIvPgo8L3N2Zz4=');
+}
+.conjunctivitis2 {
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzOCIgaGVpZ2h0PSIzOCIgdmlld0JveD0iMCAwIDM4IDM4IiBmaWxsPSJub25lIj4KICA8cGF0aCBkPSJNMTkgMzhDMjkuNDkzNCAzOCAzOCAyOS40OTM0IDM4IDE5QzM4IDguNTA2NTkgMjkuNDkzNCAwIDE5IDBDOC41MDY1OSAwIDAgOC41MDY1OSAwIDE5QzAgMjkuNDkzNCA4LjUwNjU5IDM4IDE5IDM4WiIgZmlsbD0iI2MwYzBlNiIvPgogIDxwYXRoIGQ9Ik0yNy45NDA0IDE1LjcxODhIOS45NDA0M0M4LjgzNTg2IDE1LjcxODggNy45NDA0MyAxNi42MTQyIDcuOTQwNDMgMTcuNzE4OFYxOS43MTg4QzcuOTQwNDMgMjAuODIzMyA4LjgzNTg2IDIxLjcxODggOS45NDA0MyAyMS43MTg4SDI3Ljk0MDRDMjkuMDQ1IDIxLjcxODggMjkuOTQwNCAyMC44MjMzIDI5Ljk0MDQgMTkuNzE4OFYxNy43MTg4QzI5Ljk0MDQgMTYuNjE0MiAyOS4wNDUgMTUuNzE4OCAyNy45NDA0IDE1LjcxODhaIiBmaWxsPSIjRkVGRkZEIi8+Cjwvc3ZnPg==');
+}
+:deep(.el-collapse-item__content) {
   padding-bottom: 50px;
 }
 @media screen and (max-width: 768px) {
@@ -206,7 +207,7 @@ const props = defineProps({
     height: 90px;
     font-size: 16px;
     line-height: 1.6;
-    i{
+    i {
       margin-left: 10px;
     }
   }

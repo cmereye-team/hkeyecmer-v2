@@ -209,6 +209,21 @@ const prevent = [
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt5',
   },
 ]
+// 常見問題
+const meetArr = [
+  {
+    title: 'pages.medical_service.conjunctivitis_con.faq.q1',
+    agree: 'pages.medical_service.conjunctivitis_con.faq.a1',
+  },
+  {
+    title: 'pages.medical_service.conjunctivitis_con.faq.q2',
+    agree: 'pages.medical_service.conjunctivitis_con.faq.a2',
+  },
+  {
+    title: 'pages.medical_service.conjunctivitis_con.faq.q3',
+    agree: 'pages.medical_service.conjunctivitis_con.faq.a3',
+  },
+]
 // 内部导航
 const serviceNavigation = [
   {
@@ -238,6 +253,10 @@ const serviceNavigation = [
   {
     anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name7',
     anchorLink: '/medical-service/conjunctivitis#prevent',
+  },
+  {
+    anchorName: 'pages.medical_service.conjunctivitis_con.navLists.name8',
+    anchorLink: '/medical-service/conjunctivitis#faq',
   },
 ]
 // 跳转Whatsapp
@@ -346,7 +365,10 @@ const bannerData = {
         <div class="conjun_text_color">
           {{ $t('pages.medical_service.conjunctivitis_con.kind.name') }}
         </div>
-        <div>
+        <p class="mt-6 lg:mt-12 text-base lg:text-2xl text-[#6a6e8e]">
+          {{ $t('pages.medical_service.conjunctivitis_con.kind.intro') }}
+        </p>
+        <div class="kind-list">
           <div v-for="(item, index) in kind" :key="index">
             <div>
               <div>
@@ -458,7 +480,7 @@ const bannerData = {
           {{ $t('pages.medical_service.conjunctivitis_con.highRisk.name') }}
         </div>
         <div>
-          <div>
+          <div class="md:mt-9 lg:mt-12">
             {{
               $t('pages.medical_service.conjunctivitis_con.highRisk.context')
             }}
@@ -514,7 +536,10 @@ const bannerData = {
         <div class="conjun_text_color">
           {{ $t('pages.medical_service.conjunctivitis_con.prevent.name') }}
         </div>
-        <div>
+        <p class="text-base lg:text-2xl text-[#515151] mt-6 lg:mt-15">
+          {{ $t('pages.medical_service.conjunctivitis_con.prevent.intro') }}
+        </p>
+        <div class="prevent-list">
           <div v-for="(item, i) in prevent" :key="i">
             <div>{{ $t(item.title) }}</div>
             <div>
@@ -526,6 +551,18 @@ const bannerData = {
             </div>
             <div>{{ $t(item.text) }}</div>
           </div>
+        </div>
+      </div>
+      <div id="faq" class="px-4 xl:px-0">
+        <div class="conjun_text_color">
+          {{ $t('pages.medical_service.maculopathy_con.faq.name') }}
+        </div>
+        <div class="mt-8 lg:mt-20">
+          <PageCollapse
+            :answer="meetArr"
+            downarr="conjunctivitis"
+            :style="{ '--subassembly-color': '#545989' }"
+          />
         </div>
       </div>
     </div>
@@ -685,9 +722,9 @@ const bannerData = {
     }
   }
   // 結膜炎種類
-  & > div:nth-child(3) {
+  #kind {
     margin-top: 180px;
-    & > div:nth-child(2) {
+    .kind-list {
       margin-top: 200px;
       & > div {
         margin-bottom: 180px;
@@ -775,9 +812,7 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(3) {
-      // width: 580px;
-      // height: 140px;
+    .serviceBtnStyle {
       margin-top: 100px;
     }
   }
@@ -930,9 +965,9 @@ const bannerData = {
   }
 
   // 預防結膜炎
-  & > div:nth-child(7) {
+  #prevent {
     margin-top: 180px;
-    & > div:nth-child(2) {
+    .prevent-list {
       margin-top: 150px;
       margin-bottom: 266px;
       padding: 0 45px 0 49px;
@@ -1140,7 +1175,7 @@ const bannerData = {
     transform: scale(1);
     // margin: -80px 0 0;
     & > div:nth-child(1) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 0 auto;
       flex-direction: column;
       & > div:nth-child(1) {
@@ -1152,7 +1187,7 @@ const bannerData = {
           text-align: center;
         }
         & > div:nth-child(2) {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 1.8;
           margin-top: 20px;
         }
@@ -1175,7 +1210,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(2) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 100px auto 0;
       & > div:nth-child(2) {
         margin-top: 25px;
@@ -1200,10 +1235,11 @@ const bannerData = {
         // padding: 0 50px;
       }
     }
-    & > div:nth-child(3) {
-      width: calc(100% - 60px);
+    // 結膜炎種類
+    #kind {
+      width: calc(100% - 32px);
       margin: 70px auto 0;
-      & > div:nth-child(2) {
+      .kind-list {
         margin-top: 50px;
         & > div {
           margin-bottom: 50px;
@@ -1233,7 +1269,7 @@ const bannerData = {
           }
           & > div:nth-child(2) {
             margin-top: -30px;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.8;
             padding: 40px 15px 25px;
           }
@@ -1246,7 +1282,7 @@ const bannerData = {
             & > div:nth-child(3),
             & > div:nth-child(4),
             & > div:nth-child(5) {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               & > div > div:nth-child(1) {
                 font-size: 16px;
@@ -1258,28 +1294,23 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(3) {
+      .serviceBtnStyle {
         margin-top: 55px;
-        // width: max-content;
-        // height: 85px;
-        // font-size: 18px;
-        // line-height: 1.6;
-        // padding: 0 50px;
       }
     }
     // 傳播途徑
     & > div:nth-child(4) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 35px;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.8;
       }
       & > div:nth-child(3) {
         margin-top: 20px;
         & > div:nth-child(1) {
-          font-size: 14px;
+          font-size: 16px;
         }
         & > div:nth-child(2) {
           flex-direction: column;
@@ -1301,7 +1332,7 @@ const bannerData = {
               flex: 1;
               margin-left: -40px;
               padding: 10px 15px 5px 50px;
-              font-size: 13px;
+              font-size: 16px;
               line-height: 1.6;
               border-radius: 15px;
               border: 2px solid #e5e5e5;
@@ -1311,7 +1342,7 @@ const bannerData = {
         }
       }
       & > div:nth-child(4) {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.8;
         padding: 25px 20px 20px 30px;
         border-radius: 30px;
@@ -1334,11 +1365,11 @@ const bannerData = {
       }
     }
     & > div:nth-child(5) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         & > div:nth-child(1) {
-          font-size: 13px;
+          font-size: 16px;
           margin-top: 35px;
           line-height: 1.8;
         }
@@ -1348,7 +1379,7 @@ const bannerData = {
             width: calc(50% - 20px);
             margin-bottom: 50px;
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.6;
               margin-top: 15px;
               width: 120%;
@@ -1362,7 +1393,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(6) {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 20px auto 0;
       & > div:nth-child(2) {
         & > div {
@@ -1374,7 +1405,7 @@ const bannerData = {
             margin-bottom: 10px;
           }
           & > div:nth-child(2) {
-            font-size: 14px;
+            font-size: 16px;
             margin-top: 5px;
             line-height: 1.8;
           }
@@ -1384,10 +1415,10 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(7) {
-      width: calc(100% - 60px);
+    #prevent {
+      width: calc(100% - 32px);
       margin: 70px auto 0;
-      & > div:nth-child(2) {
+      .prevent-list {
         margin-top: 45px;
         margin-bottom: 0px;
         padding: 0;
@@ -1412,7 +1443,7 @@ const bannerData = {
           }
           & > div:nth-child(3) {
             width: calc(100% - 25px);
-            font-size: 13px;
+            font-size: 16px;
             line-height: 1.7;
           }
         }
@@ -1505,7 +1536,7 @@ const bannerData = {
     height: 2px;
   }
   .dow {
-    margin-top: 40px;
+    margin-top: 300px;
     margin-bottom: 100px;
     font-size: 16px;
     & > div:nth-child(1) {
@@ -1525,15 +1556,15 @@ const bannerData = {
     }
   }
 }
-</style>
-<style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .conjunctivitis_nav {
     margin-bottom: -40%;
   }
   .dow {
     margin-top: -25%;
+    margin-bottom: 400px;
     & > div:nth-child(1) {
+      transform: translateY(100px);
       & > div {
         & > div:nth-child(1) {
           margin-left: 32.2vw;

@@ -592,10 +592,13 @@ const bannerData = {
         </div>
         <!-- 乾眼症的類別 -->
         <div id="category">
-          <div>
+          <div class="category-title">
             {{ $t('pages.medical_service.xerophthalmia_con.category.name') }}
           </div>
-          <div>
+          <p class="text-base lg:text-xl text-[#525280] mt-8 lg:mt-15">
+            {{ $t('pages.medical_service.xerophthalmia_con.category.intro') }}
+          </p>
+          <div class="category-list">
             <div v-for="(item, index) in category" :key="index">
               <div>
                 <img
@@ -617,7 +620,7 @@ const bannerData = {
                 xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAQAAACFdibLAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBQ8NHzi6ljvvAAAAe0lEQVQY013OsQ0CQQwF0RGbIRI4UkRKD9AARRDSF4I66ACJiB6ICIgPDcFqZe/Z2bP9ZcSjZ4tE49JRvWbG4kN7Rlz77LnOJtxyGt8sgTgEp0ccfKl6mRG1YwP8uMfe3q86eorMRA0PmSpOSHDhpyfBue+e6vnKbSb5A87Xw8Nh1W2mAAAAAElFTkSuQmCC" />
             </svg>
           </div> -->
-          <div class="serviceBtnStyle">
+          <div class="serviceBtnStyle mt-13 lg:mt-25">
             <service-button
               :str="$t('pages.medical_service.xerophthalmia_con.btn.name2')"
               :link="'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'"
@@ -660,29 +663,32 @@ const bannerData = {
         </div>
         <!-- 乾眼症的診斷 -->
         <div id="fourthly">
-          <div>
+          <div class="fourthly-title">
             {{ $t('pages.medical_service.xerophthalmia_con.fourthly.name') }}
           </div>
-          <div>
+          <div class="fourthly-main">
             <div>
               {{
                 $t('pages.medical_service.xerophthalmia_con.fourthly.context1')
               }}
             </div>
-            <div>
+            <div class="fourthly-subtitle lg:mt-45 mb-5 lg:mb-23">
               {{ $t('pages.medical_service.xerophthalmia_con.fourthly.name2') }}
             </div>
-            <div>
+            <p class="text-base lg:text-xl mt-5 lg:mt-12 text-[#525280]">
+              {{ $t('pages.medical_service.xerophthalmia_con.fourthly.intro') }}
+            </p>
+            <div class="fourthly-table">
               <div v-for="(item, index) in fourthly" :key="index">
                 <div v-for="(it, i) in item" :key="i">
                   <div>{{ $t(it) }}</div>
                 </div>
               </div>
             </div>
-            <div>
+            <div class="fourthly-subtitle lg:mt-25">
               {{ $t('pages.medical_service.xerophthalmia_con.fourthly.name3') }}
             </div>
-            <div>
+            <div class="fourthly-process">
               <div v-for="(item, i) in process" :key="i">
                 <div>
                   <div>setp</div>
@@ -692,7 +698,7 @@ const bannerData = {
               </div>
             </div>
             <!-- 常見診斷測試 -->
-            <div>
+            <div class="fourthly-check">
               <div>
                 {{
                   $t('pages.medical_service.xerophthalmia_con.fourthly.name4')
@@ -1065,7 +1071,10 @@ const bannerData = {
           <div>
             {{ $t('pages.medical_service.xerophthalmia_con.prevent.name') }}
           </div>
-          <div>
+          <p class="text-base lg:text-xl text-[#515151] mt-5 lg:mt-12 lg:pl-12">
+            {{ $t('pages.medical_service.xerophthalmia_con.prevent.intro') }}
+          </p>
+          <div class="prevent-list">
             <div v-for="(item, index) in prevent" :key="index">
               <div>{{ $t(item.title) }}</div>
               <div>{{ $t(item.text) }}</div>
@@ -1445,11 +1454,11 @@ const bannerData = {
       }
     }
   }
-
-  & > div:nth-child(5) {
+  // 種類
+  #category {
     margin-top: 180px;
 
-    & > div:nth-child(1) {
+    .category-title {
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
       font-weight: normal;
@@ -1460,7 +1469,7 @@ const bannerData = {
       text-align: center;
     }
 
-    & > div:nth-child(2) {
+    .category-list {
       margin-top: 80px;
       padding: 0 100px;
 
@@ -1641,11 +1650,11 @@ const bannerData = {
       // }
     }
   }
-
-  & > div:nth-child(7) {
+  // 診斷
+  #fourthly {
     margin-top: 154px;
 
-    & > div:nth-child(1) {
+    .fourthly-title {
       text-align: center;
       font-family: 'NotoSansHK-Bold';
       font-size: 36px;
@@ -1656,7 +1665,7 @@ const bannerData = {
       color: #525280;
     }
 
-    & > div:nth-child(2) {
+    .fourthly-main {
       margin-top: 60px;
 
       & > div:nth-child(1) {
@@ -1673,10 +1682,8 @@ const bannerData = {
         color: #525280;
       }
 
-      & > div:nth-child(2) {
-        margin-top: 180px;
+      .fourthly-subtitle {
         text-align: center;
-
         font-family: 'NotoSansHK-Bold';
         font-size: 36px;
         font-weight: normal;
@@ -1685,9 +1692,8 @@ const bannerData = {
         letter-spacing: 0px;
         color: #525280;
       }
-
-      & > div:nth-child(3) {
-        margin-top: 90px;
+      // 等級對比
+      .fourthly-table {
 
         & > div {
           background-image: linear-gradient(-90deg, #a9a6d2 0%, #ffffff 100%);
@@ -1740,20 +1746,8 @@ const bannerData = {
           font-family: 'NotoSansHK-Bold';
         }
       }
-
-      & > div:nth-child(4) {
-        margin-top: 100px;
-        text-align: center;
-        font-family: 'NotoSansHK-Bold';
-        font-size: 36px;
-        font-weight: normal;
-        font-stretch: normal;
-        line-height: 36px;
-        letter-spacing: 0px;
-        color: #525280;
-      }
-
-      & > div:nth-child(5) {
+      // 診斷過程
+      .fourthly-process {
         max-width: 1200px;
         margin: 0 auto;
         margin-top: 43px;
@@ -1835,8 +1829,8 @@ const bannerData = {
           border-right: solid 2px #dbd9d9;
         }
       }
-
-      & > div:nth-child(6) {
+      // 常見診斷測試
+      .fourthly-check {
         margin-top: 134px;
         padding-right: 30px;
 
@@ -2375,7 +2369,7 @@ const bannerData = {
     }
   }
   // 預防乾眼症
-  & > div:nth-child(9) {
+  #prevent {
     margin-top: 180px;
 
     & > div:nth-child(1) {
@@ -2389,7 +2383,7 @@ const bannerData = {
       color: #525280;
     }
 
-    & > div:nth-child(2) {
+    .prevent-list {
       margin-top: 71px;
       padding-left: 46px;
 
@@ -2474,16 +2468,16 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(7) {
-      & > div:nth-child(2) {
-        & > div:nth-child(5) {
+    #fourthly {
+      .fourthly-main {
+        .fourthly-process {
           margin-top: 60px;
           & > div {
             height: auto;
             padding-bottom: 30px;
           }
         }
-        & > div:nth-child(6) {
+        .fourthly-check {
           & > div:nth-child(2) {
             & > div:nth-child(1) {
               & > div {
@@ -2498,7 +2492,7 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(8) {
+    #means {
       & > div:nth-child(3) {
         & > div:nth-child(8) {
           margin-top: 150px;
@@ -2939,16 +2933,16 @@ const bannerData = {
         }
       }
     }
-
-    & > div:nth-child(5) {
+    // 種類
+    #category {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
-      & > div:nth-child(1) {
+      .category-title {
         font-size: 24px;
       }
 
-      & > div:nth-child(2) {
+      .category-list {
         margin-top: 40px;
         padding: 0;
 
@@ -3036,16 +3030,16 @@ const bannerData = {
       }
     }
 
-    & > div:nth-child(7) {
+    #fourthly {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
-      & > div:nth-child(1) {
+      .fourthly-title {
         font-size: 24px;
         margin-top: 0;
       }
 
-      & > div:nth-child(2) {
+      .fourthly-main {
         margin-top: 20px;
 
         & > div:nth-child(1) {
@@ -3054,13 +3048,12 @@ const bannerData = {
           line-height: 2;
         }
 
-        & > div:nth-child(2) {
+        .fourthly-subtitle {
           font-size: 22px;
           margin-top: 50px;
         }
 
-        & > div:nth-child(3) {
-          margin-top: 20px;
+        .fourthly-table {
 
           & > div {
             margin-top: 5px;
@@ -3100,12 +3093,7 @@ const bannerData = {
           }
         }
 
-        & > div:nth-child(4) {
-          font-size: 22px;
-          margin-top: 50px;
-        }
-
-        & > div:nth-child(5) {
+        .fourthly-process {
           margin-top: 25px;
           flex-direction: column;
 
@@ -3164,7 +3152,7 @@ const bannerData = {
           }
         }
 
-        & > div:nth-child(6) {
+        .fourthly-check {
           margin-top: 50px;
           padding-right: 0;
 
@@ -3275,20 +3263,11 @@ const bannerData = {
       }
 
       & > div:nth-child(3) {
-        // width: max-content;
-        // font-size: 18px;
-        // padding: 0 30px;
-        // height: 50px;
-        // line-height: 20px;
         margin-top: 20px;
-
-        // &>svg {
-        //   margin-top: 0;
-        // }
       }
     }
 
-    & > div:nth-child(8) {
+    #means {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
@@ -3526,7 +3505,7 @@ const bannerData = {
       }
     }
 
-    & > div:nth-child(9) {
+    #prevent {
       width: calc(100% - 60px);
       margin: 70px auto 0;
 
@@ -3534,7 +3513,7 @@ const bannerData = {
         font-size: 24px;
       }
 
-      & > div:nth-child(2) {
+      .prevent-list {
         margin-top: 35px;
         padding-left: 0;
 
@@ -3602,7 +3581,7 @@ const bannerData = {
           padding: 0 10px;
         }
       }
-      & > div:nth-child(8) {
+      #means {
         & > div:nth-child(3) {
           & > div:nth-child(5) {
             & > div:nth-child(2) {
@@ -3660,8 +3639,6 @@ const bannerData = {
     }
   }
 }
-</style>
-<style lang="scss" scoped>
 @media screen and (min-width: 1920px) {
   .dow {
     margin-top: -30%;
