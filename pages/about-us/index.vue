@@ -5,8 +5,10 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
-  title: `${t('pages.about_us.center_profile')} | ${t('pages.about_us.about_us')}｜${t('pages.index.title')}`,
-  meta(){
+  title: `${t('pages.about_us.center_profile')} | ${t(
+    'pages.about_us.about_us'
+  )}｜${t('pages.index.title')}`,
+  meta() {
     return [
       {
         hid: 'description1',
@@ -39,24 +41,22 @@ useHead(() => ({
         content: t('tdk.about-us.key3'),
       },
     ]
-  }
+  },
 }))
-
-
 
 const CORPORATE_Lists = [
   {
     name: 'pages.about_us.enterprise_vision_con.name3_1',
-    text: 'pages.about_us.enterprise_vision_con.text3_1'
+    text: 'pages.about_us.enterprise_vision_con.text3_1',
   },
   {
     name: 'pages.about_us.enterprise_vision_con.name3_2',
-    text: 'pages.about_us.enterprise_vision_con.text3_2'
+    text: 'pages.about_us.enterprise_vision_con.text3_2',
   },
   {
     name: 'pages.about_us.enterprise_vision_con.name3_3',
-    text: 'pages.about_us.enterprise_vision_con.text3_3'
-  }
+    text: 'pages.about_us.enterprise_vision_con.text3_3',
+  },
 ]
 </script>
 
@@ -82,19 +82,29 @@ const CORPORATE_Lists = [
           </div>
           <div class="CORPORATE_VISION-in-content">
             <div>
-              <div class="name">{{$t('pages.about_us.enterprise_vision_con.name1')}}</div>
-              <div class="text">{{$t('pages.about_us.enterprise_vision_con.text1')}}</div>
+              <div class="name">
+                {{ $t('pages.about_us.enterprise_vision_con.name1') }}
+              </div>
+              <div class="text">
+                {{ $t('pages.about_us.enterprise_vision_con.text1') }}
+              </div>
             </div>
             <div>
-              <div class="name">{{$t('pages.about_us.enterprise_vision_con.name2')}}</div>
-              <div class="text">{{$t('pages.about_us.enterprise_vision_con.text2')}}</div>
+              <div class="name">
+                {{ $t('pages.about_us.enterprise_vision_con.name2') }}
+              </div>
+              <div class="text">
+                {{ $t('pages.about_us.enterprise_vision_con.text2') }}
+              </div>
             </div>
             <div>
-              <div class="name">{{$t('pages.about_us.enterprise_vision_con.name3')}}</div>
+              <div class="name">
+                {{ $t('pages.about_us.enterprise_vision_con.name3') }}
+              </div>
               <div class="textLists">
-                <div v-for="(item,index) in CORPORATE_Lists" :key="index">
-                  <div>{{$t(item.name)}}</div>
-                  <div>{{$t(item.text)}}</div>
+                <div v-for="(item, index) in CORPORATE_Lists" :key="index">
+                  <div>{{ $t(item.name) }}</div>
+                  <div>{{ $t(item.text) }}</div>
                 </div>
               </div>
             </div>
@@ -129,20 +139,20 @@ const CORPORATE_Lists = [
   position: relative;
 }
 @keyframes textbgAnim {
-  0%{
+  0% {
     left: 100%;
-    transform: translateX(0)
+    transform: translateX(0);
   }
-  100%{
+  100% {
     left: 0;
     transform: translateX(-100%);
   }
 }
-.CORPORATE_VISION{
+.CORPORATE_VISION {
   margin-top: 180px;
   position: relative;
   width: 100%;
-  &::before{
+  &::before {
     content: '';
     width: calc((100% - 1080px) / 2 + 580px);
     height: 294px;
@@ -151,7 +161,7 @@ const CORPORATE_Lists = [
     top: 0;
     right: 0;
   }
-  &::after{
+  &::after {
     content: '';
     background: #f2f2f2;
     position: absolute;
@@ -161,64 +171,64 @@ const CORPORATE_Lists = [
     height: 263px;
     background: url(https://static.cmereye.com/imgs/2023/07/7ec583c939090e3c.jpg);
   }
-  &-in{
+  &-in {
     position: relative;
-    &-title{
+    &-title {
       width: 100%;
       max-width: 960px;
       margin: 0 auto;
       z-index: 1;
-      :deep(h1){
+      :deep(h1) {
         width: max-content !important;
       }
     }
-    &-content{
+    &-content {
       width: 100%;
       max-width: 600px;
       margin: 62px auto 0;
-      &>div{
-        &:not(:first-child)>.name{
+      & > div {
+        &:not(:first-child) > .name {
           margin-top: 70px;
         }
-        .name{
+        .name {
           font-size: 28px;
           position: relative;
           margin-bottom: 25px;
           color: #515151;
-          &::after{
+          &::after {
             content: '';
             width: 72px;
             height: 2px;
-            background: #8AD8DD;
+            background: #8ad8dd;
             position: absolute;
             left: 0;
             bottom: 0;
           }
         }
-        .text{
+        .text {
           font-size: 20px;
           line-height: 1.6;
           color: #515151;
           font-family: initial;
         }
-        .textLists{
-          &>div{
+        .textLists {
+          & > div {
             margin-top: 70px;
-            &>div:nth-of-type(1){
+            & > div:nth-of-type(1) {
               color: #515151;
               font-size: 20px;
               font-style: normal;
               font-weight: 400;
               line-height: 28px;
               letter-spacing: 1px;
-              &::before{
+              &::before {
                 content: '>';
-                color: #8AD8DD;
+                color: #8ad8dd;
                 margin-right: 5px;
                 font-size: 24px;
               }
             }
-            &>div:nth-of-type(2){
+            & > div:nth-of-type(2) {
               color: #515151;
               font-size: 18px;
               font-style: normal;
@@ -240,25 +250,25 @@ const CORPORATE_Lists = [
     font-size: 50px;
     line-height: 160px;
   }
-  .CORPORATE_VISION{
+  .CORPORATE_VISION {
     margin-top: 0px;
     padding-top: 72px;
-    &-in{
-      &-title{
+    &-in {
+      &-title {
         width: calc(100% - 60px);
         margin: 0 auto;
       }
-      &-content{
+      &-content {
         width: calc(100% - 60px);
         margin: 37px auto 0;
-        &>div{
-          &:not(:first-child)>.name{
+        & > div {
+          &:not(:first-child) > .name {
             margin-top: 50px;
           }
-          .name{
+          .name {
             font-size: 19.8px;
             margin-bottom: 17.5px;
-            &::after{
+            &::after {
               content: '';
               width: 72px;
               height: 2px;
@@ -266,20 +276,20 @@ const CORPORATE_Lists = [
               bottom: 0;
             }
           }
-          .text{
+          .text {
             font-size: 14px;
           }
-          .textLists{
-            &>div{
+          .textLists {
+            & > div {
               margin-top: 40px;
-              &>div:nth-of-type(1){
+              & > div:nth-of-type(1) {
                 font-size: 14px;
-                &::before{
+                &::before {
                   font-size: 16px;
                   margin-right: 2px;
                 }
               }
-              &>div:nth-of-type(2){
+              & > div:nth-of-type(2) {
                 font-size: 12px;
                 margin-top: 5px;
                 margin-left: 30px;
@@ -289,10 +299,10 @@ const CORPORATE_Lists = [
         }
       }
     }
-    &::before{
+    &::before {
       display: none;
     }
-    &::after{
+    &::after {
       display: none;
     }
   }
