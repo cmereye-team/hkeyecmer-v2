@@ -1258,7 +1258,7 @@ const bannerData = {
             </div>
           </div>
         </div>
-        <div>
+        <div class="episcleritis-type">
           <div
             class="ocularSurfaceDiseases_title_text_bg ocularSurfaceDiseases_title_text"
           >
@@ -1268,7 +1268,7 @@ const bannerData = {
               )
             }}
           </div>
-          <div>
+          <div class="episcleritis-type-list">
             <div>
               <div>
                 <div>
@@ -2020,14 +2020,14 @@ const bannerData = {
                 }}
               </div>
             </div>
-            <div>
+            <div class="postoperation-table">
               <div v-for="(item, index) in keratoplastyList1" :key="index">
                 <div>{{ $t(item.therapy) }}</div>
                 <div>
                   <div v-if="Array.isArray(item.involve)">
-                    <div v-for="(ele, index) in item.involve" :key="index">
+                    <div v-for="(ele, key) in item.involve" :key="key">
                       <div v-if="Array.isArray(ele)">
-                        <div v-for="(e, index) in ele" :key="index">
+                        <div v-for="(e, i) in ele" :key="i">
                           {{ $t(e) }}
                         </div>
                       </div>
@@ -2038,9 +2038,13 @@ const bannerData = {
                 </div>
                 <div>
                   <div v-if="Array.isArray(item.postoperation)">
-                    <div v-for="(el, index) in item.postoperation" :key="index">
+                    <div
+                      v-for="(el, key) in item.postoperation"
+                      :key="key"
+                      class="postoperation-table-list"
+                    >
                       <div v-if="Array.isArray(el)">
-                        <div v-for="(e, index) in el" :key="index">
+                        <div v-for="(e, i) in el" :key="i">
                           {{ $t(e) }}
                         </div>
                       </div>
@@ -3406,7 +3410,12 @@ const bannerData = {
                   display: flex;
                   align-items: center;
                   justify-content: flex-start;
-                  // padding-left: 64px;
+                  @media screen and (min-width: 1024px) and (max-width: 1279px) {
+                    padding-left: 8%;
+                  }
+                  @media screen and (min-width: 1280px) {
+                    padding-left: 14%;
+                  }
                 }
               }
             }
@@ -3679,6 +3688,7 @@ const bannerData = {
   font-stretch: normal;
   letter-spacing: 0px;
   color: #515151;
+  text-align: justify;
 }
 
 .ocularSurfaceDiseases_title_text {
@@ -3769,7 +3779,7 @@ const bannerData = {
     transform: scale(1);
     // margin: 30px auto 0;
     & > #pterygium {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 0 auto 0;
       & > div:nth-child(2) {
         flex-direction: column;
@@ -3789,7 +3799,7 @@ const bannerData = {
             & > div {
               margin-bottom: 20px;
               width: 100%;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               height: 40px;
             }
@@ -3797,7 +3807,7 @@ const bannerData = {
           & > div:nth-child(2) {
             width: 100%;
             padding: 15px 12px;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.8;
             height: auto;
           }
@@ -3847,7 +3857,7 @@ const bannerData = {
             }
             & > div:nth-child(2) {
               padding: 25px 15px;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
             }
           }
@@ -3855,7 +3865,7 @@ const bannerData = {
       }
     }
     & > #blepharitis {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 30px auto 0;
       & > div:nth-child(2) {
         display: flex;
@@ -3880,13 +3890,13 @@ const bannerData = {
                 width: 22px;
                 height: 22px;
                 line-height: 22px;
-                font-size: 14px;
+                font-size: 16px;
                 min-width: 22px;
                 margin-right: 10px;
               }
               & > span:nth-child(2) {
                 line-height: 1.8;
-                font-size: 14px;
+                font-size: 16px;
               }
             }
           }
@@ -3910,7 +3920,7 @@ const bannerData = {
               width: 100%;
               padding: 0;
               margin: 12px 0 0;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
             }
           }
@@ -3931,7 +3941,7 @@ const bannerData = {
               }
             }
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               margin-top: 25px;
             }
@@ -3939,20 +3949,20 @@ const bannerData = {
           & > div::after {
             transform: rotate(90deg);
             background-size: 100% auto;
-            height: calc(100vw - 60px);
+            height: calc(100vw - 32px);
             right: 0;
             top: 100%;
             transform: rotate(90deg);
             transform-origin: top right;
             background-size: auto 100%;
             background-repeat: no-repeat;
-            height: calc(100vw - 60px);
+            height: calc(100vw - 32px);
           }
         }
       }
     }
     & > #keratitis {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 0 auto;
       & > div:nth-child(2) {
         margin-top: 30px;
@@ -3974,7 +3984,7 @@ const bannerData = {
         & > div:nth-child(2) {
           margin-top: 15px;
           line-height: 1.8;
-          font-size: 14px;
+          font-size: 16px;
           & > div:not(:first-child) {
             margin-top: 15px;
           }
@@ -3986,7 +3996,7 @@ const bannerData = {
           & > div {
             width: calc(50% - 15px);
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               margin-top: 10px;
               text-align: left;
@@ -4001,7 +4011,7 @@ const bannerData = {
           & > div {
             width: 100%;
             height: auto;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.8;
             margin-bottom: 20px;
             padding: 12px 15px;
@@ -4014,14 +4024,14 @@ const bannerData = {
       }
     }
     & > #iritis {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 50px auto 0;
       & > div:nth-child(2) {
         & > div:nth-child(2) {
           flex-direction: column;
           padding-left: 0;
           & > div:nth-child(1) {
-            font-size: 13px;
+            font-size: 16px;
             line-height: 1.8;
             padding: 5px 0 15px;
             & > div {
@@ -4050,13 +4060,13 @@ const bannerData = {
           flex-wrap: wrap;
           justify-content: center;
           & > div {
-            width: calc((100vw - 60px) / 4 - 10px);
-            height: calc((100vw - 60px) / 4 - 10px);
+            width: calc((100vw - 32px) / 4 - 10px);
+            height: calc((100vw - 32px) / 4 - 10px);
             margin: 0 5px 25px;
             background-size: 100% auto;
             background-repeat: no-repeat;
             line-height: 1.4;
-            font-size: 13px;
+            font-size: clamp(12px, 3.75vw, 16px);
           }
         }
       }
@@ -4073,7 +4083,7 @@ const bannerData = {
             height: auto;
             padding: 15px 20px;
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               margin-left: 10px;
               line-height: 1.8;
             }
@@ -4094,7 +4104,7 @@ const bannerData = {
             width: 100%;
             margin-top: 25px;
             height: auto;
-            font-size: 14px;
+            font-size: 16px;
             line-height: 1.8;
             padding: 25px 0;
             border-top: none;
@@ -4115,7 +4125,7 @@ const bannerData = {
       }
     }
     & > #episcleritis {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 15px;
@@ -4132,7 +4142,7 @@ const bannerData = {
             width: calc(33% - 20px);
             flex-direction: column;
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: clamp(12px, 3.75vw, 16px);
               line-height: 1.8;
               margin-left: 0;
             }
@@ -4162,7 +4172,7 @@ const bannerData = {
             }
             & > div:nth-child(2) {
               margin-left: 15px;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
             }
           }
@@ -4175,7 +4185,8 @@ const bannerData = {
           margin-top: 20px;
           margin-bottom: 30px;
           & > div {
-            width: 150px;
+            width: 45%;
+            max-width: 150px;
             height: 60px;
             background-size: 100% 100%;
             margin-bottom: 25px;
@@ -4203,9 +4214,10 @@ const bannerData = {
                 line-height: 40px;
                 font-size: 16px;
                 margin-bottom: 20px;
+                white-space: nowrap;
               }
               & > div:nth-child(2) {
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 1.8;
               }
             }
@@ -4213,7 +4225,7 @@ const bannerData = {
               width: 80%;
               margin: 25px auto 0;
               & > div {
-                font-size: 13px;
+                font-size: 16px;
                 line-height: 1.4;
               }
             }
@@ -4230,7 +4242,7 @@ const bannerData = {
           margin-bottom: 0;
           & > div:nth-child(1) {
             line-height: 1.8;
-            font-size: 14px;
+            font-size: 16px;
             padding-left: 0;
           }
           & > div:nth-child(2) {
@@ -4247,7 +4259,7 @@ const bannerData = {
                 height: 45px;
               }
               & > div:nth-child(2) {
-                font-size: 14px;
+                font-size: 16px;
                 line-height: 1.8;
                 text-align: center;
                 margin-top: 0;
@@ -4275,7 +4287,7 @@ const bannerData = {
       }
     }
     & > #damage {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div {
         & > div:nth-child(2) {
@@ -4289,7 +4301,7 @@ const bannerData = {
           margin-top: 20px;
         }
         & > div:nth-child(2) {
-          font-size: 14px;
+          font-size: 16px;
           line-height: 1.8;
           margin-left: 0;
         }
@@ -4298,7 +4310,8 @@ const bannerData = {
         & > div:nth-child(2) {
           margin: 20px auto 30px;
           & > div {
-            width: 155px;
+            width: 48%;
+            max-width: 155px;
             background: none;
             height: auto;
             padding: 10px 15px;
@@ -4306,7 +4319,7 @@ const bannerData = {
             border-radius: 15px;
             margin-bottom: 25px;
             & > span {
-              font-size: 12px;
+              font-size: 16px;
               background: #acd9c1;
               width: 30px;
               height: 20px;
@@ -4318,7 +4331,7 @@ const bannerData = {
               left: -4px;
             }
             & > div {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               text-align: left;
               p {
@@ -4344,7 +4357,7 @@ const bannerData = {
             & > div:nth-child(2) {
               width: 100%;
               height: auto;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               margin-left: -4px;
               border-radius: 0 10px 10px 0;
@@ -4430,7 +4443,7 @@ const bannerData = {
               width: 100%;
             }
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               margin-top: 15px;
             }
@@ -4442,7 +4455,7 @@ const bannerData = {
       }
     }
     & > #keratoconus {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         flex-direction: column;
@@ -4469,7 +4482,7 @@ const bannerData = {
               width: 80%;
             }
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               margin-top: 10px;
               line-height: 1.8;
             }
@@ -4498,7 +4511,7 @@ const bannerData = {
                   min-width: 25px;
                   height: 25px;
                   line-height: 25px;
-                  font-size: 14px;
+                  font-size: 16px;
                   margin-right: 1-px;
                 }
               }
@@ -4518,7 +4531,7 @@ const bannerData = {
               top: -18px;
               left: 15px;
               width: max-content;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 35px;
               height: 35px;
               padding: 0 40px;
@@ -4526,7 +4539,7 @@ const bannerData = {
             & > div:nth-child(2) {
               width: 100%;
               height: auto;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               padding: 30px 15px 20px;
             }
@@ -4535,7 +4548,7 @@ const bannerData = {
             & > div:nth-child(1) {
               width: max-content;
               padding: 0 10px;
-              font-size: 13px;
+              font-size: 16px;
             }
           }
 
@@ -4551,7 +4564,7 @@ const bannerData = {
       }
     }
     & > #keratoplasty {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 15px;
@@ -4575,7 +4588,7 @@ const bannerData = {
             & > div {
               width: 100%;
               height: auto;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               padding: 15px 25px;
               transform: scale(1);
@@ -4590,7 +4603,7 @@ const bannerData = {
               }
             }
             & > div:nth-child(2) {
-              font-size: 12px;
+              font-size: 16px;
               line-height: 1.8;
               margin-top: 10px;
             }
@@ -4632,7 +4645,7 @@ const bannerData = {
               line-height: 1.6;
             }
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
             }
           }
@@ -4644,7 +4657,7 @@ const bannerData = {
               line-height: 1.6;
             }
             & > div:nth-child(2) {
-              font-size: 14px;
+              font-size: 16px;
               line-height: 1.8;
               margin-bottom: 0;
             }
@@ -4663,29 +4676,29 @@ const bannerData = {
             }
             & > div:nth-child(1) {
               height: 40px;
-              font-size: 14px;
+              font-size: clamp(12px, 3.75vw, 16px);
             }
             & > div:nth-child(2) {
-              font-size: 12px;
+              font-size: clamp(12px, 3.75vw, 16px);
               height: auto;
               line-height: 1.8;
               & > div {
                 padding: 15px 0;
               }
               & > div:nth-child(1) {
-                font-size: 14px;
+                font-size: clamp(12px, 3.75vw, 16px);
                 text-align: center;
               }
             }
             & > div:nth-child(3) {
-              font-size: 12px;
+              font-size: clamp(12px, 3.75vw, 16px);
               line-height: 1.8;
               height: auto;
               & > div {
                 padding: 15px 0;
               }
               & > div:nth-child(1) {
-                font-size: 14px;
+                font-size: clamp(12px, 3.75vw, 16px);
                 text-align: center;
               }
               & > div:nth-child(2) {
@@ -4709,10 +4722,10 @@ const bannerData = {
                   & > div:nth-child(1) {
                     height: 100px;
                   }
-                  & > div:nth-child(2) {
-                    height: 120px;
-                    padding-left: 5px;
-                  }
+                  // & > div:nth-child(2) {
+                  //   height: 120px;
+                  //   padding-left: 7%;
+                  // }
                 }
               }
             }
@@ -4721,8 +4734,8 @@ const bannerData = {
       }
     }
     & > #faq {
-      width: calc(100% - 60px);
-      margin: 70px auto 200px;
+      width: calc(100% - 32px);
+      margin: 70px auto 130vw;
       & > div:nth-child(2) {
         margin-top: 20px;
       }
@@ -4740,7 +4753,7 @@ const bannerData = {
               padding: 10% 10px 20% 45%;
             }
             & > div {
-              font-size: 12px;
+              font-size: 16px;
               line-height: 1.4;
             }
           }
@@ -4749,7 +4762,7 @@ const bannerData = {
           & > div:nth-child(2) {
             & > div {
               & > div:nth-child(2) {
-                font-size: 14px;
+                font-size: 16px;
                 padding: 25px 15px;
               }
             }
@@ -4796,7 +4809,7 @@ const bannerData = {
         & > div:nth-child(3) {
           & > div:nth-child(2) {
             & > div {
-              font-size: 12px;
+              font-size: 16px;
               line-height: 1.4;
             }
           }
@@ -4842,7 +4855,7 @@ const bannerData = {
           & > div:nth-child(2) {
             & > div {
               & > div {
-                font-size: 14px;
+                font-size: 16px;
               }
             }
           }
@@ -4854,7 +4867,7 @@ const bannerData = {
           & > div:nth-child(2) {
             & > div:nth-child(1) {
               & > div:nth-child(2) {
-                font-size: 14px;
+                font-size: 16px;
                 padding: 0 10px;
                 line-height: 1.4;
               }
@@ -4905,22 +4918,22 @@ const bannerData = {
             & > div:nth-child(3) {
               & > div:nth-child(1) {
                 line-height: 1.4;
-                font-size: 12px;
+                font-size: 16px;
                 text-align: center;
               }
               & > div:nth-child(2) {
                 & > div {
-                  font-size: 12px;
+                  font-size: 16px;
                   padding: 0;
                   &:nth-child(1) {
-                    font-size: 12px;
+                    font-size: 16px;
                   }
                 }
               }
               & > div:nth-child(3) {
-                font-size: 12px;
+                font-size: 16px;
                 & > div:nth-child(1) {
-                  font-size: 12px;
+                  font-size: 16px;
                 }
                 & > div:nth-child(2) {
                   & > div:nth-child(1) {
@@ -4953,7 +4966,7 @@ const bannerData = {
     margin-top: 0;
   }
   .ocularSurfaceDiseases_text_p_span {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
   }
   .ocularSurfaceDiseases_title {
@@ -4973,10 +4986,16 @@ const bannerData = {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 359px) {
+  .episcleritis-type {
+    .ocularSurfaceDiseases_text_p_span {
+      padding-right: 12px;
+    }
+  }
+}
 @media screen and (min-width: 1980px) {
   .ocularSurfaceDiseases_nav {
     margin-bottom: -70%;
   }
 }
 </style>
-
