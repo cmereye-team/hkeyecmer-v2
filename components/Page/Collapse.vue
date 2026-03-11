@@ -41,7 +41,7 @@ const props = defineProps({
       </template>
       <div v-if="Array.isArray(item.agree)">
         <div class="a">{{ item.agree[0] ? 'A：' : '' }}</div>
-        <div class="answer">
+        <div class="answer space-y-5">
           <div v-for="(ele, i) in item.agree" :key="i">
             {{ $t(ele) }}
           </div>
@@ -49,7 +49,7 @@ const props = defineProps({
       </div>
       <div v-else>
         <span class="a">A：</span>
-        <span class="answer" v-html="$t(item.agree)"></span>
+        <span class="answer space-y-5" v-html="$t(item.agree)"></span>
       </div>
     </el-collapse-item>
   </el-collapse>
@@ -212,13 +212,6 @@ const props = defineProps({
     line-height: 1.6;
     color: #515151;
     padding-bottom: 25px;
-    & > div:nth-child(1) {
-      & > div:nth-child(2) {
-        & > div:nth-child(1) {
-          margin-bottom: 25px;
-        }
-      }
-    }
   }
 }
 </style>
