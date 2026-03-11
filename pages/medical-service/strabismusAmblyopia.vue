@@ -310,6 +310,29 @@ const serviceNavigation = [
     anchorName: 'pages.medical_service.strabismusAmblyopia_con.navLists.name6',
     anchorLink: '/medical-service/strabismusAmblyopia#treat',
   },
+  {
+    anchorName: 'pages.medical_service.strabismusAmblyopia_con.navLists.name7',
+    anchorLink: '/medical-service/strabismusAmblyopia#faq',
+  },
+]
+// 常見問題
+const meetArr = [
+  {
+    title: 'pages.medical_service.strabismusAmblyopia_con.faq.q1',
+    agree: 'pages.medical_service.strabismusAmblyopia_con.faq.a1',
+  },
+  {
+    title: 'pages.medical_service.strabismusAmblyopia_con.faq.q2',
+    agree: 'pages.medical_service.strabismusAmblyopia_con.faq.a2',
+  },
+  {
+    title: 'pages.medical_service.strabismusAmblyopia_con.faq.q3',
+    agree: 'pages.medical_service.strabismusAmblyopia_con.faq.a3',
+  },
+  {
+    title: 'pages.medical_service.strabismusAmblyopia_con.faq.q4',
+    agree: 'pages.medical_service.strabismusAmblyopia_con.faq.a4',
+  },
 ]
 // 跳转Whatsapp
 const goWhatsApp = () => {
@@ -476,7 +499,7 @@ const bannerData = {
           <div>
             {{ $t('pages.medical_service.strabismusAmblyopia_con.kind.name5') }}
           </div>
-          <div class="strabismusAmblyopia_text_p_span">
+          <div class="strabismusAmblyopia_text_p_span lg:mb-10">
             {{
               $t('pages.medical_service.strabismusAmblyopia_con.kind.context5')
             }}
@@ -501,7 +524,10 @@ const bannerData = {
         <div class="strabismusAmblyopia_title_text">
           {{ $t('pages.medical_service.strabismusAmblyopia_con.cure.name') }}
         </div>
-        <div>
+        <p class="text-base lg:text-2xl text-[#515151] mt-5 lg:mt-15">
+          {{ $t('pages.medical_service.strabismusAmblyopia_con.cure.intro') }}
+        </p>
+        <div class="cure-list">
           <div v-for="(item, index) in strabismusList5" :key="index">
             <div>{{ $t(item.title) }}</div>
             <div>
@@ -553,7 +579,14 @@ const bannerData = {
               )
             }}
           </div>
-          <div>
+          <p class="text-base lg:text-2xl text-[#515151] mt-5 lg:mt-15">
+            {{
+              $t(
+                'pages.medical_service.strabismusAmblyopia_con.amblyopia.intro'
+              )
+            }}
+          </p>
+          <div class="kind-list">
             <div v-for="(item, index) in amblyopiaList1" :key="index">
               <div>
                 <img
@@ -639,6 +672,18 @@ const bannerData = {
             'pages.medical_service.strabismusAmblyopia_con.curativeTime.context'
           )
         }}
+      </div>
+    </div>
+    <div id="faq" class="container px-4 xl:px-0 max-w-5xl mx-auto">
+      <div class="strabismusAmblyopia_title_text mb-5 lg:mb-15">
+        {{ $t('pages.medical_service.strabismusAmblyopia_con.faq.title') }}
+      </div>
+      <div>
+        <PageCollapse
+          :answer="meetArr"
+          :downarr="'amotioRetinae'"
+          :style="{ '--subassembly-color': '#d37f66' }"
+        />
       </div>
     </div>
     <div></div>
@@ -887,7 +932,7 @@ const bannerData = {
   }
 
   & > #cure {
-    & > div:nth-child(2) {
+    .cure-list {
       margin-top: 100px;
       display: flex;
       flex-wrap: wrap;
@@ -973,8 +1018,8 @@ const bannerData = {
       }
     }
 
-    & > div:nth-child(3) {
-      & > div:nth-child(2) {
+    #amblyopia_kind {
+      .kind-list {
         margin: 120px auto;
 
         & > div {
@@ -1141,8 +1186,8 @@ const bannerData = {
       }
     }
     & > #amblyopia {
-      & > div:nth-child(3) {
-        & > div:nth-child(2) {
+      #amblyopia_kind {
+        .kind-list {
           & > div {
             & > div:nth-child(2) {
               & > div:nth-child(1) {
@@ -1437,7 +1482,7 @@ const bannerData = {
     & > #cure {
       width: calc(100% - 60px);
       margin: 30px auto 0;
-      & > div:nth-child(2) {
+      .cure-list {
         margin-top: 35px;
 
         & > div {
@@ -1487,9 +1532,9 @@ const bannerData = {
           margin-left: 0;
         }
       }
-      & > div:nth-child(3) {
+      #amblyopia_kind {
         margin-top: 30px;
-        & > div:nth-child(2) {
+        .kind-list {
           margin: 35px auto 0;
           & > div {
             border: none;
@@ -1633,8 +1678,8 @@ const bannerData = {
         }
       }
       & > #amblyopia {
-        & > div:nth-child(3) {
-          & > div:nth-child(2) {
+        #amblyopia_kind {
+          .kind-list {
             & > div {
               & > div:nth-child(2) {
                 & > div:nth-child(1) {
@@ -1738,7 +1783,7 @@ const bannerData = {
 @media screen and (min-width: 1980px) {
   .strabismusAmblyopia_nav {
     & > #cure {
-      & > div:nth-child(2) {
+      .cure-list {
         & > div {
           width: 575px;
           & > div:nth-child(2) {
