@@ -1362,7 +1362,7 @@ const bannerData = {
     transform: scale(1);
     // margin: 30px 0 0;
     & > #strabismus {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 0 auto 0;
       & > div:nth-child(2) {
         line-height: 1.8;
@@ -1372,7 +1372,7 @@ const bannerData = {
       }
     }
     & > #kind {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         margin-top: 45px;
@@ -1480,7 +1480,7 @@ const bannerData = {
       }
     }
     & > #cure {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 30px auto 0;
       .cure-list {
         margin-top: 35px;
@@ -1514,7 +1514,7 @@ const bannerData = {
       }
     }
     & > #amblyopia {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 10px auto 0;
       & > div:nth-child(2) {
         margin: 25px 0 0;
@@ -1590,7 +1590,7 @@ const bannerData = {
       }
     }
     & > #treat {
-      width: calc(100% - 60px);
+      width: calc(100% - 32px);
       margin: 70px auto 0;
       & > div:nth-child(2) {
         background: url('https://static.cmereye.com/imgs/2023/07/24a18c74e1189515.jpg');
@@ -1702,8 +1702,8 @@ const bannerData = {
     }
   }
   #curativeTime {
-    width: calc(100% - 60px);
-    margin: 70px auto 0;
+    width: calc(100% - 32px);
+    margin: 180px auto 0;
     background: url('https://static.cmereye.com/imgs/2023/07/a5064687f337bf13.jpg');
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -1754,7 +1754,7 @@ const bannerData = {
     font-size: 24px;
   }
   .strabismusAmblyopia_text_p_span {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1.8;
   }
   .dow {
