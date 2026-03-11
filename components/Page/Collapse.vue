@@ -40,14 +40,17 @@ const props = defineProps({
         ></i>
       </template>
       <div v-if="Array.isArray(item.agree)">
-        <div>{{ item.agree[0] ? 'A：' : '' }}</div>
-        <div>
+        <div class="a">{{ item.agree[0] ? 'A：' : '' }}</div>
+        <div class="answer">
           <div v-for="(ele, i) in item.agree" :key="i">
             {{ $t(ele) }}
           </div>
         </div>
       </div>
-      <div v-else><span>A：</span><span v-html="$t(item.agree)"></span></div>
+      <div v-else>
+        <span class="a">A：</span>
+        <span class="answer" v-html="$t(item.agree)"></span>
+      </div>
     </el-collapse-item>
   </el-collapse>
 </template>
@@ -79,10 +82,6 @@ const props = defineProps({
   border-bottom: 2px solid var(--subassembly-color);
 }
 
-:deep(.el-collapse-item__wrap) {
-  // border-bottom: 2px solid var(--subassembly-color);
-}
-
 :deep(.el-collapse-item__header.is-active) {
   border-bottom-color: transparent;
 }
@@ -102,16 +101,10 @@ const props = defineProps({
     & > div:nth-child(1) {
       color: var(--subassembly-color);
     }
-
-    & > div:nth-child(2) {
-      & > div:nth-child(1) {
-        margin-bottom: 35px;
-      }
-    }
   }
 
   & > div {
-    & > span {
+    .a {
       color: var(--subassembly-color);
     }
   }
@@ -201,6 +194,9 @@ const props = defineProps({
 }
 :deep(.el-collapse-item__content) {
   padding-bottom: 50px;
+}
+.answer {
+  color: #515151;
 }
 @media screen and (max-width: 768px) {
   :deep(.el-collapse-item__header) {
