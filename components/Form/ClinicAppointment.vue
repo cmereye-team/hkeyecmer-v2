@@ -24,8 +24,8 @@
         <!-- 号码 -->
         <el-form-item prop="phone">
           <el-input
-            maxLength="12"
             v-model="ruleForm.phone"
+            maxlength="12"
             :placeholder="$t('components.footerInfo.placeholder2')"
             clearable
           />
@@ -40,26 +40,32 @@
           />
         </el-form-item>
         <!-- 获知渠道 -->
-        <el-form-item
-          class="flex-col items-start"
-          prop="type"
-        >
-          <el-select class="w-full" v-model="ruleForm.type" :placeholder="$t('components.footerInfo.label1One')">
-            <el-option v-for="serve in cities" :key="serve" :label="serve" :value="serve"></el-option>
+        <el-form-item class="flex-col items-start" prop="type">
+          <el-select
+            v-model="ruleForm.type"
+            class="w-full"
+            :placeholder="$t('components.footerInfo.label1One')"
+          >
+            <el-option
+              v-for="serve in cities"
+              :key="serve"
+              :label="serve"
+              :value="serve"
+            ></el-option>
           </el-select>
         </el-form-item>
       </el-form>
       <p class="form-text">{{ $t('components.footerInfo.infoText') }}</p>
       <div class="flex justify-center">
         <button class="form-submit" @click="submitForm(ruleFormRef)">
-        {{ $t('components.footerInfo.submitForm') }}
-      </button>
+          {{ $t('components.footerInfo.submitForm') }}
+        </button>
       </div>
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
-:deep(.el-form-item__content){
+:deep(.el-form-item__content) {
   width: 100%;
 }
 .form-text {
