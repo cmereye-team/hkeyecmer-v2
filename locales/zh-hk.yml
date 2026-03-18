@@ -23,7 +23,7 @@ components:
     placeholder2: 聯絡電話
     placeholder3: '電郵地址（可不填）'
     placeholder4: 預約日期
-    placeholder5: 訊息
+    placeholder5: 留言：我想了解...
     submitForm: 提交
     infoText: 我們將於10小時內確認您的預約
   menus:
