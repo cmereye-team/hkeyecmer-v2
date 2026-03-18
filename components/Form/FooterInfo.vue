@@ -64,7 +64,6 @@ const submitForm = async (formEl: FormInstance | undefined) => {
       postData()
       commitToCms()
       resetForm(formEl) // 成功提交清空表单内容
-    } else {
     }
   })
 }
@@ -182,27 +181,29 @@ defineProps({
     default:
       'https://statichk.cmermedical.com/opd/2025/index/09/01j8y4yx2h7p5d1kq4sm3r9n8g.webp',
   },
-  infoTextColor:{
-    type:String,
-    default:'#fff'
-  }
+  infoTextColor: {
+    type: String,
+    default: '#fff',
+  },
 })
 
 const disabledDate = (time: Date) => {
   // console.log(time.getTime(),Date.now())
-  return time.getTime() + 24 * 60 * 60 * 1000 < Date.now()
+  // return time.getTime() < Date.now() - 8.64e7
+  const today = new Date().setHours(0, 0, 0, 0)
+  return time.getTime() < today
 }
 </script>
 
 <template>
   <div class="form" :style="bg">
     <img class="formbgimg" :src="formbgimg" alt="" />
-    <div class="formTopTitle" v-if="isShowTopTitle">
+    <div v-if="isShowTopTitle" class="formTopTitle">
       <div>預約</div>
       <div>BOOKING</div>
     </div>
     <div>
-      <div :style="formTitleColor" v-show="!isShowTopTitle">
+      <div v-show="!isShowTopTitle" :style="formTitleColor">
         <div>{{ $t('components.footerInfo.text1') }}</div>
         <div>{{ $t('components.footerInfo.text2') }}</div>
       </div>
@@ -226,8 +227,8 @@ const disabledDate = (time: Date) => {
             </el-form-item>
             <el-form-item prop="phone">
               <el-input
-                maxLength="12"
                 v-model="ruleForm.phone"
+                maxlength="12"
                 :placeholder="$t('components.footerInfo.placeholder2')"
                 clearable
               />
@@ -248,10 +249,9 @@ const disabledDate = (time: Date) => {
                 :placeholder="$t('components.footerInfo.placeholder4')"
                 :size="'large'"
                 :editable="false"
-                @focus.prevent
                 :disabled-date="disabledDate"
+                @focus.prevent
               />
-
               <template #prev-year>
                 <span></span>
               </template>
@@ -290,8 +290,10 @@ const disabledDate = (time: Date) => {
             </el-form-item>
           </el-form>
         </div>
-        <div class="info_text" :style="{color:infoTextColor}">{{ $t('components.footerInfo.infoText') }}</div>
-        <div :style="co" id="submitForm" @click="submitForm(ruleFormRef)">
+        <div class="info_text" :style="{ color: infoTextColor }">
+          {{ $t('components.footerInfo.infoText') }}
+        </div>
+        <div id="submitForm" :style="co" @click="submitForm(ruleFormRef)">
           {{ $t('components.footerInfo.submitForm') }}
         </div>
       </div>

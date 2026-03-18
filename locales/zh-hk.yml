@@ -21,7 +21,7 @@ components:
     text2: 請留下聯絡方法，我們的客戶服務專員會透過 Email 或電話解答你。
     placeholder1: 姓名
     placeholder2: 聯絡電話
-    placeholder3: '電郵地址（選填）'
+    placeholder3: '電郵地址（可不填）'
     placeholder4: 預約日期
     placeholder5: 訊息
     submitForm: 提交
