@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-15 14:59:45
- * @LastEditTime: 2026-03-10 16:14:34
+ * @LastEditTime: 2026-03-27 14:15:15
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 眼睛健康大使-郑裕玲小姐
 -->
@@ -331,7 +331,7 @@ const enterPip = async () => {
       wrapper?.classList.remove('pip-fixed')
       return
     } catch (err) {
-      console.warn('原生 PiP 失敗，使用 CSS 保底:', err)
+      // console.warn('原生 PiP 失敗，使用 CSS 保底:', err)
     }
   }
 
@@ -346,7 +346,7 @@ const exitPip = async () => {
     try {
       await document.exitPictureInPicture()
     } catch (err) {
-      console.warn('退出原生 PiP 失敗:', err)
+      // console.warn('退出原生 PiP 失敗:', err)
     }
   }
   const wrapper = document.querySelector('.js-pip-wrapper') as HTMLElement
@@ -468,7 +468,7 @@ onBeforeUnmount(() => {
                 muted
                 playsinline
                 loop
-                src="https://statichk.cmermedical.com/newopd/video/vueFgSecCMM.mp4"
+                src="https://statichk.cmermedical.com/newopd/video/do-banner-v3.mp4"
               />
               <!-- 全区域触发控制条显示 -->
               <div
