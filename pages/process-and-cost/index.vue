@@ -210,29 +210,29 @@ const processedLists: any = ref([
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr2_td1') }}
                     </td>
-                    <td class="text-center">$500</td>
-                    <td class="text-center">$800</td>
+                    <td class="text-center">$600</td>
+                    <td class="text-center">$900</td>
                   </tr>
                   <tr>
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr3_td1') }}
-                    </td>
-                    <td class="text-center">$1,100</td>
-                    <td class="text-center">$1,900</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
                     </td>
                     <td class="text-center">$1,150</td>
                     <td class="text-center">$1,950</td>
                   </tr>
                   <tr>
                     <td colspan="2">
+                      {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
+                    </td>
+                    <td class="text-center">$1,180</td>
+                    <td class="text-center">$1,980</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr5_td1') }}
                     </td>
-                    <td class="text-center">$1,650</td>
-                    <td class="text-center">$2,800</td>
+                    <td class="text-center">$1,680</td>
+                    <td class="text-center">$2,850</td>
                   </tr>
                   <tr>
                     <td colspan="2">
@@ -259,22 +259,22 @@ const processedLists: any = ref([
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr7_td1') }}
                     </td>
-                    <td class="text-center">$450</td>
-                    <td class="text-center">$650</td>
+                    <td class="text-center">$500</td>
+                    <td class="text-center">$700</td>
                   </tr>
                   <tr>
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr8_td1') }}
                     </td>
-                    <td class="text-center">$600</td>
-                    <td class="text-center">$980</td>
+                    <td class="text-center">$700</td>
+                    <td class="text-center">$1100</td>
                   </tr>
                   <tr>
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr9_td1') }}
                     </td>
                     <td class="text-center">$300</td>
-                    <td class="text-center">$500</td>
+                    <td class="text-center">$600</td>
                   </tr>
                   <tr>
                     <td colspan="2">
@@ -431,7 +431,9 @@ const processedLists: any = ref([
                 </div>
               </div>
               <div class="updateBox mt-12 mb-16">
-                {{ $t('pages.process_cost.cont.cost_p10') }}
+                <time datetime="2026-04-01">
+                  {{ $t('pages.process_cost.cont.cost_p10') }}
+                </time>
                 <!-- 最後更新: 01/04/2023 -->
               </div>
               <a
