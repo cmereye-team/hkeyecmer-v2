@@ -156,212 +156,179 @@ const processedLists: any = ref([
               <h3 class="text-2xl text-center font-bold mb-8">
                 {{ $t('pages.process_cost.cont.cost_h3_2') }}
               </h3>
-              <table class="table">
-                <!-- <thead>
-                  <tr class="firstRow">
-                    <td colspan="2"></td>
-                    <td class="text-center text-xl">
-                      {{ $t('pages.process_cost.cont.cost_tr22_td1') }}
-                    </td>
-                    <td class="text-center text-xl">
-                      {{ $t('pages.process_cost.cont.cost_tr21_td2') }}
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr23') }}
-                    </td>
-                    <td class="text-center">$1,600</td>
-                    <td class="text-center">$1,300</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr24') }}
-                    </td>
-                    <td class="text-center">$1,000</td>
-                    <td class="text-center">$1,000</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr25') }}
-                    </td>
-                    <td class="text-center">$900</td>
-                    <td class="text-center">$900</td>
-                  </tr>
-                </tbody>
-                <br /> -->
-                <thead>
-                  <tr class="firstRow">
-                    <td colspan="2"></td>
-                    <td class="text-center text-xl">
-                      {{ $t('pages.process_cost.cont.cost_tr1_td1') }}<br />
-                      (HK$)
-                    </td>
-                    <td class="text-center text-xl">
-                      {{ $t('pages.process_cost.cont.cost_tr1_td2') }}<br />
-                      (HK$)
-                    </td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr2_td1') }}
-                    </td>
-                    <td class="text-center">$600</td>
-                    <td class="text-center">$900</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr3_td1') }}
-                    </td>
-                    <td class="text-center">$1,150</td>
-                    <td class="text-center">$1,950</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
-                    </td>
-                    <td class="text-center">$1,180</td>
-                    <td class="text-center">$1,980</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr5_td1') }}
-                    </td>
-                    <td class="text-center">$1,680</td>
-                    <td class="text-center">$2,850</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr19_td1') }}
-                    </td>
-                    <td class="text-center">$1,000</td>
-                    <td class="text-center">$1,800</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr6_td1') }}
-                    </td>
-                    <td class="text-center">$400</td>
-                    <td class="text-center">$800</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr18_td1') }}
-                    </td>
-                    <td class="text-center">$400</td>
-                    <td class="text-center">$650</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr7_td1') }}
-                    </td>
-                    <td class="text-center">$500</td>
-                    <td class="text-center">$700</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr8_td1') }}
-                    </td>
-                    <td class="text-center">$700</td>
-                    <td class="text-center">$1100</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr9_td1') }}
-                    </td>
-                    <td class="text-center">$300</td>
-                    <td class="text-center">$600</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr10_td1') }}
-                    </td>
-                    <td class="text-center">$400</td>
-                    <td class="text-center">$800</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr11_td1') }}
-                    </td>
-                    <td class="text-center">$350</td>
-                    <td class="text-center">$700</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr20_td1') }}
-                    </td>
-                    <td class="text-center">/</td>
-                    <td class="text-center">$200</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr12_td1') }}
-                    </td>
-                    <td class="text-center">/</td>
-                    <td class="text-center">$3,900</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr13_td1') }}
-                    </td>
-                    <td class="text-center">/</td>
-                    <td class="text-center">$3,900</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr14_td1') }}
-                    </td>
-                    <td class="text-center">/</td>
-                    <td class="text-center">$5,800</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr15_td1') }}
-                    </td>
-                    <td class="text-center">$550</td>
-                    <td class="text-center">$1,100</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr16_td1') }}
-                    </td>
-                    <td class="text-center">/</td>
-                    <td class="text-center">$680/$900</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr26') }}
-                    </td>
-                    <td class="text-center">/</td>
-                    <td class="text-center">$500</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr27') }}
-                    </td>
-                    <td class="text-center">/</td>
-                    <td class="text-center">$500</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      {{ $t('pages.process_cost.cont.cost_tr28') }}
-                    </td>
-                    <td class="text-center">$22,500-$39,000</td>
-                    <td class="text-center">/</td>
-                  </tr>
-                  <!-- <tr>
+              <div class="w-full overflow-x-auto">
+                <table class="table">
+                  <thead>
+                    <tr class="firstRow">
+                      <td colspan="2"></td>
+                      <td class="text-center text-xl">
+                        {{ $t('pages.process_cost.cont.cost_tr1_td1') }}<br />
+                        (HK$)
+                      </td>
+                      <td class="text-center text-xl">
+                        {{ $t('pages.process_cost.cont.cost_tr1_td2') }}<br />
+                        (HK$)
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr2_td1') }}
+                      </td>
+                      <td class="text-center">$600</td>
+                      <td class="text-center">$900</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr3_td1') }}
+                      </td>
+                      <td class="text-center">$1,150</td>
+                      <td class="text-center">$1,950</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr4_td1') }}
+                      </td>
+                      <td class="text-center">$1,180</td>
+                      <td class="text-center">$1,980</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr5_td1') }}
+                      </td>
+                      <td class="text-center">$1,680</td>
+                      <td class="text-center">$2,850</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr19_td1') }}
+                      </td>
+                      <td class="text-center">$1,000</td>
+                      <td class="text-center">$1,800</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr6_td1') }}
+                      </td>
+                      <td class="text-center">$400</td>
+                      <td class="text-center">$800</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr18_td1') }}
+                      </td>
+                      <td class="text-center">$400</td>
+                      <td class="text-center">$650</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr7_td1') }}
+                      </td>
+                      <td class="text-center">$500</td>
+                      <td class="text-center">$700</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr8_td1') }}
+                      </td>
+                      <td class="text-center">$700</td>
+                      <td class="text-center">$1100</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr9_td1') }}
+                      </td>
+                      <td class="text-center">$300</td>
+                      <td class="text-center">$600</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr10_td1') }}
+                      </td>
+                      <td class="text-center">$400</td>
+                      <td class="text-center">$800</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr11_td1') }}
+                      </td>
+                      <td class="text-center">$350</td>
+                      <td class="text-center">$700</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr20_td1') }}
+                      </td>
+                      <td class="text-center">/</td>
+                      <td class="text-center">$200</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr12_td1') }}
+                      </td>
+                      <td class="text-center">/</td>
+                      <td class="text-center">$3,900</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr13_td1') }}
+                      </td>
+                      <td class="text-center">/</td>
+                      <td class="text-center">$3,900</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr14_td1') }}
+                      </td>
+                      <td class="text-center">/</td>
+                      <td class="text-center">$5,800</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr15_td1') }}
+                      </td>
+                      <td class="text-center">$550</td>
+                      <td class="text-center">$1,100</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr16_td1') }}
+                      </td>
+                      <td class="text-center">/</td>
+                      <td class="text-center">$680/$900</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr26') }}
+                      </td>
+                      <td class="text-center">/</td>
+                      <td class="text-center">$500</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr27') }}
+                      </td>
+                      <td class="text-center">/</td>
+                      <td class="text-center">$100</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        {{ $t('pages.process_cost.cont.cost_tr28') }}
+                      </td>
+                      <td class="text-center">$22,500-$39,000</td>
+                      <td class="text-center">/</td>
+                    </tr>
+                    <!-- <tr>
                     <td colspan="2">
                       {{ $t('pages.process_cost.cont.cost_tr21_td1') }}
                     </td>
                     <td class="text-center">$20,000<br/>-$38,000</td>
                     <td class="text-center">/</td>
                   </tr> -->
-                </tbody>
-              </table>
+                  </tbody>
+                </table>
+              </div>
               <p class="text-center mt-20 mb-4 leading-10">
                 {{ $t('pages.process_cost.cont.cost_p2') }}
                 <span class="font-bold">{{

@@ -2843,8 +2843,8 @@ pages:
       cost_tr23: 林順潮醫生
       cost_tr24: 眼科專科醫生(中環)
       cost_tr25: 眼科專科醫生(衛星診所)
-      cost_tr26: 激光矯視(SMILE / LASIK) / 植入式隱形眼鏡(ICL) 術前檢查
-      cost_tr27: 散光矯正術前檢查
+      cost_tr26: 植入式隱形眼鏡(ICL)術前檢查
+      cost_tr27: 激光矯視(SMILE / LASIK / TPRK / 老花 / 散光) / 術前檢查
       cost_tr28: 白內障超聲乳化手術 - 非指定醫生(單焦點人工晶體)
       cost_p2: 以上價格以
       cost_p2_1: 港幣
