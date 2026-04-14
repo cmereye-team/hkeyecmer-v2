@@ -2,7 +2,7 @@
 import { AppConfigInput } from '@nuxt/schema'
 import { availableLocales } from '~/utils/lang'
 
-export interface IMenuItem {
+interface IMenuItem {
   type: 'link' | 'button'
   text: string
   href?: any
@@ -12,7 +12,7 @@ export interface IMenuItem {
 
 const { t } = useLang()
 const app = useAppConfig() as AppConfigInput
-let menus = computed((): IMenuItem[] => [
+const menus = computed((): IMenuItem[] => [
   {
     type: 'link',
     text: t('pages.index.home'),
@@ -20,7 +20,7 @@ let menus = computed((): IMenuItem[] => [
   },
   {
     type: 'link',
-    text: '眼睛健康大使',//眼睛健康大使
+    text: '眼睛健康大使',
     route: { path: '/2025/eye-health-ambassador/carolcheng' },
   },
   {
@@ -338,11 +338,11 @@ const locale = useState<string>('locale.setting')
 
 // 菜单处理i18n和单独样式
 const newMenus = computed(() => {
-  let menusCopy:any = JSON.parse(JSON.stringify(menus.value))
-  menusCopy.forEach((item:any)=>{
-    if(item.route?.path === '/2025/eye-health-ambassador/carolcheng'){
+  const menusCopy: any = JSON.parse(JSON.stringify(menus.value))
+  menusCopy.forEach((item: any) => {
+    if (item.route?.path === '/2025/eye-health-ambassador/carolcheng') {
       item.styleClass = 'text-[#ff4da6] font-bold'
-    } else if (item.route?.name === 'medical-service-cataract'){
+    } else if (item.route?.name === 'medical-service-cataract') {
       item.styleClass = 'text-[#ff6b2c] font-bold'
     }
   })
@@ -377,15 +377,15 @@ const hashActive = (child: any) => {
 </script>
 
 <template>
-  <div class="headerTemPage" id="headerTemPage">
+  <div id="headerTemPage" class="headerTemPage">
     <BuilderNavbar>
       <template #menu>
         <div :class="locale == 'en' ? 'en_navigtion' : ''" class="navigtion">
           <div
             v-for="(item, itemIndex) in newMenus"
             :key="itemIndex"
-            class="hover:bg-green-hover hover:text-while"
-            :class="[itemIndex + 1 == 4 ? 'lal_child' : '']"
+            class="menu-group hover:bg-green-hover hover:text-while"
+            :class="[itemIndex === 3 ? 'lal_child' : '']"
           >
             <Anchor
               v-if="item.type === 'link'"
@@ -397,6 +397,7 @@ const hashActive = (child: any) => {
             >
             <div
               v-if="item.childMenuList && item.childMenuList.length"
+              class="menu-subgroup"
               :class="[
                 'childpage',
                 {
@@ -413,7 +414,7 @@ const hashActive = (child: any) => {
                   v-if="child.type === 'link'"
                   :to="child.route ? child.route : undefined"
                   :href="child.href ? child.href : undefined"
-                  class="hover:no-underline"
+                  class="menu-subitem hover:no-underline"
                   :class="[
                     hashActive(child),
                     // child.route.name === 'light-adjustable-lens'
@@ -885,7 +886,8 @@ a {
 
   & > div > a::after {
     position: absolute;
-    left: 26px;
+    left: 50%;
+    transform: translateX(-50%);
     content: '';
     width: 76px;
     margin-top: -1px;
@@ -986,7 +988,8 @@ a {
   }
   & > div > a::after {
     position: absolute;
-    left: 40px;
+    left: 50%;
+    transform: translateX(-50%);
     content: '';
     width: 76px;
     margin-top: -1px;
@@ -1023,8 +1026,16 @@ a {
 .childpage {
   display: none;
 }
-</style>
-<style lang="scss" scoped>
+@media screen and (min-width: 769px) {
+  .menu-group {
+    &:nth-child(5) {
+      .menu-subgroup {
+        width: 208px;
+        right: -208px;
+      }
+    }
+  }
+}
 @media screen and (min-width: 1920px) {
   .headerTemPage {
     top: 95px;
