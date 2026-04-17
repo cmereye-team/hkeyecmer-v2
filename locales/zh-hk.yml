@@ -758,6 +758,14 @@ pages:
       title2: 白內障手術_晶體混濁
       alt3: 白內障手術植入人工晶體
       title3: 白內障手術_人工晶體植入
+    edof:
+      title: 擴展景深人工晶體
+      title_en: Extended Depth of Focus (EDOF)
+      abbr: EDOF
+    lensTypes:
+      title: 人工晶體比較表
+      pagetitle: 白內障人工晶體種類
+      comparison: 白內障人工晶體比較表
     glaucoma: 青光眼
     medical_service_glaucoma_head: 青光眼｜希瑪眼科｜醫療服務
     glaucoma_intro:

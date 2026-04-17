@@ -3,7 +3,19 @@ import { useRoute } from 'vue-router'
 import { availableLocales } from '~/utils/lang'
 const route = useRoute()
 const { t } = useLang()
-
+interface LinkTarget {
+  path?: string
+  name?: string
+  hash?: string
+  query?: Record<string, string | number>
+}
+interface LinkItem {
+  type: 'link' | 'button'
+  text: string
+  link: LinkTarget
+  styleClass?: string
+  childMenuList?: LinkItem[]
+}
 useHead({
   // script: [
   //   {
@@ -25,14 +37,14 @@ const menus = computed(() => {
     },
     {
       type: 'link',
-      text: '眼睛健康大使', //眼睛健康大使
+      text: '眼睛健康大使',
       link: { path: '/2025/eye-health-ambassador/carolcheng' },
       childMenuList: [],
     },
     {
       type: 'link',
       text: t('pages.about_us.about_us'),
-      link: '/about-us', // 关于我们
+      link: '/about-us',
       childMenuList: [
         {
           type: 'link',
@@ -40,7 +52,7 @@ const menus = computed(() => {
           link: { path: '/about-us', hash: '#centreIntro' },
         },
         {
-          type: 'link', // 发展历程
+          type: 'link',
           text: t('pages.about_us.development_course'),
           link: { path: '/about-us', hash: '#history' },
         },
@@ -97,7 +109,16 @@ const menus = computed(() => {
           text: t('pages.medical_service.dazzling_operation'),
           link: { path: '/csp-programme' },
         },
-
+        // {
+        //   type: 'link',
+        //   text: t('pages.medical_service.edof.title'),
+        //   route: { path: '/Cataract/extended-depth-of-focus-lenses' },
+        // },
+        {
+          type: 'link',
+          text: t('pages.medical_service.lensTypes.title'),
+          route: { path: '/Cataract/intraocular-lens-types' },
+        },
         // {
         //   type: 'link',
         //   text: '白內障關注月',
@@ -275,7 +296,7 @@ const toLinks = (data: any) => {
   }
 }
 
-let menuBool = ref(false)
+const menuBool = ref(false)
 const handleMuenBtn = () => {
   menuBool.value = !menuBool.value
 }
@@ -316,11 +337,11 @@ const imgLists = [
 //   return JSON.parse(JSON.stringify(menus.value))
 // })
 const newMenus = computed(() => {
-  let menusCopy:any = JSON.parse(JSON.stringify(menus.value))
-  menusCopy.forEach((item:any)=>{
-    if(item.link?.path === '/2025/eye-health-ambassador/carolcheng'){
+  const menusCopy: LinkItem[] = JSON.parse(JSON.stringify(menus.value))
+  menusCopy.forEach((item: LinkItem) => {
+    if (item.link?.path === '/2025/eye-health-ambassador/carolcheng') {
       item.styleClass = 'nav-carolcheng'
-    } else if (item.link?.path === '/medical-service/cataract'){
+    } else if (item.link?.path === '/medical-service/cataract') {
       item.styleClass = 'nav-cataract'
     }
   })
@@ -338,7 +359,7 @@ const handleImgLists = (_link: any) => {
     location.href = _link.link
   }
 }
-let drawer = ref(false)
+const drawer = ref(false)
 const serciceLists = [
   'medical-service-cataract',
   'medical-service-glaucoma',
@@ -356,13 +377,13 @@ const serciceLists = [
 ]
 
 watch(menuBool, (o, n) => {
-  var a: any = document.getElementById('userwayAccessibilityIcon') || {
+  const a: any = document.getElementById('userwayAccessibilityIcon') || {
     style: { display: 'none' },
   }
   a.style.display = n ? 'none' : 'block'
 })
 
-let bgopn = ref(0)
+const bgopn = ref(0)
 const getBg = () => {
   // let routeName: any = route.name
   let str = ''
@@ -383,7 +404,7 @@ const getBg = () => {
   return str
 }
 const getBb = () => {
-  let str = ''
+  const str = ''
   // let routeName: any = route.name
   // if (route.name === 'index' || menuBool.value) {
   //   str = 'none'
@@ -398,10 +419,10 @@ const changeLang = (_lang: any) => {
   locale.value = _lang
 }
 
-let showboxshadow = ref(false)
+const showboxshadow = ref(false)
 onMounted(() => {
   window.addEventListener('scroll', function () {
-    var scrollTop =
+    const scrollTop =
       window.scrollY || window.pageYOffset || document.documentElement.scrollTop
     if (scrollTop <= 300) {
       bgopn.value = scrollTop / 300
@@ -433,13 +454,13 @@ onMounted(() => {
         <div class="imgLists">
           <div v-for="(iconItem, iconIndex) in imgLists" :key="iconIndex">
             <div
+              v-if="iconItem.type === 'drawer'"
               class="w-full h-full"
               @click="handleImgLists(iconItem)"
-              v-if="iconItem.type === 'drawer'"
             >
               <i :class="iconItem.icon"></i>
             </div>
-            <a class="w-full h-full" v-else :href="iconItem.link">
+            <a v-else class="w-full h-full" :href="iconItem.link">
               <i :class="iconItem.icon"></i>
             </a>
           </div>
@@ -456,7 +477,7 @@ onMounted(() => {
       </div>
     </div>
     <transition name="ddd">
-      <div class="headerMbcc-content" v-show="menuBool">
+      <div v-show="menuBool" class="headerMbcc-content">
         <client-only>
           <el-menu
             default-active="2"
@@ -469,7 +490,7 @@ onMounted(() => {
               :class="[menusItem.styleClass || '']"
             >
               <el-sub-menu
-                v-if="menusItem.childMenuList.length"
+                v-if="menusItem.childMenuList?.length"
                 :key="String(menusIndex)"
                 :index="String(menusIndex)"
               >
@@ -509,7 +530,7 @@ onMounted(() => {
           </el-menu>
         </client-only>
         <div class="headerMbcc-content-btn">
-          <a href="tel: +852 3956 2025" id="headerMbcc-content-btn">
+          <a id="headerMbcc-content-btn" href="tel: +852 3956 2025">
             <svg
               width="12"
               height="12"

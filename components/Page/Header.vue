@@ -252,7 +252,7 @@ const toLinks = (data: any) => {
   }
 }
 
-let menuBool = ref(false)
+const menuBool = ref(false)
 const handleMuenBtn = () => {
   menuBool.value = !menuBool.value
 }
