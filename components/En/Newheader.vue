@@ -394,7 +394,7 @@ const changeLang = (_lang: any) => {
               :key="menusIndex"
             >
               <el-sub-menu
-                v-if="menusItem.childMenuList.length"
+                v-if="menusItem.childMenuList?.length"
                 :key="String(menusIndex)"
                 :index="String(menusIndex)"
               >
@@ -433,7 +433,7 @@ const changeLang = (_lang: any) => {
           </el-menu>
         </client-only>
         <div class="headerMbcc-content-btn">
-          <a href="tel: +852 3956 2025" id="headerMbcc-content-btn">
+          <a id="headerMbcc-content-btn" href="tel: +852 3956 2025">
             <svg
               width="12"
               height="12"

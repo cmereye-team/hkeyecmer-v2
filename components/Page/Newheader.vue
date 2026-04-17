@@ -109,11 +109,11 @@ const menus = computed(() => {
           text: t('pages.medical_service.dazzling_operation'),
           link: { path: '/csp-programme' },
         },
-        {
-          type: 'link',
-          text: t('pages.medical_service.edof.title'),
-          route: { path: '/Cataract/extended-depth-of-focus-lenses' },
-        },
+        // {
+        //   type: 'link',
+        //   text: t('pages.medical_service.edof.title'),
+        //   route: { path: '/Cataract/extended-depth-of-focus-lenses' },
+        // },
         {
           type: 'link',
           text: t('pages.medical_service.lensTypes.title'),
@@ -490,7 +490,7 @@ onMounted(() => {
               :class="[menusItem.styleClass || '']"
             >
               <el-sub-menu
-                v-if="menusItem.childMenuList.length"
+                v-if="menusItem.childMenuList?.length"
                 :key="String(menusIndex)"
                 :index="String(menusIndex)"
               >
