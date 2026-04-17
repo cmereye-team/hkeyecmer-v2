@@ -91,7 +91,16 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.dazzling_operation'),
         route: { name: 'csp-programme' },
       },
-
+      {
+        type: 'link',
+        text: t('pages.medical_service.edof.title'),
+        route: { path: '/Cataract/extended-depth-of-focus-lenses' },
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.lensTypes.title'),
+        route: { path: '/Cataract/intraocular-lens-types' },
+      },
       // {
       //   type: 'link',
       //   text: '白內障關注月',

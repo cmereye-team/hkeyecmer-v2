@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:27
- * @LastEditTime: 2026-04-15 16:33:39
+ * @LastEditTime: 2026-04-17 10:24:18
  * @FilePath: /pages/cataract/extended-depth-of-focus-lenses.vue
  * @Description: 扩展景深人工晶体
 -->
@@ -72,6 +72,9 @@ definePageMeta({
           單焦點人工晶體、單焦點EDOF人工晶體、多焦點人工晶體、散光人工晶體。
         </p>
       </div>
+    </section>
+    <section>
+      <h2>白內障人工晶體</h2>
     </section>
   </div>
 </template>
