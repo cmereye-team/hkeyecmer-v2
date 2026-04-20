@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:27
- * @LastEditTime: 2026-04-20 15:45:39
+ * @LastEditTime: 2026-04-20 16:20:27
  * @FilePath: /pages/cataract/extended-depth-of-focus-lenses.vue
  * @Description: 扩展景深人工晶体
 -->
@@ -124,10 +124,206 @@ const faqs = [
       <h2 class="title-normal">
         擴展景深人工晶體<br class="block md:hidden" />特性及其他晶體比較
       </h2>
+      <div class="lens-table pb-5 overflow-x-auto mb-3 lg:mb-20 text-center">
+        <table class="w-full border-collapse">
+          <thead>
+            <tr>
+              <th></th>
+              <th class="bg-[#F6E75B] lens-table-th">
+                <div class="flex justify-center items-center gap-1 flex-col">
+                  <div class="w-12 h-6 lg:w-[108px] lg:h-[60px]">
+                    <img
+                      src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-table-edof-v1.svg"
+                      alt="擴展景深人工晶體圖標"
+                      class="w-full"
+                    />
+                  </div>
+                  <span class="lens-table-title special text-[#EC8836]">
+                    擴展景深人工晶體
+                  </span>
+                </div>
+              </th>
+              <th class="bg-[#55D1F0] lens-table-th">
+                <div class="flex justify-center items-center gap-1 lg:flex-col">
+                  <div class="w-12 h-6 lg:w-[108px] lg:h-[60px]">
+                    <img
+                      src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-table-monofocal-v1.svg"
+                      alt="單焦點人工晶體圖標"
+                      class="w-full lens-icon-normal"
+                    />
+                  </div>
+                  <span class="lens-table-title text-primary">
+                    單焦點<br class="block md:hidden" />人工晶體
+                  </span>
+                </div>
+              </th>
+              <th class="bg-[#F2F7FB] lens-table-th">
+                <div class="flex justify-center items-center gap-1 flex-col">
+                  <div class="w-12 h-6 lg:w-[108px] lg:h-[60px]">
+                    <img
+                      src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-table-multifocal-v1.svg"
+                      alt="多焦點人工晶體圖標"
+                      class="w-full"
+                    />
+                  </div>
+                  <span class="lens-table-title special text-[#4886CE]">
+                    多焦點人工晶體
+                  </span>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody
+            class="text-[3.0769vw] md:text-2xl text-[#66696f] font-bold lg:font-medium leading-[1.5] tracking-widest whitespace-nowrap"
+          >
+            <tr class="lens-table-bb">
+              <td class="bg-[#fcfcfc]">
+                <div class="lens-table-subtitle">晶體類型</div>
+              </td>
+              <td class="lens-table-td">
+                RLE / 白內障 - <br class="hidden lg:block" />取代自然晶體
+              </td>
+              <td class="lens-table-td">
+                白內障 - <br class="hidden lg:block" />取代自然晶體
+              </td>
+              <td class="lens-table-td">
+                RLE / 白內障 - <br class="hidden lg:block" />取代自然晶體
+              </td>
+            </tr>
+            <tr class="lens-table-bb">
+              <td class="bg-[#fcfcfc]">
+                <div class="lens-table-subtitle">焦距</div>
+              </td>
+              <td class="lens-table-td">
+                良好的遠<br class="block md:hidden" />及中距離
+              </td>
+              <td class="lens-table-td">
+                有限距離<br class="block md:hidden" />焦距
+              </td>
+              <td class="lens-table-td">
+                遠、中、近<br class="block md:hidden" />距離清楚
+              </td>
+            </tr>
+            <tr class="lens-table-bb">
+              <td class="bg-[#fcfcfc]">
+                <div class="lens-table-subtitle">對比度與低<br />光源</div>
+              </td>
+              <td class="lens-table-td">
+                對比度高，<br />光暈或<br />眩光最小
+              </td>
+              <td class="lens-table-td">遠視對比度較好</td>
+              <td class="lens-table-td">
+                對比度較好，<br />可能會產生<br />眩光或光暈
+              </td>
+            </tr>
+            <tr class="lens-table-bb">
+              <td class="bg-[#fcfcfc]">
+                <div class="lens-table-subtitle">優點</div>
+              </td>
+              <td class="lens-table-td">
+                焦距清楚<br />
+                可擴展景深<br />
+                較小眩光
+              </td>
+              <td class="lens-table-td">提供遠距離清楚度</td>
+              <td class="lens-table-td">
+                可保持視覺<br class="block md:hidden" />立體感
+              </td>
+            </tr>
+            <tr class="lens-table-bb">
+              <td class="bg-[#fcfcfc]">
+                <div class="lens-table-subtitle">眼鏡<br />使用性</div>
+              </td>
+              <td class="lens-table-td">
+                大部份患者於術後康<br />復後，工作時可減少<br />或不需配戴眼鏡
+              </td>
+              <td class="lens-table-td">近距離閱讀時<br />可能需要配戴眼鏡</td>
+              <td class="lens-table-td">日常比較小需要配戴眼鏡</td>
+            </tr>
+            <tr>
+              <td class="bg-[#fcfcfc]">
+                <div class="lens-table-subtitle">
+                  合適<br class="block md:hidden" />人士
+                </div>
+              </td>
+              <td class="lens-table-td relative">
+                適合患有<br
+                  class="block lg:hidden"
+                />白內障且希望<br />減少眼鏡<br
+                  class="block lg:hidden"
+                />依賴的患者
+                <nuxt-link
+                  to="/Cataract/extended-depth-of-focus-lenses"
+                  class="absolute-horizon -bottom-2 z-10"
+                >
+                  <div class="relative">
+                    <img
+                      src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
+                      alt="了解更多擴展景深人工晶體"
+                      class="absolute left-0 bottom-0 w-[52px] lg:w-[108px]"
+                    />
+                    <div
+                      class="lens-table-more edof text-[#F99D2C] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-[12px] lg:rounded-[44px]"
+                    >
+                      <span>按此</span>
+                      <span>了解更多</span>
+                    </div>
+                  </div>
+                </nuxt-link>
+              </td>
+              <td class="lens-table-td relative">可配合佩戴眼鏡人士</td>
+              <td class="lens-table-td lg:min-h-[232px] relative">
+                經常進行戶外活動
+                <nuxt-link
+                  to="/cataract/multifocal-lens"
+                  class="absolute-horizon -bottom-2 z-10"
+                >
+                  <div class="relative">
+                    <img
+                      src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
+                      alt="了解更多多焦點人工晶體"
+                      class="absolute left-0 bottom-0 w-[52px] lg:w-[108px]"
+                    />
+                    <div
+                      class="lens-table-more multifocal text-[#4886CE] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-[12px] lg:rounded-[44px]"
+                    >
+                      <span>按此</span>
+                      <span>了解更多</span>
+                    </div>
+                  </div>
+                </nuxt-link>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <p>
         *單焦晶體配合EDOF,
         亦可以於近、中、遠距離,減少對老花眼鏡依賴，以及降低夜晚眩光帶來的影響現時客人除了可以選擇多焦晶體解決近、中、遠距離視野，亦有EDOF可供選擇，以配合不同人士需要
       </p>
+      <div class="flex flex-col lg:hidden text-center mb-4 lg:mb-25">
+        <svg
+          class="w-full"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 301 12"
+          fill="none"
+        >
+          <path
+            d="m0 5.773 10 5.774V0zm301 0L291 0v11.547zm-292 0v1h283v-2H9z"
+            fill="#3a5fb2"
+          />
+        </svg>
+        <div class="text-primary text-sm font-bold tracking-widest">
+          左右滑動以觀看表格
+        </div>
+      </div>
+      <a
+        href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
+        target="_blank"
+        class="button-ws rounded-full text-white font-black relative"
+      >
+        哪一款人工晶體適合你？
+      </a>
     </section>
     <section class="wrapper advantage mb-[64px] lg:mb-[112px]">
       <div class="py-8 lg:pt-[68px] lg:pb-[128px]">
