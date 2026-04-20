@@ -112,12 +112,12 @@ const menus = computed(() => {
         {
           type: 'link',
           text: t('pages.medical_service.edof.title'),
-          route: { path: '/Cataract/extended-depth-of-focus-lenses' },
+          link: { path: '/Cataract/extended-depth-of-focus-lenses' },
         },
         {
           type: 'link',
           text: t('pages.medical_service.lensTypes.title'),
-          route: { path: '/Cataract/intraocular-lens-types' },
+          link: { path: '/Cataract/intraocular-lens-types' },
         },
         // {
         //   type: 'link',
@@ -190,6 +190,11 @@ const menus = computed(() => {
           type: 'toPage',
           text: t('pages.medical_service.smileHk'),
           link: 'https://smile.hkcmereye.com/',
+        },
+        {
+          type: 'toPage',
+          text: t('pages.medical_service.smileClear'),
+          link: 'https://smile.hkcmereye.com/vision-correction-presbyopia',
         },
       ],
     },
@@ -291,6 +296,7 @@ const toLinks = (data: any) => {
   if (data.type === 'toPage') {
     location.href = data.link || ''
   } else {
+    console.log(`tolink,link=${data.link},data=`,data)
     router.push(data.link || { path: '' })
     menuBool.value = false
   }

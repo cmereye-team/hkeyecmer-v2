@@ -3,6 +3,12 @@ import { Navigation, Virtual, FreeMode, Thumbs } from 'swiper'
 const swiperList = [
   {
     eqImgUrl:
+      'https://statichk.cmermedical.com/smile/equipment/equipment-026-v2.webp',
+    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_1',
+    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_1',
+  },
+  {
+    eqImgUrl:
       'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment1.jpg',
     eqName: 'pages.about_us.equipment.equipment_name.equipment_name_1',
     eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_1',
@@ -40,6 +46,13 @@ const swiperList = [
 ]
 
 const medicalEquipment = [
+  {
+    href: 'https://statichk.cmermedical.com/smile/equipment/equipment-026-v2.webp',
+    title: 'Zeiss PRESBYOND 500Hz MEL90',
+    title2: '',
+    content:
+      '結合 MEL 90 準分子雷射與 PRESBYOND Laser Blended Vision 軟體，能提供雙眼切換視力矯正，讓患者在近距離、中距離及遠距離皆能清晰視物。系統採用 500Hz 高頻雷射，可在約 1.3 秒內完成 1D 近視的矯正，同時配備 1050Hz 眼球追蹤技術，大幅提升手術精準度與安全性，達成理想的矯視效果。',
+  },
   {
     href: 'https://static.cmereye.com/imgs/2023/05/69f740310b86facd.png',
     title: 'ZEISS VISUMAX 800',

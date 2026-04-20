@@ -4,8 +4,10 @@ definePageMeta({
 })
 const { t } = useLang()
 useHead({
-  title: `${t('pages.medical_service.medical_service')} | ${t('pages.index.title')}`,
-  meta(){
+  title: `${t('pages.medical_service.medical_service')} | ${t(
+    'pages.index.title'
+  )}`,
+  meta() {
     return [
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
@@ -17,7 +19,7 @@ useHead({
         hid: 'serviceIndexkey',
         name: 'keywords',
         content: t('tdk.medical-service.key'),
-      }
+      },
     ]
   },
 })
@@ -111,13 +113,22 @@ const SerListL = [
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
     des: 'pages.medical_service.smileHk',
     link: 'https://smile.hkcmereye.com/',
-  }
+  },
+  {
+    i: '14',
+    imgUrl:
+      'https://statichk.cmermedical.com/hkcmereye/service/service-014-v1.webp',
+    des: 'pages.medical_service.smileClear',
+    link: 'https://smile.hkcmereye.com/vision-correction-presbyopia',
+  },
 ]
 </script>
 <template>
   <div id="Service" class="Service">
     <div class="serContent relative">
-      <div class="title">{{$t('pages.medical_service.medical_service_title')}}</div>
+      <div class="title">
+        {{ $t('pages.medical_service.medical_service_title') }}
+      </div>
       <ul class="serList">
         <li v-for="(item, index) in SerListL" :key="index">
           <nuxt-link
@@ -230,10 +241,10 @@ const SerListL = [
 }
 @media screen and (max-width: 768px) {
   .serContent {
-    .title{
+    .title {
       -ms-writing-mode: initial;
       writing-mode: initial;
-      letter-spacing: -.1em;
+      letter-spacing: -0.1em;
       font-size: 28px;
       margin-left: 0;
       text-align: left;
@@ -246,23 +257,23 @@ const SerListL = [
         letter-spacing: 0.01em;
       }
     }
-    &::before{
+    &::before {
       display: none;
     }
     .serList {
       margin: 150px auto 0;
       max-width: calc(100% - 40px);
-      li{
+      li {
         img {
           width: 80%;
           margin: 0 auto 15px;
           max-width: 130px;
         }
-        p{
+        p {
           font-size: 14px;
           line-height: 160%;
         }
-        .i{
+        .i {
           top: -20px;
           font-size: 30px;
           line-height: 160%;
