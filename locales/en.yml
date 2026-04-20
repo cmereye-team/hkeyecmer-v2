@@ -750,6 +750,14 @@ pages:
       title2: Cataract Surgery-Phacoemulsification
       alt3: Intraocular lens implantation after phacoemulsification during Cataract Surgery
       title3: Cataract Surgery-Intraocular lens implantation
+    edof:
+      title: Extended Depth of Focus
+      title_en: Extended Depth of Focus (EDOF)
+      abbr: EDOF
+    lensTypes:
+      title: IOL Lens Comparison Chart
+      pagetitle: 白內障人工晶體種類
+      comparison: 白內障人工晶體比較表
     glaucoma: Glaucoma
     medical_service_glaucoma_head: Glaucoma｜CMER｜Medical Services
     service_glaucoma_title:

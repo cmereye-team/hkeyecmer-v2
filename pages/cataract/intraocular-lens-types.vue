@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:43
- * @LastEditTime: 2026-04-17 21:05:19
+ * @LastEditTime: 2026-04-20 17:21:41
  * @FilePath: /pages/cataract/intraocular-lens-types.vue
  * @Description: 人工晶体比较表
 -->
@@ -121,7 +121,7 @@ const lensList: lensItem[] = [
         </svg>
       </div>
       <div
-        class="intro-desc text-primary-main rounded-4xl text-base lg:text-2xl text-justify font-medium tracking-widest leading-[1.6] p-4 lg:p-0"
+        class="intro-desc text-primary rounded-4xl text-base lg:text-2xl text-justify font-medium tracking-widest leading-[1.6] p-4 lg:p-0"
       >
         <p>
           當白內障讓您的世界變得模糊、色彩不再鮮明時，接受手術無疑是重見清楚視力的最佳選擇。而現今白內障手術除了移除混濁的晶體，更有不同人工晶體選擇滿足患者不同需求，包括:
@@ -132,7 +132,7 @@ const lensList: lensItem[] = [
     <section class="mb-8 lg:mb-20 lens-table-wrap py-10 lg:pb-12 lg:pt-25">
       <div class="px-3 xl:px-0 mx-auto max-w-[1340px]">
         <h2
-          class="text-primary-main text-center text-3xl lg:text-6xl font-bold tracking-widest mb-6 lg:mb-10 !leading-[1.2]"
+          class="text-primary text-center text-3xl lg:text-6xl font-bold tracking-widest mb-6 lg:mb-10 !leading-[1.2]"
         >
           白內障人工晶體<br />比較表
         </h2>
@@ -150,7 +150,7 @@ const lensList: lensItem[] = [
                         class="w-full"
                       />
                     </div>
-                    <span class="lens-table-title special text-[#EC8836]">
+                    <span class="lens-table-title text-outline text-[#EC8836]">
                       擴展景深人工晶體
                     </span>
                   </div>
@@ -164,7 +164,7 @@ const lensList: lensItem[] = [
                         class="w-full"
                       />
                     </div>
-                    <span class="lens-table-title special text-[#4886CE]">
+                    <span class="lens-table-title text-outline text-[#4886CE]">
                       多焦點人工晶體
                     </span>
                   </div>
@@ -180,7 +180,7 @@ const lensList: lensItem[] = [
                         class="w-full lens-icon-normal"
                       />
                     </div>
-                    <span class="lens-table-title text-primary-main">
+                    <span class="lens-table-title text-primary">
                       單焦點<br class="block md:hidden" />人工晶體
                     </span>
                   </div>
@@ -196,7 +196,7 @@ const lensList: lensItem[] = [
                         class="w-full lens-icon-normal"
                       />
                     </div>
-                    <span class="lens-table-title text-primary-main">
+                    <span class="lens-table-title text-primary">
                       散光型<br class="block md:hidden" />人工晶體
                     </span>
                   </div>
@@ -273,21 +273,24 @@ const lensList: lensItem[] = [
                   />白內障且希望<br />減少眼鏡<br
                     class="block lg:hidden"
                   />依賴的患者
-                  <div class="absolute-horizon -bottom-2 z-10">
+                  <nuxt-link
+                    to="/Cataract/extended-depth-of-focus-lenses"
+                    class="absolute-horizon -bottom-2 z-10"
+                  >
                     <div class="relative">
                       <img
                         src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
                         alt="了解更多擴展景深人工晶體"
-                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px]"
+                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px] rounded-bl-xl lg:rounded-bl-[44px]"
                       />
                       <div
-                        class="lens-table-more edof text-[#F99D2C] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-[12px] lg:rounded-[44px]"
+                        class="lens-table-more edof text-[#F99D2C] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
                       >
                         <span>按此</span>
                         <span>了解更多</span>
                       </div>
                     </div>
-                  </div>
+                  </nuxt-link>
                 </td>
                 <td
                   class="lens-table-td text-justify lg:min-h-[232px] relative"
@@ -306,10 +309,10 @@ const lensList: lensItem[] = [
                       <img
                         src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
                         alt="了解更多多焦點人工晶體"
-                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px]"
+                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px] rounded-bl-xl lg:rounded-bl-[44px]"
                       />
                       <div
-                        class="lens-table-more multifocal text-[#4886CE] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-[12px] lg:rounded-[44px]"
+                        class="lens-table-more multifocal text-[#4886CE] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
                       >
                         <span>按此</span>
                         <span>了解更多</span>
@@ -342,10 +345,10 @@ const lensList: lensItem[] = [
           >
             <path
               d="m0 5.773 10 5.774V0zm301 0L291 0v11.547zm-292 0v1h283v-2H9z"
-              fill="#3a5fb2"
+              fill="#2958a3"
             />
           </svg>
-          <div class="text-primary-main text-sm font-bold tracking-widest">
+          <div class="text-primary text-sm font-bold tracking-widest">
             左右滑動以觀看表格
           </div>
         </div>
@@ -360,11 +363,11 @@ const lensList: lensItem[] = [
     </section>
     <section class="px-11 xl:px-0 max-w-6xl mx-auto mb-25 lg:mb-40">
       <h2
-        class="types-title text-2xl lg:text-4xl text-center text-primary-main font-bold mt-2 lg:mt-7 mb-12 lg:mb-[140px]"
+        class="types-title text-2xl lg:text-4xl text-center text-primary font-bold mt-2 lg:mt-7 mb-12 lg:mb-[140px]"
       >
         白內障人工晶體
       </h2>
-      <div class="space-y-10 lg:space-y-[92px] text-primary-main">
+      <div class="space-y-10 lg:space-y-[92px] text-primary">
         <div
           v-for="(lens, index) in lensList"
           :key="index"
@@ -433,14 +436,32 @@ const lensList: lensItem[] = [
     </section>
   </div>
 </template>
-<style lang="scss" scoped>
-.text-primary-main {
-  color: #3a5fb2;
-}
+<style lang="scss" scope>
 .absolute-horizon {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+.text-outline {
+  text-shadow: rgb(255, 255, 255) 3px 0px 0px,
+    rgb(255, 255, 255) 2.83333px 0.983333px 0px,
+    rgb(255, 255, 255) 2.35px 1.85px 0px,
+    rgb(255, 255, 255) 1.61667px 2.51667px 0px,
+    rgb(255, 255, 255) 0.7px 2.91667px 0px,
+    rgb(255, 255, 255) -0.283333px 2.98333px 0px,
+    rgb(255, 255, 255) -1.25px 2.73333px 0px,
+    rgb(255, 255, 255) -2.06667px 2.16667px 0px,
+    rgb(255, 255, 255) -2.66667px 1.36667px 0px,
+    rgb(255, 255, 255) -2.96667px 0.416667px 0px,
+    rgb(255, 255, 255) -2.95px -0.566667px 0px,
+    rgb(255, 255, 255) -2.6px -1.5px 0px,
+    rgb(255, 255, 255) -1.96667px -2.26667px 0px,
+    rgb(255, 255, 255) -1.11667px -2.78333px 0px,
+    rgb(255, 255, 255) -0.133333px -3px 0px,
+    rgb(255, 255, 255) 0.85px -2.88333px 0px,
+    rgb(255, 255, 255) 1.75px -2.43333px 0px,
+    rgb(255, 255, 255) 2.45px -1.73333px 0px,
+    rgb(255, 255, 255) 2.88333px -0.833333px 0px;
 }
 .wrapper {
   padding-left: 12px;
@@ -456,6 +477,7 @@ const lensList: lensItem[] = [
 }
 .lens-table-wrap {
   background: url(https://static.cmereye.com/imgs/2024/03/cc6eb4fe0d7bb9b5.png) no-repeat top,url(https://static.cmereye.com/imgs/2024/03/b34e0a520ed9c467.png) no-repeat bottom;
+  background-size: cover;
 }
 .lens-table {
   -ms-overflow-style: none;
@@ -473,27 +495,6 @@ const lensList: lensItem[] = [
     letter-spacing: 0.1em;
     text-align: center;
     white-space: nowrap;
-    &.special {
-      text-shadow: rgb(255, 255, 255) 3px 0px 0px,
-        rgb(255, 255, 255) 2.83333px 0.983333px 0px,
-        rgb(255, 255, 255) 2.35px 1.85px 0px,
-        rgb(255, 255, 255) 1.61667px 2.51667px 0px,
-        rgb(255, 255, 255) 0.7px 2.91667px 0px,
-        rgb(255, 255, 255) -0.283333px 2.98333px 0px,
-        rgb(255, 255, 255) -1.25px 2.73333px 0px,
-        rgb(255, 255, 255) -2.06667px 2.16667px 0px,
-        rgb(255, 255, 255) -2.66667px 1.36667px 0px,
-        rgb(255, 255, 255) -2.96667px 0.416667px 0px,
-        rgb(255, 255, 255) -2.95px -0.566667px 0px,
-        rgb(255, 255, 255) -2.6px -1.5px 0px,
-        rgb(255, 255, 255) -1.96667px -2.26667px 0px,
-        rgb(255, 255, 255) -1.11667px -2.78333px 0px,
-        rgb(255, 255, 255) -0.133333px -3px 0px,
-        rgb(255, 255, 255) 0.85px -2.88333px 0px,
-        rgb(255, 255, 255) 1.75px -2.43333px 0px,
-        rgb(255, 255, 255) 2.45px -1.73333px 0px,
-        rgb(255, 255, 255) 2.88333px -0.833333px 0px;
-    }
   }
   .lens-table-bb {
     border-bottom: 0.6px solid #cbc6c6;
@@ -546,6 +547,17 @@ const lensList: lensItem[] = [
       box-shadow: 0 0 12.293px rgba(72, 134, 206, 0.86);
     }
   }
+  .lens-table-subtitle {
+    color: #2958a3;
+    font-weight: 700;
+    font-size: 3.3333vw;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 2px #fff;
+    line-height: 4.1026vw;
+    width: 15.128vw;
+    white-space: nowrap;
+    text-align: center;
+  }
 }
 .button-ws {
   display: block;
@@ -583,17 +595,6 @@ const lensList: lensItem[] = [
     background-position: center;
   }
 }
-.lens-table-subtitle {
-  color: #3a5fb2;
-  font-weight: 700;
-  font-size: 3.3333vw;
-  letter-spacing: 0.1em;
-  text-shadow: 1px 1px 2px #fff;
-  line-height: 4.1026vw;
-  width: 15.128vw;
-  white-space: nowrap;
-  text-align: center;
-}
 @media screen and (min-width: 768px) {
   .button-ws {
     border: min(9px, 0.4688vw) solid #fff;
@@ -606,18 +607,6 @@ const lensList: lensItem[] = [
       font-size: 48px;
     }
   }
-  .lens-table-subtitle {
-    text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff,
-      3px 3px 0 #fff;
-    width: min(170px, 8.854vw);
-    font-size: min(24px, 2vw);
-    letter-spacing: min(2.4px, 0.125vw);
-    line-height: min(40px, 2.083vw);
-    min-height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .lens-table {
     tr {
       &:last-child {
@@ -625,6 +614,18 @@ const lensList: lensItem[] = [
           padding-bottom: 80px;
         }
       }
+    }
+    .lens-table-subtitle {
+      text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff,
+        3px 3px 0 #fff;
+      width: min(170px, 8.854vw);
+      font-size: min(24px, 2vw);
+      letter-spacing: min(2.4px, 0.125vw);
+      line-height: min(40px, 2.083vw);
+      min-height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
