@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:01:04
- * @LastEditTime: 2026-01-27 17:10:58
+ * @LastEditTime: 2026-04-20 15:54:29
  * @FilePath: /pages/csp-question/index.vue
  * @Description: 耀眼行动常见问题
 -->
@@ -265,22 +265,22 @@ const toggleAll = () => {
                         {{ t('csp.faq.q4.step4.p1') }}
                       </p>
                       <div class="serial">
-                        <p>{{ t('csp.faq.q4.step4.p1') }}</p>
+                        <p>{{ t('csp.faq.q4.step4.p2') }}</p>
                         <p>
-                          1. WhatsApp:
+                          1.
                           <a
                             href="https://rebrand.ly/耀眼行動計劃查詢"
                             target="_blank"
                             class="!text-[#2958a3] !underline !underline-offset-4"
-                            >https://rebrand.ly/耀眼行動計劃查詢
+                            >「耀眼行動」WhatsApp專線：6062 9611
                           </a>
                         </p>
                         <p>
                           2. {{ t('csp.doctor.tel') }}:
                           <a
-                            href="tel:+852 3956 2026"
+                            href="tel:+852 3956 2025"
                             class="!text-[#2958a3] !underline !underline-offset-4"
-                            >3956 2026</a
+                            >3956 2025</a
                           >
                         </p>
                       </div>
