@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:43
- * @LastEditTime: 2026-04-20 10:32:16
+ * @LastEditTime: 2026-04-20 17:21:41
  * @FilePath: /pages/cataract/intraocular-lens-types.vue
  * @Description: 人工晶体比较表
 -->
@@ -150,7 +150,7 @@ const lensList: lensItem[] = [
                         class="w-full"
                       />
                     </div>
-                    <span class="lens-table-title special text-[#EC8836]">
+                    <span class="lens-table-title text-outline text-[#EC8836]">
                       擴展景深人工晶體
                     </span>
                   </div>
@@ -164,7 +164,7 @@ const lensList: lensItem[] = [
                         class="w-full"
                       />
                     </div>
-                    <span class="lens-table-title special text-[#4886CE]">
+                    <span class="lens-table-title text-outline text-[#4886CE]">
                       多焦點人工晶體
                     </span>
                   </div>
@@ -281,10 +281,10 @@ const lensList: lensItem[] = [
                       <img
                         src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
                         alt="了解更多擴展景深人工晶體"
-                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px]"
+                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px] rounded-bl-xl lg:rounded-bl-[44px]"
                       />
                       <div
-                        class="lens-table-more edof text-[#F99D2C] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-[12px] lg:rounded-[44px]"
+                        class="lens-table-more edof text-[#F99D2C] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
                       >
                         <span>按此</span>
                         <span>了解更多</span>
@@ -309,10 +309,10 @@ const lensList: lensItem[] = [
                       <img
                         src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
                         alt="了解更多多焦點人工晶體"
-                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px]"
+                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px] rounded-bl-xl lg:rounded-bl-[44px]"
                       />
                       <div
-                        class="lens-table-more multifocal text-[#4886CE] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-[12px] lg:rounded-[44px]"
+                        class="lens-table-more multifocal text-[#4886CE] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
                       >
                         <span>按此</span>
                         <span>了解更多</span>
@@ -345,7 +345,7 @@ const lensList: lensItem[] = [
           >
             <path
               d="m0 5.773 10 5.774V0zm301 0L291 0v11.547zm-292 0v1h283v-2H9z"
-              fill="#3a5fb2"
+              fill="#2958a3"
             />
           </svg>
           <div class="text-primary text-sm font-bold tracking-widest">
@@ -442,6 +442,27 @@ const lensList: lensItem[] = [
   left: 50%;
   transform: translateX(-50%);
 }
+.text-outline {
+  text-shadow: rgb(255, 255, 255) 3px 0px 0px,
+    rgb(255, 255, 255) 2.83333px 0.983333px 0px,
+    rgb(255, 255, 255) 2.35px 1.85px 0px,
+    rgb(255, 255, 255) 1.61667px 2.51667px 0px,
+    rgb(255, 255, 255) 0.7px 2.91667px 0px,
+    rgb(255, 255, 255) -0.283333px 2.98333px 0px,
+    rgb(255, 255, 255) -1.25px 2.73333px 0px,
+    rgb(255, 255, 255) -2.06667px 2.16667px 0px,
+    rgb(255, 255, 255) -2.66667px 1.36667px 0px,
+    rgb(255, 255, 255) -2.96667px 0.416667px 0px,
+    rgb(255, 255, 255) -2.95px -0.566667px 0px,
+    rgb(255, 255, 255) -2.6px -1.5px 0px,
+    rgb(255, 255, 255) -1.96667px -2.26667px 0px,
+    rgb(255, 255, 255) -1.11667px -2.78333px 0px,
+    rgb(255, 255, 255) -0.133333px -3px 0px,
+    rgb(255, 255, 255) 0.85px -2.88333px 0px,
+    rgb(255, 255, 255) 1.75px -2.43333px 0px,
+    rgb(255, 255, 255) 2.45px -1.73333px 0px,
+    rgb(255, 255, 255) 2.88333px -0.833333px 0px;
+}
 .wrapper {
   padding-left: 12px;
   padding-right: 12px;
@@ -474,27 +495,6 @@ const lensList: lensItem[] = [
     letter-spacing: 0.1em;
     text-align: center;
     white-space: nowrap;
-    &.special {
-      text-shadow: rgb(255, 255, 255) 3px 0px 0px,
-        rgb(255, 255, 255) 2.83333px 0.983333px 0px,
-        rgb(255, 255, 255) 2.35px 1.85px 0px,
-        rgb(255, 255, 255) 1.61667px 2.51667px 0px,
-        rgb(255, 255, 255) 0.7px 2.91667px 0px,
-        rgb(255, 255, 255) -0.283333px 2.98333px 0px,
-        rgb(255, 255, 255) -1.25px 2.73333px 0px,
-        rgb(255, 255, 255) -2.06667px 2.16667px 0px,
-        rgb(255, 255, 255) -2.66667px 1.36667px 0px,
-        rgb(255, 255, 255) -2.96667px 0.416667px 0px,
-        rgb(255, 255, 255) -2.95px -0.566667px 0px,
-        rgb(255, 255, 255) -2.6px -1.5px 0px,
-        rgb(255, 255, 255) -1.96667px -2.26667px 0px,
-        rgb(255, 255, 255) -1.11667px -2.78333px 0px,
-        rgb(255, 255, 255) -0.133333px -3px 0px,
-        rgb(255, 255, 255) 0.85px -2.88333px 0px,
-        rgb(255, 255, 255) 1.75px -2.43333px 0px,
-        rgb(255, 255, 255) 2.45px -1.73333px 0px,
-        rgb(255, 255, 255) 2.88333px -0.833333px 0px;
-    }
   }
   .lens-table-bb {
     border-bottom: 0.6px solid #cbc6c6;
@@ -547,6 +547,17 @@ const lensList: lensItem[] = [
       box-shadow: 0 0 12.293px rgba(72, 134, 206, 0.86);
     }
   }
+  .lens-table-subtitle {
+    color: #2958a3;
+    font-weight: 700;
+    font-size: 3.3333vw;
+    letter-spacing: 0.1em;
+    text-shadow: 1px 1px 2px #fff;
+    line-height: 4.1026vw;
+    width: 15.128vw;
+    white-space: nowrap;
+    text-align: center;
+  }
 }
 .button-ws {
   display: block;
@@ -584,17 +595,6 @@ const lensList: lensItem[] = [
     background-position: center;
   }
 }
-.lens-table-subtitle {
-  color: #3a5fb2;
-  font-weight: 700;
-  font-size: 3.3333vw;
-  letter-spacing: 0.1em;
-  text-shadow: 1px 1px 2px #fff;
-  line-height: 4.1026vw;
-  width: 15.128vw;
-  white-space: nowrap;
-  text-align: center;
-}
 @media screen and (min-width: 768px) {
   .button-ws {
     border: min(9px, 0.4688vw) solid #fff;
@@ -607,18 +607,6 @@ const lensList: lensItem[] = [
       font-size: 48px;
     }
   }
-  .lens-table-subtitle {
-    text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff,
-      3px 3px 0 #fff;
-    width: min(170px, 8.854vw);
-    font-size: min(24px, 2vw);
-    letter-spacing: min(2.4px, 0.125vw);
-    line-height: min(40px, 2.083vw);
-    min-height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
   .lens-table {
     tr {
       &:last-child {
@@ -626,6 +614,18 @@ const lensList: lensItem[] = [
           padding-bottom: 80px;
         }
       }
+    }
+    .lens-table-subtitle {
+      text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff,
+        3px 3px 0 #fff;
+      width: min(170px, 8.854vw);
+      font-size: min(24px, 2vw);
+      letter-spacing: min(2.4px, 0.125vw);
+      line-height: min(40px, 2.083vw);
+      min-height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 }
