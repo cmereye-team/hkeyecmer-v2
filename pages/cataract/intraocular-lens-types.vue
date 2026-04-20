@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:43
- * @LastEditTime: 2026-04-17 21:05:19
+ * @LastEditTime: 2026-04-20 08:50:33
  * @FilePath: /pages/cataract/intraocular-lens-types.vue
  * @Description: 人工晶体比较表
 -->
@@ -273,7 +273,10 @@ const lensList: lensItem[] = [
                   />白內障且希望<br />減少眼鏡<br
                     class="block lg:hidden"
                   />依賴的患者
-                  <div class="absolute-horizon -bottom-2 z-10">
+                  <nuxt-link
+                    to="/Cataract/extended-depth-of-focus-lenses"
+                    class="absolute-horizon -bottom-2 z-10"
+                  >
                     <div class="relative">
                       <img
                         src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
@@ -287,7 +290,7 @@ const lensList: lensItem[] = [
                         <span>了解更多</span>
                       </div>
                     </div>
-                  </div>
+                  </nuxt-link>
                 </td>
                 <td
                   class="lens-table-td text-justify lg:min-h-[232px] relative"
@@ -456,6 +459,7 @@ const lensList: lensItem[] = [
 }
 .lens-table-wrap {
   background: url(https://static.cmereye.com/imgs/2024/03/cc6eb4fe0d7bb9b5.png) no-repeat top,url(https://static.cmereye.com/imgs/2024/03/b34e0a520ed9c467.png) no-repeat bottom;
+  background-size: cover;
 }
 .lens-table {
   -ms-overflow-style: none;
