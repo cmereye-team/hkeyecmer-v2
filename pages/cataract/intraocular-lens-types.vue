@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:43
- * @LastEditTime: 2026-04-20 08:50:33
+ * @LastEditTime: 2026-04-20 10:32:16
  * @FilePath: /pages/cataract/intraocular-lens-types.vue
  * @Description: 人工晶体比较表
 -->
@@ -121,7 +121,7 @@ const lensList: lensItem[] = [
         </svg>
       </div>
       <div
-        class="intro-desc text-primary-main rounded-4xl text-base lg:text-2xl text-justify font-medium tracking-widest leading-[1.6] p-4 lg:p-0"
+        class="intro-desc text-primary rounded-4xl text-base lg:text-2xl text-justify font-medium tracking-widest leading-[1.6] p-4 lg:p-0"
       >
         <p>
           當白內障讓您的世界變得模糊、色彩不再鮮明時，接受手術無疑是重見清楚視力的最佳選擇。而現今白內障手術除了移除混濁的晶體，更有不同人工晶體選擇滿足患者不同需求，包括:
@@ -132,7 +132,7 @@ const lensList: lensItem[] = [
     <section class="mb-8 lg:mb-20 lens-table-wrap py-10 lg:pb-12 lg:pt-25">
       <div class="px-3 xl:px-0 mx-auto max-w-[1340px]">
         <h2
-          class="text-primary-main text-center text-3xl lg:text-6xl font-bold tracking-widest mb-6 lg:mb-10 !leading-[1.2]"
+          class="text-primary text-center text-3xl lg:text-6xl font-bold tracking-widest mb-6 lg:mb-10 !leading-[1.2]"
         >
           白內障人工晶體<br />比較表
         </h2>
@@ -180,7 +180,7 @@ const lensList: lensItem[] = [
                         class="w-full lens-icon-normal"
                       />
                     </div>
-                    <span class="lens-table-title text-primary-main">
+                    <span class="lens-table-title text-primary">
                       單焦點<br class="block md:hidden" />人工晶體
                     </span>
                   </div>
@@ -196,7 +196,7 @@ const lensList: lensItem[] = [
                         class="w-full lens-icon-normal"
                       />
                     </div>
-                    <span class="lens-table-title text-primary-main">
+                    <span class="lens-table-title text-primary">
                       散光型<br class="block md:hidden" />人工晶體
                     </span>
                   </div>
@@ -348,7 +348,7 @@ const lensList: lensItem[] = [
               fill="#3a5fb2"
             />
           </svg>
-          <div class="text-primary-main text-sm font-bold tracking-widest">
+          <div class="text-primary text-sm font-bold tracking-widest">
             左右滑動以觀看表格
           </div>
         </div>
@@ -363,11 +363,11 @@ const lensList: lensItem[] = [
     </section>
     <section class="px-11 xl:px-0 max-w-6xl mx-auto mb-25 lg:mb-40">
       <h2
-        class="types-title text-2xl lg:text-4xl text-center text-primary-main font-bold mt-2 lg:mt-7 mb-12 lg:mb-[140px]"
+        class="types-title text-2xl lg:text-4xl text-center text-primary font-bold mt-2 lg:mt-7 mb-12 lg:mb-[140px]"
       >
         白內障人工晶體
       </h2>
-      <div class="space-y-10 lg:space-y-[92px] text-primary-main">
+      <div class="space-y-10 lg:space-y-[92px] text-primary">
         <div
           v-for="(lens, index) in lensList"
           :key="index"
@@ -436,10 +436,7 @@ const lensList: lensItem[] = [
     </section>
   </div>
 </template>
-<style lang="scss" scoped>
-.text-primary-main {
-  color: #3a5fb2;
-}
+<style lang="scss" scope>
 .absolute-horizon {
   position: absolute;
   left: 50%;
