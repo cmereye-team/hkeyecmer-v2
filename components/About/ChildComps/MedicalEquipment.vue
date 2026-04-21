@@ -1,53 +1,9 @@
 <script setup lang="ts">
-import { Navigation, Virtual, FreeMode, Thumbs } from 'swiper'
-const swiperList = [
-  {
-    eqImgUrl:
-      'https://statichk.cmermedical.com/smile/equipment/equipment-026-v2.webp',
-    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_1',
-    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_1',
-  },
-  {
-    eqImgUrl:
-      'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment1.jpg',
-    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_1',
-    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_1',
-  },
-  {
-    eqImgUrl:
-      'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment2.jpg',
-    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_2',
-    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_2',
-  },
-  {
-    eqImgUrl:
-      'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment3.jpg',
-    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_3',
-    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_3',
-  },
-  {
-    eqImgUrl:
-      'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment4.jpg',
-    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_4',
-    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_4',
-  },
-  {
-    eqImgUrl:
-      'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment5.jpg',
-    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_5',
-    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_5',
-  },
-  {
-    eqImgUrl:
-      'http://static.cmereye.com/imgs/hkcmereye-newstyle/about/equipment6.jpg',
-    eqName: 'pages.about_us.equipment.equipment_name.equipment_name_6',
-    eqDes: 'pages.about_us.equipment.equipment_des.equipment_des_6',
-  },
-]
+import { Navigation, FreeMode, Thumbs, Controller } from 'swiper'
 
 const medicalEquipment = [
   {
-    href: 'https://statichk.cmermedical.com/smile/equipment/equipment-026-v2.webp',
+    href: 'https://statichk.cmermedical.com/hkcmereye/about/equipment-026-v1.webp',
     title: 'Zeiss PRESBYOND 500Hz MEL90',
     title2: '',
     content:
@@ -211,7 +167,7 @@ const medicalEquipment = [
     title2: 'Platinum 330',
     content:
       '角膜膠原交聯術(Corneal Collagen Cross-Linking) 一般應用在臨床錐形角膜或可疑圓錐角膜，亦可以應用在接受激光矯視的人士。 角膜局部予核黃素（Riboflavin；即維生素B2，用於增加能量吸收並釋出活性氧），再經本儀器發出紫外線（UVA）照射，令角膜組織釋放一些粒子，使纖維中的膠原蛋白緊扣一起，因此而變得堅韌穩定，鞏固角膜基質強度，減少術後角膜變形的可能性,深度近視或散光的情況下可能減少度數反彈的機會和程度。',
-    from: '資料及圖片來源：Peschke   ',
+    from: '資料及圖片來源：Peschke',
   },
   {
     href: 'https://static.cmereye.com/imgs/2023/01/a77eb4b681c4349f.jpg',
@@ -219,7 +175,7 @@ const medicalEquipment = [
     title2: '激光治療儀',
     content:
       'Tango ReflexEllex 的新型 Tango Reflex™ 激光治療儀結合了多種治療平臺 — — 可進行青光眼選擇性小樑整型激光(Selective Laser Trabeculoplasty, SLT) 治療，YAG後囊激光切開治療，以及微創玻璃體消融術。',
-    from: '資料及圖片來源：Ellex ',
+    from: '資料及圖片來源：Ellex',
   },
   {
     href: 'https://static.cmereye.com/imgs/2023/01/2755bf78d190a39c.jpg',
@@ -227,7 +183,7 @@ const medicalEquipment = [
     title2: '',
     content:
       '飛秒激光白內障矯視儀是新一代飛秒激光白內障手術儀，集三維影像及導航技術於一身，能分析眼部結構及為眼睛描繪出立體三維圖，幫助為手術作出精密的計算及預測。新一代飛秒激光輔助矯視白內障手術採用全電腦控制的紅外線激光進行三個步驟，包括角膜切口，撕囊及擊碎晶體。使醫生可以精確地進行切割及均勻地擊碎晶體，不論在切割形狀及深度上更趨精細，以準確地植入人工晶體，使晶體位置較準確，提高多焦晶體的精準度及術後視力質量，由於新技術安全、可靠及精準度極高，可以減低手術創傷、術後感染、發炎等併發症。',
-    from: '資料及圖片來源：Alcon ',
+    from: '資料及圖片來源：Alcon',
   },
   {
     href: 'https://static.cmereye.com/imgs/2023/01/713b286109544952.jpg',
@@ -254,10 +210,18 @@ const medicalEquipment = [
     from: '資料及圖片來源：Alcon',
   },
 ]
-const thumbsSwiper = ref(null)
+// const thumbsSwiper = ref(null)
 
-const setThumbsSwiper = (swiper: any) => {
-  thumbsSwiper.value = swiper
+// const setThumbsSwiper = (swiper: any) => {
+//   thumbsSwiper.value = swiper
+// }
+const firstSwiper = ref<any>(null)
+const secondSwiper = ref<any>(null)
+const setFirstSwiper = (swiper: any) => {
+  firstSwiper.value = swiper
+}
+const setSecondSwiper = (swiper: any) => {
+  secondSwiper.value = swiper
 }
 </script>
 <template>
@@ -276,16 +240,17 @@ const setThumbsSwiper = (swiper: any) => {
         :navigation="true"
         :space-between="20"
         :slides-per-view="3"
-        :free-mode="true"
+        :free-mode="false"
         :watch-slides-progress="true"
-        :modules="[FreeMode, Navigation, Thumbs]"
+        :slide-to-clicked-slide="true"
+        :modules="[Navigation, Thumbs, Controller]"
+        :controller="{ control: secondSwiper }"
         class="mySwiper"
-        @swiper="setThumbsSwiper"
+        @swiper="setFirstSwiper"
       >
         <swiper-slide
           v-for="(slideContent, index) in medicalEquipment"
           :key="index"
-          :virtual-index="index"
           class="mySwiper-slide"
         >
           <div>
@@ -301,9 +266,10 @@ const setThumbsSwiper = (swiper: any) => {
       <swiper
         :loop="true"
         :slides-per-view="1"
-        :thumbs="{ swiper: thumbsSwiper }"
+        :modules="[Controller]"
+        :controller="{ control: firstSwiper }"
         :centered-slides="true"
-        :modules="[Thumbs, FreeMode]"
+        @swiper="setSecondSwiper"
       >
         <swiper-slide
           v-for="(slideContent, imgIndex) in medicalEquipment"
@@ -412,7 +378,7 @@ const setThumbsSwiper = (swiper: any) => {
     }
   }
 }
-:deep(.mySwiper .swiper-slide-thumb-active) {
+:deep(.mySwiper .swiper-slide-active) {
   & > div {
     &::before {
       background: rgba(0, 0, 0, 0);
@@ -561,7 +527,7 @@ const setThumbsSwiper = (swiper: any) => {
   padding-bottom: 90px;
 }
 @media screen and (max-width: 768px) {
-  #medicalEquipment{
+  #medicalEquipment {
     margin-top: 60px;
     padding-top: 130px;
   }
@@ -577,7 +543,7 @@ const setThumbsSwiper = (swiper: any) => {
   .mySwiper-slide {
     padding: 0;
   }
-  .mainText { 
+  .mainText {
     width: calc(100% - 30px);
     margin: 0 auto;
   }
@@ -618,16 +584,9 @@ const setThumbsSwiper = (swiper: any) => {
       left: -10px;
     }
     & > div:last-child {
-      right:-10px;
+      right: -10px;
       bottom: -10px;
     }
-  }
-}
-</style>
-<style>
-@media screen and (min-width: 1920px) {
-  #medicalEquipment {
-
   }
 }
 </style>

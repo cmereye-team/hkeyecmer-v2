@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:27
- * @LastEditTime: 2026-04-20 17:24:13
+ * @LastEditTime: 2026-04-21 09:06:37
  * @FilePath: /pages/cataract/extended-depth-of-focus-lenses.vue
  * @Description: 扩展景深人工晶体
 -->
@@ -259,8 +259,9 @@ const faqs = [
                   適合患有白內障<br class="block lg:hidden" />且希望<br
                     class="hidden lg:block"
                   />減少眼鏡<br class="block lg:hidden" />依賴的患者
-                  <nuxt-link
-                    to="/Cataract/extended-depth-of-focus-lenses"
+                  <a
+                    href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
+                    target="_blank"
                     class="absolute-horizon -bottom-4 z-10"
                   >
                     <div class="relative">
@@ -276,7 +277,7 @@ const faqs = [
                         <span>了解更多</span>
                       </div>
                     </div>
-                  </nuxt-link>
+                  </a>
                 </td>
                 <td class="lens-table-td relative">可配合佩戴眼鏡人士</td>
                 <td class="lens-table-td lg:min-h-[232px] relative">
@@ -374,7 +375,7 @@ const faqs = [
         </div>
       </div>
     </section>
-    <section class="wrapper pb-20 lg:pb-40">
+    <section class="wrapper mb-40">
       <h2 class="title-normal mb-12 lg:mb-22">擴展景深人工晶體常見問題</h2>
       <PageCollapse
         :answer="faqs"
