@@ -94,7 +94,7 @@
             <swiper
               :loop="true"
               :slides-per-view="1"
-              :spaceBetween="20"
+              :space-between="20"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :navigation="true"
@@ -128,25 +128,25 @@
               「希瑪眼科中心」是上市公司「香港希瑪眼科集團」旗下的眼科中心。
             </p>
             <strong
-              > 我們的集團名稱<span class="text-blue">「C-MER」</span
-              >，正正反映著我們的理念與執著：  </strong
+              >我們的集團名稱<span class="text-blue">「C-MER」</span
+              >，正正反映著我們的理念與執著：</strong
             >
             <ul>
               <li>
                 <span class="p-border">「C」： </span> 專業臨床服務 Professional
-                Clinical Services  
+                Clinical Services
               </li>
               <li>
                 <span class="p-border">「Ｍ」：</span> 現代化管理 Modern
-                Management  
+                Management
               </li>
               <li>
                 <span class="p-border">「Ｅ」：</span> 優質教育 Quality
-                Education 
+                Education
               </li>
               <li>
                 <span class="p-border">「Ｒ」：</span> 開創性科研 Pioneering
-                Research  
+                Research
               </li>
             </ul>
           </div>
@@ -159,8 +159,8 @@
         </div>
         <div class="center_details_re">
           <p>
-            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」  
-             同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
+            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 
+            同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
           </p>
           <p>
             希瑪眼科中心擴展至全港擁有<strong class="text-blue"
@@ -190,235 +190,213 @@
         </div>
 
         <div class="service_box">
-          <div class=" ">
-            <div class="row">
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.3s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/cataract/">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item1.png"
-                        title="希瑪林順潮眼科中心_白內障"
-                        alt="希瑪林順潮眼科中心_白內障"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class="fs-sm-16">白內障</p>
-                    </div>
-                  </a>
-                </div>
+          <div class="row">
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.3s">
+              <div class="service_hover">
+                <a href="/medical-service/cataract/">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item1.png"
+                      title="希瑪林順潮眼科中心_白內障"
+                      alt="希瑪林順潮眼科中心_白內障"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class="fs-sm-16">白內障</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.4s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/glaucoma">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item2.png"
-                        title="希瑪林順潮眼科中心_黃斑病變"
-                        alt="希瑪林順潮眼科中心_黃斑病變"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">青光眼</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.4s">
+              <div class="service_hover">
+                <a href="/medical-service/glaucoma">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item2.png"
+                      title="希瑪林順潮眼科中心_青光眼"
+                      alt="希瑪林順潮眼科中心_青光眼"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">青光眼</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.5s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/xerophthalmia">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item3.png"
-                        title="希瑪林順潮眼科中心_視網膜脫落"
-                        alt="希瑪林順潮眼科中心_視網膜脫落"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">乾眼症</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.5s">
+              <div class="service_hover">
+                <a href="/medical-service/xerophthalmia">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item3.png"
+                      title="希瑪林順潮眼科中心_乾眼症"
+                      alt="希瑪林順潮眼科中心_乾眼症"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">乾眼症</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.6s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/muscaeVolitantes">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item4.png"
-                        title="希瑪林順潮眼科中心_青光眼"
-                        alt="希瑪林順潮眼科中心_青光眼"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">飛蚊症</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.6s">
+              <div class="service_hover">
+                <a href="/medical-service/muscaeVolitantes">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item4.png"
+                      title="希瑪林順潮眼科中心_飛蚊症"
+                      alt="希瑪林順潮眼科中心_飛蚊症"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">飛蚊症</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.7s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/maculopathy">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item5.png"
-                        title="希瑪林順潮眼科中心_眼表疾病_眼角膜疾病"
-                        alt="希瑪林順潮眼科中心_眼表疾病_眼角膜疾病"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">黃斑病變</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.7s">
+              <div class="service_hover">
+                <a href="/medical-service/maculopathy">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item5.png"
+                      title="希瑪林順潮眼科中心_黃斑病變"
+                      alt="希瑪林順潮眼科中心_黃斑病變"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">黃斑病變</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.8s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/conjunctivitis">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item6.png"
-                        title="希瑪林順潮眼科中心_小兒眼疾斜視弱視"
-                        alt="希瑪林順潮眼科中心_小兒眼疾斜視弱視"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">結膜炎</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.8s">
+              <div class="service_hover">
+                <a href="/medical-service/conjunctivitis">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item6.png"
+                      title="希瑪林順潮眼科中心_結膜炎"
+                      alt="希瑪林順潮眼科中心_結膜炎"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">結膜炎</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.9s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/strabismusAmblyopia">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item7.png"
-                        title="希瑪林順潮眼科中心_眼整形_眼眶疾病"
-                        alt="希瑪林順潮眼科中心_眼整形_眼眶疾病"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">兒童斜弱視</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.9s">
+              <div class="service_hover">
+                <a href="/medical-service/strabismusAmblyopia">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item7.png"
+                      title="希瑪林順潮眼科中心_兒童斜弱視"
+                      alt="希瑪林順潮眼科中心_兒童斜弱視"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">兒童斜弱視</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="1s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/ocularSurfaceDiseases">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item8.png"
-                        title="希瑪林順潮眼科中心_驗光配鏡"
-                        alt="希瑪林順潮眼科中心_驗光配鏡"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">眼表及角膜疾病</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1s">
+              <div class="service_hover">
+                <a href="/medical-service/ocularSurfaceDiseases">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item8.png"
+                      title="希瑪林順潮眼科中心_眼表及角膜疾病"
+                      alt="希瑪林順潮眼科中心_眼表及角膜疾病"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">眼表及角膜疾病</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="1.1s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/amotioRetinae" target="_blank">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item9.png"
-                        title="希瑪林順潮眼科中心_smile矯視"
-                        alt="希瑪林順潮眼科中心_smile矯視"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">視網膜脫落及疾病</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1.1s">
+              <div class="service_hover">
+                <a href="/medical-service/amotioRetinae" target="_blank">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item9.png"
+                      title="希瑪林順潮眼科中心_視網膜脫落及疾病"
+                      alt="希瑪林順潮眼科中心_視網膜脫落及疾病"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">視網膜脫落及疾病</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.9s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/ocularSurfaceDiseases">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item10.png"
-                        title="希瑪林順潮眼科中心_眼整形_眼眶疾病"
-                        alt="希瑪林順潮眼科中心_眼整形_眼眶疾病"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">眼整形及眼眶疾病</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.9s">
+              <div class="service_hover">
+                <a href="/medical-service/ocularSurfaceDiseases">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item10.png"
+                      title="希瑪林順潮眼科中心_眼整形_眼眶疾病"
+                      alt="希瑪林順潮眼科中心_眼整形_眼眶疾病"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">眼整形及眼眶疾病</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="1s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/medicalOptometry">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item11.png"
-                        title="希瑪林順潮眼科中心_驗光配鏡"
-                        alt="希瑪林順潮眼科中心_驗光配鏡"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">醫學驗光配鏡</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1s">
+              <div class="service_hover">
+                <a href="/medical-service/medicalOptometry">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item11.png"
+                      title="希瑪林順潮眼科中心_驗光配鏡"
+                      alt="希瑪林順潮眼科中心_驗光配鏡"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">醫學驗光配鏡</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="1.1s"
-              >
-                <div class="service_hover">
-                  <a href="https://smile.hkcmereye.com/" target="_blank">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item12.png"
-                        title="希瑪林順潮眼科中心_smile矯視"
-                        alt="希瑪林順潮眼科中心_smile矯視"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">屈光矯視</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1.1s">
+              <div class="service_hover">
+                <a href="https://smile.hkcmereye.com/" target="_blank">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item12.png"
+                      title="希瑪林順潮眼科中心_smile矯視"
+                      alt="希瑪林順潮眼科中心_smile矯視"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">屈光矯視</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1.2s">
+              <div class="service_hover">
+                <a href="https://smile.hkcmereye.com/" target="_blank">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item13.webp"
+                      title="希瑪林順潮眼科中心_老花矯視"
+                      alt="希瑪林順潮眼科中心_老花矯視"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">老花矯視</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -436,7 +414,7 @@
       <swiper
         :loop="false"
         :centered-slides="true"
-        :spaceBetween="0"
+        :space-between="0"
         :autoplay="{
           delay: 4000,
           disableOnInteraction: false,
@@ -474,7 +452,7 @@
       <swiper
         :loop="true"
         :slides-per-view="1"
-        :spaceBetween="20"
+        :space-between="20"
         :autoplay="{ delay: 100000 }"
         :pagination="{ clickable: true }"
         :navigation="true"
@@ -511,7 +489,7 @@
             <swiper
               :loop="true"
               :slides-per-view="4"
-              :spaceBetween="20"
+              :space-between="20"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :modules="[Autoplay]"
@@ -536,7 +514,7 @@
             <swiper
               :loop="true"
               :slides-per-view="1"
-              :spaceBetween="20"
+              :space-between="20"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :modules="[Autoplay]"
@@ -1118,9 +1096,17 @@ const teamSlides = [
   /* 朗眼科診所環境 end */
 
   /* 眼科服务 start */
-  .service_box .service_item .service_hover .service_txt p {
-    /*padding-top: 2rem;*/
+  .service_box .service_item {
+    flex: 0 0 20%;
+    max-width: 20%;
+    margin-bottom: clamp(16px, 2%, 24px);
+  }
+  .service_box .service_item .service_hover {
+    width: 100%;
+  }
+  .service_box .service_item .service_txt p {
     margin-top: 1rem;
+    font-size: 24px;
   }
 
   .service_box .service_item .service_pic {
@@ -1624,6 +1610,9 @@ const teamSlides = [
   }
 }
 
+.service_box .service_item {
+  padding: 0 16px;
+}
 .service_box .service_item .service_pic img {
   max-width: 80px;
 }

@@ -119,7 +119,7 @@ const SerListL = [
     imgUrl:
       'https://statichk.cmermedical.com/hkcmereye/service/service-014-v1.webp',
     des: 'pages.medical_service.smileClear',
-    link: 'https://smile.hkcmereye.com/vision-correction-presbyopia',
+    link: 'https://smile.hkcmereye.com/',
   },
 ]
 </script>

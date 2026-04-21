@@ -90,7 +90,7 @@
             <swiper
               :loop="false"
               :slides-per-view="1"
-              :spaceBetween="0"
+              :space-between="0"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :navigation="true"
@@ -155,14 +155,13 @@
             <swiper
               :loop="true"
               :slides-per-view="1"
-              :spaceBetween="0"
+              :space-between="0"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :navigation="true"
               :modules="[Autoplay, Navigation]"
             >
               <swiper-slide
-                class=""
                 v-for="(swiperItem, swiperIndex) in clinicSlidesTwo"
                 :key="swiperIndex"
               >
@@ -188,25 +187,25 @@
               「希瑪眼科中心」是上市公司「香港希瑪眼科集團」旗下的眼科中心。
             </p>
             <strong
-              > 我們的集團名稱<span class="text-blue">「C-MER」</span
-              >，正正反映著我們的理念與執著：  </strong
+              >我們的集團名稱<span class="text-blue">「C-MER」</span
+              >，正正反映著我們的理念與執著：</strong
             >
             <ul>
               <li>
                 <span class="p-border">「C」： </span> 專業臨床服務 Professional
-                Clinical Services  
+                Clinical Services
               </li>
               <li>
                 <span class="p-border">「Ｍ」：</span> 現代化管理 Modern
-                Management  
+                Management
               </li>
               <li>
                 <span class="p-border">「Ｅ」：</span> 優質教育 Quality
-                Education 
+                Education
               </li>
               <li>
                 <span class="p-border">「Ｒ」：</span> 開創性科研 Pioneering
-                Research  
+                Research
               </li>
             </ul>
           </div>
@@ -219,8 +218,8 @@
         </div>
         <div class="center_details_re">
           <p>
-            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」  
-             同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
+            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」
+            同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
           </p>
           <p>
             希瑪眼科中心擴展至全港擁有<strong class="text-blue"
@@ -250,235 +249,213 @@
         </div>
 
         <div class="service_box">
-          <div class=" ">
-            <div class="row">
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.3s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/cataract/">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item1.png"
-                        title="希瑪林順潮眼科中心_白內障"
-                        alt="希瑪林順潮眼科中心_白內障"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class="fs-sm-16">白內障</p>
-                    </div>
-                  </a>
-                </div>
+          <div class="row">
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.3s">
+              <div class="service_hover">
+                <a href="/medical-service/cataract/">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item1.png"
+                      title="希瑪林順潮眼科中心_白內障"
+                      alt="希瑪林順潮眼科中心_白內障"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class="fs-sm-16">白內障</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.4s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/glaucoma">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item2.png"
-                        title="希瑪林順潮眼科中心_黃斑病變"
-                        alt="希瑪林順潮眼科中心_黃斑病變"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">青光眼</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.4s">
+              <div class="service_hover">
+                <a href="/medical-service/glaucoma">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item2.png"
+                      title="希瑪林順潮眼科中心_青光眼"
+                      alt="希瑪林順潮眼科中心_青光眼"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">青光眼</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.5s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/xerophthalmia">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item3.png"
-                        title="希瑪林順潮眼科中心_視網膜脫落"
-                        alt="希瑪林順潮眼科中心_視網膜脫落"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">乾眼症</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.5s">
+              <div class="service_hover">
+                <a href="/medical-service/xerophthalmia">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item3.png"
+                      title="希瑪林順潮眼科中心_乾眼症"
+                      alt="希瑪林順潮眼科中心_乾眼症"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">乾眼症</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.6s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/muscaeVolitantes">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item4.png"
-                        title="希瑪林順潮眼科中心_青光眼"
-                        alt="希瑪林順潮眼科中心_青光眼"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">飛蚊症</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.6s">
+              <div class="service_hover">
+                <a href="/medical-service/muscaeVolitantes">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item4.png"
+                      title="希瑪林順潮眼科中心_飛蚊症"
+                      alt="希瑪林順潮眼科中心_飛蚊症"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">飛蚊症</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.7s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/maculopathy">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item5.png"
-                        title="希瑪林順潮眼科中心_眼表疾病_眼角膜疾病"
-                        alt="希瑪林順潮眼科中心_眼表疾病_眼角膜疾病"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">黃斑病變</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.7s">
+              <div class="service_hover">
+                <a href="/medical-service/maculopathy">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item5.png"
+                      title="希瑪林順潮眼科中心_黃斑病變"
+                      alt="希瑪林順潮眼科中心_黃斑病變"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">黃斑病變</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.8s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/conjunctivitis">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item6.png"
-                        title="希瑪林順潮眼科中心_小兒眼疾斜視弱視"
-                        alt="希瑪林順潮眼科中心_小兒眼疾斜視弱視"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">結膜炎</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.8s">
+              <div class="service_hover">
+                <a href="/medical-service/conjunctivitis">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item6.png"
+                      title="希瑪林順潮眼科中心_結膜炎"
+                      alt="希瑪林順潮眼科中心_結膜炎"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">結膜炎</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.9s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/strabismusAmblyopia">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item7.png"
-                        title="希瑪林順潮眼科中心_眼整形_眼眶疾病"
-                        alt="希瑪林順潮眼科中心_眼整形_眼眶疾病"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">兒童斜弱視</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.9s">
+              <div class="service_hover">
+                <a href="/medical-service/strabismusAmblyopia">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item7.png"
+                      title="希瑪林順潮眼科中心_兒童斜弱視"
+                      alt="希瑪林順潮眼科中心_兒童斜弱視"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">兒童斜弱視</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="1s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/ocularSurfaceDiseases">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item8.png"
-                        title="希瑪林順潮眼科中心_驗光配鏡"
-                        alt="希瑪林順潮眼科中心_驗光配鏡"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">眼表及角膜疾病</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1s">
+              <div class="service_hover">
+                <a href="/medical-service/ocularSurfaceDiseases">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item8.png"
+                      title="希瑪林順潮眼科中心_眼表及角膜疾病"
+                      alt="希瑪林順潮眼科中心_眼表及角膜疾病"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">眼表及角膜疾病</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="1.1s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/amotioRetinae" target="_blank">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item9.png"
-                        title="希瑪林順潮眼科中心_smile矯視"
-                        alt="希瑪林順潮眼科中心_smile矯視"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">視網膜脫落及疾病</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1.1s">
+              <div class="service_hover">
+                <a href="/medical-service/amotioRetinae" target="_blank">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item9.png"
+                      title="希瑪林順潮眼科中心_視網膜脫落及疾病"
+                      alt="希瑪林順潮眼科中心_視網膜脫落及疾病"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">視網膜脫落及疾病</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="0.9s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/ocularSurfaceDiseases">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item10.png"
-                        title="希瑪林順潮眼科中心_眼整形_眼眶疾病"
-                        alt="希瑪林順潮眼科中心_眼整形_眼眶疾病"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">眼整形及眼眶疾病</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="0.9s">
+              <div class="service_hover">
+                <a href="/medical-service/ocularSurfaceDiseases">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item10.png"
+                      title="希瑪林順潮眼科中心_眼整形_眼眶疾病"
+                      alt="希瑪林順潮眼科中心_眼整形_眼眶疾病"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">眼整形及眼眶疾病</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="1s"
-              >
-                <div class="service_hover">
-                  <a href="/medical-service/medicalOptometry">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item11.png"
-                        title="希瑪林順潮眼科中心_驗光配鏡"
-                        alt="希瑪林順潮眼科中心_驗光配鏡"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">醫學驗光配鏡</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1s">
+              <div class="service_hover">
+                <a href="/medical-service/medicalOptometry">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item11.png"
+                      title="希瑪林順潮眼科中心_驗光配鏡"
+                      alt="希瑪林順潮眼科中心_驗光配鏡"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">醫學驗光配鏡</p>
+                  </div>
+                </a>
               </div>
-              <div
-                class="wow fadeInLeft service_item col-lg-3"
-                data-wow-delay="1.1s"
-              >
-                <div class="service_hover">
-                  <a href="https://smile.hkcmereye.com/" target="_blank">
-                    <div class="service_pic">
-                      <img
-                        src="https://hkcmereye.com/template/default/picture/servicse/ser_item12.png"
-                        title="希瑪林順潮眼科中心_smile矯視"
-                        alt="希瑪林順潮眼科中心_smile矯視"
-                      />
-                    </div>
-                    <div class="service_txt">
-                      <p class=" ">屈光矯視</p>
-                    </div>
-                  </a>
-                </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1.1s">
+              <div class="service_hover">
+                <a href="https://smile.hkcmereye.com/" target="_blank">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item12.png"
+                      title="希瑪林順潮眼科中心_smile矯視"
+                      alt="希瑪林順潮眼科中心_smile矯視"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">屈光矯視</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="wow fadeInLeft service_item" data-wow-delay="1.2s">
+              <div class="service_hover">
+                <a href="https://smile.hkcmereye.com/" target="_blank">
+                  <div class="service_pic">
+                    <img
+                      src="https://hkcmereye.com/template/default/picture/servicse/ser_item13.webp"
+                      title="希瑪林順潮眼科中心_老花矯視"
+                      alt="希瑪林順潮眼科中心_老花矯視"
+                    />
+                  </div>
+                  <div class="service_txt">
+                    <p class=" ">老花矯視</p>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -495,9 +472,11 @@
       </div>
 
       <swiper
+        id="certify"
+        class="pcshow"
         :loop="true"
         :centered-slides="true"
-        :spaceBetween="0"
+        :space-between="0"
         :autoplay="{
           delay: 4000,
           disableOnInteraction: false,
@@ -514,13 +493,11 @@
           modifier: 2,
           slideShadows: false,
         }"
-        id="certify"
-        class="pcshow"
       >
         <swiper-slide
-          class="slideBox swiper-container"
           v-for="(swiperItem, swiperIndex) in eyeCenterImgList"
           :key="swiperIndex"
+          class="slideBox swiper-container"
         >
           <iframe
             :src="swiperItem.img"
@@ -532,20 +509,20 @@
         </swiper-slide>
       </swiper>
       <swiper
+        id="certifyTwo"
+        class="mbshow"
         :loop="true"
         :slides-per-view="1"
-        :spaceBetween="0"
+        :space-between="0"
         :autoplay="{ delay: 3000 }"
         :pagination="{ clickable: true }"
         :navigation="true"
         :modules="[Autoplay, Navigation]"
-        id="certifyTwo"
-        class="mbshow"
       >
         <swiper-slide
-          class="slideBox"
           v-for="(swiperItem, swiperIndex) in eyeCenterImgList"
           :key="swiperIndex"
+          class="slideBox"
         >
           <iframe
             :src="swiperItem.img"
@@ -568,340 +545,20 @@
         </div>
         <div style="padding: 30px 0">
           <div class="index_bottom_banner pcshow">
-            <!-- <div class="swiper-container swiper-container-friend" id="case4">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2022/12/ed18fa038434cd78.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林順潮醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://statichk.cmermedical.com/HKEYECMER/54154895641564.avif"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李佑榮醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_fk.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 范愷醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/template/default/picture/doctor_hjh.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黃俊華醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/template/default/picture/doctor_lks.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 劉凱珊醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_lwy.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李煒業醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_qjy.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 邱俊源醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/7eaf25af1aed62ba.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李琬微醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_hwj.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 胡偉君醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/template/default/picture/doctor_lsh.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李少雄醫生</a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黎浩樺醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李德倫醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黃禮文醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://static.cmereye.com/imgs/2023/08/423d199fdb161409.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 張瀞之醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林寶生醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林己明醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20201028/1603854608124490.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 張明權醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/static/upload/image/20201028/1603855080360770.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 陳偉樂醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20211018/1634523531823992.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 梁苑珊醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20220406/1649211019454510.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 鄒樞韻醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="		https://www.hkcmereye.com/static/upload/image/20220408/1649380369273990.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 尹浩柟醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20220408/1649380438451221.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 鄒樂韻醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/7dce7444c1c14da4.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 陳鼎鼐醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240528/1716881356882191.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 熊健慧醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240802/1722560007196049.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 高德全醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240902/1725240859365715.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 吳兆駿醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev">
-              <img
-                src="https://static.cmereye.com/imgs/2022/12/05ca2b06f750608f.png"
-                alt=""
-              />
-            </div>
-            <div class="swiper-button-next">
-              <img
-                src="https://static.cmereye.com/imgs/2022/12/bdeac20e23a3fdef.png"
-                alt=""
-              />
-            </div> -->
             <swiper
+              id="case4"
+              class="swiper-container-friend"
               :loop="true"
               :slides-per-view="4"
-              :spaceBetween="20"
+              :space-between="20"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :modules="[Autoplay]"
-              id="case4"
-              class="swiper-container-friend"
             >
               <swiper-slide
-                class="slideBox"
                 v-for="(swiperItem, swiperIndex) in teamSlides"
                 :key="swiperIndex"
+                class="slideBox"
               >
                 <img :src="swiperItem.image" alt="" />
                 <div class="overlay-box">
@@ -913,344 +570,20 @@
             </swiper>
           </div>
           <div class="index_bottom_banner mbshow">
-            <!-- <div
-              class="swiper-container swiper-container-friend swiper-container-mb"
-              id="case4"
-            >
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2022/12/ed18fa038434cd78.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林順潮醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://statichk.cmermedical.com/HKEYECMER/54154895641564.avif"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李佑榮醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_fk.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 范愷醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/template/default/picture/doctor_hjh.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黃俊華醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/template/default/picture/doctor_lks.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 劉凱珊醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_lwy.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李煒業醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_qjy.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 邱俊源醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/7eaf25af1aed62ba.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李琬微醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/template/default/picture/doctor_hwj.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 胡偉君醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/template/default/picture/doctor_lsh.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李少雄醫生</a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黎浩樺醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 李德倫醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 黃禮文醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://static.cmereye.com/imgs/2023/08/423d199fdb161409.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 張瀞之醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林寶生醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 林己明醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20201028/1603854608124490.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 張明權醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://www.hkcmereye.com/static/upload/image/20201028/1603855080360770.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 陳偉樂醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20211018/1634523531823992.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 梁苑珊醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20220406/1649211019454510.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 鄒樞韻醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="		https://www.hkcmereye.com/static/upload/image/20220408/1649380369273990.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 尹浩柟醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="	https://www.hkcmereye.com/static/upload/image/20220408/1649380438451221.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 鄒樂韻醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="https://static.cmereye.com/imgs/2023/08/7dce7444c1c14da4.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 陳鼎鼐醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240528/1716881356882191.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 熊健慧醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240802/1722560007196049.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 高德全醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="https://hkcmereye.com/static/upload/image/20240902/1725240859365715.jpg"
-                    alt=""
-                  />
-                  <div class="overlay-box">
-                    <h3 class="team-name">
-                      <a class="team-name"> 吳兆駿醫生 </a>
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-prev">
-              <img
-                src="https://static.cmereye.com/imgs/2022/12/05ca2b06f750608f.png"
-                alt=""
-              />
-            </div>
-            <div class="swiper-button-next">
-              <img
-                src="https://static.cmereye.com/imgs/2022/12/bdeac20e23a3fdef.png"
-                alt=""
-              />
-            </div> -->
-
             <swiper
+              id="case4"
+              class="swiper-container-friend"
               :loop="true"
               :slides-per-view="1"
-              :spaceBetween="20"
+              :space-between="20"
               :autoplay="{ delay: 3000 }"
               :pagination="{ clickable: true }"
               :modules="[Autoplay]"
-              id="case4"
-              class="swiper-container-friend"
             >
               <swiper-slide
-                class="slideBox"
                 v-for="(swiperItem, swiperIndex) in teamSlides"
                 :key="swiperIndex"
+                class="slideBox"
               >
                 <img :src="swiperItem.image" alt="" />
                 <div class="overlay-box">
@@ -1789,9 +1122,17 @@ const teamSlides = [
   /* 朗眼科診所環境 end */
 
   /* 眼科服务 start */
-  .service_box .service_item .service_hover .service_txt p {
-    /*padding-top: 2rem;*/
+  .service_box .service_item {
+    flex: 0 0 20%;
+    max-width: 20%;
+    margin-bottom: clamp(16px, 2%, 24px);
+  }
+  .service_box .service_item .service_hover {
+    width: 100%;
+  }
+  .service_box .service_item .service_txt p {
     margin-top: 1rem;
+    font-size: 24px;
   }
 
   .service_box .service_item .service_pic {
@@ -2293,7 +1634,9 @@ const teamSlides = [
     margin-bottom: 30px;
   }
 }
-
+.service_box .service_item {
+  padding: 0 16px;
+}
 .service_box .service_item .service_pic img {
   max-width: 80px;
 }

@@ -194,7 +194,7 @@ const menus = computed(() => {
         {
           type: 'toPage',
           text: t('pages.medical_service.smileClear'),
-          link: 'https://smile.hkcmereye.com/vision-correction-presbyopia',
+          link: 'https://smile.hkcmereye.com/',
         },
       ],
     },
@@ -296,7 +296,6 @@ const toLinks = (data: any) => {
   if (data.type === 'toPage') {
     location.href = data.link || ''
   } else {
-    console.log(`tolink,link=${data.link},data=`,data)
     router.push(data.link || { path: '' })
     menuBool.value = false
   }
