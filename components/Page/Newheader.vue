@@ -1,3 +1,10 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-09-11 08:19:38
+ * @LastEditTime: 2026-04-21 15:49:31
+ * @FilePath: /components/Page/Newheader.vue
+ * @Description: 移动端菜单
+-->
 <script lang="ts" setup>
 import { useRoute } from 'vue-router'
 import { availableLocales } from '~/utils/lang'
@@ -39,6 +46,7 @@ const menus = computed(() => {
       type: 'link',
       text: '眼睛健康大使',
       link: { path: '/2025/eye-health-ambassador/carolcheng' },
+      styleClass: 'nav-carolcheng',
       childMenuList: [],
     },
     {
@@ -88,6 +96,7 @@ const menus = computed(() => {
       type: 'link',
       text: t('pages.medical_service.cataract.cataract'),
       link: { path: '/medical-service/cataract' }, // 白内障
+      styleClass: 'nav-cataract',
       childMenuList: [
         {
           type: 'link',
@@ -106,18 +115,19 @@ const menus = computed(() => {
         // },
         {
           type: 'link',
-          text: t('pages.medical_service.dazzling_operation'),
-          link: { path: '/csp-programme' },
-        },
-        {
-          type: 'link',
           text: t('pages.medical_service.edof.title'),
           link: { path: '/Cataract/extended-depth-of-focus-lenses' },
+          styleClass: 'new',
         },
         {
           type: 'link',
           text: t('pages.medical_service.lensTypes.title'),
           link: { path: '/Cataract/intraocular-lens-types' },
+        },
+        {
+          type: 'link',
+          text: t('pages.medical_service.dazzling_operation'),
+          link: { path: '/csp-programme' },
         },
         // {
         //   type: 'link',
@@ -343,13 +353,13 @@ const imgLists = [
 // })
 const newMenus = computed(() => {
   const menusCopy: LinkItem[] = JSON.parse(JSON.stringify(menus.value))
-  menusCopy.forEach((item: LinkItem) => {
-    if (item.link?.path === '/2025/eye-health-ambassador/carolcheng') {
-      item.styleClass = 'nav-carolcheng'
-    } else if (item.link?.path === '/medical-service/cataract') {
-      item.styleClass = 'nav-cataract'
-    }
-  })
+  // menusCopy.forEach((item: LinkItem) => {
+  //   if (item.link?.path === '/2025/eye-health-ambassador/carolcheng') {
+  //     item.styleClass = 'nav-carolcheng'
+  //   } else if (item.link?.path === '/medical-service/cataract') {
+  //     item.styleClass = 'nav-cataract'
+  //   }
+  // })
   return menusCopy
 })
 
@@ -505,6 +515,7 @@ onMounted(() => {
                   :key="`${menusIndex}-${childIndex}`"
                   :index="`${menusIndex}-${childIndex}`"
                   class="itemCr"
+                  :class="[childItem.styleClass || '']"
                   @click="toLinks(childItem)"
                 >
                   <!-- v-if="childItem.link.path === '/light-adjustable-lens'"  ↓ <img class="smImg" src="https://statichk.cmermedical.com/hkcmereye/LAL/iconNew.svg" alt=""> -->
@@ -795,6 +806,29 @@ onMounted(() => {
   body .uwy .uai img:not(.check_on) {
     width: 54px !important;
     height: 54px !important;
+  }
+}
+</style>
+<style lang="scss" scoped>
+.new {
+  position: relative;
+  width: fit-content;
+  &::before {
+    content: 'New!';
+    font-weight: 500;
+    background-color: #2958a3;
+    color: #fff;
+    height: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 40px;
+    position: absolute;
+    right: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    padding: 0 8px;
   }
 }
 </style>

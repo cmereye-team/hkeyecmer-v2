@@ -12,7 +12,9 @@
       <picture>
         <source
           media="(min-width: 768px)"
-          srcset="https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp"
+          srcset="
+            https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp
+          "
         />
         <img
           class="head_banner"
@@ -159,7 +161,7 @@
         </div>
         <div class="center_details_re">
           <p>
-            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 
+            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」
             同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
           </p>
           <p>
@@ -623,7 +625,7 @@
     </div>
   </div>
 </template>
-<script   lang="ts" setup>
+<script lang="ts" setup>
 import { Pagination, Autoplay, Navigation, EffectCoverflow } from 'swiper'
 
 definePageMeta({
@@ -1398,22 +1400,20 @@ const teamSlides = [
     color: #ffffff !important;
     margin-top: 0 !important;
   }
- :deep( #certifyTwo .swiper-button-next::after){
-  content: "none";
- }
-  :deep( #certifyTwo .swiper-button-prev::after){
-  content: "none";
- }
- :deep( #certifyTwo .swiper-button-next) {
-
+  :deep(#certifyTwo .swiper-button-next::after) {
+    content: 'none';
+  }
+  :deep(#certifyTwo .swiper-button-prev::after) {
+    content: 'none';
+  }
+  :deep(#certifyTwo .swiper-button-next) {
     right: 10px;
     background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
       no-repeat !important;
     background-size: 49% !important;
   }
 
- :deep(#certifyTwo .swiper-button-prev ) {
-
+  :deep(#certifyTwo .swiper-button-prev) {
     left: 20px;
     background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
       no-repeat !important;

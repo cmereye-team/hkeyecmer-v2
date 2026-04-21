@@ -1,3 +1,10 @@
+<!--
+ * @Author: 谭洁莹
+ * @Date: 2025-09-11 08:19:38
+ * @LastEditTime: 2026-04-21 15:32:27
+ * @FilePath: /components/Page/Navbar.vue
+ * @Description: PC端菜单
+-->
 <script setup lang="ts">
 import { AppConfigInput } from '@nuxt/schema'
 import { availableLocales } from '~/utils/lang'
@@ -88,11 +95,6 @@ const menus = computed((): IMenuItem[] => [
       // },
       {
         type: 'link',
-        text: t('pages.medical_service.dazzling_operation'),
-        route: { name: 'csp-programme' },
-      },
-      {
-        type: 'link',
         text: t('pages.medical_service.edof.title'),
         route: { path: '/Cataract/extended-depth-of-focus-lenses' },
       },
@@ -100,6 +102,11 @@ const menus = computed((): IMenuItem[] => [
         type: 'link',
         text: t('pages.medical_service.lensTypes.title'),
         route: { path: '/Cataract/intraocular-lens-types' },
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.dazzling_operation'),
+        route: { name: 'csp-programme' },
       },
       // {
       //   type: 'link',
@@ -359,6 +366,8 @@ const newMenus = computed(() => {
       item.styleClass = 'text-[#ff4da6] font-bold'
     } else if (item.route?.name === 'medical-service-cataract') {
       item.styleClass = 'text-[#ff6b2c] font-bold'
+    } else if (item.link?.path === '/Cataract/extended-depth-of-focus-lenses') {
+      item.styleClass = 'new'
     }
   })
   return menusCopy
@@ -421,6 +430,7 @@ const hashActive = (child: any) => {
                 {
                   child_en: locale === 'en',
                 },
+
                 locale === 'en' ? 'ccccc_en' : '',
               ]"
             >
@@ -432,9 +442,10 @@ const hashActive = (child: any) => {
                   class="menu-subitem hover:no-underline"
                   :class="[
                     hashActive(child),
-                    // child.route.name === 'light-adjustable-lens'
-                    //   ? 'adjustableHover'
-                    //   : '',
+                    child.route.path ===
+                    '/Cataract/extended-depth-of-focus-lenses'
+                      ? 'new'
+                      : '',
                   ]"
                   >{{ child.text }}</Anchor
                 >
@@ -1040,6 +1051,25 @@ a {
 
 .childpage {
   display: none;
+}
+.new {
+  position: relative;
+  &::before {
+    content: 'New!';
+    font-weight: 500;
+    background-color: #fff;
+    color: #2958a3;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 8px;
+    padding: 0 2px;
+  }
 }
 @media screen and (min-width: 769px) {
   .menu-group {
