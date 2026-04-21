@@ -12,7 +12,9 @@
       <picture>
         <source
           media="(min-width: 768px)"
-          srcset="https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp"
+          srcset="
+            https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp
+          "
         />
         <img
           class="head_banner"
@@ -159,7 +161,7 @@
         </div>
         <div class="center_details_re">
           <p>
-            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 
+            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」
             同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
           </p>
           <p>

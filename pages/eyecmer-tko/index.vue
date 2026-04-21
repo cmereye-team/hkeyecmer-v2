@@ -13,7 +13,9 @@
       <picture>
         <source
           media="(min-width: 768px)"
-          srcset="https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp"
+          srcset="
+            https://hkcmereye.com/static/upload/other/20250915/1757902214362821.webp
+          "
         />
         <img
           class="head_banner"
@@ -160,7 +162,7 @@
         </div>
         <div class="center_details_re">
           <p>
-            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」 
+            「希瑪」：「希」望為眼睛帶來希望之光；「希瑪」 與 「喜馬」
             同音，喜馬拉雅山脈為世界海拔最高的山脈，寓意「希瑪眼科」憑着優質臨床服務、現代化管理、優質教學與培訓以及領先研究，不斷追求卓越，攀登高峰的理念。
           </p>
           <p>
@@ -413,7 +415,7 @@
         真實客戶分享
       </div>
 
-    <swiper
+      <swiper
         :loop="false"
         :centered-slides="true"
         :space-between="0"
@@ -451,15 +453,13 @@
         </swiper-slide>
       </swiper>
 
-   
-
       <swiper
         :loop="true"
         :slides-per-view="1"
         :space-between="20"
         :autoplay="{ delay: 3000 }"
         :pagination="{ clickable: true }"
-          :navigation="true"
+        :navigation="true"
         :modules="[Autoplay, Navigation]"
         id="certifyTwo"
         class="mbshow"
@@ -469,9 +469,9 @@
           v-for="(swiperItem, swiperIndex) in eyeCenterImgList"
           :key="swiperIndex"
         >
-            <iframe
+          <iframe
             :src="swiperItem.img"
-             loading="lazy"
+            loading="lazy"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
@@ -1252,19 +1252,18 @@
                   alt=""
                 />
               </div>
-                                <div class="item1">
+              <div class="item1">
                 <img
                   src="https://static.cmereye.com/imgs/2022/12/ed1709b111c3cf55.png"
                   alt=""
                 />
               </div>
-                   <div class="item1">
+              <div class="item1">
                 <img
                   src="https://static.cmereye.com/imgs/2022/12/49b6a12e9ed5126f.png"
                   alt=""
                 />
               </div>
-             
             </div>
           </div>
         </div>
@@ -1272,8 +1271,8 @@
     </div>
   </div>
 </template>
-<script   lang="ts" setup>
-import { Pagination, Autoplay, Navigation,EffectCoverflow } from 'swiper'
+<script lang="ts" setup>
+import { Pagination, Autoplay, Navigation, EffectCoverflow } from 'swiper'
 
 definePageMeta({
   layout: 'page',
@@ -1563,54 +1562,54 @@ const teamSlides = [
   }
 
   /* 客户评分  start */
-     .person_box {
-                background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png) no-repeat;
-                background-size: 100% 100%;
-                height: 1000px;
-                position: relative;
-            }
+  .person_box {
+    background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png)
+      no-repeat;
+    background-size: 100% 100%;
+    height: 1000px;
+    position: relative;
+  }
 
-            .pingfen_list {
-                grid-gap: 10px;
-                margin: 50px 0;
-                border-radius: 10px;
-                background-color: #fff;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 0fr;
-                overflow: hidden;
-                width: 90%;
-            }
+  .pingfen_list {
+    grid-gap: 10px;
+    margin: 50px 0;
+    border-radius: 10px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0fr;
+    overflow: hidden;
+    width: 90%;
+  }
 
-            .pingfen_list img {
-                max-width: 100%;
-            }
+  .pingfen_list img {
+    max-width: 100%;
+  }
 
-            .pingfen_list .item1 {
-                /*width: calc(100% / 4);*/
-                display: inline-block;
-                height: 100%;
-                padding: 7px;
-            }
+  .pingfen_list .item1 {
+    /*width: calc(100% / 4);*/
+    display: inline-block;
+    height: 100%;
+    padding: 7px;
+  }
 
-            .pingfen {
-                background-color: #dee6fb;
-                border-radius: 20px;
-                width: 1200px;
-                height: fit-content;
-                /* padding-top: 39px; */
-                position: absolute;
-                left: 0;
-                right: 0;
-                margin: auto;
-                /* margin-top: 187px; */
-                top: 50%;
-                transform: translateY(-50%);
-                display: flex;
-                justify-content: center;
-                align-content: center;
-                align-items: center;
-
-            }
+  .pingfen {
+    background-color: #dee6fb;
+    border-radius: 20px;
+    width: 1200px;
+    height: fit-content;
+    /* padding-top: 39px; */
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* margin-top: 187px; */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
 
   /* 客户评分  end */
   /* 朗眼科診所環境 start */
@@ -1647,7 +1646,7 @@ const teamSlides = [
     flex-shrink: 0;
   }
   :deep(#certify .swiper-button-prev::after) {
- background: rgba(6, 178, 201, 0.4);
+    background: rgba(6, 178, 201, 0.4);
     border: none;
     width: 50px;
     height: 50px;
@@ -1764,7 +1763,7 @@ const teamSlides = [
 		/* 中心介绍  star*/
   .cener_title {
     color: #1b407a;
-     margin-top: 100px;
+    margin-top: 100px;
     position: relative;
   }
 
@@ -1999,62 +1998,56 @@ const teamSlides = [
 
   /*中心介绍 end*/
   /* 朗眼科診所環境 start */
-    #certifyTwo {
-                margin-top: 54px !important;
-                position: relative;
-            }
+  #certifyTwo {
+    margin-top: 54px !important;
+    position: relative;
+  }
 
-            .clinic_env {
-                color: #ffffff !important;
-                margin-top: 0 !important;
+  .clinic_env {
+    color: #ffffff !important;
+    margin-top: 0 !important;
+  }
 
-            }
-
-      :deep( #certifyTwo .swiper-button-next::after){
-  content: "none";
- }
-  :deep( #certifyTwo .swiper-button-prev::after){
-  content: "none";
- }
- :deep( #certifyTwo .swiper-button-next) {
-
+  :deep(#certifyTwo .swiper-button-next::after) {
+    content: 'none';
+  }
+  :deep(#certifyTwo .swiper-button-prev::after) {
+    content: 'none';
+  }
+  :deep(#certifyTwo .swiper-button-next) {
     right: 10px;
     background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
       no-repeat !important;
     background-size: 49% !important;
   }
 
- :deep(#certifyTwo .swiper-button-prev ) {
-
+  :deep(#certifyTwo .swiper-button-prev) {
     left: 20px;
     background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
       no-repeat !important;
     background-size: 49% !important;
   }
 
+  #certifyTwo .swiper-slide {
+    background: unset !important;
+    box-shadow: unset !important;
+    height: auto;
+    /* width: 240px !important; */
+  }
 
+  #certifyTwo .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
 
-            #certifyTwo .swiper-slide {
-                background: unset !important;
-                box-shadow: unset !important;
-                height: auto;
-                /* width: 240px !important; */
-            }
-
-            #certifyTwo .swiper-slide img {
-                width: 100%;
-                height: auto;
-            }
-
-            #certifyTwo .swiper-slide iframe {
-                /* width: 290px;
+  #certifyTwo .swiper-slide iframe {
+    /* width: 290px;
                 height: 200px; */
-                width: 74.35vw;
-                height: 51.28vw;
-                margin: 0 auto;
-                display: block;
-
-            }
+    width: 74.35vw;
+    height: 51.28vw;
+    margin: 0 auto;
+    display: block;
+  }
 
   // #certifyTwo .swiper-slide {
   //   background: unset !important;
@@ -2260,86 +2253,87 @@ ul.contentbox li i {
   width: 45%;
 }
 
+section {
+  font-size: 16px;
+}
 
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #2958a3;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
 
-        section {
-            font-size: 16px;
-        }
+.social-icon:hover {
+  transform: translateY(-5px);
+  background-color: #2958a3;
+  color: white;
+  box-shadow: 0 5px 15px rgba(0, 87, 146, 0.3);
+}
 
-        .social-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            color: #2958A3;
-            font-size: 1.5rem;
-            margin: 0 0.5rem;
-            transition: all 0.3s ease;
-        }
+.highlight {
+  background: linear-gradient(
+    120deg,
+    rgba(255, 209, 102, 0.2),
+    rgba(255, 209, 102, 0.4)
+  );
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border-left: 4px solid #29c384;
+  font-weight: 500;
+}
 
-        .social-icon:hover {
-            transform: translateY(-5px);
-            background-color: #2958A3;
-            color: white;
-            box-shadow: 0 5px 15px rgba(0, 87, 146, 0.3);
-        }
+.highlight-box {
+  background-color: rgba(0, 187, 240, 0.1);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-left: 5px solid #2958a3;
+}
 
+.highlight-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2958a3;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
 
-        .highlight {
-            background: linear-gradient(120deg, rgba(255, 209, 102, 0.2), rgba(255, 209, 102, 0.4));
-            padding: 1rem 1.5rem;
-            border-radius: 10px;
-            border-left: 4px solid #29c384;
-            font-weight: 500;
-        }
+.highlight-text {
+  font-size: 18px;
+  margin-bottom: 0;
+}
 
-        .highlight-box {
-            background-color: rgba(0, 187, 240, 0.1);
-            border-radius: 10px;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-left: 5px solid #2958A3;
-        }
+.section-title {
+  position: relative;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
 
-        .highlight-title {
-            font-size: 20px;
-            font-weight: 700;
-            color: #2958A3;
-            margin-bottom: 0.5rem;
-            display: flex;
-            align-items: center;
-        }
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: #29c384;
+}
 
-        .highlight-text {
-            font-size: 18px;
-            margin-bottom: 0;
-        }
-
-        .section-title {
-            position: relative;
-            margin-bottom: 2rem;
-            padding-bottom: 1rem;
-            font-weight: 700;
-            font-size: 2.5rem;
-        }
-
-        .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 80px;
-            height: 3px;
-            background-color: #29c384;
-        }
-
-        .section-title.text-center::after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
+.section-title.text-center::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
 @media (max-width: 991px) {
   .section-title {
     font-size: 2rem;
@@ -2351,7 +2345,7 @@ ul.contentbox li i {
   }
 }
 
-        .carouselExampleFade {
+.carouselExampleFade {
   padding: 0;
   margin-bottom: 2rem;
   height: 200px;
@@ -2384,11 +2378,11 @@ ul.contentbox li i {
   }
 }
 
-@media screen and (min-width: 992px) { 
-    :deep(.carouselExampleFade .swiper-button-next) {
+@media screen and (min-width: 992px) {
+  :deep(.carouselExampleFade .swiper-button-next) {
     right: 20px;
   }
-  :deep( .carouselExampleFade .swiper-button-prev) {
+  :deep(.carouselExampleFade .swiper-button-prev) {
     left: 20px;
   }
 
@@ -2408,7 +2402,7 @@ ul.contentbox li i {
     align-items: center;
   }
 
-  :deep( .carouselExampleFade .swiper-button-next::after) {
+  :deep(.carouselExampleFade .swiper-button-next::after) {
     background: rgba(255, 255, 255, 0.2);
     color: #fff;
     padding: 5px;
@@ -2423,6 +2417,5 @@ ul.contentbox li i {
     justify-content: center;
     align-items: center;
   }
-
 }
 </style>
