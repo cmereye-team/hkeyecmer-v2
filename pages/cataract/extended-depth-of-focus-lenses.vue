@@ -255,25 +255,6 @@ const faqs = [
                   適合患有白內障<br class="block lg:hidden" />且希望<br
                     class="hidden lg:block"
                   />減少眼鏡<br class="block lg:hidden" />依賴的患者
-                  <a
-                    href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
-                    target="_blank"
-                    class="absolute-horizon -bottom-4 z-10"
-                  >
-                    <div class="relative">
-                      <img
-                        src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
-                        alt="了解更多擴展景深人工晶體"
-                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px] rounded-bl-xl lg:rounded-bl-[44px]"
-                      />
-                      <div
-                        class="lens-table-more edof text-[#F99D2C] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
-                      >
-                        <span>按此</span>
-                        <span>了解更多</span>
-                      </div>
-                    </div>
-                  </a>
                 </td>
                 <td class="lens-table-td relative">可配合佩戴眼鏡人士</td>
                 <td class="lens-table-td lg:min-h-[232px] relative">
