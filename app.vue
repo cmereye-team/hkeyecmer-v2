@@ -8,8 +8,13 @@ const locale = useState<string>('locale.setting')
 const app = useAppConfig() as AppConfigInput
 const { t } = useLang()
 useHead({
-  title: app.name,
-  titleTemplate: `%s - ${t('app.title')}`,
+  titleTemplate: (titleChunk) => {
+    return titleChunk
+      ? `${titleChunk} - ${t('app.title')}`
+      : t('app.title')
+  },
+  // title: app.name,
+  // titleTemplate: `%s - ${t('app.title')}`,
   meta() {
     return [
       {

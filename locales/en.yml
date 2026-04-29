@@ -3089,6 +3089,13 @@ tdk:
   xerophthalmia:
     desc: "Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 25 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 25 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis."
     key: "CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic"
+  csp:
+    title: 'Cataract Surgeries Programme (CSP) - Programme Introduction'
+    title_intro: 'Cataract Surgeries Programme (CSP) - Programme Introduction'
+    title_doctor: 'Cataract Surgeries Programme (CSP) - List of C-MER Eye Center Ophthalmologists'
+    title_question: 'Cataract Surgeries Programme (CSP) - FAQ'
+    desc: 'Hong Kong CMER Eye Center is a leading institution specializing in the field of ophthalmology, offering a comprehensive range of optometry and eye examination services. Their medical expertise covers a broad spectrum of ophthalmological conditions, including cataracts, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital disorders, ophthalmic plastic surgery, and eye tumors. Moreover, their services extend to myopia control and various other ophthalmic procedures. To cater to the needs of patients in Hong Kong, CMER Eye Center operates a network of 10 well-equipped eye clinics, staffed by a dedicated team of 22 highly skilled ophthalmologists. These ophthalmologists possess extensive knowledge and experience in the field of ophthalmology, ensuring that patients receive the highest quality of care. Guided by the expertise of renowned ophthalmologist Dr. LAM Shun Chiu, Dennis, the team at CMER Eye Center is committed to delivering professional eye medical services, conducting thorough eye examinations, and providing comprehensive ophthalmic care to patients across Hong Kong.'
+    key: 'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic'
 csp:
   title: 'Cataract Surgeries {br}Programme (CSP)'
   alt1: '長者白內障資助_白內障手術_希瑪眼科中心'
