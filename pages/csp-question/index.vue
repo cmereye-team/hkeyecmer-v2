@@ -26,6 +26,11 @@ useHead(() => ({
   ],
 }))
 const isEn = computed(() => locale.value.startsWith('en'))
+const ehealthLink = computed(() => {
+  return isEn.value
+    ? 'https://www.ehealth.gov.hk/en/you-and-your-family/mobile-app.html'
+    : 'https://www.ehealth.gov.hk/tc/you-and-your-family/mobile-app.html'
+})
 // 传递背景色
 const backgd = [
   '#64bcd1;',
@@ -238,7 +243,7 @@ const toggleAll = () => {
                   </li>
                   <li>
                     <a
-                      href="https://www.ehealth.gov.hk/tc/you-and-your-family/mobile-app.html"
+                      :href="ehealthLink"
                       target="_blank"
                     >
                       <h4 class="text-[#2958a3] underline underline-offset-4">
@@ -252,10 +257,10 @@ const toggleAll = () => {
                       <p class="serial">
                         {{ t('csp.faq.q4.step3.p2') }}
                         <a
-                          href="https://www.ehealth.gov.hk/tc/you-and-your-family/mobile-app.html"
+                          :href="ehealthLink"
                           target="_blank"
                           class="!text-[#2958a3]"
-                          >https://www.ehealth.gov.hk/tc/you-and-your-family/mobile-app.html</a
+                          >{{ ehealthLink }}</a
                         >
                       </p>
                     </div>
@@ -274,7 +279,7 @@ const toggleAll = () => {
                             href="https://rebrand.ly/耀眼行動計劃查詢"
                             target="_blank"
                             class="!text-[#2958a3] !underline !underline-offset-4"
-                            >{{ t('csp.intro.part3.whatsapp')}} 6062 9611
+                            >{{ t('csp.intro.part3.whatsapp') }} 6062 9611
                           </a>
                         </p>
                         <p>
@@ -399,6 +404,9 @@ const toggleAll = () => {
   </main>
 </template>
 <style lang="scss" scoped>
+:deep(.footerMenu-in-t .t-in-b > div a) {
+  height: 26px;
+}
 details,
 summary {
   list-style: none;

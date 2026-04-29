@@ -12,6 +12,7 @@ definePageMeta({
 })
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
+const isEn = computed(() => locale.value.startsWith('en'))
 useHead(() => ({
   title: t('tdk.csp.title'),
   meta: [
@@ -25,6 +26,17 @@ useHead(() => ({
     },
   ],
 }))
+const cspLink = computed(() => {
+  return isEn.value
+    ? 'https://www4.ha.org.hk/ppp/en/ppp-programmes/csp/programme-intro'
+    : 'https://www4.ha.org.hk/ppp/ppp-programmes/csp/programme-intro'
+})
+
+const waitingLink = computed(() => {
+  return isEn.value
+    ? 'https://www.ha.org.hk/visitor/sopc_waiting_time.asp?id=2&lang=ENG'
+    : 'https://www.ha.org.hk/visitor/sopc_waiting_time.asp?id=2&lang=CHIB5'
+})
 // 传递背景色
 const backgd = [
   '#64bcd1;',
@@ -267,7 +279,7 @@ const backgd = [
         <ul>
           <li>
             <a
-              href="https://www4.ha.org.hk/ppp/ppp-programmes/csp/programme-intro"
+              :href="cspLink"
               target="_blank"
               class="text-[#2958a3] underline underline-offset-4"
               >{{ t('csp.intro.part6.p1') }}</a
@@ -275,7 +287,7 @@ const backgd = [
           </li>
           <li>
             <a
-              href="https://www.ha.org.hk/visitor/sopc_waiting_time.asp?id=2&lang=CHIB5"
+              :href="waitingLink"
               target="_blank"
               class="text-[#2958a3] underline underline-offset-4"
               >{{ t('csp.intro.part6.p2') }}</a
@@ -294,6 +306,9 @@ const backgd = [
   </main>
 </template>
 <style lang="scss" scoped>
+:deep(.footerMenu-in-t .t-in-b > div a) {
+  height: 26px;
+}
 ul,
 ol {
   list-style-position: inside;
