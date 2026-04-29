@@ -30,7 +30,11 @@ useHead({
       href: 'https://www.hkeyecmer.com/favicon.ico',
     },
   ],
-
+})
+watchEffect(() => {
+  if (process.client) {
+    document.documentElement.lang = locale.value
+  }
 })
 let cookieBoxShow = ref(false)
 const handleSetCookie = () => {

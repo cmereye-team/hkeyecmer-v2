@@ -5,6 +5,7 @@ type TabKey = 'hk' | 'kl' | 'nt'
 interface Doctor {
   id: number
   name: string
+  cnName: string
   enName: string
   avatar: string
   area: TabKey
@@ -26,7 +27,7 @@ const props = defineProps<{
       class="doctor-item flex doctor-nt flex-col lg:flex-row"
     >
       <div class="doctor-name">
-        <div class="flex items-baseline">
+        <div class="flex items-baseline zh">
           <h2>{{ doctor.name }}</h2>
           <span>{{ t('csp.doctor.text') }}</span>
         </div>
@@ -58,6 +59,11 @@ const props = defineProps<{
   </div>
 </template>
 <style lang="scss" scoped>
+.is-en {
+  .zh {
+    display: none;
+  }
+}
 .doctor-list .doctor-name {
   background-color: #2958a3;
   color: #fff;
