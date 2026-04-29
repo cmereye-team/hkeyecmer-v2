@@ -25,6 +25,7 @@ useHead(() => ({
     },
   ],
 }))
+const isEn = computed(() => locale.value.startsWith('en'))
 // 传递背景色
 const backgd = [
   '#64bcd1;',
@@ -88,7 +89,7 @@ const toggleAll = () => {
 }
 </script>
 <template>
-  <main class="faq">
+  <main class="faq" :class="{ 'is-en': isEn }">
     <CspBanner active="question" />
     <section class="bg-[#f1f6f8] pt-4 pb-[52px] lg:pt-[80px] lg:pb-[108px]">
       <div class="container mx-auto px-3 xl:px-0">
@@ -170,6 +171,7 @@ const toggleAll = () => {
                     {{ t('csp.faq.q2.li3') }}
                   </li>
                 </ul>
+                <p>{{ t('csp.faq.q2.p2') }}</p>
               </div>
             </details>
           </li>
@@ -272,7 +274,7 @@ const toggleAll = () => {
                             href="https://rebrand.ly/耀眼行動計劃查詢"
                             target="_blank"
                             class="!text-[#2958a3] !underline !underline-offset-4"
-                            >「耀眼行動」WhatsApp專線：6062 9611
+                            >{{ t('csp.intro.part3.whatsapp')}} 6062 9611
                           </a>
                         </p>
                         <p>
@@ -475,6 +477,11 @@ summary::-webkit-details-marker {
       line-height: 24px;
       margin-bottom: 40px;
     }
+  }
+}
+.is-en {
+  .csp-steps li::before {
+    content: 'Step ' counter(step-counter);
   }
 }
 @media screen and (max-width: 1023px) {

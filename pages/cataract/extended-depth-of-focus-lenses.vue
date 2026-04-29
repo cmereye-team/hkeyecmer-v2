@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:27
- * @LastEditTime: 2026-04-21 09:06:37
+ * @LastEditTime: 2026-04-21 16:32:18
  * @FilePath: /pages/cataract/extended-depth-of-focus-lenses.vue
  * @Description: 扩展景深人工晶体
 -->
@@ -9,6 +9,7 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
 const advantages = [
   {
     icon: 'clear',
@@ -41,29 +42,24 @@ const advantages = [
 ]
 const faqs = [
   {
-    title: '使用 EDOF 人工晶體後，是否還需要佩戴眼鏡？',
-    agree:
-      'EDOF 人工晶體能滿足大部份日常生活需求，但極遠距離時，可能仍需輔助眼鏡。EDOF 人工晶體能滿足大部份日常生活需求，是否需要配戴眼鏡取決於觀看的距離以及生活習慣。',
+    title: t('pages.medical_service.edof.faq.q1'),
+    agree: t('pages.medical_service.edof.faq.a1'),
   },
   {
-    title: '是否所有白內障患者都適合 EDOF 人工晶體？',
-    agree:
-      '並非所有患者都適合 EDOF 人工晶體。醫生會根據患者的眼睛健康狀況、生活方式和視力需求進行詳細評估，推薦最合適的人工晶體類型。',
+    title: t('pages.medical_service.edof.faq.q2'),
+    agree: t('pages.medical_service.edof.faq.a2'),
   },
   {
-    title: 'EDOF 人工晶體和多焦點人工晶體有什麼不同？',
-    agree:
-      'EDOF 人工晶體利用延展焦距技術，能在遠及中距離提供無縫連續視覺，並大幅減少光暈和眩光。相較之下，多焦點人工晶體近距離視力更清楚，但視覺副作用較多。對於夜間活動頻繁或對光線干擾敏感者而言，EDOF晶體是更合適的選擇。建議患者在選擇前向眼科醫生諮詢，制定適合的方案。',
+    title: t('pages.medical_service.edof.faq.q3'),
+    agree: t('pages.medical_service.edof.faq.a3'),
   },
   {
-    title: 'EDOF 兩隻眼都必須用 EDOF 人工晶體嗎？可以混搭其他類型晶體嗎？',
-    agree:
-      '一般情況下，雙眼皆植入 EDOF 人工晶體可獲得更佳整體視覺效果與深度感。然而，也可採用混合方案，例如一隻眼植入單焦鏡片負責遠距離視力，另一隻眼植入 EDOF 鏡片以提升中、近距離視覺，兩眼互相配合以滿足多距離需求。只要雙眼度數差異不大，大部分人都能自然適應。但因雙眼對焦距離略有不同，適應時間稍長，並非所有人士適合。建議患者在選擇前向眼科醫生諮詢意見，制定適合的方案。',
+    title: t('pages.medical_service.edof.faq.q4'),
+    agree: t('pages.medical_service.edof.faq.a4'),
   },
   {
-    title: 'EDOF 人工晶體在夜間駕駛時的表現如何？',
-    agree:
-      'EDOF人工晶體在夜間駕駛方面表現良好。相較於多焦點人工晶體，夜間燈光下更少出現光環或眩光，視覺對比度與清晰度穩定自然，即使在昏暗環境中也能保持舒適視覺。其延長焦距設計使適應期更短，一般數天即可重拾清楚視力。',
+    title: t('pages.medical_service.edof.faq.q5'),
+    agree: t('pages.medical_service.edof.faq.a5'),
   },
 ]
 </script>
@@ -259,25 +255,6 @@ const faqs = [
                   適合患有白內障<br class="block lg:hidden" />且希望<br
                     class="hidden lg:block"
                   />減少眼鏡<br class="block lg:hidden" />依賴的患者
-                  <a
-                    href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
-                    target="_blank"
-                    class="absolute-horizon -bottom-4 z-10"
-                  >
-                    <div class="relative">
-                      <img
-                        src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
-                        alt="了解更多擴展景深人工晶體"
-                        class="absolute left-0 bottom-0 w-[52px] lg:w-[108px] rounded-bl-xl lg:rounded-bl-[44px]"
-                      />
-                      <div
-                        class="lens-table-more edof text-[#F99D2C] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
-                      >
-                        <span>按此</span>
-                        <span>了解更多</span>
-                      </div>
-                    </div>
-                  </a>
                 </td>
                 <td class="lens-table-td relative">可配合佩戴眼鏡人士</td>
                 <td class="lens-table-td lg:min-h-[232px] relative">

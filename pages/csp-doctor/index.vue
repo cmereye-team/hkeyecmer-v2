@@ -12,6 +12,7 @@ definePageMeta({
 })
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
+const isEn = computed(() => locale.value.startsWith('en'))
 useHead(() => ({
   title: t('tdk.csp.title_doctor'),
   meta: [
@@ -39,6 +40,7 @@ const changeTab = (id: TabKey) => {
 interface Doctor {
   id: number
   name: string
+  cnName: string
   enName: string
   avatar: string
   area: TabKey
@@ -49,522 +51,518 @@ const allDoctors = ref<Doctor[]>([
   {
     id: 1,
     name: '陳偉樂',
+    cnName: '陈伟乐',
     enName: 'Dr. Leo Chan',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
+    clinic: [t('csp.doctor.clinic.ct'), t('csp.doctor.clinic.cwb')],
   },
   {
     id: 2,
     name: '陳偉樂',
+    cnName: '陈伟乐',
     enName: 'Dr. Leo Chan',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [
-      '旺角彌敦道625及639號雅蘭中心一期1208室',
-      '觀塘開源道79號鱷魚恤中心16樓1601室',
-    ],
+    clinic: [t('csp.doctor.clinic.mk1'), t('csp.doctor.clinic.kt')],
   },
   {
     id: 3,
     name: '陳偉樂',
+    cnName: '陈伟乐',
     enName: 'Dr. Leo Chan',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-      '荃灣沙咀道255號思源樓地下',
-      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
+      t('csp.doctor.clinic.st'),
+      t('csp.doctor.clinic.tw'),
+      t('csp.doctor.clinic.tko'),
     ],
   },
   {
     id: 4,
     name: '張瀞之',
+    cnName: '张瀞之',
     enName: 'Dr. Janice Cheung',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
+    clinic: [t('csp.doctor.clinic.ct')],
   },
   {
     id: 5,
     name: '張瀞之',
+    cnName: '张瀞之',
     enName: 'Dr. Janice Cheung',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室及1725B室'],
+    clinic: [t('csp.doctor.clinic.mk')],
   },
   {
     id: 6,
     name: '張瀞之',
+    cnName: '张瀞之',
     enName: 'Dr. Janice Cheung',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '荃灣沙咀道255號思源樓地下',
+      t('csp.doctor.clinic.st'),
+      t('csp.doctor.clinic.yl'),
+      t('csp.doctor.clinic.tw'),
     ],
   },
   {
     id: 7,
     name: '熊健慧',
+    cnName: '熊健慧',
     enName: 'Dr. Jennifer Hung',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-022-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
+    clinic: [t('csp.doctor.clinic.mk1')],
   },
   {
     id: 8,
     name: '熊健慧',
+    cnName: '熊健慧',
     enName: 'Dr. Jennifer Hung',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-022-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: ['沙田正街11-17號偉華中心2樓1C—1E號鋪'],
+    clinic: [t('csp.doctor.clinic.st2')],
   },
   {
     id: 9,
     name: '高德全',
+    cnName: '高德全',
     enName: 'Dr. Simon Ko',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-023-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
+    clinic: [t('csp.doctor.clinic.ct')],
   },
   {
     id: 10,
     name: '高德全',
+    cnName: '高德全',
     enName: 'Dr. Simon Ko',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-023-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
+    clinic: [t('csp.doctor.clinic.mk1')],
   },
   {
     id: 11,
     name: '黎浩樺',
+    cnName: '黎浩桦',
     enName: 'Dr. Kenny Lai',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
+    clinic: [t('csp.doctor.clinic.ct')],
   },
   {
     id: 12,
     name: '黎浩樺',
+    cnName: '黎浩桦',
     enName: 'Dr. Kenny Lai',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室及1725B室'],
+    clinic: [t('csp.doctor.clinic.mk')],
   },
   {
     id: 13,
     name: '黎浩樺',
+    cnName: '黎浩桦',
     enName: 'Dr. Kenny Lai',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-    ],
+    clinic: [t('csp.doctor.clinic.st'), t('csp.doctor.clinic.yl')],
   },
   {
     id: 14,
     name: '林己明',
+    cnName: '林己明',
     enName: 'Dr. Jasmine Lam',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
+    clinic: [t('csp.doctor.clinic.ct')],
   },
   {
     id: 15,
     name: '林己明',
+    cnName: '林己明',
     enName: 'Dr. Jasmine Lam',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室及1725B室'],
+    clinic: [t('csp.doctor.clinic.mk')],
   },
   {
     id: 16,
     name: '林己明',
+    cnName: '林己明',
     enName: 'Dr. Jasmine Lam',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '荃灣沙咀道255號思源樓地下',
+      t('csp.doctor.clinic.st'),
+      t('csp.doctor.clinic.yl'),
+      t('csp.doctor.clinic.tw'),
     ],
   },
   {
     id: 17,
     name: '林寶生',
+    cnName: '林宝生',
     enName: 'Dr. Carol Lam',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
+    clinic: [t('csp.doctor.clinic.ct')],
   },
   {
     id: 18,
     name: '林寶生',
+    cnName: '林宝生',
     enName: 'Dr. Carol Lam',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室及1725B室'],
+    clinic: [t('csp.doctor.clinic.mk')],
   },
   {
     id: 19,
     name: '林寶生',
+    cnName: '林宝生',
     enName: 'Dr. Carol Lam',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '荃灣沙咀道255號思源樓地下',
+      t('csp.doctor.clinic.st'),
+      t('csp.doctor.clinic.yl'),
+      t('csp.doctor.clinic.tw'),
     ],
   },
   {
     id: 20,
     name: '林峯',
+    cnName: '林峰',
     enName: 'Dr. Robert Lam',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-025-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
+    clinic: [t('csp.doctor.clinic.ct'), t('csp.doctor.clinic.cwb')],
   },
   {
     id: 21,
     name: '林峯',
+    cnName: '林峰',
     enName: 'Dr. Robert Lam',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-025-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
+    clinic: [t('csp.doctor.clinic.mk1')],
   },
   {
     id: 22,
     name: '李煒業',
+    cnName: '李炜业',
     enName: 'Dr. Jacky Lee',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
+    clinic: [t('csp.doctor.clinic.ct')],
   },
   {
     id: 23,
     name: '李煒業',
+    cnName: '李炜业',
     enName: 'Dr. Jacky Lee',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
+    clinic: [t('csp.doctor.clinic.mk1')],
   },
   {
     id: 24,
     name: '李煒業',
+    cnName: '李炜业',
     enName: 'Dr. Jacky Lee',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-    ],
+    clinic: [t('csp.doctor.clinic.st'), t('csp.doctor.clinic.yl')],
   },
   {
     id: 25,
     name: '李佑榮',
+    cnName: '李佑荣',
     enName: 'Dr. Vincent Lee',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-001-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
+    clinic: [t('csp.doctor.clinic.ct'), t('csp.doctor.clinic.cwb')],
   },
   {
     id: 26,
     name: '李佑榮',
+    cnName: '李佑荣',
     enName: 'Dr. Vincent Lee',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-001-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
+    clinic: [t('csp.doctor.clinic.mk1')],
   },
   {
     id: 27,
     name: '梁苑珊',
+    cnName: '梁苑珊',
     enName: 'Dr. Gloria Leung',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
+    clinic: [t('csp.doctor.clinic.ct'), t('csp.doctor.clinic.cwb')],
   },
   {
     id: 28,
     name: '梁苑珊',
+    cnName: '梁苑珊',
     enName: 'Dr. Gloria Leung',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [
-      '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
-      '觀塘開源道79號鱷魚恤中心16樓1601室',
-    ],
+    clinic: [t('csp.doctor.clinic.mk'), t('csp.doctor.clinic.kt')],
   },
   {
     id: 29,
     name: '梁苑珊',
+    cnName: '梁苑珊',
     enName: 'Dr. Gloria Leung',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '荃灣沙咀道255號思源樓地下',
+      t('csp.doctor.clinic.st'),
+      t('csp.doctor.clinic.yl'),
+      t('csp.doctor.clinic.tw'),
     ],
   },
   {
     id: 30,
     name: '李德倫',
+    cnName: '李德伦',
     enName: 'Dr. Stephen Li',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
+    clinic: [t('csp.doctor.clinic.ct')],
   },
   {
     id: 31,
     name: '李德倫',
+    cnName: '李德伦',
     enName: 'Dr. Stephen Li',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [
-      '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
-      '觀塘開源道79號鱷魚恤中心16樓1601室',
-    ],
+    clinic: [t('csp.doctor.clinic.mk'), t('csp.doctor.clinic.kt')],
   },
   {
     id: 32,
     name: '李德倫',
+    cnName: '李德伦',
     enName: 'Dr. Stephen Li',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
+      t('csp.doctor.clinic.st'),
+      t('csp.doctor.clinic.yl'),
+      t('csp.doctor.clinic.tko'),
     ],
   },
   {
     id: 33,
     name: '吳兆駿',
+    cnName: '吴兆骏',
     enName: 'Dr. Danny Ng',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
+    clinic: [t('csp.doctor.clinic.ct'), t('csp.doctor.clinic.cwb')],
   },
   {
     id: 34,
     name: '吳兆駿',
+    cnName: '吴兆骏',
     enName: 'Dr. Danny Ng',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
+    clinic: [t('csp.doctor.clinic.mk1')],
   },
   {
     id: 35,
     name: '吳兆駿',
+    cnName: '吴兆骏',
     enName: 'Dr. Danny Ng',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
-    ],
+    clinic: [t('csp.doctor.clinic.yl'), t('csp.doctor.clinic.tko')],
   },
   {
     id: 36,
     name: '尹浩柟',
+    cnName: '尹浩楠',
     enName: 'Dr. Kelvin Wan',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
+    clinic: [t('csp.doctor.clinic.ct'), t('csp.doctor.clinic.cwb')],
   },
   {
     id: 37,
     name: '尹浩柟',
+    cnName: '尹浩楠',
     enName: 'Dr. Kelvin Wan',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [
-      '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
-      '觀塘開源道79號鱷魚恤中心16樓1601室',
-    ],
+    clinic: [t('csp.doctor.clinic.mk'), t('csp.doctor.clinic.kt')],
   },
   {
     id: 38,
     name: '尹浩柟',
+    cnName: '尹浩楠',
     enName: 'Dr. Kelvin Wan',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
-      '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '荃灣沙咀道255號思源樓地下',
-      '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
+      t('csp.doctor.clinic.st'),
+      t('csp.doctor.clinic.yl'),
+      t('csp.doctor.clinic.tw'),
+      t('csp.doctor.clinic.tko'),
     ],
   },
   {
     id: 39,
     name: '黃俊華',
+    cnName: '黄俊华',
     enName: 'Dr. Alex Wong',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: ['中環畢打街1-3號中建大廈1515室'],
+    clinic: [t('csp.doctor.clinic.ct')],
   },
   {
     id: 40,
     name: '黃俊華',
+    cnName: '黄俊华',
     enName: 'Dr. Alex Wong',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: ['旺角彌敦道625及639號雅蘭中心一期1208室'],
+    clinic: [t('csp.doctor.clinic.mk1')],
   },
   {
     id: 41,
     name: '黃俊華',
+    cnName: '黄俊华',
     enName: 'Dr. Alex Wong',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [
-      '沙田正街11-17號偉華中心2樓5A號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-    ],
+    clinic: [t('csp.doctor.clinic.st1'), t('csp.doctor.clinic.yl')],
   },
   {
     id: 42,
     name: '邱俊源',
+    cnName: '邱俊源',
     enName: 'Dr. Jackey Yau',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [
-      '中環畢打街1-3號中建大廈1515室',
-      '銅鑼灣百德新街2-20號恒隆中心1614-15室',
-    ],
+    clinic: [t('csp.doctor.clinic.ct'), t('csp.doctor.clinic.cwb')],
   },
   {
     id: 43,
     name: '邱俊源',
+    cnName: '邱俊源',
     enName: 'Dr. Jackey Yau',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [
-      '旺角彌敦道625及639號雅蘭中心一期1208室',
-      '觀塘開源道79號鱷魚恤中心16樓1601室',
-    ],
+    clinic: [t('csp.doctor.clinic.mk1'), t('csp.doctor.clinic.kt')],
   },
   {
     id: 44,
     name: '邱俊源',
+    cnName: '邱俊源',
     enName: 'Dr. Jackey Yau',
     avatar:
       'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'nt',
     regions: '新界',
     clinic: [
-      '沙田正街11-17號偉華中心2樓5A號鋪',
-      '元朗青山公路45及47號誠信商業大廈地鋪',
-      '荃灣沙咀道255號思源樓地下',
+      t('csp.doctor.clinic.st1'),
+      t('csp.doctor.clinic.yl'),
+      t('csp.doctor.clinic.tw'),
     ],
   },
 ])
@@ -704,11 +702,14 @@ onUnmounted(() => {
 })
 </script>
 <template>
-  <main class="doctor">
+  <main class="doctor" :class="{ 'is-en': isEn }">
     <CspBanner active="doctor" />
     <section ref="doctorFixed" class="doctor-wrapper lg:static z-10">
       <div
-        class="doctor-nav bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-4 lg:px-8 text-lg lg:text-3xl font-bold z-10"
+        :class="[
+          'doctor-nav bg-[#ECF3FD] text-[#4B4B4B] flex justify-center items-center lg:gap-[9.792vw] py-4 lg:px-8 font-bold z-10',
+          isEn ? 'gap-3 px-3 text-sm lg:text-3xl' : 'gap-6 text-lg lg:text-3xl',
+        ]"
       >
         <nuxt-link
           v-for="item in navItems"
@@ -725,7 +726,7 @@ onUnmounted(() => {
       </div>
       <div class="container max-w-5xl mx-auto px-3 xl:px-0">
         <div
-          class="flex flex-col lg:flex-row lg:justify-between pb-2 lg:pb-0 mb-2 lg:mb-18 gap-3 sticky top-[calc(12.6vw+72.5px)] lg:static bg-white pt-3 lg:pt-22"
+          class="flex flex-col lg:flex-row lg:justify-between pb-2 lg:pb-0 mb-2 lg:mb-18 gap-3 lg:gap-5 sticky top-[calc(12.6vw+72.5px)] lg:static bg-white pt-3 lg:pt-22 flex-1 overflow-hidden"
         >
           <div
             class="search order-1 lg:order-2 border-2 lg:border-3 border-[#C7C5C5] rounded-2xl lg:rounded-3xl flex items-center gap-2 lg:gap-3 py-1 pl-3 pr-2 lg:py-2 lg:px-6"
@@ -735,7 +736,7 @@ onUnmounted(() => {
               v-model="searchKeyword"
               type="search"
               :placeholder="t('csp.doctor.search')"
-              class="size-full focus:outline-[#2958A3] p-2 rounded-2xl lg:rounded-3xl text-xl lg:text-3xl"
+              class="h-full w-9/10 focus:outline-[#2958A3] p-2 rounded-2xl lg:rounded-3xl text-xl lg:text-3xl"
             />
           </div>
           <div
@@ -744,7 +745,7 @@ onUnmounted(() => {
             <div
               v-for="tab in tabs"
               :key="tab.id"
-              class="tab w-3/10 lg:w-[132px] rounded-md lg:rounded-lg"
+              class="tab whitespace-nowrap w-[32%] min-[360px]:w-3/10 lg:w-[132px] rounded-md lg:rounded-lg"
               :class="{ active: activeTab === tab.id }"
               @click="changeTab(tab.id)"
             >
@@ -838,6 +839,19 @@ onUnmounted(() => {
     }
   }
 }
+@media screen and (max-width: 450px) {
+  .is-en {
+    .tab {
+      font-size: 14px;
+      &:nth-child(2) {
+        width: 25%;
+      }
+      &:last-child {
+        width: 36%;
+      }
+    }
+  }
+}
 @media screen and (min-width: 769px) {
   .doctor {
     .doctor-wrapper,
@@ -859,6 +873,13 @@ onUnmounted(() => {
       width: 60px;
       height: 60px;
       border-radius: 12px;
+    }
+  }
+  .is-en {
+    .tab {
+      &:last-child {
+        width: 180px;
+      }
     }
   }
 }

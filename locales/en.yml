@@ -754,6 +754,17 @@ pages:
       title: Extended Depth of Focus
       title_en: Extended Depth of Focus (EDOF)
       abbr: EDOF
+      faq:
+        q1: 使用 EDOF 人工晶體後，是否還需要佩戴眼鏡？
+        a1: EDOF 人工晶體能滿足大部份日常生活需求，但極遠距離時，可能仍需輔助眼鏡。EDOF 人工晶體能滿足大部份日常生活需求，是否需要配戴眼鏡取決於觀看的距離以及生活習慣。
+        q2: 是否所有白內障患者都適合 EDOF 人工晶體？
+        a2: 並非所有患者都適合 EDOF 人工晶體。醫生會根據患者的眼睛健康狀況、生活方式和視力需求進行詳細評估，推薦最合適的人工晶體類型。
+        q3: EDOF 人工晶體和多焦點人工晶體有什麼不同？
+        a3: EDOF 人工晶體利用延展焦距技術，能在遠及中距離提供無縫連續視覺，並大幅減少光暈和眩光。相較之下，多焦點人工晶體近距離視力更清楚，但視覺副作用較多。對於夜間活動頻繁或對光線干擾敏感者而言，EDOF晶體是更合適的選擇。建議患者在選擇前向眼科醫生諮詢，制定適合的方案。
+        q4: 兩隻眼都必須用 EDOF 人工晶體嗎？可以混搭其他類型晶體嗎？
+        a4: 一般情況下，雙眼皆植入 EDOF 人工晶體可獲得更佳整體視覺效果與深度感。然而，也可採用混合方案，例如一隻眼植入單焦鏡片負責遠距離視力，另一隻眼植入 EDOF 鏡片以提升中、近距離視覺，兩眼互相配合以滿足多距離需求。只要雙眼度數差異不大，大部分人都能自然適應。但因雙眼對焦距離略有不同，適應時間稍長，並非所有人士適合。建議患者在選擇前向眼科醫生諮詢意見，制定適合的方案。
+        q5: EDOF 人工晶體在夜間駕駛時的表現如何？
+        a5: EDOF人工晶體在夜間駕駛方面表現良好。相較於多焦點人工晶體，夜間燈光下更少出現光環或眩光，視覺對比度與清晰度穩定自然，即使在昏暗環境中也能保持舒適視覺。其延長焦距設計使適應期更短，一般數天即可重拾清楚視力。
     lensTypes:
       title: IOL Lens Comparison Chart
       pagetitle: 白內障人工晶體種類
@@ -3078,3 +3089,140 @@ tdk:
   xerophthalmia:
     desc: "Hong Kong CMER Eye Center provides optometry and comprehensive eye examinations. Medical services include: cataract, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital, ophthalmic plastic surgery and eye tumors, myopia control and ophthalmic services. CMER Eye Center has a total of 10 eye clinics, with 25 ophthalmologists, providing professional eye medical services, eye examinations and eye medical services in Hong Kong. The ophthalmologist team consists of 25 ophthalmologists, led by ophthalmologist Dr. LAM Shun Chiu, Dennis."
     key: "CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic"
+csp:
+  title: 'Cataract Surgeries {br}Programme (CSP)'
+  alt1: '長者白內障資助_白內障手術_希瑪眼科中心'
+  alt2: '耀眼行動_白內障手術_希瑪眼科中心'
+  plan_title: 'Cataract Surgeries Programme'
+  link_doctor: 'Download Doctor List'
+  nav:
+    intro: 'Programme Introduction'
+    doctor: 'List of C-MER Eye Center Ophthalmologists'
+    question: 'FAQ'
+  button:
+    clinic: 'Locations'
+    tel: 'Contact us'
+    whatsapp: 'CSP WhatsApp {br}hotline'
+  intro:
+    showmore: 'Read more'
+    showless: 'Hide'
+    part1:
+      title: 'Eligibility'
+      li1: 'Patients who have been on the cataract surgery waiting list of HA hospitals for 18 months or longer (those with the longest waiting time will be prioritised);'
+      li2: 'Suitable for surgery under local anaesthesia;'
+      li3: 'General cases. (Urgent or priority cases will continue to be handled directly by the HA.)'
+      p1: '*Patients are not required to separately visit private medical institutions.'
+    part2:
+      title: 'Programme Fees'
+      p1: 'Patients co-pay an amount of not more than HKD$8,000.'
+      p2: '*Additional charges apply if non-monofocal intraocular lenses (IOLs) are selected.'
+      p3: '*Elderly Health Care Vouchers cannot be used to settle the co-payment under this programme.'
+    part3:
+      title: 'Doctors Participating from C-MER Eye Center'
+      strong: 'over 10 ophthalmologists'
+      p1: 'C-MER Eye Center has {strong} participating in the Cataract Surgeries Programme. '
+      p2: 'Patients who have received an invitation letter from the Hospital Authority (HA) with a subsidy expiry date are welcome to make an appointment via:'
+      tel: 'Tel:'
+      whatsapp: 'CSP WhatsApp hotline:'
+    part4:
+      title: 'Cataract Surgeries Programme (CSP)'
+      strong: 'with a maximum co-payment of HKD$8,000.'
+      p1: 'The programme was officially launched in February 2008. Cataract patients on the waiting list of Hospital Authority hospitals who are suitable for surgery under local anaesthesia will be prioritised for invitation.'
+      p2: 'Participating patients may choose to undergo surgery with private ophthalmologists under the programme, {strong}'
+      p3: 'The programme aims to increase the supply of cataract surgeries through a public-private partnership model, meet rising service demand, shorten waiting times in public hospitals, better utilise private healthcare resources, and alleviate the imbalance between public and private healthcare services.'
+    part5:
+      title: 'Treatment Provided by Private Ophthalmologists'
+      item1:
+        text: 'One pre-operative assessment'
+        alt: '手術前評估'
+        title: '術前評估'
+      item2:
+        text: 'Cataract surgery'
+        alt: '白內障手術及治療'
+        title: '白內障手術治療'
+      item3:
+        text: 'Two post-operative checks'
+        alt: '術後追蹤'
+        title: '術後檢查'
+      p1: 'including a monofocal intraocular lens'
+      p2: '*Additional charges apply if non-monofocal intraocular lenses are chosen.'
+    part6:
+      title: 'Additional Information:'
+      p1: 'Hospital Authority – Cataract Surgeries Programme (CSP)'
+      p2: 'Waiting Time for New Case Booking at Eye Specialist Out-patient Clinics'
+  doctor:
+    search: 'Search doctor name'
+    tab_hk: 'Hong Kong'
+    tab_kl: 'Kowloon'
+    tab_nt: 'New Territories'
+    tel: 'Tel'
+    clinic:
+      address: 'Clinic Address'
+      ct: 'Suite 1515, Central Building, 1-3 Pedder Street, Central'
+      cwb: 'Room 1614-15, Hang Hung Centre, 2-20 Paterson Street, Causeway Bay'
+      mk: 'Room 1208 & 1725B, One Grand Tower, 625 and 639 Nathan Road, Mong Kok'
+      mk1: 'Room 1208, One Grand Tower, 625 and 639 Nathan Road, Mong Kok'
+      mk2: 'Room 1725B, One Grand Tower, 625 and 639 Nathan Road, Mong Kok'
+      kt: 'Room 1601, 16/F, Crocodile Center, 79 Hoi Yuen Road, Kwun Tong'
+      st: 'Shop 5A & 1C—1E, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street, Sha Tin'
+      st1: 'Shop 5A, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street, Sha Tin'
+      st2: 'Shop 1C—1E, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street, Sha Tin'
+      yl: 'G/F, Sing Shun Building, 45 & 47 Castle Peak Road, Yuen Long'
+      tw: 'G/F, Sze Yuen Mansion, No. 255 Sha Tsui Road, Tsuen Wan'
+      tko: 'Shop G55-56, G/F, Metro City Phase I, 1 Wan Hang Road, Tseung Kwan O'
+  faq:
+    expand: 'Expand All'
+    collapse: 'Collapse All'
+    search: 'Enter keywords to search'
+    noresult: 'Sorry, no matching questions found.'
+    a1: 'What is the Cataract Surgeries Programme (CSP)?'
+    q1:
+      p1: 'The Cataract Surgeries Programme (CSP) is a government-subsidised initiative launched by the Hong Kong Government in 2008. It adopts a public-private partnership model to provide subsidised cataract surgery for patients on HA clusters’ routine cataract surgery waiting lists.'
+      p2: 'The programme aims to shorten waiting times, allowing patients to undergo surgery earlier, restore clear vision, and improve their overall quality of life.'
+      p3: 'Ophthalmologists at C-MER Eye Centre are among the designated CSP providers. With extensive clinical experience and professional qualifications, they are dedicated to delivering safe, high-quality, and patient-centred cataract surgery services.'
+      p4: 'If you have any questions or would like recommendations for CSP-participating doctors, please feel free to contact us.'
+    a2: 'Who is eligible for this programme?'
+    q2:
+      p1: 'Patients who meet the following criteria may be invited to join the programme:'
+      li1: 'Patients who have been on the cataract surgery waiting list of HA hospitals for 18 months or longer (those with the longest waiting time will be prioritised);'
+      li2: 'Suitable for surgery under local anaesthesia;'
+      li3: 'General cases. (Urgent or priority cases will continue to be handled directly by the HA.)'
+      p2: '*Patients are not required to separately visit private medical institutions.'
+    a3: 'What treatments will private ophthalmologists provide under this programme?'
+    q3:
+      p1: 'Participating private ophthalmologists under the CSP will provide comprehensive cataract treatment, including: One pre-operative assessment, Cataract surgery including a monofocal intraocular lens, Two post-operative checks.'
+      p2: 'The programme subsidy covers a monofocal intraocular lens. If patients choose a non-monofocal intraocular lens, additional charges will apply, and the details will be explained by the private ophthalmologist.If you have any questions, you are welcome to consult C-MER Eye Center customer service team.'
+    a4: 'How should eligible patients apply to join the programme?'
+    q4:
+      p1: 'Patients do not need to apply independently. The Hospital Authority (HA) will send invitation letters to eligible patients in batches, prioritising those who have waited the longest on the cataract surgery waiting list.'
+      p2: 'If you have received an invitation letter, follow these steps to participate:'
+      p3: 'Following these steps ensures smooth access to the subsidy and timely treatment. We recommend contacting your chosen doctor promptly upon receiving the invitation to avoid missing deadlines.'
+      p4: 'If you have questions about these steps, contact C-MER Eye Centre customer service:'
+      step1:
+        title: 'Submit the participation form to the HA'
+        p1: 'Carefully read the invitation letter to understand the programme details and deadlines.'
+        p2: 'If you decide to join, submit the "Patient Participation Form" to the HA within the specified timeframe to complete your application.'
+      step2:
+        title: 'Receive the confirmation letter'
+        p1: 'Upon successful application, the HA will issue a "Confirmation Letter." Keep this letter safe for use during pre-operative assessment and surgery arrangements with your private ophthalmologist.'
+      step3:
+        title: 'Register for eHealth'
+        p1: 'Programme participants must register for the Electronic Health System (eHealth) to allow doctors to access and update relevant medical records.'
+        p2: 'eHealth link:'
+      step4:
+        title: 'Select a doctor and book pre-operative assessment'
+        p1: 'Choose a private ophthalmologist or centre from the CSP list and book your pre-operative assessment (must be completed before the subsidy expiry date).'
+        p2: 'C-MER Eye Centre contact details:'
+      step5:
+        title: 'Provide invitation letter details'
+        p1: 'Share the registration number from your invitation letter with the ophthalmologist so they can verify your subsidy eligibility via eHealth.'
+      step6:
+        title: 'Schedule surgery date'
+        p1: 'Once the subsidy is confirmed, the ophthalmologist will help arrange your cataract surgery date.'
+        p2: 'Important note: The subsidy expiry date is printed on the invitation letter label. You must complete the pre-operative assessment before this date and the surgery within 3 months of the assessment.'
+    a5: 'If patients have medical insurance, can they claim reimbursement?'
+    q5: 'Patients who have purchased medical insurance should contact their insurance agent or company directly to inquire about claims.'
+    a6: 'Can Elderly Health Care Vouchers be used to pay the co-payment after joining the CSP?'
+    q6: 'Elderly Health Care Vouchers cannot be used to co-pay under this programme.'
+    a7: 'After successfully registering for the CSP, how soon can cataract surgery be performed?'
+    q7: 'Typically, after completing the pre-operative assessment and subsidy confirmation, C-MER Eye Centre ophthalmologists will assist in scheduling your surgery date. Actual scheduling times may vary depending on the doctor and clinic availability, so we recommend contacting us early.'

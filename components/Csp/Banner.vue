@@ -14,6 +14,7 @@ interface Props {
 const props = withDefaults(defineProps<Props>(), {
   active: 'intro',
 })
+const isEn = computed(() => locale.value.startsWith('en'))
 const navItems = [
   { id: 'intro', path: '/csp-programme', label: 'csp.nav.intro' },
   { id: 'doctor', path: '/csp-doctor', label: 'csp.nav.doctor' },
@@ -82,7 +83,10 @@ const activeClass =
         </h1>
       </div>
       <div
-        class="bg-[#ECF3FD] text-[#4B4B4B] flex justify-center gap-6 lg:gap-[9.792vw] py-6 lg:px-8 text-lg lg:text-3xl font-bold"
+        :class="[
+          'doctor-nav bg-[#ECF3FD] text-[#4B4B4B] flex justify-center items-center lg:gap-[9.792vw] py-4 lg:px-8 font-bold z-10',
+          isEn ? 'gap-3 px-3 text-sm lg:text-3xl' : 'gap-6 text-lg lg:text-3xl',
+        ]"
       >
         <nuxt-link
           v-for="item in navItems"

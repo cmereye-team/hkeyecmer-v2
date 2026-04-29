@@ -986,8 +986,8 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        bottom: 69px;
-        right: -75px;
+        left: -138px;
+        top: 94px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
