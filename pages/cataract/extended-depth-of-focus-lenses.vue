@@ -10,6 +10,19 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+useHead(() => ({
+  title: t('tdk.edof.title'),
+  meta: [
+    {
+      name: 'description',
+      content: t('tdk.edof.desc'),
+    },
+    {
+      name: 'keywords',
+      content: t('tdk.edof.key'),
+    },
+  ],
+}))
 const advantages = [
   {
     icon: 'clear',
@@ -613,8 +626,13 @@ const faqs = [
   .lens-table {
     tr {
       &:last-child {
-        .lens-table-td:not(:first-child) {
-          padding-bottom: 80px;
+        .lens-table-td {
+          &:not(:first-child) {
+            padding-bottom: 40px;
+            }
+            &:last-child {
+              padding-bottom: 80px;
+          }
         }
       }
     }

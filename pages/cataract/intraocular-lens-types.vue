@@ -9,6 +9,20 @@
 definePageMeta({
   layout: 'page',
 })
+const { t } = useLang()
+useHead(() => ({
+  title: t('tdk.intraocular.title'),
+  meta: [
+    {
+      name: 'description',
+      content: t('tdk.intraocular.desc'),
+    },
+    {
+      name: 'keywords',
+      content: t('tdk.intraocular.key'),
+    },
+  ],
+}))
 interface lensItem {
   title: string
   titleEn?: string
