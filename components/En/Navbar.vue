@@ -800,8 +800,8 @@ a {
   .menu-group {
     &:nth-child(5) {
       .menu-subgroup {
-        width: 208px;
-        right: -208px;
+        width: 216px;
+        right: -216px;
       }
     }
   }
