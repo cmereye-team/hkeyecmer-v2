@@ -1,13 +1,23 @@
 <script setup lang="ts">
-import { Navigation, FreeMode, Thumbs, Controller } from 'swiper'
+// import { Navigation, FreeMode, Thumbs, Controller } from 'swiper'
+import { Navigation, Controller, Autoplay } from 'swiper'
 
 const medicalEquipment = [
+  {
+    href: 'https://statichk.cmermedical.com/hkcmereye/about/equipment-027-v3.webp',
+    title: 'Alcon UNITY VCS',
+    title2: '',
+    content:
+      'Alcon UNITY VCS 是一款整合式眼科手術平台，結合玻璃體切除與超音波晶體乳化功能，讓醫師可於同一平台上處理不同的眼科手術需要。此系統主要應用於白內障及玻璃體視網膜相關狀況的手術流程，協助醫師在同一手術流程中進行多項操作。系統可整合即時影像顯示及數碼定位技術，有助於提升手術過程中的操作穩定性與一致性。此外，系統採用高速運作設計，並結合優化的能量管理機制，在進行晶體乳化時，有助於降低整體能量使用及縮短超音波操作時間，從而減少對眼內組織的影響，為病人帶來更理想的手術體驗。',
+    from: '資料及圖片來源： Alcon',
+  },
   {
     href: 'https://statichk.cmermedical.com/hkcmereye/about/equipment-026-v1.webp',
     title: 'Zeiss PRESBYOND 500Hz MEL90',
     title2: '',
     content:
       '結合 MEL 90 準分子雷射與 PRESBYOND Laser Blended Vision 軟體，能提供雙眼切換視力矯正，讓患者在近距離、中距離及遠距離皆能清晰視物。系統採用 500Hz 高頻雷射，可在約 1.3 秒內完成 1D 近視的矯正，同時配備 1050Hz 眼球追蹤技術，大幅提升手術精準度與安全性，達成理想的矯視效果。',
+    from: '資料及圖片來源： Carl Zeiss',
   },
   {
     href: 'https://static.cmereye.com/imgs/2023/05/69f740310b86facd.png',
@@ -217,34 +227,30 @@ const medicalEquipment = [
 // }
 const firstSwiper = ref<any>(null)
 const secondSwiper = ref<any>(null)
+
 const setFirstSwiper = (swiper: any) => {
   firstSwiper.value = swiper
 }
 const setSecondSwiper = (swiper: any) => {
   secondSwiper.value = swiper
 }
+// 獲取資料總長度，這對於修復 Loop Bug 至關重要
+const totalSlides = medicalEquipment.length
 </script>
 <template>
   <div id="medicalEquipment" class="maxCon">
-    <div class="medicalEquipment-title">
-      <AboutTitle
-        :zh-title="$t('pages.about_us.equipment_centre')"
-        :en-ttitle="'MEDICAL EQUIPMENT'"
-        class="title"
-      />
-    </div>
     <div class="mainText">
       <swiper
-        id="father"
+        :modules="[Navigation, Controller]"
         :loop="true"
+        :looped-slides="totalSlides" 
+        :slides-per-view="3" 
+        :centered-slides="false" 
         :navigation="true"
         :space-between="20"
-        :slides-per-view="3"
-        :free-mode="false"
-        :watch-slides-progress="true"
         :slide-to-clicked-slide="true"
-        :modules="[Navigation, Thumbs, Controller]"
         :controller="{ control: secondSwiper }"
+        :watch-slides-progress="true"
         class="mySwiper"
         @swiper="setFirstSwiper"
       >
@@ -253,10 +259,10 @@ const setSecondSwiper = (swiper: any) => {
           :key="index"
           class="mySwiper-slide"
         >
-          <div>
+          <div class="img-box">
             <img :src="slideContent.href" />
           </div>
-          <p class="info pr-3">
+          <p class="info">
             {{ slideContent.title }}<br />{{ slideContent.title2 }}
           </p>
         </swiper-slide>
@@ -264,16 +270,19 @@ const setSecondSwiper = (swiper: any) => {
     </div>
     <div class="mainSon">
       <swiper
-        :loop="true"
-        :slides-per-view="1"
         :modules="[Controller]"
+        :loop="true"
+        :looped-slides="totalSlides" 
+        :slides-per-view="1"
+        :centered-slides="false"
         :controller="{ control: firstSwiper }"
-        :centered-slides="true"
+        class="intro-swiper"
         @swiper="setSecondSwiper"
       >
         <swiper-slide
           v-for="(slideContent, imgIndex) in medicalEquipment"
           :key="imgIndex"
+          class="intro-slide"
         >
           <div class="swiper_from">
             <div>
@@ -423,12 +432,10 @@ const setSecondSwiper = (swiper: any) => {
       text-align: center;
     }
   }
-
   & > div:last-child,
   & > div:first-child {
     position: absolute;
   }
-
   & > div:first-child {
     top: -12px;
     left: -12px;
