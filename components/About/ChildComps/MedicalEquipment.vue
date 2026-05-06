@@ -234,30 +234,45 @@ const setFirstSwiper = (swiper: any) => {
 const setSecondSwiper = (swiper: any) => {
   secondSwiper.value = swiper
 }
-// 獲取資料總長度，這對於修復 Loop Bug 至關重要
-const totalSlides = medicalEquipment.length
+
+// 核心：处理同步逻辑，避免双向 Controller 的递归 Bug
+const handleSlideChange = (swiper: any) => {
+  if (secondSwiper.value && !secondSwiper.value.destroyed) {
+    // 使用 slideToLoop 确保即使在 loop 模式下，文字也能精准对齐图片
+    // realIndex 是排除 Clone 后的真实索引
+    secondSwiper.value.slideToLoop(swiper.realIndex)
+  }
+}
+
+// 图片点击跳转
+const handleSlideClick = (index: number) => {
+    if (firstSwiper.value) {
+        firstSwiper.value.slideToLoop(index)
+    }
+}
 </script>
 <template>
   <div id="medicalEquipment" class="maxCon">
     <div class="mainText">
       <swiper
-        :modules="[Navigation, Controller]"
+        :modules="[Navigation]"
         :loop="true"
-        :looped-slides="totalSlides" 
         :slides-per-view="3" 
         :centered-slides="false" 
         :navigation="true"
         :space-between="20"
-        :slide-to-clicked-slide="true"
-        :controller="{ control: secondSwiper }"
+        :threshold="5"
         :watch-slides-progress="true"
+        :loop-additional-slides="3"
         class="mySwiper"
         @swiper="setFirstSwiper"
+        @slide-change="handleSlideChange" 
       >
         <swiper-slide
           v-for="(slideContent, index) in medicalEquipment"
           :key="index"
           class="mySwiper-slide"
+          @click="handleSlideClick(index)"
         >
           <div class="img-box">
             <img :src="slideContent.href" />
@@ -268,14 +283,14 @@ const totalSlides = medicalEquipment.length
         </swiper-slide>
       </swiper>
     </div>
+
     <div class="mainSon">
       <swiper
-        :modules="[Controller]"
         :loop="true"
-        :looped-slides="totalSlides" 
         :slides-per-view="1"
         :centered-slides="false"
-        :controller="{ control: firstSwiper }"
+        :allow-touch-move="true" 
+        :loop-additional-slides="3"
         class="intro-swiper"
         @swiper="setSecondSwiper"
       >
