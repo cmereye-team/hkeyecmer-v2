@@ -26,6 +26,11 @@ useHead(() => ({
     },
   ],
 }))
+const navList = [
+  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
+  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
+  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
+]
 const cspLink = computed(() => {
   return isEn.value
     ? 'https://www4.ha.org.hk/ppp/en/ppp-programmes/csp/programme-intro'
@@ -48,7 +53,7 @@ const backgd = [
   <main
     class="text-[#66696F] text-base lg:text-3xl leading-[28px] lg:leading-[48px] font-medium pb-[24px] lg:pb-[72px]"
   >
-    <CspBanner active="intro" />
+    <CspBanner active="intro" :navList="navList" />
     <input id="showmore" type="checkbox" class="peer" hidden />
     <section
       class="content-init container mx-auto px-[12px] xl:px-0 pt-7 lg:pt-[88px]"

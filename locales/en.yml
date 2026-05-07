@@ -3102,25 +3102,25 @@ ppp:
       collapse: 'Collapse All'
       search: 'Enter keywords to search'
       noresult: 'Sorry, no matching questions found.'
-      a1: 'What is the Cataract Surgeries Programme (CSP)?'
-      q1:
+      q1: 'What is the Cataract Surgeries Programme (CSP)?'
+      a1:
         p1: 'The Cataract Surgeries Programme (CSP) is a government-subsidised initiative launched by the Hong Kong Government in 2008. It adopts a public-private partnership model to provide subsidised cataract surgery for patients on HA clusters’ routine cataract surgery waiting lists.'
         p2: 'The programme aims to shorten waiting times, allowing patients to undergo surgery earlier, restore clear vision, and improve their overall quality of life.'
         p3: 'Ophthalmologists at C-MER Eye Centre are among the designated CSP providers. With extensive clinical experience and professional qualifications, they are dedicated to delivering safe, high-quality, and patient-centred cataract surgery services.'
         p4: 'If you have any questions or would like recommendations for CSP-participating doctors, please feel free to contact us.'
-      a2: 'Who is eligible for this programme?'
-      q2:
+      q2: 'Who is eligible for this programme?'
+      a2:
         p1: 'Patients who meet the following criteria may be invited to join the programme:'
         li1: 'Patients who have been on the cataract surgery waiting list of HA hospitals for 18 months or longer (those with the longest waiting time will be prioritised);'
         li2: 'Suitable for surgery under local anaesthesia;'
         li3: 'General cases. (Urgent or priority cases will continue to be handled directly by the HA.)'
         p2: '*Patients are not required to separately visit private medical institutions.'
-      a3: 'What treatments will private ophthalmologists provide under this programme?'
-      q3:
+      q3: 'What treatments will private ophthalmologists provide under this programme?'
+      a3:
         p1: 'Participating private ophthalmologists under the CSP will provide comprehensive cataract treatment, including: One pre-operative assessment, Cataract surgery including a monofocal intraocular lens, Two post-operative checks.'
         p2: 'The programme subsidy covers a monofocal intraocular lens. If patients choose a non-monofocal intraocular lens, additional charges will apply, and the details will be explained by the private ophthalmologist.If you have any questions, you are welcome to consult C-MER Eye Center customer service team.'
-      a4: 'How should eligible patients apply to join the programme?'
-      q4:
+      q4: 'How should eligible patients apply to join the programme?'
+      a4:
         p1: 'Patients do not need to apply independently. The Hospital Authority (HA) will send invitation letters to eligible patients in batches, prioritising those who have waited the longest on the cataract surgery waiting list.'
         p2: 'If you have received an invitation letter, follow these steps to participate:'
         p3: 'Following these steps ensures smooth access to the subsidy and timely treatment. We recommend contacting your chosen doctor promptly upon receiving the invitation to avoid missing deadlines.'
@@ -3147,12 +3147,12 @@ ppp:
           title: 'Schedule surgery date'
           p1: 'Once the subsidy is confirmed, the ophthalmologist will help arrange your cataract surgery date.'
           p2: 'Important note: The subsidy expiry date is printed on the invitation letter label. You must complete the pre-operative assessment before this date and the surgery within 3 months of the assessment.'
-      a5: 'If patients have medical insurance, can they claim reimbursement?'
-      q5: 'Patients who have purchased medical insurance should contact their insurance agent or company directly to inquire about claims.'
-      a6: 'Can Elderly Health Care Vouchers be used to pay the co-payment after joining the CSP?'
-      q6: 'Elderly Health Care Vouchers cannot be used to co-pay under this programme.'
-      a7: 'After successfully registering for the CSP, how soon can cataract surgery be performed?'
-      q7: 'Typically, after completing the pre-operative assessment and subsidy confirmation, C-MER Eye Centre ophthalmologists will assist in scheduling your surgery date. Actual scheduling times may vary depending on the doctor and clinic availability, so we recommend contacting us early.'
+      q5: 'If patients have medical insurance, can they claim reimbursement?'
+      a5: 'Patients who have purchased medical insurance should contact their insurance agent or company directly to inquire about claims.'
+      q6: 'Can Elderly Health Care Vouchers be used to pay the co-payment after joining the CSP?'
+      a6: 'Elderly Health Care Vouchers cannot be used to co-pay under this programme.'
+      q7: 'After successfully registering for the CSP, how soon can cataract surgery be performed?'
+      a7: 'Typically, after completing the pre-operative assessment and subsidy confirmation, C-MER Eye Centre ophthalmologists will assist in scheduling your surgery date. Actual scheduling times may vary depending on the doctor and clinic availability, so we recommend contacting us early.'
   glaucoma:
     title: 'Glaucoma Public-Private Partnership <br>Programme (Glaucoma PPP)'
 banners:

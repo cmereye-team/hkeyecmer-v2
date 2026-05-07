@@ -1,15 +1,21 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 10:44:23
- * @LastEditTime: 2026-05-07 13:57:38
+ * @LastEditTime: 2026-05-07 14:52:50
  * @FilePath: /components/Csp/Banner.vue
  * @Description: 顶部
 -->
 <script setup lang="ts">
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
+interface navItem {
+  id: string
+  path: string
+  label: string
+}
 interface Props {
   active?: string
+  navList: navItem[]
 }
 const props = withDefaults(defineProps<Props>(), {
   active: 'intro',
@@ -89,7 +95,7 @@ const activeClass =
         ]"
       >
         <nuxt-link
-          v-for="item in navItems"
+          v-for="item in navList"
           :key="item.id"
           :to="item.path"
           :class="props.active === item.id ? activeClass : ''"

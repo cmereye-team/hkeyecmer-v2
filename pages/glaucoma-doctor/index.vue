@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-07 11:48:22
- * @LastEditTime: 2026-05-07 13:46:53
+ * @LastEditTime: 2026-05-07 14:55:54
  * @FilePath: /pages/glaucoma-doctor/index.vue
  * @Description: 青光眼治疗协作计划医生列表
 -->
@@ -26,7 +26,11 @@ useHead(() => ({
     },
   ],
 }))
-
+const navList = [
+  { id: 'intro', path: '/glaucoma-ppp', label: 'ppp.glaucoma.nav.intro' },
+  { id: 'doctor', path: '/glaucoma-doctor', label: 'ppp.glaucoma.nav.doctor' },
+  { id: 'question', path: '/glaucoma-faq', label: 'ppp.glaucoma.nav.question' },
+]
 type TabKey = 'hk' | 'kl' | 'nt'
 const tabs = [
   { id: 'hk' as const },
@@ -57,7 +61,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct'), t('ppp.csp.doctor.clinic.cwb')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 2,
@@ -68,7 +72,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk1'), t('ppp.csp.doctor.clinic.kt')],
+    clinic: [t('ppp.doctor.clinic.mk1'), t('ppp.doctor.clinic.kt')],
   },
   {
     id: 3,
@@ -80,9 +84,9 @@ const allDoctors = ref<Doctor[]>([
     area: 'nt',
     regions: '新界',
     clinic: [
-      t('ppp.csp.doctor.clinic.st'),
-      t('ppp.csp.doctor.clinic.tw'),
-      t('ppp.csp.doctor.clinic.tko'),
+      t('ppp.doctor.clinic.st'),
+      t('ppp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.tko'),
     ],
   },
   {
@@ -94,7 +98,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
     id: 5,
@@ -105,7 +109,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk')],
+    clinic: [t('ppp.doctor.clinic.mk')],
   },
   {
     id: 6,
@@ -117,9 +121,9 @@ const allDoctors = ref<Doctor[]>([
     area: 'nt',
     regions: '新界',
     clinic: [
-      t('ppp.csp.doctor.clinic.st'),
-      t('ppp.csp.doctor.clinic.yl'),
-      t('ppp.csp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.st'),
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tw'),
     ],
   },
   {
@@ -131,7 +135,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-022-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk1')],
+    clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
     id: 8,
@@ -142,7 +146,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-022-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [t('ppp.csp.doctor.clinic.st2')],
+    clinic: [t('ppp.doctor.clinic.st2')],
   },
   {
     id: 9,
@@ -153,7 +157,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-023-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
     id: 10,
@@ -164,7 +168,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-023-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk1')],
+    clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
     id: 11,
@@ -175,7 +179,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
     id: 12,
@@ -186,7 +190,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk')],
+    clinic: [t('ppp.doctor.clinic.mk')],
   },
   {
     id: 13,
@@ -197,7 +201,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [t('ppp.csp.doctor.clinic.st'), t('ppp.csp.doctor.clinic.yl')],
+    clinic: [t('ppp.doctor.clinic.st'), t('ppp.doctor.clinic.yl')],
   },
   {
     id: 14,
@@ -208,7 +212,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
     id: 15,
@@ -219,7 +223,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk')],
+    clinic: [t('ppp.doctor.clinic.mk')],
   },
   {
     id: 16,
@@ -231,9 +235,9 @@ const allDoctors = ref<Doctor[]>([
     area: 'nt',
     regions: '新界',
     clinic: [
-      t('ppp.csp.doctor.clinic.st'),
-      t('ppp.csp.doctor.clinic.yl'),
-      t('ppp.csp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.st'),
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tw'),
     ],
   },
   {
@@ -245,7 +249,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
     id: 18,
@@ -256,7 +260,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk')],
+    clinic: [t('ppp.doctor.clinic.mk')],
   },
   {
     id: 19,
@@ -268,9 +272,9 @@ const allDoctors = ref<Doctor[]>([
     area: 'nt',
     regions: '新界',
     clinic: [
-      t('ppp.csp.doctor.clinic.st'),
-      t('ppp.csp.doctor.clinic.yl'),
-      t('ppp.csp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.st'),
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tw'),
     ],
   },
   {
@@ -282,7 +286,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-025-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct'), t('ppp.csp.doctor.clinic.cwb')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 21,
@@ -293,7 +297,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-025-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk1')],
+    clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
     id: 22,
@@ -304,7 +308,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
     id: 23,
@@ -315,7 +319,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk1')],
+    clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
     id: 24,
@@ -326,7 +330,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [t('ppp.csp.doctor.clinic.st'), t('ppp.csp.doctor.clinic.yl')],
+    clinic: [t('ppp.doctor.clinic.st'), t('ppp.doctor.clinic.yl')],
   },
   {
     id: 25,
@@ -337,7 +341,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-001-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct'), t('ppp.csp.doctor.clinic.cwb')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 26,
@@ -348,7 +352,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-001-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk1')],
+    clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
     id: 27,
@@ -359,7 +363,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct'), t('ppp.csp.doctor.clinic.cwb')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 28,
@@ -370,7 +374,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk'), t('ppp.csp.doctor.clinic.kt')],
+    clinic: [t('ppp.doctor.clinic.mk'), t('ppp.doctor.clinic.kt')],
   },
   {
     id: 29,
@@ -382,9 +386,9 @@ const allDoctors = ref<Doctor[]>([
     area: 'nt',
     regions: '新界',
     clinic: [
-      t('ppp.csp.doctor.clinic.st'),
-      t('ppp.csp.doctor.clinic.yl'),
-      t('ppp.csp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.st'),
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tw'),
     ],
   },
   {
@@ -396,7 +400,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
     id: 31,
@@ -407,7 +411,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk'), t('ppp.csp.doctor.clinic.kt')],
+    clinic: [t('ppp.doctor.clinic.mk'), t('ppp.doctor.clinic.kt')],
   },
   {
     id: 32,
@@ -419,9 +423,9 @@ const allDoctors = ref<Doctor[]>([
     area: 'nt',
     regions: '新界',
     clinic: [
-      t('ppp.csp.doctor.clinic.st'),
-      t('ppp.csp.doctor.clinic.yl'),
-      t('ppp.csp.doctor.clinic.tko'),
+      t('ppp.doctor.clinic.st'),
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tko'),
     ],
   },
   {
@@ -433,7 +437,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct'), t('ppp.csp.doctor.clinic.cwb')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 34,
@@ -444,7 +448,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk1')],
+    clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
     id: 35,
@@ -455,7 +459,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [t('ppp.csp.doctor.clinic.yl'), t('ppp.csp.doctor.clinic.tko')],
+    clinic: [t('ppp.doctor.clinic.yl'), t('ppp.doctor.clinic.tko')],
   },
   {
     id: 36,
@@ -466,7 +470,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct'), t('ppp.csp.doctor.clinic.cwb')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 37,
@@ -477,7 +481,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk'), t('ppp.csp.doctor.clinic.kt')],
+    clinic: [t('ppp.doctor.clinic.mk'), t('ppp.doctor.clinic.kt')],
   },
   {
     id: 38,
@@ -489,10 +493,10 @@ const allDoctors = ref<Doctor[]>([
     area: 'nt',
     regions: '新界',
     clinic: [
-      t('ppp.csp.doctor.clinic.st'),
-      t('ppp.csp.doctor.clinic.yl'),
-      t('ppp.csp.doctor.clinic.tw'),
-      t('ppp.csp.doctor.clinic.tko'),
+      t('ppp.doctor.clinic.st'),
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.tko'),
     ],
   },
   {
@@ -504,7 +508,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
     id: 40,
@@ -515,7 +519,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk1')],
+    clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
     id: 41,
@@ -526,7 +530,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [t('ppp.csp.doctor.clinic.st1'), t('ppp.csp.doctor.clinic.yl')],
+    clinic: [t('ppp.doctor.clinic.st1'), t('ppp.doctor.clinic.yl')],
   },
   {
     id: 42,
@@ -537,7 +541,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.csp.doctor.clinic.ct'), t('ppp.csp.doctor.clinic.cwb')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 43,
@@ -548,7 +552,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.csp.doctor.clinic.mk1'), t('ppp.csp.doctor.clinic.kt')],
+    clinic: [t('ppp.doctor.clinic.mk1'), t('ppp.doctor.clinic.kt')],
   },
   {
     id: 44,
@@ -560,9 +564,9 @@ const allDoctors = ref<Doctor[]>([
     area: 'nt',
     regions: '新界',
     clinic: [
-      t('ppp.csp.doctor.clinic.st1'),
-      t('ppp.csp.doctor.clinic.yl'),
-      t('ppp.csp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.st1'),
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tw'),
     ],
   },
 ])
@@ -606,11 +610,6 @@ const setPage = (page: number) => {
   currentPage.value = page
   scrollToTop()
 }
-const navItems = [
-  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
-  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
-  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
-]
 const doctorFixed = ref<HTMLElement | null>(null)
 const PC_MIN_WIDTH = 1024
 let lastScroll = 0
@@ -712,7 +711,7 @@ onUnmounted(() => {
         ]"
       >
         <nuxt-link
-          v-for="item in navItems"
+          v-for="item in navList"
           :key="item.id"
           :to="item.path"
           :class="
@@ -735,7 +734,7 @@ onUnmounted(() => {
             <input
               v-model="searchKeyword"
               type="search"
-              :placeholder="t('ppp.csp.doctor.search')"
+              :placeholder="t('ppp.doctor.search')"
               class="h-full w-9/10 focus:outline-[#2958A3] p-2 rounded-2xl lg:rounded-3xl text-xl lg:text-3xl"
             />
           </div>

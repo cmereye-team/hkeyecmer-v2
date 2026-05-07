@@ -1,20 +1,55 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 09:02:59
- * @LastEditTime: 2026-01-15 14:50:54
+ * @LastEditTime: 2026-05-07 15:55:29
  * @FilePath: /components/Csp/Button.vue
  * @Description: CSP耀眼行动按钮组
 -->
 <script lang="ts" setup>
 const { t } = useLang()
+// 假设 locale 改变时需要触发重新翻译
 const locale = useState<string>('locale.setting')
-interface Props {
-  clinic?: boolean
+interface ButtonItem {
+  id: string
+  gtm?: string
+  text: string
+  link: string
 }
-const props = withDefaults(defineProps<Props>(), {
-  clinic: false,
+interface Props {
+  buttonList?: ButtonItem[]
+}
+const props = defineProps<Props>()
+const defaultButtonsMap = computed(() => ({
+  tel: {
+    gtm: 'gtm-eyesight-tel',
+    text: 'ppp.csp.button.tel',
+    link: '/contact-us',
+  },
+  whatsapp: {
+    gtm: 'gtm-eyesight-whatsapp',
+    text: 'ppp.csp.button.whatsapp',
+    link: 'https://rebrand.ly/耀眼行動計劃查詢',
+  },
+}))
+const finalButtonList = computed<ButtonItem[]>(() => {
+  if (props.buttonList && props.buttonList.length > 0) {
+    return props.buttonList
+  }
+  const { tel, whatsapp } = defaultButtonsMap.value
+  return [
+    { id: 'tel', ...tel },
+    { id: 'whatsapp', ...whatsapp },
+  ]
 })
-const totalButtons = computed(() => (props.clinic ? 3 : 2))
+const hasTel = computed(() => finalButtonList.value.some((i) => i.id === 'tel'))
+const hasWhatsapp = computed(() =>
+  finalButtonList.value.some((i) => i.id === 'whatsapp')
+)
+const hasClinic = computed(() =>
+  finalButtonList.value.some((i) => i.id === 'clinic')
+)
+const getBtn = (id: string) => finalButtonList.value.find(i => i.id === id)
+const totalButtons = computed(() => (hasClinic.value ? 3 : 2))
 </script>
 <template>
   <div
@@ -22,8 +57,8 @@ const totalButtons = computed(() => (props.clinic ? 3 : 2))
     :style="{ '--total-time': `${totalButtons}s` }"
   >
     <nuxt-link
-      v-if="clinic"
-      to="/contact-us"
+      v-if="hasClinic"
+      :to="getBtn('clinic')?.link"
       class="flex csp-clinic"
       style="--i: 0"
     >
@@ -47,9 +82,10 @@ const totalButtons = computed(() => (props.clinic ? 3 : 2))
       <span>{{ t('ppp.csp.button.clinic') }}</span>
     </nuxt-link>
     <a
-      href="tel:+(852)3956 2026"
+      v-if="hasTel"
+      :href="getBtn('tel')?.link"
       class="gtm-eyesight-tel csp-tel flex"
-      :style="{ '--i': clinic ? 1 : 0 }"
+      :style="{ '--i': hasClinic ? 1 : 0 }"
     >
       <svg
         class="size-7 lg:size-14"
@@ -83,16 +119,17 @@ const totalButtons = computed(() => (props.clinic ? 3 : 2))
           </clipPath>
         </defs>
       </svg>
-      <i18n-t keypath="ppp.csp.button.tel" tag="span" scope="global">
+      <i18n-t :keypath="getBtn('tel')?.text" tag="span" scope="global">
         <template #br><br /></template>
       </i18n-t>
     </a>
-    <div :class="clinic ? 'basis-full lg:basis-auto' : ''">
+    <div :class="hasClinic ? 'basis-full lg:basis-auto' : ''">
       <a
-        href="https://rebrand.ly/耀眼行動計劃查詢"
+        v-if="hasWhatsapp"
+        :href="getBtn('whatsapp')?.link"
         target="_blank"
         class="gtm-eyesight-whatsapp csp-whatsapp flex justify-center w-fit mx-auto"
-        :style="{ '--i': clinic ? 2 : 1 }"
+        :style="{ '--i': hasClinic ? 2 : 1 }"
       >
         <svg
           class="size-7 lg:size-14"
@@ -107,7 +144,7 @@ const totalButtons = computed(() => (props.clinic ? 3 : 2))
             fill="currentColor"
           ></path>
         </svg>
-        <i18n-t keypath="ppp.csp.button.whatsapp" tag="span" scope="global">
+        <i18n-t :keypath="getBtn('whatsapp')?.text" tag="span" scope="global">
           <template #br><br /></template>
         </i18n-t>
       </a>

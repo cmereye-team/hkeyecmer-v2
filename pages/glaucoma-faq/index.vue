@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-07 11:48:37
- * @LastEditTime: 2026-05-07 11:51:01
+ * @LastEditTime: 2026-05-07 15:18:35
  * @FilePath: /pages/glaucoma-faq/index.vue
  * @Description: 青光眼治疗协作计划常见问题
 -->
@@ -25,6 +25,11 @@ useHead(() => ({
     },
   ],
 }))
+const navList = [
+  { id: 'intro', path: '/glaucoma-ppp', label: 'ppp.glaucoma.nav.intro' },
+  { id: 'doctor', path: '/glaucoma-doctor', label: 'ppp.glaucoma.nav.doctor' },
+  { id: 'question', path: '/glaucoma-faq', label: 'ppp.glaucoma.nav.question' },
+]
 const isEn = computed(() => locale.value.startsWith('en'))
 const ehealthLink = computed(() => {
   return isEn.value
@@ -92,10 +97,24 @@ const toggleAll = () => {
     }
   })
 }
+const buttonList = [
+  {
+    id: 'tel',
+    gtm: 'gtm-glaucomappp-tel',
+    text: 'ppp.glaucoma.button.tel',
+    link: '/contact-us',
+  },
+  {
+    id: 'whatsapp',
+    gtm: 'gtm-glaucomappp-whatsapp',
+    text: 'ppp.glaucoma.button.whatsapp',
+    link: 'https://api.whatsapp.com/send?phone=85293451508&text=你好，我想查詢青光眼治療協作計劃',
+  },
+]
 </script>
 <template>
   <main class="faq" :class="{ 'is-en': isEn }">
-    <CspBanner active="question" />
+    <CspBanner active="question" :navList="navList" />
     <section class="bg-[#f1f6f8] pt-4 pb-[52px] lg:pt-[80px] lg:pb-[108px]">
       <div class="container mx-auto px-3 xl:px-0">
         <div class="flex flex-col justify-center mb-4 lg:mb-[24px]">
@@ -129,23 +148,23 @@ const toggleAll = () => {
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.a1') }}
+                  {{ t('ppp.csp.faq.q1') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
               >
                 <p>
-                  {{ t('ppp.csp.faq.q1.p1') }}
+                  {{ t('ppp.csp.faq.a1.p1') }}
                 </p>
                 <p>
-                  {{ t('ppp.csp.faq.q1.p2') }}
+                  {{ t('ppp.csp.faq.a1.p2') }}
                 </p>
                 <p>
-                  {{ t('ppp.csp.faq.q1.p3') }}
+                  {{ t('ppp.csp.faq.a1.p3') }}
                 </p>
                 <p>
-                  {{ t('ppp.csp.faq.q1.p4') }}
+                  {{ t('ppp.csp.faq.a1.p4') }}
                 </p>
               </div>
             </details>
@@ -158,25 +177,25 @@ const toggleAll = () => {
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.a2') }}
+                  {{ t('ppp.csp.faq.q2') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] space-y-8 lg:space-y-10"
               >
-                <p>{{ t('ppp.csp.faq.q2.p1') }}</p>
+                <p>{{ t('ppp.csp.faq.a2.p1') }}</p>
                 <ul
                   class="list-decimal list-inside space-y-8 lg:space-y-10 mb-0"
                 >
                   <li>
-                    {{ t('ppp.csp.faq.q2.li1') }}
+                    {{ t('ppp.csp.faq.a2.li1') }}
                   </li>
-                  <li>{{ t('ppp.csp.faq.q2.li2') }}</li>
+                  <li>{{ t('ppp.csp.faq.a2.li2') }}</li>
                   <li>
-                    {{ t('ppp.csp.faq.q2.li3') }}
+                    {{ t('ppp.csp.faq.a2.li3') }}
                   </li>
                 </ul>
-                <p>{{ t('ppp.csp.faq.q2.p2') }}</p>
+                <p>{{ t('ppp.csp.faq.a2.p2') }}</p>
               </div>
             </details>
           </li>
@@ -188,17 +207,17 @@ const toggleAll = () => {
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.a3') }}
+                  {{ t('ppp.csp.faq.q3') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
               >
                 <p>
-                  {{ t('ppp.csp.faq.q3.p1') }}
+                  {{ t('ppp.csp.faq.a3.p1') }}
                 </p>
                 <p>
-                  {{ t('ppp.csp.faq.q3.p2') }}
+                  {{ t('ppp.csp.faq.a3.p2') }}
                 </p>
               </div>
             </details>
@@ -211,7 +230,7 @@ const toggleAll = () => {
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.a4') }}
+                  {{ t('ppp.csp.faq.q4') }}
                 </h3>
               </summary>
               <div
@@ -219,40 +238,43 @@ const toggleAll = () => {
               >
                 <div>
                   <p>
-                    {{ t('ppp.csp.faq.q4.p1') }}
+                    {{ t('ppp.csp.faq.a4.p1') }}
                   </p>
-                  <p>{{ t('ppp.csp.faq.q4.p2') }}</p>
+                  <p>{{ t('ppp.csp.faq.a4.p2') }}</p>
                 </div>
                 <ol class="csp-steps space-y-8">
                   <li>
-                    <h4>{{ t('ppp.csp.faq.q4.step1.title') }}</h4>
+                    <h4>{{ t('ppp.csp.faq.a4.step1.title') }}</h4>
                     <div>
                       <p class="serial">
-                        {{ t('ppp.csp.faq.q4.step1.p1') }}
+                        {{ t('ppp.csp.faq.a4.step1.p1') }}
                       </p>
                       <p class="serial">
-                        {{ t('ppp.csp.faq.q4.step1.p2') }}
+                        {{ t('ppp.csp.faq.a4.step1.p2') }}
                       </p>
                     </div>
                   </li>
                   <li>
-                    <h4>{{ t('ppp.csp.faq.q4.step2.title') }}</h4>
+                    <h4>{{ t('ppp.csp.faq.a4.step2.title') }}</h4>
                     <div>
-                      <p class="serial">{{ t('ppp.csp.faq.q4.step1.p2') }}</p>
+                      <p class="serial">{{ t('ppp.csp.faq.a4.step1.p2') }}</p>
                     </div>
                   </li>
                   <li>
-                    <a :href="ehealthLink" target="_blank">
+                    <a
+                      :href="ehealthLink"
+                      target="_blank"
+                    >
                       <h4 class="text-[#2958a3] underline underline-offset-4">
-                        {{ t('ppp.csp.faq.q4.step3.title') }}
+                        {{ t('ppp.csp.faq.a4.step3.title') }}
                       </h4>
                     </a>
                     <div>
                       <p class="serial">
-                        {{ t('ppp.csp.faq.q4.step3.p1') }}
+                        {{ t('ppp.csp.faq.a4.step3.p1') }}
                       </p>
                       <p class="serial">
-                        {{ t('ppp.csp.faq.q4.step3.p2') }}
+                        {{ t('ppp.csp.faq.a4.step3.p2') }}
                         <a
                           :href="ehealthLink"
                           target="_blank"
@@ -263,13 +285,13 @@ const toggleAll = () => {
                     </div>
                   </li>
                   <li>
-                    <h4>{{ t('ppp.csp.faq.q4.step4.title') }}</h4>
+                    <h4>{{ t('ppp.csp.faq.a4.step4.title') }}</h4>
                     <div>
                       <p class="serial">
-                        {{ t('ppp.csp.faq.q4.step4.p1') }}
+                        {{ t('ppp.csp.faq.a4.step4.p1') }}
                       </p>
                       <div class="serial">
-                        <p>{{ t('ppp.csp.faq.q4.step4.p2') }}</p>
+                        <p>{{ t('ppp.csp.faq.a4.step4.p2') }}</p>
                         <p>
                           1.
                           <a
@@ -280,7 +302,7 @@ const toggleAll = () => {
                           </a>
                         </p>
                         <p>
-                          2. {{ t('ppp.csp.doctor.tel') }}:
+                          2. {{ t('ppp.doctor.tel') }}:
                           <a
                             href="tel:+852 3956 2025"
                             class="!text-[#2958a3] !underline !underline-offset-4"
@@ -291,23 +313,23 @@ const toggleAll = () => {
                     </div>
                   </li>
                   <li>
-                    <h4>{{ t('ppp.csp.faq.q4.step5.title') }}</h4>
+                    <h4>{{ t('ppp.csp.faq.a4.step5.title') }}</h4>
                     <div>
-                      <p class="serial">{{ t('ppp.csp.faq.q4.step5.p1') }}</p>
+                      <p class="serial">{{ t('ppp.csp.faq.a4.step5.p1') }}</p>
                     </div>
                   </li>
                   <li>
-                    <h4>{{ t('ppp.csp.faq.q4.step6.title') }}</h4>
+                    <h4>{{ t('ppp.csp.faq.a4.step6.title') }}</h4>
                     <div>
-                      <p class="serial">{{ t('ppp.csp.faq.q4.step6.p1') }}</p>
-                      <p class="serial">{{ t('ppp.csp.faq.q4.step6.p2') }}</p>
+                      <p class="serial">{{ t('ppp.csp.faq.a4.step6.p1') }}</p>
+                      <p class="serial">{{ t('ppp.csp.faq.a4.step6.p2') }}</p>
                     </div>
                   </li>
                 </ol>
                 <div>
-                  <p>{{ t('ppp.csp.faq.q4.p3') }}</p>
+                  <p>{{ t('ppp.csp.faq.a4.p3') }}</p>
                   <p class="font-bold !mt-8 !mb-4 lg:!my-10">
-                    {{ t('ppp.csp.faq.q4.p4') }}
+                    {{ t('ppp.csp.faq.a4.p4') }}
                   </p>
                   <ul class="!list-decimal space-y-2 lg:space-y-0">
                     <li>
@@ -320,7 +342,7 @@ const toggleAll = () => {
                       >
                     </li>
                     <li>
-                      {{ t('ppp.csp.doctor.tel') }}:
+                      {{ t('ppp.doctor.tel') }}:
                       <a
                         href="tel:+852 3956 2026"
                         class="!text-[#2958a3] !underline underline-offset-4"
@@ -340,14 +362,14 @@ const toggleAll = () => {
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.a5') }}
+                  {{ t('ppp.csp.faq.q5') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
               >
                 <p>
-                  {{ t('ppp.csp.faq.q5') }}
+                  {{ t('ppp.csp.faq.a5') }}
                 </p>
               </div>
             </details>
@@ -360,13 +382,13 @@ const toggleAll = () => {
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.a6') }}
+                  {{ t('ppp.csp.faq.q6') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
               >
-                <p>{{ t('ppp.csp.faq.q6') }}</p>
+                <p>{{ t('ppp.csp.faq.a6') }}</p>
               </div>
             </details>
           </li>
@@ -378,14 +400,14 @@ const toggleAll = () => {
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.a7') }}
+                  {{ t('ppp.csp.faq.q7') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
               >
                 <p>
-                  {{ t('ppp.csp.faq.q7') }}
+                  {{ t('ppp.csp.faq.a7') }}
                 </p>
               </div>
             </details>
@@ -395,7 +417,7 @@ const toggleAll = () => {
           {{ t('ppp.csp.faq.noresult') }}
         </div>
       </div>
-      <CspButton />
+      <CspButton :buttonList="buttonList" />
     </section>
     <PageFooterMenu />
   </main>

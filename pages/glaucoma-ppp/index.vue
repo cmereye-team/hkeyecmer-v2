@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-07 11:47:30
- * @LastEditTime: 2026-05-07 11:51:49
+ * @LastEditTime: 2026-05-07 16:24:38
  * @FilePath: /pages/glaucoma-ppp/index.vue
  * @Description: 计划简介
 -->
@@ -26,17 +26,30 @@ useHead(() => ({
     },
   ],
 }))
-const cspLink = computed(() => {
+const navList = [
+  { id: 'intro', path: '/glaucoma-ppp', label: 'ppp.glaucoma.nav.intro' },
+  { id: 'doctor', path: '/glaucoma-doctor', label: 'ppp.glaucoma.nav.doctor' },
+  { id: 'question', path: '/glaucoma-faq', label: 'ppp.glaucoma.nav.question' },
+]
+const glaucomapppLink = computed(() => {
   return isEn.value
-    ? 'https://www4.ha.org.hk/ppp/en/ppp-programmes/csp/programme-intro'
-    : 'https://www4.ha.org.hk/ppp/ppp-programmes/csp/programme-intro'
+    ? 'https://www4.ha.org.hk/ppp/en/ppp-programmes/glaucomappp/programme-intro'
+    : 'https://www4.ha.org.hk/ppp/ppp-programmes/glaucomappp/programme-intro'
 })
-
-const waitingLink = computed(() => {
-  return isEn.value
-    ? 'https://www.ha.org.hk/visitor/sopc_waiting_time.asp?id=2&lang=ENG'
-    : 'https://www.ha.org.hk/visitor/sopc_waiting_time.asp?id=2&lang=CHIB5'
-})
+const buttonList = [
+  {
+    id: 'tel',
+    gtm: 'gtm-glaucomappp-tel',
+    text: 'ppp.glaucoma.button.tel',
+    link: '/contact-us',
+  },
+  {
+    id: 'whatsapp',
+    gtm: 'gtm-glaucomappp-whatsapp',
+    text: 'ppp.glaucoma.button.whatsapp',
+    link: 'https://api.whatsapp.com/send?phone=85293451508&text=你好，我想查詢青光眼治療協作計劃',
+  },
+]
 // 传递背景色
 const backgd = [
   '#64bcd1;',
@@ -48,7 +61,7 @@ const backgd = [
   <main
     class="text-[#66696F] text-base lg:text-3xl leading-[28px] lg:leading-[48px] font-medium pb-[24px] lg:pb-[72px]"
   >
-    <CspBanner active="intro" />
+    <CspBanner active="intro" :navList="navList" />
     <input id="showmore" type="checkbox" class="peer" hidden />
     <section
       class="content-init container mx-auto px-[12px] xl:px-0 pt-7 lg:pt-[88px]"
@@ -58,16 +71,10 @@ const backgd = [
           class="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[8%]"
         >
           <picture class="lg:w-[45%]">
-            <source
-              srcset="
-                https://statichk.cmermedical.com/newopd/services/csp/csp-intro-cover-01.avif
-              "
-              type="image/avif"
-            />
             <img
-              src="https://statichk.cmermedical.com/newopd/services/csp/csp-intro-cover-01.jpg"
-              :alt="t('ppp.csp.alt1')"
-              :title="t('ppp.csp.alt1')"
+              src="https://statichk.cmermedical.com/newopd/services/glaucomappp/glaucomappp-intro-cover-01-v1.webp"
+              :alt="t('ppp.glaucoma.alt')"
+              :title="t('ppp.glaucoma.alt')"
               loading="lazy"
             />
           </picture>
@@ -85,14 +92,8 @@ const backgd = [
           class="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[8%]"
         >
           <picture class="order-1 lg:order-2 lg:w-[45%]">
-            <source
-              srcset="
-                https://statichk.cmermedical.com/newopd/services/csp/csp-intro-cover-02.avif
-              "
-              type="image/avif"
-            />
             <img
-              src="https://statichk.cmermedical.com/newopd/services/csp/csp-intro-cover-02.jpg"
+              src="https://statichk.cmermedical.com/newopd/services/glaucomappp/glaucomappp-intro-cover-02-v1.webp"
               :alt="t('ppp.csp.alt1')"
               :title="t('ppp.csp.alt1')"
               loading="lazy"
@@ -113,24 +114,40 @@ const backgd = [
           class="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[8%]"
         >
           <picture class="lg:w-[45%]">
-            <source
-              srcset="
-                https://statichk.cmermedical.com/newopd/services/csp/csp-intro-cover-03.avif
-              "
-              type="image/avif"
-            />
             <img
-              src="https://statichk.cmermedical.com/newopd/services/csp/csp-intro-cover-03.jpg"
+              src="https://statichk.cmermedical.com/newopd/services/glaucomappp/glaucomappp-intro-cover-03-v1.webp"
               :alt="t('ppp.csp.alt1')"
               :title="t('ppp.csp.alt1')"
               loading="lazy"
             />
           </picture>
           <div class="lg:flex-1">
-            <h2 class="title-normal">{{ t('ppp.csp.intro.part3.title') }}</h2>
+            <h2 class="title-normal">{{ t('ppp.csp.intro.part2.title') }}</h2>
+            <div class="text-justify">
+              <p class="text-[#FF6B2C] font-black">
+                {{ t('ppp.csp.intro.part2.p1') }}
+              </p>
+              <p>{{ t('ppp.csp.intro.part2.p2') }}</p>
+              <p>{{ t('ppp.csp.intro.part2.p3') }}</p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="flex flex-col lg:flex-row lg:items-center gap-5 lg:gap-[8%]"
+        >
+          <picture class="order-1 lg:order-2 lg:w-[45%]">
+            <img
+              src="https://statichk.cmermedical.com/newopd/services/glaucomappp/glaucomappp-intro-cover-04-v1.webp"
+              :alt="t('ppp.csp.alt1')"
+              :title="t('ppp.csp.alt1')"
+              loading="lazy"
+            />
+          </picture>
+          <div class="order-2 lg:order-1 lg:flex-1">
+            <h2 class="title-normal">{{ t('ppp.glaucoma.intro.part1.title') }}</h2>
             <div class="text-justify">
               <p>
-                <i18n-t keypath='ppp.csp.intro.part3.p1'>
+                <i18n-t keypath="ppp.csp.intro.part3.p1">
                   <template #strong>
                     <strong class="text-[#FF6B2C] font-black">
                       {{ $t('ppp.csp.intro.part3.strong') }}
@@ -138,7 +155,7 @@ const backgd = [
                   </template>
                 </i18n-t>
                 <nuxt-link
-                  to="/csp-doctor"
+                  to="/glaucoma-doctor"
                   class="bg-primary text-white py-1 px-2 rounded-lg block w-fit"
                 >
                   {{ $t('ppp.csp.link_doctor') }}
@@ -173,130 +190,21 @@ const backgd = [
           </div>
         </div>
       </div>
-      <CspButton />
-      <label for="showmore" class="!flex justify-center cursor-pointer">
-        <div
-          class="bg-[#FFA231] text-white flex justify-center items-center gap-4 lg:gap-8 py-[12px] px-[40px] lg:py-[20px] lg:px-[80px] rounded-full text-xl lg:text-4xl leading-[1.25] tracking-[0.3em]"
-        >
-          <span>{{ t('ppp.csp.intro.showmore') }}</span>
-          <span>{{ t('ppp.csp.intro.showless') }}</span>
-          <i
-            class="iconfont icon-arrow-down-o text-xs lg:text-2xl duration-300 transition-all"
-          ></i>
-        </div>
-      </label>
     </section>
-    <div
-      class="content-more hidden peer-checked:block space-y-7 space-y-17 transition-all duration-300 ease-in-out"
-    >
-      <section class="container mx-auto px-[12px] xl:px-0">
-        <picture>
-          <source
-            srcset="
-              https://statichk.cmermedical.com/newopd/services/csp/csp-icon.avif
-            "
-            type="image/avif"
-          />
-          <img
-            src="https://statichk.cmermedical.com/newopd/services/csp/csp-icon.jpg"
-            :alt="t('ppp.csp.alt2')"
-            :title="t('ppp.csp.alt2')"
-            loading="lazy"
-            class="w-[44%] max-w-[400px] mx-auto pt-[40px] pb-[32px] lg:py-[40px]"
-          />
-        </picture>
-        <h2 class="title-normal text-center lg:!mb-[64px]">
-          {{ t('ppp.csp.intro.part4.title') }}
-        </h2>
-        <div class="flex flex-col gap-6 lg:gap-24">
-          <p>{{ t('ppp.csp.intro.part4.p1') }}</p>
-          <p>
-            <i18n-t keypath='ppp.csp.intro.part4.p2'>
-              <template #strong>
-                <strong class="text-[#FF6B2C] font-black">
-                  {{ $t('ppp.csp.intro.part4.strong') }}
-                </strong>
-              </template>
-            </i18n-t>
-          </p>
-          <p>{{ t('ppp.csp.intro.part4.p3') }}</p>
-        </div>
-      </section>
-      <section class="container mx-auto px-[12px] xl:px-0">
-        <h2 class="title-normal text-center">
-          {{ t('ppp.csp.intro.part5.title') }}
-        </h2>
-        <div
-          class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-0 lg:justify-between pt-5 lg:pt-7"
-        >
-          <div class="flex flex-col items-center text-center gap-2">
-            <img
-              src="https://static.cmereye.com/imgs/2024/07/4d7813cdebf4d8ae.png"
-              :alt="t('ppp.csp.intro.part5.item1.alt')"
-              :title="t('ppp.csp.intro.part5.item1.title')"
-              loading="lazy"
-              class="w-16 lg:w-auto lg:h-27"
-            />
-            <h3 class="text-lg lg:text-4xl font-black leading-[1.6]">
-              {{ t('ppp.csp.intro.part5.item1.text') }}
-            </h3>
-          </div>
-          <div class="flex flex-col items-center text-center gap-2">
-            <img
-              src="https://static.cmereye.com/imgs/2024/07/fc16cb318b375354.png"
-              :alt="t('ppp.csp.intro.part5.item2.alt')"
-              :title="t('ppp.csp.intro.part5.item2.title')"
-              loading="lazy"
-              class="w-23 lg:w-auto lg:h-27"
-            />
-            <div>
-              <h3 class="text-lg lg:text-4xl font-black leading-[1.6]">
-                {{ t('ppp.csp.intro.part5.item2.text') }}
-              </h3>
-              <p class="text-sm lg:text-3xl leading-[1.6]">
-                （{{ t('ppp.csp.intro.part5.p1') }}
-                <i class="iconfont icon-lens !text-sm lg:!text-3xl"></i>）
-              </p>
-            </div>
-          </div>
-          <div class="flex flex-col items-center text-center gap-2">
-            <img
-              src="https://static.cmereye.com/imgs/2024/07/6528cdccb6c59532.png"
-              :alt="t('ppp.csp.intro.part5.item3.alt')"
-              :title="t('ppp.csp.intro.part5.item3.title')"
-              loading="lazy"
-              class="w-20 lg:w-auto lg:h-27"
-            />
-            <h3 class="text-lg lg:text-4xl font-black leading-[1.6]">
-              {{ t('ppp.csp.intro.part5.item3.text') }}
-            </h3>
-          </div>
-        </div>
-        <p>{{ t('ppp.csp.intro.part5.p2') }}</p>
-      </section>
-      <section class="container mx-auto px-[12px] xl:px-0">
-        <h2>{{ t('ppp.csp.intro.part6.title') }}</h2>
-        <ul>
-          <li>
-            <a
-              :href="cspLink"
-              target="_blank"
-              class="text-[#2958a3] underline underline-offset-4"
-              >{{ t('ppp.csp.intro.part6.p1') }}</a
-            >
-          </li>
-          <li>
-            <a
-              :href="waitingLink"
-              target="_blank"
-              class="text-[#2958a3] underline underline-offset-4"
-              >{{ t('ppp.csp.intro.part6.p2') }}</a
-            >
-          </li>
-        </ul>
-        <CspButton />
-      </section>
-    </div>
+    <section class="container mx-auto px-[12px] xl:px-0 mt-7 lg:mt-15">
+      <h2>{{ t('ppp.glaucoma.intro.information.title') }}</h2>
+      <ul>
+        <li>
+          <a
+            :href="glaucomapppLink"
+            target="_blank"
+            class="text-[#2958a3] underline underline-offset-4"
+            >{{ t('ppp.glaucoma.intro.information.glaucomappp') }}</a
+          >
+        </li>
+      </ul>
+      <CspButton :buttonList="buttonList" />
+    </section>
     <FormFooterInfo
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
       :co="`color:${'#64bcd1;'}`"

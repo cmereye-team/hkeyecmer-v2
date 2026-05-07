@@ -26,7 +26,11 @@ useHead(() => ({
     },
   ],
 }))
-
+const navList = [
+  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
+  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
+  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
+]
 type TabKey = 'hk' | 'kl' | 'nt'
 const tabs = [
   { id: 'hk' as const },
@@ -703,7 +707,7 @@ onUnmounted(() => {
 </script>
 <template>
   <main class="doctor" :class="{ 'is-en': isEn }">
-    <CspBanner active="doctor" />
+    <CspBanner active="doctor" :navList="navList" />
     <section ref="doctorFixed" class="doctor-wrapper lg:static z-10">
       <div
         :class="[
