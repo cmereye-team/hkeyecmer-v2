@@ -44,7 +44,7 @@ const totalButtons = computed(() => (props.clinic ? 3 : 2))
           fill="currentColor"
         />
       </svg>
-      <span>{{ t('csp.button.clinic') }}</span>
+      <span>{{ t('ppp.csp.button.clinic') }}</span>
     </nuxt-link>
     <a
       href="tel:+(852)3956 2026"
@@ -83,7 +83,7 @@ const totalButtons = computed(() => (props.clinic ? 3 : 2))
           </clipPath>
         </defs>
       </svg>
-      <i18n-t keypath="csp.button.tel" tag="span" scope="global">
+      <i18n-t keypath="ppp.csp.button.tel" tag="span" scope="global">
         <template #br><br /></template>
       </i18n-t>
     </a>
@@ -107,7 +107,7 @@ const totalButtons = computed(() => (props.clinic ? 3 : 2))
             fill="currentColor"
           ></path>
         </svg>
-        <i18n-t keypath="csp.button.whatsapp" tag="span" scope="global">
+        <i18n-t keypath="ppp.csp.button.whatsapp" tag="span" scope="global">
           <template #br><br /></template>
         </i18n-t>
       </a>

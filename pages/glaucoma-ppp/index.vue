@@ -1,9 +1,9 @@
 <!--
  * @Author: 谭洁莹
- * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-01-27 16:34:02
- * @FilePath: /pages/csp-programme/index.vue
- * @Description: 耀眼行动计划简介
+ * @Date: 2026-05-07 11:47:30
+ * @LastEditTime: 2026-05-07 11:51:49
+ * @FilePath: /pages/glaucoma-ppp/index.vue
+ * @Description: 计划简介
 -->
 <script lang="ts" setup>
 import '~/assets/plugins/iconfont/iconfont.css'

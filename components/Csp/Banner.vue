@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 10:44:23
- * @LastEditTime: 2026-01-26 10:01:41
+ * @LastEditTime: 2026-05-07 13:57:38
  * @FilePath: /components/Csp/Banner.vue
  * @Description: 顶部
 -->
@@ -16,9 +16,9 @@ const props = withDefaults(defineProps<Props>(), {
 })
 const isEn = computed(() => locale.value.startsWith('en'))
 const navItems = [
-  { id: 'intro', path: '/csp-programme', label: 'csp.nav.intro' },
-  { id: 'doctor', path: '/csp-doctor', label: 'csp.nav.doctor' },
-  { id: 'question', path: '/csp-question', label: 'csp.nav.question' },
+  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
+  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
+  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
 ]
 const activeClass =
   "!text-[#2958A3] relative before:content-[''] before:absolute before:w-full before:h-1 before:-bottom-1 before:bg-[#2958A3]"
@@ -47,7 +47,7 @@ const activeClass =
         <h1
           class="banner-title order-2 lg:order-1 bg-[#fff2d5] text-2xl lg:text-5xl text-primary font-medium leading-none p-4 lg:py-[60px] lg:px-12"
         >
-          <i18n-t keypath="csp.title" tag="span" scope="global">
+          <i18n-t keypath="ppp.csp.title" tag="span" scope="global">
             <template #br><br /></template>
           </i18n-t>
         </h1>
@@ -77,7 +77,7 @@ const activeClass =
         <h1
           class="banner-title order-2 lg:order-1 bg-[#fff2d5] text-2xl lg:text-5xl text-primary font-medium leading-none p-4 lg:py-[60px] lg:px-12"
         >
-          <i18n-t keypath="csp.title" tag="span" scope="global">
+          <i18n-t keypath="ppp.csp.title" tag="span" scope="global">
             <template #br><br /></template>
           </i18n-t>
         </h1>

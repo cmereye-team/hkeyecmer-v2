@@ -1,9 +1,9 @@
 <!--
  * @Author: 谭洁莹
- * @Date: 2026-01-12 18:01:04
- * @LastEditTime: 2026-05-07 13:46:18
- * @FilePath: /pages/csp-question/index.vue
- * @Description: 耀眼行动常见问题
+ * @Date: 2026-05-07 11:48:37
+ * @LastEditTime: 2026-05-07 11:51:01
+ * @FilePath: /pages/glaucoma-faq/index.vue
+ * @Description: 青光眼治疗协作计划常见问题
 -->
 <script lang="ts" setup>
 import '~/assets/plugins/iconfont/iconfont.css'
@@ -242,10 +242,7 @@ const toggleAll = () => {
                     </div>
                   </li>
                   <li>
-                    <a
-                      :href="ehealthLink"
-                      target="_blank"
-                    >
+                    <a :href="ehealthLink" target="_blank">
                       <h4 class="text-[#2958a3] underline underline-offset-4">
                         {{ t('ppp.csp.faq.q4.step3.title') }}
                       </h4>
