@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:01:04
- * @LastEditTime: 2026-05-08 09:51:23
+ * @LastEditTime: 2026-05-08 11:30:30
  * @FilePath: /pages/csp-question/index.vue
  * @Description: 耀眼行动常见问题
 -->
@@ -128,7 +128,7 @@ const toggleAll = () => {
         </div>
         <ol
           id="faq-list"
-          class="faq-list text-[#4B4B4B] text-base lg:text-2xl space-y-6 lg:space-y-8 mb-6 lg:mb-10"
+          class="faq-list text-[#4B4B4B] text-justify text-base lg:text-2xl space-y-6 lg:space-y-8 mb-6 lg:mb-10"
         >
           <li class="faq-item block" data-num="1">
             <details>
@@ -289,7 +289,7 @@ const toggleAll = () => {
                           </a>
                         </p>
                         <p>
-                          2. {{ t('ppp.doctor.tel') }}:
+                          2. {{ t('ppp.tel') }}
                           <a
                             href="tel:+852 3956 2025"
                             class="!text-[#2958a3] !underline !underline-offset-4"
@@ -320,7 +320,7 @@ const toggleAll = () => {
                   </p>
                   <ul class="!list-decimal space-y-2 lg:space-y-0">
                     <li>
-                      WhatsApp:
+                      {{ t('ppp.whatsapp') }}
                       <a
                         href="https://rebrand.ly/耀眼行動計劃查詢"
                         target="_blank"
@@ -329,7 +329,7 @@ const toggleAll = () => {
                       >
                     </li>
                     <li>
-                      {{ t('ppp.doctor.tel') }}:
+                      {{ t('ppp.tel') }}
                       <a
                         href="tel:+852 3956 2026"
                         class="!text-[#2958a3] !underline underline-offset-4"

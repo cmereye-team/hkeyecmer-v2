@@ -31,6 +31,26 @@ const navList = [
   { id: 'doctor', path: '/glaucoma-doctor', label: 'ppp.glaucoma.nav.doctor' },
   { id: 'question', path: '/glaucoma-faq', label: 'ppp.glaucoma.nav.question' },
 ]
+const buttonList = [
+  {
+    id: 'clinic',
+    gtm: '',
+    text: 'ppp.csp.button.tel',
+    link: '/contact-us',
+  },
+  {
+    id: 'tel',
+    gtm: 'gtm-glaucomappp-tel',
+    text: 'ppp.glaucoma.button.tel',
+    link: 'tel:+85239562025',
+  },
+  {
+    id: 'whatsapp',
+    gtm: 'gtm-glaucomappp-whatsapp',
+    text: 'ppp.glaucoma.button.whatsapp',
+    link: 'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E9%9D%92%E5%85%89%E7%9C%BC%E6%B2%BB%E7%99%82%E5%8D%94%E4%BD%9C%E8%A8%88%E5%8A%83',
+  },
+]
 type TabKey = 'hk' | 'kl' | 'nt'
 const tabs = [
   { id: 'hk' as const },
@@ -794,7 +814,7 @@ onUnmounted(() => {
         </div>
       </div>
     </section>
-    <CspButton clinic />
+    <CspButton :buttonList="buttonList" />
     <PageFooterMenu />
   </main>
 </template>

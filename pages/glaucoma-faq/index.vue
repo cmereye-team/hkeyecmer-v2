@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-07 11:48:37
- * @LastEditTime: 2026-05-07 15:18:35
+ * @LastEditTime: 2026-05-08 17:07:38
  * @FilePath: /pages/glaucoma-faq/index.vue
  * @Description: 青光眼治疗协作计划常见问题
 -->
@@ -97,18 +97,19 @@ const toggleAll = () => {
     }
   })
 }
+
 const buttonList = [
   {
     id: 'tel',
     gtm: 'gtm-glaucomappp-tel',
     text: 'ppp.glaucoma.button.tel',
-    link: '/contact-us',
+    link: 'tel:+85239562025',
   },
   {
     id: 'whatsapp',
     gtm: 'gtm-glaucomappp-whatsapp',
     text: 'ppp.glaucoma.button.whatsapp',
-    link: 'https://api.whatsapp.com/send?phone=85293451508&text=你好，我想查詢青光眼治療協作計劃',
+    link: 'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E9%9D%92%E5%85%89%E7%9C%BC%E6%B2%BB%E7%99%82%E5%8D%94%E4%BD%9C%E8%A8%88%E5%8A%83',
   },
 ]
 </script>
@@ -138,7 +139,7 @@ const buttonList = [
         </div>
         <ol
           id="faq-list"
-          class="faq-list text-[#4B4B4B] text-base lg:text-2xl space-y-6 lg:space-y-8 mb-6 lg:mb-10"
+          class="faq-list text-[#4B4B4B] text-justify text-base lg:text-2xl space-y-6 lg:space-y-8 mb-6 lg:mb-10"
         >
           <li class="faq-item block" data-num="1">
             <details>
@@ -148,23 +149,14 @@ const buttonList = [
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.q1') }}
+                  {{ t('ppp.glaucoma.faq.q1') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
               >
                 <p>
-                  {{ t('ppp.csp.faq.a1.p1') }}
-                </p>
-                <p>
-                  {{ t('ppp.csp.faq.a1.p2') }}
-                </p>
-                <p>
-                  {{ t('ppp.csp.faq.a1.p3') }}
-                </p>
-                <p>
-                  {{ t('ppp.csp.faq.a1.p4') }}
+                  {{ t('ppp.glaucoma.faq.a1') }}
                 </p>
               </div>
             </details>
@@ -177,25 +169,22 @@ const buttonList = [
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.q2') }}
+                  {{ t('ppp.glaucoma.faq.q2') }}
                 </h3>
               </summary>
               <div
-                class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] space-y-8 lg:space-y-10"
+                class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px]"
               >
-                <p>{{ t('ppp.csp.faq.a2.p1') }}</p>
+                <p class="mb-8 lg:mb-10">{{ t('ppp.glaucoma.faq.a2.p1') }}</p>
+                <p>{{ t('ppp.glaucoma.faq.a2.p2') }}</p>
                 <ul
-                  class="list-decimal list-inside space-y-8 lg:space-y-10 mb-0"
+                  class="list-decimal list-inside space-y-1 lg:space-y-2 mb-0"
                 >
                   <li>
-                    {{ t('ppp.csp.faq.a2.li1') }}
+                    <a href="https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E9%9D%92%E5%85%89%E7%9C%BC%E6%B2%BB%E7%99%82%E5%8D%94%E4%BD%9C%E8%A8%88%E5%8A%83" target="_blank" class="text-primary underline underline-offset-4">{{ t('ppp.whatsapp_check') }}9345 1508</a>
                   </li>
-                  <li>{{ t('ppp.csp.faq.a2.li2') }}</li>
-                  <li>
-                    {{ t('ppp.csp.faq.a2.li3') }}
-                  </li>
+                  <li>{{ t('ppp.tel') }} <a href="tel:+85239562026" class="text-primary underline underline-offset-4">3956 2026</a> / <a href="tel:+85239562025" class="text-primary underline underline-offset-4">3956 2025</a></li>
                 </ul>
-                <p>{{ t('ppp.csp.faq.a2.p2') }}</p>
               </div>
             </details>
           </li>
@@ -207,17 +196,14 @@ const buttonList = [
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.q3') }}
+                  {{ t('ppp.glaucoma.faq.q3') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
               >
                 <p>
-                  {{ t('ppp.csp.faq.a3.p1') }}
-                </p>
-                <p>
-                  {{ t('ppp.csp.faq.a3.p2') }}
+                  {{ t('ppp.glaucoma.faq.a3') }}
                 </p>
               </div>
             </details>
@@ -230,7 +216,7 @@ const buttonList = [
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.q4') }}
+                  {{ t('ppp.glaucoma.faq.q4') }}
                 </h3>
               </summary>
               <div
@@ -238,118 +224,8 @@ const buttonList = [
               >
                 <div>
                   <p>
-                    {{ t('ppp.csp.faq.a4.p1') }}
+                    {{ t('ppp.glaucoma.faq.a4') }}
                   </p>
-                  <p>{{ t('ppp.csp.faq.a4.p2') }}</p>
-                </div>
-                <ol class="csp-steps space-y-8">
-                  <li>
-                    <h4>{{ t('ppp.csp.faq.a4.step1.title') }}</h4>
-                    <div>
-                      <p class="serial">
-                        {{ t('ppp.csp.faq.a4.step1.p1') }}
-                      </p>
-                      <p class="serial">
-                        {{ t('ppp.csp.faq.a4.step1.p2') }}
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <h4>{{ t('ppp.csp.faq.a4.step2.title') }}</h4>
-                    <div>
-                      <p class="serial">{{ t('ppp.csp.faq.a4.step1.p2') }}</p>
-                    </div>
-                  </li>
-                  <li>
-                    <a
-                      :href="ehealthLink"
-                      target="_blank"
-                    >
-                      <h4 class="text-[#2958a3] underline underline-offset-4">
-                        {{ t('ppp.csp.faq.a4.step3.title') }}
-                      </h4>
-                    </a>
-                    <div>
-                      <p class="serial">
-                        {{ t('ppp.csp.faq.a4.step3.p1') }}
-                      </p>
-                      <p class="serial">
-                        {{ t('ppp.csp.faq.a4.step3.p2') }}
-                        <a
-                          :href="ehealthLink"
-                          target="_blank"
-                          class="!text-[#2958a3]"
-                          >{{ ehealthLink }}</a
-                        >
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <h4>{{ t('ppp.csp.faq.a4.step4.title') }}</h4>
-                    <div>
-                      <p class="serial">
-                        {{ t('ppp.csp.faq.a4.step4.p1') }}
-                      </p>
-                      <div class="serial">
-                        <p>{{ t('ppp.csp.faq.a4.step4.p2') }}</p>
-                        <p>
-                          1.
-                          <a
-                            href="https://rebrand.ly/耀眼行動計劃查詢"
-                            target="_blank"
-                            class="!text-[#2958a3] !underline !underline-offset-4"
-                            >{{ t('ppp.csp.intro.part3.whatsapp') }} 6062 9611
-                          </a>
-                        </p>
-                        <p>
-                          2. {{ t('ppp.doctor.tel') }}:
-                          <a
-                            href="tel:+852 3956 2025"
-                            class="!text-[#2958a3] !underline !underline-offset-4"
-                            >3956 2025</a
-                          >
-                        </p>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <h4>{{ t('ppp.csp.faq.a4.step5.title') }}</h4>
-                    <div>
-                      <p class="serial">{{ t('ppp.csp.faq.a4.step5.p1') }}</p>
-                    </div>
-                  </li>
-                  <li>
-                    <h4>{{ t('ppp.csp.faq.a4.step6.title') }}</h4>
-                    <div>
-                      <p class="serial">{{ t('ppp.csp.faq.a4.step6.p1') }}</p>
-                      <p class="serial">{{ t('ppp.csp.faq.a4.step6.p2') }}</p>
-                    </div>
-                  </li>
-                </ol>
-                <div>
-                  <p>{{ t('ppp.csp.faq.a4.p3') }}</p>
-                  <p class="font-bold !mt-8 !mb-4 lg:!my-10">
-                    {{ t('ppp.csp.faq.a4.p4') }}
-                  </p>
-                  <ul class="!list-decimal space-y-2 lg:space-y-0">
-                    <li>
-                      WhatsApp:
-                      <a
-                        href="https://rebrand.ly/耀眼行動計劃查詢"
-                        target="_blank"
-                        class="!text-[#2958a3] !underline underline-offset-4"
-                        >https://rebrand.ly/耀眼行動計劃查詢</a
-                      >
-                    </li>
-                    <li>
-                      {{ t('ppp.doctor.tel') }}:
-                      <a
-                        href="tel:+852 3956 2026"
-                        class="!text-[#2958a3] !underline underline-offset-4"
-                        >3956 2026</a
-                      >
-                    </li>
-                  </ul>
                 </div>
               </div>
             </details>
@@ -362,14 +238,14 @@ const buttonList = [
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.q5') }}
+                  {{ t('ppp.glaucoma.faq.q5') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
               >
                 <p>
-                  {{ t('ppp.csp.faq.a5') }}
+                  {{ t('ppp.glaucoma.faq.a5') }}
                 </p>
               </div>
             </details>
@@ -382,33 +258,13 @@ const buttonList = [
                 <h3
                   class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
                 >
-                  {{ t('ppp.csp.faq.q6') }}
+                  {{ t('ppp.glaucoma.faq.q6') }}
                 </h3>
               </summary>
               <div
                 class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
               >
-                <p>{{ t('ppp.csp.faq.a6') }}</p>
-              </div>
-            </details>
-          </li>
-          <li class="faq-item block" data-num="7">
-            <details>
-              <summary
-                class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
-              >
-                <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
-                >
-                  {{ t('ppp.csp.faq.q7') }}
-                </h3>
-              </summary>
-              <div
-                class="faq-content px-3 lg:pl-[13%] lg:pr-[10%] lg:-mt-3 pb-8 lg:pb-[60px] !space-y-8 lg:!space-y-10"
-              >
-                <p>
-                  {{ t('ppp.csp.faq.a7') }}
-                </p>
+                <p>{{ t('ppp.glaucoma.faq.a6') }}</p>
               </div>
             </details>
           </li>

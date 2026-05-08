@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-05-08 09:52:48
+ * @LastEditTime: 2026-05-08 11:43:08
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -30,6 +30,26 @@ const navList = [
   { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
   { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
   { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
+]
+const buttonList = [
+  {
+    id: 'clinic',
+    gtm: '',
+    text: 'ppp.csp.button.tel',
+    link: '/contact-us',
+  },
+  {
+    id: 'tel',
+    gtm: 'gtm-eyesight-tel',
+    text: 'ppp.csp.button.tel',
+    link: 'tel:+85239562025',
+  },
+  {
+    id: 'whatsapp',
+    gtm: 'gtm-eyesight-whatsapp',
+    text: 'ppp.csp.button.whatsapp',
+    link: 'https://rebrand.ly/耀眼行動計劃查詢',
+  },
 ]
 type TabKey = 'hk' | 'kl' | 'nt'
 const tabs = [
@@ -794,7 +814,7 @@ onUnmounted(() => {
         </div>
       </div>
     </section>
-    <CspButton clinic />
+    <CspButton :buttonList="buttonList" />
     <PageFooterMenu />
   </main>
 </template>

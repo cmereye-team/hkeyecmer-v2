@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-07 11:47:30
- * @LastEditTime: 2026-05-07 16:24:38
+ * @LastEditTime: 2026-05-08 16:40:12
  * @FilePath: /pages/glaucoma-ppp/index.vue
  * @Description: 计划简介
 -->
@@ -41,13 +41,13 @@ const buttonList = [
     id: 'tel',
     gtm: 'gtm-glaucomappp-tel',
     text: 'ppp.glaucoma.button.tel',
-    link: '/contact-us',
+    link: 'tel:+85239562025',
   },
   {
     id: 'whatsapp',
     gtm: 'gtm-glaucomappp-whatsapp',
     text: 'ppp.glaucoma.button.whatsapp',
-    link: 'https://api.whatsapp.com/send?phone=85293451508&text=你好，我想查詢青光眼治療協作計劃',
+    link: 'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E9%9D%92%E5%85%89%E7%9C%BC%E6%B2%BB%E7%99%82%E5%8D%94%E4%BD%9C%E8%A8%88%E5%8A%83',
   },
 ]
 // 传递背景色
@@ -81,11 +81,11 @@ const backgd = [
           <div class="lg:flex-1 justify-between text-justify">
             <h2 class="title-normal">{{ t('ppp.csp.intro.part1.title') }}</h2>
             <ol class="!mb-0 !list-decimal">
-              <li>{{ t('ppp.csp.intro.part1.li1') }}</li>
-              <li>{{ t('ppp.csp.intro.part1.li2') }}</li>
-              <li>{{ t('ppp.csp.intro.part1.li3') }}</li>
+              <li>{{ t('ppp.glaucoma.intro.part1.li1') }}</li>
+              <li>{{ t('ppp.glaucoma.intro.part1.li2') }}</li>
+              <li>{{ t('ppp.glaucoma.intro.part1.li3') }}</li>
             </ol>
-            <p>{{ t('ppp.csp.intro.part1.p1') }}</p>
+            <p>{{ t('ppp.glaucoma.intro.part1.p1') }}</p>
           </div>
         </div>
         <div
@@ -100,13 +100,17 @@ const backgd = [
             />
           </picture>
           <div class="order-2 lg:order-1 lg:flex-1">
-            <h2 class="title-normal">{{ t('ppp.csp.intro.part2.title') }}</h2>
+            <h2 class="title-normal">
+              {{ t('ppp.glaucoma.intro.part2.title') }}
+            </h2>
             <div class="text-justify">
-              <p class="text-[#FF6B2C] font-black">
-                {{ t('ppp.csp.intro.part2.p1') }}
-              </p>
-              <p>{{ t('ppp.csp.intro.part2.p2') }}</p>
-              <p>{{ t('ppp.csp.intro.part2.p3') }}</p>
+              <i18n-t keypath="ppp.glaucoma.intro.part2.p1">
+                <template #strong>
+                  <strong class="text-[#FF6B2C] font-black">
+                    {{ $t('ppp.glaucoma.intro.part2.strong') }}
+                  </strong>
+                </template>
+              </i18n-t>
             </div>
           </div>
         </div>
@@ -122,13 +126,15 @@ const backgd = [
             />
           </picture>
           <div class="lg:flex-1">
-            <h2 class="title-normal">{{ t('ppp.csp.intro.part2.title') }}</h2>
+            <h2 class="title-normal">
+              {{ t('ppp.glaucoma.intro.part3.title') }}
+            </h2>
             <div class="text-justify">
               <p class="text-[#FF6B2C] font-black">
-                {{ t('ppp.csp.intro.part2.p1') }}
+                {{ t('ppp.glaucoma.intro.part3.p1') }}
               </p>
-              <p>{{ t('ppp.csp.intro.part2.p2') }}</p>
-              <p>{{ t('ppp.csp.intro.part2.p3') }}</p>
+              <p>{{ t('ppp.glaucoma.intro.part3.p2') }}</p>
+              <p>{{ t('ppp.glaucoma.intro.part3.p3') }}</p>
             </div>
           </div>
         </div>
@@ -144,13 +150,15 @@ const backgd = [
             />
           </picture>
           <div class="order-2 lg:order-1 lg:flex-1">
-            <h2 class="title-normal">{{ t('ppp.glaucoma.intro.part1.title') }}</h2>
+            <h2 class="title-normal">
+              {{ t('ppp.glaucoma.intro.part4.title') }}
+            </h2>
             <div class="text-justify">
               <p>
-                <i18n-t keypath="ppp.csp.intro.part3.p1">
+                <i18n-t keypath="ppp.glaucoma.intro.part4.p1">
                   <template #strong>
                     <strong class="text-[#FF6B2C] font-black">
-                      {{ $t('ppp.csp.intro.part3.strong') }}
+                      {{ $t('ppp.glaucoma.intro.part4.strong') }}
                     </strong>
                   </template>
                 </i18n-t>
@@ -158,13 +166,13 @@ const backgd = [
                   to="/glaucoma-doctor"
                   class="bg-primary text-white py-1 px-2 rounded-lg block w-fit"
                 >
-                  {{ $t('ppp.csp.link_doctor') }}
+                  {{ $t('ppp.link_doctor') }}
                 </nuxt-link>
               </p>
-              <p>{{ t('ppp.csp.intro.part3.p2') }}</p>
+              <p>{{ t('ppp.glaucoma.intro.part4.p2') }}</p>
               <ul class="!mb-0 !list-decimal">
                 <li>
-                  {{ t('ppp.csp.intro.part3.tel') }}
+                  {{ t('ppp.tel') }}
                   <a
                     href="tel:+852 3956 2026"
                     class="!text-[#2958a3] !underline underline-offset-4"
@@ -179,10 +187,10 @@ const backgd = [
                 </li>
                 <li>
                   <a
-                    href="https://rebrand.ly/耀眼行動計劃查詢"
+                    href="https://api.whatsapp.com/send?phone=85293451508&text=你好，我想查詢青光眼治療協作計劃"
                     target="_blank"
                     class="!text-[#2958a3] !underline underline-offset-4"
-                    >{{ t('ppp.csp.intro.part3.whatsapp') }}6062 9611</a
+                    >{{ t('ppp.whatsapp_check') }}9345 1508</a
                   >
                 </li>
               </ul>

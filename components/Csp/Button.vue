@@ -23,7 +23,7 @@ const defaultButtonsMap = computed(() => ({
   tel: {
     gtm: 'gtm-eyesight-tel',
     text: 'ppp.csp.button.tel',
-    link: '/contact-us',
+    link: 'tel:+85239562025',
   },
   whatsapp: {
     gtm: 'gtm-eyesight-whatsapp',
