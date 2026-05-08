@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-04-21 15:32:27
+ * @LastEditTime: 2026-05-08 10:34:13
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -33,7 +33,7 @@ const menus = computed((): IMenuItem[] => [
   {
     type: 'link',
     text: t('pages.about_us.about_us'),
-    route: { name: 'about-us' }, // 关于我们
+    route: { name: 'about-us' },
     childMenuList: [
       {
         type: 'link',
@@ -42,7 +42,7 @@ const menus = computed((): IMenuItem[] => [
       },
 
       {
-        type: 'link', // 发展历程
+        type: 'link',
         text: t('pages.about_us.development_course'),
         route: { path: '/about-us', hash: '#history' },
       },
@@ -76,7 +76,7 @@ const menus = computed((): IMenuItem[] => [
   {
     type: 'link',
     text: t('pages.medical_service.cataract.cataract'),
-    route: { name: 'medical-service-cataract' }, // 白内障
+    route: { name: 'medical-service-cataract' },
     childMenuList: [
       {
         type: 'link',
@@ -88,11 +88,6 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.multiFocal_intraocular_lens'),
         route: { name: 'cataract-multifocal-lens' },
       },
-      // {
-      //   type: 'link',
-      //   text: t('pages.medical_service.Light_Adjustable_Lens'),
-      //   route: { name: 'light-adjustable-lens' },
-      // },
       {
         type: 'link',
         text: t('pages.medical_service.edof.title'),
@@ -103,16 +98,6 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.lensTypes.title'),
         route: { path: '/Cataract/intraocular-lens-types' },
       },
-      {
-        type: 'link',
-        text: t('pages.medical_service.dazzling_operation'),
-        route: { name: 'csp-programme' },
-      },
-      // {
-      //   type: 'link',
-      //   text: '白內障關注月',
-      //   route: { path: '/cataract/cataract-awareness-month' },
-      // },
     ],
   },
   {
@@ -120,11 +105,6 @@ const menus = computed((): IMenuItem[] => [
     text: t('pages.medical_service.medical_service'),
     route: { name: 'medical-service' }, // 醫療服務
     childMenuList: [
-      // {
-      //   type: 'link',
-      //   text: t('pages.medical_service.cataract'),
-      //   route: { name: 'medical-service-cataract' }, // 白內障
-      // },
       {
         type: 'link',
         text: t('pages.medical_service.maculopathy'),
@@ -136,7 +116,7 @@ const menus = computed((): IMenuItem[] => [
         route: { name: 'medical-service-muscaeVolitantes' },
       },
       {
-        type: 'link', // 視網膜脫落
+        type: 'link',
         text: t('pages.medical_service.amotioRetinae'),
         route: { name: 'medical-service-amotioRetinae' },
       },
@@ -148,7 +128,7 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link',
         text: t('pages.medical_service.conjunctivitis'),
-        route: { name: 'medical-service-conjunctivitis' }, // 結膜炎
+        route: { name: 'medical-service-conjunctivitis' },
       },
       {
         type: 'link',
@@ -156,7 +136,7 @@ const menus = computed((): IMenuItem[] => [
         route: { name: 'medical-service-xerophthalmia' },
       },
       {
-        type: 'link', // 眼表及角膜疾病
+        type: 'link',
         text: t('pages.medical_service.ocularSurfaceDiseases'),
         route: { name: 'medical-service-ocularSurfaceDiseases' },
       },
@@ -194,79 +174,23 @@ const menus = computed((): IMenuItem[] => [
       },
     ],
   },
-  // {
-  //   type: 'link',
-  //   text: t('pages.medical_service.medical_service'),
-  //   route: { name: 'medical-service' }, // 醫療服務
-  //   childMenuList: [
-  //     // {
-  //     //   type: 'link',
-  //     //   text: t('pages.medical_service.cataract'),
-  //     //   route: { name: 'medical-service-cataract' }, // 白內障
-  //     // },
-  //     {
-  //       type: 'link',
-  //       text: t('pages.medical_service.maculopathy'),
-  //       route: { name: 'medical-service-maculopathy' },
-  //     },
-  //     {
-  //       type: 'link',
-  //       text: t('pages.medical_service.muscae_volitantes'),
-  //       route: { name: 'medical-service-muscaeVolitantes' },
-  //     },
-  //     {
-  //       type: 'link', // 視網膜脫落
-  //       text: t('pages.medical_service.amotioRetinae'),
-  //       route: { name: 'medical-service-amotioRetinae' },
-  //     },
-  //     {
-  //       type: 'link',
-  //       text: t('pages.medical_service.glaucoma'),
-  //       route: { name: 'medical-service-glaucoma' },
-  //     },
-  //     {
-  //       type: 'link',
-  //       text: t('pages.medical_service.conjunctivitis'),
-  //       route: { name: 'medical-service-conjunctivitis' }, // 結膜炎
-  //     },
-  //     {
-  //       type: 'link',
-  //       text: t('pages.medical_service.xerophthalmia'),
-  //       route: { name: 'medical-service-xerophthalmia' },
-  //     },
-  //     {
-  //       type: 'link', // 眼表及角膜疾病
-  //       text: t('pages.medical_service.ocularSurfaceDiseases'),
-  //       route: { name: 'medical-service-ocularSurfaceDiseases' },
-  //     },
-  //     {
-  //       type: 'link', // 兒童斜弱視
-  //       text: t('pages.medical_service.strabismusAmblyopia'),
-  //       route: { name: 'medical-service-strabismusAmblyopia' },
-  //     },
-  //     {
-  //       type: 'link', // 阿托品滴眼液
-  //       text: t('pages.medical_service.atropine'),
-  //       route: { name: 'medical-service-atropine' },
-  //     },
-  //     {
-  //       type: 'link', // 眼矯形及眼眶疾病
-  //       text: t('pages.medical_service.eyeOrthopaedicDisease'),
-  //       route: { name: 'medical-service-eyeOrthopaedicDisease' },
-  //     },
-  //     {
-  //       type: 'link', // 醫學驗光配鏡
-  //       text: t('pages.medical_service.medicalOptometry'),
-  //       route: { name: 'medical-service-medicalOptometry' },
-  //     },
-  //     {
-  //       type: 'link', // 眼矯形及眼眶疾病
-  //       text: t('pages.medical_service.smileHk'),
-  //       route: false,
-  //       href: 'https://smile.hkcmereye.com/',
-  //     },
-  //   ],
-  // },
+  {
+    type: 'link', // 公私營協作計劃
+    text: t('ppp.menu'),
+    route: {},
+    childMenuList: [
+      {
+        type: 'link',
+        text: t('pages.medical_service.dazzling_operation'),
+        route: { name: 'csp-programme' },
+      },
+      {
+        type: 'link',
+        text: t('ppp.glaucoma.plan_title'),
+        route: { name: 'glaucoma-ppp' },
+      },
+    ],
+  },
   {
     type: 'link', // ophthalmic_information 眼科資訊
     text: t('pages.ophthalmic_information.ophthalmic_information'),
@@ -1077,6 +1001,12 @@ a {
       .menu-subgroup {
         width: 216px;
         right: -216px;
+      }
+    }
+    &:nth-child(7) {
+      .menu-subgroup {
+        width: 200px;
+        right: -200px;
       }
     }
   }

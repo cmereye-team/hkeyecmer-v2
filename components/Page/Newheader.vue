@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-04-21 15:49:31
+ * @LastEditTime: 2026-05-08 10:39:39
  * @FilePath: /components/Page/Newheader.vue
  * @Description: 移动端菜单
 -->
@@ -23,14 +23,6 @@ interface LinkItem {
   styleClass?: string
   childMenuList?: LinkItem[]
 }
-useHead({
-  // script: [
-  //   {
-  //     src: 'https://cdn.userway.org/widget.js',
-  //     'data-account': 'eSwu5OqOdn',
-  //   },
-  // ],
-})
 
 const locale = useState<string>('locale.setting')
 
@@ -108,11 +100,6 @@ const menus = computed(() => {
           text: t('pages.medical_service.multiFocal_intraocular_lens'),
           link: { path: '/cataract/multifocal-lens' },
         },
-        // {
-        //   type: 'link',
-        //   text: t('pages.medical_service.Light_Adjustable_Lens'),
-        //   link: { path: '/light-adjustable-lens' },
-        // },
         {
           type: 'link',
           text: t('pages.medical_service.edof.title'),
@@ -129,11 +116,6 @@ const menus = computed(() => {
           text: t('pages.medical_service.dazzling_operation'),
           link: { path: '/csp-programme' },
         },
-        // {
-        //   type: 'link',
-        //   text: '白內障關注月',
-        //   link: { path: '/cataract/cataract-awareness-month' },
-        // },
       ],
     },
     {
@@ -205,6 +187,23 @@ const menus = computed(() => {
           type: 'toPage',
           text: t('pages.medical_service.smileClear'),
           link: 'https://smile.hkcmereye.com/',
+        },
+      ],
+    },
+    {
+      type: 'link', // 公私營協作計劃
+      text: t('ppp.menu'),
+      route: {},
+      childMenuList: [
+        {
+          type: 'link',
+          text: t('pages.medical_service.dazzling_operation'),
+          route: { name: 'csp-programme' },
+        },
+        {
+          type: 'link',
+          text: t('ppp.glaucoma.plan_title'),
+          route: { name: 'glaucoma-ppp' },
         },
       ],
     },

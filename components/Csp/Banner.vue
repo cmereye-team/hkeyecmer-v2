@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 10:44:23
- * @LastEditTime: 2026-05-08 10:00:05
+ * @LastEditTime: 2026-05-08 10:20:28
  * @FilePath: /components/Csp/Banner.vue
  * @Description: 顶部
 -->
@@ -24,18 +24,17 @@ const defaultNavConfigs: navItem[] = [
 ]
 const props = withDefaults(defineProps<Props>(), {
   active: 'intro',
-  navList: () => []
+  navList: () => [],
 })
 const resolvedNavList = computed(() => {
   // 如果父组件传了 navList 且不为空，则使用父组件的
-  const rawList = (props.navList && props.navList.length > 0) 
-    ? props.navList 
-    : defaultNavConfigs
-
-  // 映射数组，将 label key 转换为实际的翻译文字
-  return rawList.map(item => ({
+  const rawList =
+    props.navList && props.navList.length > 0
+      ? props.navList
+      : defaultNavConfigs
+  return rawList.map((item) => ({
     ...item,
-    translatedLabel: t(item.label) 
+    translatedLabel: t(item.label),
   }))
 })
 const isEn = computed(() => locale.value.startsWith('en'))

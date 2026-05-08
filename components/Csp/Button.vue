@@ -48,11 +48,12 @@ const hasWhatsapp = computed(() =>
 const hasClinic = computed(() =>
   finalButtonList.value.some((i) => i.id === 'clinic')
 )
-const getBtn = (id: string) => finalButtonList.value.find(i => i.id === id) || {
+const getBtn = (id: string) =>
+  finalButtonList.value.find((i) => i.id === id) || {
     id: '',
     text: '',
     link: '',
-    gtm: ''
+    gtm: '',
   }
 const totalButtons = computed(() => (hasClinic.value ? 3 : 2))
 </script>
