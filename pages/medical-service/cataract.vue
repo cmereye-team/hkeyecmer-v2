@@ -5057,7 +5057,7 @@ body {
     & > div:nth-child(2) {
       & > div:nth-child(2) {
         & > div {
-          align-items: start;
+          align-items: flex-start;
           & > div {
             display: flex;
             flex-direction: column;

@@ -29,7 +29,7 @@ const props = defineProps<{
       <div class="doctor-name">
         <div class="flex items-baseline zh">
           <h2>{{ doctor.name }}</h2>
-          <span>{{ t('csp.doctor.text') }}</span>
+          <span>{{ t('ppp.doctor.text') }}</span>
         </div>
         <span class="en">{{ doctor.enName }}</span>
       </div>
@@ -37,7 +37,7 @@ const props = defineProps<{
         <div class="avatar w-1/5 rounded-full lg:rounded-sm overflow-hidden">
           <img
             :src="doctor.avatar"
-            alt="{{ t('csp.plan_title') }}_{{t('csp.nav.doctor')}}_{{ doctor.name }}{{ t('csp.doctor.text') }}"
+            alt="{{ t('ppp.csp.plan_title') }}_{{t('ppp.csp.nav.doctor')}}_{{ doctor.name }}{{ t('ppp.doctor.text') }}"
             loading="lazy"
             class="w-full max-h-[300px] object-contain lg:object-cover object-top"
           />
@@ -45,7 +45,7 @@ const props = defineProps<{
         <div class="field flex-1 px-3 py-2 lg:py-5 lg:space-y-5">
           <div class="field-key">
             <strong class="text-primary">
-              {{ t('csp.doctor.clinic.address') }}
+              {{ t('ppp.doctor.clinic.address') }}
             </strong>
           </div>
           <ul class="field-value list-disc list-inside">

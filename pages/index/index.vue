@@ -898,7 +898,7 @@ const pageNav = ref([
         width: auto;
         display: flex;
         // align-items: center;
-        align-items: start;
+        align-items: flex-start;
         margin-top: 40px;
         // margin-bottom: 200px;
         padding: 0;

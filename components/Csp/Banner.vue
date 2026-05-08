@@ -1,25 +1,43 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 10:44:23
- * @LastEditTime: 2026-01-26 10:01:41
+ * @LastEditTime: 2026-05-08 10:20:28
  * @FilePath: /components/Csp/Banner.vue
  * @Description: 顶部
 -->
 <script setup lang="ts">
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
+interface navItem {
+  id: string
+  path: string
+  label: string
+}
 interface Props {
   active?: string
+  navList?: navItem[]
 }
+const defaultNavConfigs: navItem[] = [
+  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
+  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
+  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
+]
 const props = withDefaults(defineProps<Props>(), {
   active: 'intro',
+  navList: () => [],
+})
+const resolvedNavList = computed(() => {
+  // 如果父组件传了 navList 且不为空，则使用父组件的
+  const rawList =
+    props.navList && props.navList.length > 0
+      ? props.navList
+      : defaultNavConfigs
+  return rawList.map((item) => ({
+    ...item,
+    translatedLabel: t(item.label),
+  }))
 })
 const isEn = computed(() => locale.value.startsWith('en'))
-const navItems = [
-  { id: 'intro', path: '/csp-programme', label: 'csp.nav.intro' },
-  { id: 'doctor', path: '/csp-doctor', label: 'csp.nav.doctor' },
-  { id: 'question', path: '/csp-question', label: 'csp.nav.question' },
-]
 const activeClass =
   "!text-[#2958A3] relative before:content-[''] before:absolute before:w-full before:h-1 before:-bottom-1 before:bg-[#2958A3]"
 </script>
@@ -47,7 +65,7 @@ const activeClass =
         <h1
           class="banner-title order-2 lg:order-1 bg-[#fff2d5] text-2xl lg:text-5xl text-primary font-medium leading-none p-4 lg:py-[60px] lg:px-12"
         >
-          <i18n-t keypath="csp.title" tag="span" scope="global">
+          <i18n-t keypath="ppp.csp.title" tag="span" scope="global">
             <template #br><br /></template>
           </i18n-t>
         </h1>
@@ -77,7 +95,7 @@ const activeClass =
         <h1
           class="banner-title order-2 lg:order-1 bg-[#fff2d5] text-2xl lg:text-5xl text-primary font-medium leading-none p-4 lg:py-[60px] lg:px-12"
         >
-          <i18n-t keypath="csp.title" tag="span" scope="global">
+          <i18n-t keypath="ppp.csp.title" tag="span" scope="global">
             <template #br><br /></template>
           </i18n-t>
         </h1>
@@ -89,7 +107,7 @@ const activeClass =
         ]"
       >
         <nuxt-link
-          v-for="item in navItems"
+          v-for="item in resolvedNavList"
           :key="item.id"
           :to="item.path"
           :class="props.active === item.id ? activeClass : ''"

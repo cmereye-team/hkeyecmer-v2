@@ -1,9 +1,9 @@
 <!--
  * @Author: 谭洁莹
- * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-05-08 11:43:08
- * @FilePath: /pages/csp-doctor/index.vue
- * @Description: 耀眼行动医生列表页
+ * @Date: 2026-05-07 11:48:22
+ * @LastEditTime: 2026-05-08 18:05:17
+ * @FilePath: /pages/glaucoma-doctor/index.vue
+ * @Description: 青光眼治疗协作计划医生列表
 -->
 <script lang="ts" setup>
 import '~/assets/plugins/iconfont/iconfont.css'
@@ -27,9 +27,9 @@ useHead(() => ({
   ],
 }))
 const navList = [
-  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
-  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
-  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
+  { id: 'intro', path: '/glaucoma-ppp', label: 'ppp.glaucoma.nav.intro' },
+  { id: 'doctor', path: '/glaucoma-doctor', label: 'ppp.glaucoma.nav.doctor' },
+  { id: 'question', path: '/glaucoma-faq', label: 'ppp.glaucoma.nav.question' },
 ]
 const buttonList = [
   {
@@ -40,15 +40,15 @@ const buttonList = [
   },
   {
     id: 'tel',
-    gtm: 'gtm-eyesight-tel',
-    text: 'ppp.csp.button.tel',
+    gtm: 'gtm-glaucomappp-tel',
+    text: 'ppp.glaucoma.button.tel',
     link: 'tel:+85239562025',
   },
   {
     id: 'whatsapp',
-    gtm: 'gtm-eyesight-whatsapp',
-    text: 'ppp.csp.button.whatsapp',
-    link: 'https://rebrand.ly/耀眼行動計劃查詢',
+    gtm: 'gtm-glaucomappp-whatsapp',
+    text: 'ppp.glaucoma.button.whatsapp',
+    link: 'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD%EF%BC%8C%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2%E9%9D%92%E5%85%89%E7%9C%BC%E6%B2%BB%E7%99%82%E5%8D%94%E4%BD%9C%E8%A8%88%E5%8A%83',
   },
 ]
 type TabKey = 'hk' | 'kl' | 'nt'
@@ -57,7 +57,8 @@ const tabs = [
   { id: 'kl' as const },
   { id: 'nt' as const },
 ] as const
-const activeTab = ref<TabKey>(tabs[0].id)
+// const activeTab = ref<TabKey>(tabs[0].id)
+const activeTab = ref<TabKey>('nt')
 const changeTab = (id: TabKey) => {
   activeTab.value = id
 }
@@ -84,32 +85,6 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
-    id: 2,
-    name: '陳偉樂',
-    cnName: '陈伟乐',
-    enName: 'Dr. Leo Chan',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1'), t('ppp.doctor.clinic.kt')],
-  },
-  {
-    id: 3,
-    name: '陳偉樂',
-    cnName: '陈伟乐',
-    enName: 'Dr. Leo Chan',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      t('ppp.doctor.clinic.st'),
-      t('ppp.doctor.clinic.tw'),
-      t('ppp.doctor.clinic.tko'),
-    ],
-  },
-  {
     id: 4,
     name: '張瀞之',
     cnName: '张瀞之',
@@ -118,77 +93,29 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct')],
-  },
-  {
-    id: 5,
-    name: '張瀞之',
-    cnName: '张瀞之',
-    enName: 'Dr. Janice Cheung',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk')],
-  },
-  {
-    id: 6,
-    name: '張瀞之',
-    cnName: '张瀞之',
-    enName: 'Dr. Janice Cheung',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      t('ppp.doctor.clinic.st'),
-      t('ppp.doctor.clinic.yl'),
-      t('ppp.doctor.clinic.tw'),
-    ],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 7,
-    name: '熊健慧',
-    cnName: '熊健慧',
-    enName: 'Dr. Jennifer Hung',
+    name: '鄒樂韻',
+    cnName: '邹乐韵',
+    enName: 'Dr. Loraine Chow',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-022-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1')],
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-021-cover.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 8,
-    name: '熊健慧',
-    cnName: '熊健慧',
-    enName: 'Dr. Jennifer Hung',
+    name: '鄒樞韻',
+    cnName: '邹枢韵',
+    enName: 'Dr. Sharon Chow',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-022-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [t('ppp.doctor.clinic.st2')],
-  },
-  {
-    id: 9,
-    name: '高德全',
-    cnName: '高德全',
-    enName: 'Dr. Simon Ko',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-023-cover.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-019-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct')],
-  },
-  {
-    id: 10,
-    name: '高德全',
-    cnName: '高德全',
-    enName: 'Dr. Simon Ko',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-023-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 11,
@@ -199,66 +126,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct')],
-  },
-  {
-    id: 12,
-    name: '黎浩樺',
-    cnName: '黎浩桦',
-    enName: 'Dr. Kenny Lai',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk')],
-  },
-  {
-    id: 13,
-    name: '黎浩樺',
-    cnName: '黎浩桦',
-    enName: 'Dr. Kenny Lai',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [t('ppp.doctor.clinic.st'), t('ppp.doctor.clinic.yl')],
-  },
-  {
-    id: 14,
-    name: '林己明',
-    cnName: '林己明',
-    enName: 'Dr. Jasmine Lam',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
-    area: 'hk',
-    regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct')],
-  },
-  {
-    id: 15,
-    name: '林己明',
-    cnName: '林己明',
-    enName: 'Dr. Jasmine Lam',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk')],
-  },
-  {
-    id: 16,
-    name: '林己明',
-    cnName: '林己明',
-    enName: 'Dr. Jasmine Lam',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      t('ppp.doctor.clinic.st'),
-      t('ppp.doctor.clinic.yl'),
-      t('ppp.doctor.clinic.tw'),
-    ],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 17,
@@ -269,33 +137,18 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
-    id: 18,
-    name: '林寶生',
-    cnName: '林宝生',
-    enName: 'Dr. Carol Lam',
+    id: 14,
+    name: '林己明',
+    cnName: '林己明',
+    enName: 'Dr. Jasmine Lam',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk')],
-  },
-  {
-    id: 19,
-    name: '林寶生',
-    cnName: '林宝生',
-    enName: 'Dr. Carol Lam',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      t('ppp.doctor.clinic.st'),
-      t('ppp.doctor.clinic.yl'),
-      t('ppp.doctor.clinic.tw'),
-    ],
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 20,
@@ -306,18 +159,18 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-025-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
-    id: 21,
-    name: '林峯',
-    cnName: '林峰',
-    enName: 'Dr. Robert Lam',
+    id: 50,
+    name: '劉凱珊',
+    cnName: '刘凯珊',
+    enName: 'Dr. Flora Lau',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-025-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1')],
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-004-cover.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
     id: 22,
@@ -328,51 +181,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct')],
-  },
-  {
-    id: 23,
-    name: '李煒業',
-    cnName: '李炜业',
-    enName: 'Dr. Jacky Lee',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1')],
-  },
-  {
-    id: 24,
-    name: '李煒業',
-    cnName: '李炜业',
-    enName: 'Dr. Jacky Lee',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [t('ppp.doctor.clinic.st'), t('ppp.doctor.clinic.yl')],
-  },
-  {
-    id: 25,
-    name: '李佑榮',
-    cnName: '李佑荣',
-    enName: 'Dr. Vincent Lee',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-001-cover.webp',
-    area: 'hk',
-    regions: '香港',
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
-  },
-  {
-    id: 26,
-    name: '李佑榮',
-    cnName: '李佑荣',
-    enName: 'Dr. Vincent Lee',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-001-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
     id: 27,
@@ -386,100 +195,15 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
-    id: 28,
-    name: '梁苑珊',
-    cnName: '梁苑珊',
-    enName: 'Dr. Gloria Leung',
+    id: 25,
+    name: '李少雄',
+    cnName: '李少雄',
+    enName: 'Dr. Patrick Li',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk'), t('ppp.doctor.clinic.kt')],
-  },
-  {
-    id: 29,
-    name: '梁苑珊',
-    cnName: '梁苑珊',
-    enName: 'Dr. Gloria Leung',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      t('ppp.doctor.clinic.st'),
-      t('ppp.doctor.clinic.yl'),
-      t('ppp.doctor.clinic.tw'),
-    ],
-  },
-  {
-    id: 30,
-    name: '李德倫',
-    cnName: '李德伦',
-    enName: 'Dr. Stephen Li',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
-    area: 'hk',
-    regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct')],
-  },
-  {
-    id: 31,
-    name: '李德倫',
-    cnName: '李德伦',
-    enName: 'Dr. Stephen Li',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk'), t('ppp.doctor.clinic.kt')],
-  },
-  {
-    id: 32,
-    name: '李德倫',
-    cnName: '李德伦',
-    enName: 'Dr. Stephen Li',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-011-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      t('ppp.doctor.clinic.st'),
-      t('ppp.doctor.clinic.yl'),
-      t('ppp.doctor.clinic.tko'),
-    ],
-  },
-  {
-    id: 33,
-    name: '吳兆駿',
-    cnName: '吴兆骏',
-    enName: 'Dr. Danny Ng',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-008-cover.webp',
     area: 'hk',
     regions: '香港',
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
-  },
-  {
-    id: 34,
-    name: '吳兆駿',
-    cnName: '吴兆骏',
-    enName: 'Dr. Danny Ng',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1')],
-  },
-  {
-    id: 35,
-    name: '吳兆駿',
-    cnName: '吴兆骏',
-    enName: 'Dr. Danny Ng',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-024-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [t('ppp.doctor.clinic.yl'), t('ppp.doctor.clinic.tko')],
   },
   {
     id: 36,
@@ -493,33 +217,6 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
-    id: 37,
-    name: '尹浩柟',
-    cnName: '尹浩楠',
-    enName: 'Dr. Kelvin Wan',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk'), t('ppp.doctor.clinic.kt')],
-  },
-  {
-    id: 38,
-    name: '尹浩柟',
-    cnName: '尹浩楠',
-    enName: 'Dr. Kelvin Wan',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [
-      t('ppp.doctor.clinic.st'),
-      t('ppp.doctor.clinic.yl'),
-      t('ppp.doctor.clinic.tw'),
-      t('ppp.doctor.clinic.tko'),
-    ],
-  },
-  {
     id: 39,
     name: '黃俊華',
     cnName: '黄俊华',
@@ -528,29 +225,18 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
     area: 'hk',
     regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct')],
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
-    id: 40,
-    name: '黃俊華',
-    cnName: '黄俊华',
-    enName: 'Dr. Alex Wong',
+    id: 30,
+    name: '胡偉君',
+    cnName: '胡伟君',
+    enName: 'Dr. Wu Wai Kwan',
     avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1')],
-  },
-  {
-    id: 41,
-    name: '黃俊華',
-    cnName: '黄俊华',
-    enName: 'Dr. Alex Wong',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [t('ppp.doctor.clinic.st1'), t('ppp.doctor.clinic.yl')],
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-009-cover.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
     id: 42,
@@ -564,6 +250,171 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
+    id: 2,
+    name: '陳偉樂',
+    cnName: '陈伟乐',
+    enName: 'Dr. Leo Chan',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 5,
+    name: '張瀞之',
+    cnName: '张瀞之',
+    enName: 'Dr. Janice Cheung',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 51,
+    name: '鄒樂韻',
+    cnName: '邹乐韵',
+    enName: 'Dr. Loraine Chow',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-021-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 52,
+    name: '鄒樞韻',
+    cnName: '邹枢韵',
+    enName: 'Dr. Sharon Chow',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-019-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 12,
+    name: '黎浩樺',
+    cnName: '黎浩桦',
+    enName: 'Dr. Kenny Lai',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 18,
+    name: '林寶生',
+    cnName: '林宝生',
+    enName: 'Dr. Carol Lam',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 15,
+    name: '林己明',
+    cnName: '林己明',
+    enName: 'Dr. Jasmine Lam',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 21,
+    name: '林峯',
+    cnName: '林峰',
+    enName: 'Dr. Robert Lam',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-025-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk')],
+  },
+  {
+    id: 53,
+    name: '劉凱珊',
+    cnName: '刘凯珊',
+    enName: 'Dr. Flora Lau',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-004-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 23,
+    name: '李煒業',
+    cnName: '李炜业',
+    enName: 'Dr. Jacky Lee',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 28,
+    name: '梁苑珊',
+    cnName: '梁苑珊',
+    enName: 'Dr. Gloria Leung',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 55,
+    name: '李少雄',
+    cnName: '李少雄',
+    enName: 'Dr. Patrick Li',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-008-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 37,
+    name: '尹浩柟',
+    cnName: '尹浩楠',
+    enName: 'Dr. Kelvin Wan',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 40,
+    name: '黃俊華',
+    cnName: '黄俊华',
+    enName: 'Dr. Alex Wong',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 56,
+    name: '胡偉君',
+    cnName: '胡伟君',
+    enName: 'Dr. Wu Wai Kwan',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-009-cover.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk')],
+  },
+  {
     id: 43,
     name: '邱俊源',
     cnName: '邱俊源',
@@ -572,7 +423,170 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'kl',
     regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1'), t('ppp.doctor.clinic.kt')],
+    clinic: [t('ppp.doctor.clinic.mk1')],
+  },
+  {
+    id: 3,
+    name: '陳偉樂',
+    cnName: '陈伟乐',
+    enName: 'Dr. Leo Chan',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-017-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [t('ppp.doctor.clinic.tw'), t('ppp.doctor.clinic.tko')],
+  },
+  {
+    id: 6,
+    name: '張瀞之',
+    cnName: '张瀞之',
+    enName: 'Dr. Janice Cheung',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-013-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.tko'),
+    ],
+  },
+  {
+    id: 58,
+    name: '鄒樂韻',
+    cnName: '邹乐韵',
+    enName: 'Dr. Loraine Chow',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-021-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [t('ppp.doctor.clinic.tw'), t('ppp.doctor.clinic.tko')],
+  },
+  {
+    id: 59,
+    name: '鄒樞韻',
+    cnName: '邹枢韵',
+    enName: 'Dr. Sharon Chow',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-019-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [t('ppp.doctor.clinic.tw'), t('ppp.doctor.clinic.tko')],
+  },
+  {
+    id: 13,
+    name: '黎浩樺',
+    cnName: '黎浩桦',
+    enName: 'Dr. Kenny Lai',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-010-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.tko'),
+    ],
+  },
+  {
+    id: 19,
+    name: '林寶生',
+    cnName: '林宝生',
+    enName: 'Dr. Carol Lam',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-014-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [t('ppp.doctor.clinic.tw'), t('ppp.doctor.clinic.tko')],
+  },
+  {
+    id: 16,
+    name: '林己明',
+    cnName: '林己明',
+    enName: 'Dr. Jasmine Lam',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-015-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [t('ppp.doctor.clinic.tw'), t('ppp.doctor.clinic.tko')],
+  },
+  {
+    id: 24,
+    name: '李煒業',
+    cnName: '李炜业',
+    enName: 'Dr. Jacky Lee',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [
+      t('ppp.doctor.clinic.st1'),
+      t('ppp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.tko'),
+    ],
+  },
+  {
+    id: 29,
+    name: '梁苑珊',
+    cnName: '梁苑珊',
+    enName: 'Dr. Gloria Leung',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-018-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [t('ppp.doctor.clinic.tw'), t('ppp.doctor.clinic.tko')],
+  },
+  {
+    id: 25,
+    name: '李少雄',
+    cnName: '李少雄',
+    enName: 'Dr. Patrick Li',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-008-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [
+      t('ppp.doctor.clinic.st'),
+      t('ppp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.tko'),
+    ],
+  },
+  {
+    id: 38,
+    name: '尹浩柟',
+    cnName: '尹浩楠',
+    enName: 'Dr. Kelvin Wan',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-020-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [
+      t('ppp.doctor.clinic.yl'),
+      t('ppp.doctor.clinic.tw'),
+      t('ppp.doctor.clinic.tko'),
+    ],
+  },
+  {
+    id: 41,
+    name: '黃俊華',
+    cnName: '黄俊华',
+    enName: 'Dr. Alex Wong',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-003-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [t('ppp.doctor.clinic.tw'), t('ppp.doctor.clinic.tko')],
+  },
+  {
+    id: 56,
+    name: '胡偉君',
+    cnName: '胡伟君',
+    enName: 'Dr. Wu Wai Kwan',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/doctor-009-cover.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [t('ppp.doctor.clinic.tw'), t('ppp.doctor.clinic.tko')],
   },
   {
     id: 44,
@@ -583,11 +597,7 @@ const allDoctors = ref<Doctor[]>([
       'https://statichk.cmermedical.com/newopd/doctor/doctor-006-cover.webp',
     area: 'nt',
     regions: '新界',
-    clinic: [
-      t('ppp.doctor.clinic.st1'),
-      t('ppp.doctor.clinic.yl'),
-      t('ppp.doctor.clinic.tw'),
-    ],
+    clinic: [t('ppp.doctor.clinic.tw'), t('ppp.doctor.clinic.tko')],
   },
 ])
 const searchKeyword = ref('')
@@ -722,7 +732,7 @@ onUnmounted(() => {
 </script>
 <template>
   <main class="doctor" :class="{ 'is-en': isEn }">
-    <CspBanner active="doctor" :navList="navList" />
+    <CspBanner active="doctor" />
     <section ref="doctorFixed" class="doctor-wrapper lg:static z-10">
       <div
         :class="[
@@ -768,7 +778,7 @@ onUnmounted(() => {
               :class="{ active: activeTab === tab.id }"
               @click="changeTab(tab.id)"
             >
-              {{ t(`ppp.doctor.tab_${tab.id}`) }}
+              {{ t(`csp.doctor.tab_${tab.id}`) }}
             </div>
           </div>
         </div>
