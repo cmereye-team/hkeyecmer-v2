@@ -820,7 +820,7 @@ onMounted(() => {
     color: #fff;
     height: 20px;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     width: 40px;
     position: absolute;

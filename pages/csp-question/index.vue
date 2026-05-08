@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:01:04
- * @LastEditTime: 2026-05-07 15:42:51
+ * @LastEditTime: 2026-05-08 09:51:23
  * @FilePath: /pages/csp-question/index.vue
  * @Description: 耀眼行动常见问题
 -->
@@ -404,7 +404,7 @@ const toggleAll = () => {
           {{ t('ppp.csp.faq.noresult') }}
         </div>
       </div>
-      <CspButton :list="buttonList" />
+      <CspButton />
     </section>
     <PageFooterMenu />
   </main>

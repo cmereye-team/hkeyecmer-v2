@@ -3154,7 +3154,7 @@ ppp:
       q7: 'After successfully registering for the CSP, how soon can cataract surgery be performed?'
       a7: 'Typically, after completing the pre-operative assessment and subsidy confirmation, C-MER Eye Centre ophthalmologists will assist in scheduling your surgery date. Actual scheduling times may vary depending on the doctor and clinic availability, so we recommend contacting us early.'
   glaucoma:
-    title: 'Glaucoma Public-Private Partnership <br>Programme (Glaucoma PPP)'
+    title: 'Glaucoma Public-Private Partnership {br}Programme (Glaucoma PPP)'
 banners:
   welcome: '您好, 欢迎来到 %{app_name}!'
 others:

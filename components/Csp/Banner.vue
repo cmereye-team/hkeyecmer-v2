@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 10:44:23
- * @LastEditTime: 2026-05-07 14:52:50
+ * @LastEditTime: 2026-05-08 10:00:05
  * @FilePath: /components/Csp/Banner.vue
  * @Description: 顶部
 -->
@@ -15,17 +15,30 @@ interface navItem {
 }
 interface Props {
   active?: string
-  navList: navItem[]
+  navList?: navItem[]
 }
-const props = withDefaults(defineProps<Props>(), {
-  active: 'intro',
-})
-const isEn = computed(() => locale.value.startsWith('en'))
-const navItems = [
+const defaultNavConfigs: navItem[] = [
   { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
   { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
   { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
 ]
+const props = withDefaults(defineProps<Props>(), {
+  active: 'intro',
+  navList: () => []
+})
+const resolvedNavList = computed(() => {
+  // 如果父组件传了 navList 且不为空，则使用父组件的
+  const rawList = (props.navList && props.navList.length > 0) 
+    ? props.navList 
+    : defaultNavConfigs
+
+  // 映射数组，将 label key 转换为实际的翻译文字
+  return rawList.map(item => ({
+    ...item,
+    translatedLabel: t(item.label) 
+  }))
+})
+const isEn = computed(() => locale.value.startsWith('en'))
 const activeClass =
   "!text-[#2958A3] relative before:content-[''] before:absolute before:w-full before:h-1 before:-bottom-1 before:bg-[#2958A3]"
 </script>
@@ -95,7 +108,7 @@ const activeClass =
         ]"
       >
         <nuxt-link
-          v-for="item in navList"
+          v-for="item in resolvedNavList"
           :key="item.id"
           :to="item.path"
           :class="props.active === item.id ? activeClass : ''"

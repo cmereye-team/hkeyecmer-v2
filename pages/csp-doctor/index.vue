@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-05-07 13:40:13
+ * @LastEditTime: 2026-05-08 09:52:48
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -610,11 +610,6 @@ const setPage = (page: number) => {
   currentPage.value = page
   scrollToTop()
 }
-const navItems = [
-  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
-  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
-  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
-]
 const doctorFixed = ref<HTMLElement | null>(null)
 const PC_MIN_WIDTH = 1024
 let lastScroll = 0
@@ -716,7 +711,7 @@ onUnmounted(() => {
         ]"
       >
         <nuxt-link
-          v-for="item in navItems"
+          v-for="item in navList"
           :key="item.id"
           :to="item.path"
           :class="

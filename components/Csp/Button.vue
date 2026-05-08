@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 09:02:59
- * @LastEditTime: 2026-05-07 15:55:29
+ * @LastEditTime: 2026-05-08 10:03:07
  * @FilePath: /components/Csp/Button.vue
  * @Description: CSP耀眼行动按钮组
 -->
@@ -48,7 +48,12 @@ const hasWhatsapp = computed(() =>
 const hasClinic = computed(() =>
   finalButtonList.value.some((i) => i.id === 'clinic')
 )
-const getBtn = (id: string) => finalButtonList.value.find(i => i.id === id)
+const getBtn = (id: string) => finalButtonList.value.find(i => i.id === id) || {
+    id: '',
+    text: '',
+    link: '',
+    gtm: ''
+  }
 const totalButtons = computed(() => (hasClinic.value ? 3 : 2))
 </script>
 <template>
