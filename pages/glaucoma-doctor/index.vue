@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-07 11:48:22
- * @LastEditTime: 2026-05-08 18:05:17
+ * @LastEditTime: 2026-05-09 10:56:28
  * @FilePath: /pages/glaucoma-doctor/index.vue
  * @Description: 青光眼治疗协作计划医生列表
 -->
@@ -57,8 +57,7 @@ const tabs = [
   { id: 'kl' as const },
   { id: 'nt' as const },
 ] as const
-// const activeTab = ref<TabKey>(tabs[0].id)
-const activeTab = ref<TabKey>('nt')
+const activeTab = ref<TabKey>(tabs[0].id)
 const changeTab = (id: TabKey) => {
   activeTab.value = id
 }
@@ -732,7 +731,7 @@ onUnmounted(() => {
 </script>
 <template>
   <main class="doctor" :class="{ 'is-en': isEn }">
-    <CspBanner active="doctor" />
+    <PPPBanner programme="glaucoma" active="doctor" />
     <section ref="doctorFixed" class="doctor-wrapper lg:static z-10">
       <div
         :class="[
@@ -778,14 +777,14 @@ onUnmounted(() => {
               :class="{ active: activeTab === tab.id }"
               @click="changeTab(tab.id)"
             >
-              {{ t(`csp.doctor.tab_${tab.id}`) }}
+              {{ t(`ppp.doctor.tab_${tab.id}`) }}
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <CspDoctor :list="paginatedDoctors" />
+      <PPPDoctor :list="paginatedDoctors" />
       <div
         v-if="displayedDoctors.length > 0"
         class="pagination flex items-center justify-center gap-4 mt-10 mb-20"
@@ -824,7 +823,7 @@ onUnmounted(() => {
         </div>
       </div>
     </section>
-    <CspButton :buttonList="buttonList" />
+    <PPPButton :buttonList="buttonList" />
     <PageFooterMenu />
   </main>
 </template>

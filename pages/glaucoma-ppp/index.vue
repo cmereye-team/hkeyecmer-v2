@@ -61,7 +61,7 @@ const backgd = [
   <main
     class="text-[#66696F] text-base lg:text-3xl leading-[28px] lg:leading-[48px] font-medium pb-[24px] lg:pb-[72px]"
   >
-    <CspBanner active="intro" :navList="navList" />
+    <PPPBanner programme="glaucoma" active="intro" :navList="navList" />
     <input id="showmore" type="checkbox" class="peer" hidden />
     <section
       class="content-init container mx-auto px-[12px] xl:px-0 pt-7 lg:pt-[88px]"
@@ -211,7 +211,7 @@ const backgd = [
           >
         </li>
       </ul>
-      <CspButton :buttonList="buttonList" />
+      <PPPButton :buttonList="buttonList" />
     </section>
     <FormFooterInfo
       :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"

@@ -3015,6 +3015,10 @@ pages:
     p6: 'Some materials on this website come from the Internet. If we have unintentionally infringed your rights and interests, please contact us in time and we will follow up immediately.'
 ppp:
   menu: 'PPP Programmes'
+  link_doctor: 'Download Doctor List'
+  tel: 'Tel: '
+  whatsapp: 'WhatsApp: '
+  whatsapp_check: 'WhatsApp: '
   doctor:
     search: 'Search doctor name'
     tab_hk: 'Hong Kong'
@@ -3155,6 +3159,60 @@ ppp:
       a7: 'Typically, after completing the pre-operative assessment and subsidy confirmation, C-MER Eye Centre ophthalmologists will assist in scheduling your surgery date. Actual scheduling times may vary depending on the doctor and clinic availability, so we recommend contacting us early.'
   glaucoma:
     title: 'Glaucoma Public-Private Partnership {br}Programme (Glaucoma PPP)'
+    alt: 'Glaucoma Public-Private Partnership Programme LOGO'
+    plan_title: 'Glaucoma Public-Private Partnership Programme'
+    link_doctor: 'Download Doctor List'
+    nav:
+      intro: 'Programme Introduction'
+      doctor: 'List of C-MER Eye Center Ophthalmologists'
+      question: 'FAQ'
+    button:
+      clinic: 'Locations'
+      tel: 'Contact us'
+      whatsapp: 'WhatsApp us'
+    intro:
+      part1:
+        title: 'Eligibility'
+        li1: 'Patients who have received glaucoma care at Hospital Authority specialist outpatient clinics for at least 12 months and be clinically stable;'
+        li2: 'Be enrolled in the Electronic Health Record Sharing System (eHRSS); and'
+        li3: 'Be formally invited by the Hospital Authority Glaucoma Public-Private Partnership Programme Office.'
+        p1: 'The Hospital Authority will issue invitation letters to eligible patients in phases, and no application is required. Invited patients may choose whether to join the Programme on a voluntary basis and select a participating private ophthalmologist for their care.'
+      part2:
+        title: 'Programme Details'
+        strong: 'four subsidised consultations'
+        p1: 'Each eligible patient may receive up to {strong} per year, including specified glaucoma medications. In addition, investigation services comprising up to one visual field (VF) test and one optical coherence tomography (OCT) scan annually will be provided by a private ophthalmologist.'
+      part3:
+        title: 'Programme Fees'
+        p1: 'Under the Programme, participating patients are only required to pay fees equivalent to those charged for Hospital Authority specialist outpatient services. Currently, the fees are HK$80 per consultation, HK$15 per drug item, and HK$80 per investigation service.'
+        p2: 'Recipients of Comprehensive Social Security Assistance (CSSA), holders of full or partial medical fee waiver certificates, or Old Age Living Allowance recipients aged 75 or above will enjoy the same fee waiver arrangements as for Hospital Authority services.'
+        p3: 'Subject to mutual agreement, patients may opt to receive additional services and treatments provided by private ophthalmologists at their own expense or by using Elderly Health Care Vouchers.'
+      part4:
+        title: 'Doctors Participating from C-MER Eye Center'
+        strong: 'over 10 ophthalmologists participating'
+        p1: 'C-MER Eye Center has {strong} in the Glaucoma Public-Private Partnership Programme.'
+        p2: 'Patients who have received an invitation letter from the Hospital Authority (HA) with a subsidy expiry date are welcome to make an appointment via:'
+      information:
+        title: 'Additional Information:'
+        glaucomappp: 'Hospital Authority – Glaucoma Public-Private Partnership Programme'
+    faq:
+      expand: 'Expand All'
+      collapse: 'Collapse All'
+      search: 'Enter keywords to search'
+      noresult: 'Sorry, no matching questions found.'
+      q1: 'How should patients choose a participating private ophthalmologist?'
+      a1: 'Patients may select a suitable doctor based on their individual needs. For enquiries or recommendations on participating ophthalmologists, please feel free to contact us.'
+      q2: 'How should patients arrange their first consultation?'
+      a2:
+        p1: 'After selecting a C-MER ophthalmologist, patients can make an appointment for their first consultation by calling or WhatsApping the C-MER customer service team. Patients should indicate that they are enrolled in the Glaucoma Public-Private Partnership Programme when booking.'
+        p2: 'C-MER Eye Center contact details:'
+      q3: 'What documents should patients bring to their consultation?'
+      a3: 'Patients are required to bring their Hong Kong Identity Card for identity verification and registration. Attendance will be recorded via smart ID card.'
+      q4: 'Can patients be followed up by more than one participating private ophthalmologist at the same time?'
+      a4: 'No. Patients enrolled in the Programme may only be registered under one private ophthalmologist at any given time.'
+      q5: 'Will participating private ophthalmologists manage other eye conditions?'
+      a5: 'Participating ophthalmologists primarily provide care for glaucoma. Other eye conditions are not covered under this Programme. However, patients may choose to receive treatment for other conditions at their own expense from the same ophthalmologist. Those enrolled in the Elderly Health Care Voucher Scheme may also use vouchers to pay for services and medications not covered under the Programme. For enquiries, patients may consult the C-MER Eye Center Customer Service team.'
+      q6: 'How can patients arrange eye check services?'
+      a6: 'Under the Programme, patients are entitled to receive up to one visual field (VF) test and one optical coherence tomography (OCT) scan per year provided by a private ophthalmologist. In general, a fee of HK$80 per investigation will be collected in advance during appointment booking, after which the relevant examinations will be arranged.'
 banners:
   welcome: '您好, 欢迎来到 %{app_name}!'
 others:

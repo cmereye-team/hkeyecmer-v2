@@ -115,7 +115,7 @@ const buttonList = [
 </script>
 <template>
   <main class="faq" :class="{ 'is-en': isEn }">
-    <CspBanner active="question" :navList="navList" />
+    <PPPBanner programme="glaucoma" active="question" :navList="navList" />
     <section class="bg-[#f1f6f8] pt-4 pb-[52px] lg:pt-[80px] lg:pb-[108px]">
       <div class="container mx-auto px-3 xl:px-0">
         <div class="flex flex-col justify-center mb-4 lg:mb-[24px]">
@@ -147,7 +147,7 @@ const buttonList = [
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.glaucoma.faq.q1') }}
                 </h3>
@@ -167,7 +167,7 @@ const buttonList = [
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.glaucoma.faq.q2') }}
                 </h3>
@@ -194,7 +194,7 @@ const buttonList = [
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.glaucoma.faq.q3') }}
                 </h3>
@@ -214,7 +214,7 @@ const buttonList = [
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.glaucoma.faq.q4') }}
                 </h3>
@@ -236,7 +236,7 @@ const buttonList = [
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.glaucoma.faq.q5') }}
                 </h3>
@@ -256,7 +256,7 @@ const buttonList = [
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.glaucoma.faq.q6') }}
                 </h3>
@@ -273,7 +273,7 @@ const buttonList = [
           {{ t('ppp.csp.faq.noresult') }}
         </div>
       </div>
-      <CspButton :buttonList="buttonList" />
+      <PPPButton :buttonList="buttonList" />
     </section>
     <PageFooterMenu />
   </main>

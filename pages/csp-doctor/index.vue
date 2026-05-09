@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-05-08 11:43:08
+ * @LastEditTime: 2026-05-09 10:20:23
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -27,9 +27,24 @@ useHead(() => ({
   ],
 }))
 const navList = [
-  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
-  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
-  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
+  {
+    id: 'intro',
+    path: '/csp-programme',
+    label: 'ppp.csp.nav.intro',
+    active: false,
+  },
+  {
+    id: 'doctor',
+    path: '/csp-doctor',
+    label: 'ppp.csp.nav.doctor',
+    active: true,
+  },
+  {
+    id: 'question',
+    path: '/csp-question',
+    label: 'ppp.csp.nav.question',
+    active: false,
+  },
 ]
 const buttonList = [
   {
@@ -722,7 +737,7 @@ onUnmounted(() => {
 </script>
 <template>
   <main class="doctor" :class="{ 'is-en': isEn }">
-    <CspBanner active="doctor" :navList="navList" />
+    <PPPBanner active="doctor" />
     <section ref="doctorFixed" class="doctor-wrapper lg:static z-10">
       <div
         :class="[
@@ -775,7 +790,7 @@ onUnmounted(() => {
       </div>
     </section>
     <section>
-      <CspDoctor :list="paginatedDoctors" />
+      <PPPDoctor :list="paginatedDoctors" />
       <div
         v-if="displayedDoctors.length > 0"
         class="pagination flex items-center justify-center gap-4 mt-10 mb-20"
@@ -814,7 +829,7 @@ onUnmounted(() => {
         </div>
       </div>
     </section>
-    <CspButton :buttonList="buttonList" />
+    <PPPButton :buttonList="buttonList" />
     <PageFooterMenu />
   </main>
 </template>

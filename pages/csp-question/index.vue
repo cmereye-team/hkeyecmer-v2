@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:01:04
- * @LastEditTime: 2026-05-08 11:30:30
+ * @LastEditTime: 2026-05-09 10:22:22
  * @FilePath: /pages/csp-question/index.vue
  * @Description: 耀眼行动常见问题
 -->
@@ -25,11 +25,6 @@ useHead(() => ({
     },
   ],
 }))
-const navList = [
-  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
-  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
-  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
-]
 const isEn = computed(() => locale.value.startsWith('en'))
 const ehealthLink = computed(() => {
   return isEn.value
@@ -100,7 +95,7 @@ const toggleAll = () => {
 </script>
 <template>
   <main class="faq" :class="{ 'is-en': isEn }">
-    <CspBanner active="question" :navList="navList" />
+    <PPPBanner active="question" />
     <section class="bg-[#f1f6f8] pt-4 pb-[52px] lg:pt-[80px] lg:pb-[108px]">
       <div class="container mx-auto px-3 xl:px-0">
         <div class="flex flex-col justify-center mb-4 lg:mb-[24px]">
@@ -136,7 +131,7 @@ const toggleAll = () => {
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.csp.faq.q1') }}
                 </h3>
@@ -165,7 +160,7 @@ const toggleAll = () => {
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.csp.faq.q2') }}
                 </h3>
@@ -195,7 +190,7 @@ const toggleAll = () => {
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.csp.faq.q3') }}
                 </h3>
@@ -218,7 +213,7 @@ const toggleAll = () => {
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.csp.faq.q4') }}
                 </h3>
@@ -347,7 +342,7 @@ const toggleAll = () => {
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.csp.faq.q5') }}
                 </h3>
@@ -367,7 +362,7 @@ const toggleAll = () => {
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.csp.faq.q6') }}
                 </h3>
@@ -385,7 +380,7 @@ const toggleAll = () => {
                 class="px-3 lg:pl-[13%] lg:pr-[10%] py-4 lg:pt-[52px] lg:pb-12 cursor-pointer"
               >
                 <h3
-                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-none"
+                  class="pl-9 lg:pl-0 mb-0 text-lg lg:text-2xl font-bold leading-7 lg:leading-[1.2]"
                 >
                   {{ t('ppp.csp.faq.q7') }}
                 </h3>
@@ -404,7 +399,7 @@ const toggleAll = () => {
           {{ t('ppp.csp.faq.noresult') }}
         </div>
       </div>
-      <CspButton />
+      <PPPButton />
     </section>
     <PageFooterMenu />
   </main>

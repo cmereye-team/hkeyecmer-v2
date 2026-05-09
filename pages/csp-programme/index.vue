@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-01-27 16:34:02
+ * @LastEditTime: 2026-05-09 10:19:33
  * @FilePath: /pages/csp-programme/index.vue
  * @Description: 耀眼行动计划简介
 -->
@@ -26,11 +26,6 @@ useHead(() => ({
     },
   ],
 }))
-const navList = [
-  { id: 'intro', path: '/csp-programme', label: 'ppp.csp.nav.intro' },
-  { id: 'doctor', path: '/csp-doctor', label: 'ppp.csp.nav.doctor' },
-  { id: 'question', path: '/csp-question', label: 'ppp.csp.nav.question' },
-]
 const cspLink = computed(() => {
   return isEn.value
     ? 'https://www4.ha.org.hk/ppp/en/ppp-programmes/csp/programme-intro'
@@ -53,7 +48,7 @@ const backgd = [
   <main
     class="text-[#66696F] text-base lg:text-3xl leading-[28px] lg:leading-[48px] font-medium pb-[24px] lg:pb-[72px]"
   >
-    <CspBanner active="intro" :navList="navList" />
+    <PPPBanner active="intro" />
     <input id="showmore" type="checkbox" class="peer" hidden />
     <section
       class="content-init container mx-auto px-[12px] xl:px-0 pt-7 lg:pt-[88px]"
@@ -135,7 +130,7 @@ const backgd = [
             <h2 class="title-normal">{{ t('ppp.csp.intro.part3.title') }}</h2>
             <div class="text-justify">
               <p>
-                <i18n-t keypath='ppp.csp.intro.part3.p1'>
+                <i18n-t keypath="ppp.csp.intro.part3.p1">
                   <template #strong>
                     <strong class="text-[#FF6B2C] font-black">
                       {{ $t('ppp.csp.intro.part3.strong') }}
@@ -178,7 +173,7 @@ const backgd = [
           </div>
         </div>
       </div>
-      <CspButton />
+      <PPPButton />
       <label for="showmore" class="!flex justify-center cursor-pointer">
         <div
           class="bg-[#FFA231] text-white flex justify-center items-center gap-4 lg:gap-8 py-[12px] px-[40px] lg:py-[20px] lg:px-[80px] rounded-full text-xl lg:text-4xl leading-[1.25] tracking-[0.3em]"
@@ -216,7 +211,7 @@ const backgd = [
         <div class="flex flex-col gap-6 lg:gap-24">
           <p>{{ t('ppp.csp.intro.part4.p1') }}</p>
           <p>
-            <i18n-t keypath='ppp.csp.intro.part4.p2'>
+            <i18n-t keypath="ppp.csp.intro.part4.p2">
               <template #strong>
                 <strong class="text-[#FF6B2C] font-black">
                   {{ $t('ppp.csp.intro.part4.strong') }}
@@ -299,7 +294,7 @@ const backgd = [
             >
           </li>
         </ul>
-        <CspButton />
+        <PPPButton />
       </section>
     </div>
     <FormFooterInfo
@@ -317,6 +312,27 @@ const backgd = [
 ul,
 ol {
   list-style-position: inside;
+}
+.banner-title {
+  text-shadow: rgb(255, 255, 255) 3px 0px 0px,
+    rgb(255, 255, 255) 2.83333px 0.983333px 0px,
+    rgb(255, 255, 255) 2.35px 1.85px 0px,
+    rgb(255, 255, 255) 1.61667px 2.51667px 0px,
+    rgb(255, 255, 255) 0.7px 2.91667px 0px,
+    rgb(255, 255, 255) -0.283333px 2.98333px 0px,
+    rgb(255, 255, 255) -1.25px 2.73333px 0px,
+    rgb(255, 255, 255) -2.06667px 2.16667px 0px,
+    rgb(255, 255, 255) -2.66667px 1.36667px 0px,
+    rgb(255, 255, 255) -2.96667px 0.416667px 0px,
+    rgb(255, 255, 255) -2.95px -0.566667px 0px,
+    rgb(255, 255, 255) -2.6px -1.5px 0px,
+    rgb(255, 255, 255) -1.96667px -2.26667px 0px,
+    rgb(255, 255, 255) -1.11667px -2.78333px 0px,
+    rgb(255, 255, 255) -0.133333px -3px 0px,
+    rgb(255, 255, 255) 0.85px -2.88333px 0px,
+    rgb(255, 255, 255) 1.75px -2.43333px 0px,
+    rgb(255, 255, 255) 2.45px -1.73333px 0px,
+    rgb(255, 255, 255) 2.88333px -0.833333px 0px;
 }
 .w-fit {
   width: fit-content;
