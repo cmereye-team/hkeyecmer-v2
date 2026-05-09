@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 10:44:23
- * @LastEditTime: 2026-05-09 10:54:35
+ * @LastEditTime: 2026-05-09 10:59:28
  * @FilePath: /components/PPP/Banner.vue
  * @Description: 顶部
 -->
@@ -10,20 +10,23 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 
 // 1. 定义项目配置表：集中管理不同计划的图片和 Alt
-const PROGRAMME_MAP: Record<string, { img: string; avif: string; alt: string, title: string, name: string }> = {
+const PROGRAMME_MAP: Record<
+  string,
+  { img: string; avif: string; alt: string; title: string; name: string }
+> = {
   csp: {
     img: 'https://statichk.cmermedical.com/newopd/services/csp/csp-icon.jpg',
     avif: 'https://statichk.cmermedical.com/newopd/services/csp/csp-icon.avif',
     alt: t('ppp.csp.alt1'),
     title: t('ppp.csp.alt2'),
-    name: 'ppp.csp.title'
+    name: 'ppp.csp.title',
   },
   glaucoma: {
     img: 'https://statichk.cmermedical.com/newopd/services/ppp/glaucomappp-logo.png',
     avif: 'https://statichk.cmermedical.com/newopd/services/ppp/glaucomappp-logo.avif',
     alt: t('ppp.glaucoma.alt1'),
     title: t('ppp.csp.alt2'),
-    name: 'ppp.glaucoma.title'
+    name: 'ppp.glaucoma.title',
   },
 }
 
@@ -34,9 +37,9 @@ interface navItem {
 }
 
 interface Props {
-  active?: string        // 当前高亮 ID
-  programme?: string     // 计划类型，如 'csp'
-  navList?: navItem[]    // 可选：外部传入导航列表
+  active?: string // 当前高亮 ID
+  programme?: string // 计划类型，如 'csp'
+  navList?: navItem[] // 可选：外部传入导航列表
 }
 
 const props = withDefaults(defineProps<Props>(), {
@@ -54,10 +57,11 @@ const defaultNavConfigs: navItem[] = [
 
 // 2. 这里的逻辑保留：支持外部传参，否则使用默认
 const resolvedNavList = computed(() => {
-  const rawList = props.navList && props.navList.length > 0
-    ? props.navList
-    : defaultNavConfigs
-    
+  const rawList =
+    props.navList && props.navList.length > 0
+      ? props.navList
+      : defaultNavConfigs
+
   return rawList.map((item) => ({
     ...item,
     translatedLabel: t(item.label),
@@ -65,7 +69,9 @@ const resolvedNavList = computed(() => {
 })
 
 // 3. 获取当前项目的图片配置
-const currentConfig = computed(() => PROGRAMME_MAP[props.programme] || PROGRAMME_MAP.csp)
+const currentConfig = computed(
+  () => PROGRAMME_MAP[props.programme] || PROGRAMME_MAP.csp
+)
 
 const isEn = computed(() => locale.value.startsWith('en'))
 const activeClass =
@@ -74,7 +80,9 @@ const activeClass =
 
 <template>
   <section class="banner pt-[76px] lg:pt-16">
-    <div class="flex justify-center items-center gap-6 lg:gap-[9.792vw] mb-5 lg:mb-10 px-2 lg:px-0">
+    <div
+      class="flex justify-center items-center gap-6 lg:gap-[9.792vw] mb-5 lg:mb-10 px-2 lg:px-0"
+    >
       <picture>
         <source :srcset="currentConfig.avif" type="image/avif" />
         <img
@@ -86,7 +94,12 @@ const activeClass =
         />
       </picture>
       <h1
-        class="banner-title bg-[#fff2d5] text-primary text-center font-medium leading-normal p-4 lg:py-[60px] lg:px-12" :class="isEn? 'text-xl lg:text-4xl': 'text-2xl lg:text-5xl'"
+        class="banner-title bg-[#fff2d5] text-primary text-center font-medium p-4 lg:py-[60px] lg:px-12"
+        :class="
+          isEn
+            ? 'text-xl lg:text-4xl lg:leading-[1.2]'
+            : 'text-2xl lg:text-5xl lg:leading-[1.2]'
+        "
       >
         <i18n-t :keypath="`${currentConfig.name}`" tag="span" scope="global">
           <template #br><br /></template>
