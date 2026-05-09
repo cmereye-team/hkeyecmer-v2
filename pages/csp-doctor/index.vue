@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-05-09 10:20:23
+ * @LastEditTime: 2026-05-09 11:45:52
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -791,6 +791,7 @@ onUnmounted(() => {
     </section>
     <section>
       <PPPDoctor :list="paginatedDoctors" />
+      <p class="my-2 max-w-5xl mx-auto text-sm md:text-base lg:text-xl">{{ t('ppp.doctor.sort') }}</p>
       <div
         v-if="displayedDoctors.length > 0"
         class="pagination flex items-center justify-center gap-4 mt-10 mb-20"

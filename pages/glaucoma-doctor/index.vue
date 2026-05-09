@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-07 11:48:22
- * @LastEditTime: 2026-05-09 10:56:28
+ * @LastEditTime: 2026-05-09 11:46:42
  * @FilePath: /pages/glaucoma-doctor/index.vue
  * @Description: 青光眼治疗协作计划医生列表
 -->
@@ -785,6 +785,7 @@ onUnmounted(() => {
     </section>
     <section>
       <PPPDoctor :list="paginatedDoctors" />
+      <p class="my-2 max-w-5xl mx-auto text-sm md:text-base lg:text-xl">{{ t('ppp.doctor.sort') }}</p>
       <div
         v-if="displayedDoctors.length > 0"
         class="pagination flex items-center justify-center gap-4 mt-10 mb-20"

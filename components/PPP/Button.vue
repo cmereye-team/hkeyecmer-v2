@@ -1,8 +1,8 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-13 09:02:59
- * @LastEditTime: 2026-05-08 10:03:07
- * @FilePath: /components/Csp/Button.vue
+ * @LastEditTime: 2026-05-09 11:48:58
+ * @FilePath: /components/PPP/Button.vue
  * @Description: CSP耀眼行动按钮组
 -->
 <script lang="ts" setup>
@@ -65,7 +65,7 @@ const totalButtons = computed(() => (hasClinic.value ? 3 : 2))
     <nuxt-link
       v-if="hasClinic"
       :to="getBtn('clinic')?.link"
-      class="flex csp-clinic"
+      class="flex ppp-clinic"
       style="--i: 0"
     >
       <svg
@@ -90,7 +90,8 @@ const totalButtons = computed(() => (hasClinic.value ? 3 : 2))
     <a
       v-if="hasTel"
       :href="getBtn('tel')?.link"
-      class="gtm-eyesight-tel csp-tel flex"
+      class="ppp-tel flex"
+      :class="getBtn('tel')?.gtm"
       :style="{ '--i': hasClinic ? 1 : 0 }"
     >
       <svg
@@ -134,7 +135,8 @@ const totalButtons = computed(() => (hasClinic.value ? 3 : 2))
         v-if="hasWhatsapp"
         :href="getBtn('whatsapp')?.link"
         target="_blank"
-        class="gtm-eyesight-whatsapp csp-whatsapp flex justify-center w-fit mx-auto"
+        class="ppp-whatsapp flex justify-center w-fit mx-auto"
+        :class="getBtn('whatsapp')?.gtm"
         :style="{ '--i': hasClinic ? 2 : 1 }"
       >
         <svg
@@ -187,7 +189,7 @@ const totalButtons = computed(() => (hasClinic.value ? 3 : 2))
     border: 1.2px solid;
     gap: 12px;
     font-weight: 900;
-    &.csp-clinic {
+    &.ppp-clinic {
       color: #e37863;
       border-color: #e37863;
       &:hover {
@@ -195,7 +197,7 @@ const totalButtons = computed(() => (hasClinic.value ? 3 : 2))
         background-color: #e37863;
       }
     }
-    &.csp-tel {
+    &.ppp-tel {
       color: #2958a3;
       border-color: #2958a3;
       &:hover {
@@ -203,7 +205,7 @@ const totalButtons = computed(() => (hasClinic.value ? 3 : 2))
         background-color: #2958a3;
       }
     }
-    &.csp-whatsapp {
+    &.ppp-whatsapp {
       color: #33ab38;
       border-color: #33ab38;
       &:hover {
