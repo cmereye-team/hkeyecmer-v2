@@ -134,6 +134,28 @@ const menus = computed((): IMenuItem[] => [
     ],
   },
   {
+    type: 'link', // 公私營協作計劃
+    text: t('ppp.menu'),
+    route: { path: '/en/csp-programme' },
+    childMenuList: [
+      {
+        type: 'link',
+        text: t('ppp.hcv.title'),
+        route: { path: '/en/hcv' },
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.dazzling_operation'),
+        route: { path: '/en/csp-programme' },
+      },
+      {
+        type: 'link',
+        text: t('ppp.glaucoma.plan_title'),
+        route: { path: '/en/glaucoma-ppp' },
+      },
+    ],
+  },
+  {
     type: 'link', // ophthalmic_information 眼科資訊
     text: t('pages.ophthalmic_information.ophthalmic_information'),
     route: { name: 'en-ophthalmic-information' },

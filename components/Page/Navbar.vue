@@ -1,7 +1,6 @@
 <!--
- * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-05-08 10:34:13
+ * @LastEditTime: 2026-05-12 11:46:22
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -177,8 +176,13 @@ const menus = computed((): IMenuItem[] => [
   {
     type: 'link', // 公私營協作計劃
     text: t('ppp.menu'),
-    route: {},
+    route: { name: 'csp-programme' },
     childMenuList: [
+      {
+        type: 'link',
+        text: t('ppp.hcv.title'),
+        route: { name: 'hcv' },
+      },
       {
         type: 'link',
         text: t('pages.medical_service.dazzling_operation'),
@@ -388,7 +392,6 @@ const hashActive = (child: any) => {
   width: 100%;
   height: 100%;
   line-height: 49px;
-  // color: #ffffff;
 }
 .adjustableHover {
   position: relative;

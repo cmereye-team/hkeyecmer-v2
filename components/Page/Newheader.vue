@@ -193,8 +193,13 @@ const menus = computed(() => {
     {
       type: 'link', // 公私營協作計劃
       text: t('ppp.menu'),
-      route: {},
+      route: { name: 'csp-programme' },
       childMenuList: [
+        {
+          type: 'link',
+          text: t('ppp.hcv.title'),
+          route: { name: 'hcv' },
+        },
         {
           type: 'link',
           text: t('pages.medical_service.dazzling_operation'),

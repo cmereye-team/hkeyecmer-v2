@@ -1,6 +1,6 @@
 /*
  * @Date: 2025-02-27 09:29:42
- * @LastEditTime: 2025-12-18 14:26:33
+ * @LastEditTime: 2026-05-12 14:13:09
  * @FilePath: /windi.config.ts
  * @Description: Windicss 配置文件
  */
@@ -93,6 +93,7 @@ export default defineConfig({
           hover: '#FFA88C',
           index: '#5b97d0',
         },
+        hcv: '#22867A'
         // primary: MyTheme.colors.green,
         // // if want to change primary color to blue
         // // primary: MyTheme.colors.blue,
