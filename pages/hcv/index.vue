@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-12 11:30:51
- * @LastEditTime: 2026-05-12 17:03:24
+ * @LastEditTime: 2026-05-12 17:42:13
  * @FilePath: /pages/hcv/index.vue
  * @Description: 长者医疗券
 -->
@@ -10,7 +10,9 @@ const { t } = useLang()
 definePageMeta({
   layout: 'page',
 })
-const serviceList = [
+const locale = useState<string>('locale.setting')
+const isEn = computed(() => locale.value.startsWith('en'))
+const serviceList = computed(() => [
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-01-v1.svg',
     text: t('ppp.hcv.part4.services.item01'),
@@ -59,10 +61,10 @@ const serviceList = [
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-12-v1.svg',
     text: t('ppp.hcv.part4.services.item12'),
   },
-]
+])
 </script>
 <template>
-  <main>
+  <main :class="{ 'is-en': isEn }">
     <section class="banner pt-30 py-15 lg:py-40 mb-10 lg:mb-18">
       <h1
         class="page-title text-center text-primary text-2xl md:text-4xl lg:text-6xl font-medium"
@@ -72,7 +74,7 @@ const serviceList = [
     </section>
     <section class="container px-3 2xl:px-0 max-w-6xl mx-auto mb-10 lg:mb-13">
       <div
-        class="flex rounded-xl py-5 px-3 lg:py-7 lg:px-6 gap-4 flex-col justify-center items-center lg:flex-row border border-hcv"
+        class="flex rounded-xl py-5 px-3 lg:py-7 lg:px-6 gap-4 lg:gap-9 flex-col justify-center items-center lg:flex-row border border-hcv"
       >
         <img
           src="https://statichk.cmermedical.com/newopd/activity/hcv-logo.svg"
@@ -80,7 +82,7 @@ const serviceList = [
           alt=""
         />
         <p
-          class="text-hcv text-base lg:text-xl font-semibold !leading-[1.8] tracking-widest"
+          class="text-hcv text-justify text-base lg:text-xl font-semibold !leading-[1.8] tracking-widest"
         >
           {{ t('ppp.hcv.intro') }}
         </p>
@@ -194,6 +196,12 @@ const serviceList = [
   </main>
 </template>
 <style lang="scss" scoped>
+.text-hcv {
+  color: #22867a;
+}
+.border-hcv {
+  border-color: #22867a;
+}
 .banner {
   background: url('https://hkcmereye.com/static/upload/other/20250210/1739179154393855.avif')
     no-repeat;
@@ -228,7 +236,7 @@ const serviceList = [
 .hcv-intro {
   color: #66696f;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.8;
   text-align: justify;
   letter-spacing: 0.1em;
@@ -248,6 +256,7 @@ const serviceList = [
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 0;
     img {
       width: 100%;
       height: 100%;
@@ -259,6 +268,14 @@ const serviceList = [
     line-height: 1.2;
     letter-spacing: 0.05em;
     color: #515151;
+    flex: 1;
+  }
+}
+@media screen and (max-width: 639px) {
+  .is-en {
+    .service .text {
+      font-size: 12px;
+    }
   }
 }
 @media screen and (min-width: 1280px) {
@@ -270,6 +287,7 @@ const serviceList = [
     .text {
       font-size: 24px;
       line-height: 1.5;
+      text-align: center;
     }
   }
 }
