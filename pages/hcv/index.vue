@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-12 11:30:51
- * @LastEditTime: 2026-05-12 17:42:13
+ * @LastEditTime: 2026-05-12 17:58:28
  * @FilePath: /pages/hcv/index.vue
  * @Description: 长者医疗券
 -->
@@ -12,54 +12,71 @@ definePageMeta({
 })
 const locale = useState<string>('locale.setting')
 const isEn = computed(() => locale.value.startsWith('en'))
-const serviceList = computed(() => [
+interface ServiceItem {
+  icon: string;
+  text: string;
+  link: string;
+}
+const serviceList = computed<ServiceItem[]>(() => [
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-01-v1.svg',
     text: t('ppp.hcv.part4.services.item01'),
+    link: '/medical-service/cataract',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-02-v1.svg',
     text: t('ppp.hcv.part4.services.item02'),
+    link: '/medical-service/glaucoma',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-03-v1.svg',
     text: t('ppp.hcv.part4.services.item03'),
+    link: '/medical-service/muscaeVolitantes',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-04-v1.svg',
     text: t('ppp.hcv.part4.services.item04'),
+    link: '/medical-service/amotioRetinae',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-05-v1.svg',
     text: t('ppp.hcv.part4.services.item05'),
+    link: '/medical-service/maculopathy',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-06-v2.svg',
     text: t('ppp.hcv.part4.services.item06'),
+    link: '/medical-service/conjunctivitis',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-07-v1.svg',
     text: t('ppp.hcv.part4.services.item07'),
+    link: '/medical-service/xerophthalmia',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-08-v1.svg',
     text: t('ppp.hcv.part4.services.item08'),
+    link: '/medical-service/ocularSurfaceDiseases',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-09-v1.svg',
     text: t('ppp.hcv.part4.services.item09'),
+    link: '/medical-service/strabismusAmblyopia',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-10-v1.svg',
     text: t('ppp.hcv.part4.services.item10'),
+    link: '/medical-service/atropine',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-11-v1.svg',
     text: t('ppp.hcv.part4.services.item11'),
+    link: '/medical-service/eyeOrthopaedicDisease',
   },
   {
     icon: 'https://statichk.cmermedical.com/newopd/ppp/hcv-services-12-v1.svg',
     text: t('ppp.hcv.part4.services.item12'),
+    link: '/medical-service/cataract',
   },
 ])
 </script>
@@ -131,9 +148,10 @@ const serviceList = computed(() => [
     <section class="container px-3 2xl:px-0 max-w-6xl mx-auto mb-9 lg:mb-11">
       <h2 class="hcv-title">{{ t('ppp.hcv.part4.title') }}</h2>
       <div
-        class="service grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-3 gap-y-6 md:gap-y-12 xl:gap-y-20"
+        class="service grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-x-3 gap-y-6 md:gap-y-12 xl:gap-y-20 py-5 md:py-10 xl:py-15"
       >
-        <div
+        <nuxt-link
+          :to="item.link"
           class="service-item flex lg:justify-center items-center lg:flex-col gap-3"
           v-for="item in serviceList"
           :key="item.text"
@@ -142,7 +160,7 @@ const serviceList = computed(() => [
             <img :src="item.icon" :alt="`${item.text}LOGO`" />
           </div>
           <span class="text">{{ item.text }}</span>
-        </div>
+        </nuxt-link>
       </div>
     </section>
     <section class="container px-3 2xl:px-0 max-w-6xl mx-auto mb-40 lg:mb-38">
