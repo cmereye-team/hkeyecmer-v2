@@ -3214,6 +3214,47 @@ ppp:
       a5: 'Participating ophthalmologists primarily provide care for glaucoma. Other eye conditions are not covered under this Programme. However, patients may choose to receive treatment for other conditions at their own expense from the same ophthalmologist. Those enrolled in the Elderly Health Care Voucher Scheme may also use vouchers to pay for services and medications not covered under the Programme. For enquiries, patients may consult the C-MER Eye Center Customer Service team.'
       q6: 'How can patients arrange eye check services?'
       a6: 'Under the Programme, patients are entitled to receive up to one visual field (VF) test and one optical coherence tomography (OCT) scan per year provided by a private ophthalmologist. In general, a fee of HK$80 per investigation will be collected in advance during appointment booking, after which the relevant examinations will be arranged.'
+  hcv:
+    title: 'Health Care Voucher'
+    intro: 'Hong Kong government launched the "Elderly Health Care Voucher Scheme" in 2009 to alleviate the medical burden of the elderly and their families. The scheme aims to subsidize eligible elderly people to use private primary healthcare services, so that they can receive timely professional diagnosis, examinations, and treatment, while reducing the pressure on the public healthcare system.'
+    part1:
+      title: 'Who is eligible to use health care vouchers?'
+      intro: 'Elderly people aged 65 or above who hold a valid Hong Kong Identity Card or an "Exemption Registration Certificate" issued by the Immigration Department do not need to register in advance or collect vouchers to enjoy the voucher service.'
+    part2:
+      title: 'Voucher amount and usage'
+      strong1: 'HK$8,000'
+      strong2: 'share vouchers with their spouse'
+      list:
+        li1: 'Each eligible elderly person can receive HK$2,000 health care vouchers per year.'
+        li2: 'Unused vouchers can be accumulated, with an upper limit of {strong1}。'
+        li3: "From July 28, 2023, eligible elderly people can also {strong2}. With the consent of both parties and completion of the linking process of their voucher accounts, when one party's voucher account is exhausted, the balance in the spouse's account can be used."
+        li4: 'When the elderly person uses the voucher for the first time, the registered healthcare service provider will open a personal voucher account for them.'
+        li5: 'After using the voucher, we will provide a "Voucher Usage Record", and the system will also notify the elderly person or their designated family member / caregiver by phone message.'
+    part3:
+      title: 'C-MER Eye Center accepts elderly Health Care vouchers'
+      intro: 'C-MER Eye Center is one of the service providers of the Elderly Health Care Voucher Scheme, providing comprehensive eye examination and treatment services for elderly people aged 65 or above with a valid Hong Kong identity card. Our experienced professional medical team will provide suitable eye care services according to the individual situation and needs of each elderly person, with fees payable by vouchers.'
+    part4:
+      title: 'The medical services provided by C-MER Eye Center include:'
+      services:
+        item01: 'Cataract'
+        item02: 'Glaucoma'
+        item03: 'Floaters'
+        item04: 'Retinal detachment and diseases'
+        item05: 'Macular degeneration'
+        item06: 'Conjunctivitis'
+        item07: 'Dry eye syndrome'
+        item08: 'Ocular surface and corneal diseases'
+        item09: 'Pediatric strabismus and amblyopia'
+        item10: 'Atropine eye drops'
+        item11: 'Eye straightening and orbital diseases'
+        item12: 'Comprehensive eye examination'
+    part5:
+      title: 'Voucher accepting clinic:'
+      p1: 'Central, Yuen Long, Sha Tin, Mong Kok, Tsuen Wan, Tseung Kwan O, Causeway Bay and Kwun Tong.^'
+      p2: 'For inquiries or to make an appointment, please contact our customer service representatives.'
+      whatsapp: 'WhatsApp Contact Us'
+      more: 'Learn more about the Scheme, please visit: '
+      statement: '^ The above information is subject to change without prior notice.'
 banners:
   welcome: '您好, 欢迎来到 %{app_name}!'
 others:
