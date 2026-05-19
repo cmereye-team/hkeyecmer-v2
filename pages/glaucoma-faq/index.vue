@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-07 11:48:37
- * @LastEditTime: 2026-05-08 17:07:38
+ * @LastEditTime: 2026-05-14 17:52:54
  * @FilePath: /pages/glaucoma-faq/index.vue
  * @Description: 青光眼治疗协作计划常见问题
 -->
@@ -13,15 +13,15 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
-  title: t('tdk.csp.title_question'),
+  title: t('tdk.glaucomappp.title_question'),
   meta: [
     {
       name: 'description',
-      content: t('tdk.csp.desc'),
+      content: t('tdk.glaucomappp.desc'),
     },
     {
       name: 'keywords',
-      content: t('tdk.csp.key'),
+      content: t('tdk.glaucomappp.key'),
     },
   ],
 }))

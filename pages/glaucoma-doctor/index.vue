@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-05-07 11:48:22
- * @LastEditTime: 2026-05-09 11:46:42
+ * @LastEditTime: 2026-05-14 17:53:15
  * @FilePath: /pages/glaucoma-doctor/index.vue
  * @Description: 青光眼治疗协作计划医生列表
 -->
@@ -14,15 +14,15 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 const isEn = computed(() => locale.value.startsWith('en'))
 useHead(() => ({
-  title: t('tdk.csp.title_doctor'),
+  title: t('tdk.glaucomappp.title_doctor'),
   meta: [
     {
       name: 'description',
-      content: t('tdk.csp.desc'),
+      content: t('tdk.glaucomappp.desc'),
     },
     {
       name: 'keywords',
-      content: t('tdk.csp.key'),
+      content: t('tdk.glaucomappp.key'),
     },
   ],
 }))
