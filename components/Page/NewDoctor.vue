@@ -17,6 +17,8 @@ interface NewList {
 const isModalOpen = ref(false)
 const modalCardImg = ref('')
 const modalTips = ref('')
+
+// === 功能 1：核心下載邏輯 (Blob 繞過瀏覽器跨域限制) ===
 const triggerDownload = async (url: string, filename: string) => {
   if (!process.client) return
   try {
@@ -40,43 +42,74 @@ const triggerDownload = async (url: string, filename: string) => {
     console.error('直接下載出錯:', error)
   }
 }
+
+// === 點擊“儲存到手機”事件處理 ===
 const handleSaveCard = (doc: any) => {
-  // 根据你具体的 Nuxt 医生对象字段调整，例如 doc.extCard 或你渲染的数据
-  const cardUrl =
-    doc.extCard ||
-    'https://statichk.cmermedical.com/hkcmereye/card/card_Dr.VincentLee-v1.webp'
+  // 获取名片地址，兜底防止为空
+  const cardUrl = doc.doctorCard || ''
   const docTitle = doc.doctorName || '醫生'
 
+  if (!cardUrl) {
+    console.warn('該醫生暫無名片圖片')
+    return
+  }
+
+  // 修正 2：通过 .value 正确更新响应式数据
   modalCardImg.value = cardUrl
   modalTips.value = `${docTitle}醫生的名片開始下載...`
   isModalOpen.value = true
 
-  // 异步触发下载
+  // 異步觸發下載
   triggerDownload(cardUrl, `希瑪眼科_${docTitle}醫生名片.webp`)
 }
+
+// === 功能 2：點擊“分享”觸發原生 Web Share 或 自動複製 ===
 const handleShare = async (doc: any, index: number) => {
   if (!process.client) return
 
-  const docTitle = doc.doctorName
-  const docSub = doc.doctorEnName
-  const docId = doc.id || index // 如果有 doc.id 就用 id，没有就用循环的 index
+  const docTitle = doc.doctorName || ''
+  const docSub = doc.doctorEnName || ''
+  const docId = doc.id || index
 
-  // 提取纯文本资历（将多行翻译拼接并截取）
-  let pureBioText =
-    doc.doctorEducation?.map((edu: string) => edu).join(' ') || ''
+  // === 核心優化：解析 HTML 標籤並自動加上「、」號分隔 ===
+  let pureBioText = ''
+  if (doc.doctorEducation) {
+    if (typeof doc.doctorEducation === 'string') {
+      // 1. 創建臨時節點解析 HTML
+      const tempDiv = document.createElement('div')
+      tempDiv.innerHTML = doc.doctorEducation
+      
+      // 2. 獲取所有段落標籤（p標籤），提取文本並用「、」號拼接
+      const paragraphs = tempDiv.querySelectorAll('p')
+      const eduList: string[] = []
+      
+      paragraphs.forEach((p) => {
+        const text = p.innerText || p.textContent || ''
+        const cleanText = text.trim()
+        // 過濾掉空行或包含 <br> 的空標籤
+        if (cleanText && cleanText !== '<br>') {
+          eduList.push(cleanText)
+        }
+      })
+      
+      // 使用頓號/逗號進行連接
+      pureBioText = eduList.join('、')
+    }
+  }
+  
+  // 清洗換行符與多餘空格，並截取前 80 個字元
   pureBioText = pureBioText.replace(/\s+/g, ' ').trim().substring(0, 80) + '...'
 
-  // 构建带参数的分享链接（使用 Nuxt 动态获取当前全路径）
   const route = useRoute()
   const shareUrl = `${window.location.origin}${route.path}?docId=${docId}`
 
+  // === 核心優化：調整格式為「希瑪眼科XX醫生 簡介：...」 ===
   const shareData = {
-    title: `${docTitle} (${docSub}) - 希瑪眼科中心`,
-    text: `${docTitle} 簡介：${pureBioText}`,
+    title: `希瑪眼科${docTitle}醫生 (${docSub})`,
+    text: `希瑪眼科${docTitle}醫生 簡介：${pureBioText}`,
     url: shareUrl,
   }
 
-  // 1. 先安全检查环境
   if (typeof navigator.share === 'function') {
     try {
       await navigator.share(shareData)
@@ -84,32 +117,49 @@ const handleShare = async (doc: any, index: number) => {
       console.warn('用戶取消分享或環境受限:', err)
     }
   } else {
-    // 2. 降级方案：非 HTTPS 或环境不支持
-    if (
-      navigator.clipboard &&
-      typeof navigator.clipboard.writeText === 'function'
-    ) {
+    // 降級方案：自動複製或彈窗提示
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
       try {
-        await navigator.clipboard.writeText(
-          `${shareData.title} ${shareData.url}`
-        )
+        await navigator.clipboard.writeText(`${shareData.text} ${shareData.url}`)
         alert(`已自動複製 ${docTitle} 的名片連結，快去貼上分享給好友吧！`)
       } catch (clipErr) {
-        prompt('請複製以下連結分享：', shareUrl)
+        prompt('請複製以下連結分享：', `${shareData.text} ${shareData.url}`)
       }
     } else {
-      prompt(
-        '請複製以下連結分享醫生名片：',
-        `${shareData.title} ${shareData.url}`
-      )
+      prompt('請複製以下連結分享醫生名片：', `${shareData.text} ${shareData.url}`)
     }
   }
 }
+
+// === 功能 3：入參檢測與平滑滾動定位 ===
+onMounted(() => {
+  const route = useRoute()
+  const sharedDocId = route.query.docId
+
+  if (sharedDocId) {
+    const targetDoctor = document.getElementById(`doc-${sharedDocId}`)
+    if (targetDoctor) {
+      setTimeout(() => {
+        targetDoctor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        targetDoctor.classList.add(
+          'ring-2',
+          'ring-[#8AD8DD]',
+          'transition-all',
+          'duration-300'
+        )
+        setTimeout(() => {
+          targetDoctor.classList.remove('ring-2', 'ring-[#8AD8DD]')
+        }, 3000)
+      }, 400)
+    }
+  }
+})
+
+// 關閉彈窗邏輯
 const handleCloseModal = () => {
   isModalOpen.value = false
   modalCardImg.value = ''
 
-  // 静默抹除 url 里的参数
   if (process.client) {
     const url = new URL(window.location.href)
     if (url.searchParams.has('docId')) {
@@ -123,7 +173,12 @@ const handleCloseModal = () => {
 <template>
   <div>
     <ul class="mobile">
-      <li v-for="(doc, index) in props.list" :key="index" class="docList">
+      <li
+        v-for="(doc, index) in props.list"
+        :key="index"
+        class="docList"
+        :id="`doc-${doc.id || index}`"
+      >
         <div>{{ doc.doctorName }}</div>
         <div>
           <div>
@@ -186,11 +241,35 @@ const handleCloseModal = () => {
         </div>
       </li>
     </ul>
+    <div
+      v-if="isModalOpen"
+      @click="handleCloseModal"
+      class="modal fixed inset-0 bg-black bg-opacity-80 flex flex-col justify-center items-center text-white"
+    >
+      <div
+        @click.stop="handleCloseModal"
+        class="absolute top-20 right-5 text-3xl cursor-pointer p-2.5 z-[10000]"
+      >
+        &times;
+      </div>
+      <p class="mb-[15px] text-base tracking-wider text-[#8AD8DD] font-sans">
+        {{ modalTips }}
+      </p>
+      <img
+        :src="modalCardImg"
+        @click.stop
+        alt="醫生名片"
+        class="w-[85%] max-w-[400px] rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
+      />
+    </div>
   </div>
 </template>
 <style lang="scss" scoped>
 .mobile {
   margin-top: 140px;
+}
+.modal {
+  z-index: 90;
 }
 .button-group {
   z-index: 10;

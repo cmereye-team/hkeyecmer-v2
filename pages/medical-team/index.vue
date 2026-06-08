@@ -40,69 +40,53 @@ const doctorList: any = ref([
       'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor01.jpg',
   },
 ])
-const isModalOpen = ref(false)
-const modalCardImg = ref('')
-const modalTips = ref('')
-const triggerDownload = async (url: string, filename: string) => {
-  if (!process.client) return
-  try {
-    const response = await fetch(url, { mode: 'cors' })
-    if (!response.ok) throw new Error('圖片下載網絡響應失敗')
 
-    const blob = await response.blob()
-    const blobUrl = window.URL.createObjectURL(blob)
-
-    const tempLink = document.createElement('a')
-    tempLink.style.display = 'none'
-    tempLink.href = blobUrl
-    tempLink.download = filename
-
-    document.body.appendChild(tempLink)
-    tempLink.click()
-
-    document.body.removeChild(tempLink)
-    window.URL.revokeObjectURL(blobUrl)
-  } catch (error) {
-    console.error('直接下載出錯:', error)
-  }
-}
-const handleSaveCard = (doc: any) => {
-  // 根据你具体的 Nuxt 医生对象字段调整，例如 doc.extCard 或你渲染的数据
-  const cardUrl =
-    doc.extCard ||
-    'https://statichk.cmermedical.com/hkcmereye/card/card_Dr.VincentLee-v1.webp'
-  const docTitle = t(doc.doctorName) || '醫生'
-
-  modalCardImg.value = cardUrl
-  modalTips.value = `${docTitle}醫生的名片開始下載...`
-  isModalOpen.value = true
-
-  // 异步触发下载
-  triggerDownload(cardUrl, `希瑪眼科_${docTitle}醫生名片.webp`)
-}
 const handleShare = async (doc: any, index: number) => {
   if (!process.client) return
 
-  const docTitle = t(doc.doctorName)
-  const docSub = t(doc.doctorEnName)
-  const docId = doc.id || index // 如果有 doc.id 就用 id，没有就用循环的 index
+  const docTitle = doc.doctorName || ''
+  const docSub = doc.doctorEnName || ''
+  const docId = doc.id || index
 
-  // 提取纯文本资历（将多行翻译拼接并截取）
-  let pureBioText =
-    doc.doctorEducation?.map((edu: string) => t(edu)).join(' ') || ''
+  // === 核心優化：解析 HTML 標籤並自動加上「、」號分隔 ===
+  let pureBioText = ''
+  if (doc.doctorEducation) {
+    if (typeof doc.doctorEducation === 'string') {
+      // 1. 創建臨時節點解析 HTML
+      const tempDiv = document.createElement('div')
+      tempDiv.innerHTML = doc.doctorEducation
+      
+      // 2. 獲取所有段落標籤（p標籤），提取文本並用「、」號拼接
+      const paragraphs = tempDiv.querySelectorAll('p')
+      const eduList: string[] = []
+      
+      paragraphs.forEach((p) => {
+        const text = p.innerText || p.textContent || ''
+        const cleanText = text.trim()
+        // 過濾掉空行或包含 <br> 的空標籤
+        if (cleanText && cleanText !== '<br>') {
+          eduList.push(cleanText)
+        }
+      })
+      
+      // 使用頓號/逗號進行連接
+      pureBioText = eduList.join('、')
+    }
+  }
+  
+  // 清洗換行符與多餘空格，並截取前 80 個字元
   pureBioText = pureBioText.replace(/\s+/g, ' ').trim().substring(0, 80) + '...'
 
-  // 构建带参数的分享链接（使用 Nuxt 动态获取当前全路径）
   const route = useRoute()
   const shareUrl = `${window.location.origin}${route.path}?docId=${docId}`
 
+  // === 核心優化：調整格式為「希瑪眼科XX醫生 簡介：...」 ===
   const shareData = {
-    title: `${docTitle} (${docSub}) - 希瑪眼科中心`,
-    text: `${docTitle} 簡介：${pureBioText}`,
+    title: `希瑪眼科${docTitle}醫生 (${docSub})`,
+    text: `希瑪眼科${docTitle}醫生 簡介：${pureBioText}`,
     url: shareUrl,
   }
 
-  // 1. 先安全检查环境
   if (typeof navigator.share === 'function') {
     try {
       await navigator.share(shareData)
@@ -110,37 +94,16 @@ const handleShare = async (doc: any, index: number) => {
       console.warn('用戶取消分享或環境受限:', err)
     }
   } else {
-    // 2. 降级方案：非 HTTPS 或环境不支持
-    if (
-      navigator.clipboard &&
-      typeof navigator.clipboard.writeText === 'function'
-    ) {
+    // 降級方案：自動複製或彈窗提示
+    if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
       try {
-        await navigator.clipboard.writeText(
-          `${shareData.title} ${shareData.url}`
-        )
+        await navigator.clipboard.writeText(`${shareData.text} ${shareData.url}`)
         alert(`已自動複製 ${docTitle} 的名片連結，快去貼上分享給好友吧！`)
       } catch (clipErr) {
-        prompt('請複製以下連結分享：', shareUrl)
+        prompt('請複製以下連結分享：', `${shareData.text} ${shareData.url}`)
       }
     } else {
-      prompt(
-        '請複製以下連結分享醫生名片：',
-        `${shareData.title} ${shareData.url}`
-      )
-    }
-  }
-}
-const handleCloseModal = () => {
-  isModalOpen.value = false
-  modalCardImg.value = ''
-
-  // 静默抹除 url 里的参数
-  if (process.client) {
-    const url = new URL(window.location.href)
-    if (url.searchParams.has('docId')) {
-      url.searchParams.delete('docId')
-      window.history.replaceState({}, '', url.toString())
+      prompt('請複製以下連結分享醫生名片：', `${shareData.text} ${shareData.url}`)
     }
   }
 }
@@ -164,17 +127,20 @@ const getData = async () => {
   NewList.value.splice(0)
   if (locale.value === 'zh-hk') {
     const { data }: any = await useFetch(
-      `https://hkcmereye.com/api.php/list/12/num/50`
+      `https://hkcmereye.com/api.php/list/12/num/100`
     )
     const res: any = JSON.parse(data.value)
     const list: any = res.data.map((item: any, index: any) => {
       return {
+        doctorId: item.id,
         doctorName: item.title,
         doctorEnName: item.subtitle,
         doctorEducation: item.content,
         doctorImgUrl: item.ico,
+        doctorCard: item.ext_doctor_card,
       }
     })
+    console.log('醫生列表', list)
 
     list.forEach((item: any) => {
       NewList.value.push(item)
@@ -188,10 +154,12 @@ const getData = async () => {
 
     const list: any = res.data.map((item: any, index: any) => {
       return {
+        doctorId: item.id,
         doctorName: item.title,
         doctorEnName: item.subtitle,
         doctorEducation: item.content,
         doctorImgUrl: item.ico,
+        doctorCard: item.ext_doctor_card,
       }
     })
 
@@ -283,15 +251,11 @@ const getWindowWidth = () => {
               </a>
             </div>
           </div>
-          <div
-            class="docImg"
-            :class="{ 'docImg-en': locale === 'en' }"
-          >
+          <div class="docImg" :class="{ 'docImg-en': locale === 'en' }">
             <div><img :src="doctorList[0].doctorImgUrl" /></div>
             <div class="docEnName">{{ $t(doctorList[0].doctorEnName) }}</div>
           </div>
         </li>
-
         <li v-for="(doc, index) in NewList" :key="index" class="docList">
           <div class="docDes" :class="{ 'docDes-en': locale === 'en' }">
             <div :class="['docName', { 'docName-en': locale === 'en' }]">
@@ -388,31 +352,27 @@ const getWindowWidth = () => {
                 </div>
               </div>
             </div>
-            
-              <div class="button-group absolute -bottom-[120px]">
-                <a
-                  id="medicalTeamLink"
-                  class="button appointment text-white inline-block"
-                  href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
-                >
-                  <div class="icon">
-                    <svg
-                      viewBox="0 0 1024 1024"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M884.656 211.062C872 198.406 853.72 189.97 835.437 189.97h-52.03c-5.626-25.313-28.126-45-54.844-45h-56.25c-26.72 0-49.22 18.281-54.844 45H417.78c-5.625-25.313-28.125-45-54.844-45h-56.25c-26.718 0-49.218 18.281-54.843 45h-63.281c-18.282 0-36.563 7.031-49.22 21.093-14.062 14.063-21.093 32.344-21.093 50.625v120.938h787.5V261.687c0-18.28-7.031-36.562-21.094-50.625M118.25 452.938v368.437c0 39.375 30.938 70.312 70.313 70.312h646.874c39.376 0 70.313-32.343 70.313-70.312V452.938zm251.719 195.468h112.5V534.5h56.25v113.906h112.5v56.25h-112.5v113.906h-56.25V704.656h-112.5z"
-                        fill="currentColor"
-                      ></path>
-                    </svg>
-                  </div>
-                  <span>{{ $t('pages.medical_team.doctor_order') }}</span>
-                </a>
-              </div>
-            <div
-              class="docImg"
-              :class="{ 'docImg-en': locale === 'en' }"
-            >
+            <div class="button-group absolute -bottom-[120px]">
+              <a
+                id="medicalTeamLink"
+                class="button appointment text-white inline-block"
+                href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
+              >
+                <div class="icon">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M884.656 211.062C872 198.406 853.72 189.97 835.437 189.97h-52.03c-5.626-25.313-28.126-45-54.844-45h-56.25c-26.72 0-49.22 18.281-54.844 45H417.78c-5.625-25.313-28.125-45-54.844-45h-56.25c-26.718 0-49.218 18.281-54.843 45h-63.281c-18.282 0-36.563 7.031-49.22 21.093-14.062 14.063-21.093 32.344-21.093 50.625v120.938h787.5V261.687c0-18.28-7.031-36.562-21.094-50.625M118.25 452.938v368.437c0 39.375 30.938 70.312 70.313 70.312h646.874c39.376 0 70.313-32.343 70.313-70.312V452.938zm251.719 195.468h112.5V534.5h56.25v113.906h112.5v56.25h-112.5v113.906h-56.25V704.656h-112.5z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <span>{{ $t('pages.medical_team.doctor_order') }}</span>
+              </a>
+            </div>
+            <div class="docImg" :class="{ 'docImg-en': locale === 'en' }">
               <div><img :src="doctorList[0].doctorImgUrl" /></div>
               <div class="docEnName">{{ $t(doctorList[0].doctorEnName) }}</div>
             </div>
@@ -647,7 +607,7 @@ const getWindowWidth = () => {
     & > div:nth-child(2) {
       & > div:nth-child(2) {
         top: 74px;
-        left: -84px;
+        left: -124px;
       }
     }
   }
@@ -981,8 +941,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -174px;
-        top: 117px;
+        left: -260px;
+    top: 240px;
       }
 
       & > div:nth-child(1)::before {
@@ -1108,7 +1068,7 @@ const getWindowWidth = () => {
       }
       & > div:nth-child(2) {
         left: -276px;
-        top: 220px;
+        top: 212px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -1207,7 +1167,7 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -138px;
+        left: -168px;
         top: 94px;
       }
       & > div:nth-child(1)::before {
