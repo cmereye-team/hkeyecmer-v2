@@ -760,7 +760,7 @@ pages:
         title: Currently available {mbr}IOL Comparison
         name:
           title: Feature
-          edof: Extended Depth of Focus (EDOF) IOL
+          edof: Extended Depth of {br}Focus (EDOF) IOL
           monofocal: Monofocal IOL
           multifocal: Multifocal IOL
         type:
@@ -774,7 +774,7 @@ pages:
           monofocal: Primarily distance vision
           multifocal: Suitable for distant, intermediate and near vision
         contrast:
-          title: Contrast in Low Light
+          title: Contrast in {br}Low Light
           edof: Good contrast sensitivity with minimal glare
           monofocal: Best contrast
           multifocal: Fair contrast, but glare or halos may occur
@@ -798,7 +798,7 @@ pages:
         intro: '*Monofocal IOLs combined with EDOF technology can provide clear vision at near, intermediate, and distance ranges, reducing the need for reading glasses while minimizing the impact of nighttime glare. In addition to multifocal IOLs, patients now have the option of EDOF lenses to better suit their individual visual needs and lifestyles.'
         button: Which Intraocular Lens Is Right for You?
       advantage:
-        title: Advantages of EDOF IOLs
+        title: Advantages of {mbr}EDOF IOLs
         intro: EDOF (Extended Depth of Focus) lenses are designed to provide a continuous range of vision — from distance (e.g. reading road signs) to intermediate (e.g. using a computer), or from intermediate to near (e.g. reading or using a mobile phone), helping reduce dependence on reading glasses. Compared with other types of IOLs, EDOF lenses offer a smoother and more natural visual experience, with improved contrast and minimal to no glare or halo effects.
         clear:
           title: Clear Vision {br}Across a {br}Wider Range
@@ -3411,3 +3411,7 @@ tdk:
     title: 'Health Care Voucher'
     desc: 'To ensure the health of the elderly and alleviate the medical burden on them and their families,the government launched the &quot;Health Care Voucher(HCV)&quot;  scheme in 2009 to subsidize eligible seniors for private primary healthcare services. This initiative allows seniors  to choose private healthcare services that best meet their health needs, enabling them to receive professional  diagnosis, examinations, and treatments promptly while  reducing the burden on public healthcare. C-MER Eye Centre accepts &quot; Health Care Voucher(HCV)&quot; for related eye  examination services, eye disease diagnosis, and ophthalmic treatments.'
     key: 'Health Care Voucher  elderly healthcare elderly health elderly health care voucher scheme medical assistance medical service ophthalmologist hong kong ophthalmology eye examination medical expenses health protection cmer eye cmer'
+  edof:
+    title: 'Extended Depth of Focus | CMER Eye Center'
+    desc: 'Hong Kong CMER Eye Center is a leading institution specializing in the field of ophthalmology, offering a comprehensive range of optometry and eye examination services. Their medical expertise covers a broad spectrum of ophthalmological conditions, including cataracts, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital disorders, ophthalmic plastic surgery, and eye tumors. Moreover, their services extend to myopia control and various other ophthalmic procedures. To cater to the needs of patients in Hong Kong, CMER Eye Center operates a network of 10 well-equipped eye clinics, staffed by a dedicated team of 22 highly skilled ophthalmologists. These ophthalmologists possess extensive knowledge and experience in the field of ophthalmology, ensuring that patients receive the highest quality of care. Guided by the expertise of renowned ophthalmologist Dr. LAM Shun Chiu, Dennis, the team at CMER Eye Center is committed to delivering professional eye medical services, conducting thorough eye examinations, and providing comprehensive ophthalmic care to patients across Hong Kong.'
+    key: 'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic'

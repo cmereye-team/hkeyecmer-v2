@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:27
- * @LastEditTime: 2026-06-10 11:57:31
+ * @LastEditTime: 2026-06-10 16:59:19
  * @FilePath: /pages/cataract/extended-depth-of-focus-lenses.vue
  * @Description: 扩展景深人工晶体
 -->
@@ -10,6 +10,7 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
 useHead(() => ({
   title: t('tdk.edof.title'),
   meta: [
@@ -82,7 +83,6 @@ const faqs = [
         <h1
           class="max-w-[168px] sm:max-w-none lg:text-center text-3xl lg:text-5xl leading-[1.2] lg:leading-[1.5] tracking-[0.4em]"
         >
-          <!-- 擴展景深<br class="block sm:hidden" />人工晶體 -->
           {{ t('pages.medical_service.edof.abbr') }}
         </h1>
         <p class="text-base lg:text-3xl">Extended Depth of Focus (EDOF)</p>
@@ -93,14 +93,19 @@ const faqs = [
         <div class="flex-1">
           <div class="intro-title pl-4 lg:pl-11">
             <h2 class="text-lg lg:text-4xl font-bold tracking-widest mb-6">
-              {{ t('pages.medical_service.edof.abbr')
-              }}<span class="block text-sm lg:text-xl"
+              {{ t('pages.medical_service.edof.abbr') }}
+              <span class="block text-sm lg:text-xl"
                 >(EDOF - Extended Depth of Focus)</span
               >
             </h2>
           </div>
           <p
-            class="flex-1 text-justify text-base lg:text-2xl text-primary font-medium leading-[1.6] lg:leading-[2] tracking-widest"
+            :class="[
+              'flex-1 text-base lg:text-2xl text-primary font-medium tracking-widest',
+              locale === 'en'
+                ? 'leading-[1.6]'
+                : 'leading-[1.6] lg:leading-[2] text-justify',
+            ]"
           >
             {{ t('pages.medical_service.edof.intro') }}
           </p>
@@ -120,7 +125,10 @@ const faqs = [
         </picture>
       </div>
       <div
-        class="intro-desc text-white text-justify text-sm lg:text-2xl font-bold leading-[1.85] lg:leading-[2] tracking-widest py-4 px-6 lg:py-8 lg:px-[72px] rounded-xl"
+        :class="[
+          'intro-desc text-white text-sm lg:text-2xl font-bold leading-[1.85] lg:leading-[2] tracking-widest py-4 px-6 lg:py-8 lg:px-[72px] rounded-xl',
+          locale === 'en' ? '' : 'text-justify',
+        ]"
       >
         <p>{{ t('pages.medical_service.edof.desc') }}</p>
       </div>
@@ -202,7 +210,10 @@ const faqs = [
               </tr>
             </thead>
             <tbody
-              class="text-[3.0769vw] md:text-2xl text-[#66696f] font-bold lg:font-medium leading-[1.5] tracking-widest whitespace-nowrap"
+              :class="[
+                'text-[3.0769vw] md:text-2xl text-[#66696f] font-bold lg:font-medium leading-[1.5] tracking-widest',
+                { 'whitespace-nowrap': locale !== 'en' },
+              ]"
             >
               <tr class="lens-table-bb">
                 <td class="bg-[#fcfcfc]">
@@ -463,11 +474,19 @@ const faqs = [
     </section>
     <section class="wrapper max-w-[1200px] advantage mb-[64px] lg:mb-[112px]">
       <div class="py-8 lg:pt-[68px] lg:pb-[128px] advantage-title">
-        <h2 class="title-normal mb-5 lg:mb-8">
-          {{ t('pages.medical_service.edof.advantage.title') }}
-        </h2>
+        <i18n-t
+          keypath="pages.medical_service.edof.advantage.title"
+          tag="h2"
+          scope="global"
+          class="title-normal mb-5 lg:mb-8"
+        >
+          <template #mbr><br class="block lg:hidden" /></template>
+        </i18n-t>
         <p
-          class="text-base lg:text-2xl text-primary text-justify leading-[1.6] lg:leading-[2] font-medium tracking-widest mx-auto md:w-4/5 lg:w-9/10"
+          :class="[
+            'text-base lg:text-2xl text-primary leading-[1.6] lg:leading-[2] font-medium tracking-widest mx-auto md:w-4/5 lg:w-9/10',
+            locale === 'en' ? '' : 'text-justify ',
+          ]"
         >
           {{ t('pages.medical_service.edof.advantage.intro') }}
         </p>
@@ -487,7 +506,10 @@ const faqs = [
               :keypath="item.title"
               tag="h3"
               scope="global"
-              class="advantage-subtitle flex-1 pl-5 order-1 lg:order-2 text-lg lg:text-2xl font-bold whitespace-nowrap lg:min-h-[64px] flex items-center"
+              :class="[
+                'advantage-subtitle flex-1 pl-5 order-1 lg:order-2 text-lg font-bold whitespace-nowrap lg:min-h-[64px] flex items-center',
+                locale === 'en' ? 'lg:text-xl' : 'lg:text-2xl',
+              ]"
             >
               <template #br><br /></template>
             </i18n-t>
@@ -498,14 +520,17 @@ const faqs = [
             </div>
           </div>
           <p
-            class="text-justify text-base lg:text-xl font-medium leading-[1.85]"
+            :class="[
+              'text-base font-medium leading-[1.85]',
+              locale === 'en' ? 'lg:text-xl' : 'text-justify lg:text-xl',
+            ]"
           >
             {{ t(item.intro) }}
           </p>
         </div>
       </div>
     </section>
-    <section class="wrapper mb-40">
+    <section class="faq wrapper mb-40">
       <h2 class="title-normal mb-12 lg:mb-22">
         {{ t('pages.medical_service.edof.faq.title') }}
       </h2>
@@ -518,6 +543,22 @@ const faqs = [
   </div>
 </template>
 <style lang="scss" scoped>
+html[lang=en] {
+  .button-ws {
+    letter-spacing: 0.1em;
+    font-size: 3.2vw;
+  }
+  .lens-table-subtitle,.lens-table .lens-table-title {
+    white-space: normal;
+  }
+  .lens-table-th {
+    min-width: 124px;
+    max-width: 312px;
+  }
+  .lens-table .lens-table-subtitle {
+    min-width: 88px;
+  }
+}
 %advantage-circle {
   content: '';
   position: absolute;
@@ -639,6 +680,7 @@ const faqs = [
     white-space: nowrap;
     text-align: center;
     min-width: 60px;
+    width: 100%;
   }
 }
 .button-ws {
@@ -754,7 +796,21 @@ const faqs = [
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .faq :deep(.el-collapse-item:nth-child(4) .el-collapse-item__header) {
+    height: 120px;
+  }
+}
 @media screen and (min-width: 768px) {
+  html[lang=en] {
+    .button-ws {
+      letter-spacing: 0.1em;
+      font-size: min(52px,2.2vw);
+    }
+    .lens-table-subtitle {
+      width: 212px;
+    }
+  }
   .button-ws {
     border: min(9px, 0.4688vw) solid #fff;
     font-size: min(52px, 2.7083vw);
@@ -885,6 +941,18 @@ const faqs = [
           border-left-width: 1px;
         }
       }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  html[lang=en] {
+    .lens-table .lens-table-td:nth-child(2) {
+      width: 360px;
+      min-width: 360px;
+    }
+    .lens-table .lens-table-td:nth-child(3),.lens-table .lens-table-td:nth-child(4) {
+      width: 290px;
+      min-width: 290px;
     }
   }
 }
