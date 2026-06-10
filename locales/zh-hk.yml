@@ -761,8 +761,70 @@ pages:
     edof:
       title: 擴展景深人工晶體(EDOF)
       title_en: Extended Depth of Focus (EDOF)
-      abbr: EDOF
+      abbr: 擴展景深人工晶體
+      intro: 擴展景深人工晶體是一種新型人工晶狀體，主要透過光學原理將入射光線聚焦在擴展的平面上，不但提供了多種距離的無縫連續視覺，而且提供更大範圍的連續視野及將光暈和眩光發生的情況改善。這項技術能幫助白內障患者減少對眼鏡的依賴，提高術後視覺品質，改善生活品質。
+      desc: 手術過程中，醫生會從眼睛中取出混濁的晶狀體 (白內障)，植入人工晶體代替原本的晶狀體。現時EDOF在不同類型的人工晶體在不同特點上亦有不同特色。
+      table:
+        title: 擴展景深人工晶體{mbr}特性及其他晶體比較
+        name:
+          title: 特點
+          edof: 擴展景深人工晶體
+          monofocal: 單焦點人工晶體
+          multifocal: 多焦點{mbr}人工晶體
+        type:
+          title: 晶體類型
+          edof: RLE / 白內障 - {br}取代自然晶體
+          monofocal: 白內障 - {br}取代自然晶體
+          multifocal: RLE / 白內障 - {br}取代自然晶體
+        focal:
+          title: 焦距
+          edof: 良好的遠{mbr}及中距離
+          monofocal: 有限距離{br}焦距
+          multifocal: 遠、中、近{br}距離清楚
+        contrast:
+          title: 對比度與{br}低光源
+          edof: 對比度高，{br}光暈或{mbr}眩光最小
+          monofocal: 遠視對比度較好
+          multifocal: 對比度較好，{mbr}可能會{pcbr}產生{mbr}眩光或光暈
+        advantages:
+          title: 優點
+          edof: 焦距清楚{br}可擴展景深{br}較小眩光
+          monofocal: 提供遠距離清楚度
+          multifocal: 可保持視覺{mbr}立體感
+        glasses:
+          title: 術後眼鏡{br}使用性
+          edof: 大部份患者於術後康{br}復後，工作時可減少{br}或不需配戴眼鏡
+          monofocal: 近距離閱讀時{br}可能需要配戴眼鏡
+          multifocal: 日常比較小{br}需要配戴眼鏡
+        suitable:
+          title: 合適{mbr}人士
+          edof: 適合患有白內障{mbr}且希望{pcbr}減少眼鏡{mbr}依賴的患者
+          monofocal: 可配合佩戴眼鏡人士
+          multifocal: 經常進行戶外活動
+        more: 按此{mbr}了解更多
+        swiper: 左右滑動以觀看表格
+        intro: '*單焦晶體配合EDOF,亦可以於近、中、遠距離,減少對老花眼鏡依賴，以及降低夜晚眩光帶來的影響現時客人除了可以選擇多焦晶體解決近、中、遠距離視野，亦有EDOF可供選擇，以配合不同人士需要'
+        button: 哪一款人工晶體適合你？
+      advantage:
+        title: EDOF鏡片優點
+        intro: EDOF（延伸焦深）鏡片的主要優點是能提供從遠到中距離的連續視覺範圍，減少老花對眼鏡的依賴，並且對比於其他晶體的過渡更為順暢自然，光暈和眩光更少。
+        clear:
+          title: 在更大範圍內{br}擁有更清晰的視野
+          intro: 從遠距離到中距離都能享受更佳的對焦效果，適合會面和日常生活。
+        glare:
+          title: 降低光暈和{br}眩光的風險
+          intro: EDOF 晶體的設計可將光線散射降至最低，提供更清晰的夜間視力，並減少光線周圍的干擾。
+        lowlight:
+          title: 弱光環境下{br}表現更佳
+          intro: 即使在昏暗的光線下，也能保持對比度和清晰度，非常適合夜間行車或室內環境。
+        reading:
+          title: 非常適合配合{br}不同電子螢幕使用
+          intro: 無論您使用的是電腦、手機或平板電腦，EDOF 晶體都能針對中間距離進行最佳化。
+        glasses:
+          title: 不受眼鏡束縛
+          intro: 不需要配戴眼鏡就能享受大部分的日常活動，特別在遠距離和中距離時。
       faq:
+        title: 擴展景深人工晶體常見問題
         q1: 使用 EDOF 人工晶體後，是否還需要佩戴眼鏡？
         a1: EDOF 人工晶體能滿足大部份日常生活需求，但極遠距離時，可能仍需輔助眼鏡。EDOF 人工晶體能滿足大部份日常生活需求，是否需要配戴眼鏡取決於觀看的距離以及生活習慣。
         q2: 是否所有白內障患者都適合 EDOF 人工晶體？
