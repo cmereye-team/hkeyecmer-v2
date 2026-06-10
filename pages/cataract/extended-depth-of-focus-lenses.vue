@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:27
- * @LastEditTime: 2026-06-10 11:05:04
+ * @LastEditTime: 2026-06-10 11:57:31
  * @FilePath: /pages/cataract/extended-depth-of-focus-lenses.vue
  * @Description: 扩展景深人工晶体
 -->
@@ -154,9 +154,14 @@ const faqs = [
                         class="w-full"
                       />
                     </div>
-                    <span class="lens-table-title special text-[#EC8836]">
-                      {{ t('pages.medical_service.edof.table.name.edof') }}
-                    </span>
+                    <i18n-t
+                      keypath="pages.medical_service.edof.table.name.edof"
+                      tag="span"
+                      scope="global"
+                      class="lens-table-title special text-[#EC8836]"
+                    >
+                      <template #br><br /></template>
+                    </i18n-t>
                   </div>
                 </th>
                 <th class="bg-[#55D1F0] lens-table-th">
@@ -242,7 +247,9 @@ const faqs = [
                   scope="global"
                   class="lens-table-td"
                 >
+                  <template #br><br /></template>
                   <template #mbr><br class="block md:hidden" /></template>
+                  <template #pcbr><br class="hidden md:block" /></template>
                 </i18n-t>
                 <i18n-t
                   keypath="pages.medical_service.edof.table.focal.monofocal"
@@ -250,6 +257,7 @@ const faqs = [
                   scope="global"
                   class="lens-table-td"
                 >
+                  <template #br><br /></template>
                   <template #mbr><br class="block md:hidden" /></template>
                 </i18n-t>
                 <i18n-t
@@ -258,6 +266,7 @@ const faqs = [
                   scope="global"
                   class="lens-table-td"
                 >
+                  <template #br><br /></template>
                   <template #mbr><br class="block md:hidden" /></template>
                 </i18n-t>
               </tr>
@@ -290,6 +299,7 @@ const faqs = [
                   scope="global"
                   class="lens-table-td"
                 >
+                  <template #br><br /></template>
                   <template #mbr><br class="block lg:hidden" /></template>
                   <template #pcbr><br class="hidden lg:block" /></template>
                 </i18n-t>
@@ -628,6 +638,7 @@ const faqs = [
     width: 15.128vw;
     white-space: nowrap;
     text-align: center;
+    min-width: 60px;
   }
 }
 .button-ws {
@@ -779,6 +790,7 @@ const faqs = [
       display: flex;
       justify-content: center;
       align-items: center;
+      min-width: 212px;
     }
   }
 }
