@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:43
- * @LastEditTime: 2026-04-20 17:21:41
+ * @LastEditTime: 2026-06-10 14:44:00
  * @FilePath: /pages/cataract/intraocular-lens-types.vue
  * @Description: 人工晶体比较表
 -->
@@ -450,7 +450,7 @@ const lensList: lensItem[] = [
     </section>
   </div>
 </template>
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .absolute-horizon {
   position: absolute;
   left: 50%;
