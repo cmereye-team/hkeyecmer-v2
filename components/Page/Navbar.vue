@@ -94,7 +94,7 @@ const menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
-        text: t('pages.medical_service.lensTypes.title'),
+        text: t('pages.medical_service.intraocular.title'),
         route: { path: '/Cataract/intraocular-lens-types' },
       },
     ],

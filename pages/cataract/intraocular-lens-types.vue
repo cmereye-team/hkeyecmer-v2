@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:43
- * @LastEditTime: 2026-06-10 14:44:00
+ * @LastEditTime: 2026-06-11 10:56:00
  * @FilePath: /pages/cataract/intraocular-lens-types.vue
  * @Description: 人工晶体比较表
 -->
@@ -36,7 +36,7 @@ interface lensItem {
 }
 const lensList: lensItem[] = [
   {
-    title: '擴展景深人工晶體',
+    title: t('pages.medical_service.intraocular.list.edof.title'),
     titleEn: 'EDOF - Extended Depth of Focus',
     icon: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-lens-edof-m-v2.svg',
     iconPC:
@@ -44,48 +44,51 @@ const lensList: lensItem[] = [
     src: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-01-v1.jpg',
     webp: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-01-v1.webp',
     avif: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-01-v1.avif',
-    desc: '擴展景深人工晶體 ，主要透過光學原理將入射光線聚焦在擴展的平面上，不但延伸視覺距離，提供無縫連續視覺，而且提供更大範圍的連續視野及將光暈和眩光發生的情況改善。這項技術能幫助白內障患者減少對眼鏡的依賴，提高術後視覺品質，改善生活品質。',
+    desc: t('pages.medical_service.intraocular.list.edof.intro'),
   },
   {
-    title: '多焦點人工晶體',
+    title: t('pages.medical_service.intraocular.list.multifocal.title'),
     icon: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-lens-multifocal-m-v1.svg',
     iconPC:
       'https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-lens-multifocal-pc-v2.svg',
     src: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-02-v1.jpg',
     webp: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-02-v1.webp',
     avif: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-02-v1.avif',
-    desc: '多焦點人工晶體相較於只針對單一焦距的單焦點人工晶體，多焦點人工晶體提供多個焦點區域，讓患者享受不同距離的清楚視野，可省去了更換眼鏡或隱形眼鏡的麻煩，為生活帶來便利，進行日常活動時更輕鬆自如。',
+    desc: t('pages.medical_service.intraocular.list.multifocal.intro'),
   },
   {
-    title: '單焦點人工晶體',
+    title: t('pages.medical_service.intraocular.list.monofocal.title'),
     icon: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-lens-monofocal-m-v1.svg',
     iconPC:
       'https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-lens-monofocal-pc-v1.svg',
     src: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-03-v1.jpg',
     webp: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-03-v1.webp',
     avif: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-03-v1.avif',
-    desc: '單焦點人工晶體是可以提供單一焦點，比較多用於遠距離視力。於看電腦、手機或閱讀等中近距離活動時，可能需求眼鏡配合，整體比較適合生活習慣較為簡單，或預算有限的患者。',
+    desc: t('pages.medical_service.intraocular.list.monofocal.intro'),
   },
   {
-    title: '散光矯正型人工晶體',
+    title: t('pages.medical_service.intraocular.list.astigmatism.title'),
     icon: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-lens-astigmatism-m-v1.svg',
     iconPC:
       'https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-lens-astigmatism-pc-v2.svg',
     src: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-04-v1.jpg',
     webp: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-04-v1.webp',
     avif: 'https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-type-04-v1.avif',
-    desc: '散光矯正型人工晶體是一種植入在白內障手術中，用以替換病患混濁晶狀體的人工鏡片，它能夠同時矯正白內障和角膜上的散光問題，從而減少或擺脫散光眼鏡的依賴。',
+    desc: t('pages.medical_service.intraocular.list.astigmatism.intro'),
   },
 ]
 </script>
 <template>
   <div>
     <section class="banner flex items-center lg:justify-center mb-4 lg:mb-9">
-      <h1
+      <i18n-t
+        keypath="pages.medical_service.intraocular.pagetitle"
+        tag="h1"
+        scope="global"
         class="pl-2 pt-1/5 lg:p-0 lg:text-center text-primary text-3xl lg:text-6xl font-medium tracking-widest !leading-normal"
       >
-        白內障<br />人工晶體種類
-      </h1>
+        <template #br><br /></template>
+      </i18n-t>
     </section>
     <section
       class="intro max-w-6xl px-3 mx-auto lg:rounded-[92px] flex justify-center items-center flex-col lg:flex-row lg:gap-5 lg:py-5 lg:pl-11 lg:pr-[60px] mb-8 lg:mb-20"
@@ -138,23 +141,29 @@ const lensList: lensItem[] = [
         class="intro-desc text-primary rounded-4xl text-base lg:text-2xl text-justify font-medium tracking-widest leading-[1.6] p-4 lg:p-0"
       >
         <p>
-          當白內障讓您的世界變得模糊、色彩不再鮮明時，接受手術無疑是重見清楚視力的最佳選擇。而現今白內障手術除了移除混濁的晶體，更有不同人工晶體選擇滿足患者不同需求，包括:
-          單焦點人工晶體、單焦點EDOF人工晶體、多焦點人工晶體、散光人工晶體。
+          {{ t('pages.medical_service.intraocular.intro') }}
         </p>
       </div>
     </section>
     <section class="mb-8 lg:mb-20 lens-table-wrap py-10 lg:pb-12 lg:pt-25">
       <div class="px-3 xl:px-0 mx-auto max-w-[1340px]">
-        <h2
+        <i18n-t
+          keypath="pages.medical_service.intraocular.table.title"
+          tag="h2"
+          scope="global"
           class="text-primary text-center text-3xl lg:text-6xl font-bold tracking-widest mb-6 lg:mb-10 !leading-[1.2]"
         >
-          白內障人工晶體<br />比較表
-        </h2>
+          <template #br><br /></template>
+        </i18n-t>
         <div class="lens-table pb-5 overflow-x-auto mb-3 lg:mb-20 text-center">
           <table class="w-full border-collapse">
             <thead>
               <tr>
-                <th></th>
+                <th>
+                  {{
+                    t('pages.medical_service.intraocular.table.feature.title')
+                  }}
+                </th>
                 <th class="bg-[#F6E75B] lens-table-th">
                   <div class="flex justify-center items-center gap-1 flex-col">
                     <div class="w-12 h-6 lg:w-[108px] lg:h-[60px]">
@@ -165,7 +174,11 @@ const lensList: lensItem[] = [
                       />
                     </div>
                     <span class="lens-table-title text-outline text-[#EC8836]">
-                      擴展景深人工晶體
+                      {{
+                        t(
+                          'pages.medical_service.intraocular.table.feature.edof'
+                        )
+                      }}
                     </span>
                   </div>
                 </th>
@@ -179,7 +192,11 @@ const lensList: lensItem[] = [
                       />
                     </div>
                     <span class="lens-table-title text-outline text-[#4886CE]">
-                      多焦點人工晶體
+                      {{
+                        t(
+                          'pages.medical_service.intraocular.table.feature.multifocal'
+                        )
+                      }}
                     </span>
                   </div>
                 </th>
@@ -194,9 +211,14 @@ const lensList: lensItem[] = [
                         class="w-full lens-icon-normal"
                       />
                     </div>
-                    <span class="lens-table-title text-primary">
-                      單焦點<br class="block md:hidden" />人工晶體
-                    </span>
+                    <i18n-t
+                      keypath="pages.medical_service.intraocular.table.feature.monofocal"
+                      tag="span"
+                      scope="global"
+                      class="lens-table-title text-primary"
+                    >
+                      <template #mbr><br class="block md:hidden" /></template>
+                    </i18n-t>
                   </div>
                 </th>
                 <th class="bg-[#F2FFFE] lens-table-th">
@@ -210,9 +232,14 @@ const lensList: lensItem[] = [
                         class="w-full lens-icon-normal"
                       />
                     </div>
-                    <span class="lens-table-title text-primary">
-                      散光型<br class="block md:hidden" />人工晶體
-                    </span>
+                    <i18n-t
+                      keypath="pages.medical_service.intraocular.table.feature.astigmatism"
+                      tag="span"
+                      scope="global"
+                      class="lens-table-title text-primary"
+                    >
+                      <template #mbr><br class="block md:hidden" /></template>
+                    </i18n-t>
                   </div>
                 </th>
               </tr>
@@ -222,71 +249,157 @@ const lensList: lensItem[] = [
             >
               <tr class="lens-table-bb">
                 <td class="bg-[#fcfcfc]">
-                  <div class="lens-table-subtitle">焦距</div>
+                  <div class="lens-table-subtitle">
+                    {{
+                      t('pages.medical_service.intraocular.table.focal.title')
+                    }}
+                  </div>
                 </td>
-                <td class="lens-table-td">
-                  一般適用於<br class="block lg:hidden" />中至遠距離
-                </td>
-                <td class="lens-table-td">
-                  適用於<br class="block lg:hidden" />遠、中、近距離
-                </td>
-                <td class="lens-table-td">
-                  焦距適用於<br class="block lg:hidden" />單一距離
-                </td>
-                <td class="lens-table-td">
-                  取決於其<br class="block lg:hidden" />基礎類型
-                </td>
-              </tr>
-              <tr class="lens-table-bb">
-                <td class="bg-[#fcfcfc]">
-                  <div class="lens-table-subtitle">優點</div>
-                </td>
-                <td class="lens-table-td">
-                  焦距清楚<br />可擴展景深<br />較小眩光
-                </td>
-                <td class="lens-table-td">
-                  提供良好遠，中，近<br />視力，可不依賴眼鏡
-                </td>
-                <td class="lens-table-td">
-                  提供良好<br class="block lg:hidden" />視力質素
-                </td>
-                <td class="lens-table-td">精準矯正散光</td>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.focal.edof"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.focal.multifocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.focal.monofocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.focal.astigmatism"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
               </tr>
               <tr class="lens-table-bb">
                 <td class="bg-[#fcfcfc]">
                   <div class="lens-table-subtitle">
-                    術後<br class="block md:hidden" />眼鏡<br />使用性
+                    {{
+                      t(
+                        'pages.medical_service.intraocular.table.benefits.title'
+                      )
+                    }}
                   </div>
                 </td>
-                <td class="lens-table-td">
-                  大部份患者於<br class="block lg:hidden" />術後康復<br
-                    class="hidden lg:block"
-                  />後，<br
-                    class="block lg:hidden"
-                  />生活或工作時<br />減少眼倚賴性
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.benefits.edof"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.benefits.multifocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.benefits.monofocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.benefits.astigmatism"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
+              </tr>
+              <tr class="lens-table-bb">
+                <td class="bg-[#fcfcfc]">
+                  <i18n-t
+                    keypath="pages.medical_service.intraocular.table.glasses.title"
+                    tag="td"
+                    scope="global"
+                    class="lens-table-td"
+                  >
+                    <template #br><br /></template>
+                    <template #mbr><br class="block md:hidden" /></template>
+                  </i18n-t>
                 </td>
-                <td class="lens-table-td">日常比較小<br />需要配戴眼鏡</td>
-                <td class="lens-table-td">
-                  近距離閱讀時可能<br class="hidden lg:block" />需<br
-                    class="block lg:hidden"
-                  />要配戴眼鏡<br />近距離閲讀或<br
-                    class="hidden lg:block"
-                  />需要<br class="block lg:hidden" />眼鏡配合
-                </td>
-                <td class="lens-table-td">
-                  取決於其<br class="block lg:hidden" />基礎類型
-                </td>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.glasses.edof"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                  <template #mbr><br class="block md:hidden" /></template>
+                  <template #pcbr><br class="hidden md:block" /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.glasses.multifocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.glasses.monofocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                  <template #mbr><br class="block md:hidden" /></template>
+                  <template #pcbr><br class="hidden md:block" /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.intraocular.table.glasses.astigmatism"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
               </tr>
               <tr>
                 <td class="bg-[#fcfcfc]">
-                  <div class="lens-table-subtitle">適合人群</div>
+                  <div class="lens-table-subtitle">
+                    {{
+                      t(
+                        'pages.medical_service.intraocular.table.suitable.title'
+                      )
+                    }}
+                  </div>
                 </td>
                 <td class="lens-table-td relative">
-                  適合患有<br
-                    class="block lg:hidden"
-                  />白內障且希望<br />減少眼鏡<br
-                    class="block lg:hidden"
-                  />依賴的患者
+                  <i18n-t
+                    keypath="pages.medical_service.intraocular.table.suitable.edof"
+                    tag="span"
+                    scope="global"
+                  >
+                    <template #br><br /></template>
+                    <template #mbr><br class="block md:hidden" /></template>
+                    <template #pcbr><br class="hidden md:block" /></template>
+                  </i18n-t>
                   <nuxt-link
                     to="/Cataract/extended-depth-of-focus-lenses"
                     class="absolute-horizon -bottom-2 z-10"
@@ -300,8 +413,15 @@ const lensList: lensItem[] = [
                       <div
                         class="lens-table-more edof text-[#F99D2C] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
                       >
-                        <span>按此</span>
-                        <span>了解更多</span>
+                        <i18n-t
+                          keypath="pages.medical_service.intraocular.table.more"
+                          tag="span"
+                          scope="global"
+                        >
+                          <template #mbr
+                            ><br class="block md:hidden"
+                          /></template>
+                        </i18n-t>
                       </div>
                     </div>
                   </nuxt-link>
@@ -309,12 +429,15 @@ const lensList: lensItem[] = [
                 <td
                   class="lens-table-td text-justify lg:min-h-[232px] relative"
                 >
-                  <ul class="list-disc list-inside">
-                    <li>不想配戴眼鏡</li>
-                    <li>經濟能力較好</li>
-                    <li>無其他嚴重眼病</li>
-                    <li>夜間駕駛需求低</li>
-                  </ul>
+                  <i18n-t
+                    keypath="pages.medical_service.intraocular.table.suitable.multifocal"
+                    tag="span"
+                    scope="global"
+                  >
+                    <template #br><br /></template>
+                    <template #mbr><br class="block md:hidden" /></template>
+                    <template #pcbr><br class="hidden md:block" /></template>
+                  </i18n-t>
                   <nuxt-link
                     to="/cataract/multifocal-lens"
                     class="absolute-horizon -bottom-2 z-10"
@@ -328,23 +451,36 @@ const lensList: lensItem[] = [
                       <div
                         class="lens-table-more multifocal text-[#4886CE] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
                       >
-                        <span>按此</span>
-                        <span>了解更多</span>
+                        <i18n-t
+                          keypath="pages.medical_service.intraocular.table.more"
+                          tag="span"
+                          scope="global"
+                        >
+                          <template #mbr
+                            ><br class="block md:hidden"
+                          /></template>
+                        </i18n-t>
                       </div>
                     </div>
                   </nuxt-link>
                 </td>
                 <td class="lens-table-td text-justify relative">
-                  <ul class="list-disc list-inside">
-                    <li>可配合戴眼鏡</li>
-                    <li>要求更好視力質素</li>
-                    <li>有經濟考慮</li>
-                  </ul>
+                  <i18n-t
+                    keypath="pages.medical_service.intraocular.table.suitable.monofocal"
+                    tag="span"
+                    scope="global"
+                  >
+                    <template #br><br /></template>
+                    <template #mbr><br class="block md:hidden" /></template>
+                    <template #pcbr><br class="hidden md:block" /></template>
+                  </i18n-t>
                 </td>
                 <td class="lens-table-td">
-                  <ul class="list-disc list-inside">
-                    <li>散光患者</li>
-                  </ul>
+                  {{
+                    t(
+                      'pages.medical_service.intraocular.table.suitable.astigmatism'
+                    )
+                  }}
                 </td>
               </tr>
             </tbody>
@@ -363,7 +499,7 @@ const lensList: lensItem[] = [
             />
           </svg>
           <div class="text-primary text-sm font-bold tracking-widest">
-            左右滑動以觀看表格
+            {{ t('pages.medical_service.intraocular.table.swiper') }}
           </div>
         </div>
         <a
@@ -371,7 +507,7 @@ const lensList: lensItem[] = [
           target="_blank"
           class="button-ws rounded-full text-white font-black relative"
         >
-          哪一款人工晶體適合你？
+          {{ t('pages.medical_service.intraocular.table.button') }}
         </a>
       </div>
     </section>
@@ -379,7 +515,7 @@ const lensList: lensItem[] = [
       <h2
         class="types-title text-2xl lg:text-4xl text-center text-primary font-bold mt-2 lg:mt-7 mb-12 lg:mb-[140px]"
       >
-        白內障人工晶體
+        {{ t('pages.medical_service.intraocular.list.title') }}
       </h2>
       <div class="space-y-10 lg:space-y-[92px] text-primary">
         <div

@@ -827,7 +827,7 @@ pages:
         a4: In general, implanting the same type of IOL in both eyes provides better overall visual quality and depth perception. However, a blended (or mixed) approach may also be used. For example, one eye receives a monofocal IOL optimized for distance vision, while the other eye receives an EDOF lens to improve near and intermediate vision. This combination can help meet a wider range of visual needs. As long as the difference in refractive power between the two eyes is not significant, most patients can adapt naturally. However, the adaptation period may vary due to differences in focal distance between the eyes, and not all patients are suitable candidates. Patients are advised to consult an ophthalmologist before surgery to develop a personalized treatment plan.
         q5: How do EDOF intraocular lenses perform for night driving?
         a5: EDOF IOLs are generally suitable for night driving. Compared with multifocal IOLs, EDOF IOLs are associated with fewer issues related to glare and halo effects under low-light conditions, providing better contrast sensitivity and clearer vision. Even in dim environments, EDOF lenses help maintain comfortable visual clarity. Additionally, their extended depth-of-focus design allows for a shorter adaptation period, and most patients are able to regain clear vision within a few days after surgery.
-    lensTypes:
+    intraocular:
       title: IOL Lens Comparison Chart
       pagetitle: 白內障人工晶體種類
       comparison: 白內障人工晶體比較表
