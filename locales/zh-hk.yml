@@ -306,11 +306,23 @@ pages:
       awards_des_15: 「ESG約章」行動
       awards_des_16: 香港經濟日報企業大獎
       awards_des_17: 「健康Easy卓越大獎2024」
-
   medical_team:
     medical_team: 醫療團隊
     medical_team_title: 醫 療 團 隊
     medical_team_header_title: 醫療團隊｜眼科專科醫生 | 香港希瑪眼科中心
+    doctor: 醫生
+    cmer: 希瑪眼科
+    namecard: 名片
+    save:
+      button: 儲存到手機
+      download: 名片已開始下載
+      album: 長按下方圖片保存到相冊
+      filename: 名片
+      success: 下載成功
+    share:
+      button: 分享
+      intro: 簡介：
+      copy: 複製成功
     doctorList:
       doctor_1:
         doctor_1_name: 林順潮醫生
@@ -876,16 +888,16 @@ pages:
         button: 哪一款人工晶體適合你？
       list:
         title: 白內障人工晶體
-        edof: 
+        edof:
           title: 擴展景深人工晶體
           intro: 擴展景深人工晶體，主要透過光學原理將入射光線聚焦在擴展的平面上，不但延伸視覺距離，提供無縫連續視覺，而且提供更大範圍的連續視野及將光暈和眩光發生的情況改善。這項技術能幫助白內障患者減少對眼鏡的依賴，提高術後視覺品質，改善生活品質。
-        multifocal: 
+        multifocal:
           title: 多焦點人工晶體
           intro: 多焦點人工晶體相較於只針對單一焦距的單焦點人工晶體，多焦點人工晶體提供多個焦點區域，讓患者享受不同距離的清楚視野，可省去了更換眼鏡或隱形眼鏡的麻煩，為生活帶來便利，進行日常活動時更輕鬆自如。
-        monofocal: 
+        monofocal:
           title: 單焦點人工晶體
           intro: 單焦點人工晶體是可以提供單一焦點，比較多用於遠距離視力。於看電腦、手機或閱讀等中近距離活動時，可能需求眼鏡配合，整體比較適合生活習慣較為簡單，或預算有限的患者。
-        astigmatism: 
+        astigmatism:
           title: 散光矯正型人工晶體
           intro: 散光矯正型人工晶體是一種植入在白內障手術中，用以替換病患混濁晶狀體的人工鏡片，它能夠同時矯正白內障和角膜上的散光問題，從而減少或擺脫散光眼鏡的依賴。
     glaucoma: 青光眼

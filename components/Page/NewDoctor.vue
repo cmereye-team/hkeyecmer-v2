@@ -1,4 +1,14 @@
 <script lang="ts" setup>
+interface DoctorItem {
+  doctorId: number
+  doctorName: string
+  doctorIntro?: string
+  doctorEnName: string
+  doctorEducation: string[]
+  doctorImgUrl: string
+  doctorCard: string
+  doctorNameDr: string
+}
 const props = defineProps({
   list: {
     type: Object,
@@ -6,17 +16,22 @@ const props = defineProps({
     required: true,
   },
 })
-
-interface NewList {
-  doctorName: string
-  doctorIntro: string
-  doctorEnName: string
-  doctorEducation: string[]
-  doctorImgUrl: string
-}
+const { t } = useLang()
+const locale = useState<string>('locale.setting')
+// 彈窗狀態定義為真正的 Vue3 響應式 ref 變量
 const isModalOpen = ref(false)
 const modalCardImg = ref('')
 const modalTips = ref('')
+const isEn = locale.value === 'en'
+
+// === 核心功能：檢測是否為 iOS 系統 (包含 iPhone, iPad 以及新版 Mac 模擬觸控) ===
+const checkIsIOS = (): boolean => {
+  if (!process.client) return false
+  return (
+    /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+  )
+}
 
 // === 功能 1：核心下載邏輯 (Blob 繞過瀏覽器跨域限制) ===
 const triggerDownload = async (url: string, filename: string) => {
@@ -38,75 +53,86 @@ const triggerDownload = async (url: string, filename: string) => {
 
     document.body.removeChild(tempLink)
     window.URL.revokeObjectURL(blobUrl)
+    ElMessage({
+      type: 'success',
+      message: t('pages.medical_team.save.success'),
+    })
+    modalTips.value = t('pages.medical_team.save.success')
   } catch (error) {
     console.error('直接下載出錯:', error)
   }
 }
 
 // === 點擊“儲存到手機”事件處理 ===
-const handleSaveCard = (doc: any) => {
-  // 获取名片地址，兜底防止为空
+const handleSaveCard = (doc: DoctorItem) => {
+  // console.log(`click save, card=${doc.doctorCard} doc=`,doc)
   const cardUrl = doc.doctorCard || ''
-  const docTitle = doc.doctorName || '醫生'
+  const docTitle = doc.doctorNameDr
 
   if (!cardUrl) {
     console.warn('該醫生暫無名片圖片')
     return
   }
 
-  // 修正 2：通过 .value 正确更新响应式数据
   modalCardImg.value = cardUrl
-  modalTips.value = `${docTitle}醫生的名片開始下載...`
-  isModalOpen.value = true
 
-  // 異步觸發下載
-  triggerDownload(cardUrl, `希瑪眼科_${docTitle}醫生名片.webp`)
+  // === 根據參考 doctor.js 的 iOS 策略進行分流優化 ===
+  if (checkIsIOS()) {
+    // iOS 策略：不觸發自動下載，變更提示文字引導用戶長按儲存到相冊
+    modalTips.value = t('pages.medical_team.save.album')
+  } else {
+    // Android/PC 策略：變更提示文字，並同時觸發自動下載
+    modalTips.value = `${docTitle}${t('pages.medical_team.save.download')}`
+    triggerDownload(cardUrl, `${t('pages.medical_team.cmer')}_${docTitle}_${t('pages.medical_team.save.filename')}.webp`)
+  }
+  isModalOpen.value = true
 }
 
 // === 功能 2：點擊“分享”觸發原生 Web Share 或 自動複製 ===
-const handleShare = async (doc: any, index: number) => {
+const handleShare = async (doc: DoctorItem, index: number) => {
   if (!process.client) return
 
-  const docTitle = doc.doctorName || ''
-  const docSub = doc.doctorEnName || ''
-  const docId = doc.id || index
+  const docTitle = isEn ? doc.doctorEnName : doc.doctorNameDr
+  const docId = doc.doctorId || index
 
-  // === 核心優化：解析 HTML 標籤並自動加上「、」號分隔 ===
+  // 解析 HTML 標籤並自動加上「、」號分隔
   let pureBioText = ''
   if (doc.doctorEducation) {
     if (typeof doc.doctorEducation === 'string') {
-      // 1. 創建臨時節點解析 HTML
       const tempDiv = document.createElement('div')
       tempDiv.innerHTML = doc.doctorEducation
-      
-      // 2. 獲取所有段落標籤（p標籤），提取文本並用「、」號拼接
+
       const paragraphs = tempDiv.querySelectorAll('p')
       const eduList: string[] = []
-      
+
       paragraphs.forEach((p) => {
         const text = p.innerText || p.textContent || ''
         const cleanText = text.trim()
-        // 過濾掉空行或包含 <br> 的空標籤
         if (cleanText && cleanText !== '<br>') {
           eduList.push(cleanText)
         }
       })
-      
-      // 使用頓號/逗號進行連接
-      pureBioText = eduList.join('、')
+
+      if (eduList.length > 0) {
+        pureBioText = eduList.join('、')
+      } else {
+        pureBioText = tempDiv.innerText || tempDiv.textContent || ''
+      }
+    } else if (Array.isArray(doc.doctorEducation)) {
+      pureBioText = doc.doctorEducation
+        .filter((item: string) => item?.trim())
+        .join('、')
     }
   }
-  
-  // 清洗換行符與多餘空格，並截取前 80 個字元
+
   pureBioText = pureBioText.replace(/\s+/g, ' ').trim().substring(0, 80) + '...'
 
   const route = useRoute()
   const shareUrl = `${window.location.origin}${route.path}?docId=${docId}`
 
-  // === 核心優化：調整格式為「希瑪眼科XX醫生 簡介：...」 ===
   const shareData = {
-    title: `希瑪眼科${docTitle}醫生 (${docSub})`,
-    text: `希瑪眼科${docTitle}醫生 簡介：${pureBioText}`,
+    title: `t('pages.medical_team.cmer')${docTitle}`,
+    text: `t('pages.medical_team.cmer')${docTitle} ${t('pages.medical_team.share.intro')}${pureBioText}`,
     url: shareUrl,
   }
 
@@ -117,16 +143,26 @@ const handleShare = async (doc: any, index: number) => {
       console.warn('用戶取消分享或環境受限:', err)
     }
   } else {
-    // 降級方案：自動複製或彈窗提示
-    if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+    if (
+      navigator.clipboard &&
+      typeof navigator.clipboard.writeText === 'function'
+    ) {
       try {
-        await navigator.clipboard.writeText(`${shareData.text} ${shareData.url}`)
-        alert(`已自動複製 ${docTitle} 的名片連結，快去貼上分享給好友吧！`)
+        await navigator.clipboard.writeText(
+          `${shareData.text} ${shareData.url}`
+        )
+        ElMessage({
+          type: 'success',
+          message: t('pages.medical_team.share.copy')
+        })
       } catch (clipErr) {
         prompt('請複製以下連結分享：', `${shareData.text} ${shareData.url}`)
       }
     } else {
-      prompt('請複製以下連結分享醫生名片：', `${shareData.text} ${shareData.url}`)
+      prompt(
+        '請複製以下連結分享醫生名片：',
+        `${shareData.text} ${shareData.url}`
+      )
     }
   }
 }
@@ -203,6 +239,7 @@ const handleCloseModal = () => {
             id="medicalTeamLink"
             class="button appointment text-white inline-block"
             href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
+            :data-doctor="doc.doctorName"
           >
             <div class="icon">
               <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
@@ -214,7 +251,11 @@ const handleCloseModal = () => {
             </div>
             <span>{{ $t('pages.medical_team.doctor_order') }}</span>
           </a>
-          <button @click="handleSaveCard(doc)" class="button save">
+          <button
+            @click="handleSaveCard(doc)"
+            class="button save"
+            :data-doctor="doc.doctorName"
+          >
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -224,9 +265,13 @@ const handleCloseModal = () => {
                 ></path>
               </svg>
             </div>
-            <span>儲存到手機</span>
+            <span>{{ $t('pages.medical_team.save.button') }}</span>
           </button>
-          <button @click="handleShare(doc, Number(index))" class="button share">
+          <button
+            @click="handleShare(doc, Number(index))"
+            class="button share"
+            :data-doctor="doc.doctorName"
+          >
             <div class="icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M0 0h24v24H0z" fill="none"></path>
@@ -236,7 +281,7 @@ const handleCloseModal = () => {
                 ></path>
               </svg>
             </div>
-            <span>分享</span>
+            <span>{{ $t('pages.medical_team.share.button') }}</span>
           </button>
         </div>
       </li>
@@ -258,13 +303,23 @@ const handleCloseModal = () => {
       <img
         :src="modalCardImg"
         @click.stop
-        alt="醫生名片"
+        :alt="t('pages.medical_team.save.filename')"
         class="w-[85%] max-w-[400px] rounded-lg shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
       />
     </div>
   </div>
 </template>
 <style lang="scss" scoped>
+html[lang=en] {
+  .button-group .button {
+    font-size: 14px;
+    letter-spacing: 0.025em;
+  }
+  .button-group .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
 .mobile {
   margin-top: 140px;
 }
@@ -278,11 +333,11 @@ const handleCloseModal = () => {
   justify-content: space-around;
   align-items: center;
   .button {
-    height: 52px;
+    height: 40px;
     font-family: 'Noto Sans HK';
     font-style: normal;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     letter-spacing: 0.1em;
     cursor: pointer;
@@ -313,8 +368,8 @@ const handleCloseModal = () => {
   .icon {
     padding: 4px;
     color: #fff;
-    width: 32px;
-    height: 32px;
+    width: 24px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content: center;

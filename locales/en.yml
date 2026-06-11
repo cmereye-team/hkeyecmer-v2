@@ -300,11 +300,23 @@ pages:
       awards_des_15: 「ESG約章」行動
       awards_des_16: 香港經濟日報企業大獎
       awards_des_17: '"Healthy Easy Awards 2024"'
-
   medical_team:
     medical_team: Medical Team
     medical_team_title: Medical Team
     medical_team_header_title: Medical Team | CMER Eye Center
+    doctor: ''
+    cmer: CMER ophthalmologist
+    namecard: namecard
+    save:
+      button: Save to mobile
+      download: Namecard has started downloading
+      album: Press and hold the image to save namecard
+      filename: namecard
+      success: Save Successful
+    share:
+      button: Share
+      intro: 'profile:'
+      copy: Copy Success
     doctorList:
       doctor_1:
         doctor_1_name: DR. LAM SHUN CHIU, DENNIS

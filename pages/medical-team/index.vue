@@ -55,11 +55,11 @@ const handleShare = async (doc: any, index: number) => {
       // 1. 創建臨時節點解析 HTML
       const tempDiv = document.createElement('div')
       tempDiv.innerHTML = doc.doctorEducation
-      
+
       // 2. 獲取所有段落標籤（p標籤），提取文本並用「、」號拼接
       const paragraphs = tempDiv.querySelectorAll('p')
       const eduList: string[] = []
-      
+
       paragraphs.forEach((p) => {
         const text = p.innerText || p.textContent || ''
         const cleanText = text.trim()
@@ -68,12 +68,12 @@ const handleShare = async (doc: any, index: number) => {
           eduList.push(cleanText)
         }
       })
-      
+
       // 使用頓號/逗號進行連接
       pureBioText = eduList.join('、')
     }
   }
-  
+
   // 清洗換行符與多餘空格，並截取前 80 個字元
   pureBioText = pureBioText.replace(/\s+/g, ' ').trim().substring(0, 80) + '...'
 
@@ -95,15 +95,23 @@ const handleShare = async (doc: any, index: number) => {
     }
   } else {
     // 降級方案：自動複製或彈窗提示
-    if (navigator.clipboard && typeof navigator.clipboard.writeText === 'function') {
+    if (
+      navigator.clipboard &&
+      typeof navigator.clipboard.writeText === 'function'
+    ) {
       try {
-        await navigator.clipboard.writeText(`${shareData.text} ${shareData.url}`)
+        await navigator.clipboard.writeText(
+          `${shareData.text} ${shareData.url}`
+        )
         alert(`已自動複製 ${docTitle} 的名片連結，快去貼上分享給好友吧！`)
       } catch (clipErr) {
         prompt('請複製以下連結分享：', `${shareData.text} ${shareData.url}`)
       }
     } else {
-      prompt('請複製以下連結分享醫生名片：', `${shareData.text} ${shareData.url}`)
+      prompt(
+        '請複製以下連結分享醫生名片：',
+        `${shareData.text} ${shareData.url}`
+      )
     }
   }
 }
@@ -115,14 +123,17 @@ watch(
   },
   { deep: true }
 )
-interface NewListType {
+interface DoctorItem {
+  doctorId: number | string
   doctorName: string
-  doctorIntro: string
+  doctorIntro?: string
   doctorEnName: string
   doctorEducation: string[]
   doctorImgUrl: string
+  doctorCard: string
+  doctorNameDr: string
 }
-const NewList = ref<NewListType[]>([])
+const NewList = ref<DoctorItem[]>([])
 const getData = async () => {
   NewList.value.splice(0)
   if (locale.value === 'zh-hk') {
@@ -130,18 +141,17 @@ const getData = async () => {
       `https://hkcmereye.com/api.php/list/12/num/100`
     )
     const res: any = JSON.parse(data.value)
-    const list: any = res.data.map((item: any, index: any) => {
+    const list: DoctorItem[] = res.data.map((item: any, index: any) => {
       return {
-        doctorId: item.id,
+        doctorId: Number(item.id),
         doctorName: item.title,
         doctorEnName: item.subtitle,
         doctorEducation: item.content,
         doctorImgUrl: item.ico,
         doctorCard: item.ext_doctor_card,
+        doctorNameDr: `${item.title}${t('pages.medical_team.doctor')}`,
       }
     })
-    console.log('醫生列表', list)
-
     list.forEach((item: any) => {
       NewList.value.push(item)
     })
@@ -152,14 +162,15 @@ const getData = async () => {
     )
     const res: any = JSON.parse(data.value)
 
-    const list: any = res.data.map((item: any, index: any) => {
+    const list: DoctorItem[] = res.data.map((item: any, index: number) => {
       return {
-        doctorId: item.id,
+        doctorId: Number(item.id),
         doctorName: item.title,
         doctorEnName: item.subtitle,
         doctorEducation: item.content,
         doctorImgUrl: item.ico,
         doctorCard: item.ext_doctor_card,
+        doctorNameDr: `${item.title}${t('pages.medical_team.doctor')}`,
       }
     })
 
@@ -167,6 +178,7 @@ const getData = async () => {
       NewList.value.push(item)
     })
   }
+  // console.log(`length=${NewList.value.length},list=`, NewList.value)
 }
 
 onMounted(() => {
@@ -235,6 +247,7 @@ const getWindowWidth = () => {
                 id="medicalTeamLink"
                 class="button appointment text-white inline-block"
                 href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
+                :data-doctor="t(doctorList[0].doctorName)"
               >
                 <div class="icon">
                   <svg
@@ -278,6 +291,7 @@ const getWindowWidth = () => {
                 id="medicalTeamLink"
                 class="button appointment text-white inline-block"
                 href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
+                :data-doctor="doc.doctorName"
               >
                 <div class="icon">
                   <svg
@@ -295,6 +309,7 @@ const getWindowWidth = () => {
               <button
                 @click="handleShare(doc, Number(index))"
                 class="button share"
+                :data-doctor="doc.doctorName"
               >
                 <div class="icon">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -305,7 +320,7 @@ const getWindowWidth = () => {
                     ></path>
                   </svg>
                 </div>
-                <span>分享</span>
+                <span>{{ $t('pages.medical_team.share.button') }}</span>
               </button>
             </div>
           </div>
@@ -357,6 +372,7 @@ const getWindowWidth = () => {
                 id="medicalTeamLink"
                 class="button appointment text-white inline-block"
                 href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
+                :data-doctor="t(doctorList[0].doctorName)"
               >
                 <div class="icon">
                   <svg
@@ -942,7 +958,7 @@ const getWindowWidth = () => {
 
       & > div:nth-child(2) {
         left: -260px;
-    top: 240px;
+        top: 240px;
       }
 
       & > div:nth-child(1)::before {
