@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:27
- * @LastEditTime: 2026-04-21 16:32:18
+ * @LastEditTime: 2026-06-10 16:59:19
  * @FilePath: /pages/cataract/extended-depth-of-focus-lenses.vue
  * @Description: 扩展景深人工晶体
 -->
@@ -10,6 +10,7 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
 useHead(() => ({
   title: t('tdk.edof.title'),
   meta: [
@@ -26,53 +27,50 @@ useHead(() => ({
 const advantages = [
   {
     icon: 'clear',
-    title: '在更大範圍內\n擁有更清晰的視野',
-    intro: '從遠距離到中距離都能享受更佳的對焦效果，適合會面和日常生活。',
+    title: 'pages.medical_service.edof.advantage.clear.title',
+    intro: 'pages.medical_service.edof.advantage.clear.intro',
   },
   {
     icon: 'glare',
-    title: '降低光暈和\n眩光的風險',
-    intro:
-      'EDOF 晶體的設計可將光線散射降至最低，提供更清晰的夜間視力，並減少光線周圍的干擾。',
+    title: 'pages.medical_service.edof.advantage.glare.title',
+    intro: 'pages.medical_service.edof.advantage.glare.intro',
   },
   {
     icon: 'lowlight',
-    title: '弱光環境下\n表現更佳',
-    intro:
-      '即使在昏暗的光線下，也能保持對比度和清晰度，非常適合夜間行車或室內環境。',
+    title: 'pages.medical_service.edof.advantage.lowlight.title',
+    intro: 'pages.medical_service.edof.advantage.lowlight.intro',
   },
   {
     icon: 'reading',
-    title: '非常適合配合\n不同電子螢幕使用',
-    intro:
-      '無論您使用的是電腦、手機或平板電腦，EDOF 晶體都能針對中間距離進行最佳化。',
+    title: 'pages.medical_service.edof.advantage.reading.title',
+    intro: 'pages.medical_service.edof.advantage.reading.intro',
   },
   {
     icon: 'glasses',
-    title: '不受眼鏡束縛',
-    intro: '不需要配戴眼鏡就能享受大部分的日常活動，特別在遠距離和中距離時。',
+    title: 'pages.medical_service.edof.advantage.glasses.title',
+    intro: 'pages.medical_service.edof.advantage.glasses.intro',
   },
 ]
 const faqs = [
   {
-    title: t('pages.medical_service.edof.faq.q1'),
-    agree: t('pages.medical_service.edof.faq.a1'),
+    title: 'pages.medical_service.edof.faq.q1',
+    agree: 'pages.medical_service.edof.faq.a1',
   },
   {
-    title: t('pages.medical_service.edof.faq.q2'),
-    agree: t('pages.medical_service.edof.faq.a2'),
+    title: 'pages.medical_service.edof.faq.q2',
+    agree: 'pages.medical_service.edof.faq.a2',
   },
   {
-    title: t('pages.medical_service.edof.faq.q3'),
-    agree: t('pages.medical_service.edof.faq.a3'),
+    title: 'pages.medical_service.edof.faq.q3',
+    agree: 'pages.medical_service.edof.faq.a3',
   },
   {
-    title: t('pages.medical_service.edof.faq.q4'),
-    agree: t('pages.medical_service.edof.faq.a4'),
+    title: 'pages.medical_service.edof.faq.q4',
+    agree: 'pages.medical_service.edof.faq.a4',
   },
   {
-    title: t('pages.medical_service.edof.faq.q5'),
-    agree: t('pages.medical_service.edof.faq.a5'),
+    title: 'pages.medical_service.edof.faq.q5',
+    agree: 'pages.medical_service.edof.faq.a5',
   },
 ]
 </script>
@@ -83,9 +81,9 @@ const faqs = [
     >
       <div class="text-primary font-medium pt-30 pl-6 lg:p-0">
         <h1
-          class="lg:text-center text-3xl lg:text-5xl leading-[1.2] lg:leading-[1.5] tracking-[0.4em]"
+          class="max-w-[168px] sm:max-w-none lg:text-center text-3xl lg:text-5xl leading-[1.2] lg:leading-[1.5] tracking-[0.4em]"
         >
-          擴展景深<br class="block sm:hidden" />人工晶體
+          {{ t('pages.medical_service.edof.abbr') }}
         </h1>
         <p class="text-base lg:text-3xl">Extended Depth of Focus (EDOF)</p>
       </div>
@@ -95,16 +93,21 @@ const faqs = [
         <div class="flex-1">
           <div class="intro-title pl-4 lg:pl-11">
             <h2 class="text-lg lg:text-4xl font-bold tracking-widest mb-6">
-              擴展景深人工晶體<span class="block text-sm lg:text-xl"
+              {{ t('pages.medical_service.edof.abbr') }}
+              <span class="block text-sm lg:text-xl"
                 >(EDOF - Extended Depth of Focus)</span
               >
             </h2>
           </div>
           <p
-            class="flex-1 text-justify text-base lg:text-2xl text-primary font-medium leading-[1.6] lg:leading-[2] tracking-widest"
+            :class="[
+              'flex-1 text-base lg:text-2xl text-primary font-medium tracking-widest',
+              locale === 'en'
+                ? 'leading-[1.6]'
+                : 'leading-[1.6] lg:leading-[2] text-justify',
+            ]"
           >
-            擴展景深人工晶體
-            是一種新型人工晶狀體，主要透過光學原理將入射光線聚焦在擴展的平面上，不但提供了多種距離的無縫連續視覺，而且提供更大範圍的連續視野及將光暈和眩光發生的情況改善。這項技術能幫助白內障患者減少對眼鏡的依賴，提高術後視覺品質，改善生活品質。
+            {{ t('pages.medical_service.edof.intro') }}
           </p>
         </div>
         <picture class="lg:w-1/3">
@@ -122,25 +125,34 @@ const faqs = [
         </picture>
       </div>
       <div
-        class="intro-desc text-white text-justify text-sm lg:text-2xl font-bold leading-[1.85] lg:leading-[2] tracking-widest py-4 px-6 lg:py-8 lg:px-[72px] rounded-xl"
+        :class="[
+          'intro-desc text-white text-sm lg:text-2xl font-bold leading-[1.85] lg:leading-[2] tracking-widest py-4 px-6 lg:py-8 lg:px-[72px] rounded-xl',
+          locale === 'en' ? '' : 'text-justify',
+        ]"
       >
-        <p>
-          手術過程中，醫生會從眼睛中取出混濁的晶狀體 (白內障)，
-          植入人工晶體代替原本的晶狀體。
-          現時EDOF在不同類型的人工晶體在不同特點上亦有不同特色
-        </p>
+        <p>{{ t('pages.medical_service.edof.desc') }}</p>
       </div>
     </section>
     <section class="lens-table-wrap pt-5 lg:pt-0">
       <div class="wrapper">
         <h2 class="title-normal mb-9 lg:mb-11">
-          擴展景深人工晶體<br class="block md:hidden" />特性及其他晶體比較
+          <i18n-t
+            keypath="pages.medical_service.edof.table.title"
+            tag="span"
+            scope="global"
+          >
+            <template #mbr><br class="block md:hidden" /></template>
+          </i18n-t>
         </h2>
         <div class="lens-table pb-5 overflow-x-auto mb-3 lg:mb-20 text-center">
           <table class="w-full border-collapse">
             <thead>
               <tr>
-                <th></th>
+                <th>
+                  <div class="lens-table-subtitle">
+                    {{ t('pages.medical_service.edof.table.name.title') }}
+                  </div>
+                </th>
                 <th class="bg-[#F6E75B] lens-table-th">
                   <div class="flex justify-center items-center gap-1 flex-col">
                     <div class="w-12 h-6 lg:w-[108px] lg:h-[60px]">
@@ -150,9 +162,14 @@ const faqs = [
                         class="w-full"
                       />
                     </div>
-                    <span class="lens-table-title special text-[#EC8836]">
-                      擴展景深人工晶體
-                    </span>
+                    <i18n-t
+                      keypath="pages.medical_service.edof.table.name.edof"
+                      tag="span"
+                      scope="global"
+                      class="lens-table-title special text-[#EC8836]"
+                    >
+                      <template #br><br /></template>
+                    </i18n-t>
                   </div>
                 </th>
                 <th class="bg-[#55D1F0] lens-table-th">
@@ -165,7 +182,7 @@ const faqs = [
                       />
                     </div>
                     <span class="lens-table-title special text-primary">
-                      單焦點人工晶體
+                      {{ t('pages.medical_service.edof.table.name.monofocal') }}
                     </span>
                   </div>
                 </th>
@@ -180,98 +197,221 @@ const faqs = [
                         class="w-full lens-icon-normal"
                       />
                     </div>
-                    <span class="lens-table-title text-[#4886CE]">
-                      多焦點<br class="block md:hidden" />人工晶體
-                    </span>
+                    <i18n-t
+                      keypath="pages.medical_service.edof.table.name.multifocal"
+                      tag="span"
+                      scope="global"
+                      class="lens-table-title text-[#4886CE]"
+                    >
+                      <template #mbr><br class="block md:hidden" /></template>
+                    </i18n-t>
                   </div>
                 </th>
               </tr>
             </thead>
             <tbody
-              class="text-[3.0769vw] md:text-2xl text-[#66696f] font-bold lg:font-medium leading-[1.5] tracking-widest whitespace-nowrap"
+              :class="[
+                'text-[3.0769vw] md:text-2xl text-[#66696f] font-bold lg:font-medium leading-[1.5] tracking-widest',
+                { 'whitespace-nowrap': locale !== 'en' },
+              ]"
             >
               <tr class="lens-table-bb">
                 <td class="bg-[#fcfcfc]">
-                  <div class="lens-table-subtitle">晶體類型</div>
+                  <div class="lens-table-subtitle">
+                    {{ t('pages.medical_service.edof.table.type.title') }}
+                  </div>
                 </td>
-                <td class="lens-table-td">
-                  RLE / 白內障 - <br class="hidden lg:block" />取代自然晶體
-                </td>
-                <td class="lens-table-td">
-                  白內障 - <br class="hidden lg:block" />取代自然晶體
-                </td>
-                <td class="lens-table-td">
-                  RLE / 白內障 - <br class="hidden lg:block" />取代自然晶體
-                </td>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.type.edof"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.type.monofocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.type.multifocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
               </tr>
               <tr class="lens-table-bb">
                 <td class="bg-[#fcfcfc]">
-                  <div class="lens-table-subtitle">焦距</div>
+                  <div class="lens-table-subtitle">
+                    {{ t('pages.medical_service.edof.table.focal.title') }}
+                  </div>
                 </td>
-                <td class="lens-table-td">
-                  良好的遠<br class="block md:hidden" />及中距離
-                </td>
-                <td class="lens-table-td">
-                  有限距離<br class="block md:hidden" />焦距
-                </td>
-                <td class="lens-table-td">
-                  遠、中、近<br class="block md:hidden" />距離清楚
-                </td>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.focal.edof"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                  <template #mbr><br class="block md:hidden" /></template>
+                  <template #pcbr><br class="hidden md:block" /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.focal.monofocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.focal.multifocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
               </tr>
               <tr class="lens-table-bb">
                 <td class="bg-[#fcfcfc]">
-                  <div class="lens-table-subtitle">對比度與<br />低光源</div>
+                  <i18n-t
+                    keypath="pages.medical_service.edof.table.contrast.title"
+                    tag="div"
+                    scope="global"
+                    class="lens-table-subtitle"
+                  >
+                    <template #br><br /></template>
+                  </i18n-t>
                 </td>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.contrast.edof"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                  <template #mbr><br class="block lg:hidden" /></template>
+                </i18n-t>
                 <td class="lens-table-td">
-                  對比度高，<br />光暈或<br />眩光最小
+                  {{ t('pages.medical_service.edof.table.contrast.monofocal') }}
                 </td>
-                <td class="lens-table-td">遠視對比度較好</td>
-                <td class="lens-table-td">
-                  對比度較好，<br />可能會產生<br />眩光或光暈
-                </td>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.contrast.multifocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                  <template #mbr><br class="block lg:hidden" /></template>
+                  <template #pcbr><br class="hidden lg:block" /></template>
+                </i18n-t>
               </tr>
               <tr class="lens-table-bb">
                 <td class="bg-[#fcfcfc]">
-                  <div class="lens-table-subtitle">優點</div>
+                  <div class="lens-table-subtitle">
+                    {{ t('pages.medical_service.edof.table.advantages.title') }}
+                  </div>
                 </td>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.advantages.edof"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                  <template #mbr><br class="block lg:hidden" /></template>
+                </i18n-t>
                 <td class="lens-table-td">
-                  焦距清楚<br />
-                  可擴展景深<br />
-                  較小眩光
+                  {{
+                    t('pages.medical_service.edof.table.advantages.monofocal')
+                  }}
                 </td>
-                <td class="lens-table-td">提供遠距離清楚度</td>
-                <td class="lens-table-td">
-                  可保持視覺<br class="block md:hidden" />立體感
-                </td>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.advantages.multifocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #mbr><br class="block lg:hidden" /></template>
+                </i18n-t>
               </tr>
               <tr class="lens-table-bb">
                 <td class="bg-[#fcfcfc]">
-                  <div class="lens-table-subtitle">眼鏡<br />使用性</div>
+                  <div class="lens-table-subtitle">
+                    <i18n-t
+                      keypath="pages.medical_service.edof.table.glasses.title"
+                      tag="div"
+                      scope="global"
+                      class="lens-table-subtitle"
+                    >
+                      <template #br><br /></template>
+                      <template #mbr><br class="block md:hidden" /></template>
+                    </i18n-t>
+                  </div>
                 </td>
-                <td class="lens-table-td">
-                  大部份患者於術後康<br />復後，工作時可減少<br />或不需配戴眼鏡
-                </td>
-                <td class="lens-table-td">
-                  近距離閱讀時<br />可能需要配戴眼鏡
-                </td>
-                <td class="lens-table-td">
-                  日常比較小<br class="block md:hidden" />需要配戴眼鏡
-                </td>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.glasses.edof"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.glasses.monofocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.glasses.multifocal"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
               </tr>
               <tr>
                 <td class="bg-[#fcfcfc]">
                   <div class="lens-table-subtitle">
-                    合適<br class="block md:hidden" />人士
+                    <i18n-t
+                      keypath="pages.medical_service.edof.table.suitable.title"
+                      tag="div"
+                      scope="global"
+                      class="lens-table-subtitle"
+                    >
+                      <template #mbr><br class="block md:hidden" /></template>
+                    </i18n-t>
                   </div>
                 </td>
+                <i18n-t
+                  keypath="pages.medical_service.edof.table.suitable.edof"
+                  tag="td"
+                  scope="global"
+                  class="lens-table-td relative"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                  <template #pcbr><br class="hidden md:block" /></template>
+                </i18n-t>
                 <td class="lens-table-td relative">
-                  適合患有白內障<br class="block lg:hidden" />且希望<br
-                    class="hidden lg:block"
-                  />減少眼鏡<br class="block lg:hidden" />依賴的患者
+                  {{ t('pages.medical_service.edof.table.suitable.monofocal') }}
                 </td>
-                <td class="lens-table-td relative">可配合佩戴眼鏡人士</td>
                 <td class="lens-table-td lg:min-h-[232px] relative">
-                  經常進行戶外活動
+                  {{
+                    t('pages.medical_service.edof.table.suitable.multifocal')
+                  }}
                   <nuxt-link
                     to="/cataract/multifocal-lens"
                     class="absolute-horizon -bottom-4 z-10"
@@ -285,8 +425,15 @@ const faqs = [
                       <div
                         class="lens-table-more multifocal text-[#4886CE] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
                       >
-                        <span>按此</span>
-                        <span>了解更多</span>
+                        <i18n-t
+                          keypath="pages.medical_service.edof.table.more"
+                          tag="span"
+                          scope="global"
+                        >
+                          <template #mbr
+                            ><br class="block md:hidden"
+                          /></template>
+                        </i18n-t>
                       </div>
                     </div>
                   </nuxt-link>
@@ -308,31 +455,40 @@ const faqs = [
             />
           </svg>
           <div class="text-primary text-sm font-bold tracking-widest">
-            左右滑動以觀看表格
+            {{ t('pages.medical_service.edof.table.swiper') }}
           </div>
         </div>
         <p
           class="text-sm lg:text-2xl text-primary leading-[1.2] tracking-widest font-bold mb-8 lg:mb-12"
         >
-          *單焦晶體配合EDOF,
-          亦可以於近、中、遠距離,減少對老花眼鏡依賴，以及降低夜晚眩光帶來的影響現時客人除了可以選擇多焦晶體解決近、中、遠距離視野，亦有EDOF可供選擇，以配合不同人士需要
+          {{ t('pages.medical_service.edof.table.intro') }}
         </p>
         <a
           href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
           target="_blank"
           class="button-ws rounded-full text-white font-black relative"
         >
-          哪一款人工晶體適合你？
+          {{ t('pages.medical_service.edof.table.button') }}
         </a>
       </div>
     </section>
-    <section class="wrapper advantage mb-[64px] lg:mb-[112px]">
+    <section class="wrapper max-w-[1200px] advantage mb-[64px] lg:mb-[112px]">
       <div class="py-8 lg:pt-[68px] lg:pb-[128px] advantage-title">
-        <h2 class="title-normal mb-5 lg:mb-8">EDOF鏡片優點</h2>
-        <p
-          class="text-base lg:text-2xl text-primary text-justify leading-[1.6] lg:leading-[2] font-medium tracking-widest mx-auto md:w-4/5 lg:w-9/10"
+        <i18n-t
+          keypath="pages.medical_service.edof.advantage.title"
+          tag="h2"
+          scope="global"
+          class="title-normal mb-5 lg:mb-8"
         >
-          EDOF（延伸焦深）鏡片的主要優點是能提供從遠到中距離的連續視覺範圍，減少老花對眼鏡的依賴，並且對比於其他晶體的過渡更為順暢自然，光暈和眩光更少。
+          <template #mbr><br class="block lg:hidden" /></template>
+        </i18n-t>
+        <p
+          :class="[
+            'text-base lg:text-2xl text-primary leading-[1.6] lg:leading-[2] font-medium tracking-widest mx-auto md:w-4/5 lg:w-9/10',
+            locale === 'en' ? '' : 'text-justify ',
+          ]"
+        >
+          {{ t('pages.medical_service.edof.advantage.intro') }}
         </p>
       </div>
       <div
@@ -346,11 +502,17 @@ const faqs = [
           <div
             class="flex lg:flex-col justify-between items-center lg:items-start lg:justify-center lg:gap-4 mb-2"
           >
-            <h3
-              class="advantage-subtitle flex-1 pl-5 order-1 lg:order-2 text-lg lg:text-2xl font-bold whitespace-pre-line lg:min-h-[64px] flex items-center"
+            <i18n-t
+              :keypath="item.title"
+              tag="h3"
+              scope="global"
+              :class="[
+                'advantage-subtitle flex-1 pl-5 order-1 lg:order-2 text-lg font-bold whitespace-nowrap lg:min-h-[64px] flex items-center',
+                locale === 'en' ? 'lg:text-xl' : 'lg:text-2xl',
+              ]"
             >
-              {{ item.title }}
-            </h3>
+              <template #br><br /></template>
+            </i18n-t>
             <div
               class="order-2 lg:order-1 advantage-icon w-[52px] h-12 lg:w-3/5 mx-auto lg:h-[128px] flex justify-end lg:justify-center items-center"
             >
@@ -358,15 +520,20 @@ const faqs = [
             </div>
           </div>
           <p
-            class="text-justify text-base lg:text-xl font-medium leading-[1.85]"
+            :class="[
+              'text-base font-medium leading-[1.85]',
+              locale === 'en' ? 'lg:text-xl' : 'text-justify lg:text-xl',
+            ]"
           >
-            {{ item.intro }}
+            {{ t(item.intro) }}
           </p>
         </div>
       </div>
     </section>
-    <section class="wrapper mb-40">
-      <h2 class="title-normal mb-12 lg:mb-22">擴展景深人工晶體常見問題</h2>
+    <section class="faq wrapper mb-40">
+      <h2 class="title-normal mb-12 lg:mb-22">
+        {{ t('pages.medical_service.edof.faq.title') }}
+      </h2>
       <PageCollapse
         :answer="faqs"
         downarr="edof"
@@ -376,6 +543,22 @@ const faqs = [
   </div>
 </template>
 <style lang="scss" scoped>
+html[lang=en] {
+  .button-ws {
+    letter-spacing: 0.1em;
+    font-size: 3.2vw;
+  }
+  .lens-table-subtitle,.lens-table .lens-table-title {
+    white-space: normal;
+  }
+  .lens-table-th {
+    min-width: 124px;
+    max-width: 312px;
+  }
+  .lens-table .lens-table-subtitle {
+    min-width: 88px;
+  }
+}
 %advantage-circle {
   content: '';
   position: absolute;
@@ -496,6 +679,8 @@ const faqs = [
     width: 15.128vw;
     white-space: nowrap;
     text-align: center;
+    min-width: 60px;
+    width: 100%;
   }
 }
 .button-ws {
@@ -611,7 +796,21 @@ const faqs = [
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .faq :deep(.el-collapse-item:nth-child(4) .el-collapse-item__header) {
+    height: 120px;
+  }
+}
 @media screen and (min-width: 768px) {
+  html[lang=en] {
+    .button-ws {
+      letter-spacing: 0.1em;
+      font-size: min(52px,2.2vw);
+    }
+    .lens-table-subtitle {
+      width: 212px;
+    }
+  }
   .button-ws {
     border: min(9px, 0.4688vw) solid #fff;
     font-size: min(52px, 2.7083vw);
@@ -647,6 +846,7 @@ const faqs = [
       display: flex;
       justify-content: center;
       align-items: center;
+      min-width: 212px;
     }
   }
 }
@@ -741,6 +941,18 @@ const faqs = [
           border-left-width: 1px;
         }
       }
+    }
+  }
+}
+@media screen and (min-width: 1280px) {
+  html[lang=en] {
+    .lens-table .lens-table-td:nth-child(2) {
+      width: 360px;
+      min-width: 360px;
+    }
+    .lens-table .lens-table-td:nth-child(3),.lens-table .lens-table-td:nth-child(4) {
+      width: 290px;
+      min-width: 290px;
     }
   }
 }

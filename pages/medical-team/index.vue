@@ -41,6 +41,81 @@ const doctorList: any = ref([
   },
 ])
 
+const handleShare = async (doc: any, index: number) => {
+  if (!process.client) return
+
+  const docTitle = doc.doctorName || ''
+  const docSub = doc.doctorEnName || ''
+  const docId = doc.id || index
+
+  // === 核心優化：解析 HTML 標籤並自動加上「、」號分隔 ===
+  let pureBioText = ''
+  if (doc.doctorEducation) {
+    if (typeof doc.doctorEducation === 'string') {
+      // 1. 創建臨時節點解析 HTML
+      const tempDiv = document.createElement('div')
+      tempDiv.innerHTML = doc.doctorEducation
+
+      // 2. 獲取所有段落標籤（p標籤），提取文本並用「、」號拼接
+      const paragraphs = tempDiv.querySelectorAll('p')
+      const eduList: string[] = []
+
+      paragraphs.forEach((p) => {
+        const text = p.innerText || p.textContent || ''
+        const cleanText = text.trim()
+        // 過濾掉空行或包含 <br> 的空標籤
+        if (cleanText && cleanText !== '<br>') {
+          eduList.push(cleanText)
+        }
+      })
+
+      // 使用頓號/逗號進行連接
+      pureBioText = eduList.join('、')
+    }
+  }
+
+  // 清洗換行符與多餘空格，並截取前 80 個字元
+  pureBioText = pureBioText.replace(/\s+/g, ' ').trim().substring(0, 80) + '...'
+
+  const route = useRoute()
+  const shareUrl = `${window.location.origin}${route.path}?docId=${docId}`
+
+  // === 核心優化：調整格式為「希瑪眼科XX醫生 簡介：...」 ===
+  const shareData = {
+    title: `希瑪眼科${docTitle}醫生 (${docSub})`,
+    text: `希瑪眼科${docTitle}醫生 簡介：${pureBioText}`,
+    url: shareUrl,
+  }
+
+  if (typeof navigator.share === 'function') {
+    try {
+      await navigator.share(shareData)
+    } catch (err) {
+      console.warn('用戶取消分享或環境受限:', err)
+    }
+  } else {
+    // 降級方案：自動複製或彈窗提示
+    if (
+      navigator.clipboard &&
+      typeof navigator.clipboard.writeText === 'function'
+    ) {
+      try {
+        await navigator.clipboard.writeText(
+          `${shareData.text} ${shareData.url}`
+        )
+        alert(`已自動複製 ${docTitle} 的名片連結，快去貼上分享給好友吧！`)
+      } catch (clipErr) {
+        prompt('請複製以下連結分享：', `${shareData.text} ${shareData.url}`)
+      }
+    } else {
+      prompt(
+        '請複製以下連結分享醫生名片：',
+        `${shareData.text} ${shareData.url}`
+      )
+    }
+  }
+}
+
 watch(
   locale,
   (newValue, oldValue) => {
@@ -48,30 +123,35 @@ watch(
   },
   { deep: true }
 )
-interface NewListType {
+interface DoctorItem {
+  doctorId: number | string
   doctorName: string
-  doctorIntro: string
+  doctorIntro?: string
   doctorEnName: string
   doctorEducation: string[]
   doctorImgUrl: string
+  doctorCard: string
+  doctorNameDr: string
 }
-const NewList = ref<NewListType[]>([])
+const NewList = ref<DoctorItem[]>([])
 const getData = async () => {
   NewList.value.splice(0)
   if (locale.value === 'zh-hk') {
     const { data }: any = await useFetch(
-      `https://hkcmereye.com/api.php/list/12/num/50`
+      `https://hkcmereye.com/api.php/list/12/num/100`
     )
     const res: any = JSON.parse(data.value)
-    const list: any = res.data.map((item: any, index: any) => {
+    const list: DoctorItem[] = res.data.map((item: any, index: any) => {
       return {
+        doctorId: Number(item.id),
         doctorName: item.title,
         doctorEnName: item.subtitle,
         doctorEducation: item.content,
         doctorImgUrl: item.ico,
+        doctorCard: item.ext_doctor_card,
+        doctorNameDr: `${item.title}${t('pages.medical_team.doctor')}`,
       }
     })
-
     list.forEach((item: any) => {
       NewList.value.push(item)
     })
@@ -82,12 +162,15 @@ const getData = async () => {
     )
     const res: any = JSON.parse(data.value)
 
-    const list: any = res.data.map((item: any, index: any) => {
+    const list: DoctorItem[] = res.data.map((item: any, index: number) => {
       return {
+        doctorId: Number(item.id),
         doctorName: item.title,
         doctorEnName: item.subtitle,
         doctorEducation: item.content,
         doctorImgUrl: item.ico,
+        doctorCard: item.ext_doctor_card,
+        doctorNameDr: `${item.title}${t('pages.medical_team.doctor')}`,
       }
     })
 
@@ -95,15 +178,37 @@ const getData = async () => {
       NewList.value.push(item)
     })
   }
+  // console.log(`length=${NewList.value.length},list=`, NewList.value)
 }
 
 onMounted(() => {
+  const route = useRoute()
+  const sharedDocId = route.query.docId
   setTimeout(() => {
     getData()
   }, 0)
 
   getWindowWidth()
   window.addEventListener('resize', getWindowWidth)
+  if (sharedDocId) {
+    // 对应模板绑定的 :id="`doc-${doc.id || index}`"
+    const targetDoctor = document.getElementById(`doc-${sharedDocId}`)
+    if (targetDoctor) {
+      setTimeout(() => {
+        targetDoctor.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        // WindiCSS 动态高亮
+        targetDoctor.classList.add(
+          'ring-2',
+          'ring-[#8AD8DD]',
+          'transition-all',
+          'duration-300'
+        )
+        setTimeout(() => {
+          targetDoctor.classList.remove('ring-2', 'ring-[#8AD8DD]')
+        }, 3000)
+      }, 400)
+    }
+  }
 })
 
 const windowWidth = ref(390)
@@ -135,70 +240,109 @@ const getWindowWidth = () => {
                 <div v-for="(ele, i) in doctorList[0].doctorEducation" :key="i">
                   <span>{{ $t(ele) }}</span>
                 </div>
-                <nuxt-link
-                  id="medicalTeamLink"
-                  class="orderLink text-white inline-block"
-                  to="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
-                  >{{ $t('pages.medical_team.doctor_order') }}</nuxt-link
-                >
               </div>
             </div>
+            <div class="button-group">
+              <a
+                id="medicalTeamLink"
+                class="button appointment text-white inline-block"
+                href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
+                :data-doctor="t(doctorList[0].doctorName)"
+              >
+                <div class="icon">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M884.656 211.062C872 198.406 853.72 189.97 835.437 189.97h-52.03c-5.626-25.313-28.126-45-54.844-45h-56.25c-26.72 0-49.22 18.281-54.844 45H417.78c-5.625-25.313-28.125-45-54.844-45h-56.25c-26.718 0-49.218 18.281-54.843 45h-63.281c-18.282 0-36.563 7.031-49.22 21.093-14.062 14.063-21.093 32.344-21.093 50.625v120.938h787.5V261.687c0-18.28-7.031-36.562-21.094-50.625M118.25 452.938v368.437c0 39.375 30.938 70.312 70.313 70.312h646.874c39.376 0 70.313-32.343 70.313-70.312V452.938zm251.719 195.468h112.5V534.5h56.25v113.906h112.5v56.25h-112.5v113.906h-56.25V704.656h-112.5z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <span>{{ $t('pages.medical_team.doctor_order') }}</span>
+              </a>
+            </div>
           </div>
-          <div
-            class="docImg"
-            style="max-width: 312px"
-            :class="{ 'docImg-en': locale === 'en' }"
-          >
+          <div class="docImg" :class="{ 'docImg-en': locale === 'en' }">
             <div><img :src="doctorList[0].doctorImgUrl" /></div>
             <div class="docEnName">{{ $t(doctorList[0].doctorEnName) }}</div>
           </div>
         </li>
-
-        <li v-for="(item, index) in NewList" :key="index" class="docList">
+        <li v-for="(doc, index) in NewList" :key="index" class="docList">
           <div class="docDes" :class="{ 'docDes-en': locale === 'en' }">
             <div :class="['docName', { 'docName-en': locale === 'en' }]">
-              {{ item.doctorName }}
+              {{ doc.doctorName }}
             </div>
-            <div v-if="item.doctorIntro" class="doctorIntro">
-              {{ item.doctorIntro }}
+            <div v-if="doc.doctorIntro" class="doctorIntro">
+              {{ doc.doctorIntro }}
             </div>
             <div class="docEducation">
               <div class="edutitle" :class="{ 'edutitle-en': locale === 'en' }">
                 {{ $t('pages.medical_team.doctor_edu') }}
               </div>
-              <div>
-                <div
-                  :key="item.doctorEducation.toString()"
-                  v-html="item.doctorEducation"
-                ></div>
-                <nuxt-link
-                  id="medicalTeamLink"
-                  class="orderLink text-white inline-block"
-                  to="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
-                  >{{ $t('pages.medical_team.doctor_order') }}</nuxt-link
-                >
-              </div>
+              <div
+                :key="doc.doctorEducation.toString()"
+                v-html="doc.doctorEducation"
+              ></div>
+            </div>
+            <div class="button-group">
+              <a
+                id="medicalTeamLink"
+                class="button appointment text-white inline-block"
+                href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
+                :data-doctor="doc.doctorName"
+              >
+                <div class="icon">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M884.656 211.062C872 198.406 853.72 189.97 835.437 189.97h-52.03c-5.626-25.313-28.126-45-54.844-45h-56.25c-26.72 0-49.22 18.281-54.844 45H417.78c-5.625-25.313-28.125-45-54.844-45h-56.25c-26.718 0-49.218 18.281-54.843 45h-63.281c-18.282 0-36.563 7.031-49.22 21.093-14.062 14.063-21.093 32.344-21.093 50.625v120.938h787.5V261.687c0-18.28-7.031-36.562-21.094-50.625M118.25 452.938v368.437c0 39.375 30.938 70.312 70.313 70.312h646.874c39.376 0 70.313-32.343 70.313-70.312V452.938zm251.719 195.468h112.5V534.5h56.25v113.906h112.5v56.25h-112.5v113.906h-56.25V704.656h-112.5z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <span>{{ $t('pages.medical_team.doctor_order') }}</span>
+              </a>
+              <button
+                @click="handleShare(doc, Number(index))"
+                class="button share"
+                :data-doctor="doc.doctorName"
+              >
+                <div class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      fill="currentColor"
+                      d="M10.25 3a.75.75 0 0 1 0 1.5h-3.5A2.25 2.25 0 0 0 4.5 6.75v10.5l.012.23A2.25 2.25 0 0 0 6.75 19.5h10.5a2.25 2.25 0 0 0 2.25-2.25v-2a.75.75 0 0 1 1.5 0v2A3.75 3.75 0 0 1 17.25 21H6.75a3.75 3.75 0 0 1-3.745-3.557L3 17.25V6.75A3.75 3.75 0 0 1 6.75 3zm4.687-.932a.75.75 0 0 1 .801.113l7 6a.75.75 0 0 1 .032 1.109l-7 6.75a.75.75 0 0 1-1.27-.54v-2.976c-1.014.064-1.97.273-2.94.769c-1.136.581-2.344 1.581-3.689 3.303l-.271.354a.75.75 0 0 1-1.35-.45c0-2.857.687-5.59 2.168-7.628c1.376-1.893 3.41-3.147 6.082-3.344V2.75l.008-.109a.75.75 0 0 1 .429-.573"
+                    ></path>
+                  </svg>
+                </div>
+                <span>{{ $t('pages.medical_team.share.button') }}</span>
+              </button>
             </div>
           </div>
           <div class="docImg" :class="{ 'docImg-en': locale === 'en' }">
             <div>
               <img
                 :src="
-                  item.doctorImgUrl.includes('https')
-                    ? item.doctorImgUrl
-                    : 'https://hkcmereye.com' + item.doctorImgUrl
+                  doc.doctorImgUrl.includes('https')
+                    ? doc.doctorImgUrl
+                    : 'https://hkcmereye.com' + doc.doctorImgUrl
                 "
-                :alt="`希瑪眼科中心_眼科醫生_${item.doctorName}眼科醫生`"
-                :title="`希瑪眼科中心_眼科醫生_${item.doctorName}眼科醫生`"
+                :alt="`希瑪眼科中心_眼科醫生_${doc.doctorName}眼科醫生`"
+                :title="`希瑪眼科中心_眼科醫生_${doc.doctorName}眼科醫生`"
               />
             </div>
-            <div class="docEnName">{{ item.doctorEnName }}</div>
+            <div class="docEnName">{{ doc.doctorEnName }}</div>
           </div>
         </li>
       </ul>
       <div v-else>
         <ul>
-          <li class="docList">
+          <li class="docList relative">
             <div class="docDes" :class="{ 'docDes-en': locale === 'en' }">
               <div :class="['docName', { 'docName-en': locale === 'en' }]">
                 {{ $t(doctorList[0].doctorName) }}
@@ -220,20 +364,31 @@ const getWindowWidth = () => {
                   >
                     <span>{{ $t(ele) }}</span>
                   </div>
-                  <nuxt-link
-                    id="medicalTeamLink"
-                    class="orderLink text-white inline-block"
-                    to="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
-                    >{{ $t('pages.medical_team.doctor_order') }}</nuxt-link
-                  >
                 </div>
               </div>
             </div>
-            <div
-              class="docImg"
-              style="max-width: 312px"
-              :class="{ 'docImg-en': locale === 'en' }"
-            >
+            <div class="button-group absolute -bottom-[120px]">
+              <a
+                id="medicalTeamLink"
+                class="button appointment text-white inline-block"
+                href="https://mqj.zoosnet.net/LR/Chatpre.aspx?id=MQJ40126824&cid=7f3c58ea65c34d9d82c1f6455384212f&lng=big5&sid=cd5457bae7eb4c9db0534553310cb509&p=https%3A//hkcmereye.com/&rf1=&rf2=&msg=&e=hkcmereye.com[youce-goutong]&d=1692676040714"
+                :data-doctor="t(doctorList[0].doctorName)"
+              >
+                <div class="icon">
+                  <svg
+                    viewBox="0 0 1024 1024"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M884.656 211.062C872 198.406 853.72 189.97 835.437 189.97h-52.03c-5.626-25.313-28.126-45-54.844-45h-56.25c-26.72 0-49.22 18.281-54.844 45H417.78c-5.625-25.313-28.125-45-54.844-45h-56.25c-26.718 0-49.218 18.281-54.843 45h-63.281c-18.282 0-36.563 7.031-49.22 21.093-14.062 14.063-21.093 32.344-21.093 50.625v120.938h787.5V261.687c0-18.28-7.031-36.562-21.094-50.625M118.25 452.938v368.437c0 39.375 30.938 70.312 70.313 70.312h646.874c39.376 0 70.313-32.343 70.313-70.312V452.938zm251.719 195.468h112.5V534.5h56.25v113.906h112.5v56.25h-112.5v113.906h-56.25V704.656h-112.5z"
+                      fill="currentColor"
+                    ></path>
+                  </svg>
+                </div>
+                <span>{{ $t('pages.medical_team.doctor_order') }}</span>
+              </a>
+            </div>
+            <div class="docImg" :class="{ 'docImg-en': locale === 'en' }">
               <div><img :src="doctorList[0].doctorImgUrl" /></div>
               <div class="docEnName">{{ $t(doctorList[0].doctorEnName) }}</div>
             </div>
@@ -253,6 +408,63 @@ const getWindowWidth = () => {
 
 :depp(.footerMenu .footerImg) {
   right: -20vw;
+}
+.button-group {
+  z-index: 10;
+  background: #efe8d9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 24px;
+  padding: 0 24px;
+  width: 100%;
+  .button {
+    height: 52px;
+    font-family: 'Noto Sans HK';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    z-index: 15;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    border: none;
+    &.appointment {
+      color: #8ad8dd;
+      .icon {
+        background: #8ad8dd;
+      }
+    }
+    &.save {
+      color: #d7a889;
+      .icon {
+        background: #d7a889;
+      }
+    }
+    &.share {
+      color: #81c4f5;
+      .icon {
+        background: #81c4f5;
+      }
+    }
+  }
+  .icon {
+    padding: 4px;
+    color: #fff;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 .medical-team {
@@ -316,6 +528,7 @@ const getWindowWidth = () => {
         margin-top: -45px;
         position: relative;
         z-index: 9;
+        flex: 1;
       }
       .docImg {
         max-width: 265px;
@@ -339,22 +552,6 @@ const getWindowWidth = () => {
           position: absolute;
           z-index: 10;
         }
-      }
-      .orderLink {
-        width: 130px;
-        height: 51px;
-        background: #8ad8dd;
-        line-height: 51px;
-        font-family: 'Noto Sans HK';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        text-align: center;
-        letter-spacing: 0.1em;
-        color: #ffffff;
-        cursor: pointer;
-        z-index: 15;
-        margin: 43px 0 0 200px;
       }
       .docName {
         font-family: 'Noto Sans HK';
@@ -406,11 +603,11 @@ const getWindowWidth = () => {
     }
   }
 
-  ul > li:nth-child(2) {
-    .orderLink {
-      bottom: -40px !important;
-    }
-  }
+  // ul > li:nth-child(2) {
+  //   .orderLink {
+  //     bottom: -40px !important;
+  //   }
+  // }
 
   ul > li:nth-child(10) {
     & > a {
@@ -419,14 +616,14 @@ const getWindowWidth = () => {
   }
 
   ul > li:nth-child(1) {
-    .orderLink {
-      bottom: -80px !important;
-    }
+    // .orderLink {
+    //   bottom: -80px !important;
+    // }
 
     & > div:nth-child(2) {
       & > div:nth-child(2) {
         top: 74px;
-        left: -84px;
+        left: -124px;
       }
     }
   }
@@ -760,8 +957,8 @@ const getWindowWidth = () => {
       }
 
       & > div:nth-child(2) {
-        left: -174px;
-        top: 117px;
+        left: -260px;
+        top: 240px;
       }
 
       & > div:nth-child(1)::before {
@@ -887,7 +1084,7 @@ const getWindowWidth = () => {
       }
       & > div:nth-child(2) {
         left: -276px;
-        top: 220px;
+        top: 212px;
       }
       & > div:nth-child(1)::before {
         background: #f2f2f2;
@@ -986,7 +1183,7 @@ const getWindowWidth = () => {
         position: relative;
       }
       & > div:nth-child(2) {
-        left: -138px;
+        left: -168px;
         top: 94px;
       }
       & > div:nth-child(1)::before {
@@ -1045,14 +1242,14 @@ const getWindowWidth = () => {
             max-width: 45%;
           }
         }
-        .orderLink {
-          width: 90px;
-          height: 34px;
-          font-size: 16px;
-          line-height: 34px;
-          margin: 24px auto 0 0;
-          display: block;
-        }
+        // .orderLink {
+        //   width: 90px;
+        //   height: 34px;
+        //   font-size: 16px;
+        //   line-height: 34px;
+        //   margin: 24px auto 0 0;
+        //   display: block;
+        // }
 
         .docName {
           position: absolute;
@@ -1130,9 +1327,9 @@ const getWindowWidth = () => {
 
     ul > li:nth-child(1) {
       max-height: 266px;
-      .orderLink {
-        bottom: 10px !important;
-      }
+      // .orderLink {
+      //   bottom: 10px !important;
+      // }
 
       & > div:nth-child(2) {
         .docEnName {
@@ -1140,9 +1337,9 @@ const getWindowWidth = () => {
         }
       }
 
-      & > div:nth-child(2) {
-        margin-top: 20px !important;
-      }
+      // & > div:nth-child(2) {
+      //   margin-top: 20px !important;
+      // }
 
       &::before {
         content: '';

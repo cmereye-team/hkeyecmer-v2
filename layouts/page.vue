@@ -58,7 +58,6 @@ const isWhatFooter = () => {
       <slot name="footer">
         <!-- <PageFooter /> -->
         <component :is="isWhatFooter()"></component>
-
         <PageMbFooter />
       </slot>
     </div>

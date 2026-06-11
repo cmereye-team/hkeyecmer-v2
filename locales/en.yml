@@ -300,11 +300,23 @@ pages:
       awards_des_15: 「ESG約章」行動
       awards_des_16: 香港經濟日報企業大獎
       awards_des_17: '"Healthy Easy Awards 2024"'
-
   medical_team:
     medical_team: Medical Team
     medical_team_title: Medical Team
     medical_team_header_title: Medical Team | CMER Eye Center
+    doctor: ''
+    cmer: CMER ophthalmologist
+    namecard: namecard
+    save:
+      button: Save to mobile
+      download: Namecard has started downloading
+      album: Press and hold the image to save namecard
+      filename: namecard
+      success: Save Successful
+    share:
+      button: Share
+      intro: 'profile:'
+      copy: Copy Success
     doctorList:
       doctor_1:
         doctor_1_name: DR. LAM SHUN CHIU, DENNIS
@@ -754,18 +766,80 @@ pages:
       title: Extended Depth of Focus
       title_en: Extended Depth of Focus (EDOF)
       abbr: EDOF
+      intro: Extended Depth of Focus (EDOF) intraocular lenses (IOLs) represent a new generation of advanced lens technology. These lenses use optical principles to focus incoming light onto an extended focal plane, rather than a single point. As a result, EDOF IOLs provide not only seamless vision across multiple distances but also a wider and more continuous range of vision, while minimizing common visual disturbances such as glare and halos. By reducing cataract patients’ dependence on glasses after surgery, EDOF technology enhances overall visual quality and improves quality of life.
+      desc: During the surgical procedure, the ophthalmologist removes the clouded natural lens (the cataract) from the eye and replaces it with an artificial IOL. Currently, various types of IOLs are available, each offering distinct features and benefits.
+      table:
+        title: Currently available {mbr}IOL Comparison
+        name:
+          title: Feature
+          edof: Extended Depth of {br}Focus (EDOF) IOL
+          monofocal: Monofocal IOL
+          multifocal: Multifocal IOL
+        type:
+          title: Purpose
+          edof: Refractive lens exchange / Cataract
+          monofocal: Cataract
+          multifocal: Refractive lens exchange / Cataract
+        focal:
+          title: Focal Range
+          edof: Suitable for distance and intermediate vision, or intermediate and near vision
+          monofocal: Primarily distance vision
+          multifocal: Suitable for distant, intermediate and near vision
+        contrast:
+          title: Contrast in {br}Low Light
+          edof: Good contrast sensitivity with minimal glare
+          monofocal: Best contrast
+          multifocal: Fair contrast, but glare or halos may occur
+        advantages:
+          title: Advantages
+          edof: Very good visual quality within the focal range. Continuous range of vision. Good contrast sensitivity. Minimal/ no halos, glare and starbursts.
+          monofocal: Provides the best visual quality at the chosen focal range
+          multifocal: Provides good distant, intermediate and near vision
+        glasses:
+          title: Post-operative Dependence on Glasses
+          edof: Glasses may be required for vision outside of focal range
+          monofocal: Glasses are usually required for vision outside the focal range
+          multifocal: Glasses usually not required
+        suitable:
+          title: Suitable for
+          edof: Wish to reduce dependence on glasses. Drives at night.
+          monofocal: Accepts glasses when required. Prioritise higher visual quality.Budget considerations.
+          multifocal: Prefer not to wear glasses. Accepts lower contrast sensitivity, halos, glare and starbursts. Does not drive at night. Does not require high precision vision, especially in low light conditions.
+        more: Learn More
+        swiper: Swipe left or right to view the table
+        intro: '*Monofocal IOLs combined with EDOF technology can provide clear vision at near, intermediate, and distance ranges, reducing the need for reading glasses while minimizing the impact of nighttime glare. In addition to multifocal IOLs, patients now have the option of EDOF lenses to better suit their individual visual needs and lifestyles.'
+        button: Which Intraocular Lens Is Right for You?
+      advantage:
+        title: Advantages of {mbr}EDOF IOLs
+        intro: EDOF (Extended Depth of Focus) lenses are designed to provide a continuous range of vision — from distance (e.g. reading road signs) to intermediate (e.g. using a computer), or from intermediate to near (e.g. reading or using a mobile phone), helping reduce dependence on reading glasses. Compared with other types of IOLs, EDOF lenses offer a smoother and more natural visual experience, with improved contrast and minimal to no glare or halo effects.
+        clear:
+          title: Clear Vision {br}Across a {br}Wider Range
+          intro: Excellent visual quality from distance to intermediate, or intermediate to near vision, making EDOF lenses ideal for work and everyday activities.
+        glare:
+          title: Reduced Glare {br}and Halo and Light {br}Disturbances and {br}Light Disturbances
+          intro: The design of EDOF lenses lowers light scattering, enhancing clarity in low-light conditions and minimizing visual interference caused by glare and halo.
+        lowlight:
+          title: Better Performance {br}in Low-Light {br}Environments
+          intro: Even in dim lighting, EDOF lenses maintain clear extended focus, making them suitable for night driving or in other low-light settings.
+        reading:
+          title: Highly Compatible {br}with Digital Devices
+          intro: Whether using computers, tablets or smartphones, EDOF lenses optimize intermediate vision for a more comfortable viewing experience.
+        glasses:
+          title: Less Dependence {br}on Glasses
+          intro: Most daily activities can be enjoyed without glasses.
       faq:
-        q1: 使用 EDOF 人工晶體後，是否還需要佩戴眼鏡？
-        a1: EDOF 人工晶體能滿足大部份日常生活需求，但極遠距離時，可能仍需輔助眼鏡。EDOF 人工晶體能滿足大部份日常生活需求，是否需要配戴眼鏡取決於觀看的距離以及生活習慣。
-        q2: 是否所有白內障患者都適合 EDOF 人工晶體？
-        a2: 並非所有患者都適合 EDOF 人工晶體。醫生會根據患者的眼睛健康狀況、生活方式和視力需求進行詳細評估，推薦最合適的人工晶體類型。
-        q3: EDOF 人工晶體和多焦點人工晶體有什麼不同？
-        a3: EDOF 人工晶體利用延展焦距技術，能在遠及中距離提供無縫連續視覺，並大幅減少光暈和眩光。相較之下，多焦點人工晶體近距離視力更清楚，但視覺副作用較多。對於夜間活動頻繁或對光線干擾敏感者而言，EDOF晶體是更合適的選擇。建議患者在選擇前向眼科醫生諮詢，制定適合的方案。
-        q4: 兩隻眼都必須用 EDOF 人工晶體嗎？可以混搭其他類型晶體嗎？
-        a4: 一般情況下，雙眼皆植入 EDOF 人工晶體可獲得更佳整體視覺效果與深度感。然而，也可採用混合方案，例如一隻眼植入單焦鏡片負責遠距離視力，另一隻眼植入 EDOF 鏡片以提升中、近距離視覺，兩眼互相配合以滿足多距離需求。只要雙眼度數差異不大，大部分人都能自然適應。但因雙眼對焦距離略有不同，適應時間稍長，並非所有人士適合。建議患者在選擇前向眼科醫生諮詢意見，制定適合的方案。
-        q5: EDOF 人工晶體在夜間駕駛時的表現如何？
-        a5: EDOF人工晶體在夜間駕駛方面表現良好。相較於多焦點人工晶體，夜間燈光下更少出現光環或眩光，視覺對比度與清晰度穩定自然，即使在昏暗環境中也能保持舒適視覺。其延長焦距設計使適應期更短，一般數天即可重拾清楚視力。
-    lensTypes:
+        title: Frequently Asked Questions
+        q1: Will I still need to wear glasses after I used an EDOF IOL?
+        a1: While most daily activities can be performed without glasses after EDOF IOL implantation, glasses may still be needed for reading very fine print or performing extreme near tasks, such as threading a needle.
+        q2: Are all cataract patients suitable for EDOF IOLs?
+        a2: Not all patients are suitable candidates for EDOF intraocular lenses. An ophthalmologist will conduct a thorough assessment based on the patient's eye health, lifestyle, and visual needs, and then recommend the most appropriate type of IOL.
+        q3: What is the difference between EDOF IOLs and multifocal IOLs?
+        a3: EDOF IOLs use extended depth of focus technology to provide smooth, continuous vision from distance to intermediate, or intermediate to near ranges, while significantly reducing glare and halo effects. Multifocal IOLs offer a wider range of vision, but patients may experience more visual disturbances, such as reduced contrast sensitivity, glare, and halos. Therefore, for individuals who are sensitive to light glare or visual disturbances, EDOF lenses may be a more suitable option. Patients are advised to consult an ophthalmologist before surgery to determine the most appropriate treatment plan.
+        q4: Do both eyes need to be implanted with EDOF intraocular lenses? Can they be combined with other types of lenses?
+        a4: In general, implanting the same type of IOL in both eyes provides better overall visual quality and depth perception. However, a blended (or mixed) approach may also be used. For example, one eye receives a monofocal IOL optimized for distance vision, while the other eye receives an EDOF lens to improve near and intermediate vision. This combination can help meet a wider range of visual needs. As long as the difference in refractive power between the two eyes is not significant, most patients can adapt naturally. However, the adaptation period may vary due to differences in focal distance between the eyes, and not all patients are suitable candidates. Patients are advised to consult an ophthalmologist before surgery to develop a personalized treatment plan.
+        q5: How do EDOF intraocular lenses perform for night driving?
+        a5: EDOF IOLs are generally suitable for night driving. Compared with multifocal IOLs, EDOF IOLs are associated with fewer issues related to glare and halo effects under low-light conditions, providing better contrast sensitivity and clearer vision. Even in dim environments, EDOF lenses help maintain comfortable visual clarity. Additionally, their extended depth-of-focus design allows for a shorter adaptation period, and most patients are able to regain clear vision within a few days after surgery.
+    intraocular:
       title: IOL Lens Comparison Chart
       pagetitle: 白內障人工晶體種類
       comparison: 白內障人工晶體比較表
@@ -3349,3 +3423,7 @@ tdk:
     title: 'Health Care Voucher'
     desc: 'To ensure the health of the elderly and alleviate the medical burden on them and their families,the government launched the &quot;Health Care Voucher(HCV)&quot;  scheme in 2009 to subsidize eligible seniors for private primary healthcare services. This initiative allows seniors  to choose private healthcare services that best meet their health needs, enabling them to receive professional  diagnosis, examinations, and treatments promptly while  reducing the burden on public healthcare. C-MER Eye Centre accepts &quot; Health Care Voucher(HCV)&quot; for related eye  examination services, eye disease diagnosis, and ophthalmic treatments.'
     key: 'Health Care Voucher  elderly healthcare elderly health elderly health care voucher scheme medical assistance medical service ophthalmologist hong kong ophthalmology eye examination medical expenses health protection cmer eye cmer'
+  edof:
+    title: 'Extended Depth of Focus | CMER Eye Center'
+    desc: 'Hong Kong CMER Eye Center is a leading institution specializing in the field of ophthalmology, offering a comprehensive range of optometry and eye examination services. Their medical expertise covers a broad spectrum of ophthalmological conditions, including cataracts, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital disorders, ophthalmic plastic surgery, and eye tumors. Moreover, their services extend to myopia control and various other ophthalmic procedures. To cater to the needs of patients in Hong Kong, CMER Eye Center operates a network of 10 well-equipped eye clinics, staffed by a dedicated team of 22 highly skilled ophthalmologists. These ophthalmologists possess extensive knowledge and experience in the field of ophthalmology, ensuring that patients receive the highest quality of care. Guided by the expertise of renowned ophthalmologist Dr. LAM Shun Chiu, Dennis, the team at CMER Eye Center is committed to delivering professional eye medical services, conducting thorough eye examinations, and providing comprehensive ophthalmic care to patients across Hong Kong.'
+    key: 'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic'
