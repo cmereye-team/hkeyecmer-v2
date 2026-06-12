@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-04-15 15:30:43
- * @LastEditTime: 2026-06-11 10:56:00
+ * @LastEditTime: 2026-06-12 14:30:54
  * @FilePath: /pages/cataract/intraocular-lens-types.vue
  * @Description: 人工晶体比较表
 -->
@@ -10,6 +10,7 @@ definePageMeta({
   layout: 'page',
 })
 const { t } = useLang()
+const locale = useState<string>('locale.setting')
 useHead(() => ({
   title: t('tdk.intraocular.title'),
   meta: [
@@ -138,7 +139,12 @@ const lensList: lensItem[] = [
         </svg>
       </div>
       <div
-        class="intro-desc text-primary rounded-4xl text-base lg:text-2xl text-justify font-medium tracking-widest leading-[1.6] p-4 lg:p-0"
+        :class="[
+          'intro-desc text-primary rounded-4xl text-base lg:text-2xl font-medium leading-[1.6] p-4 lg:p-0',
+          locale === 'en'
+            ? 'text-center tracking-wide'
+            : 'text-justify tracking-widest',
+        ]"
       >
         <p>
           {{ t('pages.medical_service.intraocular.intro') }}
@@ -159,7 +165,7 @@ const lensList: lensItem[] = [
           <table class="w-full border-collapse">
             <thead>
               <tr>
-                <th>
+                <th class="lens-table-subtitle">
                   {{
                     t('pages.medical_service.intraocular.table.feature.title')
                   }}
@@ -173,13 +179,15 @@ const lensList: lensItem[] = [
                         class="w-full"
                       />
                     </div>
-                    <span class="lens-table-title text-outline text-[#EC8836]">
-                      {{
-                        t(
-                          'pages.medical_service.intraocular.table.feature.edof'
-                        )
-                      }}
-                    </span>
+                    <i18n-t
+                      keypath="pages.medical_service.intraocular.table.feature.edof"
+                      tag="span"
+                      scope="global"
+                      class="lens-table-title text-outline text-[#EC8836]"
+                    >
+                      <template #br><br /></template>
+                      <template #mbr><br class="block md:hidden" /></template>
+                    </i18n-t>
                   </div>
                 </th>
                 <th class="bg-[#55D1F0] lens-table-th">
@@ -245,7 +253,10 @@ const lensList: lensItem[] = [
               </tr>
             </thead>
             <tbody
-              class="text-[3.0769vw] md:text-2xl text-[#66696f] font-bold lg:font-medium leading-[1.5] tracking-widest whitespace-nowrap"
+              :class="[
+                'text-[3.0769vw] md:text-2xl text-[#66696f] font-bold lg:font-medium leading-[1.5] tracking-widest',
+                { 'whitespace-nowrap': locale !== 'en' },
+              ]"
             >
               <tr class="lens-table-bb">
                 <td class="bg-[#fcfcfc]">
@@ -335,9 +346,9 @@ const lensList: lensItem[] = [
                 <td class="bg-[#fcfcfc]">
                   <i18n-t
                     keypath="pages.medical_service.intraocular.table.glasses.title"
-                    tag="td"
+                    tag="div"
                     scope="global"
-                    class="lens-table-td"
+                    class="lens-table-subtitle"
                   >
                     <template #br><br /></template>
                     <template #mbr><br class="block md:hidden" /></template>
@@ -427,7 +438,10 @@ const lensList: lensItem[] = [
                   </nuxt-link>
                 </td>
                 <td
-                  class="lens-table-td text-justify lg:min-h-[232px] relative"
+                  :class="[
+                    'lens-table-td lg:min-h-[232px] relative',
+                    locale === 'en' ? 'text-center' : 'text-justify',
+                  ]"
                 >
                   <i18n-t
                     keypath="pages.medical_service.intraocular.table.suitable.multifocal"
@@ -464,7 +478,12 @@ const lensList: lensItem[] = [
                     </div>
                   </nuxt-link>
                 </td>
-                <td class="lens-table-td text-justify relative">
+                <td
+                  :class="[
+                    'lens-table-td relative',
+                    locale === 'en' ? 'text-center' : 'text-justify',
+                  ]"
+                >
                   <i18n-t
                     keypath="pages.medical_service.intraocular.table.suitable.monofocal"
                     tag="span"
@@ -542,7 +561,12 @@ const lensList: lensItem[] = [
             </picture>
             <div class="flex flex-col">
               <h3
-                class="text-lg lg:text-4xl tracking-wide font-bold leading-tight"
+                :class="[
+                  'tracking-wide font-bold leading-tight',
+                  locale === 'en'
+                    ? 'text-lg lg:text-3xl '
+                    : 'text-lg lg:text-4xl ',
+                ]"
               >
                 {{ lens.title }}
               </h3>
@@ -576,7 +600,12 @@ const lensList: lensItem[] = [
             ]"
           >
             <p
-              class="text-base lg:text-2xl font-medium leading-[1.4] lg:leading-[1.8] tracking-widest"
+              :class="[
+                'text-base font-medium ',
+                locale === 'en'
+                  ? 'lg:text-xl leading-normal tracking-wide'
+                  : 'lg:text-2xl leading-[1.4] lg:leading-[1.8] tracking-widest',
+              ]"
             >
               {{ lens.desc }}
             </p>
@@ -587,6 +616,23 @@ const lensList: lensItem[] = [
   </div>
 </template>
 <style lang="scss" scoped>
+html[lang=en] {
+  .lens-table .lens-table-subtitle {
+    white-space: normal;
+  }
+  .lens-table .lens-table-subtitle {
+    min-width: 92px;
+  }
+  .button-ws {
+    font-size: 4.8vw;
+    letter-spacing: 0.1em;
+  }
+  @media screen and (min-width: 768px) {
+    .button-ws {
+      font-size: min(52px, 2.7vw);
+    }
+  }
+}
 .absolute-horizon {
   position: absolute;
   left: 50%;

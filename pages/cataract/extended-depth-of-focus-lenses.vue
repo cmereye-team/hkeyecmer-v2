@@ -211,7 +211,7 @@ const faqs = [
             </thead>
             <tbody
               :class="[
-                'text-[3.0769vw] md:text-2xl text-[#66696f] font-bold lg:font-medium leading-[1.5] tracking-widest',
+                'text-[3.0769vw] md:text-lg xl:text-2xl text-[#66696f] font-bold lg:font-medium leading-[1.5] tracking-widest',
                 { 'whitespace-nowrap': locale !== 'en' },
               ]"
             >
@@ -805,7 +805,7 @@ html[lang=en] {
   html[lang=en] {
     .button-ws {
       letter-spacing: 0.1em;
-      font-size: min(52px,2.2vw);
+      font-size: min(42px,2.2vw);
     }
     .lens-table-subtitle {
       width: 212px;

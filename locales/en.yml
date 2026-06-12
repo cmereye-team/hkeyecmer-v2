@@ -841,8 +841,57 @@ pages:
         a5: EDOF IOLs are generally suitable for night driving. Compared with multifocal IOLs, EDOF IOLs are associated with fewer issues related to glare and halo effects under low-light conditions, providing better contrast sensitivity and clearer vision. Even in dim environments, EDOF lenses help maintain comfortable visual clarity. Additionally, their extended depth-of-focus design allows for a shorter adaptation period, and most patients are able to regain clear vision within a few days after surgery.
     intraocular:
       title: IOL Lens Comparison Chart
-      pagetitle: 白內障人工晶體種類
-      comparison: 白內障人工晶體比較表
+      pagetitle: Extended Depth of Focus{br}(EDOF) IOL
+      intro: When cataracts cause vision to become blurred, cataract surgery is often the best option for restoring clear sight. Today, this procedure not only removes the clouded natural lens but also offers a variety of intraocular lens (IOL) options tailored to different visual needs - such as distance (e.g. reading road signs), intermediate (e.g. using a computer), and near (e.g. reading or using a mobile phone) requirements. These options include monofocal IOLs, extended depth of focus (EDOF) IOLs, multifocal IOLs, and toric IOLs.
+      table:
+        title: Intraocular Lens {br}Comparison Table
+        feature:
+          title: Feature
+          edof: Extended Depth {br}of Focus{br}(EDOF) IOL
+          multifocal: Multifocal IOL
+          monofocal: Monofocal IOL
+          astigmatism: Toric IOL
+        focal:
+          title: Focal Range
+          edof: Suitable for distance and intermediatevision, or intermediate and near vision
+          multifocal: Suitable for distant, intermediate and near vision
+          monofocal: Primarily distance vision
+          astigmatism: Same as the selected type of IOL
+        benefits:
+          title: Key Benefits
+          edof: Very good visual quality within the focal range Continuous range of vision Good contrast sensitivity Minimal/ no halos, glare and starbursts
+          multifocal: Provides good distant, intermediate and near vision
+          monofocal: Provides the best visual quality at the chosen focal range
+          astigmatism: Corrects astigmatism
+        glasses:
+          title: Post-operative Dependence on Glasses
+          edof: Glasses may be required for vision outside of focal range
+          multifocal: Glasses usually not required
+          monofocal: Glasses are usually required for vision outside the focal range
+          astigmatism: Glasses no longer required for the correction of astigmatism
+        suitable:
+          title: Suitable Candidates
+          edof: •Wish to reduce dependence on glasses{br}•Drives at night
+          multifocal: •Prefer not to wear glasses{br}•Accepts lower contrast sensitivity, halos, glare and starbursts{br}•Does not drive at night{br}•Does not require high precision vision, especially in low light conditions
+          monofocal: •Accepts glasses when required{br}•Prioritise higher visual quality{br}•Budget considerations
+          astigmatism: Patients with astigmatism
+        more: Learn more
+        swiper: Swipe left or right to view the table
+        button: Which IOL is suitable for you?
+      list:
+        title: Intraocular Lenses for Cataract Surgery
+        edof:
+          title: Extended Depth of Focus Intraocular Lenses{br}(EDOF IOLs)
+          intro: EDOF IOLs have recently been developed and provide a continuous range of vision. They work by applying advanced optical principles to focus incoming light onto an expanded focal plane. As a result, they deliver smooth, continuous vision across multiple distances while offering a wider range of functional vision than monofocal IOLs, with minimal/ no glare, halos, or starburst effects compared to multifocal IOLs. By meeting most everyday visual needs, EDOF IOLs help to reduce dependence on glasses and enhance postoperative visual quality.
+        multifocal:
+          title: Multifocal Intraocular Lenses (MFIOLs)
+          intro: Compared with monofocal IOLs, which focus on only one distance, multifocal IOLs provide multiple focal points. This design allows patients to see clearly at various distances, helping to reduce the need for glasses. By enhancing visual convenience, multifocal intraocular lenses make daily activities easier and allow patients to enjoy greater spectacle independence in everyday life.
+        monofocal:
+          title: Monofocal Intraocular Lenses (Monofocal IOLs)
+          intro: Monofocal IOLs are designed to provide clear vision at a single focal distance — most commonly for distance vision. For intermediate or near tasks, such as using a computer or reading and using mobile phones, glasses may be required. This option is well suited for patients with simpler visual needs, or for those who require the best possible visual quality at a specific distance.
+        astigmatism:
+          title: Toric IOLs
+          intro: '"Toric IOL" is a general term used to describe intraocular lenses that incorporate toric correction technology. This technology corrects astigmatism, which — if left uncorrected — can lead to poor visual quality at all distances without glasses. All monofocal, EDOF, and multifocal IOLs can have this toric technology incorporated.'
     glaucoma: Glaucoma
     medical_service_glaucoma_head: Glaucoma｜CMER｜Medical Services
     service_glaucoma_title:
