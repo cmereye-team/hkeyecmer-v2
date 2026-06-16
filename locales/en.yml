@@ -558,6 +558,79 @@ pages:
       cataract_title: cataract
     multiFocal_intraocular_lens: Multi-focal intraocular lens
     Light_Adjustable_Lens: light adjustable lens
+    multifocal:
+      cataract: Cataract
+      title: Multifocal Lens
+      intro: Cataracts are a common eye condition in which the natural lens of the eye becomes cloudy with age. Advances in technology have made cataract surgery a safe and highly effective treatment option.
+      desc: During the procedure, the surgeon removes the clouded lens and replaces it with an intraocular lens (IOL). With continuous progress in medical science, IOLs now come with various focal options.
+      desc_pc: 'These IOLs can be categorized into three main types:'
+      table:
+        title: Currently available IOL Comparison
+        small: '(may require Blended Vision)*'
+        feature:
+          title: Feature
+          monofocal: Monofocal IOL
+          astigmatism: Toric IOL
+          multifocal: Multifocal IOL
+        purpose:
+          title: Purpose
+          small: ''
+          monofocal: Cataract
+          astigmatism: Same as the selected type of IOL
+          multifocal: Refractive lens exchange / Cataract
+        focal:
+          title: Focal Range
+          small: ''
+          monofocal: Primarily distance vision
+          astigmatism: Same as the selected type of IOL
+          multifocal: Suitable for distant, intermediate and near vision
+        low:
+          title: Contrast in Low Light
+          small: ''
+          monofocal: Best contrast
+          astigmatism: Same as the selected type of IOL
+          multifocal: Fair contrast, but glare or halos may occur
+        advantages:
+          title: Advantages
+          small: ''
+          monofocal: Provides the best visual quality at the chosen focal range
+          astigmatism: Corrects astigmatism
+          multifocal: Provides good distant, intermediate and near vision
+        suitable:
+          title: Suitable for
+          monofocal: •Accepts glasses when required{br}•Prioritise higher visual quality{br}•Budget considerations
+          astigmatism: •Patients with astigmatism
+          multifocal: •Prefer not to wear glasses{br}•Accepts lower contrast sensitivity, halos, glare and starbursts{br}•Does not drive at night{br}•Does not require high precision vision, especially in low light conditions
+        blended:
+          title: '*Blended Vision'
+          intro: Blended vision works by implanting two IOLs with different targeted refractions, allowing both eyes to work together for different visual distances.{br}>One eye is typically used for distant objects (usually with a targeted refraction of zero diopter), and the other for intermediate and/or near objects (usually with a targeted refraction of -1.0D to -2.50D).{br}After a period of adaptation, most daily activities can be performed without glasses when using both eyes.
+        button: Cataract WhatsApp hotline{br}Which intraocular lens is suitable for you?
+      provide:
+        title: 'Multifocal IOLs: Delivering Clear Vision Across All Distances!'
+        intro: Multifocal IOLs represent a revolutionary treatment for cataracts, offering two or three focal zones that cover distant, intermediate, and near distances.
+      benefits:
+        title: Advantages of Multifocal IOLs
+        intro: Multifocal IOLs have been widely adopted in clinical practice and are proven to be a safe and reliable cataract treatment solution. Most patients experience rapid vision recovery after surgery.
+        button: Cataract WhatsApp hotline{br}Learn more about multifocal intraocular lenses
+        focal:
+          title: 'Wider Range of Focus:'
+          intro: Unlike monofocal lenses, which only offer clear vision at a single distance, multifocal lenses provide multiple focal zones, enabling patients to enjoy clear vision across a variety of distances.
+        life:
+          title: 'Enhanced Quality of Life:'
+          intro: Multifocal lenses eliminate the inconvenience of constantly switching between glasses or contact lenses, offering greater comfort and ease during daily activities.
+        personalized:
+          title: 'Personalized options:'
+          intro: Patients can choose between bifocal or trifocal solutions based on their visual needs and lifestyle to achieve optimal vision correction.
+      faq:
+        title: Frequently Asked Questions (Q&A)
+        q1: Q:Will glasses or contact lenses still be needed after multifocal lenses?
+        a1: Multifocal lenses are designed to provide a comprehensive visual experience by offering clear vision at various focal points, thus reducing dependence on glasses or contact lenses. The majority of patients who receive multifocal lenses no longer require glasses or contacts. However, a small percentage of individuals may still need glasses for specific tasks.
+        q2: Q:Can multifocal lenses be tailored to lifestyle and vision needs?
+        a2: Since each person's visual requirements are unique, multifocal lenses come in various options to accommodate individual demands and habits. This ensures an optimal vision correction solution tailored to each patient's specific needs.
+        q3: Q:Are multifocal IOLs suitable for all cataract patients?
+        a3: While multifocal IOLs are suitable for most cataract patients, particularly those with presbyopia, their appropriateness ultimately depends on individual circumstances. Therefore, it is strongly recommended that you discuss your unique condition thoroughly with an ophthalmologist to ensure the chosen lens is the most suitable for you.
+        q4: Q:Should potential visual disturbances, such as halos or glare, be considered when choosing multifocal lenses?
+        a4: Although multifocal lenses provide clear vision across various distances, they may occasionally cause visual effects such as halos or glare, particularly in low-light or nighttime settings. For patients who require optimal night vision, careful consideration is advised. It is essential to fully understand all potential outcomes and consult thoroughly with an ophthalmologist before deciding on the most suitable lens.
     dazzling_operation: eyesight-programme
     medical_service_cataract_head: 'Cataract｜CMER｜Medical Services'
     service_cataract_title:
