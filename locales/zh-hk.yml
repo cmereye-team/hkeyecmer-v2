@@ -289,6 +289,7 @@ pages:
       awards_year_13: '2023'
       awards_year_14: '2024'
       awards_year_15: '2025'
+      awards_year_16: '2026'
       awards_des_1: 香港星級品牌企業獎
       awards_des_2: 商界展關懷
       awards_des_3: 亞洲最佳價值服務大獎
@@ -306,6 +307,7 @@ pages:
       awards_des_15: 「ESG約章」行動
       awards_des_16: 香港經濟日報企業大獎
       awards_des_17: 「健康Easy卓越大獎2024」
+      awards_des_18: 醫護之選 - 健康品牌成就大獎
   medical_team:
     medical_team: 醫療團隊
     medical_team_title: 醫 療 團 隊

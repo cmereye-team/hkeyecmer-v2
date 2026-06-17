@@ -283,6 +283,7 @@ pages:
       awards_year_13: '2023'
       awards_year_14: '2024'
       awards_year_15: '2025'
+      awards_year_16: '2026'
       awards_des_1: 香港星級品牌企業獎
       awards_des_2: 商界展關懷
       awards_des_3: 亞洲最佳價值服務大獎
@@ -299,7 +300,8 @@ pages:
       awards_des_14: 香港公益金 -「公益卓越獎」
       awards_des_15: 「ESG約章」行動
       awards_des_16: 香港經濟日報企業大獎
-      awards_des_17: '"Healthy Easy Awards 2024"'
+      awards_des_17: Healthy Easy Awards 2024
+      awards_des_18: Healthcare Professionals’ Choice - Extraordinary Healthcare Brand Awards
   medical_team:
     medical_team: Medical Team
     medical_team_title: Medical Team
