@@ -3,6 +3,15 @@ import { Autoplay } from 'swiper'
 const locale = useState<string>('locale.setting')
 const awardsList = [
   {
+    imgUrl: 'https://statichk.cmermedical.com/newopd/about/awards/award-019-v1.avif',
+    year: 'pages.about_us.awards.awards_year_16',
+    des: 'pages.about_us.awards.awards_des_18',
+    link: 'https://www.facebook.com/share/p/1Cfg4u8vQX/',
+    alt: '希瑪眼科中心_健康品牌成就大獎2026',
+    alt_en: 'Healthcare Professionals’ Choice - Extraordinary Healthcare Brand Awards 2026 Logo',
+    title_en: 'Healthcare Professionals’ Choice - Extraordinary Healthcare Brand Awards 2026',
+  },
+  {
     imgUrl: 'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
     year: 'pages.about_us.awards.awards_year_15',
     des: 'pages.about_us.awards.awards_des_12',

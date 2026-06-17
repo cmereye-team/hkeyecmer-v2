@@ -8,27 +8,17 @@ useHead(() => ({
   title: '多焦點人工晶體 - 香港希瑪眼科中心｜眼科診所｜眼科醫生',
   meta() {
     return [
-      // {
-      //   hid: 'cataractDesc',
-      //   name: 'description',
-      //   content: t('tdk.cataract.desc'),
-      // },
-      // {
-      //   hid: 'cataractKey',
-      //   name: 'keywords',
-      //   content: t('tdk.cataract.key'),
-      // },
       {
         hid: 'description',
         name: 'description',
         content:
-        "希瑪眼科中心提供白內障手術和人工晶體植入，包括：單焦距人工晶體、散光型人工晶體及多焦點人工晶體。多焦點人工晶體相較於單焦距人工晶體能滿足遠距離、中距離和近距離的需要，適合手術後不想配戴眼鏡或對用眼習慣要求高的患者，手術過程安全可靠且精準度高。立即致電查詢白內障手術-人工晶體方案及手術費用。"
+          '希瑪眼科中心提供白內障手術和人工晶體植入，包括：單焦距人工晶體、散光型人工晶體及多焦點人工晶體。多焦點人工晶體相較於單焦距人工晶體能滿足遠距離、中距離和近距離的需要，適合手術後不想配戴眼鏡或對用眼習慣要求高的患者，手術過程安全可靠且精準度高。立即致電查詢白內障手術-人工晶體方案及手術費用。',
       },
       {
         hid: 'keywords',
         name: 'keywords',
         content:
-        "白內障 白內障收費 白內障症狀 白內障晶體 白內障預防 白內障價錢 白內障手術 白內障矯視 白內障種類 白內障眼藥水 白內障青光眼 白內障微創 白內障激光 白內障治療 白內障手術過程 白內障眼鏡 白內障檢查 眼睛退化 眼睛玻璃體退化 先天性白內障 視力模糊 視力矯正 超聲乳化白內障切除術 人工水晶體 人工晶體 人工晶體價錢 人工晶體種類 單焦點人工晶體 散光型人工晶體 多焦點人工晶體 單焦距人工晶體 多焦距人工晶體 多焦距人工晶體價錢 晶體植入 晶體混濁 眼科檢查 眼睛檢查 眼睛疾病 眼科醫生 香港眼科 眼科醫院 眼科診所 眼科中心"
+          '白內障 白內障收費 白內障症狀 白內障晶體 白內障預防 白內障價錢 白內障手術 白內障矯視 白內障種類 白內障眼藥水 白內障青光眼 白內障微創 白內障激光 白內障治療 白內障手術過程 白內障眼鏡 白內障檢查 眼睛退化 眼睛玻璃體退化 先天性白內障 視力模糊 視力矯正 超聲乳化白內障切除術 人工水晶體 人工晶體 人工晶體價錢 人工晶體種類 單焦點人工晶體 散光型人工晶體 多焦點人工晶體 單焦距人工晶體 多焦距人工晶體 多焦距人工晶體價錢 晶體植入 晶體混濁 眼科檢查 眼睛檢查 眼睛疾病 眼科醫生 香港眼科 眼科醫院 眼科診所 眼科中心',
       },
     ]
   },
@@ -43,29 +33,20 @@ const backgd = [
 // 折叠问答
 const meetArr = [
   {
-    title:
-      'pages.medical_service.multiFocal_intraocular_lens_meetArr.meetArr_title1',
-    agree: [
-      'pages.medical_service.multiFocal_intraocular_lens_meetArr.meetArr_agree1',
-    ],
+    title: 'pages.medical_service.multifocal.faq.q1',
+    agree: ['pages.medical_service.multifocal.faq.a1'],
   },
   {
-    title:
-      'pages.medical_service.multiFocal_intraocular_lens_meetArr.meetArr_title2',
-    agree:
-      'pages.medical_service.multiFocal_intraocular_lens_meetArr.meetArr_agree2',
+    title: 'pages.medical_service.multifocal.faq.q2',
+    agree: 'pages.medical_service.multifocal.faq.a2',
   },
   {
-    title:
-      'pages.medical_service.multiFocal_intraocular_lens_meetArr.meetArr_title3',
-    agree:
-      'pages.medical_service.multiFocal_intraocular_lens_meetArr.meetArr_agree3',
+    title: 'pages.medical_service.multifocal.faq.q3',
+    agree: 'pages.medical_service.multifocal.faq.a3',
   },
   {
-    title:
-      'pages.medical_service.multiFocal_intraocular_lens_meetArr.meetArr_title4',
-    agree:
-      'pages.medical_service.multiFocal_intraocular_lens_meetArr.meetArr_agree4',
+    title: 'pages.medical_service.multifocal.faq.q4',
+    agree: 'pages.medical_service.multifocal.faq.a4',
   },
 ]
 </script>
@@ -89,13 +70,14 @@ const meetArr = [
               class="multifocal-lens-banner-text-title wow fadeInUp"
               data-wow-delay="0.7s"
             >
-              <span>白內障</span><i> 一 </i>多焦點人工晶體
+              <span>{{ t('pages.medical_service.multifocal.cataract') }}</span>
+              <i> 一 </i>{{ t('pages.medical_service.multifocal.title') }}
             </div>
             <div
               class="multifocal-lens-banner-text-context wow fadeInUp"
               data-wow-delay="1s"
             >
-              白內障為一種常見的眼疾，隨著年齡增長，眼內晶體會因退化而變得混濁，影響視力。科技的進步使得白內障手術成為一種安全且有效的治療方法。
+              {{ t('pages.medical_service.multifocal.intro') }}
             </div>
           </div>
         </div>
@@ -108,10 +90,10 @@ const meetArr = [
             alt="眼球插圖"
           />
           <div class="multifocal-lens-content-in-text">
-            手術中，醫生會摘取白內障患者的混濁晶體，並置入人工晶體。隨著醫療技術的進步，人工晶體已有不同的焦距可供選擇<span
-              class="pcBox"
-              >，人工晶體可分以下三種：</span
-            ><span class="mbBox">。</span>
+            {{ t('pages.medical_service.multifocal.desc') }}
+            <span class="pcBox">{{
+              t('pages.medical_service.multifocal.desc_pc')
+            }}</span>
           </div>
         </div>
       </div>
@@ -122,13 +104,19 @@ const meetArr = [
             title="人工晶體"
             alt="人工晶體插圖"
           />
-          <span>人工晶體種類</span>
+          <span>{{ t('pages.medical_service.multifocal.table.title') }}</span>
         </div>
         <div class="multifocal-lens-category-in">
           <div class="table">
             <div class="tr">
               <div class="td wow flipInY" data-wow-delay="0.2s">
-                <span>晶體<br class="brshow" />類型</span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.feature.title"
+                  tag="span"
+                  scope="global"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.4s">
                 <img
@@ -136,7 +124,13 @@ const meetArr = [
                   title="單焦距人工晶體"
                   alt="單焦距人工晶體插圖"
                 />
-                <span>單焦點人<br class="brshow" />工晶體</span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.feature.monofocal"
+                  tag="span"
+                  scope="global"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.6s">
                 <img
@@ -144,7 +138,13 @@ const meetArr = [
                   title="散光型人工晶體"
                   alt="散光型人工晶體插圖"
                 />
-                <span>散光型人<br class="brshow" />工晶體</span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.feature.astigmatism"
+                  tag="span"
+                  scope="global"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.8s">
                 <img
@@ -152,133 +152,210 @@ const meetArr = [
                   title="多焦點人工晶體"
                   alt="多焦點人工晶體插圖"
                 />
-                <span>多焦點人<br class="brshow" />工晶體</span>
-              </div>
-            </div>
-            <div class="tr">
-              <div class="td wow flipInY" data-wow-delay="0.2s">
-                <span>遠距離視力</span>
-                <span class="fontsmall"
-                  >（例如：<br class="brshow" />駕車，看電視）</span
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.feature.multifocal"
+                  tag="span"
+                  scope="global"
                 >
-              </div>
-              <div class="td wow flipInY" data-wow-delay="0.4s">
-                <span>很好</span>
-              </div>
-              <div class="td wow flipInY" data-wow-delay="0.6s">
-                <span>與單焦點人工晶體一樣</span>
-              </div>
-              <div class="td wow flipInY" data-wow-delay="0.8s">
-                <span>良好</span>
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
               </div>
             </div>
             <div class="tr">
               <div class="td wow flipInY" data-wow-delay="0.2s">
-                <span>中距離視力</span>
-                <span class="fontsmall"
-                  >（例如：<br class="brshow" />使用電腦）</span
+                <span>{{
+                  t('pages.medical_service.multifocal.table.purpose.title')
+                }}</span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.purpose.small"
+                  tag="span"
+                  scope="global"
+                  class="fontsmall"
                 >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.4s">
-                <span>很好</span>
-                <span class="fontsmall">（可能需要雙眼互補）*</span>
+                <span>{{
+                  t('pages.medical_service.multifocal.table.purpose.monofocal')
+                }}</span>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.6s">
-                <span>與單焦點人工晶體一樣</span>
+                <span>{{
+                  t(
+                    'pages.medical_service.multifocal.table.purpose.astigmatism'
+                  )
+                }}</span>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.8s">
-                <span>良好</span>
+                <span>{{
+                  t('pages.medical_service.multifocal.table.purpose.multifocal')
+                }}</span>
               </div>
             </div>
             <div class="tr">
               <div class="td wow flipInY" data-wow-delay="0.2s">
-                <span>近距離視力</span>
-                <span class="fontsmall">（例如：閱讀範圍）</span>
+                <span>{{
+                  t('pages.medical_service.multifocal.table.focal.title')
+                }}</span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.focal.small"
+                  tag="span"
+                  scope="global"
+                  class="fontsmall"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.4s">
-                <span>很好，需要眼鏡輔助</span>
-                <!-- <span class="fontsmall">（可能需要閱讀眼鏡）</span> -->
+                <span>{{
+                  t('pages.medical_service.multifocal.table.focal.monofocal')
+                }}</span>
+                <span class="fontsmall">{{
+                  t('pages.medical_service.multifocal.table.small')
+                }}</span>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.6s">
-                <span>與單焦點人工晶體一樣</span>
+                <span>{{
+                  t('pages.medical_service.multifocal.table.focal.astigmatism')
+                }}</span>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.8s">
-                <span>良好</span>
+                <span>{{
+                  t('pages.medical_service.multifocal.table.focal.multifocal')
+                }}</span>
               </div>
             </div>
             <div class="tr">
               <div class="td wow flipInY" data-wow-delay="0.2s">
-                <span>優點</span>
+                <span>{{
+                  t('pages.medical_service.multifocal.table.low.title')
+                }}</span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.low.small"
+                  tag="span"
+                  scope="global"
+                  class="fontsmall"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
+              </div>
+              <div class="td wow flipInY" data-wow-delay="0.4s">
+                <span>
+                  {{
+                    t('pages.medical_service.multifocal.table.low.monofocal')
+                  }}
+                </span>
+              </div>
+              <div class="td wow flipInY" data-wow-delay="0.6s">
+                <span>{{
+                  t('pages.medical_service.multifocal.table.low.astigmatism')
+                }}</span>
+              </div>
+              <div class="td wow flipInY" data-wow-delay="0.8s">
+                <span>{{
+                  t('pages.medical_service.multifocal.table.low.multifocal')
+                }}</span>
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td wow flipInY" data-wow-delay="0.2s">
+                <span>{{
+                  t('pages.medical_service.multifocal.table.advantages.title')
+                }}</span>
                 <span></span>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.4s">
-                <span>良好視力質素</span>
-                <span class="fontsmall">（但無法同時對焦遠近距離視力）</span>
+                {{
+                  t(
+                    'pages.medical_service.multifocal.table.advantages.monofocal'
+                  )
+                }}
+                <span class="fontsmall">{{
+                  t('pages.medical_service.multifocal.table.advantages.small')
+                }}</span>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.6s">
-                <span>良好視力質素<br />一併解決散光問題</span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.advantages.astigmatism"
+                  tag="span"
+                  scope="global"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.8s">
-                <span>良好遠，中，近視力<br />大多可不依賴眼鏡</span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.advantages.multifocal"
+                  tag="span"
+                  scope="global"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
               </div>
             </div>
             <div class="tr">
               <div class="td wow flipInY" data-wow-delay="0.2s">
-                <span>適合<br class="brshow" />人群</span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.suitable.title"
+                  tag="span"
+                  scope="global"
+                >
+                  <template #mbr><br class="block md:hidden" /></template>
+                </i18n-t>
                 <span></span>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.4s">
-                <span>
-                  • 不介意配戴眼鏡<br />
-                  • 要求更好視力質素<br />
-                  • 有經濟考慮
-                </span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.suitable.monofocal"
+                  tag="span"
+                  scope="global"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.6s">
-                <span>
-                  • 術前患有散光<br />
-                  • 不介意配戴眼鏡<br />
-                  • 要求更好視力質素
-                </span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.suitable.astigmatism"
+                  tag="span"
+                  scope="global"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
               </div>
               <div class="td wow flipInY" data-wow-delay="0.8s">
-                <span>
-                  • 不想配戴眼鏡<br />
-                  • 經濟能力較好<br />
-                  • 無其他嚴重眼病<br />
-                  • 夜間駕駛需求低
-                </span>
+                <i18n-t
+                  keypath="pages.medical_service.multifocal.table.suitable.multifocal"
+                  tag="span"
+                  scope="global"
+                >
+                  <template #br><br /></template>
+                </i18n-t>
               </div>
             </div>
           </div>
         </div>
         <div class="multifocal-lens-category-context">
-          <h2>*雙眼互補法(Blended Vision)</h2>
-          <p>
-            雙眼互補法又稱為「單眼視覺」(Mono-Vision)，原理是透過兩眼不同的屈光度數，使雙眼達至既分工，又協調的效果，減低老花的徵狀，而患者需時適應。<br /><br
-              class="mbBox"
-            />
-            方法是將一隻眼睛的度數調校至零度，主力負責看遠景；<br /><br
-              class="mbBox"
-            />
-            另一隻眼睛則調校至一百度至二百五十度的近視，負責看近物；<br /><br
-              class="mbBox"
-            />
-            雙眼相輔相成，互補不足，以至遠近皆能達到不錯的視力效果，應付大部分工作和日常生活上的視力需求。
-          </p>
+          <h2>
+            {{ t('pages.medical_service.multifocal.table.blended.title') }}
+          </h2>
+          <i18n-t
+            keypath="pages.medical_service.multifocal.table.blended.intro"
+            tag="p"
+            scope="global"
+          >
+            <template #br><br /></template>
+          </i18n-t>
         </div>
-        <!-- <div class="multifocal-lens-category-btn wow fadeInUp">
-                <a href="javascript:chat('youce-goutong');">
-                    哪一款人工晶體適合你？
-                </a>
-            </div> -->
         <div class="multifocal-lens-btn">
-          <a
+          <i18n-t
+            keypath="pages.medical_service.multifocal.table.button"
+            tag="a"
+            scope="global"
             href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
           >
-            白內障WhatsApp專線<br />
-            哪一款人工晶體適合你？
-          </a>
+            <template #br><br /></template>
+          </i18n-t>
         </div>
       </div>
       <div class="multifocal-lens-banner2">
@@ -297,19 +374,19 @@ const meetArr = [
               class="multifocal-lens-banner2-text-title wow fadeInUp"
               data-wow-delay="0.7s"
             >
-              多焦點提供良好 “全距離”視力！
+              {{ t('pages.medical_service.multifocal.provide.title') }}
             </div>
             <div
               class="multifocal-lens-banner2-text-context wow fadeInUp"
               data-wow-delay="1s"
             >
-              多焦點人工晶體為一種革新的白內障治療方法，提供2個或3個焦點，包括近、中或遠距離的焦點，能一同解決近視、遠視及老花問題，主要適用於老花和白內障患者。
+              {{ t('pages.medical_service.multifocal.provide.intro') }}
             </div>
           </div>
         </div>
       </div>
       <div class="multifocal-lens-title">
-        <span>多焦點的好處</span>
+        <span>{{ t('pages.medical_service.multifocal.benefits.title') }}</span>
       </div>
       <div class="multifocal-lens-benefit">
         <div class="multifocal-lens-benefit-in">
@@ -320,10 +397,12 @@ const meetArr = [
                 title="廣闊視野"
                 alt="廣闊視野插圖"
               />
-              <span>更廣泛的焦點範圍：</span>
+              <span>{{
+                t('pages.medical_service.multifocal.benefits.focal.title')
+              }}</span>
             </div>
             <div>
-              相較於只針對單一焦距的單焦點人工晶體，多焦點人工晶體提供多個焦點區域，讓患者享受不同距離的清楚視野。
+              {{ t('pages.medical_service.multifocal.benefits.focal.intro') }}
             </div>
           </div>
           <div
@@ -348,10 +427,12 @@ const meetArr = [
                 title="生活品質"
                 alt="生活品質插圖"
               />
-              <span>提升生活品質：</span>
+              <span>{{
+                t('pages.medical_service.multifocal.benefits.life.title')
+              }}</span>
             </div>
             <div>
-              多焦點人工晶體省去了更換眼鏡或隱形眼鏡的麻煩，為生活帶來便利，進行日常活動時更輕鬆自如。
+              {{ t('pages.medical_service.multifocal.benefits.life.intro') }}
             </div>
           </div>
           <div
@@ -376,10 +457,18 @@ const meetArr = [
                 title="方案選擇"
                 alt="方案選擇插圖"
               />
-              <span>個性化選擇：</span>
+              <span>{{
+                t(
+                  'pages.medical_service.multifocal.benefits.personalized.title'
+                )
+              }}</span>
             </div>
             <div>
-              患者可以根據自身視力需求和生活習慣，選擇雙焦點或三焦點方案，以獲得更佳的視力矯正效果。
+              {{
+                t(
+                  'pages.medical_service.multifocal.benefits.personalized.intro'
+                )
+              }}
             </div>
           </div>
           <div
@@ -399,7 +488,7 @@ const meetArr = [
             data-wow-delay="0.5s"
           >
             <div>
-              多焦點人工晶體已經在臨床研究中得到廣泛應用，並被證明是安全可靠的白內障治療方案，大多數患者在手術後視力能夠迅速康復。
+              {{ t('pages.medical_service.multifocal.benefits.intro') }}
             </div>
           </div>
           <div
@@ -415,15 +504,17 @@ const meetArr = [
         </div>
       </div>
       <div class="multifocal-lens-btn">
-        <a
+        <i18n-t
+          keypath="pages.medical_service.multifocal.benefits.button"
+          tag="a"
+          scope="global"
           href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
         >
-          白內障WhatsApp專線<br />
-          了解多焦點人工晶體
-        </a>
+          <template #br><br /></template>
+        </i18n-t>
       </div>
       <div class="multifocal-lens-title">
-        <span>多焦點人工晶體常見問題 Q&A</span>
+        <span>{{ t('pages.medical_service.multifocal.faq.title') }}</span>
       </div>
       <div class="multifocal-lens-meetArr">
         <PageCollapse
@@ -442,6 +533,38 @@ const meetArr = [
   </div>
 </template>
 <style lang="scss" scoped>
+html[lang='en'] {
+  .multifocal-lens-btn > a {
+    font-size: clamp(14px, 5vw, 20px);
+    letter-spacing: 0.1em;
+  }
+  .multifocal-lens-category-in .table .tr .td {
+    min-width: 100px;
+  }
+  .multifocal-lens-benefit-in-text > div {
+    text-align: left;
+  }
+  @media screen and (max-width: 767px) {
+    .multifocal-lens-category-in {
+      overflow-x: auto;
+    }
+    .multifocal-lens-meetArr
+      :deep(.el-collapse-item:nth-child(4) .el-collapse-item__header) {
+      height: 120px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .multifocal-lens-banner2-text-title {
+      font-size: clamp(20px, 3vw, 48px);
+      letter-spacing: 0.1em;
+    }
+    .multifocal-lens-benefit-in-text > div {
+      line-height: 1.5;
+      letter-spacing: 0.05em;
+      text-align: left;
+    }
+  }
+}
 @font-face {
   font-family: 'Zeyada';
   src: url(https://static.cmereye.com/static/font/Zeyada-Regular.ttf);
@@ -1198,9 +1321,9 @@ const meetArr = [
   .multifocal-lens-btn > a {
     border: 0.4688vw solid #fff;
     padding: 0.5208vw 1.5208vw 0.7813vw 3.125vw;
-    font-size: 2.7083vw;
+    font-size: clamp(18px, 2.2vw, 40px);
     line-height: 3.3333vw;
-    letter-spacing: 0.5146vw;
+    letter-spacing: 0.1em;
     margin: 7.2396vw auto 5.1042vw;
   }
   .multifocal-lens-btn > a:hover {
@@ -1287,7 +1410,7 @@ const meetArr = [
     }
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .multifocal-lens {
     margin-top: 17.6vw;
   }
