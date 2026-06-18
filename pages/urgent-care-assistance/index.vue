@@ -61,7 +61,7 @@ const clinicsData: Clinic[] = [
     fullAddress: '中環畢打街1-3號中建大廈1515室',
     hours: '星期一至五 09:30–13:30 / 14:30–19:00',
     hoursSat: '星期六 09:30–18:00',
-    hoursSun: '（星期日及公眾假期休息）',
+    hoursSun: '',
     phone: '+852 3956 2026',
     lat: 22.2813,
     lng: 114.1583,
@@ -94,7 +94,7 @@ const clinicsData: Clinic[] = [
     address: '中環皇后大道33號萬邦行1908室',
     fullAddress: '中環皇后大道33號萬邦行1908室',
     hours: '星期一至五 10:00–13:00 / 15:00–18:00',
-    hoursSat: '（星期六、星期日及公眾假期休息）',
+    hoursSat: '',
     hoursSun: '',
     phone: '+852 3956 2026',
     lat: 22.2816,
@@ -129,7 +129,7 @@ const clinicsData: Clinic[] = [
     fullAddress: '旺角彌敦道625及639號雅蘭中心一期1208室及1725B室',
     hours: '星期一至五 09:30–13:30 / 14:30–19:00',
     hoursSat: '星期六\n09:30-13:30（1208室）\n09:30-18:00（1725室）',
-    hoursSun: '（星期日及公眾假期休息）',
+    hoursSun: '',
     phone: '+852 3956 2026',
     lat: 22.3192,
     lng: 114.1694,
@@ -163,7 +163,7 @@ const clinicsData: Clinic[] = [
     fullAddress: '銅鑼灣百德新街2-20號恒隆中心1614-15室',
     hours: '星期一至五 09:30–13:30 / 14:30–19:00',
     hoursSat: '星期六 09:30–13:30',
-    hoursSun: '（星期日及公眾假期休息）',
+    hoursSun: '',
     phone: '+852 3956 2026',
     lat: 22.2801,
     lng: 114.1848,
@@ -197,7 +197,7 @@ const clinicsData: Clinic[] = [
     fullAddress: '觀塘開源道79號鱷魚恤中心16樓1601室',
     hours: '星期一至五 09:30–13:30 / 14:30–19:00',
     hoursSat: '星期六 09:30–13:30',
-    hoursSun: '（星期日及公眾假期休息）',
+    hoursSun: '',
     phone: '+852 3956 2026',
     lat: 22.3118,
     lng: 114.2264,
@@ -231,7 +231,7 @@ const clinicsData: Clinic[] = [
     fullAddress: '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
     hours: '星期一至五 09:30–13:30 / 14:30–19:00',
     hoursSat: '星期六 09:30–13:30',
-    hoursSun: '（星期日及公眾假期休息）',
+    hoursSun: '',
     phone: '+852 3956 2026',
     lat: 22.3818,
     lng: 114.1884,
@@ -265,7 +265,7 @@ const clinicsData: Clinic[] = [
     fullAddress: '元朗青山公路45及47號誠信商業大廈地鋪',
     hours: '星期一至五 09:30–13:30 / 14:30–19:00',
     hoursSat: '星期六 09:30–13:30',
-    hoursSun: '（星期日及公眾假期休息）',
+    hoursSun: '',
     phone: '+852 3956 2026',
     lat: 22.4445,
     lng: 114.0222,
@@ -299,7 +299,7 @@ const clinicsData: Clinic[] = [
     fullAddress: '荃灣沙咀道255號思源樓地下',
     hours: '星期一至五 09:30–13:30 / 14:30–19:00',
     hoursSat: '星期六 09:30–13:30',
-    hoursSun: '（星期日及公眾假期休息）',
+    hoursSun: '',
     phone: '+852 3956 2026',
     lat: 22.3715,
     lng: 114.1173,
@@ -333,7 +333,7 @@ const clinicsData: Clinic[] = [
     fullAddress: '將軍澳運亨路1號新都城中心一期地下55-56號鋪',
     hours: '星期一至五 09:30–13:30 / 14:30–19:00',
     hoursSat: '星期六 09:30–13:30',
-    hoursSun: '（星期日及公眾假期休息）',
+    hoursSun: '',
     phone: '+852 3956 2026',
     lat: 22.3235,
     lng: 114.2616,
@@ -391,14 +391,20 @@ const displayedClinics = computed(() => {
 
   return list
 })
-function getDistance(lat1: number, lon1: number, lat2: number, lon2: number): number {
+function getDistance(
+  lat1: number,
+  lon1: number,
+  lat2: number,
+  lon2: number
+): number {
   const R = 6371
-  const dLat = (lat2 - lat1) * Math.PI / 180
-  const dLon = (lon2 - lon1) * Math.PI / 180
-  const a = 
+  const dLat = ((lat2 - lat1) * Math.PI) / 180
+  const dLon = ((lon2 - lon1) * Math.PI) / 180
+  const a =
     Math.sin(dLat / 2) ** 2 +
-    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * 
-    Math.sin(dLon / 2) ** 2
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLon / 2) ** 2
   return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
 }
 function deg2rad(deg: number) {
@@ -418,33 +424,44 @@ async function handleGpsTracking() {
   }
 
   try {
-    const position = await new Promise<GeolocationPosition>(
-      (resolve, reject) => {
-        navigator.geolocation.getCurrentPosition(resolve, reject, {
-          enableHighAccuracy: true,
-          timeout: 10000,
-          maximumAge: 60000,
-        })
-      }
-    )
+    // 1. 使用 Promise 配合 await 阻塞等待定位结果，并显式声明类型 GeolocationPosition
+    const res = await new Promise<GeolocationPosition>((resolve, reject) => {
+      navigator.geolocation.getCurrentPosition(resolve, reject, {
+        enableHighAccuracy: true,
+        timeout: 10000,
+        maximumAge: 60000,
+      })
+    })
 
+    // 2. 此时 res 拥有完整的类型推导，可以直接安全地访问 coords
     userCoords.value = {
-      lat: position.coords.latitude,
-      lng: position.coords.longitude,
+      lat: res.coords.latitude,
+      lng: res.coords.longitude,
     }
 
-    // 成功后自动滚动到诊所列表
+    // 3. 成功后自动滚动到诊所列表
     setTimeout(() => {
       document
         .getElementById('clinic-list')
         ?.scrollIntoView({ behavior: 'smooth' })
     }, 300)
+
   } catch (error: any) {
-    if (error.code === error.PERMISSION_DENIED) {
-      gpsDenied.value = true
-      showDeniedHelp()
-    } else {
-      showModal('定位失敗，請檢查網路或稍後再試')
+    // 4. 无论是超时还是拒绝，getCurrentPosition 的错误都会被 catch 捕获
+    switch (error.code) {
+      case error.PERMISSION_DENIED:
+        gpsDenied.value = true // 标记用户拒绝
+        showDeniedHelp()
+        break
+      case error.POSITION_UNAVAILABLE:
+        showModal('位置信息不可用（基站/GPS信号弱，或IP库解析失败）')
+        break
+      case error.TIMEOUT:
+        showModal('请求获取用户位置超时')
+        break
+      default:
+        showModal(`定位失敗，請檢查網路或稍後再試：${error.message || ''}`)
+        break
     }
   }
 }
@@ -499,7 +516,7 @@ onMounted(() => {
       </p>
 
       <div
-        class="flex items-center justify-center gap-6 text-left max-w-md mx-auto"
+        class="flex items-center justify-center gap-6 text-left w-fit mx-auto"
       >
         <p
           class="font-serif text-xs md:text-xl font-bold text-[#E63A2E] leading-tight"
@@ -651,7 +668,7 @@ onMounted(() => {
 
     <!-- Warning -->
     <section
-      class="bg-[#FFF5F3] border border-[#E8786A]/20 rounded-3xl px-3 py-4 text-center mb-5 md:mb-10"
+      class="bg-[#FFF5F3] border border-[#E8786A]/20 rounded-3xl px-3 py-4 text-center mb-8 md:mb-12"
     >
       <p class="text-[#E8786A] font-bold text-lg tracking-wide">
         ⚠️ 如有以上情況，建議立即求診
@@ -664,7 +681,7 @@ onMounted(() => {
         @click="handleGpsTracking"
         class="block w-full max-w-md mx-auto bg-[#16437E] text-white rounded-3xl p-3 mb-3 md:mb-5 shadow-xl hover:brightness-110 transition-all text-left"
       >
-        <div class="flex items-center gap-2 mb-3">
+        <div class="flex items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-8 h-8 md:w-10 md:h-10"
@@ -677,35 +694,37 @@ onMounted(() => {
           </svg>
           <span class="text-lg font-bold">使用我的位置，尋找附近診所</span>
         </div>
-        <p class="text-[#FFB300] text-sm">
-          （請留意：各診所預約情況會隨時變動，建議先致電診所查詢及預約）
-        </p>
       </button>
     </section>
 
     <!-- Region Tabs -->
-    <section class="flex justify-center gap-3 flex-wrap mb-8">
-      <button
-        v-for="tab in ['all', 'hk', 'kln', 'nt']"
-        :key="tab"
-        @click="filterRegion(tab as any)"
-        :class="[
-          'px-4 py-2 rounded-full border font-medium transition-all',
-          currentFilter === tab
-            ? 'bg-[#16437E] text-white border-[#16437E]'
-            : 'bg-white border-[#16437E] text-[#16437E] hover:bg-[#16437E] hover:text-white',
-        ]"
-      >
-        {{
-          tab === 'all'
-            ? '全部'
-            : tab === 'hk'
-            ? '香港'
-            : tab === 'kln'
-            ? '九龍'
-            : '新界'
-        }}
-      </button>
+    <section class="mb-8">
+      <div class="flex justify-center gap-3 flex-wrap mb-3">
+        <button
+          v-for="tab in ['all', 'hk', 'kln', 'nt']"
+          :key="tab"
+          @click="filterRegion(tab as any)"
+          :class="[
+            'px-4 py-2 rounded-full border font-medium transition-all',
+            currentFilter === tab
+              ? 'bg-[#16437E] text-white border-[#16437E]'
+              : 'bg-white border-[#16437E] text-[#16437E] hover:bg-[#16437E] hover:text-white',
+          ]"
+        >
+          {{
+            tab === 'all'
+              ? '全部'
+              : tab === 'hk'
+              ? '香港'
+              : tab === 'kln'
+              ? '九龍'
+              : '新界'
+          }}
+        </button>
+      </div>
+      <p class="text-[#FFB300] text-sm">
+        （請留意：各診所預約情況會隨時變動，建議先致電診所查詢及預約）
+      </p>
     </section>
 
     <!-- Clinic List -->
@@ -740,7 +759,7 @@ onMounted(() => {
               </p>
               <p class="text-sm text-[#6B6158]">{{ clinic.hoursSun }}</p>
             </div>
-            <div class="hidden md:block md:w-2/5">
+            <div class="hidden md:block md:w-3/5">
               <div
                 class="flex gap-2 overflow-x-auto pb-2 md:flex-nowrap md:overflow-visible"
               >
