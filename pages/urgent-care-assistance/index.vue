@@ -3,31 +3,30 @@ definePageMeta({
   layout: 'page',
 })
 
-// SEO-friendly page title/description (set in layout or useHead)
+const { t } = useLang()
 useHead({
-  title: '眼科急症服務 | 希瑪眼科中心 C-MER Eye Center',
+  title: '緊急醫療服務 盡快即時支援 | 希瑪眼科 C-MER Eye Center',
   meta: [
     {
       name: 'description',
       content:
-        '香港希瑪眼科中心提供眼科急症服務，包括視網膜脫落、急性青光眼等緊急情況。週末及公眾假期支援中環、旺角等診所。立即致電 +852 3956 2026',
+        '希瑪眼科緊急醫療服務，提供視網膜脫落、急性青光眼等眼科急症即時支援。全港9間診所分佈港九新界，立即致電 +852 3956 2026 預約。',
     },
     {
       name: 'keywords',
       content:
-        '眼科急症, 視網膜脫落, 急性青光眼, 希瑪眼科, 香港眼科, 緊急眼科服務',
+        '希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪驗光 希瑪眼科收費 希瑪眼科治療 希瑪眼科驗光 希瑪眼科矯視中心 希瑪眼科全面眼科檢查 希瑪眼科香港 希瑪眼科治療方案 希瑪林順潮眼科中心 林順潮眼科中心 林順潮眼科醫生 林順潮收費 林順潮眼科診所 眼科希瑪 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼睛診所 眼科醫生 眼科診所 將軍澳 將軍澳眼科 將軍澳眼科診所 將軍澳眼科醫生 將軍澳眼科中心 香港眼科專科',
     },
-    { property: 'og:title', content: '眼科急症服務 | 希瑪眼科中心' },
+    { property: 'og:title', content: '緊急醫療服務 盡快即時支援 | 希瑪眼科 C-MER Eye Center' },
     {
       property: 'og:description',
-      content: '專業眼科急症支援，快速診斷與治療。',
+      content: '希瑪眼科緊急醫療服務，提供視網膜脫落、急性青光眼等眼科急症即時支援。全港9間診所分佈港九新界，立即致電 +852 3956 2026 預約。',
     },
     { property: 'og:type', content: 'website' },
     { property: 'og:locale', content: 'zh_HK' },
   ],
 })
 
-const { t } = useLang()
 interface ClinicPhoto {
   avif?: string
   webp?: string
@@ -681,7 +680,7 @@ onMounted(() => {
         @click="handleGpsTracking"
         class="block w-full max-w-md mx-auto bg-[#16437E] text-white rounded-3xl p-3 mb-3 md:mb-5 shadow-xl hover:brightness-110 transition-all text-left"
       >
-        <div class="flex items-center gap-2">
+        <div class="flex justify-center items-center gap-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="w-8 h-8 md:w-10 md:h-10"
@@ -722,7 +721,7 @@ onMounted(() => {
           }}
         </button>
       </div>
-      <p class="text-[#FFB300] text-sm">
+      <p class="text-[#FFB300] text-sm lg:text-base text-center">
         （請留意：各診所預約情況會隨時變動，建議先致電診所查詢及預約）
       </p>
     </section>
@@ -751,13 +750,13 @@ onMounted(() => {
             <span>{{ clinic.fullAddress }}</span>
           </a>
 
-          <div class="flex flex-col md:flex-row gap-6">
-            <div class="flex-1">
-              <p class="text-sm text-[#6B6158]">{{ clinic.hours }}</p>
-              <p class="text-sm text-[#6B6158] whitespace-pre-line">
+          <div class="flex flex-col md:flex-row gap-6 items-center">
+            <div class="flex-1 text-sm md:text-lg text-[#6B6158] md:space-y-1">
+              <p>{{ clinic.hours }}</p>
+              <p class="whitespace-pre-line">
                 {{ clinic.hoursSat }}
               </p>
-              <p class="text-sm text-[#6B6158]">{{ clinic.hoursSun }}</p>
+              <p>{{ clinic.hoursSun }}</p>
             </div>
             <div class="hidden md:block md:w-3/5">
               <div
