@@ -525,7 +525,7 @@ onMounted(() => {
 
         <a
           href="tel:+85239562026"
-          class="urgent-button animate-pulseSoft inline-flex flex-col items-center bg-[#E63A2E] text-white px-6 py-3 rounded-full text-base font-bold hover:brightness-110 transition-all"
+          class="urgent-button animate-pulseSoft inline-flex flex-col items-center bg-[#E63A2E] text-white px-6 py-3 rounded-full text-base xl:text-xl font-bold xl:font-medium hover:brightness-110 transition-all"
         >
           <span class="flex items-center gap-2">
             <svg
@@ -540,7 +540,7 @@ onMounted(() => {
             </svg>
             急症熱線
           </span>
-          <span class="text-xs md:text-base">+852 3956 2026</span>
+          <span class="text-xs md:text-base lg:text-xl">+852 3956 2026</span>
         </a>
       </div>
     </div>
