@@ -3,7 +3,7 @@ definePageMeta({
   layout: 'page',
 })
 
-const { t } = useLang()
+// const { t } = useLang()
 useHead({
   title: '眼科急症及急診服務 | 希瑪眼科中心',
   meta: [
@@ -489,9 +489,11 @@ function showDeniedHelp() {
 
 // 页面加载后自动尝试获取位置（与原 HTML 一致）
 onMounted(() => {
-  setTimeout(() => {
-    handleGpsTracking()
-  }, 800)
+  if (process.client) {
+    setTimeout(() => {
+      handleGpsTracking()
+    }, 800)
+  }
 })
 </script>
 
