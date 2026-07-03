@@ -606,78 +606,7 @@
         客戶評分
       </div>
       <div class="person_box">
-        <div class="container">
-          <div class="pingfen">
-            <div class="pingfen_list">
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/4f7d7c0523b8eda5.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/8c82c0b018270d7c.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ed1709b111c3cf55.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/35302f36b3687320.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/bf5e84f2da957609.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/32788fa8550052da.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/49b6a12e9ed5126f.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ed1709b111c3cf55.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/49b6a12e9ed5126f.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <PageUserRatings />
       </div>
     </div>
   </div>
@@ -768,7 +697,7 @@ const clinicSlidesTwo = [
 // 医疗团队轮播图数据
 const teamSlides = [
   {
-    image: 'https://static.cmereye.com/imgs/2022/12/ed18fa038434cd78.png',
+    image: 'https://statichk.cmermedical.com/hkcmereye/doctor/doctor-DennisLam-01.webp',
     name: '林順潮醫生',
   },
   {
@@ -976,7 +905,6 @@ const teamSlides = [
     background: url(https://statichk.cmermedical.com/opd/imgs/bg_blue.webp)
       no-repeat;
     background-size: 100% 100%;
-    height: 1000px;
     position: relative;
   }
 
@@ -1156,6 +1084,7 @@ const teamSlides = [
   /* 眼科服务 end */
   /*医生团队* start*/
   .swiper-container-friend img {
+    aspect-ratio: 18 / 23;
     width: 100%;
   }
 
@@ -1530,6 +1459,7 @@ const teamSlides = [
   }
 
   .swiper-container-friend img {
+    aspect-ratio: 18 / 23;
     width: 100%;
   }
 
@@ -1580,7 +1510,6 @@ const teamSlides = [
     background: url(https://statichk.cmermedical.com/opd/imgs/bg_blue.webp)
       no-repeat;
     background-size: 100% 100%;
-    height: 1247px;
     position: relative;
   }
 
