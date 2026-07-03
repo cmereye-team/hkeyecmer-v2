@@ -917,36 +917,41 @@ pages:
     intraocular:
       title: IOL Lens Comparison Chart
       pagetitle: Extended Depth of Focus{br}(EDOF) IOL
-      intro: When cataracts cause vision to become blurred, cataract surgery is often the best option for restoring clear sight. Today, this procedure not only removes the clouded natural lens but also offers a variety of intraocular lens (IOL) options tailored to different visual needs - such as distance (e.g. reading road signs), intermediate (e.g. using a computer), and near (e.g. reading or using a mobile phone) requirements. These options include monofocal IOLs, extended depth of focus (EDOF) IOLs, multifocal IOLs, and toric IOLs.
+      intro: When cataracts cause vision to become blurred, cataract surgery is often the best option for restoring clear sight. Today, this procedure not only removes the clouded natural lens but also offers a variety of intraocular lens (IOL) options tailored to different visual needs - such as distance (e.g. reading road signs), intermediate (e.g. using a computer), and near (e.g. reading or using a mobile phone) requirements. These options include monofocal IOLs, extended depth of focus (EDOF) IOLs,Light Adjustable Lens, multifocal IOLs, and toric IOLs.
       table:
         title: Intraocular Lens {br}Comparison Table
         feature:
           title: Feature
           edof: Extended Depth {br}of Focus{br}(EDOF) IOL
+          lal: Light Adjustable Lens (LAL™)
           multifocal: Multifocal IOL
           monofocal: Monofocal IOL
           astigmatism: Toric IOL
         focal:
           title: Focal Range
           edof: Suitable for distance and intermediatevision, or intermediate and near vision
+          lal: Suitable for distant, intermediate and near vision
           multifocal: Suitable for distant, intermediate and near vision
           monofocal: Primarily distance vision
           astigmatism: Same as the selected type of IOL
         benefits:
           title: Key Benefits
           edof: Very good visual quality within the focal range Continuous range of vision Good contrast sensitivity Minimal/ no halos, glare and starbursts
+          lal: Post-operative adjustability of prescription based on individual vision needs
           multifocal: Provides good distant, intermediate and near vision
           monofocal: Provides the best visual quality at the chosen focal range
           astigmatism: Corrects astigmatism
         glasses:
           title: Post-operative Dependence on Glasses
           edof: Glasses may be required for vision outside of focal range
+          lal: Glasses usually not required; further reduced with Blended Vision
           multifocal: Glasses usually not required
           monofocal: Glasses are usually required for vision outside the focal range
           astigmatism: Glasses no longer required for the correction of astigmatism
         suitable:
           title: Suitable Candidates
           edof: •Wish to reduce dependence on glasses{br}•Drives at night
+          lal: •Comfortable with wearing glasses{br}•Higher budget flexibility{br}•No other serious eye conditions{br}•Seeking more accurate refractive result
           multifocal: •Prefer not to wear glasses{br}•Accepts lower contrast sensitivity, halos, glare and starbursts{br}•Does not drive at night{br}•Does not require high precision vision, especially in low light conditions
           monofocal: •Accepts glasses when required{br}•Prioritise higher visual quality{br}•Budget considerations
           astigmatism: Patients with astigmatism
@@ -967,6 +972,10 @@ pages:
         astigmatism:
           title: Toric IOLs
           intro: '"Toric IOL" is a general term used to describe intraocular lenses that incorporate toric correction technology. This technology corrects astigmatism, which — if left uncorrected — can lead to poor visual quality at all distances without glasses. All monofocal, EDOF, and multifocal IOLs can have this toric technology incorporated.'
+        lal:
+          title: Light Adjustable Lens
+          intro: The Light Adjustable Lens (LAL) is currently the first and only intraocular lens on the market that permits power adjustments after cataract surgery. By utilizing postoperative light treatment, the lens power can be precisely tailored to align with the patient's specific visual needs and lifestyle, eliminating the complete reliance on pre-operative measurements to achieve optimal visual outcomes.
+        button: Book Your Appointment Now
     glaucoma: Glaucoma
     medical_service_glaucoma_head: Glaucoma｜CMER｜Medical Services
     service_glaucoma_title:
@@ -3122,12 +3131,12 @@ pages:
         addressList3_regionName: New Territories
         addressList3_addressDetailList:
           addressDetailList1_addressName: Sha Tin
-          addressDetailList1_addressDetail: Shop 5A & 1C—1E, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street
+          addressDetailList1_addressDetail: Shop 5A, 5B & 1C—1E, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street
           addressDetailList1_subwayExit: Shatin MTR Station (Exit A)
           addressDetailList1_subwayExit2: Free parking offers, for details please contact the clinic's staffs.
           addressDetailList1_clinicHours:
             clinicHours1: Mon-Fri：09:30—13:30 / 14:30—19:00
-            clinicHours2: Sat：09:30—13:30
+            clinicHours2: Sat：09:30—18:00
             clinicHours3: (Closed on Sundays and public holidays)
           addressDetailList2_addressName: Yuen Long (Opposite to Hang Heung Cake Shop)
           addressDetailList2_addressDetail: G/F, Shing Shun Building, 45 & 47 Castle Peak Road, Yuen Long
@@ -3233,8 +3242,8 @@ ppp:
       mk1: 'Room 1208, One Grand Tower, 625 and 639 Nathan Road, Mong Kok'
       mk2: 'Room 1725B, One Grand Tower, 625 and 639 Nathan Road, Mong Kok'
       kt: 'Room 1601, 16/F, Crocodile Center, 79 Hoi Yuen Road, Kwun Tong'
-      st: 'Shop 5A & 1C—1E, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street, Sha Tin'
-      st1: 'Shop 5A, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street, Sha Tin'
+      st: 'Shop 5A, 5B & 1C—1E, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street, Sha Tin'
+      st1: 'Shop 5A & 5B, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street, Sha Tin'
       st2: 'Shop 1C—1E, 2/F, Wai Wah Centre, 11-17 Sha Tin Centre Street, Sha Tin'
       yl: 'G/F, Shing Shun Building, 45 & 47 Castle Peak Road, Yuen Long'
       tw: 'G/F, Sze Yuen Mansion, No. 255 Sha Tsui Road, Tsuen Wan'

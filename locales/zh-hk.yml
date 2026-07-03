@@ -916,18 +916,20 @@ pages:
     intraocular:
       title: 人工晶體比較表
       pagetitle: 白內障{br}人工晶體種類
-      intro: 當白內障讓您的世界變得模糊、色彩不再鮮明時，接受手術無疑是重見清楚視力的最佳選擇。而現今白內障手術除了移除混濁的晶體，更有不同人工晶體選擇滿足患者不同需求，包括：單焦點人工晶體、單焦點EDOF人工晶體、多焦點人工晶體、散光人工晶體。
+      intro: 當白內障讓您的世界變得模糊、色彩不再鮮明時，接受手術無疑是重見清楚視力的最佳選擇。而現今白內障手術除了移除混濁的晶體，更有不同人工晶體選擇滿足患者不同需求，包括：單焦點人工晶體、擴展景深EDOF人工晶體、光調節人工晶體、多焦點人工晶體、散光人工晶體。
       table:
         title: 白內障人工晶體{br}比較表
         feature:
-          title: ''
+          title: 特點
           edof: 擴展景深人工晶體
-          multifocal: 多焦點人工晶體
+          lal: 光調節人工晶體
+          multifocal: 多焦點{mbr}人工晶體
           monofocal: 單焦點{mbr}人工晶體
           astigmatism: 散光型{mbr}人工晶體
         focal:
           title: 焦距
           edof: 一般適用於{mbr}中至遠距離
+          lal: 適用於{mbr}遠、中、近距離
           multifocal: 適用於{mbr}遠、中、近距離
           monofocal: 焦距適用於{mbr}單一距離
           astigmatism: 取決於其{mbr}基礎類型
@@ -940,12 +942,14 @@ pages:
         glasses:
           title: 術後{mbr}眼鏡{br}使用性
           edof: 大部份患者於{mbr}術後康復{pcbr}後，{mbr}生活或工作時{br}減少眼倚賴性
+          lal: 術後可根據個人{br}用眼需求調節度數
           multifocal: 日常比較小{br}需要配戴眼鏡
           monofocal: 近距離閱讀時可能{pcbr}需{mbr}要配戴眼鏡{br}（近距離閲讀或{pcbr}需要{mbr}眼鏡配合）
           astigmatism: 取決於其{mbr}基礎類型
         suitable:
           title: 適合人群
           edof: 適合患有{mbr}白內障且希望{br}減少眼鏡{mbr}依賴的患者
+          lal: 減少依賴眼鏡，通過{br}雙眼互補，增加術後{br}不用眼鏡便能達到{br}20/20視力的比例
           multifocal: •不想配戴眼鏡{br}•經濟能力較好{br}•無其他嚴重眼病{br}•夜間駕駛需求低
           monofocal: •可配合戴眼鏡{br}•要求更好視力質素{br}•有經濟考慮
           astigmatism: 散光患者
@@ -966,6 +970,10 @@ pages:
         astigmatism:
           title: 散光矯正型人工晶體
           intro: 散光矯正型人工晶體是一種植入在白內障手術中，用以替換病患混濁晶狀體的人工鏡片，它能夠同時矯正白內障和角膜上的散光問題，從而減少或擺脫散光眼鏡的依賴。
+        lal:
+          title: 光調節人工晶體
+          intro: 光調節人工晶體是目前市場上首款且唯一一款可在白內障手術後調節度數的人工晶體，術後根據患者的用眼需求與生活方式，透過光照治療精確調節人工晶體度數，不再完全依賴手術前的度數預測，實現理想視覺效果。
+        button: 選對你的人工晶體{br}立即預約
     glaucoma: 青光眼
     medical_service_glaucoma_head: 青光眼｜希瑪眼科｜醫療服務
     glaucoma_intro:
@@ -3203,12 +3211,12 @@ pages:
         addressList3_regionName: 新界
         addressList3_addressDetailList:
           addressDetailList1_addressName: 沙田
-          addressDetailList1_addressDetail: 沙田正街11-17號偉華中心2樓5A及1C—1E號鋪
+          addressDetailList1_addressDetail: 沙田正街11-17號偉華中心2樓5A,5B及1C-1E號鋪
           addressDetailList1_subwayExit: 沙田站A出口
           addressDetailList1_subwayExit2: 可享限時泊車優惠，詳情請向診所職員查詢
           addressDetailList1_clinicHours:
             clinicHours1: 星期一至五：09:30—13:30 / 14:30—19:00
-            clinicHours2: 星期六：09:30—13:30
+            clinicHours2: 星期六：09:30—18:00
             clinicHours3: （星期日及公眾假期休息）
           addressDetailList2_addressName: 元朗（恆香老餅家對面）
           addressDetailList2_addressDetail: 青山公路45及47號誠信商業大廈地鋪
@@ -3314,8 +3322,8 @@ ppp:
       mk1: '旺角彌敦道625及639號雅蘭中心一期1208室'
       mk2: '旺角彌敦道625及639號雅蘭中心一期1725B室'
       kt: '觀塘開源道79號鱷魚恤中心16樓1601室'
-      st: '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪'
-      st1: '沙田正街11-17號偉華中心2樓5A號鋪'
+      st: '沙田正街11-17號偉華中心2樓5A,5B及1C-1E號鋪'
+      st1: '沙田正街11-17號偉華中心2樓5A,5B號鋪'
       st2: '沙田正街11-17號偉華中心2樓1C—1E號鋪'
       yl: '元朗青山公路45及47號誠信商業大廈地鋪'
       tw: '荃灣沙咀道255號思源樓地下'

@@ -3,24 +3,25 @@ definePageMeta({
   layout: 'page',
 })
 
-const { t } = useLang()
+// const { t } = useLang()
 useHead({
-  title: '緊急醫療服務 盡快即時支援 | 希瑪眼科 C-MER Eye Center',
+  title: '眼科急症及急診服務 | 希瑪眼科中心',
   meta: [
     {
       name: 'description',
       content:
-        '希瑪眼科緊急醫療服務，提供視網膜脫落、急性青光眼等眼科急症即時支援。全港9間診所分佈港九新界，立即致電 +852 3956 2026 預約。',
+        '需要24小時眼科診所或眼科急症服務？希瑪眼科中心提供眼科急症及急診服務，醫療團隊為您優先處理眼睛緊急情況，確保患者及時獲得適切治療，立即預約。',
     },
     {
       name: 'keywords',
       content:
-        '希瑪眼科 香港希瑪眼科中心 希瑪眼科中心 眼科專科診所 眼科專科中心 香港希瑪眼科 香港希瑪 希瑪 希瑪眼科治療 希瑪驗光 希瑪眼科收費 希瑪眼科治療 希瑪眼科驗光 希瑪眼科矯視中心 希瑪眼科全面眼科檢查 希瑪眼科香港 希瑪眼科治療方案 希瑪林順潮眼科中心 林順潮眼科中心 林順潮眼科醫生 林順潮收費 林順潮眼科診所 眼科希瑪 眼睛疾病 眼科醫生 兒童眼科 香港眼科 眼科醫院 眼睛診所 眼科醫生 眼科診所 將軍澳 將軍澳眼科 將軍澳眼科診所 將軍澳眼科醫生 將軍澳眼科中心 香港眼科專科',
+        '24小時眼科診所 眼科急症 眼科急症私家 眼科急症香港 眼科急診 政府眼科急症 眼科急症醫院 眼科急症急診 眼科急診醫院 希瑪 希瑪眼科 希瑪眼科中心 香港眼科中心 眼科 眼科中心 眼科診所',
     },
-    { property: 'og:title', content: '緊急醫療服務 盡快即時支援 | 希瑪眼科 C-MER Eye Center' },
+    { property: 'og:title', content: '眼科急症及急診服務 | 希瑪眼科中心' },
     {
       property: 'og:description',
-      content: '希瑪眼科緊急醫療服務，提供視網膜脫落、急性青光眼等眼科急症即時支援。全港9間診所分佈港九新界，立即致電 +852 3956 2026 預約。',
+      content:
+        '需要24小時眼科診所或眼科急症服務？希瑪眼科中心提供眼科急症及急診服務，醫療團隊為您優先處理眼睛緊急情況，確保患者及時獲得適切治療，立即預約。',
     },
     { property: 'og:type', content: 'website' },
     { property: 'og:locale', content: 'zh_HK' },
@@ -226,8 +227,8 @@ const clinicsData: Clinic[] = [
     id: 6,
     name: '希瑪眼科中心 (沙田)',
     region: 'nt',
-    address: '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
-    fullAddress: '沙田正街11-17號偉華中心2樓5A及1C—1E號鋪',
+    address: '沙田正街11-17號偉華中心2樓5A,5B及1C-1E號鋪',
+    fullAddress: '沙田正街11-17號偉華中心2樓5A,5B及1C-1E號鋪',
     hours: '星期一至五 09:30–13:30 / 14:30–19:00',
     hoursSat: '星期六 09:30–13:30',
     hoursSun: '',
@@ -439,27 +440,24 @@ async function handleGpsTracking() {
     }
 
     // 3. 成功后自动滚动到诊所列表
-    setTimeout(() => {
-      document
-        .getElementById('clinic-list')
-        ?.scrollIntoView({ behavior: 'smooth' })
-    }, 300)
-
+    // setTimeout(() => {
+    //   document
+    //     .getElementById('clinic-list')
+    //     ?.scrollIntoView({ behavior: 'smooth' })
+    // }, 300)
   } catch (error: any) {
     // 4. 无论是超时还是拒绝，getCurrentPosition 的错误都会被 catch 捕获
     switch (error.code) {
-      case error.PERMISSION_DENIED:
-        gpsDenied.value = true // 标记用户拒绝
-        showDeniedHelp()
-        break
       case error.POSITION_UNAVAILABLE:
-        showModal('位置信息不可用（基站/GPS信号弱，或IP库解析失败）')
+        showModal('暫時無法取得您的位置資訊，請確認已開啟定位服務')
         break
+
       case error.TIMEOUT:
-        showModal('请求获取用户位置超时')
+        showModal('取得位置資訊逾時，請稍後再試')
         break
+
       default:
-        showModal(`定位失敗，請檢查網路或稍後再試：${error.message || ''}`)
+        showModal('定位失敗，請檢查網絡連線及定位設定後重試')
         break
     }
   }
@@ -491,9 +489,11 @@ function showDeniedHelp() {
 
 // 页面加载后自动尝试获取位置（与原 HTML 一致）
 onMounted(() => {
-  setTimeout(() => {
-    handleGpsTracking()
-  }, 800)
+  if (process.client) {
+    setTimeout(() => {
+      handleGpsTracking()
+    }, 800)
+  }
 })
 </script>
 

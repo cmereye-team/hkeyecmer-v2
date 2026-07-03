@@ -45,13 +45,13 @@
 
             <li>
               <i class="fa-1x fa fa-home"></i
-              >沙田正街11-17號偉華中心2樓5A及1C—1E號鋪（沙田站A出口）
+              >沙田正街11-17號偉華中心2樓5A,5B及1C-1E號鋪（沙田站A出口）
             </li>
 
             <li class="d-flex">
               <i class="fa-1x fa fa-calendar pr-2"></i>星期一至五：09:30—13:30 /
               14:30—19:00 <br />
-              星期六：09:30—13:30 <br />（星期日及公眾假期休息）
+              星期六：09:30—18:00 <br />（星期日及公眾假期休息）
             </li>
 
             <li>
@@ -549,78 +549,7 @@
         客戶評分
       </div>
       <div class="person_box">
-        <div class="container">
-          <div class="pingfen">
-            <div class="pingfen_list">
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/4f7d7c0523b8eda5.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/8c82c0b018270d7c.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ed1709b111c3cf55.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/35302f36b3687320.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/bf5e84f2da957609.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/32788fa8550052da.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/49b6a12e9ed5126f.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ac8f98d9a8c790f4.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/ed1709b111c3cf55.png"
-                  alt=""
-                />
-              </div>
-              <div class="item1">
-                <img
-                  src="https://static.cmereye.com/imgs/2022/12/49b6a12e9ed5126f.png"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        <PageUserRatings />
       </div>
     </div>
   </div>
@@ -650,29 +579,31 @@ useHead(() => ({
 const locale = useState<string>('locale.setting')
 const eyeCenterImgList = [
   {
-    img: 'https://www.youtube.com/embed/fDo35wPIcBw?si=bQGhAFdkAjNeB0Md',
+    img: 'https://www.youtube.com/embed/Yzj9HtlRLwM',
   },
   {
-    img: 'https://www.youtube.com/embed/8ip-wGoPqmQ?si=zOhre5Vjd_8MKccF',
+    img: 'https://www.youtube.com/embed/fDo35wPIcBw',
   },
   {
-    img: 'https://www.youtube.com/embed/h6H16bsZRAE?si=m93oEuGAIpV4ZNcV',
+    img: 'https://www.youtube.com/embed/8ip-wGoPqmQ',
   },
   {
-    img: 'https://www.youtube.com/embed/zbYpdLZtL0c?si=Ut5Rfau6oLzqxpFZ',
+    img: 'https://www.youtube.com/embed/h6H16bsZRAE',
   },
   {
-    img: 'https://www.youtube.com/embed/Jt0fmKmfiIU?si=0KDi84kmkTi3gZnG',
-  },
-
-  {
-    img: 'https://www.youtube.com/embed/F5fdrLskDdc?si=LtDK6KFgoIz_BNTR',
+    img: 'https://www.youtube.com/embed/zbYpdLZtL0c',
   },
   {
-    img: 'https://www.youtube.com/embed/Ds5NBkrQLXo?si=dUeT3ar_Q5zEp0Rl',
+    img: 'https://www.youtube.com/embed/Jt0fmKmfiIU',
   },
   {
-    img: 'https://www.youtube.com/embed/0Hscxb-v_Ig?si=w3A2HNYwNtygA72K',
+    img: 'https://www.youtube.com/embed/F5fdrLskDdc',
+  },
+  {
+    img: 'https://www.youtube.com/embed/Ds5NBkrQLXo',
+  },
+  {
+    img: 'https://www.youtube.com/embed/0Hscxb-v_Ig',
   },
 ]
 // 诊所环境轮播图数据
@@ -702,7 +633,7 @@ const clinicSlides = [
 // 医疗团队轮播图数据
 const teamSlides = [
   {
-    image: 'https://static.cmereye.com/imgs/2022/12/ed18fa038434cd78.png',
+    image: 'https://statichk.cmermedical.com/hkcmereye/doctor/doctor-DennisLam-01.webp',
     name: '林順潮醫生',
   },
   {
@@ -907,10 +838,9 @@ const teamSlides = [
 
   /* 客户评分  start */
   .person_box {
-    background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png)
+    background: url(https://statichk.cmermedical.com/opd/imgs/bg_blue.webp)
       no-repeat;
     background-size: 100% 100%;
-    height: 1000px;
     position: relative;
   }
 
@@ -1081,6 +1011,7 @@ const teamSlides = [
   /* 眼科服务 end */
   /*医生团队* start*/
   .swiper-container-friend img {
+    aspect-ratio: 18 / 23;
     width: 100%;
   }
 
@@ -1456,6 +1387,7 @@ const teamSlides = [
   }
 
   .swiper-container-friend img {
+    aspect-ratio: 18 / 23;
     width: 100%;
   }
 
@@ -1503,10 +1435,9 @@ const teamSlides = [
   /*医生团队 end */
   /* 客户评分  start */
   .person_box {
-    background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png)
+    background: url(https://statichk.cmermedical.com/opd/imgs/bg_blue.webp)
       no-repeat;
     background-size: 100% 100%;
-    height: 1247px;
     position: relative;
   }
 

@@ -47,13 +47,16 @@ const backgd = [
 
 const eyeCenterImgList = [
   {
-    img: 'https://www.youtube.com/embed/h6H16bsZRAE?si=m93oEuGAIpV4ZNcV',
+    img: 'https://www.youtube.com/embed/Yzj9HtlRLwM',
   },
   {
-    img: 'https://www.youtube.com/embed/fDo35wPIcBw?si=bQGhAFdkAjNeB0Md',
+    img: 'https://www.youtube.com/embed/h6H16bsZRAE',
   },
   {
-    img: 'https://www.youtube.com/embed/8ip-wGoPqmQ?si=zOhre5Vjd_8MKccF',
+    img: 'https://www.youtube.com/embed/fDo35wPIcBw',
+  },
+  {
+    img: 'https://www.youtube.com/embed/8ip-wGoPqmQ',
   },
 ]
 
