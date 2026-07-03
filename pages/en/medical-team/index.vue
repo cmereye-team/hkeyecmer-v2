@@ -38,7 +38,7 @@ const doctorList = [
       'pages.medical_team.doctorList.doctor_1.doctor_1_education.doctor_1_education_6',
     ],
     doctorImgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/medical-team/docotor01.jpg',
+      'https://statichk.cmermedical.com/hkcmereye/doctor/doctor-DennisLam-01.webp',
   },
   {
     doctorName: 'pages.medical_team.doctorList.doctor_2.doctor_2_name',
