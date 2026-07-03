@@ -650,29 +650,31 @@ useHead(() => ({
 const locale = useState<string>('locale.setting')
 const eyeCenterImgList = [
   {
-    img: 'https://www.youtube.com/embed/fDo35wPIcBw?si=bQGhAFdkAjNeB0Md',
+    img: 'https://www.youtube.com/embed/Yzj9HtlRLwM',
   },
   {
-    img: 'https://www.youtube.com/embed/8ip-wGoPqmQ?si=zOhre5Vjd_8MKccF',
+    img: 'https://www.youtube.com/embed/fDo35wPIcBw',
   },
   {
-    img: 'https://www.youtube.com/embed/h6H16bsZRAE?si=m93oEuGAIpV4ZNcV',
+    img: 'https://www.youtube.com/embed/8ip-wGoPqmQ',
   },
   {
-    img: 'https://www.youtube.com/embed/zbYpdLZtL0c?si=Ut5Rfau6oLzqxpFZ',
+    img: 'https://www.youtube.com/embed/h6H16bsZRAE',
   },
   {
-    img: 'https://www.youtube.com/embed/Jt0fmKmfiIU?si=0KDi84kmkTi3gZnG',
-  },
-
-  {
-    img: 'https://www.youtube.com/embed/F5fdrLskDdc?si=LtDK6KFgoIz_BNTR',
+    img: 'https://www.youtube.com/embed/zbYpdLZtL0c',
   },
   {
-    img: 'https://www.youtube.com/embed/Ds5NBkrQLXo?si=dUeT3ar_Q5zEp0Rl',
+    img: 'https://www.youtube.com/embed/Jt0fmKmfiIU',
   },
   {
-    img: 'https://www.youtube.com/embed/0Hscxb-v_Ig?si=w3A2HNYwNtygA72K',
+    img: 'https://www.youtube.com/embed/F5fdrLskDdc',
+  },
+  {
+    img: 'https://www.youtube.com/embed/Ds5NBkrQLXo',
+  },
+  {
+    img: 'https://www.youtube.com/embed/0Hscxb-v_Ig',
   },
 ]
 // 诊所环境轮播图数据
@@ -907,7 +909,7 @@ const teamSlides = [
 
   /* 客户评分  start */
   .person_box {
-    background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png)
+    background: url(https://statichk.cmermedical.com/opd/imgs/bg_blue.webp)
       no-repeat;
     background-size: 100% 100%;
     height: 1000px;
@@ -1503,7 +1505,7 @@ const teamSlides = [
   /*医生团队 end */
   /* 客户评分  start */
   .person_box {
-    background: url(https://static.cmereye.com/imgs/2022/12/19db72a3876114c4.png)
+    background: url(https://statichk.cmermedical.com/opd/imgs/bg_blue.webp)
       no-repeat;
     background-size: 100% 100%;
     height: 1247px;
