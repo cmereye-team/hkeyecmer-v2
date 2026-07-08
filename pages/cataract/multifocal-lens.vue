@@ -58,10 +58,10 @@ const meetArr = [
         <div class="multifocal-lens-banner-in">
           <img
             srcset="
-              https://static.cmereye.com/imgs/2024/03/d0980c9700a22204.webp 768w,
-              https://static.cmereye.com/imgs/2024/03/ccb03dbf06b45658.webp
+              https://statichk.cmermedical.com/imgs/2024/03/d0980c9700a22204.webp 768w,
+              https://statichk.cmermedical.com/imgs/2024/03/ccb03dbf06b45658.webp
             "
-            src="https://static.cmereye.com/imgs/2024/03/ccb03dbf06b45658.webp"
+            src="https://statichk.cmermedical.com/imgs/2024/03/ccb03dbf06b45658.webp"
             title="多焦點人工晶體"
             alt="植入多焦點人工晶體的夫婦享受戶外陽光"
           />
@@ -85,7 +85,7 @@ const meetArr = [
       <div class="multifocal-lens-content">
         <div class="multifocal-lens-content-in wow fadeInUp">
           <img
-            src="https://static.cmereye.com/imgs/2024/03/9f118603f0a8059d.png"
+            src="https://statichk.cmermedical.com/imgs/2024/03/9f118603f0a8059d.png"
             title="眼球"
             alt="眼球插圖"
           />
@@ -100,7 +100,7 @@ const meetArr = [
       <div class="multifocal-lens-category">
         <div class="multifocal-lens-category-title wow fadeInUp">
           <img
-            src="https://static.cmereye.com/imgs/2024/03/81ceac06fb1eb1a6.png"
+            src="https://statichk.cmermedical.com/imgs/2024/03/81ceac06fb1eb1a6.png"
             title="人工晶體"
             alt="人工晶體插圖"
           />
@@ -120,7 +120,7 @@ const meetArr = [
               </div>
               <div class="td wow flipInY" data-wow-delay="0.4s">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/03/2f8134c7a000614e.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/03/2f8134c7a000614e.png"
                   title="單焦距人工晶體"
                   alt="單焦距人工晶體插圖"
                 />
@@ -134,7 +134,7 @@ const meetArr = [
               </div>
               <div class="td wow flipInY" data-wow-delay="0.6s">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/03/cd5264dfbc944651.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/03/cd5264dfbc944651.png"
                   title="散光型人工晶體"
                   alt="散光型人工晶體插圖"
                 />
@@ -148,7 +148,7 @@ const meetArr = [
               </div>
               <div class="td wow flipInY" data-wow-delay="0.8s">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/03/d6c31e6add2067b2.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/03/d6c31e6add2067b2.png"
                   title="多焦點人工晶體"
                   alt="多焦點人工晶體插圖"
                 />
@@ -362,10 +362,10 @@ const meetArr = [
         <div class="multifocal-lens-banner2-in">
           <img
             srcset="
-              https://static.cmereye.com/imgs/2024/03/4b5b0d71493c5312.jpg  768w,
-              https://static.cmereye.com/imgs/2024/03/b61f47dcb6aa83e2.webp
+              https://statichk.cmermedical.com/imgs/2024/03/4b5b0d71493c5312.jpg  768w,
+              https://statichk.cmermedical.com/imgs/2024/03/b61f47dcb6aa83e2.webp
             "
-            src="https://static.cmereye.com/imgs/2024/03/b61f47dcb6aa83e2.webp"
+            src="https://statichk.cmermedical.com/imgs/2024/03/b61f47dcb6aa83e2.webp"
             title="多焦點人工晶體"
             alt="多焦點人工晶體在光線下的透明視覺效果圖"
           />
@@ -393,7 +393,7 @@ const meetArr = [
           <div class="multifocal-lens-benefit-in-text wow bounceInLeft">
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/03/e92b94b388f913a7.png"
+                src="https://statichk.cmermedical.com/imgs/2024/03/e92b94b388f913a7.png"
                 title="廣闊視野"
                 alt="廣闊視野插圖"
               />
@@ -410,7 +410,7 @@ const meetArr = [
             data-wow-delay="0.5s"
           >
             <img
-              src="https://static.cmereye.com/imgs/2024/03/9d387fa71d1fbba6.webp"
+              src="https://statichk.cmermedical.com/imgs/2024/03/9d387fa71d1fbba6.webp"
               title="多焦點人工晶體_廣闊視野"
               alt="植入多焦點人工晶體的夫婦戶外遠足享受廣闊視野"
             />
@@ -423,7 +423,7 @@ const meetArr = [
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/03/f5d20e392b9f5975.png"
+                src="https://statichk.cmermedical.com/imgs/2024/03/f5d20e392b9f5975.png"
                 title="生活品質"
                 alt="生活品質插圖"
               />
@@ -440,7 +440,7 @@ const meetArr = [
             data-wow-delay="0.5s"
           >
             <img
-              src="https://static.cmereye.com/imgs/2024/03/e3da61a86706090c.webp"
+              src="https://statichk.cmermedical.com/imgs/2024/03/e3da61a86706090c.webp"
               title="多焦點人工晶體_生活品質"
               alt="植入多焦點人工晶體的夫婦享受踩單車樂趣表現良好生活"
             />
@@ -453,7 +453,7 @@ const meetArr = [
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/03/f237925060b2e7c3.png"
+                src="https://statichk.cmermedical.com/imgs/2024/03/f237925060b2e7c3.png"
                 title="方案選擇"
                 alt="方案選擇插圖"
               />
@@ -476,7 +476,7 @@ const meetArr = [
             data-wow-delay="0.5s"
           >
             <img
-              src="https://static.cmereye.com/imgs/2024/03/c76caa8b128f8b30.webp"
+              src="https://statichk.cmermedical.com/imgs/2024/03/c76caa8b128f8b30.webp"
               title="多焦點人工晶體_眼科醫生_方案選擇"
               alt="眼科醫生為老年患者解釋多焦點人工晶體方案選擇"
             />
@@ -496,7 +496,7 @@ const meetArr = [
             data-wow-delay="0.5s"
           >
             <img
-              src="https://static.cmereye.com/imgs/2024/03/6efbf0c586f1376d.webp"
+              src="https://statichk.cmermedical.com/imgs/2024/03/6efbf0c586f1376d.webp"
               title="多焦點人工晶體"
               alt="老年女性微笑展現多焦點人工晶體帶來的清晰視界"
             />
@@ -567,7 +567,7 @@ html[lang='en'] {
 }
 @font-face {
   font-family: 'Zeyada';
-  src: url(https://static.cmereye.com/static/font/Zeyada-Regular.ttf);
+  src: url(https://statichk.cmermedical.com/static/font/Zeyada-Regular.ttf);
 }
 .multifocal-lens {
   height: auto;
@@ -670,9 +670,9 @@ html[lang='en'] {
   z-index: 1;
   margin-top: -30px;
   margin-bottom: 20px;
-  background: url(https://static.cmereye.com/imgs/2024/03/cc6eb4fe0d7bb9b5.png)
+  background: url(https://statichk.cmermedical.com/imgs/2024/03/cc6eb4fe0d7bb9b5.png)
       no-repeat top center,
-    url(https://static.cmereye.com/imgs/2024/03/b34e0a520ed9c467.png) no-repeat
+    url(https://statichk.cmermedical.com/imgs/2024/03/b34e0a520ed9c467.png) no-repeat
       bottom center;
 }
 .multifocal-lens-category-title {
@@ -832,7 +832,7 @@ html[lang='en'] {
   left: 0;
   top: 50%;
   transform: translate(-50%, -50%);
-  background: url(https://static.cmereye.com/imgs/2024/03/cd3469a45f8c0534.png);
+  background: url(https://statichk.cmermedical.com/imgs/2024/03/cd3469a45f8c0534.png);
   background-size: 100% 100%;
   animation: categoryBtnAnimation 4s linear infinite;
 }
@@ -1030,7 +1030,7 @@ html[lang='en'] {
 }
 .multifocal-lens-btn > a::after {
   content: '';
-  background: url(https://static.cmereye.com/imgs/2024/03/a1e7771b0dd348dd.png);
+  background: url(https://statichk.cmermedical.com/imgs/2024/03/a1e7771b0dd348dd.png);
   background-size: 100% 100%;
   width: 102px;
   height: 108px;
@@ -1509,9 +1509,9 @@ html[lang='en'] {
     margin-top: 0;
     margin-bottom: 0;
     background-size: 100% auto;
-    background: url(https://static.cmereye.com/imgs/2024/03/e2319c91faf8c7bb.png)
+    background: url(https://statichk.cmermedical.com/imgs/2024/03/e2319c91faf8c7bb.png)
         no-repeat top center,
-      url(https://static.cmereye.com/imgs/2024/03/e9eed05a265bdfbd.png)
+      url(https://statichk.cmermedical.com/imgs/2024/03/e9eed05a265bdfbd.png)
         no-repeat bottom center;
     background-size: 100% auto;
   }

@@ -32,45 +32,45 @@ const goWhatsApp = () => {
 const homeSwiperImgs = [
   {
     hkimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner0102.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner0102.webp',
     enimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner01en2.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner01en2.webp',
     title: ['香港上市公司 10間眼科診所'],
     text: ['龐大眼科醫療網絡', '提供眼疾治療方案'],
     link: '/about-us',
   },
   {
     hkimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner02.webp',
     enimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner02en.webp',
     title: ['全面涵蓋九大眼科醫療領域'],
     text: ['致力提供全面眼科醫療服務', '貼心護理服務 滿足患者不同需求'],
     link: '/medical-service',
   },
   {
     hkimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner03.webp',
     enimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.webp',
     title: ['以人為本，以客人為中心'],
     text: ['提供個人化護理和治療選擇', '細心治療，用心照顧'],
     link: '/about-us#feedback',
   },
   {
     hkimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner04.webp',
     enimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner04en.webp',
     title: ['國際認可先進眼科醫療技術'],
     text: ['高水準眼科治療和服務', '實現精確、安全手術操作'],
     link: '/about-us#medicalEquipment',
   },
   {
     hkimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner05.webp',
     enimg:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.webp',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner05en.webp',
     title: ['全心全意守護每雙眼睛'],
     text: ['追求卓越 堅持使命', '關注全生命眼健康周期'],
     link: '/about-us#corporate',
@@ -160,7 +160,7 @@ const serviceLists = [
   {
     i: '01',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser1.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser1.png',
     des: 'pages.medical_service.cataract.cataract',
     link: '/medical-service/cataract',
     title: 'Ophthalmology Service-Cataract',
@@ -169,7 +169,7 @@ const serviceLists = [
   {
     i: '02',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser6.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser6.png',
     des: 'pages.medical_service.maculopathy',
     link: '/medical-service/maculopathy',
     title: 'Ophthalmology Service-Macular Degeneration',
@@ -178,7 +178,7 @@ const serviceLists = [
   {
     i: '04',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser9.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser9.png',
     des: 'pages.medical_service.amotioRetinae',
     link: '/medical-service/amotioRetinae',
     title: 'Ophthalmology Service-Retinal Detachment',
@@ -187,7 +187,7 @@ const serviceLists = [
   {
     i: '05',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser2.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser2.png',
     des: 'pages.medical_service.glaucoma',
     link: '/medical-service/glaucoma',
     title: 'OOphthalmology Service-Glaucoma',
@@ -196,7 +196,7 @@ const serviceLists = [
   {
     i: '08',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser8.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser8.png',
     des: 'pages.medical_service.ocularSurfaceDiseases',
     link: '/medical-service/ocularSurfaceDiseases',
     title: 'Ophthalmology Service-Ocular Surface and Corneal Diseases',
@@ -205,7 +205,7 @@ const serviceLists = [
   {
     i: '09',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser7.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser7.png',
     des: 'pages.medical_service.strabismusAmblyopia',
     link: '/medical-service/strabismusAmblyopia',
     title: 'Ophthalmology Service-Amblyopia and Strabismus',
@@ -214,7 +214,7 @@ const serviceLists = [
   {
     i: '11',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser10.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser10.png',
     des: 'pages.medical_service.eyeOrthopaedicDisease',
     link: '/medical-service/eyeOrthopaedicDisease',
     title: 'Ophthalmology Service-Eye Plastic Surgery and Orbital Diseases',
@@ -223,7 +223,7 @@ const serviceLists = [
   {
     i: '12',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser11.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser11.png',
     des: 'pages.medical_service.medicalOptometry',
     link: '/medical-service/medicalOptometry',
     title: 'Comprehensive Eye Exam-Myopia Control',
@@ -232,7 +232,7 @@ const serviceLists = [
   {
     i: '13',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser12.png',
     des: 'pages.medical_service.smileHk',
     link: 'https://smile.hkcmereye.com/',
     title: 'Laser Eye Surgery-LASIK & SMILE',
@@ -283,7 +283,7 @@ const pageNav = ref([
     </div>
     <div class="home-mbContent">
       <div class="home-mbContent-banner">
-        <!-- <img src="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg" alt=""> -->
+        <!-- <img src="https://statichk.cmermedical.com/imgs/2024/01/c765e1d6022ddd41.jpg" alt=""> -->
         <video
           autoplay
           loop
@@ -291,8 +291,8 @@ const pageNav = ref([
           playsinline
           x5-playsinline="true"
           webkit-playsinline="true"
-          src="https://static.cmereye.com/static/loffee/video/eyecenter_web_v2.mp4"
-          poster="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg"
+          src="https://statichk.cmermedical.com/static/loffee/video/eyecenter_web_v2.mp4"
+          poster="https://statichk.cmermedical.com/imgs/2024/01/c765e1d6022ddd41.jpg"
         ></video>
       </div>
       <div class="homePage-pageNav">
@@ -353,7 +353,7 @@ const pageNav = ref([
           <div class="partTwo-in">
             <div class="partTwo-in-image">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/4f0397cca2473c61.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/11/4f0397cca2473c61.jpg"
                 title="Cmer Eye Center-Hong Kong Ophthalmology Clinic"
                 alt="Reception area of Cmer Eye Center | Hong Kong Leading Ophthalmology Clinic"
                 class="cmer-fadeInLeft-1"
@@ -389,13 +389,13 @@ const pageNav = ref([
           <div class="partTwo-in">
             <div class="partTwo-in-image">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/10e2463581fde672.png"
+                src="https://statichk.cmermedical.com/imgs/2023/11/10e2463581fde672.png"
                 title="希瑪林順潮眼科中心_上市眼科診所"
                 alt="希瑪林順潮眼科中心_上市眼科診所"
                 class="cmer-fadeInLeft-2"
               />
               <img
-                src="https://static.cmereye.com/imgs/2023/11/b1571356e3fdc9b3.png"
+                src="https://statichk.cmermedical.com/imgs/2023/11/b1571356e3fdc9b3.png"
                 title="Cmer Eye Center Locations-Hong Kong"
                 alt="Map displaying the multiple convenient locations of Cmer Eye Center across Hong Kong"
                 class="cmer-bounceIn"
@@ -413,7 +413,7 @@ const pageNav = ref([
           <div class="partTwo-in">
             <div class="partTwo-in-image">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/d5832f9c20130912.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/11/d5832f9c20130912.jpg"
                 title="Eye Care Customer Service-Cmer Eye Center"
                 alt="Cmer Eye Center representatives providing friendly eye care customer service"
                 class="cmer-fadeInRight-2"
@@ -439,7 +439,7 @@ const pageNav = ref([
           <div class="indexContext_1">
             <div class="indexContext_1-image cmer-fadeInRight-3">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/d9ed93444cd110d2.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/11/d9ed93444cd110d2.jpg"
                 alt="Close-up of advanced eye exam technology used at Cmer Eye Center"
                 title="Advanced Eye Exam Technology-Cmer Eye Center"
               />
@@ -458,7 +458,7 @@ const pageNav = ref([
           <div class="indexContext_2">
             <div class="indexContext_2-image cmer-fadeInLeft-3">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/f82b7514325c896f.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/11/f82b7514325c896f.jpg"
                 alt="Spectacular view of the Hong Kong skyline"
                 title="Hong Kong Cmer Eye Care Holdings Limited"
               />
@@ -538,7 +538,7 @@ const pageNav = ref([
               <div class="indexContext_2-text-in cmer-fadeInUp-12">
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/11/7999fef5f2ba4028.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/11/7999fef5f2ba4028.png"
                     alt=""
                   />
                 </div>

@@ -100,10 +100,10 @@ onMounted(()=>{
   <div>
     <div class="healthInfo">
       <div>
-        <img data-cfsrc="https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg" 
-            srcset="https://static.cmereye.com/imgs/2023/07/bcfa01146d3bc4d6.jpg 768w, https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg"  
+        <img data-cfsrc="https://statichk.cmermedical.com/imgs/2023/08/cfbef34814bd88ba.jpg" 
+            srcset="https://statichk.cmermedical.com/imgs/2023/07/bcfa01146d3bc4d6.jpg 768w, https://statichk.cmermedical.com/imgs/2023/08/cfbef34814bd88ba.jpg"  
             alt="健康資訊" 
-            src="https://static.cmereye.com/imgs/2023/08/cfbef34814bd88ba.jpg"/>
+            src="https://statichk.cmermedical.com/imgs/2023/08/cfbef34814bd88ba.jpg"/>
       </div>
       <div>
         <div>{{$t('pages.ophthalmic_information.ophthalmic_message_text.message_text1')}}</div>
@@ -112,7 +112,7 @@ onMounted(()=>{
         <div>Health topics</div>
       </div>
       <div>
-        <img data-cfsrc="https://static.cmereye.com/imgs/2023/08/480cb8eb9e698ab2.png" srcset="https://static.cmereye.com/imgs/2023/08/03053fe9edf3c7ad.png 768w, https://static.cmereye.com/imgs/2023/08/480cb8eb9e698ab2.png" src="https://static.cmereye.com/imgs/2023/08/480cb8eb9e698ab2.png" alt="">
+        <img data-cfsrc="https://statichk.cmermedical.com/imgs/2023/08/480cb8eb9e698ab2.png" srcset="https://statichk.cmermedical.com/imgs/2023/08/03053fe9edf3c7ad.png 768w, https://statichk.cmermedical.com/imgs/2023/08/480cb8eb9e698ab2.png" src="https://statichk.cmermedical.com/imgs/2023/08/480cb8eb9e698ab2.png" alt="">
       </div>
       <div>
         <svg xmlns="http://www.w3.org/2000/svg" width="11" height="173" viewBox="0 0 11 173" fill="none">

@@ -55,7 +55,7 @@ const serviceNavigation = [
   color: #828383;
 }
 .appointmentForm {
-  background: url('https://static.cmereye.com/imgs/2023/03/2e0bad9ed9608023.jpg') no-repeat;
+  background: url('https://statichk.cmermedical.com/imgs/2023/03/2e0bad9ed9608023.jpg') no-repeat;
   background-size: auto;
   & > div:nth-child(1) {
     width: 100%;

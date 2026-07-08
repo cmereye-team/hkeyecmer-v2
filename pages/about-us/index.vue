@@ -170,7 +170,7 @@ const CORPORATE_Lists = [
     right: calc((100% - 860px) / 2);
     width: 395px;
     height: 263px;
-    background: url(https://static.cmereye.com/imgs/2023/07/7ec583c939090e3c.jpg);
+    background: url(https://statichk.cmermedical.com/imgs/2023/07/7ec583c939090e3c.jpg);
   }
   &-in {
     position: relative;

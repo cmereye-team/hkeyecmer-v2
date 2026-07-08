@@ -52,17 +52,17 @@ const locale = useState<string>('locale.setting')
     <div class="title">{{ $t('pages.about_us.about_us') }}</div>
     <div class="imgBox">
       <img
-        src="https://static.cmereye.com/imgs/2023/06/8095216b29f693c7.jpg"
+        src="https://statichk.cmermedical.com/imgs/2023/06/8095216b29f693c7.jpg"
         :title=" locale == 'zh-hk' ? '希瑪眼科中心_觀塘診所' : 'Cmer Eye Center - Kwun Tong Clinic'" 
         :alt=" locale == 'zh-hk' ? '希瑪眼科中心_觀塘診所明亮舒適的接待區': 'Bright and welcoming reception area at Cmer Eye Center - Kwun Tong Clinic'"
       />
       <img
-        src="https://static.cmereye.com/imgs/2023/05/fcbe60b94457087b.png"
+        src="https://statichk.cmermedical.com/imgs/2023/05/fcbe60b94457087b.png"
         :title=" locale == 'zh-hk' ? '希瑪眼科中心_眼科儀器' : 'Cmer Eye Center - Advanced Eye Examination Equipment'"
         :alt=" locale == 'zh-hk' ? '希瑪眼科中心配備先進的眼科檢查儀器' : 'Advanced eye examination equipment at Cmer Eye Center'"
       />
       <img
-        src="https://static.cmereye.com/imgs/2023/06/d72dad915e01bf72.jpg"
+        src="https://statichk.cmermedical.com/imgs/2023/06/d72dad915e01bf72.jpg"
         :title="locale == 'zh-hk' ? '希瑪眼科中心_中環診所' : 'Cmer Eye Center - Central Clinic'"
         :alt=" locale == 'zh-hk' ? '希瑪眼科中心_中環診所接待區' : 'Reception area at Cmer Eye Center - Central Clinic'"
       />

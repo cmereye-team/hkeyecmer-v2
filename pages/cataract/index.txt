@@ -31,19 +31,19 @@ const backgd = [
 // 白內障形成的成因
 const fatorArr = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/5b88e2c3d5a24717.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/5b88e2c3d5a24717.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator1',
     alt: '陽光中紫外線為白內障成因',
     title: '白內障成因_紫外線',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/77092ee46cf226d9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/77092ee46cf226d9.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator2',
     alt: '吸煙為白內障成因',
     title: '白內障成因_吸煙',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a83300c944834450.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a83300c944834450.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_2',
@@ -52,13 +52,13 @@ const fatorArr = [
     title: '白內障成因_深近視',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/fc3c0ecda42d6dca.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/fc3c0ecda42d6dca.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator4',
     alt: '高血糖指數為白內障成因',
     title: '白內障成因_糖尿病白內障',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/8e4d13a54786cdcc.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/8e4d13a54786cdcc.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_2',
@@ -67,7 +67,7 @@ const fatorArr = [
     title: '白內障成因_類固醇白內障',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/027fbbc52748d448.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/027fbbc52748d448.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_2',
@@ -76,7 +76,7 @@ const fatorArr = [
     title: '白內障成因_家族遺傳',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/6f9105c7d9aeefa2.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/6f9105c7d9aeefa2.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_2',
@@ -87,7 +87,7 @@ const fatorArr = [
 ]
 const symptomArr = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/e493e6f5a154cd97.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/e493e6f5a154cd97.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_2',
@@ -96,7 +96,7 @@ const symptomArr = [
     title: '白內障症狀_視力模糊',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/c864d708858a3f2e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/c864d708858a3f2e.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_2',
@@ -105,7 +105,7 @@ const symptomArr = [
     title: '白內障症狀_眼睛重影',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/848679d9bcce652d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/848679d9bcce652d.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_2',
@@ -114,13 +114,13 @@ const symptomArr = [
     title: '白內障症狀_視物變形',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a4f207cfb55a0903.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a4f207cfb55a0903.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom4',
     alt: '夜間視力變差為白內障症狀',
     title: '白內障症狀_夜間視力變差',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/03c86d6ac63e3454.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/03c86d6ac63e3454.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_2',
@@ -131,7 +131,7 @@ const symptomArr = [
 ]
 const surgeryArr = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/6657fc39bf0d020c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/6657fc39bf0d020c.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_2',
@@ -142,7 +142,7 @@ const surgeryArr = [
     title: '白內障手術_眼藥水',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/55d34019e98d8e65.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/55d34019e98d8e65.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_2',
@@ -153,7 +153,7 @@ const surgeryArr = [
     title: '白內障手術_晶體混濁',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/7b14a5086daa3610.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/7b14a5086daa3610.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_2',
@@ -182,7 +182,7 @@ const iclArr = [
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/47e6f09498b91509.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/47e6f09498b91509.png',
     type: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_type',
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_type2',
@@ -197,7 +197,7 @@ const iclArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_multipleFocus',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/88fe9f4dae4a48d6.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/88fe9f4dae4a48d6.png',
     type: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_type',
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_type2',
@@ -214,7 +214,7 @@ const iclArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_multipleFocus',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/0fb789bc099b4c7e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/0fb789bc099b4c7e.png',
     type: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_type',
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_type2',
@@ -231,7 +231,7 @@ const iclArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_multipleFocus',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/5cc8f1f288c60d39.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/5cc8f1f288c60d39.png',
     type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_type',
     monofocal: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_monofocal1',
@@ -247,7 +247,7 @@ const iclArr = [
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/c08795d5179afc22.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/c08795d5179afc22.png',
     type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_type',
     monofocal: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal1',
@@ -273,49 +273,49 @@ const announcementsArr = [
   {
     id: '01',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements1',
-    img: 'https://static.cmereye.com/imgs/2023/05/28e797c56a574cce.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/28e797c56a574cce.png',
     alt: '戴眼罩為白內障手術後護理方法',
     title: '白內障手術後護理',
   },
   {
     id: '02',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements2',
-    img: 'https://static.cmereye.com/imgs/2023/05/37962e24ec481c1c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/37962e24ec481c1c.png',
     alt: '睡前戴眼罩為白內障術後注意事項',
     title: '白內障術後注意事項',
   },
   {
     id: '03',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements3',
-    img: 'https://static.cmereye.com/imgs/2023/05/63d616d8816fc14d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/63d616d8816fc14d.png',
     alt: '白內障術後注意事項_平臥或仰臥洗頭',
     title: '白內障術後注意事項',
   },
   {
     id: '04',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements4',
-    img: 'https://static.cmereye.com/imgs/2023/05/d1539d09a4afe49a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d1539d09a4afe49a.png',
     alt: '白內障手術後護理_保持傷口清潔',
     title: '白內障手術後護理',
   },
   {
     id: '05',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements5',
-    img: 'https://static.cmereye.com/imgs/2023/05/04c51b9d4cdf56e9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/04c51b9d4cdf56e9.png',
     alt: '白內障術後注意事項_避免劇烈運動',
     title: '白內障術後注意事項',
   },
   {
     id: '06',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements6',
-    img: 'https://static.cmereye.com/imgs/2023/05/56cd1f34a7c0da6e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/56cd1f34a7c0da6e.png',
     alt: '白內障手術後護理_滴上眼科醫生處方眼藥水',
     title: '白內障手術後護理',
   },
   {
     id: '07',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements7',
-    img: 'https://static.cmereye.com/imgs/2023/05/aa98a33175063fa3.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/aa98a33175063fa3.png',
     alt: '白內障手術後護理_定期眼睛檢查',
     title: '白內障手術後護理',
   },
@@ -418,8 +418,8 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png',
-  mbSrc: 'https://static.cmereye.com/imgs/2023/10/5934acd90d66772b.png',
+  pcSrc: 'https://statichk.cmermedical.com/imgs/2023/10/172f81e3e63cc3e4.png',
+  mbSrc: 'https://statichk.cmermedical.com/imgs/2023/10/5934acd90d66772b.png',
   cnName: '白內障',
   enName: 'CATARACT',
   textColor: '#3DBAD7',
@@ -468,7 +468,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/306305535d5e270b.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/306305535d5e270b.png"
                 alt="患有白內障的年長者感到視力模糊"
                 title="白內障_視力模糊"
               />
@@ -698,11 +698,11 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/e018dee96aa2c911.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/e018dee96aa2c911.png"
                 alt="微創白內障手術人工晶體植入過程"
                 title="微創白內障手術_人工晶體植入"
               /><img
-                src="https://static.cmereye.com/imgs/2023/05/3f1897286d36f0c5.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/3f1897286d36f0c5.png"
                 alt="白內障手術使用的人工晶體"
                 title="白內障手術_人工晶體"
               />
@@ -928,7 +928,7 @@ const bannerData = {
                   <!-- {{ $t(item.type) }} -->
                   <div v-if="Array.isArray(item.type)">
                     <div v-for="(ele, eleIndex) in item.type" :key="eleIndex">
-                      <!-- <img v-if="index" src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png" /> -->
+                      <!-- <img v-if="index" src="https://statichk.cmermedical.com/imgs/2023/05/5be0ff77c88a5626.png" /> -->
                       <div v-if="Array.isArray(ele)">
                         <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
                       </div>
@@ -950,7 +950,7 @@ const bannerData = {
                   >
                     <img
                       v-if="index"
-                      src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/05/5be0ff77c88a5626.png"
                     />
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
@@ -971,7 +971,7 @@ const bannerData = {
                     :key="eleIndex"
                   >
                     <img
-                      src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/05/5be0ff77c88a5626.png"
                     />
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
@@ -1000,7 +1000,7 @@ const bannerData = {
                     :key="eleIndex"
                   >
                     <img
-                      src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/05/5be0ff77c88a5626.png"
                     />
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
@@ -1154,7 +1154,7 @@ const bannerData = {
             "
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt=""
               srcset=""
             />
@@ -1195,7 +1195,7 @@ const bannerData = {
             "
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt=""
               srcset=""
             />
@@ -2961,7 +2961,7 @@ const bannerData = {
               left: -32px;
               width: 20px;
               height: 20px;
-              background: url(https://static.cmereye.com/imgs/2023/07/5f0bd54a3df3bf8f.png);
+              background: url(https://statichk.cmermedical.com/imgs/2023/07/5f0bd54a3df3bf8f.png);
               background-size: 100% 100%;
             }
             br {

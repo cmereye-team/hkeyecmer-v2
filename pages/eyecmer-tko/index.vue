@@ -5,7 +5,7 @@
     <div class="head_img text-center">
       <div class="head_logo" style="display: none">
         <img
-          src="https://static.cmereye.com/imgs/2022/12/6954cd4c6ffe34ed.png"
+          src="https://statichk.cmermedical.com/imgs/2022/12/6954cd4c6ffe34ed.png"
           alt=""
         />
       </div>
@@ -27,7 +27,7 @@
       <!-- 默认banner图勿删，目前用新上代言人banner -->
       <!-- <img
         class="head_banner"
-        src="https://static.cmereye.com/imgs/2023/08/0a89e0831f867255.avif"
+        src="https://statichk.cmermedical.com/imgs/2023/08/0a89e0831f867255.avif"
         alt=""
       /> -->
     </div>
@@ -92,7 +92,7 @@
                     {include file=about_jjd.html}
 
                 </div> -->
-          <!-- <img src = 'https://static.cmereye.com/imgs/2023/08/202147abe1249e66.avif' /> -->
+          <!-- <img src = 'https://statichk.cmermedical.com/imgs/2023/08/202147abe1249e66.avif' /> -->
           <!-- <div class="imgBox">
             <swiper
               :loop="true"
@@ -494,7 +494,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/imgs/2022/12/ed18fa038434cd78.png"
+                    src="https://statichk.cmermedical.com/imgs/2022/12/ed18fa038434cd78.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -575,7 +575,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/imgs/2023/08/7eaf25af1aed62ba.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/08/7eaf25af1aed62ba.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -611,7 +611,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png"
+                    src="https://statichk.cmermedical.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -623,7 +623,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png"
+                    src="https://statichk.cmermedical.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -635,7 +635,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png"
+                    src="https://statichk.cmermedical.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -647,7 +647,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="	https://static.cmereye.com/imgs/2023/08/423d199fdb161409.jpg"
+                    src="	https://statichk.cmermedical.com/imgs/2023/08/423d199fdb161409.jpg"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -659,7 +659,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png"
+                    src="https://statichk.cmermedical.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -671,7 +671,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="	https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png"
+                    src="	https://statichk.cmermedical.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -751,7 +751,7 @@
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/imgs/2023/08/7dce7444c1c14da4.jpg"
+                    src="https://statichk.cmermedical.com/imgs/2023/08/7dce7444c1c14da4.jpg"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -800,13 +800,13 @@
             </div>
             <div class="swiper-button-prev">
               <img
-                src="https://static.cmereye.com/imgs/2022/12/05ca2b06f750608f.png"
+                src="https://statichk.cmermedical.com/imgs/2022/12/05ca2b06f750608f.png"
                 alt=""
               />
             </div>
             <div class="swiper-button-next">
               <img
-                src="https://static.cmereye.com/imgs/2022/12/bdeac20e23a3fdef.png"
+                src="https://statichk.cmermedical.com/imgs/2022/12/bdeac20e23a3fdef.png"
                 alt=""
               />
             </div> -->
@@ -842,7 +842,7 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/imgs/2022/12/ed18fa038434cd78.png"
+                    src="https://statichk.cmermedical.com/imgs/2022/12/ed18fa038434cd78.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -923,7 +923,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/imgs/2023/08/7eaf25af1aed62ba.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/08/7eaf25af1aed62ba.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -959,7 +959,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png"
+                    src="https://statichk.cmermedical.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -971,7 +971,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png"
+                    src="https://statichk.cmermedical.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -983,7 +983,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png"
+                    src="https://statichk.cmermedical.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -995,7 +995,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="	https://static.cmereye.com/imgs/2023/08/423d199fdb161409.jpg"
+                    src="	https://statichk.cmermedical.com/imgs/2023/08/423d199fdb161409.jpg"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -1007,7 +1007,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png"
+                    src="https://statichk.cmermedical.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -1019,7 +1019,7 @@
 
                 <div class="swiper-slide">
                   <img
-                    src="	https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png"
+                    src="	https://statichk.cmermedical.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -1099,7 +1099,7 @@
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="https://static.cmereye.com/imgs/2023/08/7dce7444c1c14da4.jpg"
+                    src="https://statichk.cmermedical.com/imgs/2023/08/7dce7444c1c14da4.jpg"
                     alt=""
                   />
                   <div class="overlay-box">
@@ -1148,13 +1148,13 @@
             </div>
             <div class="swiper-button-prev">
               <img
-                src="https://static.cmereye.com/imgs/2022/12/05ca2b06f750608f.png"
+                src="https://statichk.cmermedical.com/imgs/2022/12/05ca2b06f750608f.png"
                 alt=""
               />
             </div>
             <div class="swiper-button-next">
               <img
-                src="https://static.cmereye.com/imgs/2022/12/bdeac20e23a3fdef.png"
+                src="https://statichk.cmermedical.com/imgs/2022/12/bdeac20e23a3fdef.png"
                 alt=""
               />
             </div> -->
@@ -1257,31 +1257,31 @@ const eyeCenterImgList = [
 // 诊所环境轮播图数据
 const clinicSlides = [
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/2d7553dde0981cde.avif',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/2d7553dde0981cde.avif',
     alt: 'TwBg1',
   },
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/97215452e26c21dc.avif',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/97215452e26c21dc.avif',
     alt: 'TwBg2',
   },
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/cf1fa7294c6253fa.avif',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/cf1fa7294c6253fa.avif',
     alt: 'TwBg3',
   },
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/71557fa53a3d9dbd.avif',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/71557fa53a3d9dbd.avif',
     alt: 'TwBg4',
   },
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/795f3caf0efc3393.avif',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/795f3caf0efc3393.avif',
     alt: 'TwBg5',
   },
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/22992d0ada79a70e.avif',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/22992d0ada79a70e.avif',
     alt: 'TwBg5',
   },
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/202147abe1249e66.avif',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/202147abe1249e66.avif',
     alt: 'TwBg5',
   },
 ]
@@ -1317,7 +1317,7 @@ const teamSlides = [
     name: '邱俊源醫生',
   },
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/7eaf25af1aed62ba.png',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/7eaf25af1aed62ba.png',
     name: '李琬微醫生',
   },
   {
@@ -1330,31 +1330,31 @@ const teamSlides = [
   },
   {
     image:
-      'https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png',
+      'https://statichk.cmermedical.com/static/hkcmereye/doctor/%E9%BB%8E%E6%B5%A9%E6%A8%BA_KennyLai.png',
     name: '黎浩樺醫生',
   },
   {
     image:
-      'https://static.cmereye.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png',
+      'https://statichk.cmermedical.com/static/hkcmereye/doctor/%E6%9D%8E%E5%BE%B7%E5%80%AB_StephenLi.png',
     name: '李德倫醫生',
   },
   {
     image:
-      'https://static.cmereye.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png',
+      'https://statichk.cmermedical.com/static/hkcmereye/doctor/%E9%BB%84%E7%A6%AE%E6%96%87_RaymondWong.png',
     name: '黃禮文醫生',
   },
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/423d199fdb161409.jpg',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/423d199fdb161409.jpg',
     name: '張瀞之醫生',
   },
   {
     image:
-      'https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png',
+      'https://statichk.cmermedical.com/static/hkcmereye/doctor/%E6%9E%97%E5%AF%B6%E7%94%9F_CarolLam%20.png',
     name: '林寶生醫生',
   },
   {
     image:
-      'https://static.cmereye.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png',
+      'https://statichk.cmermedical.com/static/hkcmereye/doctor/%E6%9E%97%E5%B7%B1%E6%98%8E_JasmineLam.png',
     name: '林己明醫生',
   },
   {
@@ -1388,7 +1388,7 @@ const teamSlides = [
     name: '鄒樂韻醫生',
   },
   {
-    image: 'https://static.cmereye.com/imgs/2023/08/7dce7444c1c14da4.jpg',
+    image: 'https://statichk.cmermedical.com/imgs/2023/08/7dce7444c1c14da4.jpg',
     name: '陳鼎鼐醫生',
   },
   {
@@ -1480,14 +1480,14 @@ const teamSlides = [
   }
 
   .imgBox .swiper-button-next {
-    background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
+    background: url(https://statichk.cmermedical.com/imgs/2022/12/4fd46d52a47c62e5.png)
       no-repeat !important;
     background-size: 80% !important;
   }
 
   .imgBox .swiper-button-prev {
     left: -47px !important;
-    background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
+    background: url(https://statichk.cmermedical.com/imgs/2022/12/2278de61c32ceb46.png)
       no-repeat !important;
     background-size: 80% !important;
   }
@@ -1594,14 +1594,14 @@ const teamSlides = [
 
   //  :deep(#certify .swiper-button-next)  {
 
-  //     background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
+  //     background: url(https://statichk.cmermedical.com/imgs/2022/12/4fd46d52a47c62e5.png)
   //       no-repeat !important;
   //     background-size: 49% !important;
   //     /* width: auto !important; */
   //   }
 
   //  :deep(#certify .swiper-button-prev){
-  //     background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
+  //     background: url(https://statichk.cmermedical.com/imgs/2022/12/2278de61c32ceb46.png)
   //       no-repeat !important;
   //     background-size: 49% !important;
   //     /* width: auto !important; */
@@ -1629,7 +1629,7 @@ const teamSlides = [
   }
 
   .bg-partTwo {
-    background: url('https://static.cmereye.com/imgs/2022/12/e048b8f98831bbf3.jpg');
+    background: url('https://statichk.cmermedical.com/imgs/2022/12/e048b8f98831bbf3.jpg');
   }
 
   /* 朗眼科診所環境 end */
@@ -1701,7 +1701,7 @@ const teamSlides = [
   .cener_title:after {
     position: absolute;
     content: '';
-    background: url(https://static.cmereye.com/imgs/2022/12/d5f545332ae6097e.png)
+    background: url(https://statichk.cmermedical.com/imgs/2022/12/d5f545332ae6097e.png)
       no-repeat;
     bottom: -25px;
     width: 100%;
@@ -1808,7 +1808,7 @@ const teamSlides = [
   .cener_title:after {
     position: absolute;
     content: '';
-    background: url(https://static.cmereye.com/imgs/2022/12/d5f545332ae6097e.png)
+    background: url(https://statichk.cmermedical.com/imgs/2022/12/d5f545332ae6097e.png)
       no-repeat;
     bottom: -15px;
     width: 35%;
@@ -1947,14 +1947,14 @@ const teamSlides = [
   }
   :deep(#certifyTwo .swiper-button-next) {
     right: 10px;
-    background: url(https://static.cmereye.com/imgs/2022/12/4fd46d52a47c62e5.png)
+    background: url(https://statichk.cmermedical.com/imgs/2022/12/4fd46d52a47c62e5.png)
       no-repeat !important;
     background-size: 49% !important;
   }
 
   :deep(#certifyTwo .swiper-button-prev) {
     left: 20px;
-    background: url(https://static.cmereye.com/imgs/2022/12/2278de61c32ceb46.png)
+    background: url(https://statichk.cmermedical.com/imgs/2022/12/2278de61c32ceb46.png)
       no-repeat !important;
     background-size: 49% !important;
   }
@@ -2030,7 +2030,7 @@ const teamSlides = [
   }
 
   .bg-partTwo {
-    background: url('https://static.cmereye.com/imgs/2022/12/e048b8f98831bbf3.jpg');
+    background: url('https://statichk.cmermedical.com/imgs/2022/12/e048b8f98831bbf3.jpg');
   }
 
   /* 朗眼科診所環境 end */

@@ -13,49 +13,49 @@ const backgd = [
 // 什麼是乾眼症
 const xerophthalmiaType = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/e9b7f8f01ed8bafc.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/e9b7f8f01ed8bafc.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text1',
     img_alt: '眼睛乾澀為乾眼症症狀',
     img_title: '乾眼症症狀_眼睛乾澀',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/2429bd6a29fb645c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/2429bd6a29fb645c.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text2',
     img_alt: '眼睛疲倦為乾眼症症狀',
     img_title: '乾眼症症狀_眼睛疲倦',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/f79ac0c36913185d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/f79ac0c36913185d.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text3',
     img_alt: '眼睛異物感為乾眼症症狀',
     img_title: '乾眼症症狀_眼睛異物感',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/c0fd1f575a8b07cc.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/c0fd1f575a8b07cc.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text4',
     img_alt: '眼睛灼熱感為乾眼症症狀',
     img_title: '乾眼症症狀_眼睛灼熱感',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4623f3b40418874b.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4623f3b40418874b.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text5',
     img_alt: '眼睛分泌物為乾眼症症狀',
     img_title: '乾眼症症狀_眼睛分泌物',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4b9fe2d23526754a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4b9fe2d23526754a.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text6',
     img_alt: '眼睛紅腫為乾眼症症狀',
     img_title: '乾眼症症狀_眼睛紅腫',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a7e034924424d921.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a7e034924424d921.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text7',
     img_alt: '畏光為乾眼症症狀',
     img_title: '乾眼症症狀_畏光',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/6271382192cc8a11.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/6271382192cc8a11.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text8',
     img_alt: '角膜破皮為乾眼症症狀',
     img_title: '乾眼症症狀_角膜破皮',
@@ -63,24 +63,24 @@ const xerophthalmiaType = [
 ]
 const factor = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a3f259e078ea72a5.png',
-    mbImg: 'https://static.cmereye.com/imgs/2023/07/0aa695d446127914.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a3f259e078ea72a5.png',
+    mbImg: 'https://statichk.cmermedical.com/imgs/2023/07/0aa695d446127914.jpg',
     title: 'pages.medical_service.xerophthalmia_con.factor.title1',
     text: 'pages.medical_service.xerophthalmia_con.factor.text1',
     img_title: '淚膜_脂質層',
     img_alt: '淚膜中的脂質層',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4636b55143dcbe36.png',
-    mbImg: 'https://static.cmereye.com/imgs/2023/07/473ad45c51c10398.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4636b55143dcbe36.png',
+    mbImg: 'https://statichk.cmermedical.com/imgs/2023/07/473ad45c51c10398.jpg',
     title: 'pages.medical_service.xerophthalmia_con.factor.title2',
     text: 'pages.medical_service.xerophthalmia_con.factor.text2',
     img_title: '淚膜_水液層',
     img_alt: '淚膜中的水液層',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/b2645285665a9dfe.png',
-    mbImg: 'https://static.cmereye.com/imgs/2023/07/d37cda7797106efa.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/b2645285665a9dfe.png',
+    mbImg: 'https://statichk.cmermedical.com/imgs/2023/07/d37cda7797106efa.jpg',
     title: 'pages.medical_service.xerophthalmia_con.factor.title3',
     text: 'pages.medical_service.xerophthalmia_con.factor.text3',
     img_title: '淚膜_黏液層',
@@ -89,14 +89,14 @@ const factor = [
 ]
 const tearFilm = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4b8a7f27d3efb04c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4b8a7f27d3efb04c.png',
     title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[0].title',
     text: ['pages.medical_service.xerophthalmia_con.factor.tearFilm[0].text'],
     img_title: '乾眼症成因',
     img_alt: '脂質層分泌不足為乾眼症成因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/cb6ed9e181f060df.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/cb6ed9e181f060df.png',
     title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].title',
     text: [
       'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].text',
@@ -111,14 +111,14 @@ const tearFilm = [
     img_alt: '水液層分泌不足為乾眼症成因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/f0c095b2a5ff1d8e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/f0c095b2a5ff1d8e.png',
     title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[2].title',
     text: ['pages.medical_service.xerophthalmia_con.factor.tearFilm[2].text'],
     img_title: '乾眼症成因',
     img_alt: '黏液層分泌不足為乾眼症成因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/2f4d44f6b2c6d83d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/2f4d44f6b2c6d83d.png',
     title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[3].title',
     text: [
       'pages.medical_service.xerophthalmia_con.factor.tearFilm[3].text',
@@ -131,21 +131,21 @@ const tearFilm = [
 ]
 const category = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a9e66bca4e6780d0.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a9e66bca4e6780d0.png',
     title: 'pages.medical_service.xerophthalmia_con.category.title1',
     text: 'pages.medical_service.xerophthalmia_con.category.text1',
     img_title: '缺水型乾眼症',
     img_alt: '缺水型乾眼症為乾眼症類別',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/6b86edd7b9d813ec.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/6b86edd7b9d813ec.png',
     title: 'pages.medical_service.xerophthalmia_con.category.title2',
     text: 'pages.medical_service.xerophthalmia_con.category.text2',
     img_title: '缺油型乾眼症',
     img_alt: '缺油型乾眼症為乾眼症類別',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/bde93bbfe96c35e9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/bde93bbfe96c35e9.png',
     title: 'pages.medical_service.xerophthalmia_con.category.title3',
     text: 'pages.medical_service.xerophthalmia_con.category.text3',
     img_title: '混合型乾眼症',
@@ -154,37 +154,37 @@ const category = [
 ]
 const highRisk = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/2b5ce4abba134883.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/2b5ce4abba134883.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text1',
     img_title: '乾眼症高危人士_隱形眼鏡',
     img_alt: '長時間佩戴隱形眼鏡為乾眼症高危人士',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/421a73f210b33563.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/421a73f210b33563.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text2',
     img_title: '乾眼症高危人士_長時間使用電子產品',
     img_alt: '辦公室女職員長時間使用電子產品為乾眼症高危人士',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/8661e3413fd98abf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/8661e3413fd98abf.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text3',
     img_title: '乾眼症高危人士_過量藥物',
     img_alt: '服用過量藥物患者為乾眼症高危人士',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/933a2eee445d7e09.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/933a2eee445d7e09.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text4',
     img_title: '乾眼症高危人士_空調環境',
     img_alt: '患者長期處於空調環境下為乾眼症高危人士',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/3d263ab67d6aa0e8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/3d263ab67d6aa0e8.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text5',
     img_title: '乾眼症高危人士_免疫系統疾病',
     img_alt: '免疫系統疾病患者為乾眼症高危人士',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/3267576cc1afabaa.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/3267576cc1afabaa.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text6',
     img_title: '乾眼症高危人士_更年期',
     img_alt: '表現疲憊姿態的更年期婦女為乾眼症高危人士',
@@ -267,31 +267,31 @@ const means = [
 // 其他紓緩眼乾症狀的方法︰
 const wayOther = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/7caf90b190bdd2cc.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/7caf90b190bdd2cc.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_1',
     img_title: '乾眼症舒緩',
     img_alt: '避免服用減少淚液分泌藥物為乾眼症舒緩方法',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/e69cbe139e039d40.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/e69cbe139e039d40.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_2',
     img_title: '乾眼症舒緩_免疫抑制劑',
     img_alt: '使用免疫抑制劑為乾眼症舒緩方法',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/82c69bfc9bef143a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/82c69bfc9bef143a.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_3',
     img_title: '眼症舒緩_隱形眼鏡',
     img_alt: '減少配戴隱形眼鏡為乾眼症舒緩方法',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/d2cfb7e362fe19ea.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d2cfb7e362fe19ea.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_4',
     img_title: '乾眼症舒緩_補充水份',
     img_alt: '補充水份為乾眼症舒緩方法',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/20403c32e3ae1ccf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/20403c32e3ae1ccf.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_5',
     img_title: '乾眼症舒緩_護眼食物',
     img_alt: '多吃護眼食物為乾眼症舒緩方法',
@@ -390,8 +390,8 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/乾眼症1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/乾眼症2.png',
+  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/乾眼症1.png',
+  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/乾眼症2.png',
   cnName: '乾眼症',
   enName: 'DRY EYES',
   textColor: '#8F8BCA',
@@ -430,14 +430,14 @@ const bannerData = {
           <div>
             <div>
               <img
-                data-cfsrc="https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png"
+                data-cfsrc="https://statichk.cmermedical.com/imgs/2023/06/84382a189b0f3a65.png"
                 srcset="
-                  https://static.cmereye.com/imgs/2023/07/4c021489e013750f.jpg 768w,
-                  https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png
+                  https://statichk.cmermedical.com/imgs/2023/07/4c021489e013750f.jpg 768w,
+                  https://statichk.cmermedical.com/imgs/2023/06/84382a189b0f3a65.png
                 "
                 title="乾眼症症狀"
                 alt="女患者眼睛不適為乾眼症症狀表現"
-                src="https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/84382a189b0f3a65.png"
               />
             </div>
           </div>
@@ -513,7 +513,7 @@ const bannerData = {
                 v-if="locale === 'en'"
               />
               <img
-                src="https://static.cmereye.com/imgs/2023/10/8bcf58c7b6d0adf8.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/10/8bcf58c7b6d0adf8.jpg"
                 title="乾眼症_淚膜三層"
                 alt="乾眼症淚膜三層結構"
                 v-else
@@ -684,7 +684,7 @@ const bannerData = {
                 </div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/05/96be300a751eee94.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/05/96be300a751eee94.png"
                     title="乾眼症自我檢測_淚液測試"
                     alt="淚液測試試紙為乾眼症自我檢測方法"
                   />
@@ -727,7 +727,7 @@ const bannerData = {
             <div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/bc830caf2d8498fa.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/05/bc830caf2d8498fa.png"
                   title="乾眼症治療_脈衝光治療"
                   alt="脈衝光治療為乾眼症治療方法"
                 />
@@ -902,7 +902,7 @@ const bannerData = {
               </div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/cf53e666d96890d0.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/05/cf53e666d96890d0.png"
                   title="乾眼症治療_人工淚液"
                   alt="人工淚液為乾眼症治療方法"
                   srcset=""
@@ -1034,7 +1034,7 @@ const bannerData = {
               :download="'乾眼症'"
             >
               <img
-                src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
                 title="乾眼症"
                 alt="乾眼症_小冊子"
                 srcset=""
@@ -1762,7 +1762,7 @@ const bannerData = {
 
         & > div::after {
           content: '';
-          background: url('https://static.cmereye.com/imgs/2023/05/24a8fecc85da78e0.jpg');
+          background: url('https://statichk.cmermedical.com/imgs/2023/05/24a8fecc85da78e0.jpg');
           width: 15px;
           height: 46px;
           position: absolute;
@@ -2085,7 +2085,7 @@ const bannerData = {
         position: absolute;
         right: -15px;
         content: '';
-        background: url('https://static.cmereye.com/imgs/2023/05/d77b2eace7e89ae7.jpg');
+        background: url('https://statichk.cmermedical.com/imgs/2023/05/d77b2eace7e89ae7.jpg');
         width: 30px;
         height: 45px;
         bottom: 13px;
@@ -2094,7 +2094,7 @@ const bannerData = {
       & > div:nth-child(6)::before {
         position: absolute;
         content: '';
-        background: url('https://static.cmereye.com/imgs/2023/05/dd10e67efe7af43c.jpg');
+        background: url('https://statichk.cmermedical.com/imgs/2023/05/dd10e67efe7af43c.jpg');
         width: 30px;
         height: 53px;
         top: 30%;
@@ -2149,7 +2149,7 @@ const bannerData = {
       // 使用人工淚液
       & > div:nth-child(8) {
         margin-top: 59px;
-        background: url('https://static.cmereye.com/imgs/2023/05/3cc8de62b7e69384.png')
+        background: url('https://statichk.cmermedical.com/imgs/2023/05/3cc8de62b7e69384.png')
           no-repeat;
         height: 257px;
         padding: 42px 60px;
@@ -2364,7 +2364,7 @@ const bannerData = {
 
         & > div:nth-child(1)::before {
           content: '';
-          background: url('https://static.cmereye.com/imgs/2023/05/2f91d710e3b319e6.png')
+          background: url('https://statichk.cmermedical.com/imgs/2023/05/2f91d710e3b319e6.png')
             no-repeat;
           width: 15px;
           height: 17px;
@@ -3367,7 +3367,7 @@ const bannerData = {
           width: 100%;
           margin-top: 40px;
           padding: 25px 30px;
-          background: url(https://static.cmereye.com/imgs/2023/07/7de6d60faf433c9a.png);
+          background: url(https://statichk.cmermedical.com/imgs/2023/07/7de6d60faf433c9a.png);
           transform: scale(1);
           background-size: 100% 100%;
           & > div {

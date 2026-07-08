@@ -112,37 +112,37 @@ const menuLists = computed(() => [
     lists: [
       {
         name: 'Tel: (852) 3956 2025',
-        icon: 'https://static.cmereye.com/imgs/2023/07/724ec499dbc6fbfd.png',
+        icon: 'https://statichk.cmermedical.com/imgs/2023/07/724ec499dbc6fbfd.png',
         link: 'tel: +852 3956 2025',
       },
       {
         name: 'WhatsApp: (852) 9345 1508',
-        icon: 'https://static.cmereye.com/imgs/2023/07/4ed161ebeea271cd.png',
+        icon: 'https://statichk.cmermedical.com/imgs/2023/07/4ed161ebeea271cd.png',
         link: 'https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2',
       },
       {
         name: '(Whatsapp)白內障專線：60629611',
-        icon: 'https://static.cmereye.com/imgs/2023/07/4ed161ebeea271cd.png',
+        icon: 'https://statichk.cmermedical.com/imgs/2023/07/4ed161ebeea271cd.png',
         link: 'https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢',
       },
       // {
       //   name: 'SMILE專線: (852) 6730 8554',
-      //   icon: 'https://static.cmereye.com/imgs/2023/07/e4927ce3113f0a5d.png',
+      //   icon: 'https://statichk.cmermedical.com/imgs/2023/07/e4927ce3113f0a5d.png',
       //   link: ''
       // },
       {
         name: 'Facebook: cmereyecenter',
-        icon: 'https://static.cmereye.com/imgs/2023/07/28d1674922e892cc.png',
+        icon: 'https://statichk.cmermedical.com/imgs/2023/07/28d1674922e892cc.png',
         link: 'https://www.facebook.com/cmereyecenter',
       },
       {
         name: 'Instagram: @cmer_eye_center',
-        icon: 'https://static.cmereye.com/imgs/2023/07/28f20047d8233ea4.png',
+        icon: 'https://statichk.cmermedical.com/imgs/2023/07/28f20047d8233ea4.png',
         link: 'https://www.instagram.com/cmer_eye_center/',
       },
       {
         name: t('components.menus.wechat'),
-        icon: 'https://static.cmereye.com/imgs/2023/07/56fb4969e6637ae4.png',
+        icon: 'https://statichk.cmermedical.com/imgs/2023/07/56fb4969e6637ae4.png',
         link: '',
       },
     ],
@@ -217,7 +217,7 @@ let drawer = ref(false)
                     v-if="index === 2 && itemChildIndex === 4"
                   >
                     <img
-                      src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+                      src="https://statichk.cmermedical.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
                       alt="微信QR"
                       srcset=""
                     />
@@ -287,7 +287,7 @@ let drawer = ref(false)
       <el-drawer v-model="drawer" size="50%" :direction="'btt'">
         <div class="drawerIn">
           <img
-            src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+            src="https://statichk.cmermedical.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
             alt="微信QR"
             srcset=""
           />
@@ -551,7 +551,7 @@ let drawer = ref(false)
           justify-content: center;
           margin: 10px 0 10px;
           div {
-            background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
+            background-image: url(https://statichk.cmermedical.com/imgs/2023/07/6cc1329d65ca32ae.png);
             background-repeat: no-repeat;
             background-position: 5px 0;
             background-size: cover;

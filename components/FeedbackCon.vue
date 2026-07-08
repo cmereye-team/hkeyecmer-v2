@@ -45,15 +45,15 @@ onMounted(() => {
         v-if="windowWidth > 768"
       >
         <!-- <swiper-slide v-for="feedback in 18" :key="feedback">
-              <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${feedback>=10? feedback: '0'+String(feedback)}.jpg`" alt="">
+              <img :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/${feedback>=10? feedback: '0'+String(feedback)}.jpg`" alt="">
             </swiper-slide> -->
         <swiper-slide class="feedbackSwiperSlide">
           <!-- <div v-for="feedback in 6" :key="feedback">
-                <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${'0'+String(feedback)}.jpg`" alt="">
+                <img :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/${'0'+String(feedback)}.jpg`" alt="">
               </div> -->
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/01.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/01.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -68,7 +68,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/02.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/02.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -83,7 +83,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/03.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/03.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -98,7 +98,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/04.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/04.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist in Central'
@@ -113,7 +113,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/05.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/05.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic and ophthalmologist'
@@ -128,7 +128,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/06.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/06.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -144,11 +144,11 @@ onMounted(() => {
         </swiper-slide>
         <swiper-slide class="feedbackSwiperSlide">
           <!-- <div v-for="feedback in 6" :key="feedback">
-                <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${feedback>=4? 6+feedback: '0'+String(6+feedback)}.jpg`" alt="">
+                <img :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/${feedback>=4? 6+feedback: '0'+String(6+feedback)}.jpg`" alt="">
               </div> -->
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/07.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/07.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -163,7 +163,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/08.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/08.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic and ophthalmologist'
@@ -178,7 +178,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/09.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/09.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -193,7 +193,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/10.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/10.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist'
@@ -208,7 +208,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/11.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/11.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -223,7 +223,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/12.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/12.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -239,11 +239,11 @@ onMounted(() => {
         </swiper-slide>
         <swiper-slide class="feedbackSwiperSlide">
           <!-- <div v-for="feedback in 6" :key="feedback">
-                <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${12+feedback}.jpg`" alt="">
+                <img :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/${12+feedback}.jpg`" alt="">
               </div> -->
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/13.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/13.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist'
@@ -258,7 +258,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/14.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/14.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -273,7 +273,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/15.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/15.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -288,7 +288,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/16.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/16.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist'
@@ -303,7 +303,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/17.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/17.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist'
@@ -318,7 +318,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/18.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/18.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -336,13 +336,13 @@ onMounted(() => {
       <swiper class="feedbackSwiper" @swiper="setSwiperRef" v-else>
         <!-- <swiper-slide class="feedbackSwiperSlide" v-for="(item,index) in 11" :key="index">
               <div v-for="feedback in 2" :key="`${index}${feedback}`">
-                <img :src="`https://static.cmereye.com/static/hkcmereye/imgs/${(2*index + feedback)<10?'0'+String(2*index + feedback):2*index + feedback}.jpg`" alt="">
+                <img :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/${(2*index + feedback)<10?'0'+String(2*index + feedback):2*index + feedback}.jpg`" alt="">
               </div>
             </swiper-slide> -->
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/01.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/01.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -357,7 +357,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/02.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/02.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -374,7 +374,7 @@ onMounted(() => {
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/03.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/03.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -389,7 +389,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/04.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/04.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist in Central'
@@ -406,7 +406,7 @@ onMounted(() => {
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/05.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/05.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic and ophthalmologist'
@@ -421,7 +421,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/06.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/06.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -438,7 +438,7 @@ onMounted(() => {
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/07.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/07.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -453,7 +453,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/08.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/08.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic and ophthalmologist'
@@ -470,7 +470,7 @@ onMounted(() => {
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/09.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/09.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -485,7 +485,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/10.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/10.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist'
@@ -502,7 +502,7 @@ onMounted(() => {
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/11.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/11.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -517,7 +517,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/12.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/12.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -534,7 +534,7 @@ onMounted(() => {
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/13.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/13.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist'
@@ -549,7 +549,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/14.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/14.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -566,7 +566,7 @@ onMounted(() => {
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/15.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/15.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -581,7 +581,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/16.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/16.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist'
@@ -598,7 +598,7 @@ onMounted(() => {
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/17.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/17.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended ophthalmologist'
@@ -613,7 +613,7 @@ onMounted(() => {
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/18.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/18.jpg`"
               :title="
                 locale === 'en'
                   ? 'C-MER Eye Center - Recommended Eye Clinic'
@@ -630,32 +630,32 @@ onMounted(() => {
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/19.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/19.jpg`"
             />
           </div>
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/20.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/20.jpg`"
             />
           </div>
         </swiper-slide>
         <swiper-slide class="feedbackSwiperSlide">
           <div>
             <img
-              :src="`https://static.cmereye.com/static/hkcmereye/imgs/21.jpg`"
+              :src="`https://statichk.cmermedical.com/static/hkcmereye/imgs/21.jpg`"
             />
           </div>
         </swiper-slide>
       </swiper>
       <div class="btn-prev" @click="handleSwiper('Prev')">
         <img
-          src="https://static.cmereye.com/imgs/2023/08/00f5b218523dd5d1.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/08/00f5b218523dd5d1.jpg"
           alt=""
         />
       </div>
       <div class="btn-next" @click="handleSwiper('Next')">
         <img
-          src="https://static.cmereye.com/imgs/2023/08/71e502b74ad9853c.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/08/71e502b74ad9853c.jpg"
           alt=""
         />
       </div>

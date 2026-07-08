@@ -45,16 +45,16 @@ const serviceNavigation = [
   },
 ]
 const bannerList = [
-  'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
-  'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
-  'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
-  'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
-  'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
-  'https://static.cmereye.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
-  'https://static.cmereye.com/imgs/2023/02/7b2b3aece0568465.jpg',
-  'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
-  'https://static.cmereye.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
-  'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/08/2c27250793407eea.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/02/25af72668dfcc99a.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/02/8d8be0a888c145c3.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/02/7b2b3aece0568465.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/02/c1613e3f82d89529.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
+  'https://statichk.cmermedical.com/imgs/2023/02/c1613e3f82d89529.jpg',
 ]
 const addressList = [
   {
@@ -64,7 +64,7 @@ const addressList = [
     addressDetailList: [
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_addressName',
         addressDetail:
@@ -81,7 +81,7 @@ const addressList = [
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_addressName',
         addressDetail:
@@ -98,7 +98,7 @@ const addressList = [
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/08/2c27250793407eea.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_addressName',
         addressDetail:
@@ -122,7 +122,7 @@ const addressList = [
     addressDetailList: [
       //    {
       //      addressImg:
-      //        'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
+      //        'https://statichk.cmermedical.com/imgs/2023/02/25af72668dfcc99a.jpg',
       //      addressName:
       //        'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressName',
       //      addressDetail:
@@ -141,7 +141,7 @@ const addressList = [
       //  },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/8d8be0a888c145c3.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_addressName',
         addressDetail:
@@ -158,7 +158,7 @@ const addressList = [
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/07/44e44190b497309f.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/07/44e44190b497309f.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_addressName',
         addressDetail:
@@ -182,7 +182,7 @@ const addressList = [
     addressDetailList: [
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/7b2b3aece0568465.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/7b2b3aece0568465.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_addressName',
         addressDetail:
@@ -199,7 +199,7 @@ const addressList = [
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/07/b5a72dc3949b4f75.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/07/b5a72dc3949b4f75.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_addressName',
         addressDetail:
@@ -216,7 +216,7 @@ const addressList = [
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_addressName',
         addressDetail:
@@ -233,7 +233,7 @@ const addressList = [
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/c1613e3f82d89529.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_addressName',
         addressDetail:
@@ -305,7 +305,7 @@ onMounted(() => {
         </div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/02/a2557c0317e17928.png"
+            src="https://statichk.cmermedical.com/imgs/2023/02/a2557c0317e17928.png"
             alt="診所資料"
           />
         </div>

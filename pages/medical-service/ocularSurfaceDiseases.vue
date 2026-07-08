@@ -138,7 +138,7 @@ const blepharitisList1 = [
 ]
 const blepharitisList2 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/b12fb31271ef4c0e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/b12fb31271ef4c0e.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_1',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.title1',
@@ -146,7 +146,7 @@ const blepharitisList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/2072d440153d5969.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/2072d440153d5969.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_2',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.title2',
@@ -154,7 +154,7 @@ const blepharitisList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/7aa1338885c18acb.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/7aa1338885c18acb.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_3',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.title3',
@@ -162,7 +162,7 @@ const blepharitisList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/4f1cd4190fdbe151.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/4f1cd4190fdbe151.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text1_4',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList2.title4',
@@ -172,7 +172,7 @@ const blepharitisList2 = [
 ]
 const blepharitisList3 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/77695fe77bc38fee.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/77695fe77bc38fee.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2_1',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.title1',
@@ -180,7 +180,7 @@ const blepharitisList3 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/9ee874c1ff5832b4.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/9ee874c1ff5832b4.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2_2',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.title2',
@@ -188,7 +188,7 @@ const blepharitisList3 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/0ffb423f9bec8c60.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/0ffb423f9bec8c60.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.blepharitis.text2_3',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.blepharitisList3.title3',
@@ -198,7 +198,7 @@ const blepharitisList3 = [
 ]
 const keratitisList = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/658fd4961f627781.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/658fd4961f627781.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text1',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title1',
@@ -206,7 +206,7 @@ const keratitisList = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/43281acecf701ee5.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/43281acecf701ee5.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text2',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title2',
@@ -214,7 +214,7 @@ const keratitisList = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/43d36f1afbbadf6b.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/43d36f1afbbadf6b.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text3',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title3',
@@ -222,7 +222,7 @@ const keratitisList = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/a55f6759de9edca4.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/a55f6759de9edca4.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text4',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title4',
@@ -230,7 +230,7 @@ const keratitisList = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/ed2c9360e662c9f8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/ed2c9360e662c9f8.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text5',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title5',
@@ -238,7 +238,7 @@ const keratitisList = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.alt5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/4a355851bbe49ff3.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/4a355851bbe49ff3.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratitis.text6',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratitisList.title6',
@@ -275,7 +275,7 @@ const damageList1 = [
 ]
 const damageList2 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/5a443e29bcab85f7.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/5a443e29bcab85f7.png',
     text: [
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_1_1',
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_1_2',
@@ -287,7 +287,7 @@ const damageList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/f5488a6cf20b2bfb.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/f5488a6cf20b2bfb.png',
     text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_2'],
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.title2',
@@ -295,7 +295,7 @@ const damageList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/35c768eeca793a10.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/35c768eeca793a10.png',
     text: ['pages.medical_service.ocularSurfaceDiseases_con.damage.text2_3'],
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.title3',
@@ -303,7 +303,7 @@ const damageList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/288f34fab3f9a8cf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/288f34fab3f9a8cf.png',
     text: [
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_1',
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_4_2',
@@ -314,7 +314,7 @@ const damageList2 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.damageList2.alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/f62bc78110c0bf14.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/f62bc78110c0bf14.png',
     text: [
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_1',
       'pages.medical_service.ocularSurfaceDiseases_con.damage.text2_5_2',
@@ -327,7 +327,7 @@ const damageList2 = [
 ]
 const keratoconusList1 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/125b93956e0ebff8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/125b93956e0ebff8.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_1',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title1',
@@ -335,7 +335,7 @@ const keratoconusList1 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/efe6bc1656aef6bd.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/efe6bc1656aef6bd.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_2',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title2',
@@ -343,7 +343,7 @@ const keratoconusList1 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/8d7ccaa7a5447c03.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/8d7ccaa7a5447c03.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_3',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title3',
@@ -351,7 +351,7 @@ const keratoconusList1 = [
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/664bfc9e4aeef087.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/664bfc9e4aeef087.png',
     text: 'pages.medical_service.ocularSurfaceDiseases_con.keratoconus.text1_4',
     img_title:
       'pages.medical_service.ocularSurfaceDiseases_con.blepharitis_new.keratoconusList1.title4',
@@ -405,9 +405,9 @@ const keratoplastyList1 = [
 
 const bannerData = {
   pcSrc:
-    'https://static.cmereye.com/static/hkcmereye/bannerzip/眼表及疾病1.png',
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/眼表及疾病1.png',
   mbSrc:
-    'https://static.cmereye.com/static/hkcmereye/bannerzip/眼表及疾病2.png',
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/眼表及疾病2.png',
   cnName: '眼表及角膜疾病',
   enName: 'OCULAR SURFACE AND CORNEAL DISEASES',
   textColor: '#93C9AC',
@@ -446,7 +446,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/720e572cb2de6352.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/720e572cb2de6352.png"
               :title="locale === 'en' ? 'Pterygium Symptoms' : `翼狀胬肉症狀`"
               :alt="
                 locale === 'en'
@@ -585,7 +585,7 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/b38916f2f6699954.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/b38916f2f6699954.png"
               :title="locale === 'en' ? 'Blepharitis Symptoms' : `眼臉炎症狀`"
               :alt="
                 locale === 'en'
@@ -625,7 +625,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/4e605cb3a688c00c.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/4e605cb3a688c00c.png"
                 :title="
                   locale === 'en'
                     ? 'Blepharitis Causes-Rubbing Eyes'
@@ -804,7 +804,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/ff742016ad1ea80b.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/ff742016ad1ea80b.png"
                 :title="locale === 'en' ? 'Keratitis Symptoms' : `角膜炎症狀`"
                 :alt="
                   locale === 'en'
@@ -822,7 +822,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/ac72de08eb33f8a2.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/ac72de08eb33f8a2.png"
                 :title="locale === 'en' ? 'Keratoplasty' : `角膜移植`"
                 :alt="
                   locale === 'en'
@@ -915,7 +915,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/2053b0709ed69a3a.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/2053b0709ed69a3a.png"
                 :title="locale === 'en' ? 'Iritis' : `虹膜炎`"
                 :alt="
                   locale === 'en'
@@ -1110,7 +1110,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/38bb162c73f64fc8.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/38bb162c73f64fc8.png"
                 :title="
                   locale === 'en'
                     ? 'Episcleritis Symptoms-Stress'
@@ -1132,7 +1132,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/f978fdcd0118b62a.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/f978fdcd0118b62a.png"
                 :title="
                   locale === 'en'
                     ? 'Episcleritis Symptoms-Hormonal Imbalance'
@@ -1154,7 +1154,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/c3f67ba61c369629.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/c3f67ba61c369629.png"
                 :title="
                   locale === 'en'
                     ? 'Episcleritis Symptoms-Immune Disorders'
@@ -1288,7 +1288,7 @@ const bannerData = {
               </div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/06/8ed21e35080dbfa1.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/06/8ed21e35080dbfa1.png"
                   :title="
                     locale === 'en'
                       ? 'Simple Episcleritis Symptoms'
@@ -1328,7 +1328,7 @@ const bannerData = {
               </div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/06/db41b40d23dfba06.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/06/db41b40d23dfba06.png"
                   :title="
                     locale === 'en'
                       ? 'Nodular Episcleritis Symptoms'
@@ -1459,7 +1459,7 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/2a769c496ebb7f7f.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/2a769c496ebb7f7f.png"
               :title="locale === 'en' ? 'Corneal Abrasion' : `角膜破皮`"
               :alt="
                 locale === 'en' ? 'Corneal Abrasion Condition' : '角膜破皮情況'
@@ -1614,7 +1614,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/284424c8276caf65.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/284424c8276caf65.png"
               :title="locale === 'en' ? 'Keratoconus' : `錐形角膜`"
               :alt="
                 locale === 'en'
@@ -1658,7 +1658,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/5a230949595f4632.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/5a230949595f4632.png"
                 :title="locale === 'en' ? 'Keratoconus' : `錐形角膜`"
                 :alt="
                   locale === 'en'
@@ -1888,7 +1888,7 @@ const bannerData = {
               <div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/06/ff742016ad1ea80b.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/06/ff742016ad1ea80b.png"
                     :title="
                       locale === 'en' ? 'Keratitis Symptoms' : `角膜炎症狀`
                     "
@@ -1901,7 +1901,7 @@ const bannerData = {
                 </div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/06/ac72de08eb33f8a2.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/06/ac72de08eb33f8a2.png"
                     :title="locale === 'en' ? 'Keratoplasty' : `角膜移植`"
                     :alt="
                       locale === 'en'
@@ -2153,11 +2153,11 @@ const bannerData = {
           transform: scale(0.85);
         }
         & > div:nth-child(1) {
-          background: url('https://static.cmereye.com/imgs/2023/06/6d544e0b46ceee84.png');
+          background: url('https://statichk.cmermedical.com/imgs/2023/06/6d544e0b46ceee84.png');
           background-size: 100% 100%;
         }
         & > div:nth-child(2) {
-          background: url('https://static.cmereye.com/imgs/2023/06/85baaef5d466b24b.png');
+          background: url('https://statichk.cmermedical.com/imgs/2023/06/85baaef5d466b24b.png');
           background-size: 100% 100%;
         }
       }
@@ -2296,7 +2296,7 @@ const bannerData = {
         }
         & > div::after {
           content: '';
-          background: url('https://static.cmereye.com/imgs/2023/06/897cdf641d33d96d.png');
+          background: url('https://statichk.cmermedical.com/imgs/2023/06/897cdf641d33d96d.png');
           width: 28px;
           height: 498px;
           display: inline-block;
@@ -2421,7 +2421,7 @@ const bannerData = {
           line-height: 38px;
           & > div::before {
             content: '';
-            background: url('https://static.cmereye.com/imgs/2023/06/4ec5fda73d711558.png');
+            background: url('https://statichk.cmermedical.com/imgs/2023/06/4ec5fda73d711558.png');
             width: 7px;
             height: 9px;
             display: inline-block;
@@ -2450,7 +2450,7 @@ const bannerData = {
           flex-direction: row;
           align-items: center;
           justify-content: center;
-          background: url('https://static.cmereye.com/imgs/2023/06/d4f5b0e6f7aad173.png');
+          background: url('https://statichk.cmermedical.com/imgs/2023/06/d4f5b0e6f7aad173.png');
           width: 156px;
           height: 155px;
           text-align: center;
@@ -2603,7 +2603,7 @@ const bannerData = {
         text-align: center;
         margin-top: 50px;
         & > div {
-          background: url('https://static.cmereye.com/imgs/2023/06/2a6caa9ee33d9d92.png');
+          background: url('https://statichk.cmermedical.com/imgs/2023/06/2a6caa9ee33d9d92.png');
           width: 281px;
           height: 112px;
           display: flex;
@@ -2798,7 +2798,7 @@ const bannerData = {
         justify-content: space-between;
         margin: 40px auto 140px;
         & > div {
-          background: url('https://static.cmereye.com/imgs/2023/06/88cae23e25d33512.png');
+          background: url('https://statichk.cmermedical.com/imgs/2023/06/88cae23e25d33512.png');
           background-size: 100% 100%;
           width: 360px;
           height: 144px;
@@ -3205,7 +3205,7 @@ const bannerData = {
           content: '';
           width: 189px;
           height: 188px;
-          background: url('https://static.cmereye.com/imgs/2023/06/d4f5b0e6f7aad173.png');
+          background: url('https://statichk.cmermedical.com/imgs/2023/06/d4f5b0e6f7aad173.png');
           background-size: 100% 100%;
           transform: rotate(-90deg);
           display: inline-block;
@@ -3711,7 +3711,7 @@ const bannerData = {
   width: 11px;
   height: 14px;
   margin-right: 15px;
-  background: url('https://static.cmereye.com/imgs/2023/06/e34a991e03e8c0a4.png');
+  background: url('https://statichk.cmermedical.com/imgs/2023/06/e34a991e03e8c0a4.png');
 }
 .ocularSurfaceDiseases_title_btn {
   display: flex;

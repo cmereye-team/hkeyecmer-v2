@@ -106,10 +106,10 @@ onMounted(() => {
     <div class="doctorClass-top">
       <div>
         <img
-          data-cfsrc="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"
+          data-cfsrc="https://statichk.cmermedical.com/imgs/2023/06/b58aca7e99ace3e7.jpg"
           srcset="
-            https://static.cmereye.com/imgs/2023/07/8e1ebf18405f8010.jpg 768w,
-            https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg
+            https://statichk.cmermedical.com/imgs/2023/07/8e1ebf18405f8010.jpg 768w,
+            https://statichk.cmermedical.com/imgs/2023/06/b58aca7e99ace3e7.jpg
           "
           :title="
             locale === 'en'
@@ -121,7 +121,7 @@ onMounted(() => {
               ? 'Ophthalmologist teams provides high-quality ophthalmic services'
               : '眼科醫生團隊提供優質眼科服務'
           "
-          src="https://static.cmereye.com/imgs/2023/06/b58aca7e99ace3e7.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/06/b58aca7e99ace3e7.jpg"
         />
       </div>
       <div>

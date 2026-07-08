@@ -62,25 +62,25 @@ const meetArr = [
 // 黃斑病變的症狀
 const sympotm = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a35e84d4d561b775.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a35e84d4d561b775.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text1',
     alt: 'pages.medical_service.sympotm.alt1',
     title: 'pages.medical_service.sympotm.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/1bc58cb58d984772.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/1bc58cb58d984772.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text2',
     alt: 'pages.medical_service.sympotm.alt2',
     title: 'pages.medical_service.sympotm.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/b5d5aa2f6c40815b.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/b5d5aa2f6c40815b.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text3',
     alt: 'pages.medical_service.sympotm.alt3',
     title: 'pages.medical_service.sympotm.title3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/43227b62cc0bc253.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/43227b62cc0bc253.png',
     text: 'pages.medical_service.maculopathy_con.sympotm.text4',
     alt: 'pages.medical_service.sympotm.alt4',
     title: 'pages.medical_service.sympotm.title4',
@@ -90,8 +90,8 @@ const sympotm = [
 const examine = [
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title1',
-    img_up: 'https://static.cmereye.com/imgs/2023/05/aa1baf80bab50483.png',
-    img_down: 'https://static.cmereye.com/imgs/2023/05/9450b89f466321db.png',
+    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/aa1baf80bab50483.png',
+    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/9450b89f466321db.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt1',
     img_up_title: 'pages.medical_service.examine.img_up_title1',
     img_down_alt: 'pages.medical_service.examine.img_down_alt1',
@@ -99,8 +99,8 @@ const examine = [
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title4',
-    img_up: 'https://static.cmereye.com/imgs/2023/05/233cb17db72b3823.png',
-    img_down: 'https://static.cmereye.com/imgs/2023/05/be3b25f7e3770d9f.png',
+    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/233cb17db72b3823.png',
+    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/be3b25f7e3770d9f.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt2',
     img_up_title: 'pages.medical_service.examine.img_up_title2',
     img_down_alt: 'pages.medical_service.examine.img_down_alt2',
@@ -108,8 +108,8 @@ const examine = [
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title3',
-    img_up: 'https://static.cmereye.com/imgs/2023/05/940b9c94d772c689.png',
-    img_down: 'https://static.cmereye.com/imgs/2023/05/6d3dba4eaa1e1303.png',
+    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/940b9c94d772c689.png',
+    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/6d3dba4eaa1e1303.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt3',
     img_up_title: 'pages.medical_service.examine.img_up_title3',
     img_down_alt: 'pages.medical_service.examine.img_down_alt3',
@@ -117,8 +117,8 @@ const examine = [
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title2',
-    img_up: 'https://static.cmereye.com/imgs/2023/05/7e436a4e96ccdc37.png',
-    img_down: 'https://static.cmereye.com/imgs/2023/05/98c9fd6f9d13b3cb.png',
+    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/7e436a4e96ccdc37.png',
+    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/98c9fd6f9d13b3cb.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt4',
     img_up_title: 'pages.medical_service.examine.img_up_title4',
     img_down_alt: 'pages.medical_service.examine.img_down_alt4',
@@ -126,8 +126,8 @@ const examine = [
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title5',
-    img_up: 'https://static.cmereye.com/imgs/2023/05/89704c6401ded877.png',
-    img_down: 'https://static.cmereye.com/imgs/2023/05/8336f08bbc0cda0e.png',
+    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/89704c6401ded877.png',
+    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/8336f08bbc0cda0e.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt5',
     img_up_title: 'pages.medical_service.examine.img_up_title5',
     img_down_alt: 'pages.medical_service.examine.img_down_alt5',
@@ -137,43 +137,43 @@ const examine = [
 // 老年黃斑病變成因
 const factor = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/d318d9ddc48014f0.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d318d9ddc48014f0.png',
     text: 'pages.medical_service.maculopathy_con.factor.text1',
     alt: 'pages.medical_service.factor.alt1',
     title: 'pages.medical_service.factor.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4c30a5bce1f432ab.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4c30a5bce1f432ab.png',
     text: 'pages.medical_service.maculopathy_con.factor.text2',
     alt: 'pages.medical_service.factor.alt2',
     title: 'pages.medical_service.factor.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/fa056cec9377e0b8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/fa056cec9377e0b8.png',
     text: 'pages.medical_service.maculopathy_con.factor.text3',
     alt: 'pages.medical_service.factor.alt3',
     title: 'pages.medical_service.factor.title3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/517d3d0735bb283a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/517d3d0735bb283a.png',
     text: 'pages.medical_service.maculopathy_con.factor.text4',
     alt: 'pages.medical_service.factor.alt4',
     title: 'pages.medical_service.factor.title4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/26091d94736c22f3.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/26091d94736c22f3.png',
     text: 'pages.medical_service.maculopathy_con.factor.text5',
     alt: 'pages.medical_service.factor.alt5',
     title: 'pages.medical_service.factor.title5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/3f170433f21acc56.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/3f170433f21acc56.png',
     text: 'pages.medical_service.maculopathy_con.factor.text6',
     alt: 'pages.medical_service.factor.alt6',
     title: 'pages.medical_service.factor.title6',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/7d119ac9fdaca526.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/7d119ac9fdaca526.png',
     text: 'pages.medical_service.maculopathy_con.factor.text7',
     alt: 'pages.medical_service.factor.alt7',
     title: 'pages.medical_service.factor.title7',
@@ -182,42 +182,42 @@ const factor = [
 // 預防黃斑病變
 const prevent = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/ef27c15a9ab6f560.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/ef27c15a9ab6f560.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title1',
     text: 'pages.medical_service.maculopathy_con.prevent.text1',
     img_alt: 'pages.medical_service.prevent.alt1',
     img_title: 'pages.medical_service.prevent.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/c5572d289a126f73.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/c5572d289a126f73.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title2',
     text: 'pages.medical_service.maculopathy_con.prevent.text2',
     img_alt: 'pages.medical_service.prevent.alt2',
     img_title: 'pages.medical_service.prevent.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/45fe80f40944cbb0.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/45fe80f40944cbb0.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title3',
     text: 'pages.medical_service.maculopathy_con.prevent.text3',
     img_alt: 'pages.medical_service.prevent.alt3',
     img_title: 'pages.medical_service.prevent.title3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/aa448910d3a02a1f.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/aa448910d3a02a1f.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title4',
     text: 'pages.medical_service.maculopathy_con.prevent.text4',
     img_alt: 'pages.medical_service.prevent.alt4',
     img_title: 'pages.medical_service.prevent.title4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/2078dbb368b52cce.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/2078dbb368b52cce.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title5',
     text: 'pages.medical_service.maculopathy_con.prevent.text5',
     img_alt: 'pages.medical_service.prevent.alt5',
     img_title: 'pages.medical_service.prevent.title5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/1edb292db5fb5f21.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/1edb292db5fb5f21.png',
     title: 'pages.medical_service.maculopathy_con.prevent.title6',
     text: 'pages.medical_service.maculopathy_con.prevent.text6',
     img_alt: 'pages.medical_service.prevent.alt6',
@@ -268,8 +268,8 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/黄斑病1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/黄斑病2.png',
+  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/黄斑病1.png',
+  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/黄斑病2.png',
   cnName: '黃斑病變',
   enName: 'MACULAR DEGENERATION',
   textColor: '#EABE5F',
@@ -349,7 +349,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/05/e46966e16b3b006a.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/e46966e16b3b006a.png"
               :title="
                 locale === 'en'
                   ? 'Macular Degeneration test-Amsler Grid'
@@ -496,7 +496,7 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/05/ebb756d32ecc201b.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/ebb756d32ecc201b.png"
               :title="
                 locale === 'en'
                   ? 'Age-related Macular Degeneration'
@@ -544,7 +544,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/ff4d52af6af21a3e.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/ff4d52af6af21a3e.png"
                 :title="
                   locale === 'en'
                     ? 'Dry Macular Degeneration-Blurred Vision'
@@ -574,7 +574,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/a7c511844cb612a3.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/a7c511844cb612a3.png"
                 :title="
                   locale === 'en'
                     ? 'Wet Macular Degeneration-Vision Loss'
@@ -713,7 +713,7 @@ const bannerData = {
             :download="'黃斑病變'"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
               :title="
                 locale === 'en' ? 'Macular Degeneration Leaflet' : `黃斑病變`
               "

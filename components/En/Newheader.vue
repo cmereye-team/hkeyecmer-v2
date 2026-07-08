@@ -396,8 +396,8 @@ const changeLang = (_lang: any) => {
           class="headerMbcc-in-muenBtn"
           :style="{
             background: menuBool
-              ? 'url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat center'
-              : 'url(https://static.cmereye.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat center',
+              ? 'url(https://statichk.cmermedical.com/imgs/2023/06/6ab28f9f4a11845b.png)no-repeat center'
+              : 'url(https://statichk.cmermedical.com/imgs/2023/06/685b262802c0bdf1.png)no-repeat center',
           }"
           @click.stop="handleMuenBtn"
         ></div>
@@ -498,7 +498,7 @@ const changeLang = (_lang: any) => {
         <el-drawer v-model="drawer" size="50%" :direction="'btt'">
           <div class="drawerIn">
             <img
-              src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+              src="https://statichk.cmermedical.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
               alt="微信QR"
               srcset=""
             />
@@ -541,7 +541,7 @@ const changeLang = (_lang: any) => {
       width: 69px;
       min-width: 69px;
       height: 36px;
-      background: url(https://static.cmereye.com/imgs/2023/06/a05a8310283f5a06.png)
+      background: url(https://statichk.cmermedical.com/imgs/2023/06/a05a8310283f5a06.png)
         no-repeat;
       background-size: 100% 100%;
       cursor: pointer;
@@ -639,7 +639,7 @@ const changeLang = (_lang: any) => {
     // height: 15px;
     // & > div,
     // & > a {
-    //   background-image: url(https://static.cmereye.com/imgs/2023/07/6cc1329d65ca32ae.png);
+    //   background-image: url(https://statichk.cmermedical.com/imgs/2023/07/6cc1329d65ca32ae.png);
     //   background-repeat: no-repeat;
     //   background-position: 5px 0;
     //   // background-size: cover;

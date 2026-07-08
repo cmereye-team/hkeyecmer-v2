@@ -45,52 +45,52 @@ const serviceNavigation = [
 ]
 const bannerList = ref([
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title1',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title2',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/08/2c27250793407eea.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title3',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/25af72668dfcc99a.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title4',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/8d8be0a888c145c3.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title5',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/a4b4b2ef0fc3d413.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title6',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt6',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/7b2b3aece0568465.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/7b2b3aece0568465.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title7',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt7',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/c1613e3f82d89529.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title8',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt8',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title9',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt9',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/c1613e3f82d89529.jpg',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title10',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt10',
   },
@@ -103,7 +103,7 @@ const addressList = ref([
     addressDetailList: [
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/dd7445b8b56c1ecc.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList1_addressName',
         addressDetail: [
@@ -125,7 +125,7 @@ const addressList = ref([
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/f8eaeceabb9ad939.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList2_addressName',
         addressDetail: [
@@ -147,7 +147,7 @@ const addressList = ref([
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/08/2c27250793407eea.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/08/2c27250793407eea.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList1_addressDetailList.addressDetailList3_addressName',
         addressDetail: [
@@ -177,7 +177,7 @@ const addressList = ref([
     addressDetailList: [
       // {
       //   addressImg:
-      //     'https://static.cmereye.com/imgs/2023/02/25af72668dfcc99a.jpg',
+      //     'https://statichk.cmermedical.com/imgs/2023/02/25af72668dfcc99a.jpg',
       //   addressName:
       //     'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList1_addressName',
       //   addressDetail:
@@ -198,7 +198,7 @@ const addressList = ref([
       // },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/8d8be0a888c145c3.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/8d8be0a888c145c3.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_addressName',
         addressDetail: [
@@ -221,7 +221,7 @@ const addressList = ref([
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/07/44e44190b497309f.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/07/44e44190b497309f.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList3_addressName',
         addressDetail: [
@@ -251,7 +251,7 @@ const addressList = ref([
     addressDetailList: [
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/7b2b3aece0568465.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/7b2b3aece0568465.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList1_addressName',
         addressDetail: [
@@ -273,7 +273,7 @@ const addressList = ref([
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/07/b5a72dc3949b4f75.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/07/b5a72dc3949b4f75.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList2_addressName',
         addressDetail: [
@@ -296,7 +296,7 @@ const addressList = ref([
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/ba40636a2aa6ef8d.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList3_addressName',
         addressDetail: [
@@ -318,7 +318,7 @@ const addressList = ref([
       },
       {
         addressImg:
-          'https://static.cmereye.com/imgs/2023/02/c1613e3f82d89529.jpg',
+          'https://statichk.cmermedical.com/imgs/2023/02/c1613e3f82d89529.jpg',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList3_addressDetailList.addressDetailList4_addressName',
         addressDetail: [
@@ -429,7 +429,7 @@ const handleClose = (done: () => void) => {
         </div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/02/a2557c0317e17928.png"
+            src="https://statichk.cmermedical.com/imgs/2023/02/a2557c0317e17928.png"
             :title="locale === 'zh-hk' ? '希瑪眼科中心' : 'Cmer Eye Center'"
             :alt="
               locale === 'zh-hk' ? '希瑪眼科中心標識' : 'Cmer Eye Center logo'
@@ -687,7 +687,7 @@ const handleClose = (done: () => void) => {
       >
         <video controls>
           <source
-            src="https://static.cmereye.com/static/hkcmereye/998955555.mp4"
+            src="https://statichk.cmermedical.com/static/hkcmereye/998955555.mp4"
             type="video/mp4"
           />
         </video>
@@ -755,7 +755,7 @@ const handleClose = (done: () => void) => {
     background: #ccc;
     width: 30px;
     height: 30px;
-    background: url(https://static.cmereye.com/imgs/2023/06/6ab28f9f4a11845b.png)
+    background: url(https://statichk.cmermedical.com/imgs/2023/06/6ab28f9f4a11845b.png)
       no-repeat;
     background-size: 70% 70%;
     background-position: center center;

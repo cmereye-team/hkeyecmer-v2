@@ -29,16 +29,16 @@ const goWhatsApp = () => {
 }
 const homeSwiperImgs = [
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/07/cfb698518628078c.jpg'
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/07/cfb698518628078c.jpg'
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/07/c87bbe2a6c6bffc6.jpg'
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/07/c87bbe2a6c6bffc6.jpg'
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/07/7bba82871272f273.jpg'
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/07/7bba82871272f273.jpg'
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/07/4d9021988f9a4bf7.jpg'
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/07/4d9021988f9a4bf7.jpg'
   }
 ]
 let currentImg = ref(0)
@@ -73,7 +73,7 @@ const toLink = (a:string) => {
     <div>
       <div class="pcHomeVideoBox" style="width: 100%; height: 100vh;" @click="toLink('/about-us')">
         <video style="width: 100%; height: 100vh; object-fit: fill" autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
-        src="https://static.cmereye.com/static/loffee/video/OPD.mp4" poster="https://static.cmereye.com/imgs/2023/11/e2a2830de8785725.jpg">
+        src="https://statichk.cmermedical.com/static/loffee/video/OPD.mp4" poster="https://statichk.cmermedical.com/imgs/2023/11/e2a2830de8785725.jpg">
          </video>
       </div>
       <div class="mbHomeSwiper" :style="{
@@ -90,7 +90,7 @@ const toLink = (a:string) => {
       <div>
         <nuxt-link to="/medical-service" :style="{cursor: 'pointer'}">
           <div>
-            <img src="https://static.cmereye.com/imgs/2023/10/62276a75fc986e3c.jpg" alt="九大眼科醫療服務" />
+            <img src="https://statichk.cmermedical.com/imgs/2023/10/62276a75fc986e3c.jpg" alt="九大眼科醫療服務" />
           </div>
           <div>
           </div>
@@ -151,7 +151,7 @@ const toLink = (a:string) => {
       </div>
       <div class="mbCar">
         <div @click="toLink('/medical-service')">
-          <div><img src="https://static.cmereye.com/imgs/2023/10/ba067103023aaa5d.jpg" alt="九大眼科醫療服務"></div>
+          <div><img src="https://statichk.cmermedical.com/imgs/2023/10/ba067103023aaa5d.jpg" alt="九大眼科醫療服務"></div>
         </div>
       </div>
     </div>

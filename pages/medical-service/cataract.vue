@@ -63,19 +63,19 @@ const eyeCenterImgList = [
 // 白內障形成的成因
 const fatorArr = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/5b88e2c3d5a24717.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/5b88e2c3d5a24717.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator1',
     alt: 'pages.medical_service.CausesofCataract.alt1',
     title: 'pages.medical_service.CausesofCataract.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/77092ee46cf226d9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/77092ee46cf226d9.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator2',
     alt: 'pages.medical_service.CausesofCataract.alt2',
     title: 'pages.medical_service.CausesofCataract.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a83300c944834450.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a83300c944834450.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator3_2',
@@ -84,13 +84,13 @@ const fatorArr = [
     title: 'pages.medical_service.CausesofCataract.title3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/fc3c0ecda42d6dca.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/fc3c0ecda42d6dca.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator4',
     alt: 'pages.medical_service.CausesofCataract.alt4',
     title: 'pages.medical_service.CausesofCataract.title4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/8e4d13a54786cdcc.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/8e4d13a54786cdcc.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator5_2',
@@ -99,7 +99,7 @@ const fatorArr = [
     title: 'pages.medical_service.CausesofCataract.title5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/027fbbc52748d448.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/027fbbc52748d448.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator6_2',
@@ -108,7 +108,7 @@ const fatorArr = [
     title: 'pages.medical_service.CausesofCataract.title6',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/6f9105c7d9aeefa2.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/6f9105c7d9aeefa2.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_fator.cataract_array_fator7_2',
@@ -119,7 +119,7 @@ const fatorArr = [
 ]
 const symptomArr = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/e493e6f5a154cd97.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/e493e6f5a154cd97.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom1_2',
@@ -128,7 +128,7 @@ const symptomArr = [
     title: 'pages.medical_service.SymptomsofCataract.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/c864d708858a3f2e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/c864d708858a3f2e.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom2_2',
@@ -137,7 +137,7 @@ const symptomArr = [
     title: 'pages.medical_service.SymptomsofCataract.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/848679d9bcce652d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/848679d9bcce652d.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom3_2',
@@ -146,13 +146,13 @@ const symptomArr = [
     title: 'pages.medical_service.SymptomsofCataract.title3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a4f207cfb55a0903.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a4f207cfb55a0903.png',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom4',
     alt: 'pages.medical_service.SymptomsofCataract.alt4',
     title: 'pages.medical_service.SymptomsofCataract.title4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/03c86d6ac63e3454.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/03c86d6ac63e3454.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_symptom.cataract_array_symptom5_2',
@@ -163,7 +163,7 @@ const symptomArr = [
 ]
 const surgeryArr = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/6657fc39bf0d020c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/6657fc39bf0d020c.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery1_2',
@@ -174,7 +174,7 @@ const surgeryArr = [
     title: 'pages.medical_service.CataractSurgery.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/55d34019e98d8e65.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/55d34019e98d8e65.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery2_2',
@@ -185,7 +185,7 @@ const surgeryArr = [
     title: 'pages.medical_service.CataractSurgery.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/7b14a5086daa3610.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/7b14a5086daa3610.png',
     text: [
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_1',
       'pages.medical_service.service_cataract_title.service_cataract_array_surgery.cataract_array_surgery3_2',
@@ -214,7 +214,7 @@ const iclArr = [
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/47e6f09498b91509.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/47e6f09498b91509.png',
     type: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_type',
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_type2',
@@ -229,7 +229,7 @@ const iclArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl2.icl2_multipleFocus',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/88fe9f4dae4a48d6.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/88fe9f4dae4a48d6.png',
     type: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_type',
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_type2',
@@ -246,7 +246,7 @@ const iclArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl3.icl3_multipleFocus',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/0fb789bc099b4c7e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/0fb789bc099b4c7e.png',
     type: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_type',
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_type2',
@@ -263,7 +263,7 @@ const iclArr = [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl4.icl4_multipleFocus',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/5cc8f1f288c60d39.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/5cc8f1f288c60d39.png',
     type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_type',
     monofocal: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl5.icl5_monofocal1',
@@ -279,7 +279,7 @@ const iclArr = [
     ],
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/c08795d5179afc22.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/c08795d5179afc22.png',
     type: 'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_type',
     monofocal: [
       'pages.medical_service.service_cataract_title.service_cataract_array_icl.cataract_array_icl6.icl6_monofocal1',
@@ -305,49 +305,49 @@ const announcementsArr = [
   {
     id: '01',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements1',
-    img: 'https://static.cmereye.com/imgs/2023/05/28e797c56a574cce.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/28e797c56a574cce.png',
     alt: 'pages.medical_service.announcementsArr.alt1',
     title: 'pages.medical_service.announcementsArr.title1',
   },
   {
     id: '02',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements2',
-    img: 'https://static.cmereye.com/imgs/2023/05/37962e24ec481c1c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/37962e24ec481c1c.png',
     alt: 'pages.medical_service.announcementsArr.alt2',
     title: 'pages.medical_service.announcementsArr.title2',
   },
   {
     id: '03',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements3',
-    img: 'https://static.cmereye.com/imgs/2023/05/63d616d8816fc14d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/63d616d8816fc14d.png',
     alt: 'pages.medical_service.announcementsArr.alt3',
     title: 'pages.medical_service.announcementsArr.title3',
   },
   {
     id: '04',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements4',
-    img: 'https://static.cmereye.com/imgs/2023/05/d1539d09a4afe49a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d1539d09a4afe49a.png',
     alt: 'pages.medical_service.announcementsArr.alt4',
     title: 'pages.medical_service.announcementsArr.title4',
   },
   {
     id: '05',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements5',
-    img: 'https://static.cmereye.com/imgs/2023/05/04c51b9d4cdf56e9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/04c51b9d4cdf56e9.png',
     alt: 'pages.medical_service.announcementsArr.alt5',
     title: 'pages.medical_service.announcementsArr.title5',
   },
   {
     id: '06',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements6',
-    img: 'https://static.cmereye.com/imgs/2023/05/56cd1f34a7c0da6e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/56cd1f34a7c0da6e.png',
     alt: 'pages.medical_service.announcementsArr.alt6',
     title: 'pages.medical_service.announcementsArr.title6',
   },
   {
     id: '07',
     text: 'pages.medical_service.service_cataract_title.service_cataract_array_announcements.cataract_array_announcements7',
-    img: 'https://static.cmereye.com/imgs/2023/05/aa98a33175063fa3.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/aa98a33175063fa3.png',
     alt: 'pages.medical_service.announcementsArr.alt7',
     title: 'pages.medical_service.announcementsArr.title7',
   },
@@ -450,8 +450,8 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png',
-  mbSrc: 'https://static.cmereye.com/imgs/2023/10/5934acd90d66772b.png',
+  pcSrc: 'https://statichk.cmermedical.com/imgs/2023/10/172f81e3e63cc3e4.png',
+  mbSrc: 'https://statichk.cmermedical.com/imgs/2023/10/5934acd90d66772b.png',
   cnName: '白內障',
   // enName: 'CATARACT',
   textColor: '#29c384',
@@ -464,13 +464,13 @@ const bannerData = {
     <PageServiceBanner :bannerData="bannerData" />
     <!-- <div class="banner-bg-wrap">
       <img
-        data-cfsrc="https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png"
+        data-cfsrc="https://statichk.cmermedical.com/imgs/2023/10/172f81e3e63cc3e4.png"
         srcset="
-          https://static.cmereye.com/imgs/2023/10/5934acd90d66772b.png 768w,
-          https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png
+          https://statichk.cmermedical.com/imgs/2023/10/5934acd90d66772b.png 768w,
+          https://statichk.cmermedical.com/imgs/2023/10/172f81e3e63cc3e4.png
         "
         alt="白內障"
-        src="https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png"
+        src="https://statichk.cmermedical.com/imgs/2023/10/172f81e3e63cc3e4.png"
       />
     </div>
     <div class="banner-bg"></div> -->
@@ -540,7 +540,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/306305535d5e270b.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/306305535d5e270b.png"
                 :title="
                   locale === 'en'
                     ? 'Cataract-Blurred Vision'
@@ -609,7 +609,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/e018dee96aa2c911.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/e018dee96aa2c911.png"
                 :title="
                   locale === 'en'
                     ? 'Minimally Invasive Cataract Surgery-Intraocular lens'
@@ -621,7 +621,7 @@ const bannerData = {
                     : '微創白內障手術人工晶體植入過程'
                 "
               /><img
-                src="https://static.cmereye.com/imgs/2023/05/3f1897286d36f0c5.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/3f1897286d36f0c5.png"
                 :title="
                   locale === 'en'
                     ? 'Cataract Surgery-Intraocular lens'
@@ -1191,7 +1191,7 @@ const bannerData = {
                   <!-- {{ $t(item.type) }} -->
                   <div v-if="Array.isArray(item.type)">
                     <div v-for="(ele, eleIndex) in item.type" :key="eleIndex">
-                      <!-- <img v-if="index" src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png" /> -->
+                      <!-- <img v-if="index" src="https://statichk.cmermedical.com/imgs/2023/05/5be0ff77c88a5626.png" /> -->
                       <div v-if="Array.isArray(ele)">
                         <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
                       </div>
@@ -1213,7 +1213,7 @@ const bannerData = {
                   >
                     <img
                       v-if="index"
-                      src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/05/5be0ff77c88a5626.png"
                     />
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
@@ -1234,7 +1234,7 @@ const bannerData = {
                     :key="eleIndex"
                   >
                     <img
-                      src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/05/5be0ff77c88a5626.png"
                     />
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
@@ -1263,7 +1263,7 @@ const bannerData = {
                     :key="eleIndex"
                   >
                     <img
-                      src="https://static.cmereye.com/imgs/2023/05/5be0ff77c88a5626.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/05/5be0ff77c88a5626.png"
                     />
                     <div v-if="Array.isArray(ele)">
                       <div v-for="(el, i) in ele" :key="i">{{ $t(el) }}</div>
@@ -1413,7 +1413,7 @@ const bannerData = {
             "
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt=""
               srcset=""
             />
@@ -1454,7 +1454,7 @@ const bannerData = {
             "
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
               alt=""
               srcset=""
             />
@@ -5301,7 +5301,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .banner-bg-wrap {
-    background-image: url('https://static.cmereye.com/imgs/2023/10/5934acd90d66772b.png');
+    background-image: url('https://statichk.cmermedical.com/imgs/2023/10/5934acd90d66772b.png');
     background-size: 100% 100%;
     width: 100%;
     height: auto;
@@ -5749,7 +5749,7 @@ body {
               left: -32px;
               width: 20px;
               height: 20px;
-              background: url(https://static.cmereye.com/imgs/2023/07/5f0bd54a3df3bf8f.png);
+              background: url(https://statichk.cmermedical.com/imgs/2023/07/5f0bd54a3df3bf8f.png);
               background-size: 100% 100%;
             }
             br {
@@ -6270,7 +6270,7 @@ body {
 }
 @media (min-width: 768px) {
   .banner-bg-wrap {
-    background-image: url('https://static.cmereye.com/imgs/2023/10/172f81e3e63cc3e4.png');
+    background-image: url('https://statichk.cmermedical.com/imgs/2023/10/172f81e3e63cc3e4.png');
     background-size: 100% 100%;
     width: 100%;
     height: auto;

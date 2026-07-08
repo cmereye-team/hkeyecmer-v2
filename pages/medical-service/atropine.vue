@@ -68,8 +68,8 @@ const tozoosnet = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/阿托品1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/阿托品2.png',
+  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/阿托品1.png',
+  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/阿托品2.png',
   cnName: '阿托品眼藥水',
   enName: 'ATROPINE EYE DROPS',
   textColor: '#70B8C4',
@@ -138,7 +138,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/333f38d7d245b86a.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/333f38d7d245b86a.png"
               :title="
                 locale === 'en'
                   ? 'Atropine Eye Drops for Myopia Control'
@@ -160,7 +160,7 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/8cd93fc952da0965.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/8cd93fc952da0965.png"
               :title="
                 locale === 'en'
                   ? 'Atropine Eye Drops for Myopia Control'
@@ -173,7 +173,7 @@ const bannerData = {
               "
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/06/b9c0bcc3a444bbcb.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/b9c0bcc3a444bbcb.png"
               :title="
                 locale === 'en'
                   ? 'Atropine Eye Drops for Myopia Control'
@@ -186,7 +186,7 @@ const bannerData = {
               "
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/06/a6ac6361a91b9218.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/a6ac6361a91b9218.png"
               :title="
                 locale === 'en'
                   ? 'Atropine Eye Drops for Myopia Control'
@@ -199,7 +199,7 @@ const bannerData = {
               "
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/06/130f0b399ca1e541.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/130f0b399ca1e541.png"
               :title="
                 locale === 'en'
                   ? 'Atropine Eye Drops for Myopia Control'
@@ -218,7 +218,7 @@ const bannerData = {
                 $t('pages.medical_service.atropine_text.introduce.span1')
               }}</span>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/f294f0db0f83e242.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/f294f0db0f83e242.png"
               />
             </div>
             <div>
@@ -226,7 +226,7 @@ const bannerData = {
                 $t('pages.medical_service.atropine_text.introduce.span2')
               }}</span>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/f78528260ec72142.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/f78528260ec72142.png"
                 alt=""
               />
             </div>
@@ -246,7 +246,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/84575123f01d27c5.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/06/84575123f01d27c5.jpg"
                 :title="
                   locale === 'en'
                     ? `Atropine for Children's Myopia Control`
@@ -313,7 +313,7 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/22f52a2cd4375972.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/22f52a2cd4375972.png"
               :title="locale === 'en' ? 'Eye Elongation Close-Up' : `眼球拉長`"
               :alt="
                 locale === 'en'
@@ -327,7 +327,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/7e6f87e0e87fa03b.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/7e6f87e0e87fa03b.png"
               :title="
                 locale === 'en'
                   ? 'Myopia Control Vision Test'
@@ -345,7 +345,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/e8f9777b29a81b26.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/e8f9777b29a81b26.png"
               :title="
                 locale === 'en'
                   ? 'Refraction Test Equipment'
@@ -368,7 +368,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/cc985146128cd086.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/cc985146128cd086.png"
               :title="
                 locale === 'en'
                   ? 'Atropine Eye Drops for Myopia Control'
@@ -714,7 +714,7 @@ const bannerData = {
             position: absolute;
             bottom: -10px;
             left: -50px;
-            background: url(https://static.cmereye.com/imgs/2023/06/f4d7bea70c1e9140.png)
+            background: url(https://statichk.cmermedical.com/imgs/2023/06/f4d7bea70c1e9140.png)
               no-repeat;
             background-size: 100% 100%;
             width: 30px;
@@ -725,7 +725,7 @@ const bannerData = {
             position: absolute;
             bottom: -20px;
             right: -25px;
-            background: url(https://static.cmereye.com/imgs/2023/06/0b4845048eb8622b.png)
+            background: url(https://statichk.cmermedical.com/imgs/2023/06/0b4845048eb8622b.png)
               no-repeat;
             background-size: 100% 100%;
             width: 25px;

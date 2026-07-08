@@ -2,7 +2,7 @@
   <div id="corporateVision" class="mt-72 relative">
     <div class="absolute top-0 right-0 imgbox">
       <img
-        src="https://static.cmereye.com/imgs/hkcmereye-newstyle/about/cor-vision.jpg"
+        src="https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/cor-vision.jpg"
         alt=""
       />
     </div>

@@ -30,7 +30,7 @@ const backgd = [
 ]
 const ophthalmoplastyList1 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/fbfec5b88d05a4b2.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/fbfec5b88d05a4b2.png',
     title:
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_1',
     text: [
@@ -42,7 +42,7 @@ const ophthalmoplastyList1 = [
       'pages.medical_service.eyeOrthopaedicDisease_new.ophthalmoplastyList1.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/08/225d20699840e2a8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/08/225d20699840e2a8.png',
     title:
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_2',
     text: [
@@ -55,7 +55,7 @@ const ophthalmoplastyList1 = [
       'pages.medical_service.eyeOrthopaedicDisease_new.ophthalmoplastyList1.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/a539ea055085ea7e.png ',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/a539ea055085ea7e.png ',
     title:
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_3',
     text: [
@@ -68,7 +68,7 @@ const ophthalmoplastyList1 = [
       'pages.medical_service.eyeOrthopaedicDisease_new.ophthalmoplastyList1.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/37c392f00eda2363.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/37c392f00eda2363.png',
     title:
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_4',
     text: [
@@ -80,7 +80,7 @@ const ophthalmoplastyList1 = [
       'pages.medical_service.eyeOrthopaedicDisease_new.ophthalmoplastyList1.alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/0bc10909ed0c1c1c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/0bc10909ed0c1c1c.png',
     title:
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_5',
     text: [
@@ -343,9 +343,9 @@ const goTel = () => {
 }
 const bannerData = {
   pcSrc:
-    'https://static.cmereye.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病1.png',
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病1.png',
   mbSrc:
-    'https://static.cmereye.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病2.png',
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病2.png',
   cnName: '眼矯形及眼眶疾病',
   enName: 'EYE PLASTIC SURGERY AND ORBITAL DISEASES',
   textColor: '#E4C6A9',
@@ -437,7 +437,7 @@ const bannerData = {
             </div>
             <div class="img-size">
               <img
-                src="https://static.cmereye.com/imgs/2023/06/11636c1cbfc3bce0.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/11636c1cbfc3bce0.png"
                 :title="
                   locale === 'en'
                     ? 'Eye Plastic Surgery-Ptosis'
@@ -454,7 +454,7 @@ const bannerData = {
           <div>
             <div class="img-size">
               <img
-                src="https://static.cmereye.com/imgs/2023/06/f2face15bee70403.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/f2face15bee70403.png"
                 :title="
                   locale === 'en'
                     ? 'Eye Plastic Surgery-Entropion'
@@ -556,7 +556,7 @@ const bannerData = {
             </div>
             <div class="img-size">
               <img
-                src="https://static.cmereye.com/imgs/2023/06/289a6a1898690149.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/289a6a1898690149.png"
                 :title="
                   locale === 'en'
                     ? 'Eye Plastic Surgery-Ectropion'
@@ -573,7 +573,7 @@ const bannerData = {
           <div>
             <div class="img-size">
               <img
-                src="https://static.cmereye.com/imgs/2023/07/5652604220c6e217.png"
+                src="https://statichk.cmermedical.com/imgs/2023/07/5652604220c6e217.png"
                 :title="
                   locale === 'en'
                     ? 'Eye Plastic Surgery-Lagophthalmus'
@@ -708,7 +708,7 @@ const bannerData = {
               </div>
               <div class="img-size">
                 <img
-                  src="https://static.cmereye.com/imgs/2023/06/b44e868ec09d73a2.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/06/b44e868ec09d73a2.png"
                   :title="
                     locale === 'en'
                       ? 'Eye Plastic Surgery-Eye Bag Removal'
@@ -797,7 +797,7 @@ const bannerData = {
               </div>
               <div class="img-size">
                 <img
-                  src="https://static.cmereye.com/imgs/2023/06/840d28c965501ab9.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/06/840d28c965501ab9.png"
                   :title="
                     locale === 'en'
                       ? 'Eye Plastic Surgery-Double Eyelid Surgery'
@@ -921,7 +921,7 @@ const bannerData = {
                 <div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/517c46f42f285adf.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/06/517c46f42f285adf.png"
                       :title="locale === 'en' ? 'Epicanthoplasty' : `開眼頭`"
                       :alt="
                         locale === 'en'
@@ -932,7 +932,7 @@ const bannerData = {
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/10ab946964d2b07b.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/06/10ab946964d2b07b.png"
                       :title="locale === 'en' ? 'Epicanthoplasty' : `開眼頭`"
                       :alt="
                         locale === 'en'
@@ -943,7 +943,7 @@ const bannerData = {
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/9d3d25638a38b884.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/06/9d3d25638a38b884.png"
                       :title="locale === 'en' ? 'Epicanthoplasty' : `開眼頭`"
                       :alt="
                         locale === 'en'
@@ -954,7 +954,7 @@ const bannerData = {
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/785d0c8842e75e2c.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/06/785d0c8842e75e2c.png"
                       :title="locale === 'en' ? 'Epicanthoplasty' : `開眼頭`"
                       :alt="
                         locale === 'en'
@@ -965,7 +965,7 @@ const bannerData = {
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/c27330f53acabcd1.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/06/c27330f53acabcd1.png"
                       :title="locale === 'en' ? 'Epicanthoplasty' : `開眼頭`"
                       :alt="
                         locale === 'en'
@@ -1055,7 +1055,7 @@ const bannerData = {
                 </div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/06/afd80d0148f50d39.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/06/afd80d0148f50d39.png"
                     :title="
                       locale === 'en'
                         ? 'Eye Plastic Surgery-Dermatochalasis'
@@ -1346,7 +1346,7 @@ const bannerData = {
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/1b07a074afc03c77.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/06/1b07a074afc03c77.png"
                       :title="
                         locale === 'en' ? 'Pterygium Symptoms' : `翼狀胬肉症狀`
                       "
@@ -1357,7 +1357,7 @@ const bannerData = {
                       "
                     />
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/1b7f452246c78347.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/06/1b7f452246c78347.png"
                       :title="
                         locale === 'en' ? 'Pterygium Symptoms' : `翼狀胬肉症狀`
                       "
@@ -1435,7 +1435,7 @@ const bannerData = {
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2023/06/1c38390c52af4e77.png"
+                      src="https://statichk.cmermedical.com/imgs/2023/06/1c38390c52af4e77.png"
                       :title="
                         locale === 'en'
                           ? 'Orbital Tumors-Retinoblastoma'
@@ -1555,7 +1555,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/a08f975a028f344d.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/a08f975a028f344d.png"
                 :title="locale === 'en' ? 'Orbital Implant-Silicone' : `義眼台`"
                 :alt="
                   locale === 'en'
@@ -1573,7 +1573,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/87fbb416ef1f926a.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/87fbb416ef1f926a.png"
                 :title="
                   locale === 'en' ? 'Orbital Implant-Hydroxyapatite' : `義眼台`
                 "
@@ -1593,7 +1593,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/ef3079b59fb31f64.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/ef3079b59fb31f64.png"
                 :title="
                   locale === 'en'
                     ? 'Orbital Implant-Porous polyethylene'
@@ -1776,7 +1776,7 @@ const bannerData = {
             </div>
             <div class="usage_1_Image">
               <img
-                src="https://static.cmereye.com/imgs/2023/07/152ce2771477c508.png"
+                src="https://statichk.cmermedical.com/imgs/2023/07/152ce2771477c508.png"
                 :title="
                   locale === 'en' ? 'Ocular Prosthesis-Installation' : `義眼片`
                 "
@@ -1852,7 +1852,7 @@ const bannerData = {
             </div>
             <div class="usage_2_Image">
               <img
-                src="https://static.cmereye.com/imgs/2023/07/e8bd0efb25794873.png"
+                src="https://statichk.cmermedical.com/imgs/2023/07/e8bd0efb25794873.png"
                 :title="
                   locale === 'en' ? 'Ocular Prosthesis-Removal' : `義眼片`
                 "
@@ -2997,7 +2997,7 @@ const bannerData = {
         margin-bottom: 71px;
       }
       & > div:nth-child(2) {
-        background: url('https://static.cmereye.com/imgs/2023/10/2440006e8f50e9c8.png');
+        background: url('https://statichk.cmermedical.com/imgs/2023/10/2440006e8f50e9c8.png');
         background-repeat: no-repeat;
         background-size: 100%;
         width: 1210px;
@@ -3092,7 +3092,7 @@ const bannerData = {
         margin-bottom: 71px;
       }
       & > div:nth-child(2) {
-        background: url('https://static.cmereye.com/imgs/2023/10/2440006e8f50e9c8.png');
+        background: url('https://statichk.cmermedical.com/imgs/2023/10/2440006e8f50e9c8.png');
         background-repeat: no-repeat;
         background-size: 100%;
         width: 1210px;
@@ -4619,7 +4619,7 @@ const bannerData = {
             }
             & > div::after {
               content: '';
-              background: url('https://static.cmereye.com/imgs/2023/07/f416659264a70115.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/f416659264a70115.png')
                 no-repeat;
               width: 10px;
               display: inline-block;
@@ -4634,7 +4634,7 @@ const bannerData = {
               margin-top: 5px;
             }
             & > div:nth-child(1)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/e5d62f0f593df732.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/e5d62f0f593df732.png')
                 no-repeat;
               height: 40px;
             }
@@ -4642,7 +4642,7 @@ const bannerData = {
               content: '01';
             }
             & > div:nth-child(2)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png')
                 no-repeat;
               height: 55px;
             }
@@ -4650,7 +4650,7 @@ const bannerData = {
               content: '02';
             }
             & > div:nth-child(3)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png')
                 no-repeat;
               height: 55px;
             }
@@ -4658,7 +4658,7 @@ const bannerData = {
               content: '03';
             }
             & > div:nth-child(4)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png')
                 no-repeat;
               height: 55px;
             }
@@ -4691,7 +4691,7 @@ const bannerData = {
               top: 0;
             }
             & > div:nth-child(3)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png')
                 no-repeat;
               height: 55px;
             }
@@ -4765,7 +4765,7 @@ const bannerData = {
             }
             & > div::after {
               content: '';
-              background: url('https://static.cmereye.com/imgs/2023/07/f416659264a70115.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/f416659264a70115.png')
                 no-repeat;
               width: 10px;
               display: inline-block;
@@ -4783,7 +4783,7 @@ const bannerData = {
               content: '02';
             }
             & > div:nth-child(3)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png')
                 no-repeat;
               height: 55px;
             }
@@ -4791,7 +4791,7 @@ const bannerData = {
               content: '03';
             }
             & > div:nth-child(4)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png')
                 no-repeat;
               height: 55px;
             }
@@ -4823,7 +4823,7 @@ const bannerData = {
               top: 0;
             }
             & > div:nth-child(3)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png')
                 no-repeat;
               height: 55px;
             }
@@ -4832,7 +4832,7 @@ const bannerData = {
               top: 0;
             }
             & > div:nth-child(4)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png')
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png')
                 no-repeat;
               height: 55px;
             }

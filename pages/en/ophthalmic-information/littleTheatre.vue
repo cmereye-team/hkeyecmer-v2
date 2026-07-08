@@ -22,7 +22,7 @@ useHead(() => ({
 // 视频列表
 const videoList = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/72ff84195ac84ec5.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/72ff84195ac84ec5.png',
     title:
       'pages.ophthalmic_information.ophthalmic_little_theatre_text.little_theatre_videoList.videoList1_title',
     text: [
@@ -32,7 +32,7 @@ const videoList = [
     link: 'https://youtu.be/oYTtMkqVK4w',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/08/34b9b04d95b61a4c.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/08/34b9b04d95b61a4c.jpg',
     title:
       '母親必看！如果你有呢種仔女',
     text: [
@@ -49,10 +49,10 @@ const videoList = [
     <div class="theatre">
       <div>
         <div>
-          <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/d038f9bf53fdb0d9.png" 
-          srcset="https://static.cmereye.com/imgs/2023/07/755d969719a32368.jpg 768w, https://static.cmereye.com/imgs/2023/06/d038f9bf53fdb0d9.png"  
+          <img data-cfsrc="https://statichk.cmermedical.com/imgs/2023/06/d038f9bf53fdb0d9.png" 
+          srcset="https://statichk.cmermedical.com/imgs/2023/07/755d969719a32368.jpg 768w, https://statichk.cmermedical.com/imgs/2023/06/d038f9bf53fdb0d9.png"  
           alt="希碼小劇場" 
-          src="https://static.cmereye.com/imgs/2023/06/d038f9bf53fdb0d9.png"/>
+          src="https://statichk.cmermedical.com/imgs/2023/06/d038f9bf53fdb0d9.png"/>
           <div>
             <svg
               width="9"

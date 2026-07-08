@@ -12,7 +12,7 @@ const awardsList = [
     title_en: 'Healthcare Professionals’ Choice - Extraordinary Healthcare Brand Awards 2026',
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/08/575b1d5c0bb92c28.png',
     year: 'pages.about_us.awards.awards_year_15',
     des: 'pages.about_us.awards.awards_des_12',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
@@ -30,7 +30,7 @@ const awardsList = [
     title_en: '',
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/08/575b1d5c0bb92c28.png',
     year: 'pages.about_us.awards.awards_year_14',
     des: 'pages.about_us.awards.awards_des_12',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
@@ -49,7 +49,7 @@ const awardsList = [
     alt_en: 'HKET Excellence Awards 2024 Logo',
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2024/01/4c50e32c22889c0a.jpg',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2024/01/4c50e32c22889c0a.jpg',
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_15',
     link: 'https://www.esgpledge.org.hk/',
@@ -60,7 +60,7 @@ const awardsList = [
   },
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
@@ -70,7 +70,7 @@ const awardsList = [
     alt_en: 'Hong Kong Top Service Brand 2023 Logo',
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/11/883a77f4cfc02fc3.png',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/11/883a77f4cfc02fc3.png',
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_14',
     link: 'https://www.commchest.org/tc/news/press-release/detail/1057',
@@ -79,7 +79,7 @@ const awardsList = [
     alt_en: 'The community chest 2023 Logo',
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/08/2952335675aaf8b0.jpg',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/08/2952335675aaf8b0.jpg',
     year: 'pages.about_us.awards.awards_year_13',
     des: 'pages.about_us.awards.awards_des_13',
     link: 'https://hkct-awards.com/articles/59',
@@ -89,7 +89,7 @@ const awardsList = [
   },
 
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/08/575b1d5c0bb92c28.png',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/08/575b1d5c0bb92c28.png',
     year: 'pages.about_us.awards.awards_year_12',
     des: 'pages.about_us.awards.awards_des_12',
     link: '',
@@ -100,7 +100,7 @@ const awardsList = [
 
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
     year: 'pages.about_us.awards.awards_year_12',
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
@@ -110,7 +110,7 @@ const awardsList = [
     alt_en: 'Hong Kong Top Service Brand 2022 Logo',
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/08/cdd4f2920141fa33.png',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/08/cdd4f2920141fa33.png',
     year: 'pages.about_us.awards.awards_year_11',
     des: 'pages.about_us.awards.awards_des_11',
     link: 'https://features.hkej.com/template/features/html/2022_sc/winners.html',
@@ -120,7 +120,7 @@ const awardsList = [
     alt_en: 'Social Capital Builder Logo Award 2022 Logo',
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/08/3593bc6113653a80.png',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/08/3593bc6113653a80.png',
     year: 'pages.about_us.awards.awards_year_10',
     des: 'pages.about_us.awards.awards_des_10',
     link: '',
@@ -129,7 +129,7 @@ const awardsList = [
     alt_en: 'Most Valuable Companies in Hong Kong Awards 2022 Logo',
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/08/ebde2962cbd42e60.png',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/08/ebde2962cbd42e60.png',
     year: 'pages.about_us.awards.awards_year_9',
     des: 'pages.about_us.awards.awards_des_9',
     link: '',
@@ -138,7 +138,7 @@ const awardsList = [
     alt_en: 'Happy Company Award 2022 Logo',
   },
   {
-    imgUrl: 'https://static.cmereye.com/imgs/2023/08/f4273176866baf9c.png',
+    imgUrl: 'https://statichk.cmermedical.com/imgs/2023/08/f4273176866baf9c.png',
     year: 'pages.about_us.awards.awards_year_8',
     des: 'pages.about_us.awards.awards_des_8',
     link: '',
@@ -148,14 +148,14 @@ const awardsList = [
   },
   // {
   //   imgUrl:
-  //     'https://static.cmereye.com/imgs/2023/01/3b9de76f932cbe48.png',
+  //     'https://statichk.cmermedical.com/imgs/2023/01/3b9de76f932cbe48.png',
   //   year: 'pages.about_us.awards.awards_year_7',
   //   des: 'pages.about_us.awards.awards_des_7',
   //   link: 'https://corphub.asia/awards/?route=events&id=1'
   // }
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards6.jpg',
     year: 'pages.about_us.awards.awards_year_6',
     des: 'pages.about_us.awards.awards_des_6',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
@@ -165,7 +165,7 @@ const awardsList = [
   },
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards1.jpg',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards1.jpg',
     year: 'pages.about_us.awards.awards_year_1',
     des: 'pages.about_us.awards.awards_des_1',
     link: 'https://www.hkbrand.org/tc/event/2/page/3/brand/877?activePage=1&tab=153',
@@ -175,7 +175,7 @@ const awardsList = [
   },
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards5.jpg',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards5.jpg',
     year: 'pages.about_us.awards.awards_year_5',
     des: 'pages.about_us.awards.awards_des_5',
     link: 'https://corphub.asia/awards/?route=events&id=1',
@@ -185,7 +185,7 @@ const awardsList = [
   },
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards4.jpg',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards4.jpg',
     year: 'pages.about_us.awards.awards_year_4',
     des: 'pages.about_us.awards.awards_des_4',
     link: '',
@@ -195,7 +195,7 @@ const awardsList = [
   },
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards3.jpg',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards3.jpg',
     year: 'pages.about_us.awards.awards_year_3',
     des: 'pages.about_us.awards.awards_des_3',
     link: 'https://www.youtube.com/watch?v=7k0FhEoCXus',
@@ -206,7 +206,7 @@ const awardsList = [
 
   {
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/about/awards2.jpg',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/about/awards2.jpg',
     year: 'pages.about_us.awards.awards_year_2',
     des: 'pages.about_us.awards.awards_des_2',
     link: 'https://www.caringcompany.org.hk/b5_index.php',

@@ -64,7 +64,7 @@ const toLink = () =>{
         <slot name="title">
           <NuxtLink tag="a" :to="{ name: 'index' }">
             <img
-              src="https://static.cmereye.com/imgs/2023/08/d2757b5e2d1e0fd4.png"
+              src="https://statichk.cmermedical.com/imgs/2023/08/d2757b5e2d1e0fd4.png"
               alt="希瑪眼科"
             />
           </NuxtLink>
