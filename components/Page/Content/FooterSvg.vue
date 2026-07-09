@@ -202,7 +202,7 @@ const goWeibo = () => {
       </div>
       <div class="isShow">
         <img
-          src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
           alt="微信QR"
           srcset=""
         />

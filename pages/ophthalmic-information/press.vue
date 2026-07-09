@@ -28,7 +28,7 @@ const newList = [
     datumSource: '',
     viewCount: '',
     id: 1,
-    img: 'https://static.cmereye.com/imgs/2023/05/829d049493cda56b.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/829d049493cda56b.png',
     title: [
       'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList1_title',
     ],
@@ -46,7 +46,7 @@ const newList = [
     datumSource: '',
     viewCount: '',
     id: 2,
-    img: 'https://static.cmereye.com/imgs/2023/05/1156cbf4a6ece4d6.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/1156cbf4a6ece4d6.png',
     title: [
       'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList1_title',
     ],
@@ -62,7 +62,7 @@ const newList = [
     datumSource: '',
     viewCount: '',
     id: 3,
-    img: 'https://static.cmereye.com/imgs/2023/05/91e2405635ca3e7b.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/91e2405635ca3e7b.png',
     title: [
       'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList3_title',
     ],
@@ -79,7 +79,7 @@ const newList = [
     datumSource: '',
     viewCount: '',
     id: 4,
-    img: 'https://static.cmereye.com/imgs/2023/05/875d23d64608ef4e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/875d23d64608ef4e.png',
     title: [
       'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList4_title1',
       'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList4_title2',
@@ -100,7 +100,7 @@ const newList = [
     datumSource: '',
     viewCount: '',
     id: 5,
-    img: 'https://static.cmereye.com/imgs/2023/05/a4d26289335be5c0.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a4d26289335be5c0.jpg',
     title: [
       'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList5_title',
     ],
@@ -123,7 +123,7 @@ const newList = [
     datumSource: '',
     viewCount: '',
     id: 6,
-    img: 'https://static.cmereye.com/imgs/2023/05/9276ab02f3abc115.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/9276ab02f3abc115.jpg',
     title: [
       'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList6_title',
     ],
@@ -140,7 +140,7 @@ const newList = [
     datumSource: '',
     viewCount: '',
     id: 7,
-    img: 'https://static.cmereye.com/imgs/2023/05/88621485630632e9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/88621485630632e9.png',
     title: [
       'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList7_title',
     ],
@@ -159,7 +159,7 @@ const newList = [
     datumSource: '',
     viewCount: '',
     id: 8,
-    img: 'https://static.cmereye.com/imgs/2023/05/1720c9a3331071b2.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/1720c9a3331071b2.png',
     title: [
       'pages.ophthalmic_information.ophthalmic_press_text.press_newList.newList8_title',
     ],
@@ -298,10 +298,10 @@ onMounted(() => {
       <div>
         <div>
           <img
-            data-cfsrc="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
+            data-cfsrc="https://statichk.cmermedical.com/imgs/2023/06/ea78401c4ac3d988.png"
             srcset="
-              https://static.cmereye.com/imgs/2023/07/f668cb9e24a8fd3e.jpg 768w,
-              https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png
+              https://statichk.cmermedical.com/imgs/2023/07/f668cb9e24a8fd3e.jpg 768w,
+              https://statichk.cmermedical.com/imgs/2023/06/ea78401c4ac3d988.png
             "
             :title="locale == 'en' ? 'News Reporting' : ''"
             :alt="
@@ -309,7 +309,7 @@ onMounted(() => {
                 ? 'A journalist in front of the camera reporting news'
                 : '新聞資訊'
             "
-            src="https://static.cmereye.com/imgs/2023/06/ea78401c4ac3d988.png"
+            src="https://statichk.cmermedical.com/imgs/2023/06/ea78401c4ac3d988.png"
           />
           <svg
             width="9"
@@ -345,12 +345,12 @@ onMounted(() => {
             <div>NEWS</div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/e3060c56238575c3.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/e3060c56238575c3.png"
               />
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/90e21d8b0b56ea96.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/90e21d8b0b56ea96.png"
               />
             </div>
           </div>

@@ -65,8 +65,8 @@ const tozoosnet =()=>{
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/阿托品1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/阿托品2.png',
+  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/阿托品1.png',
+  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/阿托品2.png',
   cnName: '阿托品眼藥水',
   enName: 'ATROPINE EYE DROPS',
   textColor: '#70B8C4',
@@ -132,7 +132,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/333f38d7d245b86a.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/333f38d7d245b86a.png"
               title="阿托品_控制近視眼藥水" alt="控制近視的阿托品眼藥水瓶子"
             />
           </div>
@@ -145,19 +145,19 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/8cd93fc952da0965.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/8cd93fc952da0965.png"
               title="阿托品_控制近視眼藥水" alt="控制近視的0.01%低濃度阿托品眼藥水"
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/06/b9c0bcc3a444bbcb.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/b9c0bcc3a444bbcb.png"
               title="阿托品_控制近視眼藥水" alt="控制近視的0.05%低濃度阿托品眼藥水"
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/06/a6ac6361a91b9218.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/a6ac6361a91b9218.png"
               title="阿托品_控制近視眼藥水" alt="控制近視的0.125%高濃度阿托品眼藥水"
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/06/130f0b399ca1e541.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/130f0b399ca1e541.png"
               title="阿托品_控制近視眼藥水" alt="控制近視的1%高濃度阿托品眼藥水"
             />
           </div>
@@ -165,14 +165,14 @@ const bannerData = {
             <div>
               <span>{{$t('pages.medical_service.atropine_text.introduce.span1')}}</span>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/f294f0db0f83e242.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/f294f0db0f83e242.png"
                 
               />
             </div>
             <div>
               <span>{{$t('pages.medical_service.atropine_text.introduce.span2')}}</span>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/f78528260ec72142.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/f78528260ec72142.png"
                 alt=""
               />
             </div>
@@ -192,7 +192,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/84575123f01d27c5.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/06/84575123f01d27c5.jpg"
                 title="兒童近視控制_阿托品_眼藥水" alt="女童使用阿托品眼藥水以控制近視"
               />
             </div>
@@ -248,7 +248,7 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/22f52a2cd4375972.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/22f52a2cd4375972.png"
               title="眼球拉長" alt="眼部特寫顯示眼球拉長"
             />
             <div>
@@ -257,7 +257,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/7e6f87e0e87fa03b.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/7e6f87e0e87fa03b.png"
               title="兒童近視控制_視力檢查" alt="男童戴眼鏡進行視力檢查以控制近視"
             />
             <div>
@@ -266,7 +266,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/e8f9777b29a81b26.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/e8f9777b29a81b26.png"
               title="驗眼儀器_屈光檢查" alt="用於屈光檢查的驗眼儀器"
             />
             <div>
@@ -280,7 +280,7 @@ const bannerData = {
           </div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/cc985146128cd086.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/cc985146128cd086.png"
               title="阿托品_控制近視眼藥水" alt="使用阿托品眼藥水控制近視的患者"
             />
             <div>
@@ -618,7 +618,7 @@ const bannerData = {
             position: absolute;
             bottom: -10px;
             left: -50px;
-            background: url(https://static.cmereye.com/imgs/2023/06/f4d7bea70c1e9140.png)
+            background: url(https://statichk.cmermedical.com/imgs/2023/06/f4d7bea70c1e9140.png)
               no-repeat;
             background-size: 100% 100%;
             width: 30px;
@@ -629,7 +629,7 @@ const bannerData = {
             position: absolute;
             bottom: -20px;
             right: -25px;
-            background: url(https://static.cmereye.com/imgs/2023/06/0b4845048eb8622b.png)
+            background: url(https://statichk.cmermedical.com/imgs/2023/06/0b4845048eb8622b.png)
               no-repeat;
             background-size: 100% 100%;
             width: 25px;

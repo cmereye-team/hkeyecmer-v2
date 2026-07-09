@@ -51,15 +51,15 @@ const leaveActive = () => {
     <div class="title">{{ $t('pages.about_us.about_us') }}</div>
     <div class="imgBox">
       <img
-        src="https://static.cmereye.com/imgs/2023/06/8095216b29f693c7.jpg"
+        src="https://statichk.cmermedical.com/imgs/2023/06/8095216b29f693c7.jpg"
         alt=""
       />
       <img
-        src="https://static.cmereye.com/imgs/2023/05/fcbe60b94457087b.png"
+        src="https://statichk.cmermedical.com/imgs/2023/05/fcbe60b94457087b.png"
         alt=""
       />
       <img
-        src="https://static.cmereye.com/imgs/2023/06/d72dad915e01bf72.jpg"
+        src="https://statichk.cmermedical.com/imgs/2023/06/d72dad915e01bf72.jpg"
         alt=""
       />
     </div>

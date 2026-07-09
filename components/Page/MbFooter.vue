@@ -77,7 +77,7 @@ const isCarolPage = computed(() => {
           <div class="ga-mb-bottom-WhatsApp">
             <img
               class="ga-mb-bottom-WhatsApp"
-              src="https://static.cmereye.com/imgs/2023/07/25871528f005d41a.png"
+              src="https://statichk.cmermedical.com/imgs/2023/07/25871528f005d41a.png"
               alt=""
             />
           </div>
@@ -90,7 +90,7 @@ const isCarolPage = computed(() => {
           >
             <div class="ga-mb-bottom-ljzd">
               <img
-                src="https://static.cmereye.com/imgs/2024/06/3f25805941048474.png"
+                src="https://statichk.cmermedical.com/imgs/2024/06/3f25805941048474.png"
                 alt=""
               />
             </div>
@@ -102,7 +102,7 @@ const isCarolPage = computed(() => {
           >
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/06/8a5b747961631fa0.png"
+                src="https://statichk.cmermedical.com/imgs/2024/06/8a5b747961631fa0.png"
                 alt=""
               />
             </div>
@@ -111,7 +111,7 @@ const isCarolPage = computed(() => {
         </div>
       </a>
       <!-- <a  v-else id="ga-mb-bottom-WhatsApp" class="ga-mb-bottom-WhatsApp" href='https://api.whatsapp.com/send?phone=85293451508&text=%E4%BD%A0%E5%A5%BD,%E6%88%91%E6%83%B3%E6%9F%A5%E8%A9%A2'>
-        <div class="ga-mb-bottom-WhatsApp"><img class="ga-mb-bottom-WhatsApp" src="https://static.cmereye.com/imgs/2023/07/25871528f005d41a.png" alt=""></div>
+        <div class="ga-mb-bottom-WhatsApp"><img class="ga-mb-bottom-WhatsApp" src="https://statichk.cmermedical.com/imgs/2023/07/25871528f005d41a.png" alt=""></div>
         <div class="ga-mb-bottom-WhatsApp">WhatsApp</div>
       </a> -->
       <a
@@ -122,7 +122,7 @@ const isCarolPage = computed(() => {
         <div class="ga-mb-bottom-ljzd">
           <img
             class="ga-mb-bottom-ljzd"
-            src="https://static.cmereye.com/imgs/2023/07/8bb225b21f8baa35.png"
+            src="https://statichk.cmermedical.com/imgs/2023/07/8bb225b21f8baa35.png"
             alt=""
           />
         </div>
@@ -139,7 +139,7 @@ const isCarolPage = computed(() => {
         <div class="ga-mb-bottom-xsdh">
           <img
             class="ga-mb-bottom-xsdh"
-            src="https://static.cmereye.com/imgs/2023/07/9c9ca82dbc0545a7.png"
+            src="https://statichk.cmermedical.com/imgs/2023/07/9c9ca82dbc0545a7.png"
             alt=""
           />
         </div>
@@ -183,7 +183,7 @@ const isCarolPage = computed(() => {
         <img src="https://statichk.cmermedical.com/opd/svg/icon-backtop.svg" />
       </div>
       <!-- <img
-        src="https://static.cmereye.com/imgs/2023/07/3a2e901023d9c537.png"
+        src="https://statichk.cmermedical.com/imgs/2023/07/3a2e901023d9c537.png"
         alt=""
       /> -->
     </div>
@@ -364,7 +364,7 @@ const isCarolPage = computed(() => {
     // }
     .btn_whatsApp::after {
       content: '';
-      background: url(https://static.cmereye.com/imgs/2024/06/39bf14ea24209bbc.png)
+      background: url(https://statichk.cmermedical.com/imgs/2024/06/39bf14ea24209bbc.png)
         no-repeat;
       background-size: 100%;
       width: 11px;
@@ -379,7 +379,7 @@ const isCarolPage = computed(() => {
     }
     // & > a:nth-child(1)::after {
     //   content: '';
-    //   background: url(https://static.cmereye.com/imgs/2024/06/39bf14ea24209bbc.png)
+    //   background: url(https://statichk.cmermedical.com/imgs/2024/06/39bf14ea24209bbc.png)
     //     no-repeat;
     //   background-size: 100%;
     //   width: 11px;

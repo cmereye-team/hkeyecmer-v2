@@ -30,7 +30,7 @@ const backgd = [
 ]
 const ophthalmoplastyList1 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/fbfec5b88d05a4b2.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/fbfec5b88d05a4b2.png',
     title: 'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_1',
     text: [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_1',
@@ -39,7 +39,7 @@ const ophthalmoplastyList1 = [
     img_alt: '進行眼整形前的眼瞼狀況'
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/08/225d20699840e2a8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/08/225d20699840e2a8.png',
     title: 'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_2',
     text: [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_2_1',
@@ -49,7 +49,7 @@ const ophthalmoplastyList1 = [
     img_alt: '進行眼整形前的甲亢突眼狀況'
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/a539ea055085ea7e.png ',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/a539ea055085ea7e.png ',
     title: 'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_3',
     text: [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_3_1',
@@ -59,7 +59,7 @@ const ophthalmoplastyList1 = [
     img_alt: '進行眼整形前的淚眼狀況'
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/37c392f00eda2363.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/37c392f00eda2363.png',
     title: 'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_4',
     text: [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_4',
@@ -68,7 +68,7 @@ const ophthalmoplastyList1 = [
     img_alt: '義眼移植為眼整形方案'
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/0bc10909ed0c1c1c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/0bc10909ed0c1c1c.png',
     title: 'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.title5_5',
     text: [
       'pages.medical_service.eyeOrthopaedicDisease_con.ophthalmoplasty.text5_5',
@@ -251,8 +251,8 @@ const goTel = () =>{
   location.href = 'tel: +852 3956 2025'
 }
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病2.png',
+  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病1.png',
+  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/眼矯形及眼眶疾病2.png',
   cnName: '眼矯形及眼眶疾病',
   enName: 'EYE PLASTIC SURGERY AND ORBITAL DISEASES',
   textColor: '#E4C6A9',
@@ -298,12 +298,12 @@ const bannerData = {
               </div>
             </div>
             <div class="img-size">
-              <img src="https://static.cmereye.com/imgs/2023/06/11636c1cbfc3bce0.png" title="眼整形_眼瞼下垂" alt="進行眼整形前的眼瞼下垂狀況" />
+              <img src="https://statichk.cmermedical.com/imgs/2023/06/11636c1cbfc3bce0.png" title="眼整形_眼瞼下垂" alt="進行眼整形前的眼瞼下垂狀況" />
             </div>
           </div>
           <div>
             <div class="img-size">
-              <img src="https://static.cmereye.com/imgs/2023/06/f2face15bee70403.png" title="眼整形_眼臉內翻" alt="進行眼整形前的眼臉內翻狀況" />
+              <img src="https://statichk.cmermedical.com/imgs/2023/06/f2face15bee70403.png" title="眼整形_眼臉內翻" alt="進行眼整形前的眼臉內翻狀況" />
             </div>
             <div>
               <div>
@@ -347,12 +347,12 @@ const bannerData = {
               </div>
             </div>
             <div class="img-size">
-              <img src="https://static.cmereye.com/imgs/2023/06/289a6a1898690149.png" title="眼整形_眼臉外翻" alt="進行眼整形前的眼臉外翻狀況" />
+              <img src="https://statichk.cmermedical.com/imgs/2023/06/289a6a1898690149.png" title="眼整形_眼臉外翻" alt="進行眼整形前的眼臉外翻狀況" />
             </div>
           </div>
           <div>
             <div class="img-size">
-              <img src="https://static.cmereye.com/imgs/2023/07/5652604220c6e217.png" title="眼整形_兔眼" alt="進行眼整形前的兔眼狀況" />
+              <img src="https://statichk.cmermedical.com/imgs/2023/07/5652604220c6e217.png" title="眼整形_兔眼" alt="進行眼整形前的兔眼狀況" />
             </div>
             <div>
               <div>
@@ -413,7 +413,7 @@ const bannerData = {
                 </div>
               </div>
               <div class="img-size">
-                <img src="https://static.cmereye.com/imgs/2023/06/b44e868ec09d73a2.png" title="眼整形_去眼袋" alt="去眼袋為眼整形方案" />
+                <img src="https://statichk.cmermedical.com/imgs/2023/06/b44e868ec09d73a2.png" title="眼整形_去眼袋" alt="去眼袋為眼整形方案" />
               </div>
             </div>
             <div>
@@ -447,7 +447,7 @@ const bannerData = {
                 </div>
               </div>
               <div class="img-size">
-                <img src="https://static.cmereye.com/imgs/2023/06/840d28c965501ab9.png" title="眼整形_割雙眼皮" alt="割雙眼皮為眼整形方案" srcset="" />
+                <img src="https://statichk.cmermedical.com/imgs/2023/06/840d28c965501ab9.png" title="眼整形_割雙眼皮" alt="割雙眼皮為眼整形方案" srcset="" />
               </div>
             </div>
             <div>
@@ -504,19 +504,19 @@ const bannerData = {
                 </div>
                 <div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/517c46f42f285adf.png" title="開眼頭" alt="開眼頭手術步驟一" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/06/517c46f42f285adf.png" title="開眼頭" alt="開眼頭手術步驟一" />
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/10ab946964d2b07b.png" title="開眼頭" alt="開眼頭手術步驟二" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/06/10ab946964d2b07b.png" title="開眼頭" alt="開眼頭手術步驟二" />
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/9d3d25638a38b884.png" title="開眼頭" alt="開眼頭手術步驟三" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/06/9d3d25638a38b884.png" title="開眼頭" alt="開眼頭手術步驟三" />
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/785d0c8842e75e2c.png" title="開眼頭" alt="開眼頭手術步驟四" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/06/785d0c8842e75e2c.png" title="開眼頭" alt="開眼頭手術步驟四" />
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/c27330f53acabcd1.png" title="開眼頭" alt="開眼頭手術步驟五" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/06/c27330f53acabcd1.png" title="開眼頭" alt="開眼頭手術步驟五" />
                   </div>
                 </div>
                 <div>
@@ -543,7 +543,7 @@ const bannerData = {
                   </div>
                 </div>
                 <div>
-                  <img src="https://static.cmereye.com/imgs/2023/06/afd80d0148f50d39.png" title="眼整形_眼皮鬆弛" alt="進行眼整形前的眼皮鬆弛狀況" />
+                  <img src="https://statichk.cmermedical.com/imgs/2023/06/afd80d0148f50d39.png" title="眼整形_眼皮鬆弛" alt="進行眼整形前的眼皮鬆弛狀況" />
                 </div>
               </div>
               <div>
@@ -661,8 +661,8 @@ const bannerData = {
                     </p>
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/1b07a074afc03c77.png" title="翼狀胬肉症狀" alt="翼狀胬肉良性慢性病變" />
-                    <img src="https://static.cmereye.com/imgs/2023/06/1b7f452246c78347.png" title="翼狀胬肉症狀" alt="翼狀胬肉發展狀況" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/06/1b07a074afc03c77.png" title="翼狀胬肉症狀" alt="翼狀胬肉良性慢性病變" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/06/1b7f452246c78347.png" title="翼狀胬肉症狀" alt="翼狀胬肉發展狀況" />
                   </div>
                 </div>
               </div>
@@ -689,7 +689,7 @@ const bannerData = {
                     </p>
                   </div>
                   <div>
-                    <img src="https://static.cmereye.com/imgs/2023/06/1c38390c52af4e77.png" title="眼腫瘤_視網膜母細胞瘤" alt="視網膜母細胞瘤為眼腫瘤之一" />
+                    <img src="https://statichk.cmermedical.com/imgs/2023/06/1c38390c52af4e77.png" title="眼腫瘤_視網膜母細胞瘤" alt="視網膜母細胞瘤為眼腫瘤之一" />
                     <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeNeoplasms.text5_5')}}</div>
                   </div>
                 </div>
@@ -737,15 +737,15 @@ const bannerData = {
           </div>
           <div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/a08f975a028f344d.png" title="義眼台" alt="矽膠義眼台" />
+              <img src="https://statichk.cmermedical.com/imgs/2023/06/a08f975a028f344d.png" title="義眼台" alt="矽膠義眼台" />
               <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.text1_1')}}</div>
             </div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/87fbb416ef1f926a.png" title="義眼台" alt="羥基磷灰石義眼台" />
+              <img src="https://statichk.cmermedical.com/imgs/2023/06/87fbb416ef1f926a.png" title="義眼台" alt="羥基磷灰石義眼台" />
               <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.text1_2')}}</div>
             </div>
             <div>
-              <img src="https://static.cmereye.com/imgs/2023/06/ef3079b59fb31f64.png" title="義眼台" alt="多孔聚乙烯義眼台" />
+              <img src="https://statichk.cmermedical.com/imgs/2023/06/ef3079b59fb31f64.png" title="義眼台" alt="多孔聚乙烯義眼台" />
               <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.eyeProsthesis.text1_3')}}</div>
             </div>
           </div>
@@ -818,7 +818,7 @@ const bannerData = {
               <div>{{$t('pages.medical_service.eyeOrthopaedicDisease_con.usage.text1_7')}}</div>
             </div>
             <div class="usage_1_Image">
-              <img src="https://static.cmereye.com/imgs/2023/07/152ce2771477c508.png" title="義眼片" alt="義眼片安裝過程">
+              <img src="https://statichk.cmermedical.com/imgs/2023/07/152ce2771477c508.png" title="義眼片" alt="義眼片安裝過程">
             </div>
           </div>
         </div>
@@ -845,7 +845,7 @@ const bannerData = {
               
             </div>
             <div class="usage_2_Image">
-                <img src="https://static.cmereye.com/imgs/2023/07/e8bd0efb25794873.png" title="義眼片" alt="義眼片取出過程">
+                <img src="https://statichk.cmermedical.com/imgs/2023/07/e8bd0efb25794873.png" title="義眼片" alt="義眼片取出過程">
               </div>
           </div>
         </div>
@@ -1887,7 +1887,7 @@ const bannerData = {
         margin-bottom: 71px;
       }
       &>div:nth-child(2) {
-        background: url('https://static.cmereye.com/imgs/2023/10/2440006e8f50e9c8.png');
+        background: url('https://statichk.cmermedical.com/imgs/2023/10/2440006e8f50e9c8.png');
         background-repeat: no-repeat;
         background-size: 100%;
         width: 1210px;
@@ -1982,7 +1982,7 @@ const bannerData = {
         margin-bottom: 71px;
       }
       &>div:nth-child(2) {
-        background: url('https://static.cmereye.com/imgs/2023/10/2440006e8f50e9c8.png');
+        background: url('https://statichk.cmermedical.com/imgs/2023/10/2440006e8f50e9c8.png');
         background-repeat: no-repeat;
         background-size: 100%;
         width: 1210px;
@@ -3509,7 +3509,7 @@ const bannerData = {
             }
             &>div::after {
               content: '';
-              background: url('https://static.cmereye.com/imgs/2023/07/f416659264a70115.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/f416659264a70115.png') no-repeat;
               width: 10px;
               display: inline-block;
               height: 19px;
@@ -3523,28 +3523,28 @@ const bannerData = {
               margin-top: 5px;
             }
             &>div:nth-child(1)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/e5d62f0f593df732.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/e5d62f0f593df732.png') no-repeat;
               height: 40px;
             }
             &>div:nth-child(1)::before {
               content: '01';
             }
             &>div:nth-child(2)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
               height: 55px;
             }
             &>div:nth-child(2)::before {
               content: '02';
             }
             &>div:nth-child(3)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
               height: 55px;
             }
             &>div:nth-child(3)::before {
               content: '03';
             }
             &>div:nth-child(4)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
               height: 55px;
             }
             &>div:nth-child(4)::before {
@@ -3576,7 +3576,7 @@ const bannerData = {
               top: 0;
             }
             &>div:nth-child(3)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
               height: 55px;
             }
             &>div:nth-child(3)::before {
@@ -3649,7 +3649,7 @@ const bannerData = {
             }
             &>div::after {
               content: '';
-              background: url('https://static.cmereye.com/imgs/2023/07/f416659264a70115.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/f416659264a70115.png') no-repeat;
               width: 10px;
               display: inline-block;
               height: 19px;
@@ -3666,14 +3666,14 @@ const bannerData = {
               content: '02';
             }
             &>div:nth-child(3)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
               height: 55px;
             }
             &>div:nth-child(3)::before {
               content: '03';
             }
             &>div:nth-child(4)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
               height: 55px;
             }
             &>div:nth-child(4)::before {
@@ -3704,7 +3704,7 @@ const bannerData = {
               top: 0;
             }
             &>div:nth-child(3)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
               height: 55px;
             }
             &>div:nth-child(3)::before {
@@ -3712,7 +3712,7 @@ const bannerData = {
               top: 0;
             }
             &>div:nth-child(4)::after {
-              background: url('https://static.cmereye.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
+              background: url('https://statichk.cmermedical.com/imgs/2023/07/9f42072f1f97a393.png') no-repeat;
               height: 55px;
             }
             &>div:nth-child(4)::before {

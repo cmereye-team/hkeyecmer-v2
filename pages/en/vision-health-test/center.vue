@@ -453,7 +453,7 @@ let rightResult = ref({
     </div>
     <div class="centerPage-content" v-if="!isResult">
       <div class="centerPage-content-closeeye" v-if="!showBool">
-        <div><img src="https://static.cmereye.com/imgs/2023/06/077bf9231ccccf15.png" alt=""></div>
+        <div><img src="https://statichk.cmermedical.com/imgs/2023/06/077bf9231ccccf15.png" alt=""></div>
         <div>{{isRight ? '请闭上您的左眼': '请闭上您的右眼'}}</div>
         <div>
           <div @click.stop="handleNextBtn">开始测试</div>

@@ -672,7 +672,7 @@ html[lang=en] {
   background-repeat: no-repeat;
 }
 .lens-table-wrap {
-  background: url(https://static.cmereye.com/imgs/2024/03/cc6eb4fe0d7bb9b5.png) no-repeat top,url(https://static.cmereye.com/imgs/2024/03/b34e0a520ed9c467.png) no-repeat bottom;
+  background: url(https://statichk.cmermedical.com/imgs/2024/03/cc6eb4fe0d7bb9b5.png) no-repeat top,url(https://statichk.cmermedical.com/imgs/2024/03/b34e0a520ed9c467.png) no-repeat bottom;
   background-size: cover;
 }
 .lens-table {

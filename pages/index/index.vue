@@ -34,8 +34,8 @@ const goWhatsApp = () => {
 
 const homeBannerLists = [
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/c21309fb1746b2ed.webp',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/b75132e9db62f42f.webp',
+    pc_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/c21309fb1746b2ed.webp',
+    mb_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/b75132e9db62f42f.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-team',
@@ -43,8 +43,8 @@ const homeBannerLists = [
     img_title: '袁文傑護眼大使',
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/08/90138811a647e874.png',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/08/a1df47719f25d671.png',
+    pc_hk_img: 'https://statichk.cmermedical.com/imgs/2024/08/90138811a647e874.png',
+    mb_hk_img: 'https://statichk.cmermedical.com/imgs/2024/08/a1df47719f25d671.png',
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us',
@@ -52,8 +52,8 @@ const homeBannerLists = [
     img_title: '香港上市公司10間眼科診所',
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/e5c3faed23c63db2.webp',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/723daa4d6700dba9.webp',
+    pc_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/e5c3faed23c63db2.webp',
+    mb_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/723daa4d6700dba9.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-service',
@@ -61,8 +61,8 @@ const homeBannerLists = [
     img_title: '九大眼科醫療服務',
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/2679a29efe1ee93f.webp',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/2011288656773946.webp',
+    pc_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/2679a29efe1ee93f.webp',
+    mb_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/2011288656773946.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us#corporate',
@@ -70,8 +70,8 @@ const homeBannerLists = [
     img_title: '以人爲本以可人為中心',
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/d68f277d4f9430ab.webp',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/55dbd4799f65bd88.webp',
+    pc_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/d68f277d4f9430ab.webp',
+    mb_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/55dbd4799f65bd88.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/about-us#medicalEquipment',
@@ -79,8 +79,8 @@ const homeBannerLists = [
     img_title: '國際認可先進眼科醫療技術',
   },
   {
-    pc_hk_img: 'https://static.cmereye.com/imgs/2024/06/742c10d7f1f29fc4.webp',
-    mb_hk_img: 'https://static.cmereye.com/imgs/2024/06/223bb8126133c307.webp',
+    pc_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/742c10d7f1f29fc4.webp',
+    mb_hk_img: 'https://statichk.cmermedical.com/imgs/2024/06/223bb8126133c307.webp',
     pc_en_img: '',
     mb_en_img: '',
     link: '/medical-service',
@@ -196,7 +196,7 @@ const serviceLists = [
   {
     i: '01',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser1.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser1.png',
     des: 'pages.medical_service.cataract.cataract_title',
     link: '/medical-service/cataract',
     alt: t('pages.serviceLists.item_alt1'),
@@ -205,7 +205,7 @@ const serviceLists = [
   {
     i: '02',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser6.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser6.png',
     des: 'pages.medical_service.maculopathy',
     link: '/medical-service/maculopathy',
     alt: t('pages.serviceLists.item_alt2'),
@@ -214,7 +214,7 @@ const serviceLists = [
   {
     i: '04',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser9.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser9.png',
     des: 'pages.medical_service.amotioRetinae',
     link: '/medical-service/amotioRetinae',
     alt: t('pages.serviceLists.item_alt3'),
@@ -223,7 +223,7 @@ const serviceLists = [
   {
     i: '05',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser2.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser2.png',
     des: 'pages.medical_service.glaucoma',
     link: '/medical-service/glaucoma',
     alt: t('pages.serviceLists.item_alt4'),
@@ -232,7 +232,7 @@ const serviceLists = [
   {
     i: '08',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser8.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser8.png',
     des: 'pages.medical_service.ocularSurfaceDiseases',
     link: '/medical-service/ocularSurfaceDiseases',
     alt: t('pages.serviceLists.item_alt5'),
@@ -241,7 +241,7 @@ const serviceLists = [
   {
     i: '09',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser7.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser7.png',
     des: 'pages.medical_service.strabismusAmblyopia',
     link: '/medical-service/strabismusAmblyopia',
     alt: t('pages.serviceLists.item_alt6'),
@@ -250,7 +250,7 @@ const serviceLists = [
   {
     i: '11',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser10.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser10.png',
     des: 'pages.medical_service.eyeOrthopaedicDisease',
     link: '/medical-service/eyeOrthopaedicDisease',
     alt: t('pages.serviceLists.item_alt7'),
@@ -259,7 +259,7 @@ const serviceLists = [
   {
     i: '12',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser11.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser11.png',
     des: 'pages.medical_service.medicalOptometry',
     link: '/medical-service/medicalOptometry',
 
@@ -269,7 +269,7 @@ const serviceLists = [
   {
     i: '13',
     imgUrl:
-      'https://static.cmereye.com/imgs/hkcmereye-newstyle/service/ser12.png',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser12.png',
     des: 'pages.medical_service.smileHk',
     link: 'https://smile.hkcmereye.com/',
     alt: t('pages.serviceLists.item_alt9'),
@@ -328,9 +328,9 @@ const pageNav = ref([
     </div>
     <div class="home-mbContent">
       <!-- <div class="home-mbContent-banner"> -->
-      <!-- <img src="https://static.cmereye.com/imgs/2024/03/c0416b68d7049a83.png" alt=""> -->
+      <!-- <img src="https://statichk.cmermedical.com/imgs/2024/03/c0416b68d7049a83.png" alt=""> -->
       <!-- <video autoplay loop muted playsinline x5-playsinline="true" webkit-playsinline="true"
-        src="https://static.cmereye.com/static/loffee/video/eyecenter_web_v2.mp4" poster="https://static.cmereye.com/imgs/2024/01/c765e1d6022ddd41.jpg">
+        src="https://statichk.cmermedical.com/static/loffee/video/eyecenter_web_v2.mp4" poster="https://statichk.cmermedical.com/imgs/2024/01/c765e1d6022ddd41.jpg">
          </video>
          <div class="text">
            <span>Professional</span>
@@ -448,13 +448,13 @@ const pageNav = ref([
           <div class="partTwo-in">
             <div class="partTwo-in-image">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/10e2463581fde672.png"
+                src="https://statichk.cmermedical.com/imgs/2023/11/10e2463581fde672.png"
                 title="希瑪眼科中心_眼科診所"
                 alt="希瑪眼科中心_眼科診所"
                 class="cmer-fadeInLeft-2"
               />
               <img
-                src="https://static.cmereye.com/imgs/2023/11/b1571356e3fdc9b3.png"
+                src="https://statichk.cmermedical.com/imgs/2023/11/b1571356e3fdc9b3.png"
                 :title="
                   locale === 'en'
                     ? 'Cmer Eye Center Locations-Hong Kong'
@@ -480,7 +480,7 @@ const pageNav = ref([
           <div class="partTwo-in">
             <div class="partTwo-in-image">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/d5832f9c20130912.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/11/d5832f9c20130912.jpg"
                 :title="
                   locale === 'en'
                     ? 'Eye Care Customer Service-Cmer Eye Center'
@@ -514,7 +514,7 @@ const pageNav = ref([
           <div class="indexContext_1">
             <div class="indexContext_1-image cmer-fadeInRight-3">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/d9ed93444cd110d2.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/11/d9ed93444cd110d2.jpg"
                 :title="
                   locale === 'en'
                     ? 'Advanced Eye Exam Technology-Cmer Eye Center'
@@ -541,7 +541,7 @@ const pageNav = ref([
           <div class="indexContext_2">
             <div class="indexContext_2-image cmer-fadeInLeft-3">
               <img
-                src="https://static.cmereye.com/imgs/2023/11/f82b7514325c896f.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/11/f82b7514325c896f.jpg"
                 :title="
                   locale === 'en'
                     ? 'Hong Kong Cmer Eye Care Holdings Limited'
@@ -629,7 +629,7 @@ const pageNav = ref([
               <div class="indexContext_2-text-in cmer-fadeInUp-12">
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/11/7999fef5f2ba4028.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/11/7999fef5f2ba4028.png"
                     alt=""
                   />
                 </div>

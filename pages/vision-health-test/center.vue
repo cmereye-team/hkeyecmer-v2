@@ -496,7 +496,7 @@ let rightResult = ref({
       <div class="centerPage-content-closeeye" v-if="!showBool">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/06/077bf9231ccccf15.png"
+            src="https://statichk.cmermedical.com/imgs/2023/06/077bf9231ccccf15.png"
             alt=""
           />
         </div>

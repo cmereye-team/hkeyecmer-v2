@@ -83,7 +83,7 @@ const meetArr = [
 ]
 const symptoms = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/53e4d8c79f82e4a6.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/53e4d8c79f82e4a6.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text1',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title1',
@@ -91,7 +91,7 @@ const symptoms = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a58ec7eb4f43f6a4.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a58ec7eb4f43f6a4.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text2',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title2',
@@ -99,7 +99,7 @@ const symptoms = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/b452ba8e2b783f02.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/b452ba8e2b783f02.png',
     text: [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text3_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text3_2',
@@ -110,7 +110,7 @@ const symptoms = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/e2b8896e55129333.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/e2b8896e55129333.png',
     text: [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text4_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text4_2',
@@ -121,7 +121,7 @@ const symptoms = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4c2daf21d82713ee.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4c2daf21d82713ee.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text5',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title5',
@@ -129,7 +129,7 @@ const symptoms = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.alt5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/376c7e6cf5bda7ef.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/376c7e6cf5bda7ef.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_symptoms.symptoms_text6',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.symptoms.title6',
@@ -139,7 +139,7 @@ const symptoms = [
 ]
 const worsen = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/f751ce73a8968035.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/f751ce73a8968035.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text1',
     img_alt:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.alt1',
@@ -147,7 +147,7 @@ const worsen = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/b2b1e3c11112c405.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/b2b1e3c11112c405.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text2',
     img_alt:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.alt2',
@@ -155,7 +155,7 @@ const worsen = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/68c8066d950ed985.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/68c8066d950ed985.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_worsen.worsen_text3',
     img_alt:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.worsen.alt3',
@@ -169,7 +169,7 @@ const congenital = [
     title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title1',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text1',
-    img: 'https://static.cmereye.com/imgs/2023/05/14c6771dcd344e18.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/14c6771dcd344e18.png',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.congenital.title1',
     img_alt:
@@ -180,7 +180,7 @@ const congenital = [
     title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title2',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text2',
-    img: 'https://static.cmereye.com/imgs/2023/05/d63a41599833af19.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d63a41599833af19.png',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.congenital.title2',
     img_alt:
@@ -191,7 +191,7 @@ const congenital = [
     title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_title3',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_congenital.congenital_text3',
-    img: 'https://static.cmereye.com/imgs/2023/05/422b6918adf2680a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/422b6918adf2680a.png',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.congenital.title3',
     img_alt:
@@ -204,7 +204,7 @@ const kind = [
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_text1',
     detail:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_kind.kind_detail1',
-    img: 'https://static.cmereye.com/imgs/2023/05/3fed11ffa5e46d5a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/3fed11ffa5e46d5a.png',
     enImg:
       'https://hkcmereye.com/template/default/picture/qgy_img/type5_en.png',
   },
@@ -277,7 +277,7 @@ const kindSelect = (i: number) => {
 // 青光眼高危人群
 const crowd = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/5d8b794484273cbe.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/5d8b794484273cbe.png',
     text: [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text1_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text1_2',
@@ -289,7 +289,7 @@ const crowd = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/5064b37ea2ec1236.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/5064b37ea2ec1236.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text2',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title2',
@@ -297,7 +297,7 @@ const crowd = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/600a6ca70769660d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/600a6ca70769660d.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text3',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title3',
@@ -305,7 +305,7 @@ const crowd = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/bc02fc8bab322c86.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/bc02fc8bab322c86.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text4',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title4',
@@ -313,7 +313,7 @@ const crowd = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/3d99ac56efdb9366.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/3d99ac56efdb9366.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text5',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title5',
@@ -321,7 +321,7 @@ const crowd = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/8a90c79bd5022fbf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/8a90c79bd5022fbf.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text6',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title6',
@@ -329,7 +329,7 @@ const crowd = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt6',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/1a86d61e93b74709.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/1a86d61e93b74709.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text7',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title7',
@@ -337,7 +337,7 @@ const crowd = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.alt7',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/03f99346138862e1.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/03f99346138862e1.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_crowd.crowd_text8',
     img_title:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.crowd.title8',
@@ -348,7 +348,7 @@ const crowd = [
 // 青光眼主要診斷方法
 const diagnostic = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/e399ba83f28b9812.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/e399ba83f28b9812.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text1',
     img_alt:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.alt1',
@@ -356,7 +356,7 @@ const diagnostic = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/bdc9d326f529ed42.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/bdc9d326f529ed42.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text2',
     img_alt:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.2',
@@ -364,7 +364,7 @@ const diagnostic = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/997263179e4722a8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/997263179e4722a8.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text3',
     img_alt:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.alt3',
@@ -372,7 +372,7 @@ const diagnostic = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/2c03b6364947c4c5.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/2c03b6364947c4c5.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text4',
     img_alt:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.alt4',
@@ -380,7 +380,7 @@ const diagnostic = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/b098baaa8a2cbdbc.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/b098baaa8a2cbdbc.png',
     text: 'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text5',
     img_alt:
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.alt5',
@@ -388,7 +388,7 @@ const diagnostic = [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_List.diagnostic.title5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/eef206cba5ab506d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/eef206cba5ab506d.png',
     text: [
       'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text6_1',
       'pages.medical_service.service_glaucoma_title.service_glaucoma_diagnostic.diagnostic_text6_2',
@@ -532,8 +532,8 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/青光眼1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/青光眼2.png',
+  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/青光眼1.png',
+  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/青光眼2.png',
   cnName: '青光眼',
   enName: 'GLAUCOMA',
   textColor: '#3EC6BE',
@@ -581,7 +581,7 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/05/b687a1dc53df1fe7.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/b687a1dc53df1fe7.png"
               :title="locale === 'en' ? 'Glaucoma' : `青光眼`"
               :alt="
                 locale === 'en'
@@ -809,7 +809,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/8bbf23a05ed24544.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/8bbf23a05ed24544.png"
                 :title="locale === 'en' ? 'Chronic Glaucoma' : `慢性青光眼`"
                 :alt="
                   locale === 'en'
@@ -845,7 +845,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/a23816f98522475c.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/a23816f98522475c.png"
                 :title="
                   locale === 'en' ? 'Acute Glaucoma Symptoms' : `急性青光眼症狀`
                 "
@@ -979,7 +979,7 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/05/380b332741dacedb.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/380b332741dacedb.png"
                 :title="locale === 'en' ? 'Primary Glaucoma' : `原發性青光眼`"
                 :alt="
                   locale === 'en'
@@ -1289,12 +1289,12 @@ const bannerData = {
           </div>
           <div>
             <img
-              data-cfsrc="https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png"
+              data-cfsrc="https://statichk.cmermedical.com/imgs/2023/05/a4fa152ef992618f.png"
               srcset="
-                https://static.cmereye.com/imgs/2023/07/06d2169ed76e2f38.jpg 768w,
-                https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png
+                https://statichk.cmermedical.com/imgs/2023/07/06d2169ed76e2f38.jpg 768w,
+                https://statichk.cmermedical.com/imgs/2023/05/a4fa152ef992618f.png
               "
-              src="https://static.cmereye.com/imgs/2023/05/a4fa152ef992618f.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a4fa152ef992618f.png"
               :title="
                 locale === 'en'
                   ? 'Preventing Glaucoma_Eye Checkup'
@@ -1358,7 +1358,7 @@ const bannerData = {
             "
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
               :title="locale === 'en' ? 'Glaucoma Leaflet' : `青光眼`"
               :alt="
                 locale === 'en'
@@ -1679,7 +1679,7 @@ const bannerData = {
           z-index: 5;
           width: 80px;
           height: 80px;
-          background-image: url('https://static.cmereye.com/imgs/2023/05/bb28c65c794254b0.png');
+          background-image: url('https://statichk.cmermedical.com/imgs/2023/05/bb28c65c794254b0.png');
         }
         & > div:nth-child(2)::after {
           content: '';
@@ -1689,7 +1689,7 @@ const bannerData = {
           z-index: 5;
           width: 80px;
           height: 80px;
-          background-image: url('https://static.cmereye.com/imgs/2023/05/bb28c65c794254b0.png');
+          background-image: url('https://statichk.cmermedical.com/imgs/2023/05/bb28c65c794254b0.png');
         }
       }
     }
@@ -2248,7 +2248,7 @@ const bannerData = {
               content: '';
               width: 22px;
               height: 25px;
-              background-image: url('https://static.cmereye.com/imgs/2023/05/9ead3fb225e93049.png');
+              background-image: url('https://statichk.cmermedical.com/imgs/2023/05/9ead3fb225e93049.png');
               position: absolute;
               right: -32px;
             }

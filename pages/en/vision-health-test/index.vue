@@ -8,57 +8,57 @@ let testId: any = route.query.id
 
 var w = [
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/228956d09e6aba26.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/228956d09e6aba26.png',
       ct: '測前摘下您的眼鏡',
     },
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/cf9644e08f56693a.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/cf9644e08f56693a.png',
       ct: '持手機一臂距離，平視屏幕',
     },
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/71d0ad080f99a25a.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/71d0ad080f99a25a.png',
       ct: null,
     },
   ],
   j = [
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/a7ae6cd2578a2a87.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/a7ae6cd2578a2a87.png',
       ct: '測前戴上您的眼鏡',
     },
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/cf9644e08f56693a.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/cf9644e08f56693a.png',
       ct: '持手機一臂距離，平視屏幕',
     },
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/71d0ad080f99a25a.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/71d0ad080f99a25a.png',
       ct: null,
     },
   ],
   O = [
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/cf9644e08f56693a.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/cf9644e08f56693a.png',
       ct: '持手機一臂距離，平視屏幕',
     },
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/71d0ad080f99a25a.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/71d0ad080f99a25a.png',
       ct: null,
     },
   ],
   N = [
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/228956d09e6aba26.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/228956d09e6aba26.png',
       ct: '若摘下眼鏡測試的是裸眼中心視力',
     },
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/a7ae6cd2578a2a87.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/a7ae6cd2578a2a87.png',
       ct: '若戴上眼鏡測試的是配鏡后中心視力',
     },
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/cf9644e08f56693a.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/cf9644e08f56693a.png',
       ct: '持手機25cm距離，平視屏幕',
     },
     {
-      url: 'https://static.cmereye.com/imgs/2023/06/71d0ad080f99a25a.png',
+      url: 'https://statichk.cmermedical.com/imgs/2023/06/71d0ad080f99a25a.png',
       ct: null,
     },
   ]

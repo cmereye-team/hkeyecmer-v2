@@ -13,56 +13,56 @@ const backgd = [
 // 什麼是乾眼症
 const xerophthalmiaType = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/e9b7f8f01ed8bafc.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/e9b7f8f01ed8bafc.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text1',
     img_alt: 'pages.medical_service.xerophthalmia_new.xerophthalmiaType.alt1',
     img_title:
       'pages.medical_service.xerophthalmia_new.xerophthalmiaType.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/2429bd6a29fb645c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/2429bd6a29fb645c.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text2',
     img_alt: 'pages.medical_service.xerophthalmia_new.xerophthalmiaType.alt2',
     img_title:
       'pages.medical_service.xerophthalmia_new.xerophthalmiaType.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/f79ac0c36913185d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/f79ac0c36913185d.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text3',
     img_alt: 'pages.medical_service.xerophthalmia_new.xerophthalmiaType.alt3',
     img_title:
       'pages.medical_service.xerophthalmia_new.xerophthalmiaType.title3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/c0fd1f575a8b07cc.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/c0fd1f575a8b07cc.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text4',
     img_alt: 'pages.medical_service.xerophthalmia_new.xerophthalmiaType.alt4',
     img_title:
       'pages.medical_service.xerophthalmia_new.xerophthalmiaType.title4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4623f3b40418874b.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4623f3b40418874b.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text5',
     img_alt: 'pages.medical_service.xerophthalmia_new.xerophthalmiaType.alt5',
     img_title:
       'pages.medical_service.xerophthalmia_new.xerophthalmiaType.title5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4b9fe2d23526754a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4b9fe2d23526754a.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text6',
     img_alt: 'pages.medical_service.xerophthalmia_new.xerophthalmiaType.alt6',
     img_title:
       'pages.medical_service.xerophthalmia_new.xerophthalmiaType.title6',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a7e034924424d921.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a7e034924424d921.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text7',
     img_alt: 'pages.medical_service.xerophthalmia_new.xerophthalmiaType.alt7',
     img_title:
       'pages.medical_service.xerophthalmia_new.xerophthalmiaType.title7',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/6271382192cc8a11.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/6271382192cc8a11.png',
     text: 'pages.medical_service.xerophthalmia_con.xerophthalmiaType.text8',
     img_alt: 'pages.medical_service.xerophthalmia_new.xerophthalmiaType.alt8',
     img_title:
@@ -71,24 +71,24 @@ const xerophthalmiaType = [
 ]
 const factor = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a3f259e078ea72a5.png',
-    mbImg: 'https://static.cmereye.com/imgs/2023/07/0aa695d446127914.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a3f259e078ea72a5.png',
+    mbImg: 'https://statichk.cmermedical.com/imgs/2023/07/0aa695d446127914.jpg',
     title: 'pages.medical_service.xerophthalmia_con.factor.title1',
     text: 'pages.medical_service.xerophthalmia_con.factor.text1',
     img_title: 'pages.medical_service.xerophthalmia_new.factor.title1',
     img_alt: 'pages.medical_service.xerophthalmia_new.factor.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4636b55143dcbe36.png',
-    mbImg: 'https://static.cmereye.com/imgs/2023/07/473ad45c51c10398.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4636b55143dcbe36.png',
+    mbImg: 'https://statichk.cmermedical.com/imgs/2023/07/473ad45c51c10398.jpg',
     title: 'pages.medical_service.xerophthalmia_con.factor.title2',
     text: 'pages.medical_service.xerophthalmia_con.factor.text2',
     img_title: 'pages.medical_service.xerophthalmia_new.factor.title2',
     img_alt: 'pages.medical_service.xerophthalmia_new.factor.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/b2645285665a9dfe.png',
-    mbImg: 'https://static.cmereye.com/imgs/2023/07/d37cda7797106efa.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/b2645285665a9dfe.png',
+    mbImg: 'https://statichk.cmermedical.com/imgs/2023/07/d37cda7797106efa.jpg',
     title: 'pages.medical_service.xerophthalmia_con.factor.title3',
     text: 'pages.medical_service.xerophthalmia_con.factor.text3',
     img_title: 'pages.medical_service.xerophthalmia_new.factor.title3',
@@ -97,14 +97,14 @@ const factor = [
 ]
 const tearFilm = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4b8a7f27d3efb04c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4b8a7f27d3efb04c.png',
     title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[0].title',
     text: ['pages.medical_service.xerophthalmia_con.factor.tearFilm[0].text'],
     img_title: 'pages.medical_service.xerophthalmia_new.tearFilm.title1',
     img_alt: 'pages.medical_service.xerophthalmia_new.tearFilm.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/cb6ed9e181f060df.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/cb6ed9e181f060df.png',
     title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].title',
     text: [
       'pages.medical_service.xerophthalmia_con.factor.tearFilm[1].text',
@@ -119,14 +119,14 @@ const tearFilm = [
     img_alt: 'pages.medical_service.xerophthalmia_new.tearFilm.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/f0c095b2a5ff1d8e.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/f0c095b2a5ff1d8e.png',
     title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[2].title',
     text: ['pages.medical_service.xerophthalmia_con.factor.tearFilm[2].text'],
     img_title: 'pages.medical_service.xerophthalmia_new.tearFilm.title3',
     img_alt: 'pages.medical_service.xerophthalmia_new.tearFilm.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/2f4d44f6b2c6d83d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/2f4d44f6b2c6d83d.png',
     title: 'pages.medical_service.xerophthalmia_con.factor.tearFilm[3].title',
     text: [
       'pages.medical_service.xerophthalmia_con.factor.tearFilm[3].text',
@@ -139,21 +139,21 @@ const tearFilm = [
 ]
 const category = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/a9e66bca4e6780d0.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/a9e66bca4e6780d0.png',
     title: 'pages.medical_service.xerophthalmia_con.category.title1',
     text: 'pages.medical_service.xerophthalmia_con.category.text1',
     img_title: 'pages.medical_service.xerophthalmia_new.category.title1',
     img_alt: 'pages.medical_service.xerophthalmia_new.category.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/6b86edd7b9d813ec.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/6b86edd7b9d813ec.png',
     title: 'pages.medical_service.xerophthalmia_con.category.title2',
     text: 'pages.medical_service.xerophthalmia_con.category.text2',
     img_title: 'pages.medical_service.xerophthalmia_new.category.title2',
     img_alt: 'pages.medical_service.xerophthalmia_new.category.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/bde93bbfe96c35e9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/bde93bbfe96c35e9.png',
     title: 'pages.medical_service.xerophthalmia_con.category.title3',
     text: 'pages.medical_service.xerophthalmia_con.category.text3',
     img_title: 'pages.medical_service.xerophthalmia_new.category.title3',
@@ -162,37 +162,37 @@ const category = [
 ]
 const highRisk = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/2b5ce4abba134883.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/2b5ce4abba134883.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text1',
     img_title: 'pages.medical_service.xerophthalmia_new.highRisk.title1',
     img_alt: 'pages.medical_service.xerophthalmia_new.highRisk.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/421a73f210b33563.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/421a73f210b33563.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text2',
     img_title: 'pages.medical_service.xerophthalmia_new.highRisk.title2',
     img_alt: 'pages.medical_service.xerophthalmia_new.highRisk.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/8661e3413fd98abf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/8661e3413fd98abf.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text3',
     img_title: 'pages.medical_service.xerophthalmia_new.highRisk.title3',
     img_alt: 'pages.medical_service.xerophthalmia_new.highRisk.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/933a2eee445d7e09.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/933a2eee445d7e09.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text4',
     img_title: 'pages.medical_service.xerophthalmia_new.highRisk.title4',
     img_alt: 'pages.medical_service.xerophthalmia_new.highRisk.alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/3d263ab67d6aa0e8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/3d263ab67d6aa0e8.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text5',
     img_title: 'pages.medical_service.xerophthalmia_new.highRisk.title5',
     img_alt: 'pages.medical_service.xerophthalmia_new.highRisk.alt5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/3267576cc1afabaa.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/3267576cc1afabaa.png',
     text: 'pages.medical_service.xerophthalmia_con.highRisk.text6',
     img_title: 'pages.medical_service.xerophthalmia_new.highRisk.title6',
     img_alt: 'pages.medical_service.xerophthalmia_new.highRisk.alt6',
@@ -275,31 +275,31 @@ const means = [
 // 其他紓緩眼乾症狀的方法︰
 const wayOther = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/7caf90b190bdd2cc.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/7caf90b190bdd2cc.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_1',
     img_title: 'pages.medical_service.xerophthalmia_new.wayOther.title1',
     img_alt: 'pages.medical_service.xerophthalmia_new.wayOther.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/e69cbe139e039d40.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/e69cbe139e039d40.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_2',
     img_title: 'pages.medical_service.xerophthalmia_new.wayOther.title2',
     img_alt: 'pages.medical_service.xerophthalmia_new.wayOther.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/82c69bfc9bef143a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/82c69bfc9bef143a.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_3',
     img_title: 'pages.medical_service.xerophthalmia_new.wayOther.title3',
     img_alt: 'pages.medical_service.xerophthalmia_new.wayOther.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/d2cfb7e362fe19ea.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d2cfb7e362fe19ea.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_4',
     img_title: 'pages.medical_service.xerophthalmia_new.wayOther.title4',
     img_alt: 'pages.medical_service.xerophthalmia_new.wayOther.alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/20403c32e3ae1ccf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/20403c32e3ae1ccf.png',
     text: 'pages.medical_service.xerophthalmia_con.means.text5_5',
     img_title: 'pages.medical_service.xerophthalmia_new.wayOther.title5',
     img_alt: 'pages.medical_service.xerophthalmia_new.wayOther.alt5',
@@ -398,8 +398,8 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/乾眼症1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/乾眼症2.png',
+  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/乾眼症1.png',
+  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/乾眼症2.png',
   cnName: '乾眼症',
   enName: 'DRY EYES',
   textColor: '#8F8BCA',
@@ -438,10 +438,10 @@ const bannerData = {
           <div>
             <div>
               <img
-                data-cfsrc="https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png"
+                data-cfsrc="https://statichk.cmermedical.com/imgs/2023/06/84382a189b0f3a65.png"
                 srcset="
-                  https://static.cmereye.com/imgs/2023/07/4c021489e013750f.jpg 768w,
-                  https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png
+                  https://statichk.cmermedical.com/imgs/2023/07/4c021489e013750f.jpg 768w,
+                  https://statichk.cmermedical.com/imgs/2023/06/84382a189b0f3a65.png
                 "
                 :title="locale === 'en' ? 'Dry Eyes Symptoms' : `乾眼症症狀`"
                 :alt="
@@ -449,7 +449,7 @@ const bannerData = {
                     ? 'Discomfort in eyes as a symptom of dry eyes'
                     : '女患者眼睛不適為乾眼症症狀表現'
                 "
-                src="https://static.cmereye.com/imgs/2023/06/84382a189b0f3a65.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/84382a189b0f3a65.png"
               />
             </div>
           </div>
@@ -533,7 +533,7 @@ const bannerData = {
                 v-if="locale === 'en'"
               />
               <img
-                src="https://static.cmereye.com/imgs/2023/10/8bcf58c7b6d0adf8.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/10/8bcf58c7b6d0adf8.jpg"
                 :title="
                   locale === 'en'
                     ? 'Dry Eyes-Tear Film Layers'
@@ -718,7 +718,7 @@ const bannerData = {
                 </div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/05/96be300a751eee94.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/05/96be300a751eee94.png"
                     :title="
                       locale === 'en'
                         ? 'Dry Eyes Self-Test-Tear Test'
@@ -769,7 +769,7 @@ const bannerData = {
             <div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/bc830caf2d8498fa.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/05/bc830caf2d8498fa.png"
                   :title="
                     locale === 'en'
                       ? 'Dry Eyes Treatment-Intense Pulsed Light'
@@ -952,7 +952,7 @@ const bannerData = {
               </div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/cf53e666d96890d0.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/05/cf53e666d96890d0.png"
                   :title="
                     locale === 'en'
                       ? 'Cataract-Blurred Vision'
@@ -1095,7 +1095,7 @@ const bannerData = {
               :download="'乾眼症'"
             >
               <img
-                src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+                src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
                 :title="locale === 'en' ? 'Dry Eyes Leaflet' : `乾眼症`"
                 :alt="
                   locale === 'en'
@@ -1811,7 +1811,7 @@ const bannerData = {
 
         & > div::after {
           content: '';
-          background: url('https://static.cmereye.com/imgs/2023/05/24a8fecc85da78e0.jpg');
+          background: url('https://statichk.cmermedical.com/imgs/2023/05/24a8fecc85da78e0.jpg');
           width: 15px;
           height: 46px;
           position: absolute;
@@ -2134,7 +2134,7 @@ const bannerData = {
         position: absolute;
         right: -15px;
         content: '';
-        background: url('https://static.cmereye.com/imgs/2023/05/d77b2eace7e89ae7.jpg');
+        background: url('https://statichk.cmermedical.com/imgs/2023/05/d77b2eace7e89ae7.jpg');
         width: 30px;
         height: 45px;
         bottom: 13px;
@@ -2143,7 +2143,7 @@ const bannerData = {
       & > div:nth-child(6)::before {
         position: absolute;
         content: '';
-        background: url('https://static.cmereye.com/imgs/2023/05/dd10e67efe7af43c.jpg');
+        background: url('https://statichk.cmermedical.com/imgs/2023/05/dd10e67efe7af43c.jpg');
         width: 30px;
         height: 53px;
         top: 30%;
@@ -2198,7 +2198,7 @@ const bannerData = {
       // 使用人工淚液
       & > div:nth-child(8) {
         margin-top: 59px;
-        background: url('https://static.cmereye.com/imgs/2023/05/3cc8de62b7e69384.png')
+        background: url('https://statichk.cmermedical.com/imgs/2023/05/3cc8de62b7e69384.png')
           no-repeat;
         height: 257px;
         padding: 42px 60px;
@@ -2413,7 +2413,7 @@ const bannerData = {
 
         & > div:nth-child(1)::before {
           content: '';
-          background: url('https://static.cmereye.com/imgs/2023/05/2f91d710e3b319e6.png')
+          background: url('https://statichk.cmermedical.com/imgs/2023/05/2f91d710e3b319e6.png')
             no-repeat;
           width: 15px;
           height: 17px;
@@ -3400,7 +3400,7 @@ const bannerData = {
           width: 100%;
           margin-top: 40px;
           padding: 25px 30px;
-          background: url(https://static.cmereye.com/imgs/2023/07/7de6d60faf433c9a.png);
+          background: url(https://statichk.cmermedical.com/imgs/2023/07/7de6d60faf433c9a.png);
           transform: scale(1);
           background-size: 100% 100%;
           & > div {

@@ -13,7 +13,7 @@ const list = [
       {
         type: 'image',
         question: '請問您看到了什麽？',
-        image: 'https://static.cmereye.com/imgs/2023/06/afe062ee9f2bcb30.jpg',
+        image: 'https://statichk.cmermedical.com/imgs/2023/06/afe062ee9f2bcb30.jpg',
       },
       {
         type: 'question',
@@ -25,7 +25,7 @@ const list = [
       {
         type: 'image',
         question: '請問您看到了什麽？',
-        image: 'https://static.cmereye.com/imgs/2023/06/bb324faaa50d58e2.jpg',
+        image: 'https://statichk.cmermedical.com/imgs/2023/06/bb324faaa50d58e2.jpg',
       },
       {
         type: 'question',
@@ -37,7 +37,7 @@ const list = [
       {
         type: 'image',
         question: '請問您看到了什麽？',
-        image: 'https://static.cmereye.com/imgs/2023/06/01e3e79295cd13a5.jpg',
+        image: 'https://statichk.cmermedical.com/imgs/2023/06/01e3e79295cd13a5.jpg',
       },
       {
         type: 'question',
@@ -54,7 +54,7 @@ const list = [
       {
         type: 'image',
         question: '請問您看到了什麽？',
-        image: 'https://static.cmereye.com/imgs/2023/06/74b0f092e710d3f1.jpg',
+        image: 'https://statichk.cmermedical.com/imgs/2023/06/74b0f092e710d3f1.jpg',
       },
       {
         type: 'question',
@@ -72,7 +72,7 @@ const list = [
       {
         type: 'image',
         question: '請問哪個背景中的字符更清晰明亮？',
-        image: 'https://static.cmereye.com/imgs/2023/06/34ffe189f740b93c.jpg',
+        image: 'https://statichk.cmermedical.com/imgs/2023/06/34ffe189f740b93c.jpg',
       },
       {
         type: 'question',
@@ -84,7 +84,7 @@ const list = [
       {
         type: 'image',
         question: '請問哪個背景中的字符更清晰明亮？',
-        image: 'https://static.cmereye.com/imgs/2023/06/943e456bc741befb.jpg',
+        image: 'https://statichk.cmermedical.com/imgs/2023/06/943e456bc741befb.jpg',
       },
       {
         type: 'question',
@@ -96,7 +96,7 @@ const list = [
       {
         type: 'image',
         question: '請問哪個背景中的字符更清晰明亮？',
-        image: 'https://static.cmereye.com/imgs/2023/06/ef523bd0c1f7788d.jpg',
+        image: 'https://statichk.cmermedical.com/imgs/2023/06/ef523bd0c1f7788d.jpg',
       },
       {
         type: 'question',

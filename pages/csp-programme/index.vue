@@ -231,7 +231,7 @@ const backgd = [
         >
           <div class="flex flex-col items-center text-center gap-2">
             <img
-              src="https://static.cmereye.com/imgs/2024/07/4d7813cdebf4d8ae.png"
+              src="https://statichk.cmermedical.com/imgs/2024/07/4d7813cdebf4d8ae.png"
               :alt="t('ppp.csp.intro.part5.item1.alt')"
               :title="t('ppp.csp.intro.part5.item1.title')"
               loading="lazy"
@@ -243,7 +243,7 @@ const backgd = [
           </div>
           <div class="flex flex-col items-center text-center gap-2">
             <img
-              src="https://static.cmereye.com/imgs/2024/07/fc16cb318b375354.png"
+              src="https://statichk.cmermedical.com/imgs/2024/07/fc16cb318b375354.png"
               :alt="t('ppp.csp.intro.part5.item2.alt')"
               :title="t('ppp.csp.intro.part5.item2.title')"
               loading="lazy"
@@ -261,7 +261,7 @@ const backgd = [
           </div>
           <div class="flex flex-col items-center text-center gap-2">
             <img
-              src="https://static.cmereye.com/imgs/2024/07/6528cdccb6c59532.png"
+              src="https://statichk.cmermedical.com/imgs/2024/07/6528cdccb6c59532.png"
               :alt="t('ppp.csp.intro.part5.item3.alt')"
               :title="t('ppp.csp.intro.part5.item3.title')"
               loading="lazy"

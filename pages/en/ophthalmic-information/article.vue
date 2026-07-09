@@ -68,10 +68,10 @@ onMounted(()=>{
     <div class="article">
       <div>
         <div>
-           <img data-cfsrc="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png" 
-          srcset="https://static.cmereye.com/imgs/2023/07/a161f8aa946ba13a.jpg 768w, https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"  
+           <img data-cfsrc="https://statichk.cmermedical.com/imgs/2023/06/bdd920a086aa2e64.png" 
+          srcset="https://statichk.cmermedical.com/imgs/2023/07/a161f8aa946ba13a.jpg 768w, https://statichk.cmermedical.com/imgs/2023/06/bdd920a086aa2e64.png"  
           alt="文章推薦" 
-          src="https://static.cmereye.com/imgs/2023/06/bdd920a086aa2e64.png"/>
+          src="https://statichk.cmermedical.com/imgs/2023/06/bdd920a086aa2e64.png"/>
           <svg
             width="9"
             height="144"
@@ -109,13 +109,13 @@ onMounted(()=>{
               <div>Article</div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/db7171427f66f1fc.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/05/db7171427f66f1fc.png"
                   alt="文章推薦"
                 />
               </div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/bb1dda2d4801f96b.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/05/bb1dda2d4801f96b.png"
                   alt="文章推薦"
                 />
               </div>

@@ -50,7 +50,7 @@ const eyeCenterImgList = [
   //   title: '希瑪眼科中心_尖沙咀診所'
   // },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/edf32e5449c237d9.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/edf32e5449c237d9.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪眼科中心_將軍澳診所'
@@ -114,7 +114,7 @@ const eyeCenterImgList = [
 // 微笑
 const smileImgList = [
   {
-    img: 'https://static.cmereye.com/imgs/2024/08/126203ce0bec257e.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2024/08/126203ce0bec257e.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪微笑矯視中心'
@@ -125,7 +125,7 @@ const smileImgList = [
         : 'Signage at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/08/9d313bf93f6c9bc9.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2024/08/9d313bf93f6c9bc9.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪微笑矯視中心_驗眼儀器'
@@ -136,7 +136,7 @@ const smileImgList = [
         : 'Comfortable waiting area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/08/c1018f324df72d8f.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2024/08/c1018f324df72d8f.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪微笑矯視中心_眼科檢查儀器'
@@ -147,7 +147,7 @@ const smileImgList = [
         : 'Comfortable reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/08/a6ff956020a1caa6.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2024/08/a6ff956020a1caa6.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪微笑矯視中心_眼科檢查儀器'
@@ -158,7 +158,7 @@ const smileImgList = [
         : 'Spacious and bright reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/08/368e45086074bccb.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2024/08/368e45086074bccb.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪微笑矯視中心_驗眼儀器'
@@ -169,7 +169,7 @@ const smileImgList = [
         : 'Comfortable clinical environment at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/08/3c5132843b258482.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2024/08/3c5132843b258482.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪微笑矯視中心_中環診所'
@@ -180,7 +180,7 @@ const smileImgList = [
         : 'Reception area at Cmer Smile Refractive Surgery Center - Central Clinic',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/08/28965e3f184af285.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2024/08/28965e3f184af285.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪微笑矯視中心_中環診所'
@@ -250,7 +250,7 @@ const visionImgList = [
         : 'Modern and inviting environment at Cmer Vision Center - Mong Kok Clinic',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/3561eb13d077d63d.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/3561eb13d077d63d.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪視光中心_將軍澳診所'
@@ -261,7 +261,7 @@ const visionImgList = [
         : 'Main entrance and display window at Cmer Vision Center - Tseung Kwan O Clinic',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/46b2e6c9ee085ddf.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/46b2e6c9ee085ddf.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪視光中心_將軍澳中心_兒童近視控制'
@@ -272,7 +272,7 @@ const visionImgList = [
         : "Dedicated area for children's myopia control at Cmer Vision Center - Tseung Kwan O Clinic",
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/02/2dc0bc6c85093e17.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/02/2dc0bc6c85093e17.jpg',
     title:
       locale.value == 'zh-hk'
         ? '希瑪眼科中心_眼科檢查儀器'
@@ -394,13 +394,13 @@ const goInstagram = (type: string) => {
         <div>
           <div @click="goFaceBook('eye')">
             <img
-              src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/43503bcd2b483bdc.png"
             />
             {{ $t('pages.about_us.hema_eye.hema_eye_facebooke') }}
           </div>
           <div @click="goInstagram('eye')">
             <img
-              src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/9e4f401e2f0bc647.png"
             />
             CMER_EYE_CENTER
           </div>
@@ -445,13 +445,13 @@ const goInstagram = (type: string) => {
         <div>
           <div @click="goFaceBook('smile')">
             <img
-              src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/43503bcd2b483bdc.png"
             />
             {{ $t('pages.about_us.hema_smile.hema_smile_facebooke') }}
           </div>
           <div @click="goInstagram('smile')">
             <img
-              src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/9e4f401e2f0bc647.png"
             />
             CMER_SMILE
           </div>
@@ -496,13 +496,13 @@ const goInstagram = (type: string) => {
         <div>
           <div @click="goFaceBook('vision')">
             <img
-              src="https://static.cmereye.com/imgs/2023/05/43503bcd2b483bdc.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/43503bcd2b483bdc.png"
             />
             {{ $t('pages.about_us.hema_vision.hema_vision_facebooke') }}
           </div>
           <div @click="goInstagram('vision')">
             <img
-              src="https://static.cmereye.com/imgs/2023/05/9e4f401e2f0bc647.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/9e4f401e2f0bc647.png"
             />
             CMERVISION
           </div>
@@ -514,7 +514,7 @@ const goInstagram = (type: string) => {
       <div class="maxCon">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/03/87bec646d374d093.png"
+            src="https://statichk.cmermedical.com/imgs/2023/03/87bec646d374d093.png"
             :title="
               locale == 'zh-hk'
                 ? '希瑪眼科中心_眼科檢查服務'
@@ -527,7 +527,7 @@ const goInstagram = (type: string) => {
             "
           />
           <img
-            src="https://static.cmereye.com/imgs/2023/03/13753bf3c5149f9b.png"
+            src="https://statichk.cmermedical.com/imgs/2023/03/13753bf3c5149f9b.png"
             :title="
               locale == 'zh-hk'
                 ? '希瑪眼科中心_將軍澳診所'
@@ -596,7 +596,7 @@ const goInstagram = (type: string) => {
             {{ $t('pages.about_us.media.media_wechat') }}
             <div class="isShow">
               <img
-                src="https://static.cmereye.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
+                src="https://statichk.cmermedical.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
                 alt="香港希瑪眼科中心"
               />
             </div>
@@ -607,7 +607,7 @@ const goInstagram = (type: string) => {
         <div class="maxCon">
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/03/730235c6f84d2dee.png"
+              src="https://statichk.cmermedical.com/imgs/2023/03/730235c6f84d2dee.png"
               :title="
                 locale == 'zh-hk'
                   ? '希瑪視光中心_旺角診所'
@@ -625,7 +625,7 @@ const goInstagram = (type: string) => {
             :download="$t('pages.about_us.download.download')"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/03/84174afa22901c0b.png"
+              src="https://statichk.cmermedical.com/imgs/2023/03/84174afa22901c0b.png"
               :title="locale == 'zh-hk ' ? '希瑪眼科中心' : 'Cmer Eye Center'"
               :alt="
                 locale == 'zh-hk '

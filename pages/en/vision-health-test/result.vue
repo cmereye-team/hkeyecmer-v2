@@ -15,85 +15,85 @@ var list = [
       id: "01",
       title: "恭喜！",
       ct: "您雙眼的調節能力正常。",
-      img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "02",
       title: "注意！",
       ct: "您雙眼的調節能力一般。",
-      img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
       id: "03",
       title: "抱歉！",
       ct: "您雙眼的調節能力不佳。",
-      img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     }
   ], [ 
     {
       id: "01",
       title: "恭喜！",
       ct: "您有乾眼症的可能性很低。",
-      img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "02",
       title: "注意！",
       ct: "您有乾眼症的可能性中等。",
-      img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
       id: "03",
       title: "抱歉！",
       ct: "您有乾眼症的可能性很高。",
-      img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     } 
   ], [ 
     {
       id: "01",
       title: "恭喜！",
       ct: "您患有白內障的可能性很低。",
-      img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "02",
       title: "注意！",
       ct: "您患有白內障的可能性中等。",
-      img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
       id: "03",
       title: "抱歉！",
       ct: "您患有白內障的可能性很高。",
-      img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     } 
   ], [ 
     {
       id: "01",
       title: "恭喜！",
       ct: "測試顯示您色覺正常！",
-      img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "03",
       title: "抱歉！",
       ct: "測試顯示您有色盲症狀！",
-      img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     } 
   ], [ 
     {
       id: "01",
       title: "抱歉！",
       ct: "您的眼鏡近視眼矯正不足，遠視眼矯正偏高。",
-      img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     }, {
       id: "02",
       title: "抱歉！",
       ct: "您的眼鏡近視眼矯正偏高，遠視眼矯正不足。",
-      img: 'https://static.cmereye.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/7c8b60c0b2f1ed1c.png'
     }, {
         id: "03",
       title: "恭喜！",
       ct: "您的眼鏡为您提供了最佳的視力狀態！",
-      img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
       id: "04",
       title: "注意！",
       ct: "請您重新測試",
-      img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+      img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     } 
   ],
   [
@@ -101,148 +101,148 @@ var list = [
         id: "01",
         title: "恭喜！",
         ct: "您的左眼沒有散光症狀。",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "02",
         title: "注意！",
         ct: "您的左眼有散光症狀。",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "03",
         title: "恭喜！",
         ct: "您的右眼沒有散光症狀。",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
         title: "注意！",
         ct: "您的右眼有散光症狀。",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
   } ],
   [ {
         id: "01",
         title: "抱歉！",
         ct: "您左眼有近視症狀！",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "02",
         title: "抱歉！",
         ct: "您左眼有遠視症狀！",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "03",
         title: "恭喜！",
         ct: "您左眼沒有近視或遠視症狀！",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
         title: "抱歉！",
         ct: "您右眼有近視症狀！",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "05",
         title: "抱歉！",
         ct: "您右眼有遠視症狀！",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "06",
         title: "恭喜！",
         ct: "您右眼沒有近視或遠視症狀！",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "07",
         title: "注意！",
         ct: "請您重新測試！",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     } 
   ],[  {
         id: "01",
         title: "恭喜！",
         ct: "您的左眼沒有黃斑病變症狀",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "02",
         title: "抱歉！",
         ct: "您的左眼有黃斑病變症狀",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "03",
         title: "恭喜！",
         ct: "您的右眼沒有黃斑病變症狀",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
         title: "抱歉！",
         ct: "您的右眼有黃斑病變症狀",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
      } 
   ], [ {
         id: "01",
         title: "恭喜！",
         ct: "您的左眼視力正常",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "02",
         title: "抱歉！",
         ct: "您的左眼有視神經疾病的症狀",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }, {
         id: "03",
         title: "恭喜！",
         ct: "您的右眼視力正常",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, {
         id: "04",
         title: "抱歉！",
         ct: "您的右眼有視神經疾病的症狀",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     } 
   ], [ {
         id: "01",
         title: "",
         ct: "您的左眼的視覺敏感度为",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, 
     {
         id: "02",
         title: "",
         ct: "您的左眼的視覺敏感度为",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     },
     {
         id: "03",
         title: "",
         ct: "您的右眼的視覺敏感度为",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     }, 
     {
         id: "04",
         title: "",
         ct: "您的右眼的視覺敏感度为",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     }
   ], [ {
         id: "01",
         title: "",
         ct: "您的左眼的對比敏感度为",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
     },
     {
         id: "02",
         title: "",
         ct: "您的左眼的對比敏感度为",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
     },
      {
         id: "03",
         title: "",
         ct: "您的右眼的對比敏感度为",
-        img: 'https://static.cmereye.com/imgs/2023/06/77446435d01c015a.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/77446435d01c015a.png'
       },
       {
         id: "04",
         title: "",
         ct: "您的右眼的對比敏感度为",
-        img: 'https://static.cmereye.com/imgs/2023/06/d49a3d2b3054e119.png'
+        img: 'https://statichk.cmermedical.com/imgs/2023/06/d49a3d2b3054e119.png'
       } 
   ]
 ]

@@ -31,37 +31,37 @@ const backgd = [
 // 結膜炎症狀
 const symptom = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/49f77c5d99a7780b.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/49f77c5d99a7780b.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text1',
     img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt1',
     img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/d926dc7d76ec029f.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d926dc7d76ec029f.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text2',
     img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt2',
     img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/850716323d310472.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/850716323d310472.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text3',
     img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt3',
     img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/bcda02c1c5bf937d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/bcda02c1c5bf937d.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text4',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.stomymp.alt4',
     img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/ccacc25f729b2461.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/ccacc25f729b2461.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text5',
     img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt5',
     img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/d329a39c077ff928.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d329a39c077ff928.png',
     text: 'pages.medical_service.conjunctivitis_con.symptom.text6',
     img_alt: 'pages.medical_service.conjunctivitis_new.stomymp.alt6',
     img_title: 'pages.medical_service.conjunctivitis_new.stomymp.title6',
@@ -69,21 +69,21 @@ const symptom = [
 ]
 const kind = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/748e5bcb92254caf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/748e5bcb92254caf.png',
     title: 'pages.medical_service.conjunctivitis_con.kind.title1',
     text: 'pages.medical_service.conjunctivitis_con.kind.text1',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.kind.alt1',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.kind.title1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/701397f097eef96c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/701397f097eef96c.png',
     title: 'pages.medical_service.conjunctivitis_con.kind.title2',
     text: 'pages.medical_service.conjunctivitis_con.kind.text2',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.kind.alt2',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.kind.title2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/ef14a865c31942b9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/ef14a865c31942b9.png',
     title: 'pages.medical_service.conjunctivitis_con.kind.title3',
     text: 'pages.medical_service.conjunctivitis_con.kind.text3',
     detail: [
@@ -114,19 +114,19 @@ const kind = [
 // 傳播途徑
 const approach = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/0d05a89369200317.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/0d05a89369200317.png',
     text: 'pages.medical_service.conjunctivitis_con.approach.text1',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.approach.title1',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.approach.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/f0bec1c3ab794f68.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/f0bec1c3ab794f68.png',
     text: 'pages.medical_service.conjunctivitis_con.approach.text2',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.approach.title2',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.approach.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/4d61a6761a07123c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/4d61a6761a07123c.png',
     text: 'pages.medical_service.conjunctivitis_con.approach.text3',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.approach.title3',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.approach.alt3',
@@ -135,37 +135,37 @@ const approach = [
 // 高危人士
 const highRisk = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/1a586d997866355f.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/1a586d997866355f.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text1',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title1',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/044719c0b3767bdf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/044719c0b3767bdf.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text2',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title2',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/9210325662456759.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/9210325662456759.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text3',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title3',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/0820acef48ffd428.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/0820acef48ffd428.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text4',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title4',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/42fba00cccac8fd8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/42fba00cccac8fd8.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text5',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title5',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/d4a7e8890a9e4e9d.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d4a7e8890a9e4e9d.png',
     text: 'pages.medical_service.conjunctivitis_con.highRisk.text6',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.highRisk.title6',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.highRisk.alt6',
@@ -175,35 +175,35 @@ const highRisk = [
 const prevent = [
   {
     title: 'pages.medical_service.conjunctivitis_con.prevent.title1',
-    img: 'https://static.cmereye.com/imgs/2023/05/6f78b53bc80256f1.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/6f78b53bc80256f1.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text1',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title1',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt1',
   },
   {
     title: 'pages.medical_service.conjunctivitis_con.prevent.title2',
-    img: 'https://static.cmereye.com/imgs/2023/05/477c1cc938e1c255.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/477c1cc938e1c255.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text2',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title2',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt2',
   },
   {
     title: 'pages.medical_service.conjunctivitis_con.prevent.title3',
-    img: 'https://static.cmereye.com/imgs/2023/05/9bdb93a2e7d6cdda.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/9bdb93a2e7d6cdda.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text3',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title3',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt3',
   },
   {
     title: 'pages.medical_service.conjunctivitis_con.prevent.title4',
-    img: 'https://static.cmereye.com/imgs/2023/05/f72bd496b4dd4560.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/f72bd496b4dd4560.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text4',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title4',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt4',
   },
   {
     title: 'pages.medical_service.conjunctivitis_con.prevent.title5',
-    img: 'https://static.cmereye.com/imgs/2023/05/324f7391c1f7706f.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/324f7391c1f7706f.png',
     text: 'pages.medical_service.conjunctivitis_con.prevent.text5',
     img_title: 'pages.vice.conjunmedical_serctivitis_new.prevent.title5',
     img_alt: 'pages.vice.conjunmedical_serctivitis_new.prevent.alt5',
@@ -272,8 +272,8 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/結膜炎1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/結膜炎2.png',
+  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/結膜炎1.png',
+  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/結膜炎2.png',
   cnName: '結膜炎(紅眼症)',
   enName: 'CONJUNCTIVITIS',
   textColor: '#C0C0E6',
@@ -310,7 +310,7 @@ const bannerData = {
         </div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/05/3ce6dbff76e16a32.png"
+            src="https://statichk.cmermedical.com/imgs/2023/05/3ce6dbff76e16a32.png"
             :title="
               locale === 'en'
                 ? 'Conjunctivitis Symptoms-Red Eyes'
@@ -576,7 +576,7 @@ const bannerData = {
             :download="'結膜炎'"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
               :title="
                 locale === 'en'
                   ? 'Conjunctivitis-Red Eye Guide'

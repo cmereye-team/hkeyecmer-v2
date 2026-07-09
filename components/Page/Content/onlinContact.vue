@@ -35,7 +35,7 @@ const rt = ref(route)
           class="ga-pc-right-ljyy"
           v-if="locale !== 'en'"
           id="ga-pc-right-ljyy"
-          src="https://static.cmereye.com/imgs/2024/06/347ac843c913da6d.png"
+          src="https://statichk.cmermedical.com/imgs/2024/06/347ac843c913da6d.png"
           alt="希瑪眼科中心_立即預約眼科服務"
           title="希瑪眼科中心_立即預約眼科服務"
         />
@@ -43,7 +43,7 @@ const rt = ref(route)
           class="ga-pc-right-ljyy"
           v-if="locale === 'en'"
           id="ga-pc-right-ljyy"
-          src="https://static.cmereye.com/imgs/2024/06/347ac843c913da6d.png"
+          src="https://statichk.cmermedical.com/imgs/2024/06/347ac843c913da6d.png"
           alt="Book your eye exam and make inquiries at Cmer Eye Center"
           title="Booking and Enquiry-Cmer Eye Center"
         />
@@ -65,7 +65,7 @@ const rt = ref(route)
           <div class="ga-pc-right-zxcx">
             <img
               class="ga-pc-right-zxcx"
-              src="https://static.cmereye.com/static/hkeyecmer/svg/icon_1001.svg"
+              src="https://statichk.cmermedical.com/static/hkeyecmer/svg/icon_1001.svg"
               alt=""
             />
           </div>
@@ -85,7 +85,7 @@ const rt = ref(route)
           <div class="ga-pc-right-WhatsApp">
             <img
               class="ga-pc-right-WhatsApp"
-              src="https://static.cmereye.com/static/hkeyecmer/svg/icon_1002.svg"
+              src="https://statichk.cmermedical.com/static/hkeyecmer/svg/icon_1002.svg"
               alt=""
             />
           </div>
@@ -106,7 +106,7 @@ const rt = ref(route)
           <div class="ga-pc-right-ljzd">
             <img
               class="ga-pc-right-ljzd"
-              src="https://static.cmereye.com/static/hkeyecmer/svg/icon_1003.svg"
+              src="https://statichk.cmermedical.com/static/hkeyecmer/svg/icon_1003.svg"
               alt=""
             />
           </div>
@@ -120,14 +120,14 @@ const rt = ref(route)
       >
         <div class="ocitem-img-last">
           <img
-            src="https://static.cmereye.com/imgs/2024/06/f747a3559095f38e.png"
+            src="https://statichk.cmermedical.com/imgs/2024/06/f747a3559095f38e.png"
             alt=""
           />
           <span>60629611</span>
         </div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2024/06/012f428c7e43ad79.png"
+            src="https://statichk.cmermedical.com/imgs/2024/06/012f428c7e43ad79.png"
             alt=""
           />
         </div>
@@ -139,7 +139,7 @@ const rt = ref(route)
         target="_blank"
       >
         <img
-          src="https://static.cmereye.com/imgs/2024/06/012f428c7e43ad79.png"
+          src="https://statichk.cmermedical.com/imgs/2024/06/012f428c7e43ad79.png"
           alt=""
           class="catarct-wrap__callicon"
         />

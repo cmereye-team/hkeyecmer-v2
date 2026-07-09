@@ -64,9 +64,9 @@ const goVision = () => {
 }
 const bannerData = {
   pcSrc:
-    'https://static.cmereye.com/static/hkcmereye/bannerzip/醫學驗光配鏡1.png',
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/醫學驗光配鏡1.png',
   mbSrc:
-    'https://static.cmereye.com/static/hkcmereye/bannerzip/醫學驗光配鏡2.png',
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/醫學驗光配鏡2.png',
   cnName: '醫學驗光配鏡',
   enName: 'MYOPIA CONTROL AND OPHTHALMIC SERVICES',
   textColor: '#B9D38F',
@@ -131,10 +131,10 @@ const bannerData = {
           <div>
             <img
               srcset="
-                https://static.cmereye.com/imgs/2024/04/a813e9765c3198e3.png 768w,
-                https://static.cmereye.com/imgs/2024/04/83ce66e13d579b81.png
+                https://statichk.cmermedical.com/imgs/2024/04/a813e9765c3198e3.png 768w,
+                https://statichk.cmermedical.com/imgs/2024/04/83ce66e13d579b81.png
               "
-              src="https://static.cmereye.com/imgs/2024/04/83ce66e13d579b81.png"
+              src="https://statichk.cmermedical.com/imgs/2024/04/83ce66e13d579b81.png"
               :title="
                 locale === 'en'
                   ? 'Children Myopia Control-Vision Test'
@@ -169,7 +169,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/ba743f1d36fe18f5.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/ba743f1d36fe18f5.png"
                 :title="
                   locale === 'en'
                     ? 'Children Eye Checkup-Eye Exam Services'
@@ -215,7 +215,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2024/04/040397402ce701a0.png"
+                src="https://statichk.cmermedical.com/imgs/2024/04/040397402ce701a0.png"
                 :title="
                   locale === 'en'
                     ? 'Children Eye Checkup-Eye Health'
@@ -261,7 +261,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/21855ee228f6d562.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/21855ee228f6d562.png"
                 :title="
                   locale === 'en'
                     ? 'Eye Exercises-Family Eye Health'
@@ -285,7 +285,7 @@ const bannerData = {
             </div>
             <div class="contenth2">
               <img
-                src="https://static.cmereye.com/imgs/2024/02/b024232a15daddde.png"
+                src="https://statichk.cmermedical.com/imgs/2024/02/b024232a15daddde.png"
                 alt=""
               />
             </div>
@@ -296,12 +296,12 @@ const bannerData = {
                   href="https://www.cmervision.com/orthokeratology/"
                 >
                   <img
-                    data-cfsrc="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png"
+                    data-cfsrc="https://statichk.cmermedical.com/imgs/2024/02/78a53869088df471.png"
                     srcset="
-                      https://static.cmereye.com/imgs/2024/02/fa28b47d86133d44.png 768w,
-                      https://static.cmereye.com/imgs/2024/02/78a53869088df471.png
+                      https://statichk.cmermedical.com/imgs/2024/02/fa28b47d86133d44.png 768w,
+                      https://statichk.cmermedical.com/imgs/2024/02/78a53869088df471.png
                     "
-                    src="https://static.cmereye.com/imgs/2024/02/78a53869088df471.png"
+                    src="https://statichk.cmermedical.com/imgs/2024/02/78a53869088df471.png"
                     :title="
                       locale === 'en'
                         ? 'CMER Vision Center-Ortho-K Treatment'
@@ -318,12 +318,12 @@ const bannerData = {
               <div class="page-newNavs-in">
                 <img
                   class="imgLink"
-                  data-cfsrc="https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png"
+                  data-cfsrc="https://statichk.cmermedical.com/imgs/2024/02/b716d59a6aa89273.png"
                   srcset="
-                    https://static.cmereye.com/imgs/2024/02/201cc4f03dc17ad2.png 768w,
-                    https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png
+                    https://statichk.cmermedical.com/imgs/2024/02/201cc4f03dc17ad2.png 768w,
+                    https://statichk.cmermedical.com/imgs/2024/02/b716d59a6aa89273.png
                   "
-                  src="https://static.cmereye.com/imgs/2024/02/b716d59a6aa89273.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/b716d59a6aa89273.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Myopia Control Contacts'
@@ -338,7 +338,7 @@ const bannerData = {
                 <div class="page-newNavs-in-hover">
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2024/02/40234c61800b1127.png"
+                      src="https://statichk.cmermedical.com/imgs/2024/02/40234c61800b1127.png"
                       alt=""
                     />
                     <p>MiSight® 1 day隱形眼鏡</p>
@@ -350,13 +350,13 @@ const bannerData = {
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2024/02/f3f9de5f73f1b71a.png"
+                      src="https://statichk.cmermedical.com/imgs/2024/02/f3f9de5f73f1b71a.png"
                       alt=""
                     />
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2024/02/5e5fea4259b76394.png"
+                      src="https://statichk.cmermedical.com/imgs/2024/02/5e5fea4259b76394.png"
                       alt=""
                     />
                   </div>
@@ -365,12 +365,12 @@ const bannerData = {
               <div class="page-newNavs-in">
                 <img
                   class="imgLink"
-                  data-cfsrc="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png"
+                  data-cfsrc="https://statichk.cmermedical.com/imgs/2024/02/5840782d7636ab10.png"
                   srcset="
-                    https://static.cmereye.com/imgs/2024/02/086a88b79db89fa0.png 768w,
-                    https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png
+                    https://statichk.cmermedical.com/imgs/2024/02/086a88b79db89fa0.png 768w,
+                    https://statichk.cmermedical.com/imgs/2024/02/5840782d7636ab10.png
                   "
-                  src="https://static.cmereye.com/imgs/2024/02/5840782d7636ab10.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/5840782d7636ab10.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Myopia Control Lenses'
@@ -385,7 +385,7 @@ const bannerData = {
                 <div class="page-newNavs-in-hover page-newNavs-in-hover-2">
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2024/02/5c92bf2ca480b26b.png"
+                      src="https://statichk.cmermedical.com/imgs/2024/02/5c92bf2ca480b26b.png"
                       alt=""
                     />
                     <p>ZEISS兒童近視控制鏡片</p>
@@ -397,7 +397,7 @@ const bannerData = {
                   </div>
                   <div>
                     <img
-                      src="https://static.cmereye.com/imgs/2024/02/5b495ef0e1f2a9e8.png"
+                      src="https://statichk.cmermedical.com/imgs/2024/02/5b495ef0e1f2a9e8.png"
                       alt=""
                     />
                     <p>HOYA MiYOSMART鏡片</p>
@@ -415,12 +415,12 @@ const bannerData = {
                   href="https://www.hkeyecmer.com/medical-service/atropine"
                 >
                   <img
-                    data-cfsrc="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png"
+                    data-cfsrc="https://statichk.cmermedical.com/imgs/2024/02/44c702c2ea686335.png"
                     srcset="
-                      https://static.cmereye.com/imgs/2024/02/43673cddac52188d.png 768w,
-                      https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png
+                      https://statichk.cmermedical.com/imgs/2024/02/43673cddac52188d.png 768w,
+                      https://statichk.cmermedical.com/imgs/2024/02/44c702c2ea686335.png
                     "
-                    src="https://static.cmereye.com/imgs/2024/02/44c702c2ea686335.png"
+                    src="https://statichk.cmermedical.com/imgs/2024/02/44c702c2ea686335.png"
                     :title="
                       locale === 'en'
                         ? 'CMER Vision Center-Atropine Eye Drops'
@@ -460,7 +460,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/8cc2d1658a7cb0f6.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/8cc2d1658a7cb0f6.png"
                 :title="
                   locale === 'en'
                     ? 'Ophthalmologist-Comprehensive Eye Exam'
@@ -493,7 +493,7 @@ const bannerData = {
           <div>
             <div>
               <img
-                src="https://static.cmereye.com/imgs/2023/06/985c3fa5d6eadb1d.png"
+                src="https://statichk.cmermedical.com/imgs/2023/06/985c3fa5d6eadb1d.png"
                 :title="
                   locale === 'en'
                     ? 'Eye Exams-Prevent Eye Diseases'
@@ -526,7 +526,7 @@ const bannerData = {
             <div class="page-newNavs2">
               <div class="page-newNavs2-in">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/02/1a1e8435c4c2698b.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/1a1e8435c4c2698b.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Contact Lenses'
@@ -546,7 +546,7 @@ const bannerData = {
               </div>
               <div class="page-newNavs2-in">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/02/805dd58f9d5c77f9.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/805dd58f9d5c77f9.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Progressive Glasses'
@@ -565,7 +565,7 @@ const bannerData = {
               </div>
               <div class="page-newNavs2-in">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/02/88aaf0b395c69633.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/88aaf0b395c69633.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Presbyopia Contacts'
@@ -585,7 +585,7 @@ const bannerData = {
               </div>
               <div class="page-newNavs2-in">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/02/ae106a03cf2f371c.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/ae106a03cf2f371c.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Rigid Contact Lenses'
@@ -632,7 +632,7 @@ const bannerData = {
               <div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/07/5e23052605a6a862.png  "
+                    src="https://statichk.cmermedical.com/imgs/2023/07/5e23052605a6a862.png  "
                     :title="
                       locale === 'en'
                         ? 'Children Eye Checkup-Eye Exam Services'
@@ -680,7 +680,7 @@ const bannerData = {
               <div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2024/04/46f32814f4b5f0da.png"
+                    src="https://statichk.cmermedical.com/imgs/2024/04/46f32814f4b5f0da.png"
                     :title="
                       locale === 'en'
                         ? 'Children Eye Checkup-Eye Health'
@@ -723,7 +723,7 @@ const bannerData = {
               <div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/07/cc9aa29e72e2fe1f.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/07/cc9aa29e72e2fe1f.png"
                     :title="
                       locale === 'en'
                         ? 'Eye Exercises-Family Eye Health'
@@ -745,7 +745,7 @@ const bannerData = {
               </div>
               <div class="contenth2">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/02/b024232a15daddde.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/b024232a15daddde.png"
                   alt=""
                 />
               </div>
@@ -756,7 +756,7 @@ const bannerData = {
                     href="https://www.cmervision.com/orthokeratology/"
                   >
                     <img
-                      src="https://static.cmereye.com/imgs/2024/02/b4cb7a2dbcde9597.png"
+                      src="https://statichk.cmermedical.com/imgs/2024/02/b4cb7a2dbcde9597.png"
                       alt="角膜矯形術"
                       title="角膜矯形術"
                     />
@@ -765,14 +765,14 @@ const bannerData = {
                 <div class="page-newNavs-in">
                   <img
                     class="imgLink"
-                    src="https://static.cmereye.com/imgs/2024/02/7d4c482c735ee561.png"
+                    src="https://statichk.cmermedical.com/imgs/2024/02/7d4c482c735ee561.png"
                     title="每日即棄近視 控制隱形眼鏡"
                     alt=""
                   />
                   <div class="page-newNavs-in-hover">
                     <div>
                       <img
-                        src="https://static.cmereye.com/imgs/2024/02/40234c61800b1127.png"
+                        src="https://statichk.cmermedical.com/imgs/2024/02/40234c61800b1127.png"
                         alt=""
                       />
                       <p>MiSight® 1 day隱形眼鏡</p>
@@ -784,13 +784,13 @@ const bannerData = {
                     </div>
                     <div>
                       <img
-                        src="https://static.cmereye.com/imgs/2024/02/f3f9de5f73f1b71a.png"
+                        src="https://statichk.cmermedical.com/imgs/2024/02/f3f9de5f73f1b71a.png"
                         alt=""
                       />
                     </div>
                     <div>
                       <img
-                        src="https://static.cmereye.com/imgs/2024/02/5e5fea4259b76394.png"
+                        src="https://statichk.cmermedical.com/imgs/2024/02/5e5fea4259b76394.png"
                         alt=""
                       />
                     </div>
@@ -799,14 +799,14 @@ const bannerData = {
                 <div class="page-newNavs-in">
                   <img
                     class="imgLink"
-                    src="https://static.cmereye.com/imgs/2024/02/d5693952f88b0338.png"
+                    src="https://statichk.cmermedical.com/imgs/2024/02/d5693952f88b0338.png"
                     title="兒童近視控制鏡片"
                     alt=""
                   />
                   <div class="page-newNavs-in-hover page-newNavs-in-hover-2">
                     <div>
                       <img
-                        src="https://static.cmereye.com/imgs/2024/02/5c92bf2ca480b26b.png"
+                        src="https://statichk.cmermedical.com/imgs/2024/02/5c92bf2ca480b26b.png"
                         alt=""
                       />
                       <p>ZEISS兒童近視控制鏡片</p>
@@ -818,7 +818,7 @@ const bannerData = {
                     </div>
                     <div>
                       <img
-                        src="https://static.cmereye.com/imgs/2024/02/5b495ef0e1f2a9e8.png"
+                        src="https://statichk.cmermedical.com/imgs/2024/02/5b495ef0e1f2a9e8.png"
                         alt=""
                       />
                       <p>HOYA MiYOSMART鏡片</p>
@@ -836,7 +836,7 @@ const bannerData = {
                     href="https://www.hkeyecmer.com/medical-service/atropine"
                   >
                     <img
-                      src="https://static.cmereye.com/imgs/2024/02/9d87712599f6e163.png"
+                      src="https://statichk.cmermedical.com/imgs/2024/02/9d87712599f6e163.png"
                       title="阿托品眼藥水"
                       alt=""
                   /></a>
@@ -874,7 +874,7 @@ const bannerData = {
               <div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/07/3379ff699f2869d0.png  "
+                    src="https://statichk.cmermedical.com/imgs/2023/07/3379ff699f2869d0.png  "
                     :title="
                       locale === 'en'
                         ? 'Ophthalmologist-Comprehensive Eye Exam'
@@ -909,7 +909,7 @@ const bannerData = {
               <div>
                 <div>
                   <img
-                    src="https://static.cmereye.com/imgs/2023/07/3e8d41f263dc003f.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/07/3e8d41f263dc003f.png"
                     :title="
                       locale === 'en'
                         ? 'Eye Exams-Prevent Eye Diseases'
@@ -938,7 +938,7 @@ const bannerData = {
             <div class="page-newNavs2">
               <div class="page-newNavs2-in">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/02/1a1e8435c4c2698b.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/1a1e8435c4c2698b.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Contact Lenses'
@@ -958,7 +958,7 @@ const bannerData = {
               </div>
               <div class="page-newNavs2-in">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/02/805dd58f9d5c77f9.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/805dd58f9d5c77f9.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Progressive Glasses'
@@ -977,7 +977,7 @@ const bannerData = {
               </div>
               <div class="page-newNavs2-in">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/02/88aaf0b395c69633.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/88aaf0b395c69633.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Presbyopia Contacts'
@@ -997,7 +997,7 @@ const bannerData = {
               </div>
               <div class="page-newNavs2-in">
                 <img
-                  src="https://static.cmereye.com/imgs/2024/02/ae106a03cf2f371c.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/02/ae106a03cf2f371c.png"
                   :title="
                     locale === 'en'
                       ? 'CMER Vision Center-Rigid Contact Lenses'
@@ -1034,7 +1034,7 @@ const bannerData = {
       <FormFooterInfo
         :bg="`background:${backgd[0]}background:${backgd[1]}background:${backgd[2]}`"
         :co="`color:${'#bcd09c;'}`"
-        :formbgimg="'https://static.cmereye.com/imgs/2024/04/2894df9b213b8a17.png'"
+        :formbgimg="'https://statichk.cmermedical.com/imgs/2024/04/2894df9b213b8a17.png'"
       />
     </div>
     <PageFooterMenu />

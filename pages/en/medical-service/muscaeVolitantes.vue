@@ -31,32 +31,32 @@ const backgd = [
 // 飛蚊症患者看見的浮游物︰
 const seston = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/267899886dbaf8d9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/267899886dbaf8d9.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text1',
     alt: '飛蚊症症狀_小雨點浮游物',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/225dea4ef8edb2ba.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/225dea4ef8edb2ba.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text2',
     alt: '飛蚊症症狀_圓圈浮游物',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/d5da51be0ea0658a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d5da51be0ea0658a.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text3',
     alt: '飛蚊症症狀_雲浮游物',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/59f096cb588e2704.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/59f096cb588e2704.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text4',
     alt: '飛蚊症症狀_網狀浮游物',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/d350bf2ddff168ce.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d350bf2ddff168ce.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text5',
     alt: '飛蚊症症狀_變形蟲浮游物',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/f3bb62aace9740a1.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/f3bb62aace9740a1.png',
     text: 'pages.medical_service.muscaeVolitantes_con.muscaeInfo.text6',
     alt: '飛蚊症症狀_蜘蛛浮游物',
   },
@@ -64,28 +64,28 @@ const seston = [
 // 飛蚊症成因
 const factor = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/54e4419baae2b032.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/54e4419baae2b032.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title1',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text1',
     img_title: '飛蚊症成因_老花',
     img_alt: '年長者出現老花症狀為飛蚊症成因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/b8098843aeb81226.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/b8098843aeb81226.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title2',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text2',
     img_title: '飛蚊症成因_眼睛發炎',
     img_alt: '男患者眼睛發炎為飛蚊症成因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/bdb733bc982c8bbe.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/bdb733bc982c8bbe.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title3',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text3',
     img_title: '飛蚊症成因_眼出血',
     img_alt: '眼出血為飛蚊症成因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/bb13ed69d5a61654.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/bb13ed69d5a61654.png',
     title: 'pages.medical_service.muscaeVolitantes_con.factor.title4',
     text: 'pages.medical_service.muscaeVolitantes_con.factor.text4',
     img_title: '飛蚊症成因_視網膜脫落症狀',
@@ -95,37 +95,37 @@ const factor = [
 // 飛蚊症高危人士
 const highRisk = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/39afb10f87a7de13.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/39afb10f87a7de13.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text1',
     title: '飛蚊症高危一族_年長者',
     alt: '年長者為飛蚊症高危一族',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/10a1afee083e56b8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/10a1afee083e56b8.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text2',
     title: '飛蚊症高危一族_深近視',
     alt: '深近視的女患者為飛蚊症高危一族',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/f2d9ff06f4237aa6.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/f2d9ff06f4237aa6.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text3',
     title: '飛蚊症高危一族_低頭族',
     alt: '低頭族為飛蚊症高危一族',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/d3b82336979411ba.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/d3b82336979411ba.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text4',
     title: '飛蚊症高危一族_眼睛發炎',
     alt: '眼睛發炎的女患者為飛蚊症高危一族',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/ee23c5620bd1b8d8.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/ee23c5620bd1b8d8.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text5',
     title: '飛蚊症高危一族_家族遺傳',
     alt: '家族遺傳為飛蚊症高危一族',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/8eabb04d3e7fb31b.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/8eabb04d3e7fb31b.png',
     text: 'pages.medical_service.muscaeVolitantes_con.highRisk.text6',
     title: '飛蚊症高危一族_血糖高',
     alt: '血糖高為飛蚊症高危一族',
@@ -134,31 +134,31 @@ const highRisk = [
 // 預防飛蚊症s
 const prevent = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/1ae9e363893ea9bf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/1ae9e363893ea9bf.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text1',
     title: '預防飛蚊症',
     alt: '閉眼休息以預防飛蚊症',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/174add34da3b109f.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/174add34da3b109f.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text2',
     title: '預防飛蚊症',
     alt: '與電子產品保持適當距離以預防飛蚊症',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/3c1f9464c5101f8b.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/3c1f9464c5101f8b.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text3',
     title: '預防飛蚊症',
     alt: '在光線充足的環境下閱讀以預防飛蚊症',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/512837cc2419bc81.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/512837cc2419bc81.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text4',
     title: '預防飛蚊症',
     alt: '佩戴防紫外線太陽眼鏡以預防飛蚊症',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/b1c59499606c7ee4.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/b1c59499606c7ee4.png',
     text: 'pages.medical_service.muscaeVolitantes_con.prevent.text5',
     title: '預防飛蚊症',
     alt: '保持充足睡眠以預防飛蚊症',
@@ -222,8 +222,8 @@ const callTel = () => {
   location.href = 'tel: +852 3956 2025'
 }
 const bannerData = {
-  pcSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/飛蚊症1.png',
-  mbSrc: 'https://static.cmereye.com/static/hkcmereye/bannerzip/飛蚊症2.png',
+  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/飛蚊症1.png',
+  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/飛蚊症2.png',
   cnName: '飛蚊症',
   enName: 'EYE FLOATERS',
   textColor: '#568BB4',
@@ -240,7 +240,7 @@ const bannerData = {
       <div id="muscaeInfo">
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/06/eaed11ab4604268b.png"
+            src="https://statichk.cmermedical.com/imgs/2023/06/eaed11ab4604268b.png"
             title="飛蚊症症狀"
             alt="視野出現玻璃體浮游物為飛蚊症症狀"
           />
@@ -375,12 +375,12 @@ const bannerData = {
               </div>
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/95fa8f20495db188.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/05/95fa8f20495db188.png"
                   title="生理性飛蚊症"
                   alt="生理性飛蚊症視覺"
                 />
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/00467483401c8769.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/05/00467483401c8769.png"
                   title="生理性飛蚊症症狀"
                   alt="視野出現玻璃體浮游物為生理性飛蚊症症狀"
                 />
@@ -402,7 +402,7 @@ const bannerData = {
               v-if="locale === 'en'"
             />
             <img
-              src="https://static.cmereye.com/imgs/2023/05/70ece1913636ef3b.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/70ece1913636ef3b.png"
               title="惡性飛蚊症"
               alt="惡性飛蚊症眼睛結構"
               v-else
@@ -505,7 +505,7 @@ const bannerData = {
                     v-if="locale === 'en'"
                   />
                   <img
-                    src="https://static.cmereye.com/imgs/2023/05/e7d886f97050a60e.png"
+                    src="https://statichk.cmermedical.com/imgs/2023/05/e7d886f97050a60e.png"
                     title="飛蚊症"
                     alt="飛蚊症眼睛結構"
                     v-else
@@ -579,7 +579,7 @@ const bannerData = {
                   v-if="locale === 'en'"
                 />
                 <img
-                  src="https://static.cmereye.com/imgs/2023/05/aa0d0fc0cbca2315.png"
+                  src="https://statichk.cmermedical.com/imgs/2023/05/aa0d0fc0cbca2315.png"
                   title="飛蚊症治療"
                   alt="微創玻璃體切除手術為飛蚊症治療方法"
                   v-else
@@ -727,7 +727,7 @@ const bannerData = {
             :download="'飛蚊症'"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
               title="飛蚊症"
               alt="飛蚊症_小冊子"
               srcset=""

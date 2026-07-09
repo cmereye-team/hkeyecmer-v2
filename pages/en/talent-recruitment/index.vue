@@ -27,7 +27,7 @@ useHead(() => ({
     <div>
       <div>
         <img
-          src="https://static.cmereye.com/imgs/2023/06/383e41e9408dc74f.jpg"
+          src="https://statichk.cmermedical.com/imgs/2023/06/383e41e9408dc74f.jpg"
           alt="加入我們，攜手未來"
         />
       </div>
@@ -35,7 +35,7 @@ useHead(() => ({
         <p class="">{{ $t('pages.talent_recruitment.text1') }}</p>
         <img
           class=""
-          src="https://static.cmereye.com/imgs/2023/03/f47c6bf2d4a3693a.png"
+          src="https://statichk.cmermedical.com/imgs/2023/03/f47c6bf2d4a3693a.png"
           alt=""
         />
       </div>
@@ -81,16 +81,16 @@ useHead(() => ({
 
       <div class="imgBox">
         <img
-          src="https://static.cmereye.com/imgs/2023/02/833b5617b3c72216.png"
+          src="https://statichk.cmermedical.com/imgs/2023/02/833b5617b3c72216.png"
           alt=""
           class="right1"
         />
         <img
-          src="https://static.cmereye.com/imgs/2023/02/f7e9031c1b6f047d.png"
+          src="https://statichk.cmermedical.com/imgs/2023/02/f7e9031c1b6f047d.png"
           alt=""
           class="right2"
         />
-        <img class="right3" src="https://static.cmereye.com/imgs/2023/06/677dce366a5a1e7c.jpg" alt="">
+        <img class="right3" src="https://statichk.cmermedical.com/imgs/2023/06/677dce366a5a1e7c.jpg" alt="">
       </div>
     </div>
     <EnFooterMenu />

@@ -35,7 +35,7 @@ const backgd = [
     <div class="banner">
       <div class="programme-img">
         <img
-          src="https://static.cmereye.com/imgs/2024/07/1c2cf71f2b8c2cbc.png"
+          src="https://statichk.cmermedical.com/imgs/2024/07/1c2cf71f2b8c2cbc.png"
           title="耀眼行動_白內障手術_希瑪眼科中心"
           alt="耀眼行動_白內障手術_希瑪眼科中心"
         />
@@ -51,7 +51,7 @@ const backgd = [
         <div class="plan-content">
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2024/07/738b1f518acf70da.png"
+              src="https://statichk.cmermedical.com/imgs/2024/07/738b1f518acf70da.png"
               title="長者白內障資助_白內障手術_希瑪眼科中心"
               alt="長者白內障資助_白內障手術_希瑪眼科中心"
             />
@@ -97,7 +97,7 @@ const backgd = [
         <!--<div class="charged-item">-->
         <!--  <div class="plan-content-title">．希瑪眼科參加計劃的病人</div>-->
         <!--  <div class="plan-content-text">-->
-        <!--    <span><i><img src="https://static.cmereye.com/imgs/2024/07/09037acd78e758d9.png" alt="说明"></i>-->
+        <!--    <span><i><img src="https://statichk.cmermedical.com/imgs/2024/07/09037acd78e758d9.png" alt="说明"></i>-->
         <!--      病人與私家醫生商討和確定整個治療的費用</span>-->
         <!--    <span>符合豁免條件的病人亦可選擇自付不多於8,000港元的自付額選擇希瑪眼科醫生</span>-->
         <!--    <span>（如選用非單焦距人工晶體鏡片，需支付額外費用）</span>-->
@@ -130,7 +130,7 @@ const backgd = [
             <div class="plan-item">
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2024/07/4d7813cdebf4d8ae.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/07/4d7813cdebf4d8ae.png"
                   title="術前評估"
                   alt="手術前評估"
                 />
@@ -140,7 +140,7 @@ const backgd = [
             <div class="plan-item">
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2024/07/fc16cb318b375354.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/07/fc16cb318b375354.png"
                   title="白內障手術治療"
                   alt="白內障手術及治療"
                 />
@@ -150,7 +150,7 @@ const backgd = [
                 <span
                   >（包含單焦距人工晶體鏡片<i
                     ><img
-                      src="https://static.cmereye.com/imgs/2024/07/5d1948facf60e1d2.png"
+                      src="https://statichk.cmermedical.com/imgs/2024/07/5d1948facf60e1d2.png"
                       alt="包含單焦距人工晶體鏡片" /></i
                   >）</span
                 >
@@ -159,7 +159,7 @@ const backgd = [
             <div class="plan-item">
               <div>
                 <img
-                  src="https://static.cmereye.com/imgs/2024/07/6528cdccb6c59532.png"
+                  src="https://statichk.cmermedical.com/imgs/2024/07/6528cdccb6c59532.png"
                   title="術後檢查"
                   alt="術後追蹤"
                 />
@@ -284,7 +284,7 @@ const backgd = [
 <style lang="scss" scoped>
 @font-face {
   font-family: 'ButterTangXin';
-  src: url('https://static.cmereye.com/static/loffee/font/ButterTangXin-Italic.woff2');
+  src: url('https://statichk.cmermedical.com/static/loffee/font/ButterTangXin-Italic.woff2');
 }
 
 .doctorlist {
@@ -1055,7 +1055,7 @@ const backgd = [
 }
 
 .plan-bg-img {
-  background: url('https://static.cmereye.com/imgs/2024/07/c8b147ec60d4cdd9.png')
+  background: url('https://statichk.cmermedical.com/imgs/2024/07/c8b147ec60d4cdd9.png')
     no-repeat;
   background-position: center center;
   padding-bottom: 20px;

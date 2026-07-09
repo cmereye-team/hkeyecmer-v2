@@ -92,7 +92,7 @@ const meetArr = [
 ]
 const factorList1 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/fc6ff4f8cb23dfcf.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/fc6ff4f8cb23dfcf.png',
     text: [
       'pages.medical_service.amotioRetinae_con.factor.text1_1',
       'pages.medical_service.amotioRetinae_con.factor.text1_2',
@@ -101,7 +101,7 @@ const factorList1 = [
     alt: '深近視為視網膜脫落原因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/1c56f997c3d97b23.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/1c56f997c3d97b23.png',
     text: [
       'pages.medical_service.amotioRetinae_con.factor.text2_1',
       'pages.medical_service.amotioRetinae_con.factor.text2_2',
@@ -110,31 +110,31 @@ const factorList1 = [
     alt: '家族遺傳為視網膜脫落原因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/04455c1207c08c9c.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/04455c1207c08c9c.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text3'],
     title: '視網膜脫落原因_眼睛外傷',
     alt: '眼睛外傷為視網膜脫落原因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/88711def3ed108f7.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/88711def3ed108f7.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text4'],
     title: '視網膜脫落原因_眼手術',
     alt: '眼手術史為視網膜脫落原因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/ec5a01a0dbf9f84a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/ec5a01a0dbf9f84a.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text5'],
     title: '視網膜脫落原因_眼腫瘤',
     alt: '年長者患眼腫瘤為視網膜脫落原因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/01900705430260c3.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/01900705430260c3.png',
     text: ['pages.medical_service.amotioRetinae_con.factor.text6'],
     title: '視網膜脫落原因_眼睛發炎',
     alt: '眼睛發炎為視網膜脫落原因',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/dab35b2868797ff6.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/dab35b2868797ff6.png',
     text: [
       'pages.medical_service.amotioRetinae_con.factor.text7_1',
       'pages.medical_service.amotioRetinae_con.factor.text7_2',
@@ -145,7 +145,7 @@ const factorList1 = [
 ]
 const styptomList1 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/08/eeb150720a808928.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/08/eeb150720a808928.jpg',
     title: 'STEP 1',
     text: [
       'pages.medical_service.amotioRetinae_con.styptom.text1_1',
@@ -155,7 +155,7 @@ const styptomList1 = [
     img_alt: '視野出現飛蚊為視網膜脫落初期症狀',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/08/23aab65d449ee915.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/08/23aab65d449ee915.jpg',
     title: 'STEP 2',
     text: [
       'pages.medical_service.amotioRetinae_con.styptom.text2_1',
@@ -165,14 +165,14 @@ const styptomList1 = [
     img_alt: '視野出現閃光或黑影為視網膜脫落症狀',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/10/bf20112897ad33ed.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/10/bf20112897ad33ed.jpg',
     title: 'STEP 3',
     text: ['pages.medical_service.amotioRetinae_con.styptom.text3'],
     img_title: '視網膜脫落症狀_視野收窄',
     img_alt: '視野收窄為視網膜脫落症狀',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/08/e2b2ce4db8b5118d.jpg',
+    img: 'https://statichk.cmermedical.com/imgs/2023/08/e2b2ce4db8b5118d.jpg',
     title: 'STEP 4',
     text: [
       'pages.medical_service.amotioRetinae_con.styptom.text4_1',
@@ -185,8 +185,8 @@ const styptomList1 = [
 const treatList1 = [
   {
     id: 0o1,
-    img: 'https://static.cmereye.com/imgs/2023/06/d596509569404157.png',
-    enImg: 'https://static.cmereye.com/imgs/2023/06/d596509569404157.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/d596509569404157.png',
+    enImg: 'https://statichk.cmermedical.com/imgs/2023/06/d596509569404157.png',
     title: 'pages.medical_service.amotioRetinae_con.treat.title1',
     text: 'pages.medical_service.amotioRetinae_con.treat.text1',
     img_title: '視網膜脫落手術_氣體網膜固定術',
@@ -194,8 +194,8 @@ const treatList1 = [
   },
   {
     id: 0o2,
-    img: 'https://static.cmereye.com/imgs/2023/06/8a3b0247791f8510.png',
-    enImg: 'https://static.cmereye.com/imgs/2023/06/8a3b0247791f8510.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/8a3b0247791f8510.png',
+    enImg: 'https://statichk.cmermedical.com/imgs/2023/06/8a3b0247791f8510.png',
     title: 'pages.medical_service.amotioRetinae_con.treat.title2',
     text: 'pages.medical_service.amotioRetinae_con.treat.text2',
     img_title: '視網膜脫落手術_鞏膜扣壓術',
@@ -203,7 +203,7 @@ const treatList1 = [
   },
   {
     id: 0o3,
-    img: 'https://static.cmereye.com/imgs/2023/08/f5055f0dc5249495.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/08/f5055f0dc5249495.png',
     enImg: 'https://hkcmereye.com/template/default/picture/swmtl_img/t3_en.jpg',
     title: 'pages.medical_service.amotioRetinae_con.treat.title3',
     text: 'pages.medical_service.amotioRetinae_con.treat.text3',
@@ -213,21 +213,21 @@ const treatList1 = [
 ]
 const preventList1 = [
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/13de992a2503809a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/13de992a2503809a.png',
     title: 'pages.medical_service.amotioRetinae_con.prevent.title1',
     text: 'pages.medical_service.amotioRetinae_con.prevent.text1',
     img_title: '視網膜脫落預防_眼睛檢查',
     img_alt: '定期接受眼睛檢查為視網膜脫落預防方法',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/273a3786c416e9c5.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/273a3786c416e9c5.png',
     title: 'pages.medical_service.amotioRetinae_con.prevent.title2',
     text: 'pages.medical_service.amotioRetinae_con.prevent.text2',
     img_title: '視網膜脫落預防_劇烈運動',
     img_alt: '避免劇烈運動為視網膜脫落預防方法',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/2af412dd5ff25eb6.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/2af412dd5ff25eb6.png',
     title: 'pages.medical_service.amotioRetinae_con.prevent.title3',
     text: 'pages.medical_service.amotioRetinae_con.prevent.text3',
     img_title: '視網膜脫落預防_全面眼睛檢查',
@@ -237,9 +237,9 @@ const preventList1 = [
 
 const bannerData = {
   pcSrc:
-    'https://static.cmereye.com/static/hkcmereye/bannerzip/视网膜脱落1.png',
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/视网膜脱落1.png',
   mbSrc:
-    'https://static.cmereye.com/static/hkcmereye/bannerzip/视网膜脱落2.png',
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/视网膜脱落2.png',
   cnName: '視網膜脫落',
   enName: 'RETINAL DETACHMENT',
   textColor: '#EAB1A6',
@@ -273,7 +273,7 @@ const bannerData = {
         </div>
         <div>
           <img
-            src="https://static.cmereye.com/imgs/2023/06/51ccf70864582211.png"
+            src="https://statichk.cmermedical.com/imgs/2023/06/51ccf70864582211.png"
             title="視網膜脫落"
             alt="視網膜脫落眼睛結構"
           />
@@ -408,7 +408,7 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://static.cmereye.com/imgs/2023/06/87ca0bef9c2de97f.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/87ca0bef9c2de97f.png"
               title="糖尿上眼"
               alt="糖尿上眼眼睛結構"
             />
@@ -481,7 +481,7 @@ const bannerData = {
             :download="'視網膜脫落'"
           >
             <img
-              src="https://static.cmereye.com/imgs/2023/05/a7f10818e63e3e82.png"
+              src="https://statichk.cmermedical.com/imgs/2023/05/a7f10818e63e3e82.png"
               title="視網膜脫落"
               alt="視網膜脫落_小冊子"
               srcset=""
@@ -648,7 +648,7 @@ const bannerData = {
       }
       & > div::after {
         content: '';
-        background: url('https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png');
+        background: url('https://statichk.cmermedical.com/imgs/2023/06/3c18092d03feec4c.png');
         width: 14px;
         height: 25px;
         display: inline-block;
@@ -663,7 +663,7 @@ const bannerData = {
       }
     }
     & > div:nth-child(4) {
-      background: url('https://static.cmereye.com/imgs/2023/06/938b5475f5e9caea.png');
+      background: url('https://statichk.cmermedical.com/imgs/2023/06/938b5475f5e9caea.png');
       width: 1200px;
       height: 304px;
       padding: 70px;
@@ -783,7 +783,7 @@ const bannerData = {
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
 
         & > div:nth-child(2) {
-          background: url('https://static.cmereye.com/imgs/2023/06/e26c60861f4311e0.png');
+          background: url('https://statichk.cmermedical.com/imgs/2023/06/e26c60861f4311e0.png');
           background-size: 100% 100%;
           height: 456px;
           margin-top: -67px;
@@ -821,7 +821,7 @@ const bannerData = {
     }
 
     & > div:nth-child(4) {
-      background: url('https://static.cmereye.com/imgs/2023/06/a20a2ddf4c85a5f2.png');
+      background: url('https://statichk.cmermedical.com/imgs/2023/06/a20a2ddf4c85a5f2.png');
       width: 1200px;
       height: 185px;
       padding-top: 55px;
@@ -911,7 +911,7 @@ const bannerData = {
 }
 
 .amotioRetinae_title_text_bg {
-  background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png');
+  background: url('https://statichk.cmermedical.com/imgs/2023/06/b808208feaa07e38.png');
   background-size: 100%;
   width: 609px;
   height: 106px;
@@ -1187,7 +1187,7 @@ const bannerData = {
         }
         & > div::after {
           content: '';
-          background: url('https://static.cmereye.com/imgs/2023/06/3c18092d03feec4c.png');
+          background: url('https://statichk.cmermedical.com/imgs/2023/06/3c18092d03feec4c.png');
           width: 14px;
           height: 25px;
           display: inline-block;
@@ -1204,7 +1204,7 @@ const bannerData = {
       }
 
       & > div:nth-child(4) {
-        background: url('https://static.cmereye.com/imgs/2023/07/5b7d7027ccc3fc0d.png')
+        background: url('https://statichk.cmermedical.com/imgs/2023/07/5b7d7027ccc3fc0d.png')
           no-repeat;
         width: 100%;
         height: auto;
@@ -1383,7 +1383,7 @@ const bannerData = {
       }
 
       & > div:nth-child(4) {
-        background: url('https://static.cmereye.com/imgs/2023/07/7030a59cf91a8775.png')
+        background: url('https://statichk.cmermedical.com/imgs/2023/07/7030a59cf91a8775.png')
           no-repeat;
         width: 100%;
         height: auto;
@@ -1480,7 +1480,7 @@ const bannerData = {
   }
 
   .amotioRetinae_title_text_bg {
-    background: url('https://static.cmereye.com/imgs/2023/06/b808208feaa07e38.png')
+    background: url('https://statichk.cmermedical.com/imgs/2023/06/b808208feaa07e38.png')
       no-repeat;
     background-size: 100%;
     width: 100%;

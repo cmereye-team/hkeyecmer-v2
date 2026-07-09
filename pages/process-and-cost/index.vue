@@ -58,7 +58,7 @@ const scrollHeight = () => {
 }
 const processedLists: any = ref([
   {
-    img: 'https://static.cmereye.com/imgs/2024/03/1c9bdc439e10d0a7.png',
+    img: 'https://statichk.cmermedical.com/imgs/2024/03/1c9bdc439e10d0a7.png',
     name: ['pages.process_cost.process_1.process_p1'],
     nameb: '',
     texts: [],
@@ -66,7 +66,7 @@ const processedLists: any = ref([
     img_alt: 'pages.process_cost.process_1.img_alt1',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/03/b5ea6eeffceb0e02.png',
+    img: 'https://statichk.cmermedical.com/imgs/2024/03/b5ea6eeffceb0e02.png',
     name: ['pages.process_cost.process_1.process_p2'],
     nameb: 'pages.process_cost.process_1.process_h3_1',
     texts: [
@@ -83,7 +83,7 @@ const processedLists: any = ref([
     img_alt: 'pages.process_cost.process_1.img_alt2',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/03/b5986c511653d126.png',
+    img: 'https://statichk.cmermedical.com/imgs/2024/03/b5986c511653d126.png',
     name: ['pages.process_cost.process_1.process_p4'],
     nameb: '',
     texts: [
@@ -100,7 +100,7 @@ const processedLists: any = ref([
     img_alt: 'pages.process_cost.process_1.img_alt3',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/03/7b1d0695e319a85a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2024/03/7b1d0695e319a85a.png',
     name: ['pages.process_cost.process_1.process_p6'],
     nameb: '',
     texts: [],
@@ -108,7 +108,7 @@ const processedLists: any = ref([
     img_alt: 'pages.process_cost.process_1.img_alt4',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/03/2c22d648c273a2fe.png',
+    img: 'https://statichk.cmermedical.com/imgs/2024/03/2c22d648c273a2fe.png',
     name: ['pages.process_cost.process_1.process_p7_3'],
     nameb: '',
     texts: [],
@@ -116,7 +116,7 @@ const processedLists: any = ref([
     img_alt: 'pages.process_cost.process_1.img_alt5',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2024/03/edc13bc571afe68a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2024/03/edc13bc571afe68a.png',
     name: [
       'pages.process_cost.process_1.process_p8_1',
       'pages.process_cost.process_1.process_p8_2',
@@ -1456,7 +1456,7 @@ const processedLists: any = ref([
 .processAndCost {
   transition: all 0.5s;
   background-repeat: no-repeat !important;
-  background: url('https://static.cmereye.com/imgs/2023/06/414012d88e3154c7.jpg')
+  background: url('https://statichk.cmermedical.com/imgs/2023/06/414012d88e3154c7.jpg')
     no-repeat;
 }
 .processAndCost > div:nth-child(1) {
@@ -1633,7 +1633,7 @@ const processedLists: any = ref([
       top: 60px;
       font-size: 56px;
       left: 90px;
-      background: url('https://static.cmereye.com/imgs/2023/06/66b6869226b542b5.png');
+      background: url('https://statichk.cmermedical.com/imgs/2023/06/66b6869226b542b5.png');
       background-size: 100% 100%;
       width: 25px;
       height: 55px;
@@ -1868,7 +1868,7 @@ const processedLists: any = ref([
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           bottom: calc(100% + 10px);
-          background: url(https://static.cmereye.com/imgs/2024/03/670ba2ef41baec64.png)
+          background: url(https://statichk.cmermedical.com/imgs/2024/03/670ba2ef41baec64.png)
             no-repeat;
           background-size: 100% auto;
           background-position: bottom right;
@@ -1898,7 +1898,7 @@ const processedLists: any = ref([
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           top: calc(100% + 10px);
-          background: url(https://static.cmereye.com/imgs/2024/03/ab4b1bd39907498d.png)
+          background: url(https://statichk.cmermedical.com/imgs/2024/03/ab4b1bd39907498d.png)
             no-repeat;
           background-size: 100% auto;
           background-position: top right;
@@ -1917,7 +1917,7 @@ const processedLists: any = ref([
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           bottom: calc(100% + 10px);
-          background: url(https://static.cmereye.com/imgs/2024/03/1ec719ab6fdef029.png)
+          background: url(https://statichk.cmermedical.com/imgs/2024/03/1ec719ab6fdef029.png)
             no-repeat;
           background-size: 100% auto;
           background-position: bottom right;
@@ -1936,7 +1936,7 @@ const processedLists: any = ref([
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           top: calc(100% + 10px);
-          background: url(https://static.cmereye.com/imgs/2024/03/c74f2a62bb87e8d9.png)
+          background: url(https://statichk.cmermedical.com/imgs/2024/03/c74f2a62bb87e8d9.png)
             no-repeat;
           background-size: 100% auto;
           background-position: top right;
@@ -1955,7 +1955,7 @@ const processedLists: any = ref([
           position: absolute;
           right: calc(50% - (80 / 1080 * 100%));
           bottom: 100%;
-          background: url(https://static.cmereye.com/imgs/2024/03/2338d65087ceff63.png)
+          background: url(https://statichk.cmermedical.com/imgs/2024/03/2338d65087ceff63.png)
             no-repeat;
           background-size: 100% auto;
           background-position: bottom right;
@@ -2127,12 +2127,12 @@ const processedLists: any = ref([
     }
   }
   .processAndCost {
-    background: url('https://static.cmereye.com/imgs/2023/07/c20c5728572d0992.jpg');
+    background: url('https://statichk.cmermedical.com/imgs/2023/07/c20c5728572d0992.jpg');
     background-position: top left !important;
     background-size: 100% auto !important;
   }
   #processed {
-    background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')
+    background: url('https://statichk.cmermedical.com/imgs/2023/07/2534e621e7024180.jpg')
       no-repeat;
   }
   .processed-in {

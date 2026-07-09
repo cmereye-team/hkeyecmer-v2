@@ -105,7 +105,7 @@ useHead(() => ({
         <ul class="flex flex-col md:justify-end" v-if="locale != 'en'">
           <li class="md:ml-auto relative">
             <img
-              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_1.jpg"
+              src="https://statichk.cmermedical.com/imgs/cmermedical/images/joinus/section2_1.jpg"
               alt=""
             />
             <div class="text absolute">
@@ -118,7 +118,7 @@ useHead(() => ({
 
           <li class="relative">
             <img
-              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_2.jpg"
+              src="https://statichk.cmermedical.com/imgs/cmermedical/images/joinus/section2_2.jpg"
               alt=""
             />
             <div class="text absolute">
@@ -131,7 +131,7 @@ useHead(() => ({
 
           <li class="md:ml-auto relative">
             <img
-              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_3.jpg"
+              src="https://statichk.cmermedical.com/imgs/cmermedical/images/joinus/section2_3.jpg"
               alt=""
             />
             <div class="text absolute">
@@ -146,7 +146,7 @@ useHead(() => ({
         <ul class="flex flex-col md:justify-end" v-else>
           <li class="md:ml-auto relative">
             <img
-              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_1.jpg"
+              src="https://statichk.cmermedical.com/imgs/cmermedical/images/joinus/section2_1.jpg"
               alt=""
             />
             <div class="text absolute">
@@ -164,7 +164,7 @@ useHead(() => ({
 
           <li class="relative">
             <img
-              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_2.jpg"
+              src="https://statichk.cmermedical.com/imgs/cmermedical/images/joinus/section2_2.jpg"
               alt=""
             />
             <div class="text absolute">
@@ -181,7 +181,7 @@ useHead(() => ({
 
           <li class="md:ml-auto relative">
             <img
-              src="https://static.cmereye.com/imgs/cmermedical/images/joinus/section2_3.jpg"
+              src="https://statichk.cmermedical.com/imgs/cmermedical/images/joinus/section2_3.jpg"
               alt=""
             />
             <div class="text absolute">
@@ -249,7 +249,7 @@ useHead(() => ({
 
 <style scoped>
 .section_joinus .banner {
-  background-image: url('https://static.cmereye.com/imgs/cmermedical/images/joinus/banner_bg.jpg');
+  background-image: url('https://statichk.cmermedical.com/imgs/cmermedical/images/joinus/banner_bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }

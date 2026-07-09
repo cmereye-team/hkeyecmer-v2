@@ -102,7 +102,7 @@ onMounted(() => {
 :deep(.swiper-button-prev) {
   left: var(--swiper-navigation-sides-offset, 0px);
   width: calc(var(--swiper-navigation-size) / 44 * 40);
-  background: url('https://static.cmereye.com/imgs/2023/06/28f4bf2d89a3d3b0.png')
+  background: url('https://statichk.cmermedical.com/imgs/2023/06/28f4bf2d89a3d3b0.png')
     no-repeat;
   background-size: auto 100%;
 }
@@ -110,7 +110,7 @@ onMounted(() => {
 :deep(.swiper-button-next) {
   right: var(--swiper-navigation-sides-offset, 0px);
   width: calc(var(--swiper-navigation-size) / 44 * 40);
-  background: url('https://static.cmereye.com/imgs/2023/06/e27f1fa3facd9c57.png')
+  background: url('https://statichk.cmermedical.com/imgs/2023/06/e27f1fa3facd9c57.png')
     no-repeat;
   background-size: auto 100%;
 }

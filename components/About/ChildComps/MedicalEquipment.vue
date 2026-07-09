@@ -20,7 +20,7 @@ const medicalEquipment = [
     from: '資料及圖片來源： Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/05/69f740310b86facd.png',
+    href: 'https://statichk.cmermedical.com/imgs/2023/05/69f740310b86facd.png',
     title: 'ZEISS VISUMAX 800',
     title2: 'SMILE®pro',
     content:
@@ -28,7 +28,7 @@ const medicalEquipment = [
     from: '資料及圖片來源： Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2022/12/c02bca547710c859.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2022/12/c02bca547710c859.jpg',
     title: 'Carl Zeiss Visumax',
     title2: '全飛秒激光3.0系統',
     content:
@@ -36,7 +36,7 @@ const medicalEquipment = [
     from: '資料及圖片來源： Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/04/01124b4e13ce8ac6.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/04/01124b4e13ce8ac6.jpg',
     title: '德國蔡司掃頻OCT生物測量儀',
     title2: '（IOL Master 700）',
     content:
@@ -44,7 +44,7 @@ const medicalEquipment = [
     from: '資料及圖片來源： Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/0ff06c25d8309386.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/0ff06c25d8309386.jpg',
     title: 'Icare回彈式眼壓計',
     title2: '',
     content:
@@ -52,7 +52,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Icare Finland',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/87835bc58909d528.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/87835bc58909d528.jpg',
     title: '日本尼德克綜合電腦驗光儀',
     title2: '',
     content:
@@ -60,7 +60,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：NIDEK',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/a361b6fabdea5689.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/a361b6fabdea5689.jpg',
     title: '日本尼德克',
     title2: '手持綜合電腦驗光儀',
     content:
@@ -68,7 +68,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：NIDEK',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/e0615ccf022ff1f3.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/e0615ccf022ff1f3.jpg',
     title: '天狼星三維角膜地形圖',
     title2: '及眼前節分析系統',
     content:
@@ -76,7 +76,7 @@ const medicalEquipment = [
     from: '資料及圖片來源： CSO',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/b969201be328307d.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/b969201be328307d.jpg',
     title: 'Pentacam® ',
     title2: '三維眼前節分析診斷系統',
     content:
@@ -84,7 +84,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Oculus',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/1ba64301fb4a1155.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/1ba64301fb4a1155.jpg',
     title: '德國蔡司眼前節OCT分析系統',
     title2: '',
     content:
@@ -92,7 +92,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/070e93deb1ae5d06.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/070e93deb1ae5d06.jpg',
     title: '德國蔡司角膜地形圖系統 ',
     title2: '(ATLAS 9000)',
     content:
@@ -100,7 +100,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/1b2ba35f86df518a.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/1b2ba35f86df518a.jpg',
     title: '德國蔡司光學相干斷層掃描儀 ',
     title2: '(CIRRUS HD-OCT5000)',
     content:
@@ -108,7 +108,7 @@ const medicalEquipment = [
     from: '資料及圖片來源： Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/44c2cd7c92cd4b4e.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/44c2cd7c92cd4b4e.jpg',
     title: '德國蔡司免散瞳彩色',
     title2: '眼底照相機(VISUCAM500)',
     content:
@@ -116,7 +116,7 @@ const medicalEquipment = [
     from: '資料及圖片來源： Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/f86ca892a4239338.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/f86ca892a4239338.jpg',
     title: 'A型及B型超聲波掃描儀',
     title2: '（Quantel Compact Touch）',
     content:
@@ -124,7 +124,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Quantel Medical',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/f81acb4c9ebe64a8.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/f81acb4c9ebe64a8.jpg',
     title: '全視網膜掃描相機',
     title2: '（Optos Daytona）',
     content:
@@ -132,7 +132,7 @@ const medicalEquipment = [
     from: '資料及圖片來源： Optos',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/8b6eaae915fb2fe5.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/8b6eaae915fb2fe5.jpg',
     title: '角膜內皮層細胞分析儀',
     title2: '(KONAN NSP-9900)',
     content:
@@ -140,7 +140,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Konan',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/58770ae1a3317aef.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/58770ae1a3317aef.jpg',
     title: '德國蔡司視野分析儀',
     title2: ' (Humphrey HFA3)',
     content:
@@ -148,7 +148,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/49693f58f391f52c.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/49693f58f391f52c.jpg',
     title: 'FORUM – 眼科專業化',
     title2: ' 數據管理平臺',
     content:
@@ -156,7 +156,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Carl Zeiss',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/7425f0f1856072b2.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/7425f0f1856072b2.jpg',
     title: 'Haag-Streit BQ900裂隙燈',
     title2: ' &IM900裂隙燈照相系統',
     content:
@@ -164,7 +164,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Haag-Streit',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/cccc9092efe3f003.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/cccc9092efe3f003.jpg',
     title: 'ELLEX Integre pro scan',
     title2: '眼底鐳射治療儀',
     content:
@@ -172,7 +172,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Ellex',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/b5208571650d6726.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/b5208571650d6726.jpg',
     title: 'PESCHKE Trade PXL',
     title2: 'Platinum 330',
     content:
@@ -180,7 +180,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Peschke',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/a77eb4b681c4349f.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/a77eb4b681c4349f.jpg',
     title: 'Ellex Tango Reflex',
     title2: '激光治療儀',
     content:
@@ -188,7 +188,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Ellex',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/2755bf78d190a39c.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/2755bf78d190a39c.jpg',
     title: '飛秒激光白內障矯視儀',
     title2: '',
     content:
@@ -196,7 +196,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Alcon',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/713b286109544952.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/713b286109544952.jpg',
     title: '徠卡Proveo8融合光學',
     title2: '眼科手術顯微鏡',
     content:
@@ -204,7 +204,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Leica',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/9c9d256865399386.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/9c9d256865399386.jpg',
     title: '白內障超聲乳化儀',
     title2: '（Alcon Centurion® vision system）',
     content:
@@ -212,7 +212,7 @@ const medicalEquipment = [
     from: '資料及圖片來源：Alcon',
   },
   {
-    href: 'https://static.cmereye.com/imgs/2023/01/bb4caa732946322f.jpg',
+    href: 'https://statichk.cmermedical.com/imgs/2023/01/bb4caa732946322f.jpg',
     title: '高速率玻切超聲乳化一體機',
     title2: '（Alcon Constellation® vision system）',
     content:

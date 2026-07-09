@@ -8,7 +8,7 @@ useHead(() => ({
 }))
 const eyeDisease = [
   {
-    img: 'https://static.cmereye.com/imgs/2024/07/821fc091bad9c813.png',
+    img: 'https://statichk.cmermedical.com/imgs/2024/07/821fc091bad9c813.png',
     title:
       '【香港兒童壓力街訪】現今學童壓力究竟有幾大❓大人又知唔知佢哋嘅內心世界？',
     text: `喺現今競爭激烈嘅社會下，家長都希望子女能夠贏在起跑線上🏁，從學術到課外活動，用各種方法提高子女競爭力。然而，小朋友嘅抗壓能力係咪足以承受現今嘅教育同培養模式呢? 家長有冇嘗試聆聽過佢哋嘅內心世界💭？一齊聽吓小朋友真正嘅想法喇🫵！\n\n#街訪 #訪問 #街頭採訪 #街頭訪問 #兒童街訪 #兒童壓力 #兒童壓力調查 #香港兒童壓力 #streetinterview #希瑪眼科 #眼科中心 #眼科診所 #希瑪眼科診所 #希瑪醫療`,
@@ -17,42 +17,42 @@ const eyeDisease = [
     img_alt: '【香港兒童壓力街訪】',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/040da0e4cbb6878a.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/040da0e4cbb6878a.png',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease1_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease1_text',
     link: 'https://youtu.be/0pN3E5ewLjE',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/05/195b3f6dc0ff23b9.png',
+    img: 'https://statichk.cmermedical.com/imgs/2023/05/195b3f6dc0ff23b9.png',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease2_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease2_text',
     link: 'https://youtu.be/fM2cCC5zxWw',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/1664b018cca2148a.webp',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/1664b018cca2148a.webp',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease3_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease3_text',
     link: 'https://youtu.be/qNF78pbRx6c',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/53b1b85f90011cda.webp',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/53b1b85f90011cda.webp',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease4_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease4_text',
     link: 'https://youtu.be/oYTtMkqVK4w',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/c6cd62a4b837e9b1.webp',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/c6cd62a4b837e9b1.webp',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease5_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease5_text',
     link: 'https://youtu.be/L9DHmvCTAZk',
   },
   {
-    img: 'https://static.cmereye.com/imgs/2023/06/56e33eb0198fc5dc.webp',
+    img: 'https://statichk.cmermedical.com/imgs/2023/06/56e33eb0198fc5dc.webp',
     title:
       'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease6_title',
     text: 'pages.ophthalmic_information.ophthalmic_publicity_text.publicity_eyeDisease.eye_disease6_text',
@@ -68,13 +68,13 @@ const eyeDisease = [
         <div>
           <div>
             <img
-              data-cfsrc="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"
+              data-cfsrc="https://statichk.cmermedical.com/imgs/2023/06/d14944870b7cfec7.png"
               srcset="
-                https://static.cmereye.com/imgs/2023/07/c77bfeb27c892e8e.jpg 768w,
-                https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png
+                https://statichk.cmermedical.com/imgs/2023/07/c77bfeb27c892e8e.jpg 768w,
+                https://statichk.cmermedical.com/imgs/2023/06/d14944870b7cfec7.png
               "
               alt="護眼宣傳"
-              src="https://static.cmereye.com/imgs/2023/06/d14944870b7cfec7.png"
+              src="https://statichk.cmermedical.com/imgs/2023/06/d14944870b7cfec7.png"
             />
           </div>
         </div>

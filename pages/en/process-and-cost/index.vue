@@ -318,7 +318,7 @@ const scrollHeight = () => {
 .processAndCost {
   transition: all 0.5s;
   background-repeat: no-repeat !important;
-  background: url('https://static.cmereye.com/imgs/2023/06/414012d88e3154c7.jpg')no-repeat;
+  background: url('https://statichk.cmermedical.com/imgs/2023/06/414012d88e3154c7.jpg')no-repeat;
 }
 .processAndCost>div:nth-child(1) {
   max-width: 1080px;
@@ -494,7 +494,7 @@ const scrollHeight = () => {
       top: 60px;
       font-size: 56px;
       left: 90px;
-      background: url('https://static.cmereye.com/imgs/2023/06/66b6869226b542b5.png');
+      background: url('https://statichk.cmermedical.com/imgs/2023/06/66b6869226b542b5.png');
       background-size: 100% 100%;
       width: 25px;
       height: 55px;
@@ -728,12 +728,12 @@ const scrollHeight = () => {
     }
   }
   .processAndCost {
-    background: url('https://static.cmereye.com/imgs/2023/07/c20c5728572d0992.jpg');
+    background: url('https://statichk.cmermedical.com/imgs/2023/07/c20c5728572d0992.jpg');
     background-position: top left !important;
     background-size: 100% auto !important;
   }
   #processed {
-    background: url('https://static.cmereye.com/imgs/2023/07/2534e621e7024180.jpg')no-repeat;
+    background: url('https://statichk.cmermedical.com/imgs/2023/07/2534e621e7024180.jpg')no-repeat;
   }
 }
 </style>
