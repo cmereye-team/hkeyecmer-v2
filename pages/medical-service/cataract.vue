@@ -10,30 +10,19 @@ const { t } = useLang()
 const locale = useState<string>('locale.setting')
 
 useHead(() => ({
-  title: '白內障｜治療及收費｜人工晶體方案｜香港希瑪眼科中心',
+  title: t('tdk.cataract.title'),
   meta() {
     return [
-      // {
-      //   hid: 'cataractDesc',
-      //   name: 'description',
-      //   content: t('tdk.cataract.desc'),
-      // },
-      // {
-      //   hid: 'cataractKey',
-      //   name: 'keywords',
-      //   content: t('tdk.cataract.key'),
-      // },
       {
         hid: 'keywords',
         name: 'keywords',
         content:
-          '白內障,白內障治療,白內障手術,白內障手術收費,人工晶體,希瑪眼科,香港眼科專科,眼科,眼科診所,眼科醫生',
+          t('tdk.cataract.key'),
       },
       {
         hid: 'description',
         name: 'description',
-        content:
-          '白內障會導致視力模糊、視力下降、眩光、重影及色彩變淡等問題，嚴重影響日常生活。希瑪林順潮眼科中心提供全面白內障檢查及微創治療，提供不同人工晶體方案。立即致電查詢白內障人工晶體治療及費用詳情。',
+        content: t('tdk.cataract.desc'),
       },
     ]
   },
