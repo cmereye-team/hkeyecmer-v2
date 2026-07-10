@@ -3,25 +3,22 @@ definePageMeta({
   layout: 'page',
 })
 
-// const { t } = useLang()
+const { t } = useLang()
 useHead({
-  title: '眼科急症及急診服務 | 希瑪眼科中心',
+  title: t('tdk.urgent.title'),
   meta: [
     {
       name: 'description',
-      content:
-        '需要24小時眼科診所或眼科急症服務？希瑪眼科中心提供眼科急症及急診服務，醫療團隊為您優先處理眼睛緊急情況，確保患者及時獲得適切治療，立即預約。',
+      content: t('tdk.urgent.desc'),
     },
     {
       name: 'keywords',
-      content:
-        '24小時眼科診所 眼科急症 眼科急症私家 眼科急症香港 眼科急診 政府眼科急症 眼科急症醫院 眼科急症急診 眼科急診醫院 希瑪 希瑪眼科 希瑪眼科中心 香港眼科中心 眼科 眼科中心 眼科診所',
+      content: t('tdk.urgent.key'),
     },
-    { property: 'og:title', content: '眼科急症及急診服務 | 希瑪眼科中心' },
+    { property: 'og:title', content: t('tdk.urgent.title') },
     {
       property: 'og:description',
-      content:
-        '需要24小時眼科診所或眼科急症服務？希瑪眼科中心提供眼科急症及急診服務，醫療團隊為您優先處理眼睛緊急情況，確保患者及時獲得適切治療，立即預約。',
+      content: t('tdk.urgent.desc'),
     },
     { property: 'og:type', content: 'website' },
     { property: 'og:locale', content: 'zh_HK' },
