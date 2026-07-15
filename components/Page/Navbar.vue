@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-05-12 11:46:22
+ * @LastEditTime: 2026-07-15 13:35:38
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -90,12 +90,12 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link',
         text: t('pages.medical_service.edof.title'),
-        route: { path: '/Cataract/extended-depth-of-focus-lenses' },
+        route: { name: 'cataract-extended-depth-of-focus-lenses' },
       },
       {
         type: 'link',
         text: t('pages.medical_service.intraocular.title'),
-        route: { path: '/Cataract/intraocular-lens-types' },
+        route: { name: 'cataract-intraocular-lens-types' },
       },
     ],
   },
@@ -294,7 +294,7 @@ const newMenus = computed(() => {
       item.styleClass = 'text-[#ff4da6] font-bold'
     } else if (item.route?.name === 'medical-service-cataract') {
       item.styleClass = 'text-[#ff6b2c] font-bold'
-    } else if (item.link?.path === '/Cataract/extended-depth-of-focus-lenses') {
+    } else if (item.link?.name === 'extended-depth-of-focus-lenses') {
       item.styleClass = 'new'
     }
   })
@@ -370,8 +370,8 @@ const hashActive = (child: any) => {
                   class="menu-subitem hover:no-underline"
                   :class="[
                     hashActive(child),
-                    child.route.path ===
-                    '/Cataract/extended-depth-of-focus-lenses'
+                    child.route.name ===
+                    'extended-depth-of-focus-lenses'
                       ? 'new'
                       : '',
                   ]"

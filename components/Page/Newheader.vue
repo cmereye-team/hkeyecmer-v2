@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-05-08 10:39:39
+ * @LastEditTime: 2026-07-15 13:36:53
  * @FilePath: /components/Page/Newheader.vue
  * @Description: 移动端菜单
 -->
@@ -103,13 +103,13 @@ const menus = computed(() => {
         {
           type: 'link',
           text: t('pages.medical_service.edof.title'),
-          link: { path: '/Cataract/extended-depth-of-focus-lenses' },
+          link: { path: '/cataract/extended-depth-of-focus-lenses' },
           styleClass: 'new',
         },
         {
           type: 'link',
           text: t('pages.medical_service.intraocular.title'),
-          link: { path: '/Cataract/intraocular-lens-types' },
+          link: { path: '/cataract/intraocular-lens-types' },
         },
         {
           type: 'link',
