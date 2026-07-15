@@ -73,8 +73,8 @@ const backgd = [
           <picture class="lg:w-[45%]">
             <img
               src="https://statichk.cmermedical.com/newopd/services/glaucomappp/glaucomappp-intro-cover-01-v1.webp"
-              :alt="t('ppp.glaucoma.alt')"
-              :title="t('ppp.glaucoma.alt')"
+              :alt="t('ppp.glaucoma.alt1')"
+              :title="t('ppp.glaucoma.alt1')"
               loading="lazy"
             />
           </picture>
@@ -94,8 +94,8 @@ const backgd = [
           <picture class="order-1 lg:order-2 lg:w-[45%]">
             <img
               src="https://statichk.cmermedical.com/newopd/services/glaucomappp/glaucomappp-intro-cover-02-v1.webp"
-              :alt="t('ppp.csp.alt1')"
-              :title="t('ppp.csp.alt1')"
+              :alt="t('ppp.glaucoma.alt')"
+              :title="t('ppp.glaucoma.alt')"
               loading="lazy"
             />
           </picture>
@@ -120,8 +120,8 @@ const backgd = [
           <picture class="lg:w-[45%]">
             <img
               src="https://statichk.cmermedical.com/newopd/services/glaucomappp/glaucomappp-intro-cover-03-v1.webp"
-              :alt="t('ppp.csp.alt1')"
-              :title="t('ppp.csp.alt1')"
+              :alt="t('ppp.glaucoma.alt')"
+              :title="t('ppp.glaucoma.alt')"
               loading="lazy"
             />
           </picture>
@@ -144,8 +144,8 @@ const backgd = [
           <picture class="order-1 lg:order-2 lg:w-[45%]">
             <img
               src="https://statichk.cmermedical.com/newopd/services/glaucomappp/glaucomappp-intro-cover-04-v1.webp"
-              :alt="t('ppp.csp.alt1')"
-              :title="t('ppp.csp.alt1')"
+              :alt="t('ppp.glaucoma.alt')"
+              :title="t('ppp.glaucoma.alt')"
               loading="lazy"
             />
           </picture>
