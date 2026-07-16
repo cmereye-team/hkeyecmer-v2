@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-07-15 16:47:53
- * @LastEditTime: 2026-07-16 14:41:08
+ * @LastEditTime: 2026-07-16 15:30:17
  * @FilePath: /pages/Cataract-Test/index.vue
  * @Description: 
 -->
@@ -59,11 +59,55 @@ const steps = [
   },
 ]
 const currentBlur = ref(steps[0].blur)
-
+const videoSwiperRef = ref<any>(null)
+const swiper = useSwiper(videoSwiperRef)
+const videos = [
+  {
+    id: 'Yzj9HtlRLwM',
+    say: t('pages.medical_service.cataract.video.v1'),
+  },
+  {
+    id: 'h6H16bsZRAE',
+    say: t('pages.medical_service.cataract.video.v2'),
+  },
+  {
+    id: 'fDo35wPIcBw',
+    say: t('pages.medical_service.cataract.video.v3'),
+  },
+  {
+    id: '8ip-wGoPqmQ',
+    say: t('pages.medical_service.cataract.video.v4'),
+  },
+  {
+    id: 'zbYpdLZtL0c',
+    say: t('pages.medical_service.cataract.video.v5'),
+  },
+  {
+    id: 'F5fdrLskDdc',
+    say: t('pages.medical_service.cataract.video.v6'),
+  },
+  {
+    id: 'Jt0fmKmfiIU',
+    say: t('pages.medical_service.cataract.video.v7'),
+  },
+  {
+    id: 'Ds5NBkrQLXo',
+    say: t('pages.medical_service.cataract.video.v8'),
+  },
+]
+// const onSwiper = (swiper: any) => {
+//   swiperRef.value = swiper
+// }
+// const handlePrev = () => {
+//   swiperRef.value?.slidePrev()
+// }
+// const handleNext = () => {
+//   swiperRef.value?.slideNext()
+// }
 // 医生与诊所数字滚动目标
 const counterValues = ref({
-  doctors: 25,
-  clinics: 10,
+  doctors: 0,
+  clinics: 0,
 })
 
 // 自动播放步骤定时器
@@ -104,13 +148,12 @@ const handleUserInterruption = (index: number) => {
     startAutoPlay()
   }, 8000)
 }
-
 // --- 3. 生命周期挂载 ---
 onMounted(() => {
   updateWidth()
   window.addEventListener('resize', updateWidth)
 
-  // 在 onMounted 的安全上下文内初始化并缓存 GSAP 实例
+  // GSAP 初始化
   try {
     const { $gsap } = useNuxtApp() as any
     gsapCachedInstance = $gsap || (window as any).gsap
@@ -118,7 +161,7 @@ onMounted(() => {
     gsapCachedInstance = (window as any).gsap
   }
 
-  // 数字跃升 ScrollTrigger 动画
+  // 数字跃升 ScrollTrigger 动画 - 从0开始计数
   if (gsapCachedInstance) {
     if (typeof window !== 'undefined' && (window as any).ScrollTrigger) {
       gsapCachedInstance.registerPlugin((window as any).ScrollTrigger)
@@ -127,12 +170,12 @@ onMounted(() => {
     gsapCachedInstance.to(counterValues.value, {
       doctors: 25,
       clinics: 10,
-      duration: 2,
+      duration: 2.5,
       ease: 'power2.out',
       scrollTrigger: {
         trigger: '#counter-section',
-        start: 'top 85%',
-        toggleActions: 'play none none none',
+        start: 'top 80%',
+        toggleActions: 'play none none reverse', // 支持反向
       },
     })
   }
@@ -299,21 +342,47 @@ onUnmounted(() => {
         >
           白內障<span class="hl-text">真實客戶分享</span>
         </h2>
-        <div class="rounded-2xl">
-          <div class="video-swiper overflow-hidden relative px-3 lg:px-10">
+        <div class="rounded-2xl relative">
+          <button
+            @click="swiper.prev()"
+            class="swiper-button-prev-custom absolute -left-4 lg:-left-12 top-1/4 lg:top-[35%] -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-3 hover:bg-gray-100 transition-all text-primary flex items-center justify-center w-12 h-12"
+            aria-label="Previous video"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </button>
+          <div class="video-swiper overflow-hidden px-3 lg:px-10">
             <swiper
+              ref="videoSwiperRef"
               :space-between="40"
               :slides-per-view="1"
               :loop="true"
-              :navigation="true"
-              :pagination="{ clickable: true }"
+              :navigation="false"
+              :pagination="{ clickable: true, el: '.swiper-pagination-custom' }"
               class="ccSwiper"
+              @swiper="onSwiper"
             >
-              <swiper-slide class="ccSwiper-slide">
+              <swiper-slide
+                class="ccSwiper-slide"
+                v-for="video in videos"
+                :key="video.id"
+              >
                 <div class="aspect-video w-full">
                   <iframe
                     class="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/Yzj9HtlRLwM"
+                    :src="`https://www.youtube.com/embed/${video.id}`"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -322,46 +391,35 @@ onUnmounted(() => {
                 </div>
                 <div class="text-text-info text-xl font-bold mt-6">
                   <p class="text-center">
-                    “術後重拾視力，更找回同家人幸福嘅相處時光！”
-                  </p>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="ccSwiper-slide">
-                <div class="aspect-video w-full">
-                  <iframe
-                    class="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/h6H16bsZRAE"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="text-text-info text-xl font-bold mt-6">
-                  <p class="text-center">
-                    “終於重見光明！一直以來從未試過睇得咁清楚！”
-                  </p>
-                </div>
-              </swiper-slide>
-              <swiper-slide class="ccSwiper-slide">
-                <div class="aspect-video w-full">
-                  <iframe
-                    class="w-full h-full rounded-lg"
-                    src="https://www.youtube.com/embed/fDo35wPIcBw"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
-                </div>
-                <div class="text-text-info text-xl font-bold mt-6">
-                  <p class="text-center">
-                    “做白內障手術係人生最啱決定，視界煥然一新！”
+                    {{ video.say }}
                   </p>
                 </div>
               </swiper-slide>
             </swiper>
           </div>
+          <button
+            @click="swiper.next()"
+            class="swiper-button-next-custom absolute -right-4 lg:-right-12 top-1/4 lg:top-[35%] -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-3 hover:bg-gray-100 transition-all text-primary flex items-center justify-center w-12 h-12"
+            aria-label="Next video"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="3"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </button>
+          <div
+            class="swiper-pagination-custom flex justify-center gap-2 mt-8"
+          ></div>
         </div>
       </div>
     </section>
@@ -1070,26 +1128,36 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss" scoped>
-@mixin swiper-nav($top: 35%, $size: 60px) {
-  width: $size;
-  height: $size;
-  top: $top;
-  background-color: #f8f9ff;
-  border-radius: 50%;
+.video-swiper :deep(.swiper) {
+  padding-bottom: 20px;
 }
-.video-swiper :deep(.swiper-button-prev) {
-  @include swiper-nav;
-  left: -20px;
-}
-.video-swiper :deep(.swiper-button-next) {
-  @include swiper-nav;
-  right: -20px;
-}
-@media screen and (min-width: 1024px) {
-  .video-swiper :deep(.swiper-button-prev),
-  .video-swiper :deep(.swiper-button-next) {
-    top: 45%;
+.swiper-pagination-custom {
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #cbd5e1;
+    opacity: 1;
+    margin: 0 4px;
+    transition: all 0.3s;
   }
+  .swiper-pagination-bullet-active {
+    background: #2958a3;
+    width: 24px;
+    border-radius: 9999px;
+  }
+}
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+}
+.ccSwiper-slide iframe {
+  pointer-events: auto;
 }
 .blur-transition {
   transition: filter 0.5s cubic-bezier(0.16, 1, 0.3, 1);
