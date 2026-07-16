@@ -35,17 +35,13 @@ const locale = useState<string>('locale.setting')
               <div class="flex justify-center items-center gap-1 flex-col">
                 <div class="w-12 h-6 lg:w-[108px] lg:h-[60px]">
                   <img
-                    src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-table-multifocal-v1.svg"
-                    alt="多焦點人工晶體圖標"
+                    src="https://statichk.cmermedical.com/hkcmereye/cataract/table-lal-v5.svg"
+                    alt="光調節人工晶體圖標"
                     class="w-full"
                   />
                 </div>
                 <span class="lens-table-title text-outline text-[#4886CE]">
-                  {{
-                    t(
-                      'pages.medical_service.intraocular.table.feature.multifocal'
-                    )
-                  }}
+                  {{ t('pages.medical_service.intraocular.table.feature.lal') }}
                 </span>
               </div>
             </th>
@@ -53,13 +49,13 @@ const locale = useState<string>('locale.setting')
               <div class="flex justify-center items-center gap-1 lg:flex-col">
                 <div class="w-12 h-6 lg:w-[108px] lg:h-[60px]">
                   <img
-                    src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-table-monofocal-v1.svg"
-                    alt="單焦點人工晶體圖標"
+                    src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-table-multifocal-v1.svg"
+                    alt="多焦點人工晶體圖標"
                     class="w-full lens-icon-normal"
                   />
                 </div>
                 <i18n-t
-                  keypath="pages.medical_service.intraocular.table.feature.monofocal"
+                  keypath="pages.medical_service.intraocular.table.feature.multifocal"
                   tag="span"
                   scope="global"
                   class="lens-table-title text-primary"
@@ -72,13 +68,13 @@ const locale = useState<string>('locale.setting')
               <div class="flex justify-center items-center gap-1 lg:flex-col">
                 <div class="w-12 h-6 lg:w-[108px] lg:h-[60px]">
                   <img
-                    src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-table-astigmatism-v1.svg"
-                    alt="散光型人工晶體圖標"
+                    src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/icon-table-monofocal-v1.svg"
+                    alt="單焦點人工晶體圖標"
                     class="w-full lens-icon-normal"
                   />
                 </div>
                 <i18n-t
-                  keypath="pages.medical_service.intraocular.table.feature.astigmatism"
+                  keypath="pages.medical_service.intraocular.table.feature.monofocal"
                   tag="span"
                   scope="global"
                   class="lens-table-title text-primary"
@@ -110,6 +106,14 @@ const locale = useState<string>('locale.setting')
               <template #mbr><br class="block md:hidden" /></template>
             </i18n-t>
             <i18n-t
+              keypath="pages.medical_service.intraocular.table.focal.lal"
+              tag="td"
+              scope="global"
+              class="lens-table-td"
+            >
+              <template #mbr><br class="block md:hidden" /></template>
+            </i18n-t>
+            <i18n-t
               keypath="pages.medical_service.intraocular.table.focal.multifocal"
               tag="td"
               scope="global"
@@ -119,14 +123,6 @@ const locale = useState<string>('locale.setting')
             </i18n-t>
             <i18n-t
               keypath="pages.medical_service.intraocular.table.focal.monofocal"
-              tag="td"
-              scope="global"
-              class="lens-table-td"
-            >
-              <template #mbr><br class="block md:hidden" /></template>
-            </i18n-t>
-            <i18n-t
-              keypath="pages.medical_service.intraocular.table.focal.astigmatism"
               tag="td"
               scope="global"
               class="lens-table-td"
@@ -151,6 +147,16 @@ const locale = useState<string>('locale.setting')
               <template #br><br /></template>
             </i18n-t>
             <i18n-t
+              keypath="pages.medical_service.intraocular.table.benefits.lal"
+              tag="td"
+              scope="global"
+              class="lens-table-td"
+            >
+              <template #br><br /></template>
+              <template #pcbr><br class="hidden md:block" /></template>
+              <template #mbr><br class="block md:hidden" /></template>
+            </i18n-t>
+            <i18n-t
               keypath="pages.medical_service.intraocular.table.benefits.multifocal"
               tag="td"
               scope="global"
@@ -160,14 +166,6 @@ const locale = useState<string>('locale.setting')
             </i18n-t>
             <i18n-t
               keypath="pages.medical_service.intraocular.table.benefits.monofocal"
-              tag="td"
-              scope="global"
-              class="lens-table-td"
-            >
-              <template #br><br /></template>
-            </i18n-t>
-            <i18n-t
-              keypath="pages.medical_service.intraocular.table.benefits.astigmatism"
               tag="td"
               scope="global"
               class="lens-table-td"
@@ -198,7 +196,7 @@ const locale = useState<string>('locale.setting')
               <template #pcbr><br class="hidden md:block" /></template>
             </i18n-t>
             <i18n-t
-              keypath="pages.medical_service.intraocular.table.glasses.multifocal"
+              keypath="pages.medical_service.intraocular.table.glasses.lal"
               tag="td"
               scope="global"
               class="lens-table-td"
@@ -206,7 +204,7 @@ const locale = useState<string>('locale.setting')
               <template #br><br /></template>
             </i18n-t>
             <i18n-t
-              keypath="pages.medical_service.intraocular.table.glasses.monofocal"
+              keypath="pages.medical_service.intraocular.table.glasses.multifocal"
               tag="td"
               scope="global"
               class="lens-table-td"
@@ -216,12 +214,13 @@ const locale = useState<string>('locale.setting')
               <template #pcbr><br class="hidden md:block" /></template>
             </i18n-t>
             <i18n-t
-              keypath="pages.medical_service.intraocular.table.glasses.astigmatism"
+              keypath="pages.medical_service.intraocular.table.glasses.monofocal"
               tag="td"
               scope="global"
               class="lens-table-td"
             >
               <template #mbr><br class="block md:hidden" /></template>
+              <template #pcbr><br class="hidden md:block" /></template>
             </i18n-t>
           </tr>
           <tr>
@@ -260,6 +259,46 @@ const locale = useState<string>('locale.setting')
                       tag="span"
                       scope="global"
                     >
+                      <template #mbr><br class="block md:hidden" /></template>
+                    </i18n-t>
+                  </div>
+                </div>
+              </nuxt-link>
+            </td>
+            <td
+              :class="[
+                'lens-table-td lg:min-h-[232px] relative',
+                locale === 'en' ? 'text-center' : 'text-justify',
+              ]"
+            >
+              <i18n-t
+                keypath="pages.medical_service.intraocular.table.suitable.multifocal"
+                tag="span"
+                scope="global"
+              >
+                <template #br><br /></template>
+                <template #mbr><br class="block md:hidden" /></template>
+                <template #pcbr><br class="hidden md:block" /></template>
+              </i18n-t>
+              <nuxt-link
+                to="/cataract/intraocular-lens-types"
+                class="absolute-horizon -bottom-2 z-10"
+              >
+                <div class="relative">
+                  <img
+                    src="https://statichk.cmermedical.com/hkcmereye/cataract/lens/lens-table-more-01-v1.webp"
+                    alt="了解更多光調節人工晶體"
+                    class="absolute left-0 bottom-0 w-[52px] lg:w-[108px] rounded-bl-xl lg:rounded-bl-[44px]"
+                  />
+                  <div
+                    class="lens-table-more multifocal text-[#4886CE] pl-[60px] lg:pl-[108px] pr-1 lg:pr-2 py-1 lg:py-2 bg-white rounded-xl lg:rounded-[44px]"
+                  >
+                    <i18n-t
+                      keypath="pages.medical_service.intraocular.table.more"
+                      tag="span"
+                      scope="global"
+                    >
+                      <template #pcbr><br class="hidden md:block" /></template>
                       <template #mbr><br class="block md:hidden" /></template>
                     </i18n-t>
                   </div>
@@ -321,13 +360,13 @@ const locale = useState<string>('locale.setting')
                 <template #pcbr><br class="hidden md:block" /></template>
               </i18n-t>
             </td>
-            <td class="lens-table-td">
+            <!-- <td class="lens-table-td">
               {{
                 t(
                   'pages.medical_service.intraocular.table.suitable.astigmatism'
                 )
               }}
-            </td>
+            </td> -->
           </tr>
         </tbody>
       </table>

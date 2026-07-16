@@ -968,6 +968,7 @@ pages:
         benefits:
           title: 優點
           edof: 焦距清楚{br}可擴展景深{br}較小眩光
+          lal: 術後可根據個人{mbr}用眼{pcbr}需求調節度數
           multifocal: 提供良好遠，中，近{br}視力，可不依賴眼鏡
           monofocal: 提供良好{mbr}視力質素
           astigmatism: 精準矯正散光
@@ -976,7 +977,7 @@ pages:
           edof: 大部份患者於{mbr}術後康復{pcbr}後，{mbr}生活或工作時{br}減少眼倚賴性
           lal: 術後可根據個人{br}用眼需求調節度數
           multifocal: 日常比較小{br}需要配戴眼鏡
-          monofocal: 近距離閱讀時可能{pcbr}需{mbr}要配戴眼鏡{br}（近距離閲讀或{pcbr}需要{mbr}眼鏡配合）
+          monofocal: 近距離閱讀時可能{pcbr}需{mbr}要配戴眼鏡
           astigmatism: 取決於其{mbr}基礎類型
         suitable:
           title: 適合人群

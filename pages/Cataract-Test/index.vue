@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-07-15 16:47:53
- * @LastEditTime: 2026-07-16 16:28:40
+ * @LastEditTime: 2026-07-16 16:55:18
  * @FilePath: /pages/Cataract-Test/index.vue
  * @Description: 白内障第二版
 -->
@@ -635,13 +635,13 @@ onUnmounted(() => {
           class="grid grid-cols-3 gap-4 text-center text-base lg:text-2xl font-bold"
         >
           <div class="tag-grad text-white rounded-full font-medium shadow-sm">
-            现代微创技术
+            現代微創技術
           </div>
           <div class="tag-grad text-white rounded-full font-medium shadow-sm">
-            快速恢复
+            快速恢復
           </div>
           <div class="tag-grad text-white rounded-full font-medium shadow-sm">
-            手术时间短
+            手術時間短
           </div>
         </div>
       </div>
@@ -657,6 +657,11 @@ onUnmounted(() => {
           </p>
         </div>
         <PageCataractLens />
+        <div class="flex justify-center">
+          <a href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢" target="_blank" rel="noopener noreferrer" class="cta-btn btn-interactive animate-cta-breathe btn-whatsapp text-white font-bold text-lg lg:text-2xl py-4 px-12 rounded-full shadow-lg transition-all hover:-translate-y-0.5 inline-flex items-center gap-2">
+            <span>哪一款較適合我？</span>
+          </a>
+        </div>
       </div>
     </section>
     <!-- FAQ Section -->
