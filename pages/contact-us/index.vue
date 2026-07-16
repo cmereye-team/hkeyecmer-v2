@@ -5,9 +5,7 @@ definePageMeta({
 })
 const { t } = useLang()
 useHead(() => ({
-  title: `${t('pages.contact_us.clinic_information')}｜${t('app.title')}｜${t(
-    'pages.contact_us.contact_us'
-  )}`,
+  title: t('tdk.contact-us.title'),
   meta() {
     return [
       {
