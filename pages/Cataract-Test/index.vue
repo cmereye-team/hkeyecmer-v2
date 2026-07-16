@@ -1,18 +1,12 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-07-15 16:47:53
- * @LastEditTime: 2026-07-16 15:30:17
- * @FilePath: /pages/Cataract-Test/index.vue
- * @Description: 
--->
-<!--
- * @Author: 谭洁莹
- * @Date: 2026-07-15 16:47:53
- * @LastEditTime: 2026-07-16 13:58:02
+ * @LastEditTime: 2026-07-16 16:28:40
  * @FilePath: /pages/Cataract-Test/index.vue
  * @Description: 白内障第二版
 -->
 <script lang="ts" setup>
+import { Pagination, Navigation } from 'swiper'
 definePageMeta({
   layout: 'page',
 })
@@ -60,7 +54,6 @@ const steps = [
 ]
 const currentBlur = ref(steps[0].blur)
 const videoSwiperRef = ref<any>(null)
-const swiper = useSwiper(videoSwiperRef)
 const videos = [
   {
     id: 'Yzj9HtlRLwM',
@@ -95,19 +88,10 @@ const videos = [
     say: t('pages.medical_service.cataract.video.v8'),
   },
 ]
-// const onSwiper = (swiper: any) => {
-//   swiperRef.value = swiper
-// }
-// const handlePrev = () => {
-//   swiperRef.value?.slidePrev()
-// }
-// const handleNext = () => {
-//   swiperRef.value?.slideNext()
-// }
 // 医生与诊所数字滚动目标
 const counterValues = ref({
-  doctors: 0,
-  clinics: 0,
+  doctors: 25,
+  clinics: 10,
 })
 
 // 自动播放步骤定时器
@@ -343,36 +327,16 @@ onUnmounted(() => {
           白內障<span class="hl-text">真實客戶分享</span>
         </h2>
         <div class="rounded-2xl relative">
-          <button
-            @click="swiper.prev()"
-            class="swiper-button-prev-custom absolute -left-4 lg:-left-12 top-1/4 lg:top-[35%] -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-3 hover:bg-gray-100 transition-all text-primary flex items-center justify-center w-12 h-12"
-            aria-label="Previous video"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
           <div class="video-swiper overflow-hidden px-3 lg:px-10">
             <swiper
               ref="videoSwiperRef"
               :space-between="40"
               :slides-per-view="1"
               :loop="true"
-              :navigation="false"
-              :pagination="{ clickable: true, el: '.swiper-pagination-custom' }"
+              :navigation="true"
+              :pagination="{ clickable: true }"
+              :modules="[Pagination, Navigation]"
               class="ccSwiper"
-              @swiper="onSwiper"
             >
               <swiper-slide
                 class="ccSwiper-slide"
@@ -389,7 +353,7 @@ onUnmounted(() => {
                     allowfullscreen
                   ></iframe>
                 </div>
-                <div class="text-text-info text-xl font-bold mt-6">
+                <div class="text-text-info text-xl font-bold mt-8">
                   <p class="text-center">
                     {{ video.say }}
                   </p>
@@ -397,29 +361,9 @@ onUnmounted(() => {
               </swiper-slide>
             </swiper>
           </div>
-          <button
-            @click="swiper.next()"
-            class="swiper-button-next-custom absolute -right-4 lg:-right-12 top-1/4 lg:top-[35%] -translate-y-1/2 z-20 bg-white shadow-lg rounded-full p-3 hover:bg-gray-100 transition-all text-primary flex items-center justify-center w-12 h-12"
-            aria-label="Next video"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="3"
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-          <div
-            class="swiper-pagination-custom flex justify-center gap-2 mt-8"
-          ></div>
+          <!-- <div
+            class="video-pagination flex justify-center absolute gap-2 bottom-15 lg:bottom-7"
+          ></div> -->
         </div>
       </div>
     </section>
@@ -1128,31 +1072,25 @@ onUnmounted(() => {
 </template>
 
 <style lang="scss" scoped>
-.video-swiper :deep(.swiper) {
-  padding-bottom: 20px;
-}
-.swiper-pagination-custom {
-  .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    background: #cbd5e1;
-    opacity: 1;
-    margin: 0 4px;
-    transition: all 0.3s;
-  }
-  .swiper-pagination-bullet-active {
-    background: #2958a3;
-    width: 24px;
-    border-radius: 9999px;
+.video-swiper :deep(.swiper-pagination) {
+  bottom: 60px;
+  @media screen and (min-width: 1024px) {
+    bottom: 28px;
   }
 }
-.swiper-button-prev-custom,
-.swiper-button-next-custom {
+.video-swiper :deep(.swiper-button-prev),.video-swiper :deep(.swiper-button-next) {
+  top: 35%;
+  @media screen and (min-width: 1024px) {
+    top: 45%;
+  }
+}
+.video-swiper-prev,
+.video-swiper-next {
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.swiper-button-prev-custom:hover,
-.swiper-button-next-custom:hover {
+.video-swiper-prev:hover,
+.video-swiper-next:hover {
   transform: scale(1.1);
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1);
 }
