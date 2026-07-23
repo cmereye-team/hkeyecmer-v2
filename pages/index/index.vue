@@ -9,7 +9,7 @@ definePageMeta({
 })
 const { t } = useLang()
 useHead(() => ({
-  title: t('pages.index.title'),
+  title: t('tdk.index.title'),
   meta() {
     return [
       {
