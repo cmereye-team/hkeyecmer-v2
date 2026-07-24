@@ -499,32 +499,32 @@ onMounted(() => {
   <section
     class="sticky top-[30px] md:top-0 z-10 bg-[#FDFBF7] md:relative md:bg-transparent pt-10 pb-2 text-center"
   >
-    <div class="max-w-5xl mx-auto px-4 md:px-5 pt-3">
+    <div class="max-w-5xl mx-auto px-3 pt-3">
       <h1
-        class="font-serif text-2xl md:text-5xl font-bold text-[#16437E] tracking-wide leading-tight mb-2"
+        class="font-serif text-lg xs:text-2xl md:text-5xl font-bold text-[#16437E] tracking-wide leading-tight mb-2"
       >
         Urgent Care Assistance
       </h1>
       <p
-        class="font-serif text-2xl md:text-5xl font-bold text-[#16437E] tracking-wide leading-tight mb-4"
+        class="font-serif text-base xs:text-2xl md:text-5xl font-bold text-[#16437E] tracking-wide leading-tight mb-2 xs:mb-4"
       >
         緊急醫療服務 盡快即時支援
       </p>
 
       <div
-        class="flex items-center justify-center gap-6 text-left w-fit mx-auto"
+        class="flex items-center justify-center gap-3 md:gap-6 text-left w-fit mx-auto whitespace-nowrap"
       >
         <p
-          class="font-serif text-xs md:text-xl font-bold text-[#E63A2E] leading-tight"
+          class="urgent-intro font-serif font-bold text-[#E63A2E] leading-tight"
         >
           特設急症應診:<br />週末｜中環・旺角・沙田<br />週末及公眾假期｜中環・旺角
         </p>
 
         <a
           href="tel:+85239562026"
-          class="urgent-button animate-pulseSoft inline-flex flex-col items-center bg-[#E63A2E] text-white px-6 py-3 rounded-full text-base xl:text-xl font-bold xl:font-medium hover:brightness-110 transition-all"
+          class="urgent-button animate-pulseSoft whitespace-nowrap inline-flex flex-col items-center bg-[#E63A2E] text-white px-6 py-3 rounded-full text-base xl:text-xl font-bold xl:font-medium hover:brightness-110 transition-all"
         >
-          <span class="flex items-center gap-2">
+          <span class="flex items-center gap-2 text-xs md:text-base lg:text-xl">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="w-5 h-5"
@@ -543,11 +543,11 @@ onMounted(() => {
     </div>
   </section>
 
-  <main class="max-w-5xl mx-auto px-4 md:px-5 pb-20">
+  <main class="max-w-5xl mx-auto px-3 pb-20">
     <!-- Symptoms Section -->
     <section>
       <div
-        class="flex items-center gap-4 font-bold text-[#16437E] tracking-widest text-3xl mt-12 mb-8"
+        class="flex items-center gap-4 font-bold text-[#16437E] tracking-widest text-lg xs:text-xl md:text-3xl mt-12 mb-4 md:mb-8"
       >
         <span
           class="flex-1 h-px bg-gradient-to-r from-transparent via-[#D6CFC3] to-transparent"
@@ -575,7 +575,7 @@ onMounted(() => {
               ></path>
             </svg>
             <div>
-              <div class="font-bold text-lg leading-tight mb-2">
+              <div class="font-bold text-sm xs:text-base md:text-lg leading-tight mb-2">
                 突發視力缺失、缺損及視力快速下降
               </div>
               <div
@@ -601,7 +601,7 @@ onMounted(() => {
               ></path>
             </svg>
             <div>
-              <div class="font-bold text-lg leading-tight mb-2">
+              <div class="font-bold text-sm xs:text-base md:text-lg leading-tight mb-2">
                 眼前突現大量飛蚊、黑影、伴有閃光
               </div>
               <div
@@ -627,7 +627,7 @@ onMounted(() => {
               ></path>
             </svg>
             <div>
-              <div class="font-bold text-lg leading-tight mb-2">
+              <div class="font-bold text-sm xs:text-base md:text-lg leading-tight mb-2">
                 眼睛劇烈疼痛、畏光、頭痛和作嘔
               </div>
               <div
@@ -653,7 +653,7 @@ onMounted(() => {
               ></path>
             </svg>
             <div>
-              <div class="font-bold text-lg leading-tight">
+              <div class="font-bold text-sm xs:text-base md:text-lg leading-tight">
                 手術後出現眼睛不適
               </div>
             </div>
@@ -747,7 +747,7 @@ onMounted(() => {
             <span>{{ clinic.fullAddress }}</span>
           </a>
 
-          <div class="flex flex-col md:flex-row gap-6 items-center">
+          <div class="flex flex-col md:flex-row gap-6 md:items-center">
             <div class="flex-1 text-sm md:text-lg text-[#6B6158] md:space-y-1">
               <p>{{ clinic.hours }}</p>
               <p class="whitespace-pre-line">
@@ -806,7 +806,7 @@ onMounted(() => {
       <a
         href="https://api.whatsapp.com/send?phone=85293451508&text=你好，我需要緊急醫療服務，盡快即時支援"
         target="_blank"
-        class="flex items-center justify-center gap-3 py-3 border-2 border-[#16437E] rounded-3xl font-bold hover:bg-[#F8F5F0]"
+        class="flex items-center justify-center gap-3 py-3 border-2 border-primary text-primary rounded-3xl font-bold hover:bg-[#F8F5F0]"
       >
         <svg
           t="1781746358242"
@@ -874,6 +874,16 @@ onMounted(() => {
 <style lang="scss" scoped>
 :deep(.backtop-mb-enter) {
   display: none;
+}
+.urgent-intro {
+  font-size: 12px;
+  line-height: 1.5;
+  @media screen and (min-width: 360px) {
+    font-size: 14px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 .urgent-button {
   text-shadow: 0 0 0.5px #fff, 0 0 1px #fff, 0 0 8px #fff;

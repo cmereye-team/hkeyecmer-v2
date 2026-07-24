@@ -5,28 +5,18 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead({
-  title: `${t('pages.process_cost.cost')} | ${t('pages.process_cost.process')}`,
+  title: `${t('tdk.process-and-cost.title')}`,
   meta() {
     return [
       {
-        hid: 'processAndCostDesc1',
+        hid: 'processAndCostDesc',
         name: 'description',
-        content: t('tdk.process-and-cost.desc1'),
+        content: t('tdk.process-and-cost.desc'),
       },
       {
-        hid: 'processAndCostKey1',
+        hid: 'processAndCostKey',
         name: 'keywords',
-        content: t('tdk.process-and-cost.key1'),
-      },
-      {
-        hid: 'processAndCostDesc2',
-        name: 'description',
-        content: t('tdk.process-and-cost.desc2'),
-      },
-      {
-        hid: 'processAndCostKey2',
-        name: 'keywords',
-        content: t('tdk.process-and-cost.key2'),
+        content: t('tdk.process-and-cost.key'),
       },
     ]
   },
