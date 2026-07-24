@@ -537,7 +537,6 @@ onMounted(() => {
             </svg>
             急症熱線
           </span>
-          <span class="text-xs md:text-base lg:text-xl">19:00-22:00</span>
           <span class="text-xs md:text-base lg:text-xl">+852 3956 2026</span>
         </a>
       </div>
