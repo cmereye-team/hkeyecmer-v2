@@ -5,20 +5,18 @@ definePageMeta({
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
 useHead(() => ({
-  title: '多焦點人工晶體 - 香港希瑪眼科中心｜眼科診所｜眼科醫生',
+  title: t('tdk.multifocal.title'),
   meta() {
     return [
       {
-        hid: 'description',
+        hid: 'cataractDesc',
         name: 'description',
-        content:
-          '希瑪眼科中心提供白內障手術和人工晶體植入，包括：單焦距人工晶體、散光型人工晶體及多焦點人工晶體。多焦點人工晶體相較於單焦距人工晶體能滿足遠距離、中距離和近距離的需要，適合手術後不想配戴眼鏡或對用眼習慣要求高的患者，手術過程安全可靠且精準度高。立即致電查詢白內障手術-人工晶體方案及手術費用。',
+        content: t('tdk.multifocal.desc'),
       },
       {
-        hid: 'keywords',
+        hid: 'cataractKey',
         name: 'keywords',
-        content:
-          '白內障 白內障收費 白內障症狀 白內障晶體 白內障預防 白內障價錢 白內障手術 白內障矯視 白內障種類 白內障眼藥水 白內障青光眼 白內障微創 白內障激光 白內障治療 白內障手術過程 白內障眼鏡 白內障檢查 眼睛退化 眼睛玻璃體退化 先天性白內障 視力模糊 視力矯正 超聲乳化白內障切除術 人工水晶體 人工晶體 人工晶體價錢 人工晶體種類 單焦點人工晶體 散光型人工晶體 多焦點人工晶體 單焦距人工晶體 多焦距人工晶體 多焦距人工晶體價錢 晶體植入 晶體混濁 眼科檢查 眼睛檢查 眼睛疾病 眼科醫生 香港眼科 眼科醫院 眼科診所 眼科中心',
+        content: t('tdk.multifocal.key'),
       },
     ]
   },
