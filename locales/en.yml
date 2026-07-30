@@ -559,7 +559,7 @@ pages:
       cataract: Specialty of cataract
       cataract_title: cataract
     multiFocal_intraocular_lens: Multi-focal intraocular lens
-    Light_Adjustable_Lens: light adjustable lens
+    lal: light adjustable lens
     multifocal:
       cataract: Cataract
       title: Multifocal Lens

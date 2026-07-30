@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-07-15 13:36:53
+ * @LastEditTime: 2026-07-30 15:54:51
  * @FilePath: /components/Page/Newheader.vue
  * @Description: 移动端菜单
 -->
@@ -108,13 +108,13 @@ const menus = computed(() => {
         },
         {
           type: 'link',
-          text: t('pages.medical_service.intraocular.title'),
-          link: { path: '/cataract/intraocular-lens-types' },
+          text: t('pages.medical_service.lal.title'),
+          link: { path: '/cataract/light-adjustable-lens' },
         },
         {
           type: 'link',
-          text: t('pages.medical_service.dazzling_operation'),
-          link: { path: '/csp-programme' },
+          text: t('pages.medical_service.intraocular.title'),
+          link: { path: '/cataract/intraocular-lens-types' },
         },
       ],
     },

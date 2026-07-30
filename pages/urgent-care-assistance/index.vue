@@ -2,7 +2,6 @@
 definePageMeta({
   layout: 'page',
 })
-
 const { t } = useLang()
 useHead({
   title: t('tdk.urgent.title'),
