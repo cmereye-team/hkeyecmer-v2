@@ -769,9 +769,10 @@ onMounted(() => {
             </div>
             <a
               href="https://api.whatsapp.com/send?phone=85293451508&text=你好，我想預約"
+              :data-clinic="`${clinic.name}`"
               target="_blank"
               rel="noopener noreferrer"
-              class="bg-[#ef9f28] text-white hover:bg-primary text-center font-bold rounded-md py-2 px-2 xs:px-4 md:py-2 min-w-[88px] md:min-w-[120px]"
+              class="urgent-clinic-apply bg-[#ef9f28] text-white hover:bg-primary text-center font-bold rounded-md py-2 px-2 xs:px-4 md:py-2 min-w-[88px] md:min-w-[120px]"
               >{{ t('components.button.apply') }}</a
             >
           </div>
