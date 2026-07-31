@@ -383,20 +383,8 @@ const bannerData = {
                   :title="$t(item.img_up_title)"
                 />
               </div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="43px"
-                height="43px"
-              >
-                <image
-                  x="0px"
-                  y="0px"
-                  width="43px"
-                  height="43px"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAMAAADWg4HyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB/lBMVEVristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristrist9mNHCz+rS3O+uv+JvjcyCnNP3+fz////U3fDH0uuLo9bc4/Ofs918mNG2xua9y+iFn9R5ldDL1u3g5vS7yed0kc6RqNj4+f35+v2Pptjl6vbq7vh3k89ujMzv8vmNpddujczZ4fK8yuiJotb2+PyKo9ZsisvK1ezY4PF6ldD9/v6JodW5yOe1xeWrveL09vvu8fnW3vFti8yvwOO0w+R7l9G2xeX8/P7+//+gtN7AzemxwePF0evH0+vS2+/f5vRxj83Bzun7/P53lM97ltFalhceAAAAZHRSTlMABDp0m8LP3dXJqYFODzaX7fu1WQY9vuFqE6L+0eN3AVf5BWD9rwNN/Joi8Gj3KGkM61BzzDI8kIgh+I9JnEufkip9WCuVAqFHjRlnidfiQ3XDkdKMyhWqcOkK5iAkpvXcfxEJ0Q/ryQAAAAFiS0dEbMwBMDsAAAAHdElNRQfnBREJFDN5f7PcAAACHUlEQVQ4y2NgQAWMTMwsrGzsHJxc3Dy8DPgAH79ACgIICgmL4FIpKpaCDsQlGLGplJSSTsECZJiwGCqbgh0IysmjKVVQTMEJpJRQlCqrpOABqmpIStU1kKVS09IzMlEUayKUamkjS2Rl5+Tk5KKarANTqsaJIp6XAwL5KGK6elC1+qhmFIDVFqIKikECw8CQCLUpRmC1xinEqDUBKZVnJ0ptiilQrVkKcWrNgWotiFQrDlTLSaTaFEsGNSti1fIwWMLZRcUlpahqy8orKqvg8nIIr1XX5OTU1iGrraoH0g2NMAXWDDZQVlMzSEVNC0JtaxuY0Q5Ta8tgB2V1gCVyOrtgart7ICK9MLX2DKJQVl8/VPEEqNqJEH7OJJhaBwZHGHMyVG7KVDDVBuVOmw5T4MQgAk/mM3KwgHpEODgzMHDAOTMxlTbPQoSvCwODK4I3G11pZylCUsANmNeQoqYSVemcaiQ5d2B6EEFO6iXISufOQ45iD1AC9kQS6J6PpHYBslJ2cL730kVWvBCuNA0l5XhD8qYPslj3IqjSxdORhX2hJaaBH7LodEjcLlmKLCjtDy/3UIqd6cuWA+NgBYoLrBEFT0AKKljZ0orCD0Qus4NS8IFglNpAPgSP0tAwtAJYwgqX0nADjILdVAarSm19bBUGY0QkhkpBey8cFVGUvgmKymjPGAY8IFY/ji0eqEwjQShRVI2BMFBLSsYmDADARi0RfmCoiQAAAABJRU5ErkJggg=="
-                />
-              </svg>
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="43"><image width="43" height="43" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAArCAMAAADWg4HyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAB/lBMVEVristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristristrist9mNHCz+rS3O+uv+JvjcyCnNP3+fz////U3fDH0uuLo9bc4/Ofs918mNG2xua9y+iFn9R5ldDL1u3g5vS7yed0kc6RqNj4+f35+v2Pptjl6vbq7vh3k89ujMzv8vmNpddujczZ4fK8yuiJotb2+PyKo9ZsisvK1ezY4PF6ldD9/v6JodW5yOe1xeWrveL09vvu8fnW3vFti8yvwOO0w+R7l9G2xeX8/P7+//+gtN7AzemxwePF0evH0+vS2+/f5vRxj83Bzun7/P53lM97ltFalhceAAAAZHRSTlMABDp0m8LP3dXJqYFODzaX7fu1WQY9vuFqE6L+0eN3AVf5BWD9rwNN/Joi8Gj3KGkM61BzzDI8kIgh+I9JnEufkip9WCuVAqFHjRlnidfiQ3XDkdKMyhWqcOkK5iAkpvXcfxEJ0Q/ryQAAAAFiS0dEbMwBMDsAAAAHdElNRQfnBREJFDN5f7PcAAACHUlEQVQ4y2NgQAWMTMwsrGzsHJxc3Dy8DPgAH79ACgIICgmL4FIpKpaCDsQlGLGplJSSTsECZJiwGCqbgh0IysmjKVVQTMEJpJRQlCqrpOABqmpIStU1kKVS09IzMlEUayKUamkjS2Rl5+Tk5KKarANTqsaJIp6XAwL5KGK6elC1+qhmFIDVFqIKikECw8CQCLUpRmC1xinEqDUBKZVnJ0ptiilQrVkKcWrNgWotiFQrDlTLSaTaFEsGNSti1fIwWMLZRcUlpahqy8orKqvg8nIIr1XX5OTU1iGrraoH0g2NMAXWDDZQVlMzSEVNC0JtaxuY0Q5Ta8tgB2V1gCVyOrtgart7ICK9MLX2DKJQVl8/VPEEqNqJEH7OJJhaBwZHGHMyVG7KVDDVBuVOmw5T4MQgAk/mM3KwgHpEODgzMHDAOTMxlTbPQoSvCwODK4I3G11pZylCUsANmNeQoqYSVemcaiQ5d2B6EEFO6iXISufOQ45iD1AC9kQS6J6PpHYBslJ2cL730kVWvBCuNA0l5XhD8qYPslj3IqjSxdORhX2hJaaBH7LodEjcLlmKLCjtDy/3UIqd6cuWA+NgBYoLrBEFT0AKKljZ0orCD0Qus4NS8IFglNpAPgSP0tAwtAJYwgqX0nADjILdVAarSm19bBUGY0QkhkpBey8cFVGUvgmKymjPGAY8IFY/ji0eqEwjQShRVI2BMFBLSsYmDADARi0RfmCoiQAAAABJRU5ErkJggg=="/></svg>
               <div>
                 <img
                   :src="item.img_down"

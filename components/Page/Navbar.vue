@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-07-15 13:35:38
+ * @LastEditTime: 2026-07-31 13:44:27
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -91,6 +91,11 @@ const menus = computed((): IMenuItem[] => [
         type: 'link',
         text: t('pages.medical_service.edof.title'),
         route: { name: 'cataract-extended-depth-of-focus-lenses' },
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.lal.title'),
+        route: { name: 'cataract-light-adjustable-lens' },
       },
       {
         type: 'link',
@@ -371,7 +376,7 @@ const hashActive = (child: any) => {
                   :class="[
                     hashActive(child),
                     child.route.name ===
-                    'extended-depth-of-focus-lenses'
+                    'cataract-extended-depth-of-focus-lenses'
                       ? 'new'
                       : '',
                   ]"

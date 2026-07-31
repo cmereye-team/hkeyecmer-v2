@@ -559,7 +559,103 @@ pages:
       cataract: Specialty of cataract
       cataract_title: cataract
     multiFocal_intraocular_lens: Multi-focal intraocular lens
-    Light_Adjustable_Lens: light adjustable lens
+    lal:
+      title: Light Adjustable Lens
+      banner:
+        title: ''
+        intro: ''
+      what:
+        title: 'What is'
+        strong: In contrast, LAL technology overcomes this limitation by allowing postoperative adjustments to the lens power based on the individual needs of the patient, thereby achieving superior visual outcomes.
+        intro: 'The Light Adjustable Lens™ (Abbreviated as LAL) is a groundbreaking ophthalmic technology specifically designed to provide personalized vision optimization solutions following cataract surgery. In traditional cataract surgery, the cloudy natural lens is removed and replaced with an intraocular lens (IOL) of fixed power, which cannot be adjusted postoperatively to address residual refractive errors. {strong} LAL is currently the first and only intraocular lens on the market that permits power adjustments after cataract surgery, offering patients an unprecedented visual experience.'
+        intro_origin: 'The Light Adjustable Lens™ (Abbreviated as LAL) is a groundbreaking ophthalmic technology specifically designed to provide personalized vision optimization solutions following cataract surgery. In traditional cataract surgery, the cloudy natural lens is removed and replaced with an intraocular lens (IOL) of fixed power, which cannot be adjusted postoperatively to address residual refractive errors. In contrast, LAL technology overcomes this limitation by allowing postoperative adjustments to the lens power based on the individual needs of the patient, thereby achieving superior visual outcomes. LAL is currently the first and only intraocular lens on the market that permits power adjustments after cataract surgery, offering patients an unprecedented visual experience.'
+      table:
+        title:
+          and: '&'
+          other: Traditional Intraocular Lens
+        name:
+          lal: Light Adjustable Lens™ (LAL)
+          other: Traditional Intraocular Lens
+        button: Know More Light Adjustable Lens™
+        rows:
+          adjustability:
+            label: Adjustability
+            lal: '{post} {light}{br} for precise power adjustment'
+            post: 'Postoperative'
+            light: 'light treatment'
+            other: Fixed post-operative power;{br}generally not adjustable
+          personalize:
+            label: Personalized Needs
+            lal: '{hl} {br}on individual visual needs and {br}lifestyle requirements after LAL {br}implantation'
+            hl: Personalized adjustment based
+            other: Standardized design
+          astigmatism:
+            label: Astigmatism
+            lal: No need for toric intraocular {br}lenses (IOLs); can correct up to {br}300 degrees of astigmatism {br}(including the surgical incision)
+            other: Requires toric IOLs; if the lens {br}rotates post-operatively, {br}astigmatism may recur
+          vision:
+            label: Postoperative{br} Visual Acuity {br}and Dependence
+            lal: Reduces dependency on {br}glasses; increases the proportion {br}of patients achieving 20/20 vision {br}{hl} {br}through blended vision
+            hl: without glasses postoperatively
+            other: Pre-operative estimation and {br}post-operative actual power {br}sometimes may not match; glasses {br}may be needed post-operatively
+          process:
+            label: Treatment Process
+            lal: Requires multiple {br}LDD light treatments
+            other: Single surgery; {br}no subsequent power {br}adjustment process required
+          care:
+            label: Postoperative Care
+            lal: Needs to wear {br}{hl} before {br}finalizing the power
+            hl: UV-protective glasses
+            other: Routine post-operative care;{br}no special requirements
+          suitable:
+            label: Suitability
+            lal: Those with difficult pre-operative {br}power estimations, such as patients {br}who have previously undergone laser {br}refractive surgery (e.g. LASIK or PRK);{br}patients with complex corneal conditions,{br}such as those with mild keratoconus;{br}and those seeking a highly personalized {br}vision and optimal visual outcomes.
+            other: General cataract patients
+      principle:
+        title: How It Works
+        intro: "Light Adjustable Lens™ is crafted from a specialized photosensitive material that, once implanted intraocularly, allows for modifications to the lens's shape and power through ultraviolet (UV) light."
+        uv: UV Irradiation
+        modified: Improved shape
+        desc: "Postoperatively, ophthalmologists can customize the lens power to meet each patient's specific needs by utilizing a Light Delivery Device (LDD) to administer a series of non-invasive phototherapy sessions. Each session lasts approximately 95-125 seconds, enabling precise adjustments of the intraocular lens (IOL) power to achieve optimal visual outcomes."
+        more: To learn more, watch the video below
+        video: Play a video
+        close: Close
+        alt: LAL principle example diagram
+      innovation:
+        title: Innovation and Uniqueness
+        strong: In contrast, the Light Adjustable Lens™ allows ophthalmologists to perform multiple postoperative refinements based on the patient’s real-world visual needs and residual refractive error, enabling personalized visual correction.
+        intro: 'Traditional cataract surgery utilizes fixed-power monofocal intraocular lenses (IOLs), which cannot be adjusted postoperatively, thereby limiting the precision of visual correction. {strong} Compared to patients who received a standard (fixed) monofocal IOL, those who received LAL followed by adjustments were twice as likely to achieve 20/20 vision 6 months without glasses.'
+      why:
+        title: Why Choose Light Adjustable Lens™ (LAL)?
+        intro: Choose the Light Adjustable Lens™ and enjoy the best personalized visual experience tailored for you. Enhance your quality of life and regain clear vision.
+        button: Book your Light Adjustable Lens™ experience today!
+        items:
+          personalize:
+            title: Customized to your individual visual needs
+            desc: After cataract surgery, your ophthalmologist will precisely customize your vision based on your visual needs and lifestyle. No longer rely on pre-surgical refractive predictions - achieve your desired visual outcomes.
+          technology:
+            title: Reduce dependency on post-surgical glasses, achieve superior binocular visual quality
+            desc: Studies show that patients who use LAL to adjust their intraocular lens are twice as likely to achieve 20/20 vision compared to those with traditional monofocal IOLs. Reduce your reliance on spectacles and elevate your daily quality of life.
+          glasses:
+            title: '* Cutting-edge technology'
+            title_line1: '* Cutting-edge technology'
+            title_line2: ''
+            desc: "Utilizing special photosensitive material, LAL allows precise modification of the intraocular lens shape using ultraviolet light. This enables personalized refractive adjustments to meet each patient's unique visual demands"
+            source: 'Source: RxSight P160055: FDA Summary of Safety and Effectiveness Data'
+      faq:
+        title: Frequently asked questions (FAQ)
+        q1: What are the contraindications for this treatment?
+        a1: "LAL and LDD systems are not recommended if you are taking medications that may increase sensitivity to ultraviolet (UV) light; if you are taking medications considered toxic to the retina or have uncontrolled eye movements (nystagmus); or if you cannot follow your doctor's LDD light treatment schedule and wear special UV protective glasses for several weeks after cataract surgery. If you have had or currently have an eye disease (such as an ocular herpes virus infection), you need to inform your doctor in detail and consult with them to determine if the treatment is appropriate for you."
+        q2: What warnings should I be aware of?
+        a2: Certain eye diseases may increase the risk of complications. Your doctor will determine if you are a candidate for LAL. If you experience any complications during your cataract surgery prior to LAL implantation, you may need a different intraocular lens (IOL) implanted instead of LAL.
+        q3: What precautions should I take?
+        a3: "The safety and effectiveness of LAL and LDD have not been established in patients with certain ocular diseases or who experience certain complications during cataract surgery. You should discuss these issues with your doctor. After surgery, you must wear special UV protective glasses until your power is locked in (approximately 4-8 weeks) and follow your doctor's LDD light treatment schedule. Failure to properly wear UV protective glasses may result in unpredictable changes in vision or decreased quality of vision following exposure to UV light such as sunlight. This may require a second surgery to remove the LAL from your eye and replace it with another IOL."
+        q4: What are the potential risks of the Light Adjustable Lens™ (LAL)?
+        a4: "As with any surgical procedure, there are risks associated with cataract surgery and intraocular lens implantation. Discuss these risks with your doctor. Potential risks of LDD light treatments include: mild color vision changes (transient, typically resolving within days); light stimulation causing ocular surface discomfort or dryness; and activation of a previously undiagnosed ocular herpes virus infection. More persistent and severe adverse reactions associated with UV exposure may also occur but are very rare. It is possible that your vision could be made worse, or that you might need additional surgery because of complications."
+      down:
+        title: Download Brochure
+        patient: Patient Brochure
+        glasses: UV Glasses Brochure
     multifocal:
       cataract: Cataract
       title: Multifocal Lens
@@ -3557,6 +3653,10 @@ tdk:
     desc: 'To ensure the health of the elderly and alleviate the medical burden on them and their families,the government launched the &quot;Health Care Voucher(HCV)&quot;  scheme in 2009 to subsidize eligible seniors for private primary healthcare services. This initiative allows seniors  to choose private healthcare services that best meet their health needs, enabling them to receive professional  diagnosis, examinations, and treatments promptly while  reducing the burden on public healthcare. C-MER Eye Centre accepts &quot; Health Care Voucher(HCV)&quot; for related eye  examination services, eye disease diagnosis, and ophthalmic treatments.'
     key: 'Health Care Voucher  elderly healthcare elderly health elderly health care voucher scheme medical assistance medical service ophthalmologist hong kong ophthalmology eye examination medical expenses health protection cmer eye cmer'
   edof:
-    title: 'Extended Depth of Focus | CMER Eye Center'
+    title: 'Extended Depth of Focus｜CMER Eye Center'
+    desc: 'Hong Kong CMER Eye Center is a leading institution specializing in the field of ophthalmology, offering a comprehensive range of optometry and eye examination services. Their medical expertise covers a broad spectrum of ophthalmological conditions, including cataracts, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital disorders, ophthalmic plastic surgery, and eye tumors. Moreover, their services extend to myopia control and various other ophthalmic procedures. To cater to the needs of patients in Hong Kong, CMER Eye Center operates a network of 10 well-equipped eye clinics, staffed by a dedicated team of 22 highly skilled ophthalmologists. These ophthalmologists possess extensive knowledge and experience in the field of ophthalmology, ensuring that patients receive the highest quality of care. Guided by the expertise of renowned ophthalmologist Dr. LAM Shun Chiu, Dennis, the team at CMER Eye Center is committed to delivering professional eye medical services, conducting thorough eye examinations, and providing comprehensive ophthalmic care to patients across Hong Kong.'
+    key: 'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic'
+  lal:
+    title: Light Adjustable Lens™｜CMER Eye Center
     desc: 'Hong Kong CMER Eye Center is a leading institution specializing in the field of ophthalmology, offering a comprehensive range of optometry and eye examination services. Their medical expertise covers a broad spectrum of ophthalmological conditions, including cataracts, glaucoma, strabismus, amblyopia, ocular surface diseases, corneal diseases, macular degeneration, retinal detachment, orbital disorders, ophthalmic plastic surgery, and eye tumors. Moreover, their services extend to myopia control and various other ophthalmic procedures. To cater to the needs of patients in Hong Kong, CMER Eye Center operates a network of 10 well-equipped eye clinics, staffed by a dedicated team of 22 highly skilled ophthalmologists. These ophthalmologists possess extensive knowledge and experience in the field of ophthalmology, ensuring that patients receive the highest quality of care. Guided by the expertise of renowned ophthalmologist Dr. LAM Shun Chiu, Dennis, the team at CMER Eye Center is committed to delivering professional eye medical services, conducting thorough eye examinations, and providing comprehensive ophthalmic care to patients across Hong Kong.'
     key: 'CMER Eye Center Hong Kong CMER Eye Center Ophthalmology Specialist Clinic Ophthalmology Specialist Center Vision Center Comprehensive Eye Exam CMER Eye Hong Kong Eye Treatment Solutions Eye Clinic'
