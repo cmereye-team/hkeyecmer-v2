@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-07-30 14:16:45
- * @LastEditTime: 2026-07-30 17:49:02
+ * @LastEditTime: 2026-07-31 13:45:42
  * @FilePath: /pages/cataract/light-adjustable-lens.vue
  * @Description: 光调节人工晶体
 -->
@@ -104,7 +104,7 @@ const faqList = [
 </script>
 <template>
   <div>
-    <div class="lal-bg overflow-hidden mb-10 lg:mb-20">
+    <div class="lal-bg overflow-hidden mb-10 lg:mb-20 text-base lg:text-xl">
       <!-- Banner -->
       <section class="banner wrapper">
         <div
@@ -156,7 +156,7 @@ const faqList = [
             <img
               src="https://statichk.cmermedical.com/hkcmereye/LAL/isLALbg.webp"
               class="h-104 w-58 object-cover"
-              alt=""
+              alt="LAL Icon"
             />
           </div>
           <div class="flex-1">
@@ -203,23 +203,25 @@ const faqList = [
               t('pages.medical_service.lal.table.title.and')
             }}</span>
             <span class="text-lg lg:text-4xl text-lal-text">{{
-              t('pages.medical_service.lal.table.title.normal')
+              t('pages.medical_service.lal.table.title.other')
             }}</span>
           </h2>
           <div
-            class="lal-table mb-5 text-xs lg:text-[28px] text-center text-text-info font-bold tracking-widest whitespace-nowrap overflow-x-auto pt-13 lg:pt-41"
+            class="lal-table mb-5 text-xs lg:text-xl text-center text-text-info font-bold tracking-widest whitespace-nowrap overflow-x-auto pt-13 lg:pt-41"
           >
             <table class="border-collapse mx-auto">
-              <thead class="text-[9px] lg:text-[32px] leading-[1.2]">
+              <thead class="text-[9px] lg:text-2xl leading-[1.2]">
                 <tr>
                   <th></th>
-                  <th class="lens-lal border-none relative text-white">
+                  <th
+                    class="lens-lal border-none relative text-white pt-3 px-3 lg:pt-0"
+                  >
                     Light Adjustable Lens™<br class="block md:hidden" />(LAL)
                   </th>
                   <th
-                    class="lens-other border-none relative flex pt-[10%] justify-center"
+                    class="lens-other border-none relative flex pt-[10%] lg:pt-[15%] justify-center"
                   >
-                    {{ t('pages.medical_service.lal.table.name.normal') }}
+                    {{ t('pages.medical_service.lal.table.name.other') }}
                   </th>
                 </tr>
               </thead>
@@ -335,19 +337,8 @@ const faqList = [
             <span class="text-lal font-bold">{{
               t('pages.medical_service.lal.table.button')
             }}</span>
-            <svg
-              class="w-2 lg:w-5"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 8 13"
-              fill="none"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M1.992 11.953 6.976 6.95c.436-.437.436-1.117 0-1.603L1.992.397C1.556-.087.927-.137.492.3L.299.492c-.337.388-.436.825-.05 1.216C1.462 2.92 2.67 4.131 3.927 5.396c.436.387.436 1.117 0 1.55C2.67 8.16 1.457 9.416.249 10.632c-.386.342-.287.824.05 1.211l.193.194c.435.437 1.064.338 1.5-.095z"
-                fill="#833c75"
-              />
-            </svg>
+            <!-- prettier-ignore -->
+            <svg class="w-2 lg:w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 13" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.992 11.953 6.976 6.95c.436-.437.436-1.117 0-1.603L1.992.397C1.556-.087.927-.137.492.3L.299.492c-.337.388-.436.825-.05 1.216C1.462 2.92 2.67 4.131 3.927 5.396c.436.387.436 1.117 0 1.55C2.67 8.16 1.457 9.416.249 10.632c-.386.342-.287.824.05 1.211l.193.194c.435.437 1.064.338 1.5-.095z" fill="#833c75"/></svg>
           </a>
         </div>
       </section>
@@ -380,7 +371,7 @@ const faqList = [
                   <img
                     src="https://statichk.cmermedical.com/newopd/services/cataract/lal-schematic-v1.png"
                     class="w-full max-h-60 object-cover"
-                    alt=""
+                    :alt="t('pages.medical_service.lal.principle.alt')"
                   />
                 </picture>
                 <div
@@ -410,16 +401,8 @@ const faqList = [
                   class="bg-primary-index text-white center gap-2 rounded-md cursor-pointer py-2 px-5"
                   @click="videoPopupOpen = true"
                 >
-                  <svg
-                    class="size-5 lg:size-7"
-                    viewBox="0 0 1024 1024"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M507.456 64C262.528 64 64 262.752 64 507.904c0 245.12 198.528 443.872 443.456 443.872 244.896 0 443.456-198.752 443.456-443.872C950.912 262.752 752.352 64 507.456 64m0 843.408c-220.432 0-399.136-178.88-399.136-399.504 0-220.704 178.72-399.536 399.136-399.536 220.432 0 399.136 178.88 399.136 399.536 0 220.624-178.704 399.504-399.136 399.504m201.28-430.96C639.76 429.44 514.656 359.072 443.36 315.52c-29.232-18.496-53.776-11.088-56.144 21.504-1.728 87.248 0 255.52 0 344.32 1.44 33.04 30.592 37.408 55.92 24.08L708.16 544.736c-.496-.272 54.272-30.464.592-68.288z"
-                      fill="currentColor"
-                    />
-                  </svg>
+                  <!-- prettier-ignore -->
+                  <svg class="video-icon-play" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg"><path d="M507.456 64C262.528 64 64 262.752 64 507.904c0 245.12 198.528 443.872 443.456 443.872 244.896 0 443.456-198.752 443.456-443.872C950.912 262.752 752.352 64 507.456 64m0 843.408c-220.432 0-399.136-178.88-399.136-399.504 0-220.704 178.72-399.536 399.136-399.536 220.432 0 399.136 178.88 399.136 399.536 0 220.624-178.704 399.504-399.136 399.504m201.28-430.96C639.76 429.44 514.656 359.072 443.36 315.52c-29.232-18.496-53.776-11.088-56.144 21.504-1.728 87.248 0 255.52 0 344.32 1.44 33.04 30.592 37.408 55.92 24.08L708.16 544.736c-.496-.272 54.272-30.464.592-68.288z" fill="currentColor"/></svg>
                   <span class="text-lg lg:text-2xl font-bold">{{
                     t('pages.medical_service.lal.principle.video')
                   }}</span>
@@ -483,37 +466,12 @@ const faqList = [
 
       <!-- Why choose LAL -->
       <section
-        class="lal-bg-deco relative before:hidden lg:before:block lg:before:bottom-6 lg:before:-left-37 pb-12 lg:pb-35 lg:mb-20"
+        class="lal-bg-deco why relative before:hidden lg:before:block lg:before:bottom-6 lg:before:-left-37 pb-12 lg:pb-35 lg:mb-20"
       >
         <div class="wrapper max-w-7xl">
           <div class="center gap-3 lg:gap-5 mb-10 lg:mb-18">
-            <svg
-              class="size-11 lg:size-19"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 73 77"
-              fill="none"
-            >
-              <path
-                d="M1.368 20.648c1.247 6.633 3.904 12.827 7.946 18.498h.001a47.6 47.6 0 0 0 9.124 9.614q.426.337.858.664a44.4 44.4 0 0 1-5.071-4.313l-.03-.029-.089-.09q-.119-.121-.338-.35a54 54 0 0 1-1.189-1.285c-.969-1.08-2.219-2.558-3.353-4.152C4.735 32.906 2.45 26.4 1.368 20.648Zm0 0ZM1.336 2.326A2.195 2.195 0 0 1 3.866.531q.222.04.43.114l.138.054.087.04V.74c.856.401 1.317 1.29 1.144 2.318-.122.713-.473 1.204-1.116 1.551C2.089 5.938.558 8.556.545 11.427q-.018 4.246.658 8.289C-.04 12.332.661 6.32 1.086 3.806z"
-                stroke="#833c75"
-              />
-              <path
-                d="M37.434 61.584c12.94 0 23.43-10.463 23.43-23.369s-10.49-23.368-23.43-23.368-23.43 10.463-23.43 23.368c0 12.906 10.49 23.369 23.43 23.369Z"
-                stroke="#833c75"
-                stroke-width="3.8"
-                stroke-miterlimit="10"
-              />
-              <path
-                d="M37.435 57.07c10.44 0 18.904-8.441 18.904-18.855s-8.464-18.854-18.904-18.854c-10.441 0-18.905 8.441-18.905 18.854 0 10.414 8.464 18.855 18.905 18.855Z"
-                stroke="#833c75"
-                stroke-width="1.26"
-                stroke-miterlimit="10"
-              />
-              <path
-                d="M56.125 27.96a43 43 0 0 1 3.558 3.289v.001l.002.002.005.006.02.022.088.093q.115.123.327.357c.281.31.68.76 1.148 1.311.82.967 1.85 2.245 2.833 3.645l.418.606c9.547 14.191 8.28 29.092 7.349 34.625l-.179.978-.29 1.47a2.19 2.19 0 0 1-2.577 1.72h.001a3 3 0 0 1-.43-.124l-.138-.059-.086-.04c-.848-.425-1.285-1.326-1.082-2.346.142-.708.508-1.188 1.16-1.516v-.001c2.499-1.265 4.094-3.838 4.19-6.702v-.001c.323-10.162-2.373-19.566-8.008-27.946a47.4 47.4 0 0 0-8.309-9.39Z"
-                stroke="#833c75"
-              />
-            </svg>
+            <!-- prettier-ignore -->
+            <svg class="title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73 77" fill="none"><path d="M1.368 20.648c1.247 6.633 3.904 12.827 7.946 18.498h.001a47.6 47.6 0 0 0 9.124 9.614q.426.337.858.664a44.4 44.4 0 0 1-5.071-4.313l-.03-.029-.089-.09q-.119-.121-.338-.35a54 54 0 0 1-1.189-1.285c-.969-1.08-2.219-2.558-3.353-4.152C4.735 32.906 2.45 26.4 1.368 20.648Zm0 0ZM1.336 2.326A2.195 2.195 0 0 1 3.866.531q.222.04.43.114l.138.054.087.04V.74c.856.401 1.317 1.29 1.144 2.318-.122.713-.473 1.204-1.116 1.551C2.089 5.938.558 8.556.545 11.427q-.018 4.246.658 8.289C-.04 12.332.661 6.32 1.086 3.806z" stroke="#833c75"/><path d="M37.434 61.584c12.94 0 23.43-10.463 23.43-23.369s-10.49-23.368-23.43-23.368-23.43 10.463-23.43 23.368c0 12.906 10.49 23.369 23.43 23.369Z" stroke="#833c75" stroke-width="3.8" stroke-miterlimit="10"/><path d="M37.435 57.07c10.44 0 18.904-8.441 18.904-18.855s-8.464-18.854-18.904-18.854c-10.441 0-18.905 8.441-18.905 18.854 0 10.414 8.464 18.855 18.905 18.855Z" stroke="#833c75" stroke-width="1.26" stroke-miterlimit="10"/><path d="M56.125 27.96a43 43 0 0 1 3.558 3.289v.001l.002.002.005.006.02.022.088.093q.115.123.327.357c.281.31.68.76 1.148 1.311.82.967 1.85 2.245 2.833 3.645l.418.606c9.547 14.191 8.28 29.092 7.349 34.625l-.179.978-.29 1.47a2.19 2.19 0 0 1-2.577 1.72h.001a3 3 0 0 1-.43-.124l-.138-.059-.086-.04c-.848-.425-1.285-1.326-1.082-2.346.142-.708.508-1.188 1.16-1.516v-.001c2.499-1.265 4.094-3.838 4.19-6.702v-.001c.323-10.162-2.373-19.566-8.008-27.946a47.4 47.4 0 0 0-8.309-9.39Z" stroke="#833c75"/></svg>
             <h2 class="text-2xl lg:text-3xl text-lal font-bold">
               {{ t('pages.medical_service.lal.why.title') }}
             </h2>
@@ -524,7 +482,7 @@ const faqList = [
 
           <div>
             <!-- Mobile Swiper -->
-            <div class="lg:hidden relative pb-15 text-justify">
+            <div class="lg:hidden relative pb-3 text-justify relative">
               <Swiper
                 :modules="modules"
                 :pagination="{ clickable: true, el: '.why-pagination' }"
@@ -537,7 +495,7 @@ const faqList = [
                   :key="index"
                   class="why-slide flex flex-col justify-between"
                 >
-                  <div>
+                  <div class="relative z-[1]">
                     <h3 class="text-xl font-bold text-lal mb-4">
                       <template v-if="item.key === 'glasses'">
                         {{ item.titleLine1 }}<br />{{ item.titleLine2 }}
@@ -559,7 +517,7 @@ const faqList = [
                 </SwiperSlide>
               </Swiper>
               <div
-                class="why-pagination absolute -bottom-5 left-1/2 -translate-x-1/2 w-fit whitespace-nowrap"
+                class="why-pagination absolute -bottom-5 left-1/2 -translate-x-1/2 space-x-3 whitespace-nowrap"
               />
             </div>
 
@@ -598,7 +556,7 @@ const faqList = [
               <div
                 class="why-slide lg:min-h-[328px] lg:col-span-2 lg:row-span-2 flex flex-col lg:flex-row justify-between items-center gap-4"
               >
-                <div class="flex-1">
+                <div class="flex-1 relative z-[1]">
                   <h3 class="text-3xl font-bold text-lal mb-2">
                     {{ whyItems[2].title }}
                   </h3>
@@ -625,28 +583,8 @@ const faqList = [
                   <span class="tracking-wide">{{
                     t('pages.medical_service.lal.why.button')
                   }}</span>
-                  <svg
-                    class="ml-4"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="27"
-                    viewBox="0 0 16 27"
-                    fill="none"
-                  >
-                    <g clip-path="url(#lal-arrow-a)">
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="m4.366 26.171 10.916-10.955c.954-.957.954-2.446 0-3.511L4.366.868C3.412-.197 2.036-.306 1.082.65l-.423.424C-.08 1.923-.295 2.879.55 3.737c2.655 2.653 5.3 5.306 8.054 8.076.954.849.954 2.446 0 3.393C5.85 17.868 3.196 20.62.55 23.282c-.846.75-.63 1.805.108 2.653l.423.424c.954.956 2.33.74 3.284-.207z"
-                        fill="#833c75"
-                      />
-                    </g>
-                    <defs>
-                      <clipPath id="lal-arrow-a">
-                        <path fill="#fff" d="M16 0v27H0V0z" />
-                      </clipPath>
-                    </defs>
-                  </svg>
+                  <!-- prettier-ignore -->
+                  <svg class="ml-4" xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="m4.366 26.171 10.916-10.955c.954-.957.954-2.446 0-3.511L4.366.868C3.412-.197 2.036-.306 1.082.65l-.423.424C-.08 1.923-.295 2.879.55 3.737c2.655 2.653 5.3 5.306 8.054 8.076.954.849.954 2.446 0 3.393C5.85 17.868 3.196 20.62.55 23.282c-.846.75-.63 1.805.108 2.653l.423.424c.954.956 2.33.74 3.284-.207z" fill="#833c75"/></g><defs><clipPath id="a"><path fill="#fff" d="M16 0v27H0V0z"/></clipPath></defs></svg>
                 </a>
               </div>
             </div>
@@ -661,21 +599,8 @@ const faqList = [
                 <span class="tracking-wide">{{
                   t('pages.medical_service.lal.why.button')
                 }}</span>
-                <svg
-                  class="ml-3"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="8"
-                  height="13"
-                  viewBox="0 0 8 13"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M1.992 11.953 6.976 6.95c.436-.437.436-1.117 0-1.603L1.992.397C1.556-.087.927-.137.492.3L.299.492c-.337.388-.436.825-.05 1.216C1.462 2.92 2.67 4.131 3.927 5.396c.436.387.436 1.117 0 1.55C2.67 8.16 1.457 9.416.249 10.632c-.386.342-.287.824.05 1.211l.193.194c.435.437 1.064.338 1.5-.095z"
-                    fill="#833c75"
-                  />
-                </svg>
+                <!-- prettier-ignore -->
+                <svg class="ml-3" xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.992 11.953 6.976 6.95c.436-.437.436-1.117 0-1.603L1.992.397C1.556-.087.927-.137.492.3L.299.492c-.337.388-.436.825-.05 1.216C1.462 2.92 2.67 4.131 3.927 5.396c.436.387.436 1.117 0 1.55C2.67 8.16 1.457 9.416.249 10.632c-.386.342-.287.824.05 1.211l.193.194c.435.437 1.064.338 1.5-.095z" fill="#833c75"/></svg>
               </a>
             </div>
           </div>
@@ -686,79 +611,90 @@ const faqList = [
     <!-- FAQ -->
     <section
       id="question"
-      class="scroll-mt-17 lg:scroll-mt-50 wrapper text-lal mb-18"
+      class="scroll-mt-17 lg:scroll-mt-50 wrapper text-lal mb-25 lg:mb-50"
     >
       <div class="center mb-9 lg:mb-25 gap-5 lg:gap-3">
-        <svg
-          class="w-17 lg:w-23"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 93 17"
-          fill="none"
-        >
-          <path
-            d="M90.125 16.822v-2.104h2.12v2.104zm-5.302 0v-2.104h2.121v2.104zm-5.3 0v-2.104h2.12v2.104zm-5.302 0v-2.104h2.12v2.104zm-5.301 0v-2.104h2.12v2.104zm-5.302 0v-2.104h2.121v2.104zm26.51-7.36V7.357h2.12V9.46zm-5.301 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm-5.3 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm-5.301 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm-5.3 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm-5.302 0V7.357h2.121V9.46zm-5.3 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm58.317-7.359V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.3 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.3 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.311 0V0h2.12v2.103zm-5.302 0V0h2.121v2.103zm-5.3 0V0h2.12v2.103zM0 2.103V0h2.12v2.103z"
-            fill="#833c75"
-          />
-        </svg>
+        <!-- prettier-ignore -->
+        <svg class="w-17 lg:w-23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 17" fill="none"><path d="M90.125 16.822v-2.104h2.12v2.104zm-5.302 0v-2.104h2.121v2.104zm-5.3 0v-2.104h2.12v2.104zm-5.302 0v-2.104h2.12v2.104zm-5.301 0v-2.104h2.12v2.104zm-5.302 0v-2.104h2.121v2.104zm26.51-7.36V7.357h2.12V9.46zm-5.301 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm-5.3 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm-5.301 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm-5.3 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm-5.302 0V7.357h2.121V9.46zm-5.3 0V7.357h2.12V9.46zm-5.302 0V7.357h2.12V9.46zm58.317-7.359V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.3 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.3 0V0h2.12v2.103zm-5.302 0V0h2.12v2.103zm-5.301 0V0h2.12v2.103zm-5.311 0V0h2.12v2.103zm-5.302 0V0h2.121v2.103zm-5.3 0V0h2.12v2.103zM0 2.103V0h2.12v2.103z" fill="#833c75"/></svg>
         <h2 class="text-xl xs:text-2xl lg:text-4xl text-lal font-bold">
           <span>{{ t('pages.medical_service.lal.faq.title') }}</span>
         </h2>
-        <svg
-          class="w-17 lg:w-23"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 93 17"
-          fill="none"
-        >
-          <path
-            d="M2.127 16.822v-2.104H.007v2.104zm5.301 0v-2.104h-2.12v2.104zm5.301 0v-2.104h-2.12v2.104zm5.302 0v-2.104h-2.12v2.104zm5.301 0v-2.104h-2.12v2.104zm5.301 0v-2.104h-2.12v2.104zm-26.51-7.36V7.357H.004V9.46zm5.302 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.302 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.302 0V7.357h-2.12V9.46zm5.3 0V7.357h-2.12V9.46zm5.302 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.302 0V7.357h-2.12V9.46zM2.12 2.102V0H0v2.103zm5.3 0V0H5.3v2.103zm5.302 0V0h-2.12v2.103zm5.301 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.3 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.302 0V0h-2.121v2.103zm5.3 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.301 0V0h-2.12v2.103zm5.302 0V0h-2.121v2.103zm5.3 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.31 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.301 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103z"
-            fill="#833c75"
-          />
-        </svg>
+        <!-- prettier-ignore -->
+        <svg class="w-17 lg:w-23" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 17" fill="none"><path d="M2.127 16.822v-2.104H.007v2.104zm5.301 0v-2.104h-2.12v2.104zm5.301 0v-2.104h-2.12v2.104zm5.302 0v-2.104h-2.12v2.104zm5.301 0v-2.104h-2.12v2.104zm5.301 0v-2.104h-2.12v2.104zm-26.51-7.36V7.357H.004V9.46zm5.302 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.302 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.302 0V7.357h-2.12V9.46zm5.3 0V7.357h-2.12V9.46zm5.302 0V7.357h-2.12V9.46zm5.301 0V7.357h-2.12V9.46zm5.302 0V7.357h-2.12V9.46zM2.12 2.102V0H0v2.103zm5.3 0V0H5.3v2.103zm5.302 0V0h-2.12v2.103zm5.301 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.3 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.302 0V0h-2.121v2.103zm5.3 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.301 0V0h-2.12v2.103zm5.302 0V0h-2.121v2.103zm5.3 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.31 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103zm5.301 0V0h-2.12v2.103zm5.302 0V0h-2.12v2.103z" fill="#833c75"/></svg>
       </div>
-      <PageCollapse :answer="faqList" :style="{ '--lal-color': '#833c75' }" />
+      <PageCollapse
+        :answer="faqList"
+        downarr="lal"
+        :style="{ '--lal-color': '#833c75' }"
+      />
     </section>
 
     <!-- Downloads -->
     <section
       id="download"
-      class="scroll-mt-17 lg:scroll-mt-50 container mx-auto px-3 xl:px-0 center gap-7 lg:gap-29 flex-col lg:flex-row mb-20 lg:mb-38 font-bold text-base lg:text-[42px] text-white whitespace-nowrap"
+      class="containe mb-35 lg:mb-50 text-base lg:text-[42px] text-white whitespace-nowrap flex flex-col gap-10 lg:gap-20 2xl:gap-40"
     >
       <a
-        href="/static/pdf/cmer-lal-01.pdf"
-        download="LAL患者手冊.pdf"
-        title="下載希瑪眼科LAL患者手冊"
-        class="flex relative bg-white p-1 lg:p-3 w-7/10 lg:w-2/5 lg:min-w-110 rounded-[48px] lg:rounded-[56px] shadow-[0_1.728px_1.728px_rgba(0,0,0,0.25)] lg:shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
-      >
-        <div
-          class="icon absolute animate-bounce bg-white rounded-full size-12 lg:size-26 center bottom-4 lg:bottom-5 left-3 lg:left-7 shadow-[-0.864px_-0.432px_1.728px_rgba(0,0,0,0.25)] lg:shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
-        >
-          <i class="iconfont icon-down text-lal text-2xl! lg:text-5xl!" />
-        </div>
-        <span
-          class="bg-lal text-center py-3 pr-3 pl-13 lg:pl-28 rounded-[44px] w-full"
-          >患者手冊</span
-        >
-      </a>
-      <a
-        href="/static/pdf/cmer-lal-02.pdf"
+        href="https://hkcmereye.com/template/default/pdf/%E9%98%B2%E7%B4%AB%E5%A4%96%E7%B7%9A%E7%9C%BC%E9%8F%A1%E6%89%8B%E5%86%8A.pdf"
         download="防紫外綫眼鏡手冊.pdf"
         title="下載希瑪眼科中心防紫外綫眼鏡手冊"
-        class="flex relative bg-white p-1 lg:p-3 w-7/10 lg:w-2/5 lg:min-w-110 rounded-[48px] lg:rounded-[56px] shadow-[0_1.728px_1.728px_rgba(0,0,0,0.25)] lg:shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
+        class="bg-lal down-item lg:pl-[calc(50vw-576px)] w-4/5 max-w-6xl flex py-5 lg:py-8 pl-5 gap-5 lg:gap-[10%]"
       >
-        <div
-          class="icon absolute animate-bounce bg-white rounded-full size-12 lg:size-26 center bottom-4 lg:bottom-5 left-3 lg:left-7 shadow-[-0.864px_-0.432px_1.728px_rgba(0,0,0,0.25)] lg:shadow-[0_4px_4px_rgba(0,0,0,0.25)]"
-        >
-          <i class="iconfont icon-down text-lal text-2xl! lg:text-5xl!" />
+        <img
+          src="https://statichk.cmermedical.com/newopd/icon/icon-pdf.webp"
+          alt="PDF Icon"
+          class="w-13 lg:w-[120px]"
+        />
+        <div class="text-center flex flex-col justify-center lg:gap-3">
+          <span>{{ t('pages.medical_service.lal.down.glasses') }}</span>
+          <span>{{ t('pages.medical_service.lal.down.title') }}</span>
         </div>
-        <span
-          class="bg-lal text-center py-3 pr-3 pl-13 lg:pl-28 rounded-[44px] w-full"
-          >防紫外綫眼鏡手冊</span
-        >
+      </a>
+      <a
+        href="https://hkcmereye.com/template/default/pdf/LAL患者手册.pdf"
+        download="LAL患者手冊.pdf"
+        title="下載希瑪眼科LAL患者手冊"
+        class="bg-lal down-item lg:pl-[calc(50vw-576px)] w-3/5 max-w-4xl flex py-5 lg:py-8 pl-5 gap-5 lg:gap-[10%]"
+      >
+        <img
+          src="https://statichk.cmermedical.com/newopd/icon/icon-pdf.webp"
+          alt="PDF Icon"
+          class="w-13 lg:w-[120px]"
+        />
+        <div class="text-center flex flex-col justify-center lg:gap-3">
+          <span>{{ t('pages.medical_service.lal.down.patient') }}</span>
+          <span>{{ t('pages.medical_service.lal.down.title') }}</span>
+        </div>
       </a>
     </section>
   </div>
 </template>
 <style lang="scss" scoped>
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px; // 横向滚动条高度
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00000026;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: #00000059;
+  }
+}
+* {
+  scrollbar-width: thin; // 细滚动条
+  scrollbar-color: #00000026 transparent;
+}
 .wrapper {
   max-width: 1152px;
   padding-left: 12px;
@@ -770,8 +706,49 @@ const faqList = [
     padding-right: 0;
   }
 }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.w-fit {
+  width: fit-content;
+}
+.-translate-x-1\/2 {
+  transform: translateX(-50%);
+}
+.size-full {
+  width: 100%;
+  height: 100%;
+}
 .text-lal {
   color: #833c75;
+}
+.bg-lal {
+  background-color: #833c75;
+}
+.intro-default {
+  text-align: justify;
+  color: #4d4d4d;
+  font-weight: bold;
+}
+.why {
+  .title-icon {
+    width: 44px;
+    height: 44px;
+    @media screen and (min-width: 1024px) {
+      width: 84px;
+      height: 84px;
+    }
+  }
+}
+.video-icon-play {
+  width: 20px;
+  height: 20px;
+  @media screen and (min-width: 1024px) {
+    width: 28px;
+    height: 28px;
+  }
 }
 @keyframes rotateImage {
   0% {
@@ -972,24 +949,6 @@ const faqList = [
       td:nth-child(3) {
         background-color: #f3fafb;
         border-right: 0.8px solid #6b6b6b;
-      }
-
-      &:last-child td:nth-child(2)::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-        bottom: 0;
-        background: linear-gradient(
-          90deg,
-          #3b0f35 0%,
-          #6d2e61 33%,
-          #833c75 50%,
-          #924c83 63%,
-          #bc75aa 90%,
-          #ce88bb 100%
-        );
       }
     }
   }

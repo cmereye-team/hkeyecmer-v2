@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-07-30 15:50:09
+ * @LastEditTime: 2026-07-31 13:44:27
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -376,7 +376,7 @@ const hashActive = (child: any) => {
                   :class="[
                     hashActive(child),
                     child.route.name ===
-                    'extended-depth-of-focus-lenses'
+                    'cataract-extended-depth-of-focus-lenses'
                       ? 'new'
                       : '',
                   ]"

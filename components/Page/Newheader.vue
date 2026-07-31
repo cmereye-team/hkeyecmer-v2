@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-07-30 15:54:51
+ * @LastEditTime: 2026-07-31 10:17:14
  * @FilePath: /components/Page/Newheader.vue
  * @Description: 移动端菜单
 -->
@@ -595,7 +595,6 @@ onMounted(() => {
             <img
               src="https://statichk.cmermedical.com/imgs/2023/05/12bb443b3f92a0d8.jpg"
               alt="微信QR"
-              srcset=""
             />
           </div>
         </el-drawer>
@@ -604,7 +603,7 @@ onMounted(() => {
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .ddd-enter,
 .ddd-leave-to {
   opacity: 0;
