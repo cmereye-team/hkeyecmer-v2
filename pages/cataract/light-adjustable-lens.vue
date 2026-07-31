@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-07-30 14:16:45
- * @LastEditTime: 2026-07-31 13:45:42
+ * @LastEditTime: 2026-07-31 16:14:30
  * @FilePath: /pages/cataract/light-adjustable-lens.vue
  * @Description: 光调节人工晶体
 -->
@@ -30,6 +30,106 @@ useHead({
     },
     { property: 'og:type', content: 'website' },
     { property: 'og:locale', content: 'zh_HK' },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      children: JSON.stringify({
+        '@context': 'https://schema.org',
+        '@graph': [
+          {
+            '@id': '#cmer-org',
+            '@type': 'MedicalOrganization',
+            name: '香港希瑪眼科醫療中心',
+            url: 'https://www.hkeyecmer.com/',
+            logo: 'https://statichk.cmermedical.com/newopd/common/logo.svg',
+            medicalSpecialty: [
+              'https://schema.org/Optometric',
+              'https://schema.org/Ophthalmologic',
+            ],
+            telephone: '+852 3956 2026',
+            address: {
+              '@type': 'PostalAddress',
+              postalCode: '000000',
+              streetAddress: '畢打街1-3號中建大廈1515室',
+              addressLocality: '中環',
+              addressRegion: '香港島',
+              addressCountry: 'HK',
+            },
+          },
+          {
+            '@type': 'MedicalWebPage',
+            '@id': 'https://www.hkeyecmer.com/cataract/light-adjustable-lens/#webpage',
+            name: 'Light Adjustable Lens™ 光調節人工晶體 (LAL)',
+            description:
+              t('pages.medical_service.lal.what.intro_origin'),
+            url: 'https://www.hkeyecmer.com/cataract/light-adjustable-lens/',
+            inLanguage: 'zh-HK',
+            provider: { '@id': '#cmer-org' },
+            breadcrumb: {
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                {
+                  '@type': 'ListItem',
+                  position: 1,
+                  name: '首頁',
+                  item: 'https://www.hkeyecmer.com/',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 2,
+                  name: '白內障',
+                  item: 'https://www.hkeyecmer.com/medical-service/cataract',
+                },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: '光調節人工晶體 (LAL)',
+                  item: 'https://www.hkeyecmer.com/cataract/light-adjustable-lens/',
+                },
+              ],
+            },
+          },
+          {
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: t('pages.medical_service.lal.faq.q1'),
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: t('pages.medical_service.lal.faq.a1'),
+                },
+              },
+              {
+                '@type': 'Question',
+                name: t('pages.medical_service.lal.faq.q2'),
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: t('pages.medical_service.lal.faq.a2'),
+                },
+              },
+              {
+                '@type': 'Question',
+                name: t('pages.medical_service.lal.faq.q3'),
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: t('pages.medical_service.lal.faq.a3'),
+                },
+              },
+              {
+                '@type': 'Question',
+                name: t('pages.medical_service.lal.faq.q4'),
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: t('pages.medical_service.lal.faq.a4'),
+                },
+              },
+            ],
+          },
+        ],
+      }),
+    },
   ],
 })
 const modules = [Pagination]
@@ -164,7 +264,9 @@ const faqList = [
               <h2
                 class="flex flex-col text-lal text-[clamp(18px,5.5vw,24px)] lg:text-5xl font-bold leading-normal mb-4 lg:mb-8"
               >
-                <span class="relative w-fit lal-what-icon">什麼是</span>
+                <span class="relative w-fit lal-what-icon">{{
+                  t('pages.medical_service.lal.what.title')
+                }}</span>
                 <span>Light Adjustable Lens™(LAL)？</span>
               </h2>
               <p class="intro-default">
@@ -258,7 +360,7 @@ const faqList = [
                             )
                           }}</span>
                         </template>
-                        <template #br><br class="block md:hidden" /></template>
+                        <template #br><br /></template>
                       </i18n-t>
                     </template>
                     <template v-else-if="row.key === 'personalize'">
@@ -302,6 +404,7 @@ const faqList = [
                             t('pages.medical_service.lal.table.rows.care.hl')
                           }}</span>
                         </template>
+                        <template #br><br /></template>
                       </i18n-t>
                     </template>
                     <template v-else>
@@ -320,7 +423,7 @@ const faqList = [
                       scope="global"
                       tag="span"
                     >
-                      <template #br><br class="block md:hidden" /></template>
+                      <template #br><br /></template>
                       <template #br2><br /></template>
                     </i18n-t>
                   </td>
@@ -480,9 +583,9 @@ const faqList = [
             {{ t('pages.medical_service.lal.why.intro') }}
           </p>
 
-          <div>
+          <div class="why-swiper">
             <!-- Mobile Swiper -->
-            <div class="lg:hidden relative pb-3 text-justify relative">
+            <div class="lg:hidden relative pb-3 relative">
               <Swiper
                 :modules="modules"
                 :pagination="{ clickable: true, el: '.why-pagination' }"
@@ -522,9 +625,7 @@ const faqList = [
             </div>
 
             <!-- Desktop Grid -->
-            <div
-              class="hidden lg:grid lg:grid-cols-3 lg:gap-x-9 lg:gap-y-6 text-justify"
-            >
+            <div class="hidden lg:grid lg:grid-cols-3 lg:gap-x-9 lg:gap-y-6">
               <div
                 class="why-slide flex flex-col justify-between lg:row-span-5"
               >
@@ -632,13 +733,13 @@ const faqList = [
     <!-- Downloads -->
     <section
       id="download"
-      class="containe mb-35 lg:mb-50 text-base lg:text-[42px] text-white whitespace-nowrap flex flex-col gap-10 lg:gap-20 2xl:gap-40"
+      class="download mb-35 lg:mb-50 text-base lg:text-[42px] text-white whitespace-nowrap flex flex-col gap-10 lg:gap-20 2xl:gap-40"
     >
       <a
         href="https://hkcmereye.com/template/default/pdf/%E9%98%B2%E7%B4%AB%E5%A4%96%E7%B7%9A%E7%9C%BC%E9%8F%A1%E6%89%8B%E5%86%8A.pdf"
         download="防紫外綫眼鏡手冊.pdf"
         title="下載希瑪眼科中心防紫外綫眼鏡手冊"
-        class="bg-lal down-item lg:pl-[calc(50vw-576px)] w-4/5 max-w-6xl flex py-5 lg:py-8 pl-5 gap-5 lg:gap-[10%]"
+        class="bg-lal down-item lg:pl-[calc(50vw-576px)] w-4/5 2xl:w-[calc(50vw-576px+800px)] flex py-5 lg:py-8 pl-5 gap-5 lg:gap-[10%]"
       >
         <img
           src="https://statichk.cmermedical.com/newopd/icon/icon-pdf.webp"
@@ -654,7 +755,7 @@ const faqList = [
         href="https://hkcmereye.com/template/default/pdf/LAL患者手册.pdf"
         download="LAL患者手冊.pdf"
         title="下載希瑪眼科LAL患者手冊"
-        class="bg-lal down-item lg:pl-[calc(50vw-576px)] w-3/5 max-w-4xl flex py-5 lg:py-8 pl-5 gap-5 lg:gap-[10%]"
+        class="bg-lal down-item lg:pl-[calc(50vw-576px)] w-3/5 2xl:w-[calc(50vw-576px+600px)] max-w-7xl flex py-5 lg:py-8 pl-5 gap-5 lg:gap-[10%]"
       >
         <img
           src="https://statichk.cmermedical.com/newopd/icon/icon-pdf.webp"
@@ -670,6 +771,17 @@ const faqList = [
   </div>
 </template>
 <style lang="scss" scoped>
+html[lang='en'] {
+  .why-swiper,
+  .intro-default {
+    text-align: left;
+  }
+  @media screen and (min-width: 1024px) {
+    .download {
+      font-size: 36px;
+    }
+  }
+}
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px; // 横向滚动条高度
@@ -726,6 +838,9 @@ const faqList = [
 }
 .bg-lal {
   background-color: #833c75;
+}
+.why-swiper {
+  text-align: justify;
 }
 .intro-default {
   text-align: justify;
