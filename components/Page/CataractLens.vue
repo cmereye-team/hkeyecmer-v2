@@ -281,7 +281,7 @@ const locale = useState<string>('locale.setting')
                 <template #pcbr><br class="hidden md:block" /></template>
               </i18n-t>
               <nuxt-link
-                to="/cataract/intraocular-lens-types"
+                to="/cataract/light-adjustable-lens"
                 class="absolute-horizon -bottom-2 z-10"
               >
                 <div class="relative">

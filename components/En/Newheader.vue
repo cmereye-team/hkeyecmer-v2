@@ -68,14 +68,43 @@ const menus = computed(() => {
     },
     {
       type: 'link',
-      text: t('pages.medical_service.medical_service'),
-      link: { path:  '/en/medical-service' }, // 醫療服務
+      text: t('pages.medical_service.cataract.cataract'),
+      link: { path: '/en/medical-service/cataract' }, // 白内障
+      styleClass: 'nav-cataract',
       childMenuList: [
         {
           type: 'link',
-          text: t('pages.medical_service.cataract.cataract'),
-          link: { path:  '/en/medical-service/cataract' },
+          text: t('pages.medical_service.cataract.cataract_title'),
+          link: { path: '/medical-service/cataract' },
         },
+        {
+          type: 'link',
+          text: t('pages.medical_service.multiFocal_intraocular_lens'),
+          link: { path: '/cataract/multifocal-lens' },
+        },
+        {
+          type: 'link',
+          text: t('pages.medical_service.edof.title'),
+          link: { path: '/cataract/extended-depth-of-focus-lenses' },
+          styleClass: 'new',
+        },
+        {
+          type: 'link',
+          text: t('pages.medical_service.lal.title'),
+          link: { path: '/cataract/light-adjustable-lens' },
+        },
+        {
+          type: 'link',
+          text: t('pages.medical_service.intraocular.title'),
+          link: { path: '/cataract/intraocular-lens-types' },
+        },
+      ],
+    },
+    {
+      type: 'link',
+      text: t('pages.medical_service.medical_service'),
+      link: { path:  '/en/medical-service' }, // 醫療服務
+      childMenuList: [
         {
           type: 'link',
           text: t('pages.medical_service.maculopathy'),
@@ -541,7 +570,7 @@ const changeLang = (_lang: any) => {
       width: 69px;
       min-width: 69px;
       height: 36px;
-      background: url(https://statichk.cmermedical.com/imgs/2023/06/a05a8310283f5a06.png)
+      background: url(https://statichk.cmermedical.com/HKEYECMER/common/hkeyecmer_logo_v1.svg)
         no-repeat;
       background-size: 100% 100%;
       cursor: pointer;
@@ -582,11 +611,6 @@ const changeLang = (_lang: any) => {
     }
   }
 }
-
-// :deep(.el-menu) {
-//   background-color: #f2f2f2;
-//   border-right: none;
-// }
 .el-menu {
   background-color: #f2f2f2;
   border-right: none;
@@ -611,55 +635,19 @@ const changeLang = (_lang: any) => {
   font-size: 16px;
   font-weight: 600;
 }
-// :deep(.el-menu) {
-//   background-color: #f2f2f2 !important;
-//   border-right: none !important;
-// }
-// :deep(.el-sub-menu) {
-//   border-bottom: 1px solid #dcdcdc !important;
-// }
-// :deep(.el-menu > section > .el-menu-item) {
-//   border-bottom: 1px solid #dcdcdc !important;
-// }
-// :deep(.el-menu-item) {
-//   color: #2958a3 !important;
-//   font-size: 16px !important;
-//   padding: 0 20px !important;
-// }
-// :deep(.el-sub-menu__title) {
-//   color: #2958a3 !important;
-//   font-size: 16px !important;
-// }
 .imgLists {
   display: flex;
-  justify-content: center;
-
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-right: 40px;
   & > div {
     width: 15px;
-    // height: 15px;
-    // & > div,
-    // & > a {
-    //   background-image: url(https://statichk.cmermedical.com/imgs/2023/07/6cc1329d65ca32ae.png);
-    //   background-repeat: no-repeat;
-    //   background-position: 5px 0;
-    //   // background-size: cover;
-    //   display: block;
-    // }
-    // &:nth-of-type(2) > a {
-    //   background-position: -29px 0;
-    // }
-    // &:nth-of-type(3) > a {
-    //   background-position: -63px 0;
-    // }
-    // &:nth-of-type(4) > div {
-    //   background-position: -98px 0;
-    // }
-    // &:nth-of-type(5) > a {
-    //   background-position: -133px 0;
-    // }
-    // &:not(:last-child) {
-    //   margin-right: 15px;
-    // }
+    gap: 14px;
+    i {
+      font-size: 20px;
+      color: #2958a3;
+    }
   }
 }
 .drawerIn {

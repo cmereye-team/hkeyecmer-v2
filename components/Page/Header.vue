@@ -544,7 +544,7 @@ const changeLang = (_lang: any) => {
       width: 69px;
       min-width: 69px;
       height: 36px;
-      background: url(https://statichk.cmermedical.com/imgs/2023/06/a05a8310283f5a06.png)
+      background: url(https://statichk.cmermedical.com/HKEYECMER/common/hkeyecmer_logo_v1.svg)
         no-repeat;
       background-size: 100% 100%;
       cursor: pointer;

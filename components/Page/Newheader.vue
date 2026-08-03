@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-07-31 10:17:14
+ * @LastEditTime: 2026-08-03 14:19:10
  * @FilePath: /components/Page/Newheader.vue
  * @Description: 移动端菜单
 -->
@@ -638,7 +638,7 @@ onMounted(() => {
       width: 69px;
       min-width: 69px;
       height: 36px;
-      background: url(https://statichk.cmermedical.com/imgs/2023/06/a05a8310283f5a06.png)
+      background: url(https://statichk.cmermedical.com/HKEYECMER/common/hkeyecmer_logo_v1.svg)
         no-repeat;
       background-size: 100% 100%;
       cursor: pointer;
@@ -727,64 +727,19 @@ onMounted(() => {
   font-size: 16px;
   font-weight: 600;
 }
-// :deep(.el-menu) {
-//   background-color: #f2f2f2 !important;
-//   border-right: none !important;
-// }
-// :deep(.el-sub-menu) {
-//   border-bottom: 1px solid #dcdcdc !important;
-// }
-// :deep(.el-menu > section > .el-menu-item) {
-//   border-bottom: 1px solid #dcdcdc !important;
-// }
-// :deep(.el-menu-item) {
-//   color: #2958a3 !important;
-//   font-size: 16px !important;
-//   padding: 0 20px !important;
-// }
-// :deep(.el-sub-menu__title) {
-//   color: #2958a3 !important;
-//   font-size: 16px !important;
-// }
 .imgLists {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 15px;
   margin-right: 40px;
-  // margin: 10px 40px 10px 0;
   & > div {
     width: 15px;
-    // height: 15px;
-
     gap: 14px;
     i {
       font-size: 20px;
       color: #2958a3;
     }
-    // & > div,
-    // & > a {
-    //   background-image: url(https://statichk.cmermedical.com/imgs/2023/07/6cc1329d65ca32ae.png);
-    //   background-repeat: no-repeat;
-    //   background-position: 5px 0;
-    //   // background-size: cover;
-    //   display: block;
-    // }
-    // &:nth-of-type(2) > a {
-    //   background-position: -27px 0;
-    // }
-    // &:nth-of-type(3) > a {
-    //   background-position: -58px 0;
-    // }
-    // &:nth-of-type(4) > div {
-    //   background-position: -92px 0;
-    // }
-    // &:nth-of-type(5) > a {
-    //   background-position: -125.5px 0;
-    // }
-    // &:not(:last-child) {
-    //   margin-right: 15px;
-    // }
   }
 }
 .drawerIn {
