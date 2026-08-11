@@ -792,7 +792,7 @@ onBeforeUnmount(() => {
     <section class="mb-13 lg:mb-15 text-[#5B97D0]">
       <div class="text-center mb-9 lg:mb-13">
         <h2 class="text-xl lg:text-5xl font-bold mb-[8px] lg:mb-[24px]">
-          客戶評分
+          客戶評價
         </h2>
         <p
           class="text-[clamp(0.75rem,-0.964rem_+_8.57vw,1.125rem)] font-bold lg:font-light"

@@ -462,8 +462,6 @@
         </div>
       </div>
     </div>
-
-    <!-- 诊所环境 -->
     <div class="bg-partTwo py-7 py-xs-2">
       <div
         class="text-center font-weight-bold text-xs-center cener_title fs-md-34 clinic_env fs-lg-34 fs-xs-26"
@@ -597,13 +595,11 @@
         </div>
       </div>
     </div>
-
-    <!-- 客户评分 -->
     <div>
       <div
         class="text-center font-weight-bold text-xs-center cener_title fs-md-34 mb-10 fs-lg-34 fs-xs-26 pingfen_title"
       >
-        客戶評分
+        客戶評價
       </div>
       <div class="person_box">
         <PageUserRatings />
