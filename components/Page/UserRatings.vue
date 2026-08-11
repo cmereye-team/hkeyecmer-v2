@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-07-03 14:36:32
- * @LastEditTime: 2026-07-03 15:58:31
+ * @LastEditTime: 2026-08-11 15:22:41
  * @FilePath: /components/Page/UserRatings.vue
  * @Description: 用户评价列表
 -->
@@ -72,7 +72,7 @@ const swiperBreakpoints = {
 </script>
 
 <template>
-  <div class="ratings-wrapper w-full max-w-[1920px] mx-auto py-25">
+  <div class="ratings-wrapper w-full mx-auto py-20">
     <swiper
       v-if="ratingList.length > 0"
       :modules="swiperModules"
