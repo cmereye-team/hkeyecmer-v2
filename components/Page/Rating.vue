@@ -74,7 +74,7 @@
               ></i>
             </div>
             <div
-              class="text-sm lg:text-base text-gray-700 leading-relaxed overflow-hidden line-clamp-4"
+              class="text-sm lg:text-base text-gray-700 leading-relaxed max-h-[96px] overflow-y-auto"
             >
               <p>{{ item.content }}</p>
             </div>

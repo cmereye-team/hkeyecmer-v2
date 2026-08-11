@@ -546,7 +546,7 @@
       <div
         class="text-center font-weight-bold text-xs-center cener_title fs-md-34 mb-10 fs-lg-34 fs-xs-26 pingfen_title"
       >
-        客戶評分
+        客戶評價
       </div>
       <div class="person_box">
         <PageUserRatings />
