@@ -90,7 +90,7 @@ const videos = [
 ]
 // 医生与诊所数字滚动目标
 const counterValues = ref({
-  doctors: 25,
+  doctors: 27,
   clinics: 10,
 })
 
