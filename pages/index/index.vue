@@ -310,7 +310,7 @@ const pageNav = ref([
 
 <template>
   <div class="homePage">
-    <CommonNotice text="由於目前網絡系統正進行緊急維護，我們的 WhatsApp 訊息接收可能會出現延遲或暫時無法連線的情況。建議閣下改用電話查詢、線上對話功能、官方社交平台Inbox或電子預約表格聯絡我們。如有不便之處，敬請見諒。" />
+    <!-- <CommonNotice text="由於目前網絡系統正進行緊急維護，我們的 WhatsApp 訊息接收可能會出現延遲或暫時無法連線的情況。建議閣下改用電話查詢、線上對話功能、官方社交平台Inbox或電子預約表格聯絡我們。如有不便之處，敬請見諒。" /> -->
     <div class="mbHomeSwiper">
       <swiper
         :loop="true"
@@ -634,7 +634,7 @@ const pageNav = ref([
   }
   .mbHomeSwiper {
     width: 100%;
-    // margin-top: 78px;
+    margin-top: 78px;
     display: block;
     .slideBox {
       img {

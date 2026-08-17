@@ -6,7 +6,7 @@ definePageMeta({
 const locale = useState<string>('locale.setting')
 const { t } = useLang()
 useHead(() => ({
-  title: t('pages.medical_service.maculopathy_head'),
+  title: t('tdk.maculopathy.title'),
   meta() {
     return [
       {
