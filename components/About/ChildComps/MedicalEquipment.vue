@@ -4,6 +4,14 @@ import { Navigation, Controller, Autoplay } from 'swiper'
 
 const medicalEquipment = [
   {
+    href: 'https://statichk.cmermedical.com/HKEYECMER/about/equipment-028-v1.webp',
+    title: 'Alcon Voyager™ DSLT',
+    title2: '',
+    content:
+      'Alcon Voyager™ DSLT 是愛爾康（Alcon）推出的一款*直接選擇性雷射小梁成形術（Direct Selective Laser Trabeculoplasty, DSLT）*設備，用於治療青光眼（Glaucoma）與高眼壓症（Ocular Hypertension, OHT）。它是目前首款也是唯一一款全自動化、非接觸式的 DSLT 裝置。',
+    from: '資料及圖片來源： Alcon',
+  },
+  {
     href: 'https://statichk.cmermedical.com/hkcmereye/about/equipment-027-v3.webp',
     title: 'Alcon UNITY VCS',
     title2: '',
@@ -301,64 +309,16 @@ const handleSlideClick = (index: number) => {
         >
           <div class="swiper_from">
             <div>
-              <svg
-                width="52"
-                height="53"
-                viewBox="0 0 52 53"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <line
-                  x1="2"
-                  y1="51"
-                  x2="2"
-                  y2="3"
-                  stroke="#9D9B9B"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="2"
-                  y1="2"
-                  x2="50"
-                  y2="2"
-                  stroke="#9D9B9B"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                />
-              </svg>
+              <!-- prettier-ignore -->
+              <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#9d9b9b" stroke-width="4" stroke-linecap="round" d="M2 51V3m0-1h48"/></svg>
             </div>
-            <div>
+            <div class="lg:text-justify">
               <div>{{ slideContent.content }}</div>
               <div>{{ slideContent.from }}</div>
             </div>
             <div>
-              <svg
-                width="52"
-                height="53"
-                viewBox="0 0 52 53"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <line
-                  x1="50"
-                  y1="2"
-                  x2="50"
-                  y2="50"
-                  stroke="#9D9B9B"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                />
-                <line
-                  x1="50"
-                  y1="51"
-                  x2="2"
-                  y2="51"
-                  stroke="#9D9B9B"
-                  stroke-width="4"
-                  stroke-linecap="round"
-                />
-              </svg>
+              <!-- prettier-ignore -->
+              <svg width="52" height="53" viewBox="0 0 52 53" fill="none" xmlns="http://www.w3.org/2000/svg"><path stroke="#9d9b9b" stroke-width="4" stroke-linecap="round" d="M50 2v48m0 1H2"/></svg>
             </div>
           </div>
         </swiper-slide>
@@ -435,7 +395,6 @@ const handleSlideClick = (index: number) => {
     line-height: 20px;
     /* or 167% */
 
-    text-align: justify;
     letter-spacing: 0.1em;
     text-indent: 28px;
     text-transform: uppercase;
