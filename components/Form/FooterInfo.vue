@@ -414,6 +414,7 @@ const disabledDate = (time: Date) => {
         letter-spacing: 0px;
         color: #828383;
         padding: 18px;
+        field-sizing: content;
       }
 
       :deep(.el-select) {

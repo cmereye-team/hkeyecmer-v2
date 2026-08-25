@@ -41,16 +41,16 @@ const SerListL = [
   {
     i: '03',
     imgUrl:
-      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser4.png',
-    des: 'pages.medical_service.muscae_volitantes',
-    link: '/medical-service/muscaeVolitantes',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser9.png',
+    des: 'pages.medical_service.amotioRetinae',
+    link: '/medical-service/amotioRetinae',
   },
   {
     i: '04',
     imgUrl:
-      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser9.png',
-    des: 'pages.medical_service.amotioRetinae',
-    link: '/medical-service/amotioRetinae',
+      'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/service/ser4.png',
+    des: 'pages.medical_service.muscae_volitantes',
+    link: '/medical-service/muscaeVolitantes',
   },
   {
     i: '05',

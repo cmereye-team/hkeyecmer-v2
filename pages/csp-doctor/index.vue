@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-01-12 18:00:41
- * @LastEditTime: 2026-05-09 11:45:52
+ * @LastEditTime: 2026-08-24 10:31:07
  * @FilePath: /pages/csp-doctor/index.vue
  * @Description: 耀眼行动医生列表页
 -->
@@ -335,39 +335,6 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
-    id: 22,
-    name: '李煒業',
-    cnName: '李炜业',
-    enName: 'Dr. Jacky Lee',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
-    area: 'hk',
-    regions: '香港',
-    clinic: [t('ppp.doctor.clinic.ct')],
-  },
-  {
-    id: 23,
-    name: '李煒業',
-    cnName: '李炜业',
-    enName: 'Dr. Jacky Lee',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
-    area: 'kl',
-    regions: '九龍',
-    clinic: [t('ppp.doctor.clinic.mk1')],
-  },
-  {
-    id: 24,
-    name: '李煒業',
-    cnName: '李炜业',
-    enName: 'Dr. Jacky Lee',
-    avatar:
-      'https://statichk.cmermedical.com/newopd/doctor/doctor-005-cover.webp',
-    area: 'nt',
-    regions: '新界',
-    clinic: [t('ppp.doctor.clinic.st'), t('ppp.doctor.clinic.yl')],
-  },
-  {
     id: 25,
     name: '李佑榮',
     cnName: '李佑荣',
@@ -391,6 +358,28 @@ const allDoctors = ref<Doctor[]>([
   },
   {
     id: 27,
+    name: '廖寶蓮',
+    cnName: '廖宝莲',
+    enName: 'Dr. Po Lin Leow',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/normal/doctor-025-normal.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: [t('ppp.doctor.clinic.ct1'), t('ppp.doctor.clinic.cwb')],
+  },
+  {
+    id: 28,
+    name: '廖寶蓮',
+    cnName: '廖宝莲',
+    enName: 'Dr. Po Lin Leow',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/normal/doctor-025-normal.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk3'),t('ppp.doctor.clinic.kt')],
+  },
+  {
+    id: 29,
     name: '梁苑珊',
     cnName: '梁苑珊',
     enName: 'Dr. Gloria Leung',
@@ -401,7 +390,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
-    id: 28,
+    id: 30,
     name: '梁苑珊',
     cnName: '梁苑珊',
     enName: 'Dr. Gloria Leung',
@@ -412,7 +401,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.mk'), t('ppp.doctor.clinic.kt')],
   },
   {
-    id: 29,
+    id: 31,
     name: '梁苑珊',
     cnName: '梁苑珊',
     enName: 'Dr. Gloria Leung',
@@ -427,7 +416,7 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 30,
+    id: 32,
     name: '李德倫',
     cnName: '李德伦',
     enName: 'Dr. Stephen Li',
@@ -438,7 +427,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
-    id: 31,
+    id: 33,
     name: '李德倫',
     cnName: '李德伦',
     enName: 'Dr. Stephen Li',
@@ -449,7 +438,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.mk'), t('ppp.doctor.clinic.kt')],
   },
   {
-    id: 32,
+    id: 34,
     name: '李德倫',
     cnName: '李德伦',
     enName: 'Dr. Stephen Li',
@@ -464,7 +453,7 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 33,
+    id: 35,
     name: '吳兆駿',
     cnName: '吴兆骏',
     enName: 'Dr. Danny Ng',
@@ -475,7 +464,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
-    id: 34,
+    id: 36,
     name: '吳兆駿',
     cnName: '吴兆骏',
     enName: 'Dr. Danny Ng',
@@ -486,7 +475,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
-    id: 35,
+    id: 37,
     name: '吳兆駿',
     cnName: '吴兆骏',
     enName: 'Dr. Danny Ng',
@@ -497,7 +486,40 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.yl'), t('ppp.doctor.clinic.tko')],
   },
   {
-    id: 36,
+    id: 38,
+    name: '吳詠祈',
+    cnName: '吴咏祈',
+    enName: 'Dr. Vikki Ng',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/normal/doctor-026-normal.webp',
+    area: 'hk',
+    regions: '香港',
+    clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
+  },
+  {
+    id: 39,
+    name: '吳詠祈',
+    cnName: '吴咏祈',
+    enName: 'Dr. Vikki Ng',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/normal/doctor-026-normal.webp',
+    area: 'kl',
+    regions: '九龍',
+    clinic: [t('ppp.doctor.clinic.mk3'), t('ppp.doctor.clinic.kt')],
+  },
+  {
+    id: 40,
+    name: '吳詠祈',
+    cnName: '吴咏祈',
+    enName: 'Dr. Vikki Ng',
+    avatar:
+      'https://statichk.cmermedical.com/newopd/doctor/normal/doctor-026-normal.webp',
+    area: 'nt',
+    regions: '新界',
+    clinic: [t('ppp.doctor.clinic.tko')],
+  },
+  {
+    id: 41,
     name: '尹浩柟',
     cnName: '尹浩楠',
     enName: 'Dr. Kelvin Wan',
@@ -508,7 +530,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
-    id: 37,
+    id: 42,
     name: '尹浩柟',
     cnName: '尹浩楠',
     enName: 'Dr. Kelvin Wan',
@@ -519,7 +541,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.mk'), t('ppp.doctor.clinic.kt')],
   },
   {
-    id: 38,
+    id: 43,
     name: '尹浩柟',
     cnName: '尹浩楠',
     enName: 'Dr. Kelvin Wan',
@@ -535,7 +557,7 @@ const allDoctors = ref<Doctor[]>([
     ],
   },
   {
-    id: 39,
+    id: 44,
     name: '黃俊華',
     cnName: '黄俊华',
     enName: 'Dr. Alex Wong',
@@ -546,7 +568,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct')],
   },
   {
-    id: 40,
+    id: 45,
     name: '黃俊華',
     cnName: '黄俊华',
     enName: 'Dr. Alex Wong',
@@ -557,7 +579,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.mk1')],
   },
   {
-    id: 41,
+    id: 46,
     name: '黃俊華',
     cnName: '黄俊华',
     enName: 'Dr. Alex Wong',
@@ -568,7 +590,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.st1'), t('ppp.doctor.clinic.yl')],
   },
   {
-    id: 42,
+    id: 47,
     name: '邱俊源',
     cnName: '邱俊源',
     enName: 'Dr. Jackey Yau',
@@ -579,7 +601,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.ct'), t('ppp.doctor.clinic.cwb')],
   },
   {
-    id: 43,
+    id: 48,
     name: '邱俊源',
     cnName: '邱俊源',
     enName: 'Dr. Jackey Yau',
@@ -590,7 +612,7 @@ const allDoctors = ref<Doctor[]>([
     clinic: [t('ppp.doctor.clinic.mk1'), t('ppp.doctor.clinic.kt')],
   },
   {
-    id: 44,
+    id: 49,
     name: '邱俊源',
     cnName: '邱俊源',
     enName: 'Dr. Jackey Yau',
@@ -606,7 +628,7 @@ const allDoctors = ref<Doctor[]>([
   },
 ])
 const searchKeyword = ref('')
-const itemsPerPage = 10
+const itemsPerPage = 50
 const currentPage = ref<number>(1)
 watch([activeTab, searchKeyword], () => {
   currentPage.value = 1
@@ -791,7 +813,7 @@ onUnmounted(() => {
     </section>
     <section>
       <PPPDoctor :list="paginatedDoctors" />
-      <p class="my-2 max-w-5xl mx-auto text-sm md:text-base lg:text-xl">{{ t('ppp.doctor.sort') }}</p>
+      <p class="my-2 pl-3 xl:pl-0 max-w-5xl mx-auto text-sm md:text-base lg:text-xl">{{ t('ppp.doctor.sort') }}</p>
       <div
         v-if="displayedDoctors.length > 0"
         class="pagination flex items-center justify-center gap-4 mt-10 mb-20"
@@ -810,7 +832,7 @@ onUnmounted(() => {
         >
           {{ currentPage - 1 }}
         </div>
-        <div class="page active">
+        <div v-if="totalPages > 1" class="page active">
           {{ currentPage }}
         </div>
         <span v-if="currentPage + 1 < totalPages">...</span>
