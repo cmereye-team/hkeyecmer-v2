@@ -585,7 +585,8 @@ const bannerData = {
         <div>
           <div>
             <img
-              src="https://statichk.cmermedical.com/imgs/2023/06/b38916f2f6699954.png"
+              src="https://statichk.cmermedical.com/opd/imgs/16031786453955942.webp"
+              class="ocular-cover"
               :title="locale === 'en' ? 'Blepharitis Symptoms' : `眼臉炎症狀`"
               :alt="
                 locale === 'en'
@@ -625,7 +626,8 @@ const bannerData = {
             </div>
             <div>
               <img
-                src="https://statichk.cmermedical.com/imgs/2023/06/4e605cb3a688c00c.png"
+                src="https://statichk.cmermedical.com/opd/imgs/1603178645395594.webp"
+                class="ocular-cover"
                 :title="
                   locale === 'en'
                     ? 'Blepharitis Causes-Rubbing Eyes'
@@ -2085,6 +2087,11 @@ const bannerData = {
   </div>
 </template>
 <style lang="scss" scoped>
+.ocular-cover {
+  width: 100%;
+  max-width: 576px;
+  border-radius: 24px;
+}
 .ocularSurfaceDiseases_nav {
   max-width: 1200px;
   margin: 100px auto -120%;
@@ -2218,6 +2225,7 @@ const bannerData = {
         margin: 40px auto 120px;
         padding-left: 20px;
         display: flex;
+        gap: 12px;
         align-items: center;
         justify-content: space-between;
         & > div:nth-child(1) {
