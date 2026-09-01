@@ -20,21 +20,19 @@ useHead(() => ({
 const toLinkPage = (_data: any) => {
   window.location.href = `/ophthalmic-information/detail?id=${_data.id}`
 }
-let healthList = ref([
-  {
-    id: '',
-    img: '',
-    title: '',
-    text: [],
-    link: '',
-    date: ''
-  }
-])
+interface newsItem {
+  id: number
+  img: string
+  title: string
+  text: string[]
+  link: string
+  date: string
+}
+let healthList = ref(<newsItem[]>[])
 let totalPageNum = ref(0)
 let actPageNum = ref(1) 
 let errorPage = ref(false)
 const getMainContent = async () => {
-  
   const loading = ElLoading.service({
     lock: true,
     text: 'Loading',
@@ -51,7 +49,7 @@ const getMainContent = async () => {
     MM = MM < 10 ? ('0' + MM) : MM;
     let d = date.getDate();
     return {
-      id: item.id,
+      id: Number(item.id),
       img: `https://hkcmereye.com${item.ico}`,
       title: item.title,
       text: [item.description],
@@ -106,7 +104,7 @@ onMounted(()=>{
             src="https://statichk.cmermedical.com/imgs/2023/08/cfbef34814bd88ba.jpg"/>
       </div>
       <div>
-        <div>{{$t('pages.ophthalmic_information.ophthalmic_message_text.message_text1')}}</div>
+        <h1>{{$t('pages.ophthalmic_information.ophthalmic_message_text.message_text1')}}</h1>
         <div>Health topics</div>
         <div>Health topics</div>
         <div>Health topics</div>
@@ -129,17 +127,21 @@ onMounted(()=>{
         v-for="(item, index) in healthList"
         :key="index"
         @click="toLinkPage(item)"
+        class="article"
       >
         <div>
           <img :src="item.img" :alt="item.title" />
           <div>{{ item.date }}</div>
         </div>
         <div>
-          <div>{{ $t(item.title) }}</div>
-          <div>
+          <h2 class="article-title">{{ $t(item.title) }}</h2>
+          <div class="article-tag pt-3 lg:pt-5" v-if="[6151, 6152, 6153].includes(item.id)">
+            <span class="bg-primary text-white text-xs lg:text-xl px-2 py-1 mt-1 mb-2 lg:mt-2 rounded-xs">{{$t('pages.ophthalmic_information.ophthalmic_message_text.mainland')}}</span>
+          </div>
+          <div class="article-desc">
             <div v-for="(ele, i) in item.text" :key="i">{{ $t(ele) }}</div>
           </div>
-          <div>
+          <div class="article-button">
             {{
               $t(
                 'pages.ophthalmic_information.ophthalmic_message_text.message_text4'
@@ -330,7 +332,7 @@ onMounted(()=>{
       display: flex;
       flex-direction: column;
       justify-content: center;
-      & > div:nth-child(1) {
+      .article-title {
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 400;
@@ -342,7 +344,7 @@ onMounted(()=>{
         padding-bottom: 20px;
       }
 
-      & > div:nth-child(1)::after {
+      .article-title::after {
         content: '';
         border-bottom: solid #8ad8dd;
         width: 312px;
@@ -353,7 +355,7 @@ onMounted(()=>{
         bottom: 0;
       }
 
-      & > div:nth-child(2) {
+      .article-desc {
         margin-top: 31px;
         font-family: 'Noto Sans HK';
         font-style: normal;
@@ -371,14 +373,13 @@ onMounted(()=>{
         }
       }
 
-      & > div:nth-child(3) {
+      .article-button {
         position: absolute;
         bottom: 38px;
         right: 38px;
         width: 95px;
         height: 37.27px;
         background: #8ad8dd;
-
         font-family: 'Noto Sans HK';
         font-style: normal;
         font-weight: 500;
@@ -510,21 +511,21 @@ onMounted(()=>{
       }
       & > div:nth-child(2) {
         width: 100%;
-        & > div:nth-child(1) {
+        .article-title {
           font-size: 18px;
           line-height: 1.6;
           padding-bottom: 10px;
         }
-        & > div:nth-child(1)::after {
+        .article-title::after {
           width: 140px;
           height: 1.5px;
           border: none;
           background: #8ad8dd;
         }
-        & > div:nth-child(2) {
+        .article-desc {
           margin-top: 26px;
         }
-        & > div:nth-child(3) {
+        .article-button {
           position: initial;
           margin: 25px auto 0;
         }
