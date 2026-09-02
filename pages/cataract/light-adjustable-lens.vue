@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-07-30 14:16:45
- * @LastEditTime: 2026-07-31 16:14:30
+ * @LastEditTime: 2026-09-02 10:46:13
  * @FilePath: /pages/cataract/light-adjustable-lens.vue
  * @Description: 光调节人工晶体
 -->
@@ -59,10 +59,10 @@ useHead({
           },
           {
             '@type': 'MedicalWebPage',
-            '@id': 'https://www.hkeyecmer.com/cataract/light-adjustable-lens/#webpage',
+            '@id':
+              'https://www.hkeyecmer.com/cataract/light-adjustable-lens/#webpage',
             name: 'Light Adjustable Lens™ 光調節人工晶體 (LAL)',
-            description:
-              t('pages.medical_service.lal.what.intro_origin'),
+            description: t('pages.medical_service.lal.what.intro_origin'),
             url: 'https://www.hkeyecmer.com/cataract/light-adjustable-lens/',
             inLanguage: 'zh-HK',
             provider: { '@id': '#cmer-org' },
@@ -569,7 +569,7 @@ const faqList = [
 
       <!-- Why choose LAL -->
       <section
-        class="lal-bg-deco why relative before:hidden lg:before:block lg:before:bottom-6 lg:before:-left-37 pb-12 lg:pb-35 lg:mb-20"
+        class="lal-bg-deco why relative before:hidden lg:before:block lg:before:bottom-6 lg:before:-left-37 pb-12 lg:pb-35"
       >
         <div class="wrapper max-w-7xl">
           <div class="center gap-3 lg:gap-5 mb-10 lg:mb-18">
@@ -583,7 +583,7 @@ const faqList = [
             {{ t('pages.medical_service.lal.why.intro') }}
           </p>
 
-          <div class="why-swiper">
+          <div class="why-swiper mb-10 lg:mb-20">
             <!-- Mobile Swiper -->
             <div class="lg:hidden relative pb-3 relative">
               <Swiper
@@ -627,9 +627,9 @@ const faqList = [
             <!-- Desktop Grid -->
             <div class="hidden lg:grid lg:grid-cols-3 lg:gap-x-9 lg:gap-y-6">
               <div
-                class="why-slide flex flex-col justify-between lg:row-span-5"
+                class="why-slide flex flex-col justify-between lg:row-span-4"
               >
-                <div>
+                <div class="z-10">
                   <h3 class="text-3xl font-bold text-lal mb-2">
                     {{ whyItems[0].title }}
                   </h3>
@@ -643,7 +643,7 @@ const faqList = [
               <div
                 class="why-slide lg:min-h-[328px] lg:col-span-2 lg:row-span-2 flex flex-col lg:flex-row justify-between items-center gap-4"
               >
-                <div class="flex-1">
+                <div class="flex-1 z-10">
                   <h3 class="text-3xl font-bold text-lal mb-2">
                     {{ whyItems[1].title }}
                   </h3>
@@ -657,7 +657,7 @@ const faqList = [
               <div
                 class="why-slide lg:min-h-[328px] lg:col-span-2 lg:row-span-2 flex flex-col lg:flex-row justify-between items-center gap-4"
               >
-                <div class="flex-1 relative z-[1]">
+                <div class="flex-1 relative z-10">
                   <h3 class="text-3xl font-bold text-lal mb-2">
                     {{ whyItems[2].title }}
                   </h3>
@@ -674,41 +674,47 @@ const faqList = [
                   </p>
                 </div>
               </div>
-              <div class="lg:col-span-2 flex items-center justify-center">
-                <a
-                  :href="whatsappUrl"
-                  target="_blank"
-                  rel="noopener"
-                  class="lal-button !w-full"
-                >
-                  <span class="tracking-wide">{{
-                    t('pages.medical_service.lal.why.button')
-                  }}</span>
-                  <!-- prettier-ignore -->
-                  <svg class="ml-4" xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="m4.366 26.171 10.916-10.955c.954-.957.954-2.446 0-3.511L4.366.868C3.412-.197 2.036-.306 1.082.65l-.423.424C-.08 1.923-.295 2.879.55 3.737c2.655 2.653 5.3 5.306 8.054 8.076.954.849.954 2.446 0 3.393C5.85 17.868 3.196 20.62.55 23.282c-.846.75-.63 1.805.108 2.653l.423.424c.954.956 2.33.74 3.284-.207z" fill="#833c75"/></g><defs><clipPath id="a"><path fill="#fff" d="M16 0v27H0V0z"/></clipPath></defs></svg>
-                </a>
-              </div>
             </div>
-
-            <div class="mt-8 flex justify-center lg:hidden">
+          </div>
+          <div>
+            <div class="flex flex-col lg:flex-row items-center gap-5 lg:gap-20 mb-8 lg:mb-18">
+              <iframe
+                src="https://www.youtube.com/embed/rEw9ZZ_vMeU"
+                title="【白內障手術：固定和可調節人工晶體】香港希瑪眼科中心 | 光調節人工晶體介紹"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                class="w-full lg:w-1/2 aspect-video"
+              ></iframe>
+              <iframe
+                src="https://www.youtube.com/embed/xpcUExIvFjk"
+                title="【Testimonial Video - Patient Becky Davies】香港希瑪眼科中心 | 光調節人工晶體真實用家分享"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+                class="w-full lg:w-1/2 aspect-video"
+              ></iframe>
+            </div>
+            <div class="w-fit mx-auto">
               <a
                 :href="whatsappUrl"
                 target="_blank"
                 rel="noopener"
-                class="lal-button w-full"
+                class="lal-button !w-full"
               >
                 <span class="tracking-wide">{{
                   t('pages.medical_service.lal.why.button')
                 }}</span>
                 <!-- prettier-ignore -->
-                <svg class="ml-3" xmlns="http://www.w3.org/2000/svg" width="8" height="13" viewBox="0 0 8 13" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M1.992 11.953 6.976 6.95c.436-.437.436-1.117 0-1.603L1.992.397C1.556-.087.927-.137.492.3L.299.492c-.337.388-.436.825-.05 1.216C1.462 2.92 2.67 4.131 3.927 5.396c.436.387.436 1.117 0 1.55C2.67 8.16 1.457 9.416.249 10.632c-.386.342-.287.824.05 1.211l.193.194c.435.437 1.064.338 1.5-.095z" fill="#833c75"/></svg>
+                <svg class="ml-4" xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none"><g clip-path="url(#a)"><path fill-rule="evenodd" clip-rule="evenodd" d="m4.366 26.171 10.916-10.955c.954-.957.954-2.446 0-3.511L4.366.868C3.412-.197 2.036-.306 1.082.65l-.423.424C-.08 1.923-.295 2.879.55 3.737c2.655 2.653 5.3 5.306 8.054 8.076.954.849.954 2.446 0 3.393C5.85 17.868 3.196 20.62.55 23.282c-.846.75-.63 1.805.108 2.653l.423.424c.954.956 2.33.74 3.284-.207z" fill="#833c75"/></g><defs><clipPath id="a"><path fill="#fff" d="M16 0v27H0V0z"/></clipPath></defs></svg>
               </a>
             </div>
           </div>
         </div>
       </section>
     </div>
-
     <!-- FAQ -->
     <section
       id="question"
@@ -1230,6 +1236,7 @@ html[lang='en'] {
       right: auto;
       rotate: 0deg;
       background-position: left bottom;
+      z-index: 1;
     }
 
     &:nth-child(2)::before {
@@ -1239,6 +1246,7 @@ html[lang='en'] {
       bottom: -40px;
       right: 20px;
       background-position: right;
+      z-index: 1;
     }
 
     &:nth-child(3)::before {
@@ -1249,6 +1257,7 @@ html[lang='en'] {
       right: 0;
       background-position: right;
       background-size: contain;
+      z-index: 1;
     }
   }
 }

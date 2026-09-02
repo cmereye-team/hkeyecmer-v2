@@ -4,6 +4,14 @@ import { Navigation, Controller, Autoplay } from 'swiper'
 
 const medicalEquipment = [
   {
+    href: 'https://statichk.cmermedical.com/hkcmereye/equipment/equipment-029-v1.webp',
+    title: 'Alcon VERION® Image Guided Syste',
+    title2: '',
+    content:
+      '整合「術前影像量測」、「手術規劃」及「術中導航」三大功能，透過數碼化系統處理，能大幅減少人手轉錄與標記所產生的誤差。系統專為提升手術精準度而設，能優化散光及多焦點人工水晶體的定位。',
+    from: '資料及圖片來源： Alcon',
+  },
+  {
     href: 'https://statichk.cmermedical.com/HKEYECMER/about/equipment-028-v1.webp',
     title: 'Alcon Voyager™ DSLT',
     title2: '',
