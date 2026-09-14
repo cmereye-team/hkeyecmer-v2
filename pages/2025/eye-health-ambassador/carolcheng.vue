@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-15 14:59:45
- * @LastEditTime: 2026-03-27 14:15:15
+ * @LastEditTime: 2026-09-09 16:04:13
  * @FilePath: /pages/2025/eye-health-ambassador/carolcheng.vue
  * @Description: 眼睛健康大使-郑裕玲小姐
 -->
@@ -455,10 +455,9 @@ onBeforeUnmount(() => {
     <!-- 頂部裝飾偽元素 -->
     <div class="video relative">
       <!-- 首屏視頻 -->
-      <section class="mt-18.5 [@media(min-width:820px)]:mt-0 lg:-z-1">
+      <!-- <section class="mt-18.5 [@media(min-width:820px)]:mt-0 lg:-z-1">
         <div class="flex justify-center video-wrapper">
           <div class="relative aspect-video w-full xl:h-[680px] xl:w-[1210px]">
-            <!-- 画中画 wrapper -->
             <div class="js-pip-wrapper relative w-full h-full">
               <video
                 ref="videoEl"
@@ -470,7 +469,6 @@ onBeforeUnmount(() => {
                 loop
                 src="https://statichk.cmermedical.com/newopd/video/do-banner-v3.mp4"
               />
-              <!-- 全区域触发控制条显示 -->
               <div
                 class="absolute inset-0 pb-32"
                 @mousemove="showControlsIfHidden"
@@ -541,11 +539,10 @@ onBeforeUnmount(() => {
                 </button>
               </div>
             </div>
-            <!-- 用来检测是否在视口的 sentinel（放在视频下方一点点） -->
             <div class="js-pip-sentinel h-1"></div>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Do姐介紹 -->
       <section class="kol container mx-auto px-3 xl:px-0 pb-15 lg:pb-30">

@@ -718,6 +718,17 @@ const bannerData = {
               </div>
             </div>
           </div>
+          <div class="mb-10 -mt-6 md:my-0">
+            <iframe
+              src="https://www.youtube.com/embed/tUf5VsOe89o"
+              title="【生眼瘡點算好？教你正確處理千祈唔好盲目忍！】"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+              class="w-full lg:w-1/2 mx-auto aspect-video"
+            ></iframe>
+          </div>
         </div>
       </div>
       <div id="keratitis">
@@ -2274,7 +2285,7 @@ const bannerData = {
     }
     & > div:nth-child(5) {
       & > div:nth-child(2) {
-        margin: 46px auto 160px;
+        margin: 46px auto 100px;
         display: flex;
         justify-content: space-between;
         & > div {
@@ -3941,8 +3952,8 @@ const bannerData = {
           flex-direction: column;
           & > div {
             width: 100%;
-            margin-bottom: 35px;
-            padding-bottom: 60px;
+            margin-bottom: 12px;
+            padding-bottom: 48px;
             & > div:nth-child(1) {
               & > div:nth-child(2) {
                 margin-right: 0;

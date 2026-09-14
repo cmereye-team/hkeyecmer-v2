@@ -3,10 +3,19 @@ import { Autoplay } from 'swiper'
 const locale = useState<string>('locale.setting')
 const awardsList = [
   {
+    imgUrl: 'https://statichk.cmermedical.com/newopd/about/awards/award-020-v1.webp',
+    year: 'pages.about_us.awards.awards_year_16',
+    des: 'pages.about_us.awards.awards_des_19',
+    link: 'https://01market.hk01.com/?popup=healtheasyawards2026',
+    alt: '希瑪眼科中心_卓越眼科醫療服務大獎2026',
+    alt_en: 'Award for Outstanding Ophthalmological Medical Services Logo',
+    title_en: 'Award for Outstanding Ophthalmological Medical Services',
+  },
+  {
     imgUrl: 'https://statichk.cmermedical.com/newopd/about/awards/award-019-v1.avif',
     year: 'pages.about_us.awards.awards_year_16',
     des: 'pages.about_us.awards.awards_des_18',
-    link: 'https://www.facebook.com/share/p/1Cfg4u8vQX/',
+    link: 'https://www.mnhd.org.hk/post/%E9%BA%A5%E9%9B%85%E7%B7%BB%E3%80%81%E4%BD%8D%E5%85%83%E5%A0%82%E3%80%81%E5%B8%8C%E7%91%AA%E7%9C%BC%E7%A7%91%E4%B8%AD%E5%BF%83%E3%80%81%E6%96%A7%E6%A8%99%E9%A9%85%E9%A2%A8%E6%B2%B9%E7%AD%89%E5%8B%87%E5%A5%AA%E5%81%A5%E5%BA%B7%E5%93%81%E7%89%8C%E6%88%90%E5%B0%B1%E5%A4%A7%E7%8D%8E',
     alt: '希瑪眼科中心_健康品牌成就大獎2026',
     alt_en: 'Healthcare Professionals’ Choice - Extraordinary Healthcare Brand Awards 2026 Logo',
     title_en: 'Healthcare Professionals’ Choice - Extraordinary Healthcare Brand Awards 2026',
