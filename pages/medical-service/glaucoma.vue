@@ -532,8 +532,10 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/青光眼1.png',
-  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/青光眼2.png',
+  pcSrc:
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/青光眼1.png',
+  mbSrc:
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/青光眼2.png',
   cnName: '青光眼',
   enName: 'GLAUCOMA',
   textColor: '#3EC6BE',
@@ -859,6 +861,18 @@ const bannerData = {
             </div>
           </div>
         </div>
+        <div class="video-wrap mt-5 md:mt-8 xl:mt-12">
+          <iframe
+            width="560"
+            height="315"
+            class="video-main"
+            src="https://www.youtube.com/embed/J5GFIwlGPk0?enablejsapi=1"
+            title="【青光眼有咩症狀？眼壓高就一定係青光眼？】"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
         <!-- button -->
         <div class="serviceBtnStyle">
           <service-button-icon
@@ -906,20 +920,8 @@ const bannerData = {
               }}
             </div>
             <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="18px"
-                height="24px"
-              >
-                <image
-                  x="0px"
-                  y="0px"
-                  width="18px"
-                  height="24px"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEX///9Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo57///+3G/yLAAAAKXRSTlMAAJkGwhXi4zL1WP6IiQO1D7KnqBLkRpMK2DX7Nn+ABMnKJ2wBuRvtV8Na3ggAAAABYktHRACIBR1IAAAAB3RJTUUH5wULDjk49GyRxQAAAJhJREFUGNOd0EkSgjAURdE8GgWigEorKkhr9r9BISGdQ+/o1xm9+oQQh+kcwnM9JZ4rCP5hl6OPnRCEXMIAihDRVWgEg3Ba6QyL4oQlsU1ILyk0/dmV/XQjWW5LnhEU1BRaYJ1QmlRio6rWUleccG+kNA8IwlPSC5LaTsi7VYSePyzsoQnDRgNMGifGptEizMsywyZ8Inl9AfVQG4htGbFwAAAAAElFTkSuQmCC"
-                />
-              </svg>
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="24"><image width="18" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEX///9Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo57///+3G/yLAAAAKXRSTlMAAJkGwhXi4zL1WP6IiQO1D7KnqBLkRpMK2DX7Nn+ABMnKJ2wBuRvtV8Na3ggAAAABYktHRACIBR1IAAAAB3RJTUUH5wULDjk49GyRxQAAAJhJREFUGNOd0EkSgjAURdE8GgWigEorKkhr9r9BISGdQ+/o1xm9+oQQh+kcwnM9JZ4rCP5hl6OPnRCEXMIAihDRVWgEg3Ba6QyL4oQlsU1ILyk0/dmV/XQjWW5LnhEU1BRaYJ1QmlRio6rWUleccG+kNA8IwlPSC5LaTsi7VYSePyzsoQnDRgNMGifGptEizMsywyZ8Inl9AfVQG4htGbFwAAAAAElFTkSuQmCC"/></svg>
               {{
                 $t(
                   'pages.medical_service.service_glaucoma_title.service_glaucoma_title8'
@@ -1014,20 +1016,8 @@ const bannerData = {
               }}
             </div>
             <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="18px"
-                height="24px"
-              >
-                <image
-                  x="0px"
-                  y="0px"
-                  width="18px"
-                  height="24px"
-                  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEX///9Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo57///+3G/yLAAAAKXRSTlMAAJkGwhXi4zL1WP6IiQO1D7KnqBLkRpMK2DX7Nn+ABMnKJ2wBuRvtV8Na3ggAAAABYktHRACIBR1IAAAAB3RJTUUH5wULDjk49GyRxQAAAJhJREFUGNOd0EkSgjAURdE8GgWigEorKkhr9r9BISGdQ+/o1xm9+oQQh+kcwnM9JZ4rCP5hl6OPnRCEXMIAihDRVWgEg3Ba6QyL4oQlsU1ILyk0/dmV/XQjWW5LnhEU1BRaYJ1QmlRio6rWUleccG+kNA8IwlPSC5LaTsi7VYSePyzsoQnDRgNMGifGptEizMsywyZ8Inl9AfVQG4htGbFwAAAAAElFTkSuQmCC"
-                />
-              </svg>
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="24"><image width="18" height="24" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAYCAMAAADAi10DAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAgVBMVEX///9Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo55Zo57///+3G/yLAAAAKXRSTlMAAJkGwhXi4zL1WP6IiQO1D7KnqBLkRpMK2DX7Nn+ABMnKJ2wBuRvtV8Na3ggAAAABYktHRACIBR1IAAAAB3RJTUUH5wULDjk49GyRxQAAAJhJREFUGNOd0EkSgjAURdE8GgWigEorKkhr9r9BISGdQ+/o1xm9+oQQh+kcwnM9JZ4rCP5hl6OPnRCEXMIAihDRVWgEg3Ba6QyL4oQlsU1ILyk0/dmV/XQjWW5LnhEU1BRaYJ1QmlRio6rWUleccG+kNA8IwlPSC5LaTsi7VYSePyzsoQnDRgNMGifGptEizMsywyZ8Inl9AfVQG4htGbFwAAAAAElFTkSuQmCC"/></svg>
               {{
                 $t(
                   'pages.medical_service.service_glaucoma_title.service_glaucoma_title16'
@@ -1105,22 +1095,8 @@ const bannerData = {
             class="highrisk-item"
           >
             <div>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                width="277px"
-                height="321px"
-              >
-                <path
-                  fill-rule="evenodd"
-                  stroke="rgb(158, 213, 209)"
-                  stroke-width="4px"
-                  stroke-linecap="butt"
-                  stroke-linejoin="miter"
-                  fill="none"
-                  d="M137.493,316.812 L1.985,238.344 L1.985,81.409 L137.493,2.942 L273.000,81.409 L273.000,238.344 L137.493,316.812 Z"
-                />
-              </svg>
+              <!-- prettier-ignore -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="277" height="321"><path stroke="#9ed5d1" stroke-width="4" fill="none" d="M137.493 316.812 1.985 238.344V81.409L137.493 2.942 273 81.409v156.935z"/></svg>
               <img
                 :src="item.img"
                 :alt="$t(item.img_alt)"
@@ -1418,6 +1394,17 @@ const bannerData = {
   }
   100% {
     transform: translate(30%, 30%);
+  }
+}
+.video-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .video-main {
+    width: 100%;
+    height: auto;
+    max-width: 768px;
+    aspect-ratio: 16/9;
   }
 }
 .glaucoma-nav {
@@ -1877,10 +1864,10 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(5) {
+    & > div:nth-child(6) {
       margin: 100px auto;
     }
-    & > div:nth-child(6) {
+    & > div:nth-child(7) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -2025,7 +2012,7 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(7) {
+    & > div:nth-child(8) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -2094,7 +2081,7 @@ const bannerData = {
         }
       }
     }
-    & > div:nth-child(8) {
+    & > div:nth-child(9) {
       margin-top: 150px;
       display: flex;
       flex-direction: row;
@@ -2751,7 +2738,7 @@ const bannerData = {
       & > div:nth-child(4) {
         text-align: center;
       }
-      & > div:nth-child(5) {
+      & > div:nth-child(6) {
         & > div:nth-child(1) {
           & > div {
             & > div:nth-child(2) {
@@ -2781,7 +2768,7 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(6) {
+      & > div:nth-child(7) {
         & > div:nth-child(1) {
           & > div {
             & > div:nth-child(2) {
@@ -2793,7 +2780,7 @@ const bannerData = {
           width: 1100px;
         }
       }
-      & > div:nth-child(7) {
+      & > div:nth-child(8) {
         & > div:nth-child(1) {
           & > div {
             & > div:nth-child(2) {
@@ -3159,10 +3146,10 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(5) {
+      & > div:nth-child(6) {
         margin-top: 50px;
       }
-      & > div:nth-child(6) {
+      & > div:nth-child(7) {
         margin-top: 90px;
         flex-direction: column;
         & > div:nth-child(1) {
@@ -3256,7 +3243,7 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(7) {
+      & > div:nth-child(8) {
         margin-top: 90px;
         flex-direction: column;
         & > div:nth-child(1) {
@@ -3306,7 +3293,7 @@ const bannerData = {
           }
         }
       }
-      & > div:nth-child(8) {
+      & > div:nth-child(9) {
         margin-top: 90px;
         flex-direction: column;
         & > div:nth-child(1) {
