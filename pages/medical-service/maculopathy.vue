@@ -90,8 +90,10 @@ const sympotm = [
 const examine = [
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title1',
-    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/aa1baf80bab50483.png',
-    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/9450b89f466321db.png',
+    img_up:
+      'https://statichk.cmermedical.com/imgs/2023/05/aa1baf80bab50483.png',
+    img_down:
+      'https://statichk.cmermedical.com/imgs/2023/05/9450b89f466321db.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt1',
     img_up_title: 'pages.medical_service.examine.img_up_title1',
     img_down_alt: 'pages.medical_service.examine.img_down_alt1',
@@ -99,8 +101,10 @@ const examine = [
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title4',
-    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/233cb17db72b3823.png',
-    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/be3b25f7e3770d9f.png',
+    img_up:
+      'https://statichk.cmermedical.com/imgs/2023/05/233cb17db72b3823.png',
+    img_down:
+      'https://statichk.cmermedical.com/imgs/2023/05/be3b25f7e3770d9f.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt2',
     img_up_title: 'pages.medical_service.examine.img_up_title2',
     img_down_alt: 'pages.medical_service.examine.img_down_alt2',
@@ -108,8 +112,10 @@ const examine = [
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title3',
-    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/940b9c94d772c689.png',
-    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/6d3dba4eaa1e1303.png',
+    img_up:
+      'https://statichk.cmermedical.com/imgs/2023/05/940b9c94d772c689.png',
+    img_down:
+      'https://statichk.cmermedical.com/imgs/2023/05/6d3dba4eaa1e1303.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt3',
     img_up_title: 'pages.medical_service.examine.img_up_title3',
     img_down_alt: 'pages.medical_service.examine.img_down_alt3',
@@ -117,8 +123,10 @@ const examine = [
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title2',
-    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/7e436a4e96ccdc37.png',
-    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/98c9fd6f9d13b3cb.png',
+    img_up:
+      'https://statichk.cmermedical.com/imgs/2023/05/7e436a4e96ccdc37.png',
+    img_down:
+      'https://statichk.cmermedical.com/imgs/2023/05/98c9fd6f9d13b3cb.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt4',
     img_up_title: 'pages.medical_service.examine.img_up_title4',
     img_down_alt: 'pages.medical_service.examine.img_down_alt4',
@@ -126,8 +134,10 @@ const examine = [
   },
   {
     title: 'pages.medical_service.maculopathy_con.inspect.title5',
-    img_up: 'https://statichk.cmermedical.com/imgs/2023/05/89704c6401ded877.png',
-    img_down: 'https://statichk.cmermedical.com/imgs/2023/05/8336f08bbc0cda0e.png',
+    img_up:
+      'https://statichk.cmermedical.com/imgs/2023/05/89704c6401ded877.png',
+    img_down:
+      'https://statichk.cmermedical.com/imgs/2023/05/8336f08bbc0cda0e.png',
     img_up_alt: 'pages.medical_service.examine.img_up_alt5',
     img_up_title: 'pages.medical_service.examine.img_up_title5',
     img_down_alt: 'pages.medical_service.examine.img_down_alt5',
@@ -268,8 +278,10 @@ const callTel = () => {
 }
 
 const bannerData = {
-  pcSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/黄斑病1.png',
-  mbSrc: 'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/黄斑病2.png',
+  pcSrc:
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/黄斑病1.png',
+  mbSrc:
+    'https://statichk.cmermedical.com/static/hkcmereye/bannerzip/黄斑病2.png',
   cnName: '黃斑病變',
   enName: 'MACULAR DEGENERATION',
   textColor: '#EABE5F',
@@ -618,11 +630,29 @@ const bannerData = {
               {{ $t('pages.medical_service.maculopathy_con.cure.text1') }}
             </div>
           </div>
-          <div>
-            <div>
+          <div class="flex flex-wrap">
+            <div class="order-1">
               {{ $t('pages.medical_service.maculopathy_con.cure.title2') }}
             </div>
-            <div>
+            <NuxtLink to="/PDT/" class="pdt-button order-3 lg:order-2">
+              <!-- prettier-ignore -->
+              <span class="pdt-text">內地居民預約資訊</span>
+              <div class="pdt-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="50"
+                  height="20"
+                  viewBox="0 0 38 15"
+                  fill="none"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m10 7.519-.939-.344zm14.386-1.205-.981-.192zm1.276 5.509.537.843.148-.094.107-.139zm4.819-4.304-.385-.923zm7.227.707a1 1 0 0 0 0-1.414L31.343.448a1 1 0 0 0-1.414 0 1 1 0 0 0 0 1.414l5.657 5.657-5.657 5.657a1 1 0 0 0 1.414 1.414zM1 7.519l.554.833.029-.019.094-.061.361-.23 1.277-.77c1.054-.609 2.397-1.32 3.629-1.787.617-.234 1.17-.392 1.623-.455.477-.066.707-.008.788.034.025.013.031.021.039.034a.6.6 0 0 1 .058.235c.029.327-.047.906-.39 1.842l1.878.689c.383-1.044.571-1.949.505-2.705-.072-.815-.45-1.493-1.16-1.865-.627-.329-1.358-.332-1.993-.244-.659.092-1.367.305-2.056.566-1.381.523-2.833 1.297-3.921 1.925l-1.341.808-.385.245-.104.068-.028.018c-.011.007-.011.007.543.84zm8.061-.344c-.198.54-.328 1.038-.36 1.484-.032.441.024.94.325 1.364.319.45.786.64 1.21.697.403.054.824-.001 1.21-.09.775-.179 1.694-.566 2.633-1.014l3.023-1.554c2.115-1.122 4.107-2.168 5.476-2.524.329-.086.573-.117.742-.115s.195.038.161.014c-.15-.105.085-.139-.076.685l1.963.384c.192-.98.152-2.083-.74-2.707-.405-.283-.868-.37-1.28-.376s-.849.069-1.274.179c-1.65.43-3.888 1.621-5.909 2.693l-2.948 1.517c-.92.439-1.673.743-2.221.87-.276.064-.429.065-.492.057-.043-.006.066.003.155.127.07.099.024.131.038-.063.014-.187.078-.49.243-.94l-1.878-.689zm14.343-1.053c-.361 1.844-.474 3.185-.413 4.161.059.95.294 1.72.811 2.215.567.544 1.242.546 1.664.459a2.3 2.3 0 0 0 .502-.167l.15-.076.049-.028.018-.011c.013-.008.013-.008-.524-.852l-.536-.844.019-.012a.5.5 0 0 1-.084.032c-.037.008.053-.013.125.056.021.02-.151-.135-.198-.895-.046-.734.034-1.887.38-3.652l-1.963-.384zm2.257 5.701.791.611.024-.031.08-.101.311-.377 1.093-1.213c.922-.954 2.005-1.894 2.904-2.27l-.771-1.846c-1.31.547-2.637 1.758-3.572 2.725l-1.184 1.314-.341.414-.093.117-.025.032c-.01.013-.01.013.781.624zm5.204-3.381c.989-.413 1.791-.42 2.697-.307.871.108 2.083.385 3.437.385v-2c-1.197 0-2.041-.226-3.19-.369-1.114-.139-2.297-.146-3.715.447l.771 1.846z"
+                  ></path>
+                </svg>
+              </div>
+            </NuxtLink>
+            <div class="order-2 lg:order-3">
               {{ $t('pages.medical_service.maculopathy_con.cure.text2') }}
             </div>
           </div>
@@ -732,6 +762,66 @@ const bannerData = {
   </div>
 </template>
 <style lang="scss" scoped>
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pdt-button {
+  padding: 8px 12px;
+  background-color: #ffaf51;
+  border: 4px solid #ffe1bd;
+  color: white;
+  gap: 8px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  gap: 4px;
+  margin-top: 12px;
+  &:hover,
+  &:active {
+    border-color: #fed4a1;
+    background-color: #fff;
+    color: #ffaf51;
+    svg {
+      animation: jello-vertical 0.9s both;
+      transform-origin: left;
+    }
+  }
+  .pdt-text {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    white-space: nowrap;
+  }
+  .pdt-icon {
+    height: 12px;
+    margin-top: -4px;
+    width: fit-content;
+  }
+}
 .result-title {
   width: 100%;
 }
@@ -2054,6 +2144,21 @@ const bannerData = {
           }
         }
       }
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  .pdt-button {
+    padding: 16px 20px;
+    margin-left: 20px;
+    border-width: 6px;
+    height: 52px;
+    .pdt-text {
+      font-size: 24px;
+    }
+    .pdt-icon {
+      height: 24px;
+      margin-top: 4px;
     }
   }
 }
