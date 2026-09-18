@@ -69,7 +69,7 @@ const menus = computed(() => {
         {
           type: 'link',
           text: t('pages.about_us.feedback'),
-          link: { path: '/about-us', hash: '#feedback' },
+          link: { path: '/Customer-Reviews' },
         },
         {
           type: 'link',
