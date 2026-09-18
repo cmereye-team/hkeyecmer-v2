@@ -58,7 +58,7 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link',
         text: t('pages.about_us.feedback'),
-        route: { path: '/about-us', hash: '#feedback' },
+        route: { path: '/Customer-Reviews' },
       },
       {
         type: 'link',

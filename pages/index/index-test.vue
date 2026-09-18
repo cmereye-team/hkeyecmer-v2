@@ -49,7 +49,7 @@ const homeSwiperImgs = [
     enimg: 'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner03en.webp',
     title: ['以人為本，以客人為中心'],
     text: ['提供個人化護理和治療選擇','細心治療，用心照顧'],
-    link: '/about-us#feedback'
+    link: '/Customer-Reviews'
   },
   {
     hkimg: 'https://statichk.cmermedical.com/imgs/hkcmereye-newstyle/banner/mbbanner04.webp',

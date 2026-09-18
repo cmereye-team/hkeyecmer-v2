@@ -19,7 +19,7 @@ const anchorList = ref([
   },
   {
     anchorName: 'pages.about_us.feedback',
-    anchorLink: '/about-us#feedback',
+    anchorLink: '/Customer-Reviews',
   },
   {
     anchorName: 'pages.about_us.enterprise_awards',
