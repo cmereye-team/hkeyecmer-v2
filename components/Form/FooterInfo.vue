@@ -6,6 +6,28 @@ definePageMeta({
 })
 const { t } = useLang()
 const locale = useState<string>('locale.setting')
+const getAttributionPayload = (): string => {
+  // 1. 严格环境守卫：如果是 SSR/Prerender，或服务端未挂载 window，立即返回空字符串
+  if (process.server || typeof window === 'undefined') {
+    return '';
+  }
+
+  // 2. 确保只在客户端真正运行时才读取 BOM API
+  const currentUrl = window.location.href;
+  const currentPath = window.location.pathname;
+
+  let firstLanding = currentUrl;
+  let pageTrail: string[] = [currentPath];
+  let finalGclid = '';
+
+  try {
+    firstLanding = localStorage.getItem('_first_landing_url') || currentUrl;
+    pageTrail = JSON.parse(localStorage.getItem('_page_trail') || '[]');
+    finalGclid = localStorage.getItem('_cmer_gclid') || '';
+  } catch (e) {}
+
+  return `【當前頁面】${currentUrl} | 【初始來源】${firstLanding} | 【gclid】${finalGclid || '無'} | 【軌跡】${pageTrail.join(' ➡ ')}`;
+};
 
 const cities = computed(() => [
   t('components.footerInfo.Instagram'),
@@ -115,7 +137,9 @@ const commitToCms = async () => {
   _formData.append('mobile', ruleForm.phone)
   _formData.append('email', ruleForm.email)
   _formData.append('content', ruleForm.desc)
-  _formData.append('ly', location.href)
+  // _formData.append('ly', location.href)
+  const attributionSource = getAttributionPayload() || (typeof window !== 'undefined' ? window.location.href : '');
+  _formData.append('ly', attributionSource)
   _formData.append(
     'dz',
     ruleForm.type.join('，') + (ruleForm.rest ? `，${ruleForm.rest}` : '')

@@ -1,0 +1,26 @@
+# START nuxt-robots (indexable)
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_nuxt/
+Disallow: /404/
+
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+User-agent: Google-Extended
+User-agent: Gemini-Deep-Research
+User-agent: GoogleAgent-URLContext
+User-agent: DeepSeek-R1
+User-agent: DeepSeekBot
+User-agent: GLM-User
+User-agent: ZhipuAI
+User-agent: ClaudeBot
+User-agent: Claude-Web
+User-agent: PerplexityBot
+User-agent: MoonshotBot
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://www.hkeyecmer.com/sitemap.xml
+# END nuxt-robots

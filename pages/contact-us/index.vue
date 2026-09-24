@@ -63,7 +63,7 @@ const bannerList = ref([
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt4',
   },
   {
-    img: 'https://statichk.cmermedical.com/imgs/2023/02/8d8be0a888c145c3.jpg',
+    img: 'https://statichk.cmermedical.com/HKEYECMER/about/clinic-mk-cover-v1.webp',
     title: 'pages.contact_us.contact_us_img.contact_us_img_title5',
     alt: 'pages.contact_us.contact_us_img.contact_us_img_alt5',
   },
@@ -196,7 +196,7 @@ const addressList = ref([
       // },
       {
         addressImg:
-          'https://statichk.cmermedical.com/imgs/2023/02/8d8be0a888c145c3.jpg',
+          'https://statichk.cmermedical.com/HKEYECMER/about/clinic-mk-cover-v1.webp',
         addressName:
           'pages.contact_us.clinic_information_title.clinic_information_addressList.addressList2_addressDetailList.addressDetailList2_addressName',
         addressDetail: [
