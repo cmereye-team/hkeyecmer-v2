@@ -506,7 +506,7 @@ onBeforeUnmount(() => {
             :modules="reviewModules"
             :slides-per-view="1"
             :space-between="8"
-            :loop="true"
+            :loop="false"
             :watch-slides-progress="true"
             :autoplay="{
               delay: 3000,
@@ -524,7 +524,7 @@ onBeforeUnmount(() => {
             }"
             :breakpoints="{
               1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 16,
                 grid: { rows: 2, fill: 'row' },
               },
@@ -587,7 +587,7 @@ onBeforeUnmount(() => {
             :modules="reviewModules"
             :slides-per-view="1"
             :space-between="8"
-            :loop="true"
+            :loop="false"
             :watch-slides-progress="true"
             :autoplay="{
               delay: 3000,
@@ -605,7 +605,7 @@ onBeforeUnmount(() => {
             }"
             :breakpoints="{
               1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 16,
                 grid: { rows: 2, fill: 'row' },
               },
@@ -1130,8 +1130,8 @@ onBeforeUnmount(() => {
 
   :deep(.facebook-pagination .swiper-pagination-bullet),
   :deep(.google-pagination .swiper-pagination-bullet) {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     margin: 0 12px !important;
   }
 
