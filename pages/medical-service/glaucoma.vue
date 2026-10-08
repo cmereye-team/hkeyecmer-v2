@@ -1240,6 +1240,18 @@ const bannerData = {
             </div>
           </div>
         </div>
+        <div class="video-wrap mt-5 md:mt-8 xl:mt-12">
+          <iframe
+            width="560"
+            height="315"
+            class="video-main"
+            src="https://www.youtube.com/embed/2RCfIqSIqkE?enablejsapi=1"
+            title="【青光眼有咩成因？如何治療？】"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
       <!-- 預防青光眼 -->
       <div id="guardAgainst" class="prevention">
