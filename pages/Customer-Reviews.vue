@@ -344,7 +344,7 @@ onBeforeUnmount(() => {
           於 2012 年創立。現於本港設有
           <strong>10 間分店</strong>
           ，醫療團隊由
-          <strong>27 名眼科專科醫生</strong>
+          <strong>28 名眼科專科醫生</strong>
           組成。以下透過真實客戶分享影片，以及Facebook、Google客戶好評，呈現患者對希瑪眼科中心就診體驗的整體評價。
         </p>
       </div>
@@ -486,7 +486,7 @@ onBeforeUnmount(() => {
         <div class="review-head">
           <img
             src="https://statichk.cmermedical.com/newopd/about/rating/review-icon-facebook.svg"
-            alt=""
+            alt="Facebook圖標"
             width="72"
             height="72"
             loading="lazy"
@@ -506,7 +506,7 @@ onBeforeUnmount(() => {
             :modules="reviewModules"
             :slides-per-view="1"
             :space-between="8"
-            :loop="true"
+            :loop="false"
             :watch-slides-progress="true"
             :autoplay="{
               delay: 3000,
@@ -524,7 +524,7 @@ onBeforeUnmount(() => {
             }"
             :breakpoints="{
               1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 16,
                 grid: { rows: 2, fill: 'row' },
               },
@@ -543,7 +543,7 @@ onBeforeUnmount(() => {
           <button type="button" class="nav-btn fb-prev media-prev" aria-label="上一頁 Facebook 評價">
             <img
               src="https://statichk.cmermedical.com/newopd/about/rating/review-icon-prev.svg"
-              alt=""
+              alt="上一頁"
               width="48"
               height="48"
             />
@@ -551,7 +551,7 @@ onBeforeUnmount(() => {
           <button type="button" class="nav-btn fb-next media-next" aria-label="下一頁 Facebook 評價">
             <img
               src="https://statichk.cmermedical.com/newopd/about/rating/review-icon-next.svg"
-              alt=""
+              alt="下一頁"
               width="48"
               height="48"
             />
@@ -567,7 +567,7 @@ onBeforeUnmount(() => {
         <div class="review-head">
           <img
             src="https://statichk.cmermedical.com/newopd/about/rating/review-icon-google.svg"
-            alt=""
+            alt="Google圖標"
             width="72"
             height="72"
             loading="lazy"
@@ -587,7 +587,7 @@ onBeforeUnmount(() => {
             :modules="reviewModules"
             :slides-per-view="1"
             :space-between="8"
-            :loop="true"
+            :loop="false"
             :watch-slides-progress="true"
             :autoplay="{
               delay: 3000,
@@ -605,7 +605,7 @@ onBeforeUnmount(() => {
             }"
             :breakpoints="{
               1024: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 16,
                 grid: { rows: 2, fill: 'row' },
               },
@@ -624,7 +624,7 @@ onBeforeUnmount(() => {
           <button type="button" class="nav-btn gg-prev media-prev" aria-label="上一頁 Google 評價">
             <img
               src="https://statichk.cmermedical.com/newopd/about/rating/review-icon-prev.svg"
-              alt=""
+              alt="上一頁"
               width="48"
               height="48"
             />
@@ -632,7 +632,7 @@ onBeforeUnmount(() => {
           <button type="button" class="nav-btn gg-next media-next" aria-label="下一頁 Google 評價">
             <img
               src="https://statichk.cmermedical.com/newopd/about/rating/review-icon-next.svg"
-              alt=""
+              alt="下一頁"
               width="48"
               height="48"
             />
@@ -1130,8 +1130,8 @@ onBeforeUnmount(() => {
 
   :deep(.facebook-pagination .swiper-pagination-bullet),
   :deep(.google-pagination .swiper-pagination-bullet) {
-    width: 16px;
-    height: 16px;
+    width: 12px;
+    height: 12px;
     margin: 0 12px !important;
   }
 

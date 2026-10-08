@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-07-03 14:36:32
- * @LastEditTime: 2026-08-11 15:22:41
+ * @LastEditTime: 2026-09-29 14:11:22
  * @FilePath: /components/Page/UserRatings.vue
  * @Description: 用户评价列表
 -->
@@ -98,12 +98,10 @@ const swiperBreakpoints = {
           class="bg-white rounded-md shadow-sm space-y-4 p-4 border border-gray-100 h-full flex flex-col justify-between"
         >
           <div>
-            <div
-              class="info flex items-center"
-            >
+            <div class="info flex items-center">
               <div
                 class="avatar bg-no-repeat bg-size-[100%] w-10 h-10 mr-3 rounded-full shrink-0"
-                :style="{backgroundPosition: item.position}"
+                :style="{ backgroundPosition: item.position }"
               ></div>
               <div class="flex-1 min-w-0">
                 <h3 class="font-bold truncate text-gray-900">
@@ -127,7 +125,7 @@ const swiperBreakpoints = {
             <div
               class="text-base text-gray-700 max-h-[96px] overflow-y-auto mt-3"
             >
-              <p class="whitespace-pre-line">{{ item.content }}</p>
+              <p class="whitespace-pre-line" v-html="item.content"></p>
             </div>
           </div>
         </article>
@@ -143,6 +141,15 @@ const swiperBreakpoints = {
 <style lang="scss" scoped>
 .rating-item {
   height: auto !important;
+}
+:deep(.doctor-blur) {
+  display: inline-block;
+  filter: blur(2.5px);
+  user-select: none;
+  letter-spacing: -0.5px;
+  opacity: 0.85;
+  padding: 0 1px;
+  vertical-align: baseline;
 }
 .info {
   position: relative;

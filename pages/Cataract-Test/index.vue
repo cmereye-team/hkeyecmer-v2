@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2026-07-15 16:47:53
- * @LastEditTime: 2026-07-16 16:55:18
+ * @LastEditTime: 2026-09-30 10:04:04
  * @FilePath: /pages/Cataract-Test/index.vue
  * @Description: 白内障第二版
 -->
@@ -90,7 +90,7 @@ const videos = [
 ]
 // 医生与诊所数字滚动目标
 const counterValues = ref({
-  doctors: 27,
+  doctors: 28,
   clinics: 10,
 })
 
@@ -658,7 +658,12 @@ onUnmounted(() => {
         </div>
         <PageCataractLens />
         <div class="flex justify-center">
-          <a href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢" target="_blank" rel="noopener noreferrer" class="cta-btn btn-interactive animate-cta-breathe btn-whatsapp text-white font-bold text-lg lg:text-2xl py-4 px-12 rounded-full shadow-lg transition-all hover:-translate-y-0.5 inline-flex items-center gap-2">
+          <a
+            href="https://api.whatsapp.com/send?phone=85260629611&text=白內障專線查詢"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="cta-btn btn-interactive animate-cta-breathe btn-whatsapp text-white font-bold text-lg lg:text-2xl py-4 px-12 rounded-full shadow-lg transition-all hover:-translate-y-0.5 inline-flex items-center gap-2"
+          >
             <span>哪一款較適合我？</span>
           </a>
         </div>
@@ -683,50 +688,25 @@ onUnmounted(() => {
                 class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
               >
                 <div class="flex gap-2 lg:gap-4 items-center flex-1">
-                  <svg
+                  <img
                     class="w-5 h-5 lg:w-8 lg:h-8"
-                    viewBox="0 0 1024 1024"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200"
-                    height="200"
-                  >
-                    <path
-                      d="M580.267 768a42.67 42.67 0 0 1-11.947 29.44 42.667 42.667 0 0 1-61.44 0 42.667 42.667 0 0 1 0-59.307 42.667 42.667 0 0 1 61.44 0A42.67 42.67 0 0 1 580.267 768m-162.56-390.4a34.133 34.133 0 1 1-66.987-12.8 173.65 173.65 0 0 1 58.453-104.533 170.67 170.67 0 0 1 112.214-38.4 201.8 201.8 0 0 1 62.293 9.386 154.9 154.9 0 0 1 54.187 29.867 147.6 147.6 0 0 1 37.12 49.493 154 154 0 0 1 14.08 66.134 170.7 170.7 0 0 1-6.4 49.92 143 143 0 0 1-17.494 38.826 159.2 159.2 0 0 1-26.026 30.294l-26.454 23.04q-13.226 10.666-22.186 19.2a60.2 60.2 0 0 0-10.24 12.8 45.7 45.7 0 0 0-5.12 13.653 123.7 123.7 0 0 0 0 24.747v42.666a34.133 34.133 0 1 1-68.267 0v-42.666a189 189 0 0 1 3.413-38.827 113.5 113.5 0 0 1 12.8-33.707 128 128 0 0 1 22.187-27.733c7.253-7.253 16.213-14.933 26.027-23.04l23.893-20.907a91 91 0 0 0 14.933-17.493 75.1 75.1 0 0 0 8.96-20.48 105 105 0 0 0 3.414-29.013 85.3 85.3 0 0 0-8.96-36.694 79.8 79.8 0 0 0-20.054-26.88 85.3 85.3 0 0 0-30.72-16.64 133.6 133.6 0 0 0-42.666-6.4 102.83 102.83 0 0 0-68.694 22.614 105.8 105.8 0 0 0-33.706 63.573M512 913.067A401.067 401.067 0 1 0 110.933 512 401.067 401.067 0 0 0 512 913.067m0 68.266A469.333 469.333 0 1 1 981.333 512 469.333 469.333 0 0 1 512 981.333"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
                   <h3 class="text-lg lg:text-2xl flex-1">
                     {{ t('pages.medical_service.cataract.faq.q1') }}
                   </h3>
                 </div>
-                <svg
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 close"
-                  viewBox="0 0 1050 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M513.617 1020.066c282.786 0 512-228.352 512-510.033S796.403 0 513.617 0c-282.732 0-512 228.352-512 510.033s229.241 510.033 512 510.033"
-                    fill="#2958a3"
-                  />
-                  <path
-                    d="M486.67 805.322a54.06 54.06 0 0 1-38.104-15.71 53.57 53.57 0 0 1-15.764-37.97V590.58H271.117c-14.282 0-28.025-5.66-38.13-15.738a53.57 53.57 0 0 1-15.764-37.942v-53.733a53.5 53.5 0 0 1 15.764-37.942 54 54 0 0 1 38.104-15.737h161.684V268.45c0-14.229 5.686-27.89 15.79-37.97a54 54 0 0 1 38.131-15.71h53.895a54.06 54.06 0 0 1 38.104 15.71 53.57 53.57 0 0 1 15.764 37.97v161.064h161.684c14.31 0 28.025 5.66 38.13 15.737a53.5 53.5 0 0 1 15.765 37.942V536.9a53.5 53.5 0 0 1-15.764 37.942 54 54 0 0 1-38.13 15.738H594.458v161.064a53.62 53.62 0 0 1-15.764 37.969 54 54 0 0 1-38.13 15.71z"
-                    fill="#fefffd"
-                  />
-                </svg>
-                <svg
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 open"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M512.027 0c282.759 0 512 228.352 512 510.033s-229.241 510.033-512 510.06C229.268 1020.093 0 791.713 0 510.033S229.268 0 512.027 0M267.884 421.996c-29.777 0-53.895 24.01-53.895 53.652v53.706c0 29.642 24.118 53.68 53.895 53.68h485.052c29.75 0 53.895-24.038 53.895-53.68v-53.733c0-29.642-24.145-53.68-53.895-53.68z"
-                    fill="#2958a3"
-                  />
-                </svg>
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
               </span>
             </summary>
             <div
@@ -745,50 +725,25 @@ onUnmounted(() => {
                 class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
               >
                 <div class="flex gap-2 lg:gap-4 items-center flex-1">
-                  <svg
+                  <img
                     class="w-5 h-5 lg:w-8 lg:h-8"
-                    viewBox="0 0 1024 1024"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200"
-                    height="200"
-                  >
-                    <path
-                      d="M580.267 768a42.67 42.67 0 0 1-11.947 29.44 42.667 42.667 0 0 1-61.44 0 42.667 42.667 0 0 1 0-59.307 42.667 42.667 0 0 1 61.44 0A42.67 42.67 0 0 1 580.267 768m-162.56-390.4a34.133 34.133 0 1 1-66.987-12.8 173.65 173.65 0 0 1 58.453-104.533 170.67 170.67 0 0 1 112.214-38.4 201.8 201.8 0 0 1 62.293 9.386 154.9 154.9 0 0 1 54.187 29.867 147.6 147.6 0 0 1 37.12 49.493 154 154 0 0 1 14.08 66.134 170.7 170.7 0 0 1-6.4 49.92 143 143 0 0 1-17.494 38.826 159.2 159.2 0 0 1-26.026 30.294l-26.454 23.04q-13.226 10.666-22.186 19.2a60.2 60.2 0 0 0-10.24 12.8 45.7 45.7 0 0 0-5.12 13.653 123.7 123.7 0 0 0 0 24.747v42.666a34.133 34.133 0 1 1-68.267 0v-42.666a189 189 0 0 1 3.413-38.827 113.5 113.5 0 0 1 12.8-33.707 128 128 0 0 1 22.187-27.733c7.253-7.253 16.213-14.933 26.027-23.04l23.893-20.907a91 91 0 0 0 14.933-17.493 75.1 75.1 0 0 0 8.96-20.48 105 105 0 0 0 3.414-29.013 85.3 85.3 0 0 0-8.96-36.694 79.8 79.8 0 0 0-20.054-26.88 85.3 85.3 0 0 0-30.72-16.64 133.6 133.6 0 0 0-42.666-6.4 102.83 102.83 0 0 0-68.694 22.614 105.8 105.8 0 0 0-33.706 63.573M512 913.067A401.067 401.067 0 1 0 110.933 512 401.067 401.067 0 0 0 512 913.067m0 68.266A469.333 469.333 0 1 1 981.333 512 469.333 469.333 0 0 1 512 981.333"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
                   <h3 class="text-lg lg:text-2xl flex-1">
                     {{ t('pages.medical_service.cataract.faq.q2') }}
                   </h3>
                 </div>
-                <svg
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 close"
-                  viewBox="0 0 1050 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M513.617 1020.066c282.786 0 512-228.352 512-510.033S796.403 0 513.617 0c-282.732 0-512 228.352-512 510.033s229.241 510.033 512 510.033"
-                    fill="#2958a3"
-                  />
-                  <path
-                    d="M486.67 805.322a54.06 54.06 0 0 1-38.104-15.71 53.57 53.57 0 0 1-15.764-37.97V590.58H271.117c-14.282 0-28.025-5.66-38.13-15.738a53.57 53.57 0 0 1-15.764-37.942v-53.733a53.5 53.5 0 0 1 15.764-37.942 54 54 0 0 1 38.104-15.737h161.684V268.45c0-14.229 5.686-27.89 15.79-37.97a54 54 0 0 1 38.131-15.71h53.895a54.06 54.06 0 0 1 38.104 15.71 53.57 53.57 0 0 1 15.764 37.97v161.064h161.684c14.31 0 28.025 5.66 38.13 15.737a53.5 53.5 0 0 1 15.765 37.942V536.9a53.5 53.5 0 0 1-15.764 37.942 54 54 0 0 1-38.13 15.738H594.458v161.064a53.62 53.62 0 0 1-15.764 37.969 54 54 0 0 1-38.13 15.71z"
-                    fill="#fefffd"
-                  />
-                </svg>
-                <svg
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 open"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M512.027 0c282.759 0 512 228.352 512 510.033s-229.241 510.033-512 510.06C229.268 1020.093 0 791.713 0 510.033S229.268 0 512.027 0M267.884 421.996c-29.777 0-53.895 24.01-53.895 53.652v53.706c0 29.642 24.118 53.68 53.895 53.68h485.052c29.75 0 53.895-24.038 53.895-53.68v-53.733c0-29.642-24.145-53.68-53.895-53.68z"
-                    fill="#2958a3"
-                  />
-                </svg>
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
               </span>
             </summary>
             <div
@@ -807,50 +762,25 @@ onUnmounted(() => {
                 class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
               >
                 <div class="flex gap-2 lg:gap-4 items-center flex-1">
-                  <svg
+                  <img
                     class="w-5 h-5 lg:w-8 lg:h-8"
-                    viewBox="0 0 1024 1024"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200"
-                    height="200"
-                  >
-                    <path
-                      d="M580.267 768a42.67 42.67 0 0 1-11.947 29.44 42.667 42.667 0 0 1-61.44 0 42.667 42.667 0 0 1 0-59.307 42.667 42.667 0 0 1 61.44 0A42.67 42.67 0 0 1 580.267 768m-162.56-390.4a34.133 34.133 0 1 1-66.987-12.8 173.65 173.65 0 0 1 58.453-104.533 170.67 170.67 0 0 1 112.214-38.4 201.8 201.8 0 0 1 62.293 9.386 154.9 154.9 0 0 1 54.187 29.867 147.6 147.6 0 0 1 37.12 49.493 154 154 0 0 1 14.08 66.134 170.7 170.7 0 0 1-6.4 49.92 143 143 0 0 1-17.494 38.826 159.2 159.2 0 0 1-26.026 30.294l-26.454 23.04q-13.226 10.666-22.186 19.2a60.2 60.2 0 0 0-10.24 12.8 45.7 45.7 0 0 0-5.12 13.653 123.7 123.7 0 0 0 0 24.747v42.666a34.133 34.133 0 1 1-68.267 0v-42.666a189 189 0 0 1 3.413-38.827 113.5 113.5 0 0 1 12.8-33.707 128 128 0 0 1 22.187-27.733c7.253-7.253 16.213-14.933 26.027-23.04l23.893-20.907a91 91 0 0 0 14.933-17.493 75.1 75.1 0 0 0 8.96-20.48 105 105 0 0 0 3.414-29.013 85.3 85.3 0 0 0-8.96-36.694 79.8 79.8 0 0 0-20.054-26.88 85.3 85.3 0 0 0-30.72-16.64 133.6 133.6 0 0 0-42.666-6.4 102.83 102.83 0 0 0-68.694 22.614 105.8 105.8 0 0 0-33.706 63.573M512 913.067A401.067 401.067 0 1 0 110.933 512 401.067 401.067 0 0 0 512 913.067m0 68.266A469.333 469.333 0 1 1 981.333 512 469.333 469.333 0 0 1 512 981.333"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
                   <h3 class="text-lg lg:text-2xl flex-1">
                     {{ t('pages.medical_service.cataract.faq.q3') }}
                   </h3>
                 </div>
-                <svg
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 close"
-                  viewBox="0 0 1050 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M513.617 1020.066c282.786 0 512-228.352 512-510.033S796.403 0 513.617 0c-282.732 0-512 228.352-512 510.033s229.241 510.033 512 510.033"
-                    fill="#2958a3"
-                  />
-                  <path
-                    d="M486.67 805.322a54.06 54.06 0 0 1-38.104-15.71 53.57 53.57 0 0 1-15.764-37.97V590.58H271.117c-14.282 0-28.025-5.66-38.13-15.738a53.57 53.57 0 0 1-15.764-37.942v-53.733a53.5 53.5 0 0 1 15.764-37.942 54 54 0 0 1 38.104-15.737h161.684V268.45c0-14.229 5.686-27.89 15.79-37.97a54 54 0 0 1 38.131-15.71h53.895a54.06 54.06 0 0 1 38.104 15.71 53.57 53.57 0 0 1 15.764 37.97v161.064h161.684c14.31 0 28.025 5.66 38.13 15.737a53.5 53.5 0 0 1 15.765 37.942V536.9a53.5 53.5 0 0 1-15.764 37.942 54 54 0 0 1-38.13 15.738H594.458v161.064a53.62 53.62 0 0 1-15.764 37.969 54 54 0 0 1-38.13 15.71z"
-                    fill="#fefffd"
-                  />
-                </svg>
-                <svg
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 open"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M512.027 0c282.759 0 512 228.352 512 510.033s-229.241 510.033-512 510.06C229.268 1020.093 0 791.713 0 510.033S229.268 0 512.027 0M267.884 421.996c-29.777 0-53.895 24.01-53.895 53.652v53.706c0 29.642 24.118 53.68 53.895 53.68h485.052c29.75 0 53.895-24.038 53.895-53.68v-53.733c0-29.642-24.145-53.68-53.895-53.68z"
-                    fill="#2958a3"
-                  />
-                </svg>
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
               </span>
             </summary>
             <div
@@ -879,50 +809,25 @@ onUnmounted(() => {
                 class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
               >
                 <div class="flex gap-2 lg:gap-4 items-center flex-1">
-                  <svg
+                  <img
                     class="w-5 h-5 lg:w-8 lg:h-8"
-                    viewBox="0 0 1024 1024"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200"
-                    height="200"
-                  >
-                    <path
-                      d="M580.267 768a42.67 42.67 0 0 1-11.947 29.44 42.667 42.667 0 0 1-61.44 0 42.667 42.667 0 0 1 0-59.307 42.667 42.667 0 0 1 61.44 0A42.67 42.67 0 0 1 580.267 768m-162.56-390.4a34.133 34.133 0 1 1-66.987-12.8 173.65 173.65 0 0 1 58.453-104.533 170.67 170.67 0 0 1 112.214-38.4 201.8 201.8 0 0 1 62.293 9.386 154.9 154.9 0 0 1 54.187 29.867 147.6 147.6 0 0 1 37.12 49.493 154 154 0 0 1 14.08 66.134 170.7 170.7 0 0 1-6.4 49.92 143 143 0 0 1-17.494 38.826 159.2 159.2 0 0 1-26.026 30.294l-26.454 23.04q-13.226 10.666-22.186 19.2a60.2 60.2 0 0 0-10.24 12.8 45.7 45.7 0 0 0-5.12 13.653 123.7 123.7 0 0 0 0 24.747v42.666a34.133 34.133 0 1 1-68.267 0v-42.666a189 189 0 0 1 3.413-38.827 113.5 113.5 0 0 1 12.8-33.707 128 128 0 0 1 22.187-27.733c7.253-7.253 16.213-14.933 26.027-23.04l23.893-20.907a91 91 0 0 0 14.933-17.493 75.1 75.1 0 0 0 8.96-20.48 105 105 0 0 0 3.414-29.013 85.3 85.3 0 0 0-8.96-36.694 79.8 79.8 0 0 0-20.054-26.88 85.3 85.3 0 0 0-30.72-16.64 133.6 133.6 0 0 0-42.666-6.4 102.83 102.83 0 0 0-68.694 22.614 105.8 105.8 0 0 0-33.706 63.573M512 913.067A401.067 401.067 0 1 0 110.933 512 401.067 401.067 0 0 0 512 913.067m0 68.266A469.333 469.333 0 1 1 981.333 512 469.333 469.333 0 0 1 512 981.333"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
                   <h3 class="text-lg lg:text-2xl flex-1">
                     {{ t('pages.medical_service.cataract.faq.q4') }}
                   </h3>
                 </div>
-                <svg
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 close"
-                  viewBox="0 0 1050 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M513.617 1020.066c282.786 0 512-228.352 512-510.033S796.403 0 513.617 0c-282.732 0-512 228.352-512 510.033s229.241 510.033 512 510.033"
-                    fill="#2958a3"
-                  />
-                  <path
-                    d="M486.67 805.322a54.06 54.06 0 0 1-38.104-15.71 53.57 53.57 0 0 1-15.764-37.97V590.58H271.117c-14.282 0-28.025-5.66-38.13-15.738a53.57 53.57 0 0 1-15.764-37.942v-53.733a53.5 53.5 0 0 1 15.764-37.942 54 54 0 0 1 38.104-15.737h161.684V268.45c0-14.229 5.686-27.89 15.79-37.97a54 54 0 0 1 38.131-15.71h53.895a54.06 54.06 0 0 1 38.104 15.71 53.57 53.57 0 0 1 15.764 37.97v161.064h161.684c14.31 0 28.025 5.66 38.13 15.737a53.5 53.5 0 0 1 15.765 37.942V536.9a53.5 53.5 0 0 1-15.764 37.942 54 54 0 0 1-38.13 15.738H594.458v161.064a53.62 53.62 0 0 1-15.764 37.969 54 54 0 0 1-38.13 15.71z"
-                    fill="#fefffd"
-                  />
-                </svg>
-                <svg
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 open"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M512.027 0c282.759 0 512 228.352 512 510.033s-229.241 510.033-512 510.06C229.268 1020.093 0 791.713 0 510.033S229.268 0 512.027 0M267.884 421.996c-29.777 0-53.895 24.01-53.895 53.652v53.706c0 29.642 24.118 53.68 53.895 53.68h485.052c29.75 0 53.895-24.038 53.895-53.68v-53.733c0-29.642-24.145-53.68-53.895-53.68z"
-                    fill="#2958a3"
-                  />
-                </svg>
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
               </span>
             </summary>
             <div
@@ -941,50 +846,25 @@ onUnmounted(() => {
                 class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
               >
                 <div class="flex gap-2 lg:gap-4 items-center flex-1">
-                  <svg
+                  <img
                     class="w-5 h-5 lg:w-8 lg:h-8"
-                    viewBox="0 0 1024 1024"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="200"
-                    height="200"
-                  >
-                    <path
-                      d="M580.267 768a42.67 42.67 0 0 1-11.947 29.44 42.667 42.667 0 0 1-61.44 0 42.667 42.667 0 0 1 0-59.307 42.667 42.667 0 0 1 61.44 0A42.67 42.67 0 0 1 580.267 768m-162.56-390.4a34.133 34.133 0 1 1-66.987-12.8 173.65 173.65 0 0 1 58.453-104.533 170.67 170.67 0 0 1 112.214-38.4 201.8 201.8 0 0 1 62.293 9.386 154.9 154.9 0 0 1 54.187 29.867 147.6 147.6 0 0 1 37.12 49.493 154 154 0 0 1 14.08 66.134 170.7 170.7 0 0 1-6.4 49.92 143 143 0 0 1-17.494 38.826 159.2 159.2 0 0 1-26.026 30.294l-26.454 23.04q-13.226 10.666-22.186 19.2a60.2 60.2 0 0 0-10.24 12.8 45.7 45.7 0 0 0-5.12 13.653 123.7 123.7 0 0 0 0 24.747v42.666a34.133 34.133 0 1 1-68.267 0v-42.666a189 189 0 0 1 3.413-38.827 113.5 113.5 0 0 1 12.8-33.707 128 128 0 0 1 22.187-27.733c7.253-7.253 16.213-14.933 26.027-23.04l23.893-20.907a91 91 0 0 0 14.933-17.493 75.1 75.1 0 0 0 8.96-20.48 105 105 0 0 0 3.414-29.013 85.3 85.3 0 0 0-8.96-36.694 79.8 79.8 0 0 0-20.054-26.88 85.3 85.3 0 0 0-30.72-16.64 133.6 133.6 0 0 0-42.666-6.4 102.83 102.83 0 0 0-68.694 22.614 105.8 105.8 0 0 0-33.706 63.573M512 913.067A401.067 401.067 0 1 0 110.933 512 401.067 401.067 0 0 0 512 913.067m0 68.266A469.333 469.333 0 1 1 981.333 512 469.333 469.333 0 0 1 512 981.333"
-                      fill="currentColor"
-                    />
-                  </svg>
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
                   <h3 class="text-lg lg:text-2xl flex-1">
                     {{ t('pages.medical_service.cataract.faq.q5') }}
                   </h3>
                 </div>
-                <svg
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 close"
-                  viewBox="0 0 1050 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M513.617 1020.066c282.786 0 512-228.352 512-510.033S796.403 0 513.617 0c-282.732 0-512 228.352-512 510.033s229.241 510.033 512 510.033"
-                    fill="#2958a3"
-                  />
-                  <path
-                    d="M486.67 805.322a54.06 54.06 0 0 1-38.104-15.71 53.57 53.57 0 0 1-15.764-37.97V590.58H271.117c-14.282 0-28.025-5.66-38.13-15.738a53.57 53.57 0 0 1-15.764-37.942v-53.733a53.5 53.5 0 0 1 15.764-37.942 54 54 0 0 1 38.104-15.737h161.684V268.45c0-14.229 5.686-27.89 15.79-37.97a54 54 0 0 1 38.131-15.71h53.895a54.06 54.06 0 0 1 38.104 15.71 53.57 53.57 0 0 1 15.764 37.97v161.064h161.684c14.31 0 28.025 5.66 38.13 15.737a53.5 53.5 0 0 1 15.765 37.942V536.9a53.5 53.5 0 0 1-15.764 37.942 54 54 0 0 1-38.13 15.738H594.458v161.064a53.62 53.62 0 0 1-15.764 37.969 54 54 0 0 1-38.13 15.71z"
-                    fill="#fefffd"
-                  />
-                </svg>
-                <svg
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
                   class="w-5 h-5 lg:w-8 lg:h-8 open"
-                  viewBox="0 0 1024 1024"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="200"
-                  height="200"
-                >
-                  <path
-                    d="M512.027 0c282.759 0 512 228.352 512 510.033s-229.241 510.033-512 510.06C229.268 1020.093 0 791.713 0 510.033S229.268 0 512.027 0M267.884 421.996c-29.777 0-53.895 24.01-53.895 53.652v53.706c0 29.642 24.118 53.68 53.895 53.68h485.052c29.75 0 53.895-24.038 53.895-53.68v-53.733c0-29.642-24.145-53.68-53.895-53.68z"
-                    fill="#2958a3"
-                  />
-                </svg>
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
               </span>
             </summary>
             <div
@@ -1035,6 +915,191 @@ onUnmounted(() => {
               </ul>
             </div>
           </details>
+          <details
+            class="faq-item group bg-[#F8F9FF] rounded-xl shadow-sm border border-secondary-100 overflow-hidden hover:border-primary/30 transition-colors"
+          >
+            <summary
+              class="w-full p-3 lg:p-6 text-left font-bold text-lg flex justify-between items-center text-secondary-800 hover:text-primary cursor-pointer list-none"
+            >
+              <span
+                class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
+              >
+                <div class="flex gap-2 lg:gap-4 items-center flex-1">
+                  <img
+                    class="w-5 h-5 lg:w-8 lg:h-8"
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
+                  <h3 class="text-lg lg:text-2xl flex-1">
+                    {{ t('pages.medical_service.cataract.faq.q6') }}
+                  </h3>
+                </div>
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 close"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 open"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
+              </span>
+            </summary>
+            <div
+              class="faq-content text-base lg:text-xl px-5 pb-5 text-text-info leading-relaxed"
+            >
+              <p>{{ t('pages.medical_service.cataract.faq.a6') }}</p>
+            </div>
+          </details>
+          <details
+            class="faq-item group bg-[#F8F9FF] rounded-xl shadow-sm border border-secondary-100 overflow-hidden hover:border-primary/30 transition-colors"
+          >
+            <summary
+              class="w-full p-3 lg:p-6 text-left font-bold text-lg flex justify-between items-center text-secondary-800 hover:text-primary cursor-pointer list-none"
+            >
+              <span
+                class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
+              >
+                <div class="flex gap-2 lg:gap-4 items-center flex-1">
+                  <img
+                    class="w-5 h-5 lg:w-8 lg:h-8"
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
+                  <h3 class="text-lg lg:text-2xl flex-1">
+                    {{ t('pages.medical_service.cataract.faq.q7') }}
+                  </h3>
+                </div>
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 close"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 open"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
+              </span>
+            </summary>
+            <div
+              class="faq-content text-base lg:text-xl px-5 pb-5 text-text-info leading-relaxed"
+            >
+              <p>{{ t('pages.medical_service.cataract.faq.a7') }}</p>
+            </div>
+          </details>
+          <details
+            class="faq-item group bg-[#F8F9FF] rounded-xl shadow-sm border border-secondary-100 overflow-hidden hover:border-primary/30 transition-colors"
+          >
+            <summary
+              class="w-full p-3 lg:p-6 text-left font-bold text-lg flex justify-between items-center text-secondary-800 hover:text-primary cursor-pointer list-none"
+            >
+              <span
+                class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
+              >
+                <div class="flex gap-2 lg:gap-4 items-center flex-1">
+                  <img
+                    class="w-5 h-5 lg:w-8 lg:h-8"
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
+                  <h3 class="text-lg lg:text-2xl flex-1">
+                    {{ t('pages.medical_service.cataract.faq.q8') }}
+                  </h3>
+                </div>
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 close"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 open"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
+              </span>
+            </summary>
+            <div
+              class="faq-content text-base lg:text-xl px-5 pb-5 text-text-info leading-relaxed"
+            >
+              <p>{{ t('pages.medical_service.cataract.faq.a8') }}</p>
+            </div>
+          </details>
+          <details
+            class="faq-item group bg-[#F8F9FF] rounded-xl shadow-sm border border-secondary-100 overflow-hidden hover:border-primary/30 transition-colors"
+          >
+            <summary
+              class="w-full p-3 lg:p-6 text-left font-bold text-lg flex justify-between items-center text-secondary-800 hover:text-primary cursor-pointer list-none"
+            >
+              <span
+                class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
+              >
+                <div class="flex gap-2 lg:gap-4 items-center flex-1">
+                  <img
+                    class="w-5 h-5 lg:w-8 lg:h-8"
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
+                  <h3 class="text-lg lg:text-2xl flex-1">
+                    {{ t('pages.medical_service.cataract.faq.q9') }}
+                  </h3>
+                </div>
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 close"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 open"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
+              </span>
+            </summary>
+            <div
+              class="faq-content text-base lg:text-xl px-5 pb-5 text-text-info leading-relaxed"
+            >
+              <p>{{ t('pages.medical_service.cataract.faq.a9') }}</p>
+            </div>
+          </details>
+          <details
+            class="faq-item group bg-[#F8F9FF] rounded-xl shadow-sm border border-secondary-100 overflow-hidden hover:border-primary/30 transition-colors"
+          >
+            <summary
+              class="w-full p-3 lg:p-6 text-left font-bold text-lg flex justify-between items-center text-secondary-800 hover:text-primary cursor-pointer list-none"
+            >
+              <span
+                class="faq-indicator w-full flex justify-between items-center gap-2 lg:gap-4"
+              >
+                <div class="flex gap-2 lg:gap-4 items-center flex-1">
+                  <img
+                    class="w-5 h-5 lg:w-8 lg:h-8"
+                    src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-question.svg"
+                    alt="問題圖標"
+                  />
+                  <h3 class="text-lg lg:text-2xl flex-1">
+                    {{ t('pages.medical_service.cataract.faq.q10') }}
+                  </h3>
+                </div>
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 close"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-plus.svg"
+                  alt="收起圖標"
+                />
+                <img
+                  class="w-5 h-5 lg:w-8 lg:h-8 open"
+                  src="https://statichk.cmermedical.com/newopd/icon/cataract-icon-minus.svg"
+                  alt="展開圖標"
+                />
+              </span>
+            </summary>
+            <div
+              class="faq-content text-base lg:text-xl px-5 pb-5 text-text-info leading-relaxed"
+            >
+              <p>{{ t('pages.medical_service.cataract.faq.a10') }}</p>
+            </div>
+          </details>
         </div>
       </div>
     </section>
@@ -1083,7 +1148,8 @@ onUnmounted(() => {
     bottom: 28px;
   }
 }
-.video-swiper :deep(.swiper-button-prev),.video-swiper :deep(.swiper-button-next) {
+.video-swiper :deep(.swiper-button-prev),
+.video-swiper :deep(.swiper-button-next) {
   top: 35%;
   @media screen and (min-width: 1024px) {
     top: 45%;
