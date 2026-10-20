@@ -454,6 +454,4 @@ const isCarolPage = computed(() => {
     display: none;
   }
 }
-@media screen and (max-width: 768px) {
-}
 </style>
