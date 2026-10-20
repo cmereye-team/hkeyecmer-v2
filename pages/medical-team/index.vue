@@ -282,7 +282,7 @@ const getWindowWidth = () => {
                 {{ $t('pages.medical_team.doctor_edu') }}
               </div>
               <div
-                :key="doc.doctorEducation.toString()"
+                :key="doc.doctorName"
                 v-html="doc.doctorEducation"
               ></div>
             </div>
@@ -597,7 +597,6 @@ const getWindowWidth = () => {
           line-height: 35px;
           letter-spacing: 0.1em;
           color: #515151;
-          white-space: pre-wrap !important;
         }
       }
     }
