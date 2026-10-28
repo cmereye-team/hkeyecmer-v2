@@ -6,7 +6,7 @@
  * @Description: 路由中间件，统一对已启用新版的页面取消NuxtLink以做过渡
  */
 export default defineNuxtRouteMiddleware((to) => {
-  const newVersionPaths = ['/contact-us']
+  const newVersionPaths = ['/contact-us','/cataract/multifocal-lens','/cataract/light-adjustable-lens','/cataract/extended-depth-of-focus-lenses']
   if (process.client) {
     if (newVersionPaths.includes(to.path)) {
       window.location.href = to.fullPath
