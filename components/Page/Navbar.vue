@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-07-31 13:44:27
+ * @LastEditTime: 2026-11-04 13:53:01
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -270,11 +270,11 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.contact_us.clinic_information'),
         route: { name: 'contact-us' },
       },
-      {
-        type: 'link',
-        text: t('pages.about_us.feedback'),
-        route: { path: '/contact-us', hash: '#feedback' },
-      },
+      // {
+      //   type: 'link',
+      //   text: t('pages.about_us.feedback'),
+      //   route: { path: '/contact-us', hash: '#feedback' },
+      // },
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),

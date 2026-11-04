@@ -229,11 +229,11 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.contact_us.clinic_information'),
         route: { name: 'en-contact-us' },
       },
-      {
-        type: 'link',
-        text: t('pages.about_us.feedback'),
-        route: { path: '/en/contact-us', hash: '#feedback' },
-      },
+      // {
+      //   type: 'link',
+      //   text: t('pages.about_us.feedback'),
+      //   route: { path: '/en/contact-us', hash: '#feedback' },
+      // },
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
