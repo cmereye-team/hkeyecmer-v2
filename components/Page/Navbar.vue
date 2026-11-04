@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-11-04 13:53:01
+ * @LastEditTime: 2026-11-04 16:53:17
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -278,7 +278,8 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
-        route: { name: 'contact-us-appointmentForm' },
+        href: '/contact-us/appointmentForm/',
+        route: false,
       },
       {
         type: 'link',

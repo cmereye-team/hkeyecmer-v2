@@ -237,7 +237,9 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
-        route: { name: 'en-contact-us-appointmentForm' },
+        // route: { name: 'en-/contact-us/appointmentForm' },
+        href: '/en/contact-us/appointmentForm/',
+        route: false,
       },
     ],
   },

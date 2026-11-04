@@ -252,7 +252,6 @@ const menus = computed(() => {
       type: 'link',
       text: t('pages.talent_recruitment.talent_recruitment'),
       link: { path:  '/en/talent-recruitment' },
-      childMenuList: [],
     },
     {
       type: 'link',
@@ -265,9 +264,9 @@ const menus = computed(() => {
           link: { path:  '/en/contact-us' },
         },
         {
-          type: 'link', // 電子預約表格
+          type: 'toPage', // 電子預約表格
           text: t('pages.contact_us.appointmentForm'),
-          link: { path:  '/en/contact-us/appointmentForm' },
+          link: '/en/contact-us/appointmentForm',
         },
       ],
     },
