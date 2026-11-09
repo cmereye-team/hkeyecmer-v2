@@ -165,6 +165,11 @@ const menus = computed(() => {
           text: t('pages.medical_service.smileHk'),
           link: 'https://smile.hkcmereye.com/',
         },
+        {
+          type: 'toPage',
+          text: t('pages.medical_service.diabetic.title'),
+          link: '/en/medical-service/diabetic-retinopathy',
+        },
       ],
     },
     {

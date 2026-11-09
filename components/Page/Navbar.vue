@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-11-04 16:53:17
+ * @LastEditTime: 2026-11-09 15:31:26
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -119,11 +119,11 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.muscae_volitantes'),
         route: { name: 'medical-service-muscaeVolitantes' },
       },
-      {
-        type: 'link',
-        text: t('pages.medical_service.amotioRetinae'),
-        route: { name: 'medical-service-amotioRetinae' },
-      },
+      // {
+      //   type: 'link',
+      //   text: t('pages.medical_service.amotioRetinae'),
+      //   route: { name: 'medical-service-amotioRetinae' },
+      // },
       {
         type: 'link',
         text: t('pages.medical_service.glaucoma'),
@@ -175,6 +175,12 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.smileClear'),
         route: false,
         href: 'https://smile.hkcmereye.com/',
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.diabetic.title'),
+        route: false,
+        href: '/medical-service/diabetic-retinopathy'
       },
     ],
   },
