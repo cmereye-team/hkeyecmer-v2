@@ -165,6 +165,11 @@ const menus = computed(() => {
           text: t('pages.medical_service.smileHk'),
           link: 'https://smile.hkcmereye.com/',
         },
+        {
+          type: 'toPage',
+          text: t('pages.medical_service.diabetic.title'),
+          link: '/en/medical-service/diabetic-retinopathy',
+        },
       ],
     },
     {
@@ -252,7 +257,6 @@ const menus = computed(() => {
       type: 'link',
       text: t('pages.talent_recruitment.talent_recruitment'),
       link: { path:  '/en/talent-recruitment' },
-      childMenuList: [],
     },
     {
       type: 'link',
@@ -265,9 +269,9 @@ const menus = computed(() => {
           link: { path:  '/en/contact-us' },
         },
         {
-          type: 'link', // 電子預約表格
+          type: 'toPage', // 電子預約表格
           text: t('pages.contact_us.appointmentForm'),
-          link: { path:  '/en/contact-us/appointmentForm' },
+          link: '/en/contact-us/appointmentForm',
         },
       ],
     },

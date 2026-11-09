@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-11-04 13:53:01
+ * @LastEditTime: 2026-11-09 15:31:26
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -119,11 +119,11 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.muscae_volitantes'),
         route: { name: 'medical-service-muscaeVolitantes' },
       },
-      {
-        type: 'link',
-        text: t('pages.medical_service.amotioRetinae'),
-        route: { name: 'medical-service-amotioRetinae' },
-      },
+      // {
+      //   type: 'link',
+      //   text: t('pages.medical_service.amotioRetinae'),
+      //   route: { name: 'medical-service-amotioRetinae' },
+      // },
       {
         type: 'link',
         text: t('pages.medical_service.glaucoma'),
@@ -175,6 +175,12 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.smileClear'),
         route: false,
         href: 'https://smile.hkcmereye.com/',
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.diabetic.title'),
+        route: false,
+        href: '/medical-service/diabetic-retinopathy'
       },
     ],
   },
@@ -278,7 +284,8 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
-        route: { name: 'contact-us-appointmentForm' },
+        href: '/contact-us/appointmentForm/',
+        route: false,
       },
       {
         type: 'link',

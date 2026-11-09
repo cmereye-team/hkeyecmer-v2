@@ -80,11 +80,11 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.muscae_volitantes'),
         route: { path: 'en-medical-service-muscaeVolitantes' },
       },
-      {
-        type: 'link', // 視網膜脫落
-        text: t('pages.medical_service.amotioRetinae'),
-        route: { path: 'en-medical-service-amotioRetinae' },
-      },
+      // {
+      //   type: 'link', // 視網膜脫落
+      //   text: t('pages.medical_service.amotioRetinae'),
+      //   route: { path: 'en-medical-service-amotioRetinae' },
+      // },
       {
         type: 'link',
         text: t('pages.medical_service.glaucoma'),
@@ -130,6 +130,12 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.smileHk'),
         route: false,
         href: 'https://smile.hkcmereye.com/',
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.diabetic.title'),
+        route: false,
+        href: '/en/medical-service/diabetic-retinopathy'
       },
     ],
   },
@@ -237,7 +243,9 @@ const menus = computed((): IMenuItem[] => [
       {
         type: 'link', // 電子預約表格
         text: t('pages.contact_us.appointmentForm'),
-        route: { name: 'en-contact-us-appointmentForm' },
+        // route: { name: 'en-/contact-us/appointmentForm' },
+        href: '/en/contact-us/appointmentForm/',
+        route: false,
       },
     ],
   },

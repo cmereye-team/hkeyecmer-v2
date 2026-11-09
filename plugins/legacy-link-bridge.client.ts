@@ -11,6 +11,7 @@ const newVersionPaths = new Set([
   '/cataract/light-adjustable-lens',
   '/cataract/extended-depth-of-focus-lenses',
   '/medical-service/cataract',
+  '/medical-service/diabetic-retinopathy',
 ])
 
 // 统一路径格式，兼容末尾斜杠和大小写

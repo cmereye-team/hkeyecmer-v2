@@ -1,7 +1,7 @@
 <!--
  * @Author: 谭洁莹
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-08-03 14:19:10
+ * @LastEditTime: 2026-11-04 16:39:01
  * @FilePath: /components/Page/Newheader.vue
  * @Description: 移动端菜单
 -->
@@ -133,11 +133,11 @@ const menus = computed(() => {
           text: t('pages.medical_service.muscae_volitantes'),
           link: { path: '/medical-service/muscaeVolitantes' },
         },
-        {
-          type: 'link', // 視網膜脫落
-          text: t('pages.medical_service.amotioRetinae'),
-          link: { path: '/medical-service/amotioRetinae' },
-        },
+        // {
+        //   type: 'link', // 視網膜脫落
+        //   text: t('pages.medical_service.amotioRetinae'),
+        //   link: { path: '/medical-service/amotioRetinae' },
+        // },
         {
           type: 'link',
           text: t('pages.medical_service.glaucoma'),
@@ -187,6 +187,11 @@ const menus = computed(() => {
           type: 'toPage',
           text: t('pages.medical_service.smileClear'),
           link: 'https://smile.hkcmereye.com/',
+        },
+        {
+          type: 'toPage',
+          text: t('pages.medical_service.diabetic.title'),
+          link: '/medical-service/diabetic-retinopathy',
         },
       ],
     },
@@ -283,15 +288,14 @@ const menus = computed(() => {
           link: { path: '/contact-us' },
         },
         {
-          type: 'link', // 電子預約表格
+          type: 'toPage', // 電子預約表格
           text: t('pages.contact_us.appointmentForm'),
-          link: { path: '/contact-us/appointmentForm' },
+          link: '/contact-us/appointmentForm/',
         },
         {
           type: 'link',
           text: t('pages.talent_recruitment.talent_recruitment'),
           link: { path: '/talent-recruitment' },
-          childMenuList: [],
         },
       ],
     },
