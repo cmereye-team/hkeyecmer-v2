@@ -174,7 +174,7 @@ const menus = computed((): IMenuItem[] => [
         type: 'link',
         text: t('pages.medical_service.smileClear'),
         route: false,
-        href: 'https://smile.hkcmereye.com/',
+        href: 'https://smile.hkcmereye.com/vision-correction-presbyopia/',
       },
       {
         type: 'link',

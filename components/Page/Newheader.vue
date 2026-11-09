@@ -186,7 +186,7 @@ const menus = computed(() => {
         {
           type: 'toPage',
           text: t('pages.medical_service.smileClear'),
-          link: 'https://smile.hkcmereye.com/',
+          link: 'https://smile.hkcmereye.com/vision-correction-presbyopia/',
         },
         {
           type: 'toPage',

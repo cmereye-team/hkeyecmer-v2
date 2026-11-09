@@ -126,10 +126,16 @@ const menus = computed((): IMenuItem[] => [
         route: { path: 'en-medical-service-medicalOptometry' },
       },
       {
-        type: 'link', // 眼矯形及眼眶疾病
+        type: 'link',
         text: t('pages.medical_service.smileHk'),
         route: false,
         href: 'https://smile.hkcmereye.com/',
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.smileClear'),
+        route: false,
+        href: 'https://smile.hkcmereye.com/vision-correction-presbyopia/',
       },
       {
         type: 'link',
