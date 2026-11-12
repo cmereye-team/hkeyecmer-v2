@@ -2885,6 +2885,8 @@ pages:
       serviceNavigation_anchorName4: Suitable
       serviceNavigation_anchorName5: Precautions
       serviceNavigation_anchorName6: Using method
+    retinal:
+      title: Retinal Tear
     diabetic:
       title: Diabetic Retinopathy
   ophthalmic_information:

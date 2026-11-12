@@ -1,7 +1,7 @@
 /*
  * @Author: 谭洁莹
  * @Date: 2026-11-04 14:08:23
- * @LastEditTime: 2026-11-04 14:10:01
+ * @LastEditTime: 2026-11-12 16:43:24
  * @FilePath: /plugins/legacy-link-bridge.client.ts
  * @Description: 版本过渡方案，劫持指定链接的Nuxt更改为普通加载
  */
@@ -11,7 +11,11 @@ const newVersionPaths = new Set([
   '/cataract/light-adjustable-lens',
   '/cataract/extended-depth-of-focus-lenses',
   '/medical-service/cataract',
+  '/medical-service/maculopathy',
+  '/medical-service/conjunctivitis',
+  '/medical-service/Retinal-tear-and-detachment',
   '/medical-service/diabetic-retinopathy',
+  '/eyecmer-ct',
 ])
 
 // 统一路径格式，兼容末尾斜杠和大小写
