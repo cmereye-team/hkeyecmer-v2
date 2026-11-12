@@ -1,6 +1,6 @@
 <!--
  * @Date: 2025-09-11 08:19:38
- * @LastEditTime: 2026-11-09 15:31:26
+ * @LastEditTime: 2026-11-12 15:37:15
  * @FilePath: /components/Page/Navbar.vue
  * @Description: PC端菜单
 -->
@@ -175,6 +175,12 @@ const menus = computed((): IMenuItem[] => [
         text: t('pages.medical_service.smileClear'),
         route: false,
         href: 'https://smile.hkcmereye.com/vision-correction-presbyopia/',
+      },
+      {
+        type: 'link',
+        text: t('pages.medical_service.retinal.title'),
+        route: false,
+        href: '/medical-service/Retinal-tear-and-detachment'
       },
       {
         type: 'link',

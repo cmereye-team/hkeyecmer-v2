@@ -190,6 +190,11 @@ const menus = computed(() => {
         },
         {
           type: 'toPage',
+          text: t('pages.medical_service.retinal.title'),
+          link: '/medical-service/Retinal-tear-and-detachment',
+        },
+        {
+          type: 'toPage',
           text: t('pages.medical_service.diabetic.title'),
           link: '/medical-service/diabetic-retinopathy',
         },

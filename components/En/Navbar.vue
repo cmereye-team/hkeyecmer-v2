@@ -139,6 +139,12 @@ const menus = computed((): IMenuItem[] => [
       },
       {
         type: 'link',
+        text: t('pages.medical_service.retinal.title'),
+        route: false,
+        href: '/en/medical-service/Retinal-tear-and-detachment'
+      },
+      {
+        type: 'link',
         text: t('pages.medical_service.diabetic.title'),
         route: false,
         href: '/en/medical-service/diabetic-retinopathy'
